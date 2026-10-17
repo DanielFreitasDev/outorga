@@ -33,13 +33,15 @@ function Marca() {
 function StatusLLM() {
   const { saude, erroConexao } = useApp();
   const on = !!saude?.llm_disponivel && !erroConexao;
-  const txt = erroConexao ? "API indisponível" : !saude ? "verificando…" : on ? `${saude.modelo}` : "IA local desligada";
+  const rotulo = saude?.rotulo_ia ?? (saude?.provedor === "llamacpp" ? `IA local · ${saude?.modelo}` : saude?.modelo ?? "IA");
+  const txt = erroConexao ? "API indisponível" : !saude ? "verificando…"
+    : saude.demonstracao && !on ? "Demonstração · sem IA" : on ? rotulo : `${rotulo} · desligada`;
   return (
     <div className="flex items-center gap-2 rounded-md border border-line bg-surface px-2.5 py-1 text-[12px]"
       title={saude ? `Provedor: ${saude.provedor} · modelo ${saude.modelo} · fila ${saude.fila}` : undefined}>
       <span className={cx("size-2 rounded-full", on ? "bg-ok" : erroConexao ? "bg-bad" : "bg-warn")} aria-hidden />
       <Cpu className="size-3.5 text-muted" aria-hidden />
-      <span className="text-ink-2">{saude?.provedor === "llamacpp" ? "IA local · " : ""}{txt}</span>
+      <span className="text-ink-2">{txt}</span>
       {!!saude?.fila && <span className="num rounded bg-surface-2 px-1 text-muted">fila {saude.fila}</span>}
     </div>
   );
@@ -56,6 +58,20 @@ function SeloPolitica() {
       <span className="num text-ok">aceite ≥ {politica.limiar_aceite}</span>
       <span className="num text-bad">recusa ≤ {politica.limiar_recusa}</span>
     </Link>
+  );
+}
+
+function FaixaDemonstracao() {
+  const { saude } = useApp();
+  if (!saude?.demonstracao) return null;
+  return (
+    <div className="border-b border-warn/40 bg-warn/10 px-4 py-2 text-center text-[12.5px] text-ink-2 md:px-6">
+      <b className="text-ink">Demonstração pública</b> com dados fictícios. A consulta por CPF sem documentos, os cenários de
+      exemplo, a simulação e o parecer funcionam; o envio de documentos fica desativado.{" "}
+      <a className="text-accent underline-offset-2 hover:underline" href="https://github.com/DanielFreitasDev/outorga">
+        Código e instalação local
+      </a>
+    </div>
   );
 }
 
@@ -118,6 +134,7 @@ export function Shell({ rota, children }: { rota: string; children: ReactNode })
             </button>
           </div>
         </header>
+        <FaixaDemonstracao />
         <main className="mx-auto max-w-[1240px] px-4 py-6 md:px-8 md:py-8">{children}</main>
       </div>
     </div>

@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import os
 import queue
 import threading
 import time
@@ -27,10 +28,20 @@ from . import store
 from .domain import Severidade
 from .engine import Politica
 from .extract import EXTENSOES, ler_arquivos
-from .llm import LlamaCpp, provedor_padrao
+from .llm import provedor_padrao, rotulo_ia
 from .parecer import html_parecer, pdf_parecer
 from .pipeline import VERSAO, analisar_leituras, pedido_atpv_de_json
 from .scoring import sugerir_limiares
+
+# Demonstração pública (ex.: VPS sem GPU): bloqueia envio de documentos e mudanças de política/revisão.
+MODO_DEMO = os.environ.get("OUTORGA_MODO", "").lower() in ("demonstracao", "demo")
+AVISO_DEMO = ("Desativado na demonstração pública. Rode o Outorga na sua máquina para enviar documentos "
+              "(github.com/DanielFreitasDev/outorga).")
+
+
+def _bloquear_na_demo() -> None:
+    if MODO_DEMO:
+        raise HTTPException(403, AVISO_DEMO)
 
 RAIZ = Path(__file__).resolve().parents[2]
 CORPUS = RAIZ / "corpus"
@@ -116,8 +127,9 @@ def _enfileirar(arquivos: list[Path], pedido: dict, origem: str, caso: str | Non
 @app.get("/api/saude")
 def saude() -> dict:
     prov = provedor_padrao()
-    disponivel = prov.disponivel() if isinstance(prov, LlamaCpp) else True
+    disponivel = getattr(prov, "disponivel", lambda: True)()
     return {"versao": VERSAO, "provedor": prov.nome, "modelo": prov.modelo, "llm_disponivel": disponivel,
+            "rotulo_ia": rotulo_ia(prov), "demonstracao": MODO_DEMO,
             "fila": FILA.qsize(), "politica": politica_dict(politica_atual())}
 
 
@@ -239,6 +251,8 @@ def demo_arquivo(caso: str, nome: str):
 async def nova_analise(pedido: str = Form(...), arquivos: list[UploadFile] | None = File(None)) -> dict:
     """Documentos são opcionais: na consulta por CPF, o próprio dono pessoa física assinando não precisa de nenhum."""
     arquivos = arquivos or []
+    if arquivos:
+        _bloquear_na_demo()
     try:
         pedido_d = json.loads(pedido)
         pedido_atpv_de_json(pedido_d)  # valida
@@ -276,6 +290,7 @@ def consultar_veiculo(placa: str | None = None, renavam: str | None = None) -> d
 @app.post("/api/atpv/ler")
 async def ler_atpv(arquivo: UploadFile = File(...)) -> dict:
     """Lê uma ATPV-e (PDF/imagem) e devolve veículo, vendedor, comprador, valor e data para pré-preencher o pedido."""
+    _bloquear_na_demo()
     from .extract import atpv_por_regex, rodar_tarefa, texto_para_llm
     from .ingest import carregar
 
@@ -379,6 +394,7 @@ def simular(aid: str, corpo: dict) -> dict:
 
 @app.post("/api/analises/{aid}/revisao")
 def revisao(aid: str, corpo: dict) -> dict:
+    _bloquear_na_demo()
     if corpo.get("decisao") not in ("aprovar", "recusar"):
         raise HTTPException(422, "decisao deve ser 'aprovar' ou 'recusar'")
     if not store.obter_analise(aid):
@@ -418,6 +434,7 @@ def get_politica() -> dict:
 
 @app.put("/api/politica")
 def put_politica(corpo: dict) -> dict:
+    _bloquear_na_demo()
     perfil = corpo.get("perfil", "ce")
     base = politica_dict(Politica.por_nome(perfil), perfil)
     novo = {**base, **{k: v for k, v in corpo.items() if k in base and k not in ("nome", "uf")}}

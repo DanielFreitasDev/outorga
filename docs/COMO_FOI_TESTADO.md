@@ -38,13 +38,14 @@ Qualquer servidor compatível com a API da OpenAI serve no lugar do llama.cpp: O
 Dá, mas fica **lento** para uso no balcão. A geração de texto de um modelo de 27B no processador é limitada pela
 velocidade da memória RAM. Medido nesta máquina (DDR4, ~33 GB/s):
 
-| Configuração | Geração (tokens/s) | Observação |
-|---|---|---|
-| GPU RTX 3060 (configuração dos testes) | ~18 | um caso típico (2–3 documentos) leva ~1–2 min |
-| Modelo dividido: parte na GPU, parte na CPU (Q4_K_S) | ~4,5 | 3–5× mais lento |
-| Só CPU, quantizações "IQ" | ~2,8 | evite IQ na CPU |
+| Configuração | Leitura do prompt | Geração | Observação |
+|---|---|---|---|
+| GPU RTX 3060 (configuração dos testes) | centenas de tokens/s | ~18 tokens/s | um caso típico (2–3 documentos) leva ~1–2 min |
+| Modelo dividido: parte na GPU, parte na CPU (Q4_K_S) | ~317 tokens/s | ~4,5 tokens/s | 3–5× mais lento |
+| **Só CPU**, o mesmo modelo dos testes (UD-Q2_K_XL), 6 threads | **8,5 tokens/s** | ~1–3 tokens/s (estimado) | medido em 17/10/2026 (seção 7): **inviável** neste desktop |
 
-Na prática, só no processador um caso levaria dezenas de minutos nesta máquina. As saídas são:
+Na prática, só no processador um único documento levaria de 20 a 30 minutos nesta máquina, e a CPU chegou a 93 °C.
+As saídas são:
 
 1. **Servidor com CPU forte e memória rápida**, como um Xeon/EPYC com DDR5 em vários canais (200–400 GB/s), que acelera
    5–10×. Ou uma GPU dedicada de 16–24 GB.
@@ -68,7 +69,7 @@ Uma medição de ponta a ponta só em CPU, com o mesmo modelo dos testes, está 
 | Parecer | Jinja2 + **WeasyPrint** (HTML → PDF) |
 | Persistência e auditoria | SQLite, com trilha de auditoria encadeada por hash SHA-256 |
 | Interface | **React 19** + TypeScript + Vite + Tailwind CSS 4; ícones Lucide |
-| Testes | pytest (222 testes), avaliação contra gabarito (`outorga avaliar`), testes de interface no navegador com Playwright |
+| Testes | pytest (228 testes), avaliação contra gabarito (`outorga avaliar`), testes de interface no navegador com Playwright |
 | Ferramenta de desenvolvimento | o protótipo foi escrito com o **Claude Code** (Anthropic) operando na própria máquina; a IA que **lê os documentos** dentro do protótipo é a IA local acima |
 
 ## 4. Metodologia dos testes
@@ -124,7 +125,7 @@ Resultados completos, caso a caso e com as lições de cada rodada: [`RESULTADOS
 
 ```bash
 uv sync                                   # dependências Python
-uv run pytest -q                          # 222 testes (sem IA, segundos)
+uv run pytest -q                          # 228 testes (sem IA, segundos)
 uv run outorga avaliar oraculo            # motor com leitura perfeita (38 cenários)
 uv run python -m outorga.avaliacao oraculo --conjunto pf     # consulta por CPF
 uv run python -m outorga.avaliacao llm --conjunto todos      # com a IA configurada (usa o cache .cache/leituras)
@@ -135,4 +136,24 @@ Com o cache versionado, a rodada `llm` reproduz as leituras do Qwen sem GPU. Par
 
 ## 7. Medição só em CPU (sem GPU)
 
-Pendente nesta versão do documento. Será feita com o mesmo modelo dos testes e uma leitura real de contrato social.
+Em 17/10/2026, às 12:36, o mesmo modelo dos testes (Qwen3.8-27B, UD-Q2_K_XL) foi iniciado no llama.cpp **só no
+processador**: GPU escondida com `CUDA_VISIBLE_DEVICES=""`, `-ngl 0`, 6 threads, contexto de 8K. Ele leu o contrato
+social do cenário C01 (1.073 palavras) com o mesmo pipeline dos testes.
+
+| Medida | Resultado |
+|---|---|
+| Leitura do prompt (documento + instruções, 3.432 tokens) | **405 s** (6min45s), a **8,5 tokens/s** |
+| Temperatura da CPU (Ryzen 5 4600G, cooler original) | subiu de 57 °C para **93 °C** (o limite do processador é 95 °C) |
+| Resultado | medição **interrompida** antes da geração da resposta, para não esquentar a máquina |
+
+Na GPU, a mesma leitura do prompt leva poucos segundos. Só a etapa de leitura já mostra que, neste desktop, a CPU é
+cerca de 50 vezes mais lenta que a GPU para esse modelo; um documento completo levaria de 20 a 30 minutos.
+
+Conclusão:
+
+- **Sem GPU, num desktop comum, não é viável para atendimento.** A quantização de 2 bits usada na GPU é especialmente
+  lenta na CPU.
+- Para rodar sem GPU, use um **servidor com CPU de muitos núcleos e memória rápida** (DDR5 em vários canais), uma
+  quantização própria para CPU (Q4_K_M ou Q4_0) e, de preferência, um **modelo menor revalidado** com os lotes de teste
+  ([`MODELOS.md`](MODELOS.md)).
+- Ou use uma **IA por chave de API** ([`IA.md`](IA.md)).

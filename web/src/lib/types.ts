@@ -258,6 +258,10 @@ export interface Saude {
   provedor: string;
   modelo: string;
   llm_disponivel: boolean;
+  /** "IA local · qwen3.8-27b", "OpenAI · <modelo>", "Anthropic (Claude) · <modelo>", "sem IA (demonstração)" */
+  rotulo_ia?: string;
+  /** demonstração pública: envio de documentos e mudanças de política desativados */
+  demonstracao?: boolean;
   fila: number;
   politica: Politica;
 }

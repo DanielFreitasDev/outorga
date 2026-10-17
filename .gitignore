@@ -28,3 +28,6 @@ vendor/
 
 # Anotações internas de conversa (não são documentação)
 docs/mensagem-whatsapp-chefe.md
+
+# Segredos locais (chaves de API)
+.env

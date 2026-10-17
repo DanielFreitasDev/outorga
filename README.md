@@ -8,7 +8,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-API-009688?logo=fastapi&logoColor=white)
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
 ![IA local](https://img.shields.io/badge/IA%20local-llama.cpp%20%C2%B7%20Qwen3.8%2027B-6E44FF)
-![Testes](https://img.shields.io/badge/testes-222%20passando-2EA44F)
+![Testes](https://img.shields.io/badge/testes-228%20passando-2EA44F)
 ![Status](https://img.shields.io/badge/status-prot%C3%B3tipo-F2A900)
 
 </div>
@@ -120,12 +120,14 @@ processos reais anonimizados** antes de deixar o sistema decidir sozinho. Detalh
 - Linux (testado no Kubuntu 26.04), Python 3.12+ com [**uv**](https://docs.astral.sh/uv/), Node.js 20+ com **pnpm**
 - Tesseract com português, para documentos escaneados: `sudo apt install tesseract-ocr tesseract-ocr-por`
 - Bibliotecas do WeasyPrint, para o PDF: `sudo apt install libpango-1.0-0 libpangoft2-1.0-0`
-- **Uma IA**, à escolha (detalhes em [`docs/IA.md`](docs/IA.md)):
-  - **local**: qualquer servidor compatível com a API da OpenAI (llama.cpp, Ollama, LM Studio, vLLM). Nos testes:
-    llama.cpp + Qwen3.8-27B numa RTX 3060 de 12 GB;
-  - **por chave de API**: Anthropic (Claude) via SDK oficial.
-  - **Sem IA nenhuma**, a demonstração, a consulta por CPF sem documentos, a simulação e o parecer funcionam do mesmo
-    jeito: a IA só é necessária para ler documentos novos.
+- **Uma IA**, à escolha, configurada no arquivo `.env` (modelo em [`.env.example`](.env.example); detalhes em
+  [`docs/IA.md`](docs/IA.md)):
+  - **local, com GPU**: llama.cpp, Ollama, LM Studio ou vLLM. Nos testes: llama.cpp + Qwen3.8-27B numa RTX 3060 de 12 GB;
+  - **local, sem GPU**: funciona, mas num desktop comum fica lento demais (medido: [`docs/COMO_FOI_TESTADO.md`](docs/COMO_FOI_TESTADO.md#7-medição-só-em-cpu-sem-gpu));
+  - **por chave de API**: Anthropic (Claude), OpenAI, Google Gemini, Groq, OpenRouter, DeepSeek, Mistral, Together, xAI
+    ou qualquer API compatível com a da OpenAI;
+  - **sem IA nenhuma**: a demonstração, a consulta por CPF sem documentos, a simulação e o parecer funcionam do mesmo
+    jeito. A IA só é necessária para ler documentos novos.
 
 ### Instalação
 
@@ -133,7 +135,7 @@ processos reais anonimizados** antes de deixar o sistema decidir sozinho. Detalh
 git clone https://github.com/DanielFreitasDev/outorga.git && cd outorga
 uv sync                                    # dependências Python
 (cd web && pnpm install && pnpm build)     # interface
-uv run pytest -q                           # 222 testes, sem IA
+uv run pytest -q                           # 228 testes, sem IA
 ./scripts/iniciar.sh                       # API + interface em http://127.0.0.1:8765
 ```
 
@@ -153,7 +155,8 @@ uv run pytest -q                           # 222 testes, sem IA
 |---|---|
 | [`docs/PARA_O_CHEFE.md`](docs/PARA_O_CHEFE.md) | resumo executivo: o pedido, o que existe, resultados, o que falta confirmar |
 | [`docs/COMO_FOI_TESTADO.md`](docs/COMO_FOI_TESTADO.md) | máquina, IA local, stack, metodologia, linha do tempo dos testes, uso sem GPU |
-| [`docs/IA.md`](docs/IA.md) | como ligar a IA: local (com ou sem GPU) ou por chave de API |
+| [`docs/IA.md`](docs/IA.md) | como ligar a IA: local (com ou sem GPU) ou por chave de API (Anthropic, OpenAI, Gemini…) |
+| [`docs/MODELOS.md`](docs/MODELOS.md) | comparação de modelos de IA local testados nesta máquina |
 | [`docs/RESULTADOS.md`](docs/RESULTADOS.md) | todas as rodadas de avaliação, caso a caso, com as lições |
 | [`docs/REGRAS.md`](docs/REGRAS.md) | as regras jurídicas codificadas, com fundamento e caso de teste |
 | [`docs/ARQUITETURA.md`](docs/ARQUITETURA.md) | módulos, índice de aceitação, privacidade, desempenho |
@@ -169,7 +172,7 @@ src/outorga/   leitura (ingest, extract, prompts, schemas), conferência (lexico
 web/           interface React + TypeScript + Vite + Tailwind
 corpus/        85 cenários fictícios: fatos e gabarito (spec.py), documentos (docs/*.md), casos montados
                (casos/<ID>/), gabarito de leitura (gold.py), base veicular simulada
-tests/         222 testes (motor, cenários no modo oráculo, consulta por CPF, agente, API)
+tests/         228 testes (motor, cenários no modo oráculo, consulta por CPF, agente, API, provedores de IA)
 avaliacoes/    resultados de todas as rodadas de avaliação (evidência dos números)
 .cache/leituras/  leituras da IA local para o corpus fictício (reproduz a avaliação sem GPU)
 docs/          documentação, pesquisa jurídica, imagens e página de demonstração
