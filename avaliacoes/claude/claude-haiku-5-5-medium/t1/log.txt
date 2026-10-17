@@ -1,0 +1,90 @@
+claude-haiku-5-5:medium: 85 casos, 184 documentos únicos, 8 leituras simultâneas
+pré-leitura: 158s, 0 erro(s)
+✓ C01 Administração 'indistintamente' — um sócio assina          esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.3s
+✓ C02 Assinatura conjunta exigida — só um assina                 esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  7.5 quem=ok   0.1s
+✓ C03 Assinatura conjunta — os dois assinam                      esp=PODE          prev=PODE          VERDE    idx= 91.2 quem=ok   0.0s
+✓ C04 Sócia quotista sem poder de administração assina           esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ C05 Administrador não sócio assina                             esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+✓ C06 Sócio majoritário (70%) que não é administrador            esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ C07 Contrato omisso sobre a forma de atuação                   esp=PODE          prev=PODE          AMARELO  idx=100.0 quem=ok   0.0s
+✓ C08 Alçada por valor — abaixo do limite                        esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+✓ C09 Alçada por valor — acima do limite                         esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ C10 Alçada por valor — valor não informado                     esp=INDETERMINADO prev=INDETERMINADO AMARELO  idx= 50.0 quem=—   0.0s
+✓ C11 Ativo não circulante (inclui veículos) sem deliberação     esp=INDETERMINADO prev=INDETERMINADO AMARELO  idx= 50.0 quem=ok   0.0s
+✓ C12 Ativo não circulante com ata aprovando a venda             esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+✓ C13 Carro integralizado pelo sócio — o OUTRO sócio vende sozin esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ C14 Carro integralizado pelo sócio — ele mesmo vende           esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+✓ C15 Carro integralizado, mas o CRLV ainda está no CPF do sócio esp=INDETERMINADO prev=INDETERMINADO AMARELO  idx= 50.0 quem=ok   0.0s
+✓ C16 Procuração pública válida com poderes especiais            esp=PODE          prev=PODE          VERDE    idx= 97.0 quem=ok   0.1s
+✓ C17 Procuração só com poderes gerais de administração          esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ C18 Procuração vencida                                         esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  6.6 quem=ok   0.0s
+✓ C19 Procuração revogada                                        esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.1s
+✓ C20 Procuração outorgada por quem não tinha poder sozinho      esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  6.6 quem=ok   0.0s
+✓ C21 Procuração do sócio em nome próprio (PF), não da empresa   esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ C22 Procuração para OUTRO veículo específico                   esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ C23 Substabelecimento com reserva, permitido                   esp=PODE          prev=PODE          VERDE    idx= 97.0 quem=ok   0.1s
+✓ C24 Substabelecimento vedado na procuração                     esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ C25 Substabelecimento sem reserva — o procurador original assi esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ C26 Procuração particular sem firma reconhecida                esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ C27 Procuradores que devem agir em conjunto — só um assina     esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ C28 Administrador que outorgou saiu da administração depois    esp=PODE          prev=PODE          VERDE    idx= 97.0 quem=ok   0.1s
+✓ C29 Alteração contratual mudou de isolada para conjunta        esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  7.5 quem=ok   0.0s
+✓ C30 Administrador com mandato por prazo determinado vencido    esp=NAO_PODE      prev=NAO_PODE      AMARELO  idx=  0.0 quem=ok   0.0s
+✓ C31 Sociedade limitada unipessoal — sócio único assina         esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+✓ C32 S.A. — um diretor sozinho                                  esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.1s
+✓ C33 S.A. — diretor + procurador com procuração válida          esp=PODE          prev=PODE          VERDE    idx= 97.0 quem=ok   0.1s
+✓ C34 Empresário individual                                      esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+✓ C35 Revendedora: restrição a ativo imobilizado x estoque       esp=PODE          prev=PODE          AMARELO  idx=100.0 quem=ok   0.0s
+✓ C36 Procuração válida — documentos ESCANEADOS (OCR)            esp=PODE          prev=PODE          VERDE    idx= 96.4 quem=ok  15.2s
+✓ C37 Procuração antiga sem prazo (3 anos)                       esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ C38 Todos os sócios assinam (com exigência de deliberação)     esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+✓ H01 ‘De per si’ — um administrador assina                      esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+✓ H02 Quaisquer dois dos três administradores — um assina        esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ H03 Veículos da frota exigem os dois (sem valor) — um assina   esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ H04 Procuração ‘pelo período de doze meses’ vencida            esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ H05 ‘Sem direito de substabelecer’ e houve substabelecimento   esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ H06 Procuração conjunta, veículo identificado, no prazo        esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+✓ H07 Antiga administradora assina depois da troca               esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ H08 Restrição a imóveis e participações; veículo de R$ 320 mil esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+✓ I01 S.A. com Diretoria de mandato vencido, prorrogado por lei, esp=PODE          prev=PODE          AMARELO  idx= 86.4 quem=ok   0.1s
+✗ I02 Dois administradores assinam juntos, mas da mesma classe:  esp=NAO_PODE      prev=PODE          AMARELO  idx=100.0 quem=X   0.1s
+✓ I03 Procuração de venda revogada por nova procuração que só au esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  5.2 quem=ok   0.1s
+✓ I04 Cadeia de substabelecimentos: o primeiro 'sem reserva' e o esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.1s
+✓ I05 Procuração pública sem prazo, com mais de 1 ano, outorgada esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  4.8 quem=ok   0.1s
+✓ I06 Ata 'aprovada por unanimidade dos presentes' e pela 'maior esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.1s
+✓ I07 Procuração outorgada por sócio cujo poder de administração esp=INDETERMINADO prev=INDETERMINADO AMARELO  idx= 50.0 quem=—   0.1s
+✓ I08 Sócio único de SLU assina a venda, mas só foi nomeado admi esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  7.5 quem=ok   0.1s
+✓ I09 Alçada de valor para assinatura conjunta, alterada no temp esp=INDETERMINADO prev=INDETERMINADO AMARELO  idx= 50.0 quem=—   0.0s
+✓ I10 Ex-EIRELI com nome alterado: CRLV no nome antigo e mesmo C esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.1s
+✓ A01 Comprador PJ: administrador assina compra abaixo da alçada esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+✓ A02 Comprador PJ: compra acima da alçada com um só administrad esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ A03 Restrição de compra não alcança a venda                    esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+✓ A04 Comprador PJ por procurador com poder de compra            esp=PODE          prev=PODE          VERDE    idx= 91.4 quem=ok   0.1s
+✓ A05 Procuração só de venda usada para comprar                  esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.1s
+✓ A06 PJ dos dois lados: ambos com poder                         esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.1s
+✓ A07 PJ dos dois lados, assinaturas lidas da ATPV-e: comprador  esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.1s
+✓ A08 Cooperativa: Diretor-Presidente e Diretor Financeiro assin esp=PODE          prev=PODE          VERDE    idx= 90.8 quem=ok   0.1s
+✓ A09 Cooperativa: Diretor-Presidente sozinho                    esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx= 10.0 quem=ok   0.1s
+✓ A10 Associação compradora: Presidente eleita assina            esp=PODE          prev=PODE          VERDE    idx= 90.0 quem=ok   0.1s
+✓ A11 MEI vende: o titular assina                                esp=PODE          prev=PODE          VERDE    idx= 90.0 quem=ok   0.0s
+✓ A12 MEI compra: a esposa do titular assina                     esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx= 10.0 quem=ok   0.0s
+✓ A13 EIRELI (hoje SLU) vende: o titular assina                  esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+✓ A14 Sociedade simples: um sócio assina sozinho                 esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ P01 Pessoa física: o próprio dono vai assinar                  esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+✓ P02 Procurador com procuração pública e específica             esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+✓ P03 CPF diferente do dono, sem procuração                      esp=INDETERMINADO prev=INDETERMINADO AMARELO  idx= 50.0 quem=ok   0.0s
+✓ P04 Procuração só com poderes gerais (DETRAN, IPVA, multas)    esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ P05 Procuração de 6 meses, vencida                             esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ P06 Procuração específica de outro veículo                     esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.8 quem=ok   0.0s
+✓ P07 Compradora pessoa física representada por procuradora      esp=PODE          prev=PODE          VERDE    idx= 92.5 quem=ok   0.0s
+✓ P08 Procuração revogada                                        esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ P09 Substabelecida pelo procurador, com reserva                esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+✓ P10 Procuração particular com firma reconhecida                esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ P11 Procuração dada pela esposa, não pelo dono registral       esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ P12 Dona é empresa: CPF do administrador                       esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+✓ P13 Dona é empresa: CPF de sócia sem poder, sem procuração     esp=INDETERMINADO prev=INDETERMINADO AMARELO  idx= 50.0 quem=ok   0.0s
+✓ P14 Dona é empresa: CPF de procurador da empresa               esp=PODE          prev=PODE          VERDE    idx= 97.0 quem=ok   0.0s
+✓ P15 Comprador é empresa: CPF do administrador, abaixo da alçad esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+
+veredito 84/85 · faixa aceitável 84/85 · quem pode 81/82 · perigosos 0 · caros 0 · automático 86% · 18.9s
+RESUMO {"config": "claude-haiku-5-5:medium", "custo_usd": 0.216, "segundos_por_caso": 22.8, "erros_de_leitura": 0}

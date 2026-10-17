@@ -56,7 +56,7 @@ class Identidades:
         self._remap: dict[str, str] = {}
 
     def registrar(self, nome: str | None, cpf: str | None) -> str | None:
-        if not nome or not nome.strip():
+        if not nome or not nome.strip() or lx.nome_vazio(nome):
             return None
         nome = nome.strip()
         d = so_digitos(cpf)
@@ -271,8 +271,8 @@ class Consolidador:
             t = lx.norm(r.evidencia)
             quorum = 75.0 if "tres quartos" in t or "3/4" in t else (50.01 if "metade" in t or "maioria" in t else None)
         valor_acima = r.valor_acima_de
-        if valor_acima is None and r.valor_ate is None and ("superior a" in lx.norm(r.evidencia) or "acima de" in lx.norm(r.evidencia)):
-            valor_acima = lx.valor_monetario(r.evidencia)
+        if valor_acima is None and r.valor_ate is None:
+            valor_acima = lx.valor_limite_do_ato(r.evidencia)  # só o limite do próprio ato, nunca o de outro inciso
             if valor_acima:
                 verifs.append(Verificacao("valor_acima_de", None, valor_acima, True, valor_acima, []))
         qtd = qtd_lida
@@ -308,6 +308,8 @@ class Consolidador:
         dt_ass, dt_reg = _d(p.documento.data_assinatura) or _d(l.classificacao.data_documento), _d(p.documento.data_registro)
         admins = []
         for a in p.administradores:
+            if not self.k(a.nome, a.cpf):  # sem nome de pessoa ("null", "administradores"): não vira administrador
+                continue
             f = self.fonte(l, a.evidencia)
             termino = _d(a.prazo.termino) if a.prazo.tipo == "determinado" else None
             admins.append(Administrador(self.k(a.nome, a.cpf), a.cargo, a.socio, dt_ass, termino,
@@ -333,8 +335,10 @@ class Consolidador:
         if l.classificacao.tipo == "requerimento_empresario":
             tipo = "requerimento_empresario"
         consolida = tipo in ("alteracao_e_consolidacao", "estatuto") or l.classificacao.tipo == "contrato_consolidado"
+        restricoes = [(self.fonte(l, t), atos) for t, atos in lx.clausulas_de_aprovacao(l.doc.texto)]
         return AtoSocietario(l.doc.id, l.classificacao.titulo, tipo, dt_ass, dt_reg, p.documento.numero_alteracao, consolida,
-                             p.alteracao.altera_administracao or tipo == "constituicao", admins, socios, regras, rp, bens)
+                             p.alteracao.altera_administracao or tipo == "constituicao", admins, socios, regras, rp, bens,
+                             restricoes_texto=restricoes)
 
     def _ata(self, l: LeituraDocumento, socios_ref: dict[str, float]) -> tuple[AtoSocietario | None, list[DeliberacaoSocios]]:
         a = l.ata
@@ -355,8 +359,9 @@ class Consolidador:
                     termino = _d(e.mandato_termino)
                     if not termino and e.mandato_descricao and data:
                         termino = lx.somar_prazo(data, e.mandato_descricao)
-                    eleitos.append(Administrador(self.k(e.nome, e.cpf), e.cargo, False, data, termino,
-                                                 e.mandato_descricao, f))
+                    if self.k(e.nome, e.cpf):
+                        eleitos.append(Administrador(self.k(e.nome, e.cpf), e.cargo, False, data, termino,
+                                                     e.mandato_descricao, f))
             elif dl.tipo == "aprova_alienacao_veiculo":
                 pct = dl.percentual_favoravel if dl.percentual_favoravel is not None else presentes_pct
                 t_ev = lx.norm(dl.evidencia + " " + l.doc.texto)
@@ -418,10 +423,10 @@ class Consolidador:
         # outorgante
         o = x.outorgante
         e_emp = o.tipo == "PJ" and self._e_empresa(emp, o.nome, o.documento)
-        reps = [self.k(r.nome, r.cpf) for r in o.representantes]
+        reps = [k for r in o.representantes if (k := self.k(r.nome, r.cpf))]
         if o.tipo == "PF":
-            reps = [self.k(o.nome, o.documento)]
-        outorgados = [self.k(p.nome, p.cpf) for p in x.outorgados]
+            reps = [k for k in [self.k(o.nome, o.documento)] if k]
+        outorgados = [k for p in x.outorgados if (k := self.k(p.nome, p.cpf))]
         atuacao = x.atuacao_outorgados
         if len(outorgados) > 1:
             sm = lx.modo_por_lexico(x.poderes.evidencia)
@@ -548,7 +553,8 @@ class Consolidador:
                 origem_sub = ant[-1].id if ant else None
             subs.append(Substabelecimento(l.doc.id, l.classificacao.titulo, x.forma, data_s,
                                           x.firma_reconhecida, x.procuracao_origem.model_dump(), pid, origem_sub, ss,
-                                          [self.k(p.nome, p.cpf) for p in x.substabelecidos], reserva, x.todos_os_poderes,
+                                          [k for p in x.substabelecidos if (k := self.k(p.nome, p.cpf))], reserva,
+                                          x.todos_os_poderes,
                                           x.alienar_veiculos, f, verifs, self._conf(l, f, len(verifs))))
         revs = []
         for l in self.leituras:
@@ -566,7 +572,7 @@ class Consolidador:
                 ids = self._procuracoes_alcancadas(x.evidencia + " " + l.doc.texto, x.procuracao_revogada.outorgado_nome,
                                                    data_r, procs, exceto=None)
             revs.append(Revogacao(l.doc.id, l.classificacao.titulo, x.forma, data_r, x.revogante.nome,
-                                  [self.k(r.nome, r.cpf) for r in x.revogante.representantes],
+                                  [k for r in x.revogante.representantes if (k := self.k(r.nome, r.cpf))],
                                   x.procuracao_revogada.model_dump(), ids, f, generica, self._conf(l, f)))
         # revogações dentro de outros documentos ("revogando a procuração anterior", "ficam revogadas as procurações")
         for l in self.leituras:

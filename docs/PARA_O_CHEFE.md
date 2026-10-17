@@ -75,6 +75,21 @@ Resultados medidos (detalhes em `docs/RESULTADOS.md`):
 Conclusão: o protótipo é promissor, mas só deve decidir sozinho depois de um piloto com processos reais; até lá, a
 faixa intermediária deve ser larga.
 
+## Qual IA usar (testado em 17/10/2026)
+
+A IA só lê os documentos; quem decide é o motor de regras. Por isso dá para trocar de IA sem mexer nas regras. Os 85
+casos de teste foram lidos por todas as opções:
+
+- **Claude Sonnet 5.5** (por chave de API, padrão do Outorga): 84 de 85 nas 3 rodadas, nenhum aceite indevido, ~14 s e
+  **~US$ 0,03 por caso**;
+- **Claude Haiku 5.5**: o mesmo acerto (84, 83 e 85) por **~US$ 0,0025 por caso**, 12 vezes mais barato;
+- **IA local** (Qwen3.8-27B numa RTX 3060): o mesmo acerto, sem custo por caso e sem os documentos saírem da máquina,
+  mas exige GPU de 12 GB e leva 1 a 2 minutos por caso;
+- esforço máximo e o modelo mais caro (Opus) não acertaram mais nada.
+
+Com IA por chave de API, os documentos (com nome e CPF) vão para o provedor: é preciso avaliar o contrato e a LGPD antes
+de usar processos reais. Detalhes, custos e os modelos locais testados: `docs/MODELOS.md`.
+
 ## O que ainda precisa ser confirmado
 
 1. "Faixa intermediária" = aceita / revisão humana / recusa? (única pergunta sem resposta)

@@ -1,0 +1,48 @@
+{
+ "config": "claude-sonnet-5:high",
+ "modelo": "claude-sonnet-5",
+ "esforco": "high",
+ "conjunto": "todos",
+ "trial": 1,
+ "inicio": "2026-10-17T13:59:29",
+ "fim": "2026-10-17T14:04:24",
+ "duracao_min": 4.9,
+ "casos": 85,
+ "documentos_unicos": 184,
+ "chamadas": 146,
+ "tokens_entrada": 112428,
+ "tokens_cache_escrita": 396277,
+ "tokens_cache_leitura": 507261,
+ "tokens_saida": 223400,
+ "saida_por_chamada": 1530,
+ "segundos_por_chamada": 13.6,
+ "segundos_por_caso": 38.3,
+ "segundos_por_caso_p90": 76.0,
+ "custo_usd": 3.551,
+ "custo_por_caso_usd": 0.04178,
+ "erros_de_leitura": 0,
+ "recusas": 0,
+ "erros_pre_leitura": [
+  "ErroLLM: Claude: limite de taxa (retry-after=None)"
+ ],
+ "resultado": {
+  "modo": "llm",
+  "conjunto": "todos",
+  "casos": 85,
+  "duracao_s": 34.2,
+  "data": "2026-10-17T14:04:24",
+  "veredito_correto": 83,
+  "faixa_aceitavel": 80,
+  "quem_pode_correto": 81,
+  "quem_pode_avaliados": 82,
+  "erros_perigosos": 0,
+  "erros_caros": 0,
+  "cobertura_automatica": 0.812,
+  "acerto_na_faixa_automatica": 1.0,
+  "politica": {
+   "nome": "DETRAN-CE",
+   "limiar_aceite": 85.0,
+   "limiar_recusa": 15.0
+  }
+ }
+}

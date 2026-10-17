@@ -466,3 +466,78 @@ def valor_monetario(texto: str | None) -> float | None:
     if not m:
         return None
     return float(m.group(1).replace(".", "").replace(",", "."))
+
+
+# ----------------------------------------------------------------------------- sentinela de restrição
+_APROVACAO = re.compile(
+    r"\b(depender\w* d[ae]|sujeit\w* a|condicionad\w* a|mediante|precedid\w* de)\s+(a\s+)?(previa\s+|expressa\s+)?"
+    r"(aprovacao|autorizacao|deliberacao|anuencia|consentimento)\b"
+    r"|\b(previa|expressa)\s+(aprovacao|autorizacao|anuencia|deliberacao)\b")
+_OBJETO_VEICULO = re.compile(
+    r"\bveicul|\bautomot|\bativo (permanente|imobilizado|nao circulante)|\bbens (moveis|do ativo|da sociedade|sociais)\b"
+    r"|\bquaisquer bens\b|\bbens (imoveis )?e moveis\b|\bmaquinas e equipamentos\b")
+_ATO_ALIENAR = re.compile(r"\balien|\bvend[ae]|\bonera|\bdispo[rs]|\bdisposicao|\btransferencia|\bceder\b|\bcessao\b")
+_ATO_ADQUIRIR = re.compile(r"\baquisic|\badquir|\bcompra\b")
+_CABECALHO = re.compile(r"(?=\bCL[ÁA]USULA\b|\bArt(?:igo)?\.?\s*\d)", re.I)
+
+
+def clausulas_de_aprovacao(texto: str | None) -> list[tuple[str, frozenset[str]]]:
+    """Trechos do contrato que exigem aprovação prévia (sócios, conselho, quórum) para vender ou comprar bens que
+    alcançam veículos, com os atos alcançados ("alienar", "adquirir").
+
+    É a sentinela de leitura: se o texto tem uma cláusula assim e a leitura da IA não trouxe nenhuma regra de aprovação
+    aplicável, o motor manda o caso para revisão em vez de aceitar sozinho."""
+    achados = []
+    for bloco in _CABECALHO.split(texto or ""):
+        frases = re.split(r"(?<=[.;:])\s+", " ".join(bloco.split()))
+        for i, frase in enumerate(frases):
+            if not _APROVACAO.search(norm(frase)):
+                continue
+            partes = [frase]
+            if frase.endswith(":"):  # "Dependerão de prévia aprovação ...: I – a alienação de ... veículos; II – ..."
+                for seg in frases[i + 1:i + 8]:
+                    if seg.startswith("§"):
+                        break
+                    partes.append(seg)
+            janela = norm(" ".join(partes))
+            atos = frozenset(a for a, rx in (("alienar", _ATO_ALIENAR), ("adquirir", _ATO_ADQUIRIR)) if rx.search(janela))
+            if atos and _OBJETO_VEICULO.search(janela):
+                achados.append((" ".join(partes)[:700], atos))
+                break
+    return achados
+
+
+def valor_limite_do_ato(texto: str | None) -> float | None:
+    """Limite de valor ("superior a / acima de R$ X") que vale para a venda ou compra de bens citada no trecho.
+
+    Em cláusula com incisos, só conta o valor escrito no mesmo inciso do ato, ou no cabeçalho que vale para todos
+    ("acima de R$ X: I – alienação de veículos; II – ..."). O valor de outro inciso não conta: em "Dependerão de aprovação:
+    I – a alienação de veículos; ...; IV – empréstimos de valor superior a R$ 300.000,00", a venda não tem limite."""
+    partes = [p for p in re.split(r"[;:]\s", texto or "") if p.strip()]
+    normas = [norm(p) for p in partes]
+
+    def do_ato(n: str) -> bool:
+        return bool(_ATO_ALIENAR.search(n) or _ATO_ADQUIRIR.search(n) or _OBJETO_VEICULO.search(n))
+
+    def tem_limite(n: str) -> bool:
+        return "superior a" in n or "acima de" in n
+
+    if len(partes) > 1 and tem_limite(normas[0]) and any(do_ato(n) for n in normas):
+        return valor_monetario(partes[0])
+    for parte, n in zip(partes, normas):
+        if tem_limite(n) and do_ato(n) and (v := valor_monetario(parte)):
+            return v
+    return None
+
+
+# ----------------------------------------------------------------------------- nomes que não são de pessoa
+_NAO_E_NOME = re.compile(
+    r"^(null|none|nil|nulo|nula|n/?a|nao (informado|informada|consta|identificado|identificada)|desconhecid[oa]|"
+    r"indefinid[oa]|(os |as )?(socios?|socias?|administrador(es|as?)?|diretor(es|as?)?|procurador(es|as?)?|"
+    r"outorgad[oa]s?|representantes?( legais?)?)|[-—?.\s]*)$")
+
+
+def nome_vazio(nome: str | None) -> bool:
+    """Preenchimento que a IA pôs no lugar de um nome de pessoa ("null", "N/A", "administradores", "-"): conta como vazio,
+    para não virar uma pessoa fantasma nas combinações de quem pode assinar."""
+    return bool(_NAO_E_NOME.match(norm(nome)))

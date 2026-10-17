@@ -1,0 +1,9 @@
+claude-haiku-5-5:high: 4 casos, 11 documentos únicos, 6 leituras simultâneas
+pré-leitura: 30s, 0 erro(s)
+✓ C01 Administração 'indistintamente' — um sócio assina          esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+✓ I03 Procuração de venda revogada por nova procuração que só au esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.1s
+✓ A05 Procuração só de venda usada para comprar                  esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ P04 Procuração só com poderes gerais (DETRAN, IPVA, multas)    esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+
+veredito 4/4 · faixa aceitável 4/4 · quem pode 4/4 · perigosos 0 · caros 0 · automático 100% · 0.1s
+RESUMO {"config": "claude-haiku-5-5:high", "custo_usd": 0.0227, "segundos_por_caso": 34.2, "erros_de_leitura": 0}

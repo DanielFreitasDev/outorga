@@ -68,18 +68,31 @@ def temperatura_gpu() -> int | None:
         return None
 
 
+def temperatura_cpu() -> int | None:
+    """Temperatura do processador (°C), lida do sensor do kernel (k10temp na AMD, coretemp na Intel), ou None."""
+    for h in sorted(Path("/sys/class/hwmon").glob("hwmon*")):
+        try:
+            if (h / "name").read_text().strip() in ("k10temp", "zenpower", "coretemp"):
+                return int((h / "temp1_input").read_text()) // 1000
+        except (OSError, ValueError):
+            continue
+    return None
+
+
 def guarda_termica() -> float:
-    """Protege a máquina em uso contínuo: se a GPU estiver acima de OUTORGA_TEMP_MAX (padrão 76 °C), espera esfriar
-    até OUTORGA_TEMP_RETOMAR (padrão 68 °C) antes da próxima leitura. Devolve os segundos esperados."""
-    tmax = int(os.environ.get("OUTORGA_TEMP_MAX", "76"))
-    tret = int(os.environ.get("OUTORGA_TEMP_RETOMAR", "68"))
-    t = temperatura_gpu()
-    if t is None or t < tmax:
+    """Protege a máquina em uso contínuo. Se a GPU passar de OUTORGA_TEMP_MAX (padrão 76 °C) ou a CPU passar de
+    OUTORGA_TEMP_CPU_MAX (padrão 85 °C; importa quando parte do modelo roda na CPU), espera a GPU voltar a
+    OUTORGA_TEMP_RETOMAR (padrão 68 °C) e a CPU a OUTORGA_TEMP_CPU_RETOMAR (padrão 75 °C) antes da próxima leitura.
+    Devolve os segundos esperados."""
+    gmax, gret = int(os.environ.get("OUTORGA_TEMP_MAX", "76")), int(os.environ.get("OUTORGA_TEMP_RETOMAR", "68"))
+    cmax, cret = int(os.environ.get("OUTORGA_TEMP_CPU_MAX", "85")), int(os.environ.get("OUTORGA_TEMP_CPU_RETOMAR", "75"))
+    g, c = temperatura_gpu(), temperatura_cpu()
+    if (g is None or g < gmax) and (c is None or c < cmax):
         return 0.0
     inicio = time.time()
-    while t is not None and t > tret and time.time() - inicio < 900:
+    while ((g is not None and g > gret) or (c is not None and c > cret)) and time.time() - inicio < 900:
         time.sleep(10)
-        t = temperatura_gpu()
+        g, c = temperatura_gpu(), temperatura_cpu()
     return round(time.time() - inicio, 1)
 
 

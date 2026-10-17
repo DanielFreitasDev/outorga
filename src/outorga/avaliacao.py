@@ -66,15 +66,21 @@ def comparar(res: dict, gab: dict, politica: Politica | None = None) -> dict:
             **({"lados_ok": lados_ok} if lados_ok else {})}
 
 
-def rodar(modo: str, casos: list[str] | None, politica: Politica, provedor=None, amostras: int = 1, saida: Path | None = None,
-          verbose: bool = True, conjunto: str = "principal") -> dict:
+def casos_do_conjunto(conjunto: str) -> list[str]:
     spec = json.loads((CORPUS / "cenarios.json").read_text(encoding="utf-8"))
     independentes = [{"id": p.name} for p in sorted((CORPUS / "casos").glob("I[0-9]*")) if (p / "gabarito.json").exists()]
     grupos = {"principal": spec["casos"], "cega": spec.get("casos_holdout", []), "independente": independentes,
               "atpv": spec.get("casos_atpv", []), "pf": spec.get("casos_pf", []),
               "todos": spec["casos"] + spec.get("casos_holdout", []) + independentes + spec.get("casos_atpv", [])
-              + spec.get("casos_pf", [])}
-    ids = casos or [c["id"] for c in grupos[conjunto]]
+              + spec.get("casos_pf", []),
+              # comparação de modelos: os lotes em que o motor menos aprendeu com as leituras do Qwen3.8-27B
+              "triagem": spec.get("casos_holdout", []) + independentes + spec.get("casos_pf", [])}
+    return [c["id"] for c in grupos[conjunto]]
+
+
+def rodar(modo: str, casos: list[str] | None, politica: Politica, provedor=None, amostras: int = 1, saida: Path | None = None,
+          verbose: bool = True, conjunto: str = "principal") -> dict:
+    ids = casos or casos_do_conjunto(conjunto)
     linhas = []
     t0 = time.time()
     for cid in ids:
@@ -82,15 +88,19 @@ def rodar(modo: str, casos: list[str] | None, politica: Politica, provedor=None,
         gab = json.loads((pasta / "gabarito.json").read_text(encoding="utf-8"))
         pedido = json.loads((pasta / "pedido.json").read_text(encoding="utf-8"))
         t = time.time()
-        if modo == "oraculo":
-            sys.path.insert(0, str(CORPUS))
-            from gold import leituras_gold  # noqa: E402
-            leituras = leituras_gold(cid)
-        else:
-            from .extract import ler_pasta
-            leituras = ler_pasta(pasta / "docs", provedor, amostras=amostras)
         meta = {"provedor": provedor.nome, "modelo": provedor.modelo} if provedor is not None else {"provedor": "gabarito"}
-        res = analisar_leituras(leituras, pedido, politica, meta)
+        try:
+            if modo == "oraculo":
+                sys.path.insert(0, str(CORPUS))
+                from gold import leituras_gold  # noqa: E402
+                leituras = leituras_gold(cid)
+            else:
+                from .extract import ler_pasta
+                leituras = ler_pasta(pasta / "docs", provedor, amostras=amostras)
+            res = analisar_leituras(leituras, pedido, politica, meta)
+        except Exception as e:  # noqa: BLE001 — leitura que falhou (ex.: JSON inválido do modelo) conta como erro do caso
+            res = {"veredito": "ERRO", "faixa": "AMARELO", "indice": 50.0, "confianca": 0.0, "resumo": f"{type(e).__name__}: {e}",
+                   "motivos_faixa": ["erro na leitura"], "quem_pode": [], "pessoas": {}, "lados": {}, "erro": True}
         cmp = comparar(res, gab, politica)
         esp = esperado_para(gab, politica)
         linha = {"caso": cid, "titulo": gab["titulo"], "categoria": gab["categoria"], "esperado": esp["veredito"],
@@ -145,7 +155,7 @@ def main() -> None:
     ap.add_argument("--provedor", default=None, help="llamacpp | anthropic | openai (padrão: config)")
     ap.add_argument("--saida", default=None)
     ap.add_argument("--politica", default="ce", help="ce (DETRAN-CE, padrão) | generica (só Código Civil)")
-    ap.add_argument("--conjunto", default="principal", choices=["principal", "cega", "independente", "atpv", "pf", "todos"])
+    ap.add_argument("--conjunto", default="principal", choices=["principal", "cega", "independente", "atpv", "pf", "todos", "triagem"])
     a = ap.parse_args()
     prov = None
     if a.modo == "llm":

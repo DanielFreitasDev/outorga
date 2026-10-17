@@ -1,0 +1,2782 @@
+{
+ "resumo": {
+  "modo": "llm",
+  "conjunto": "todos",
+  "casos": 85,
+  "duracao_s": 28.7,
+  "data": "2026-10-17T13:59:05",
+  "veredito_correto": 84,
+  "faixa_aceitavel": 84,
+  "quem_pode_correto": 81,
+  "quem_pode_avaliados": 82,
+  "erros_perigosos": 0,
+  "erros_caros": 0,
+  "cobertura_automatica": 0.847,
+  "acerto_na_faixa_automatica": 1.0,
+  "politica": {
+   "nome": "DETRAN-CE",
+   "limiar_aceite": 85.0,
+   "limiar_recusa": 15.0
+  }
+ },
+ "linhas": [
+  {
+   "caso": "C01",
+   "titulo": "Administração 'indistintamente' — um sócio assina",
+   "categoria": "administracao",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "João Batista Andrade pode assinar a ATPV-e — regra geral de representação — Cláusula Sétima.",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C02",
+   "titulo": "Assinatura conjunta exigida — só um assina",
+   "categoria": "administracao",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 7.5,
+   "confianca": 0.85,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Carlos Eduardo Bezerra e Luciana Moura Sampaio. Regra aplicável: alienação de bens (Cláusula Sexta).",
+   "motivos_faixa": [
+    "índice 7.5 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 7.5
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C03",
+   "titulo": "Assinatura conjunta — os dois assinam",
+   "categoria": "administracao",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 91.2,
+   "confianca": 0.823,
+   "segundos": 0.0,
+   "resumo": "Carlos Eduardo Bezerra e Luciana Moura Sampaio podem, em conjunto, assinar a ATPV-e — alienação de bens — Cláusula Sexta.",
+   "motivos_faixa": [
+    "índice 91.2 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 91.2
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C04",
+   "titulo": "Sócia quotista sem poder de administração assina",
+   "categoria": "administracao",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Francisco Wellington Rocha. Regra aplicável: alienação de veículos (Cláusula Sétima).",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C05",
+   "titulo": "Administrador não sócio assina",
+   "categoria": "administracao",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 90.3,
+   "confianca": 0.807,
+   "segundos": 0.0,
+   "resumo": "Gustavo Henrique Teles pode assinar a ATPV-e — alienação de veículos — Cláusula Sétima.",
+   "motivos_faixa": [
+    "índice 90.3 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 90.3
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C06",
+   "titulo": "Sócio majoritário (70%) que não é administrador",
+   "categoria": "administracao",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 7.5,
+   "confianca": 0.85,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Gustavo Henrique Teles. Regra aplicável: alienação de veículos (Cláusula Sétima).",
+   "motivos_faixa": [
+    "índice 7.5 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 7.5
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C07",
+   "titulo": "Contrato omisso sobre a forma de atuação",
+   "categoria": "administracao",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "AMARELO"
+   ],
+   "previsto": "PODE",
+   "faixa": "AMARELO",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Paula Regina Saraiva pode assinar a ATPV-e — regra geral de representação — Cláusula Sétima.",
+   "motivos_faixa": [
+    "alerta: Contrato omisso sobre a forma de atuação"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "AMARELO",
+     "indice": 100.0
+    }
+   },
+   "forcado": true,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C08",
+   "titulo": "Alçada por valor — abaixo do limite",
+   "categoria": "alcada",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Josefa Alencar Lobo pode assinar a ATPV-e — regra geral de representação — Cláusula Sétima.",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C09",
+   "titulo": "Alçada por valor — acima do limite",
+   "categoria": "alcada",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Antônio Cícero Lobo e Josefa Alencar Lobo. Regra aplicável: alienação de veículos (Cláusula Sétima, Parágrafo único).",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C10",
+   "titulo": "Alçada por valor — valor não informado",
+   "categoria": "alcada",
+   "esperado": "INDETERMINADO",
+   "faixas_aceitaveis": [
+    "AMARELO"
+   ],
+   "previsto": "INDETERMINADO",
+   "faixa": "AMARELO",
+   "indice": 50.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Não é possível decidir com segurança: valor do veículo não informado — a regra de alçada não pode ser aplicada.",
+   "motivos_faixa": [
+    "indeterminado: valor do veículo não informado — a regra de alçada não pode ser aplicada",
+    "alerta: Valor do veículo não informado"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "INDETERMINADO",
+     "faixa": "AMARELO",
+     "indice": 50.0
+    }
+   },
+   "forcado": true,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": null,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C11",
+   "titulo": "Ativo não circulante (inclui veículos) sem deliberação",
+   "categoria": "deliberacao",
+   "esperado": "INDETERMINADO",
+   "faixas_aceitaveis": [
+    "AMARELO"
+   ],
+   "previsto": "INDETERMINADO",
+   "faixa": "AMARELO",
+   "indice": 50.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Não é possível decidir com segurança: Aprovação prévia de sócios com mais da metade do capital.",
+   "motivos_faixa": [
+    "indeterminado: Aprovação prévia de sócios com mais da metade do capital",
+    "alerta: Aprovação prévia de sócios com mais da metade do capital — pendente"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "INDETERMINADO",
+     "faixa": "AMARELO",
+     "indice": 50.0
+    }
+   },
+   "forcado": true,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C12",
+   "titulo": "Ativo não circulante com ata aprovando a venda",
+   "categoria": "deliberacao",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Márcia Regina Sá pode assinar a ATPV-e — regra geral de representação — Cláusula Sétima.",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C13",
+   "titulo": "Carro integralizado pelo sócio — o OUTRO sócio vende sozinho",
+   "categoria": "bem_integralizado",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Marcos Antônio Girão. Regra aplicável: cláusula do veículo específico (Cláusula Oitava, Parágrafo único).",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C14",
+   "titulo": "Carro integralizado pelo sócio — ele mesmo vende",
+   "categoria": "bem_integralizado",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Marcos Antônio Girão pode assinar a ATPV-e — cláusula do veículo específico — Cláusula Oitava, Parágrafo único; cláusula do veículo específico — Cláusula Quinta, Parágrafo primeiro.",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C15",
+   "titulo": "Carro integralizado, mas o CRLV ainda está no CPF do sócio",
+   "categoria": "bem_integralizado",
+   "esperado": "INDETERMINADO",
+   "faixas_aceitaveis": [
+    "AMARELO"
+   ],
+   "previsto": "INDETERMINADO",
+   "faixa": "AMARELO",
+   "indice": 50.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Não é possível decidir com segurança: há pendência de titularidade no CRLV.",
+   "motivos_faixa": [
+    "indeterminado: pendência",
+    "alerta: CRLV ainda no CPF do sócio"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "INDETERMINADO",
+     "faixa": "AMARELO",
+     "indice": 50.0
+    }
+   },
+   "forcado": true,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C16",
+   "titulo": "Procuração pública válida com poderes especiais",
+   "categoria": "procuracao",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 90.6,
+   "confianca": 0.811,
+   "segundos": 0.0,
+   "resumo": "Pedro Henrique Lima pode assinar a ATPV-e — procuração pública de 10/02/2026 (Tabelionato Jangadeiro de Notas e Registros – Caucaia/CE).",
+   "motivos_faixa": [
+    "índice 90.6 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 90.6
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C17",
+   "titulo": "Procuração só com poderes gerais de administração",
+   "categoria": "procuracao",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 1.0,
+   "confianca": 0.981,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Francisco Wellington Rocha. O caminho por procuração pública de 05/03/2026 (tabelionato jangadeiro de notas e registros – caucaia/ce (fictício)) não vale: sem poder expresso para vender.",
+   "motivos_faixa": [
+    "índice 1 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 1.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C18",
+   "titulo": "Procuração vencida",
+   "categoria": "procuracao",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 7.5,
+   "confianca": 0.85,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Carlos Eduardo Bezerra e Luciana Moura Sampaio. O caminho por procuração pública de 20/01/2025 (cartório iracema – 4º tabelionato de notas de fortaleza (fictício)) não vale: procuração vencida.",
+   "motivos_faixa": [
+    "índice 7.5 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 7.5
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C19",
+   "titulo": "Procuração revogada",
+   "categoria": "procuracao",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Josefa Alencar Lobo ou Antônio Cícero Lobo. O caminho por procuração pública de 03/11/2025 (cartório padre ibiapina – 2º ofício de notas de juazeiro do norte/ce (fictício)) não vale: procuração revogada.",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C20",
+   "titulo": "Procuração outorgada por quem não tinha poder sozinho",
+   "categoria": "procuracao",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO",
+    "AMARELO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 6.6,
+   "confianca": 0.867,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Carlos Eduardo Bezerra e Luciana Moura Sampaio. O caminho por procuração pública de 02/04/2026 (cartório iracema – 4º tabelionato de notas de fortaleza (fictício)) não vale: quem outorgou não tinha poder sozinho.",
+   "motivos_faixa": [
+    "índice 6.6 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 6.6
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C21",
+   "titulo": "Procuração do sócio em nome próprio (PF), não da empresa",
+   "categoria": "procuracao",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO",
+    "AMARELO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: João Batista Andrade ou Maria Clara Fontenele. O caminho por procuração particular de 14/05/2026 (cartório iracema – 4º tabelionato de notas de fortaleza (fictício)) não vale: procuração da pessoa física, não da empresa, procuração particular com firma reconhecida.",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C22",
+   "titulo": "Procuração para OUTRO veículo específico",
+   "categoria": "procuracao",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Rafael Nogueira Brito. O caminho por procuração pública de 01/07/2026 (cartório iracema – 4º tabelionato de notas de fortaleza (fictício)) não vale: procuração é para outro veículo.",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C23",
+   "titulo": "Substabelecimento com reserva, permitido",
+   "categoria": "substabelecimento",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 90.2,
+   "confianca": 0.803,
+   "segundos": 0.0,
+   "resumo": "Ana Paula Bastos pode assinar a ATPV-e — substabelecimento com reserva de 03/08/2026.",
+   "motivos_faixa": [
+    "índice 90.2 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 90.2
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C24",
+   "titulo": "Substabelecimento vedado na procuração",
+   "categoria": "substabelecimento",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 3.4,
+   "confianca": 0.931,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Rafael Nogueira Brito ou Igor Lacerda Bastos (procurador). O caminho por substabelecimento com reserva de 20/08/2026 não vale: substabelecimento proibido.",
+   "motivos_faixa": [
+    "índice 3.4 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 3.4
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C25",
+   "titulo": "Substabelecimento sem reserva — o procurador original assina",
+   "categoria": "substabelecimento",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Josefa Alencar Lobo ou Antônio Cícero Lobo ou Ana Paula Bastos (procurador). O caminho por procuração pública de 15/01/2026 (cartório padre ibiapina – 2º ofício de notas de juazeiro do norte/ce) não vale: substabeleceu sem reserva.",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C26",
+   "titulo": "Procuração particular sem firma reconhecida",
+   "categoria": "forma",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Rafael Nogueira Brito. O caminho por procuração particular de 01/08/2026 não vale: procuração particular sem firma reconhecida.",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C27",
+   "titulo": "Procuradores que devem agir em conjunto — só um assina",
+   "categoria": "procuracao",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 7.5,
+   "confianca": 0.85,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Gustavo Henrique Teles ou Bruna Teixeira Melo e Sérgio Paiva Gomes (procurador). Regra aplicável: alienação de veículos (Cláusula Sétima).",
+   "motivos_faixa": [
+    "índice 7.5 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 7.5
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C28",
+   "titulo": "Administrador que outorgou saiu da administração depois",
+   "categoria": "procuracao",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE",
+    "AMARELO"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 97.0,
+   "confianca": 0.94,
+   "segundos": 0.1,
+   "resumo": "Davi Brito Alencar pode assinar a ATPV-e — procuração pública de 10/12/2025 (Tabelionato Araripe – 1º Ofício de Notas do Crato/CE (fictício)).",
+   "motivos_faixa": [
+    "índice 97 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 97.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C29",
+   "titulo": "Alteração contratual mudou de isolada para conjunta",
+   "categoria": "temporal",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Hélio Bandeira Forte e Regina Célia Forte. Regra aplicável: alienação de veículos (Cláusula Oitava (redação dada pela Cláusula Primeira da Primeira Alteração)).",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C30",
+   "titulo": "Administrador com mandato por prazo determinado vencido",
+   "categoria": "temporal",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO",
+    "AMARELO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "AMARELO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: ninguém. Regra aplicável: regra geral de representação (Cláusula Sétima).",
+   "motivos_faixa": [
+    "alerta: Administrador sem mandato em vigor",
+    "alerta: Ninguém com poder de administração em vigor"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "AMARELO",
+     "indice": 0.0
+    }
+   },
+   "forcado": true,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C31",
+   "titulo": "Sociedade limitada unipessoal — sócio único assina",
+   "categoria": "estrutura",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Rafael Nogueira Brito pode assinar a ATPV-e — regra geral de representação — Cláusula Sétima.",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C32",
+   "titulo": "S.A. — um diretor sozinho",
+   "categoria": "estrutura",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Helena Castro Lins e Marcelo Augusto Feitosa ou Helena Castro Lins e Tiago Rolim Vasconcelos ou Marcelo Augusto Feitosa e Tiago Rolim Vasconcelos. Regra aplicável: regra geral de representação (Art. 18).",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C33",
+   "titulo": "S.A. — diretor + procurador com procuração válida",
+   "categoria": "estrutura",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 96.9,
+   "confianca": 0.939,
+   "segundos": 0.1,
+   "resumo": "Sérgio Paiva Gomes e Tiago Rolim Vasconcelos podem, em conjunto, assinar a ATPV-e — procuração pública de 18/02/2026 (Tabelionato Jaguaribe – Ofício Único de Notas de Aracati/CE).",
+   "motivos_faixa": [
+    "índice 96.9 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 96.9
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C34",
+   "titulo": "Empresário individual",
+   "categoria": "estrutura",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Josué Pereira da Silva pode assinar a ATPV-e — regra supletiva (contrato não define a forma de assinar).",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C35",
+   "titulo": "Revendedora: restrição a ativo imobilizado x estoque",
+   "categoria": "deliberacao",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "AMARELO",
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "AMARELO",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Eduardo Martins Leal pode assinar a ATPV-e — regra geral de representação — Cláusula Sétima.",
+   "motivos_faixa": [
+    "alerta: Confirmar se o veículo é estoque (mercadoria) ou ativo imobilizado"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "AMARELO",
+     "indice": 100.0
+    }
+   },
+   "forcado": true,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C36",
+   "titulo": "Procuração válida — documentos ESCANEADOS (OCR)",
+   "categoria": "ocr",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE",
+    "AMARELO"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 96.4,
+   "confianca": 0.928,
+   "segundos": 13.5,
+   "resumo": "Pedro Henrique Lima pode assinar a ATPV-e — procuração pública de 10/02/2026 (Tabelionato Jangadeiro de Notas e Registros - Caucaia/CE (fictício)).",
+   "motivos_faixa": [
+    "índice 96.4 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 96.4
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C37",
+   "titulo": "Procuração antiga sem prazo (3 anos)",
+   "categoria": "forma",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 6.6,
+   "confianca": 0.867,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Gustavo Henrique Teles. O caminho por procuração pública de 15/03/2023 (cartório pitaguary – 1º ofício de notas de maracanaú/ce (fictício) – genésio mota arruda – tabelião) não vale: procuração com mais de 1 ano.",
+   "motivos_faixa": [
+    "índice 6.6 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 6.6
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C38",
+   "titulo": "Todos os sócios assinam (com exigência de deliberação)",
+   "categoria": "deliberacao",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE",
+    "AMARELO"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Márcia Regina Sá pode assinar a ATPV-e — regra geral de representação — Cláusula Sétima.",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "H01",
+   "titulo": "‘De per si’ — um administrador assina",
+   "categoria": "administracao",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Otávio Bastos Neto pode assinar a ATPV-e — regra geral de representação — Cláusula 7ª.",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "H02",
+   "titulo": "Quaisquer dois dos três administradores — um assina",
+   "categoria": "administracao",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Caio Ferreira Paz e Renata Albuquerque Paz ou Lucas Ferreira Paz e Renata Albuquerque Paz ou Caio Ferreira Paz e Lucas Ferreira Paz. Regra aplicável: regra geral de representação (Cláusula Sexta).",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "H03",
+   "titulo": "Veículos da frota exigem os dois (sem valor) — um assina",
+   "categoria": "alcada",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Ivan Cordeiro Mota e Solange Prado Mota. Regra aplicável: alienação de veículos (Cláusula Sexta, Parágrafo primeiro).",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "H04",
+   "titulo": "Procuração ‘pelo período de doze meses’ vencida",
+   "categoria": "procuracao",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Ivan Cordeiro Mota e Solange Prado Mota. O caminho por procuração pública de 20/08/2025 (cartório iracema – 4º tabelionato de notas de fortaleza) não vale: procuração vencida.",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "H05",
+   "titulo": "‘Sem direito de substabelecer’ e houve substabelecimento",
+   "categoria": "substabelecimento",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Hugo Leitão Damasceno ou Priscila Damasceno Rios (procurador). O caminho por substabelecimento com reserva de 25/08/2026 não vale: substabelecimento proibido.",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "H06",
+   "titulo": "Procuração conjunta, veículo identificado, no prazo",
+   "categoria": "procuracao",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Nilton Arruda Coelho pode assinar a ATPV-e — procuração pública de 15/06/2026 (Cartório Iracema – 4º Tabelionato de Notas de Fortaleza).",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "H07",
+   "titulo": "Antiga administradora assina depois da troca",
+   "categoria": "temporal",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Jonas Holanda Freire. Regra aplicável: regra geral de representação (Cláusula Segunda (nova redação da Cláusula 6 – Da Administração)).",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "H08",
+   "titulo": "Restrição a imóveis e participações; veículo de R$ 320 mil",
+   "categoria": "administracao",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Hugo Leitão Damasceno pode assinar a ATPV-e — regra geral de representação — III – Da Administração, item 1.",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "I01",
+   "titulo": "S.A. com Diretoria de mandato vencido, prorrogado por lei, e nova Diretoria eleita depois da venda",
+   "categoria": "sociedade_anonima / mandato_vencido / forma_de_representacao",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE",
+    "AMARELO"
+   ],
+   "previsto": "PODE",
+   "faixa": "AMARELO",
+   "indice": 86.2,
+   "confianca": 0.723,
+   "segundos": 0.1,
+   "resumo": "Lúcia Helena Brígido Sampaio e Rogério Alencar Feitosa podem, em conjunto, assinar a ATPV-e — regra geral de representação — Art. 18.",
+   "motivos_faixa": [
+    "1 fato(s) decisivo(s) com citação pouco ancorada no texto"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "AMARELO",
+     "indice": 86.2
+    }
+   },
+   "forcado": true,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "I02",
+   "titulo": "Dois administradores assinam juntos, mas da mesma classe: a cláusula exige um Administrador A e um Administrador B",
+   "categoria": "forma_de_atuacao_incomum / leitura_semantica / alteracao_no_tempo",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "PODE",
+   "faixa": "AMARELO",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.1,
+   "resumo": "Raimundo Nonato Castro Filho pode assinar a ATPV-e — regra geral de representação — Cláusula Terceira – Nova redação do caput da Cláusula Oitava.",
+   "motivos_faixa": [
+    "alerta: Assinatura exige combinação entre classes/grupos",
+    "alerta: Contrato omisso sobre a forma de atuação"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "AMARELO",
+     "indice": 100.0
+    }
+   },
+   "forcado": true,
+   "veredito_ok": false,
+   "faixa_ok": false,
+   "conjuntos_ok": false,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "I03",
+   "titulo": "Procuração de venda revogada por nova procuração que só autoriza assinar a ATPV-e 'na qualidade de adquirente'",
+   "categoria": "procuracao_poderes / revogacao_expressa / leitura_semantica",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.1,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Hélio Benevides Maia. O caminho por procuração pública de 14/10/2025 (cartório nogueira – 1º ofício de notas de limoeiro do norte) não vale: procuração revogada.",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "I04",
+   "titulo": "Cadeia de substabelecimentos: o primeiro 'sem reserva' e o último por instrumento particular",
+   "categoria": "substabelecimento_em_cadeia / forma_da_procuracao / leitura_semantica",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO",
+    "AMARELO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "AMARELO",
+   "indice": 9.0,
+   "confianca": 0.821,
+   "segundos": 0.1,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Jefferson Araújo Veras ou Kátia Regina Veras Aguiar ou Rafaela Cunha Fontenele (procurador). O caminho por substabelecimento com reserva de 20/07/2026 não vale: quem substabeleceu não é o procurador.",
+   "motivos_faixa": [
+    "1 fato(s) decisivo(s) com citação pouco ancorada no texto"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "AMARELO",
+     "indice": 9.0
+    }
+   },
+   "forcado": true,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "I05",
+   "titulo": "Procuração pública sem prazo, com mais de 1 ano, outorgada por administrador que depois saiu da sociedade",
+   "categoria": "procuracao_prazo / outorgante_que_saiu / politica_detran_ce",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO",
+    "AMARELO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 6.6,
+   "confianca": 0.867,
+   "segundos": 0.1,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Sueli Aragão Linhares. O caminho por procuração pública de 23/06/2025 (tabelionato ponte ferreira – 2º ofício de notas de sobral) não vale: procuração com mais de 1 ano.",
+   "motivos_faixa": [
+    "índice 6.6 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 6.6
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "I06",
+   "titulo": "Ata 'aprovada por unanimidade dos presentes' e pela 'maioria dos sócios', mas com só 55% do capital quando o contrato exige 2/3",
+   "categoria": "aprovacao_de_socios / quorum / leitura_semantica",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: ninguém. O caminho por regra geral de representação — cláusula sétima não vale: aprovação prévia de sócios com 66.67% do capital — não atendida.",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "I07",
+   "titulo": "Procuração outorgada por sócio cujo poder de administração depende de alterações contratuais não apresentadas",
+   "categoria": "procuracao_quem_outorgou / documento_ausente",
+   "esperado": "INDETERMINADO",
+   "faixas_aceitaveis": [
+    "AMARELO"
+   ],
+   "previsto": "INDETERMINADO",
+   "faixa": "AMARELO",
+   "indice": 50.0,
+   "confianca": 0.786,
+   "segundos": 0.1,
+   "resumo": "Não é possível decidir com segurança: o poder de quem outorgou a procuração depende de documento não apresentado.",
+   "motivos_faixa": [
+    "indeterminado: o poder de quem outorgou a procuração depende de documento não apresentado",
+    "alerta: Poder de quem outorgou depende de documento ausente",
+    "alerta: Outorga em desacordo com o estatuto/contrato (pelos atos apresentados)",
+    "1 fato(s) decisivo(s) com citação pouco ancorada no texto"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "INDETERMINADO",
+     "faixa": "AMARELO",
+     "indice": 50.0
+    }
+   },
+   "forcado": true,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": null,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "I08",
+   "titulo": "Sócio único de SLU assina a venda, mas só foi nomeado administrador uma semana depois; a administradora era não sócia",
+   "categoria": "sociedade_limitada_unipessoal / administrador_nomeado_depois_da_venda / procuracao_prazo",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 7.5,
+   "confianca": 0.85,
+   "segundos": 0.1,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Renata Siqueira Bandeira. Regra aplicável: alienação de veículos (Cláusula Sétima).",
+   "motivos_faixa": [
+    "índice 7.5 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 7.5
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "I09",
+   "titulo": "Alçada de valor para assinatura conjunta, alterada no tempo, e venda sem valor informado",
+   "categoria": "alcada / alteracao_no_tempo / dado_faltante",
+   "esperado": "INDETERMINADO",
+   "faixas_aceitaveis": [
+    "AMARELO"
+   ],
+   "previsto": "INDETERMINADO",
+   "faixa": "AMARELO",
+   "indice": 50.0,
+   "confianca": 0.94,
+   "segundos": 0.0,
+   "resumo": "Não é possível decidir com segurança: valor do veículo não informado — a regra de alçada não pode ser aplicada.",
+   "motivos_faixa": [
+    "indeterminado: valor do veículo não informado — a regra de alçada não pode ser aplicada",
+    "alerta: Valor do veículo não informado",
+    "alerta: Contrato omisso sobre a forma de atuação"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "INDETERMINADO",
+     "faixa": "AMARELO",
+     "indice": 50.0
+    }
+   },
+   "forcado": true,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": null,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "I10",
+   "titulo": "Ex-EIRELI com nome alterado: CRLV no nome antigo e mesmo CNPJ, restrição só para imóveis e revogação genérica de procuração anterior",
+   "categoria": "eireli_transformada / crlv_nome_diferente / restricao_que_nao_alcanca_veiculo / revogacao_generica",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 97.6,
+   "confianca": 0.952,
+   "segundos": 0.1,
+   "resumo": "Juliana Gurgel Frota pode assinar a ATPV-e — alienação de bens móveis — Cláusula Sexta.",
+   "motivos_faixa": [
+    "índice 97.6 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 97.6
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "A01",
+   "titulo": "Comprador PJ: administrador assina compra abaixo da alçada",
+   "categoria": "comprador",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 12.3,
+   "resumo": "Gilberto Araújo Nunes pode assinar a ATPV-e como comprador(a) — regra geral de representação — Cláusula Sétima.",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "comprador": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "comprador": true
+   }
+  },
+  {
+   "caso": "A02",
+   "titulo": "Comprador PJ: compra acima da alçada com um só administrador",
+   "categoria": "comprador",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Gilberto Araújo Nunes e Simone Batista Nunes. Regra aplicável: aquisição de veículos (Cláusula Sétima, § 1º).",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "comprador": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "comprador": true
+   }
+  },
+  {
+   "caso": "A03",
+   "titulo": "Restrição de compra não alcança a venda",
+   "categoria": "comprador",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Simone Batista Nunes pode assinar a ATPV-e — alienação de bens — Cláusula Sétima.",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "A04",
+   "titulo": "Comprador PJ por procurador com poder de compra",
+   "categoria": "comprador",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 91.2,
+   "confianca": 0.825,
+   "segundos": 0.0,
+   "resumo": "Elias Rodrigues Maia pode assinar a ATPV-e como comprador(a) — procuração pública de 20/07/2026 (Tabelionato Jangadeiro de Notas e Registros – Caucaia/CE (fictício)).",
+   "motivos_faixa": [
+    "índice 91.2 ≥ limiar 85"
+   ],
+   "lados": {
+    "comprador": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 91.2
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "comprador": true
+   }
+  },
+  {
+   "caso": "A05",
+   "titulo": "Procuração só de venda usada para comprar",
+   "categoria": "comprador",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 6.9,
+   "confianca": 0.863,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Francisco Wellington Rocha. O caminho por procuração pública de 10/02/2026 (tabelionato jangadeiro de notas e registros – caucaia/ce) não vale: procuração é para vender, não para comprar.",
+   "motivos_faixa": [
+    "índice 6.9 ≤ limiar 15"
+   ],
+   "lados": {
+    "comprador": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 6.9
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "comprador": true
+   }
+  },
+  {
+   "caso": "A06",
+   "titulo": "PJ dos dois lados: ambos com poder",
+   "categoria": "dois_lados",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.1,
+   "resumo": "Vendedor: João Batista Andrade pode assinar a ATPV-e — regra geral de representação — Cláusula Sétima. · Comprador: Simone Batista Nunes pode assinar a ATPV-e como comprador(a) — regra geral de representação — Cláusula Sétima.",
+   "motivos_faixa": [
+    "Vendedor — índice 100 ≥ limiar 85",
+    "Comprador — índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    },
+    "comprador": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true,
+    "comprador": true
+   }
+  },
+  {
+   "caso": "A07",
+   "titulo": "PJ dos dois lados, assinaturas lidas da ATPV-e: comprador sem poder",
+   "categoria": "dois_lados",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 0.823,
+   "segundos": 0.1,
+   "resumo": "Vendedor: Carlos Eduardo Bezerra e Luciana Moura Sampaio podem, em conjunto, assinar a ATPV-e — alienação de bens — Cláusula Sexta. · Comprador: Os assinantes informados não bastam. Quem pode assinar: Francisco Wellington Rocha. Regra aplicável: compra e venda de veículos (Cláusula Sétima).",
+   "motivos_faixa": [
+    "Vendedor — índice 91.2 ≥ limiar 85",
+    "Comprador — índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 91.2
+    },
+    "comprador": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true,
+    "comprador": true
+   }
+  },
+  {
+   "caso": "A08",
+   "titulo": "Cooperativa: Diretor-Presidente e Diretor Financeiro assinam",
+   "categoria": "tipos",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 90.8,
+   "confianca": 0.815,
+   "segundos": 0.1,
+   "resumo": "Expedito Lima Cordeiro e Manoel Messias Freitas podem, em conjunto, assinar a ATPV-e — alienação de bens — Art. 22, Parágrafo único.",
+   "motivos_faixa": [
+    "índice 90.8 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 90.8
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "A09",
+   "titulo": "Cooperativa: Diretor-Presidente sozinho",
+   "categoria": "tipos",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 10.0,
+   "confianca": 0.8,
+   "segundos": 0.1,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Expedito Lima Cordeiro e Manoel Messias Freitas. Regra aplicável: alienação de bens (Art. 22, Parágrafo único).",
+   "motivos_faixa": [
+    "índice 10 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 10.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "A10",
+   "titulo": "Associação compradora: Presidente eleita assina",
+   "categoria": "tipos",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 90.0,
+   "confianca": 0.799,
+   "segundos": 0.0,
+   "resumo": "Maria do Socorro Viana pode assinar a ATPV-e como comprador(a) — regra geral de representação — Art. 20.",
+   "motivos_faixa": [
+    "índice 90 ≥ limiar 85"
+   ],
+   "lados": {
+    "comprador": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 90.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "comprador": true
+   }
+  },
+  {
+   "caso": "A11",
+   "titulo": "MEI vende: o titular assina",
+   "categoria": "tipos",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Rogério Fernandes Lima pode assinar a ATPV-e — regra supletiva (contrato não define a forma de assinar).",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "A12",
+   "titulo": "MEI compra: a esposa do titular assina",
+   "categoria": "tipos",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 10.0,
+   "confianca": 0.8,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Rogério Fernandes Lima.",
+   "motivos_faixa": [
+    "índice 10 ≤ limiar 15"
+   ],
+   "lados": {
+    "comprador": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 10.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "comprador": true
+   }
+  },
+  {
+   "caso": "A13",
+   "titulo": "EIRELI (hoje SLU) vende: o titular assina",
+   "categoria": "tipos",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Wellington Oliveira Sá pode assinar a ATPV-e — regra geral de representação — Cláusula Sétima.",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "A14",
+   "titulo": "Sociedade simples: um sócio assina sozinho",
+   "categoria": "tipos",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Larissa Gomes Pinho e Thiago Pinho Arruda. Regra aplicável: regra geral de representação (Cláusula Sétima).",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P01",
+   "titulo": "Pessoa física: o próprio dono vai assinar",
+   "categoria": "pf",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Raimunda Nonata Siqueira é o próprio proprietário (pessoa física): assina em nome próprio.",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P02",
+   "titulo": "Procurador com procuração pública e específica",
+   "categoria": "pf",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Josué Lima Ferreira pode assinar a ATPV-e como procurador(a) de Raimunda Nonata Siqueira — procuração pública de 12/08/2026 (Cartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)).",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P03",
+   "titulo": "CPF diferente do dono, sem procuração",
+   "categoria": "pf",
+   "esperado": "INDETERMINADO",
+   "faixas_aceitaveis": [
+    "AMARELO"
+   ],
+   "previsto": "INDETERMINADO",
+   "faixa": "AMARELO",
+   "indice": 50.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "O CPF informado não é o do proprietário (Raimunda Nonata Siqueira). Se quem vai assinar é procurador, anexe a procuração dele para conferir se ela dá poder para este ato.",
+   "motivos_faixa": [
+    "indeterminado: falta a procuração de quem vai assinar",
+    "alerta: Precisa de procuração"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "INDETERMINADO",
+     "faixa": "AMARELO",
+     "indice": 50.0
+    }
+   },
+   "forcado": true,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P04",
+   "titulo": "Procuração só com poderes gerais (DETRAN, IPVA, multas)",
+   "categoria": "pf",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Francisco Erivan Cavalcante. O caminho por procuração pública de 15/04/2026 (cartório iracema – 4º tabelionato de notas de fortaleza (fictício)) não vale: sem poder expresso para vender.",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P05",
+   "titulo": "Procuração de 6 meses, vencida",
+   "categoria": "pf",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Raimunda Nonata Siqueira. O caminho por procuração pública de 01/10/2025 (cartório iracema – 4º tabelionato de notas de fortaleza (fictício)) não vale: procuração vencida.",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P06",
+   "titulo": "Procuração específica de outro veículo",
+   "categoria": "pf",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 9.0,
+   "confianca": 0.821,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Francisco Erivan Cavalcante. O caminho por procuração pública de 20/07/2026 (cartório iracema – 4º tabelionato de notas de fortaleza (fictício)) não vale: procuração é para outro veículo.",
+   "motivos_faixa": [
+    "índice 9 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 9.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P07",
+   "titulo": "Compradora pessoa física representada por procuradora",
+   "categoria": "pf",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 92.5,
+   "confianca": 0.85,
+   "segundos": 0.0,
+   "resumo": "Patrícia Moura Leal pode assinar a ATPV-e como procurador(a) de Antônia Valéria Barros — procuração pública de 10/09/2026 (Cartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)).",
+   "motivos_faixa": [
+    "índice 92.5 ≥ limiar 85"
+   ],
+   "lados": {
+    "comprador": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 92.5
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "comprador": true
+   }
+  },
+  {
+   "caso": "P08",
+   "titulo": "Procuração revogada",
+   "categoria": "pf",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Gilmar Sousa Pontes. O caminho por procuração pública de 20/01/2026 (cartório iracema – 4º tabelionato de notas de fortaleza (fictício)) não vale: procuração revogada.",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P09",
+   "titulo": "Substabelecida pelo procurador, com reserva",
+   "categoria": "pf",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 96.5,
+   "confianca": 0.929,
+   "segundos": 0.0,
+   "resumo": "Patrícia Moura Leal pode assinar a ATPV-e como procurador(a) de Raimunda Nonata Siqueira — substabelecimento com reserva de 30/09/2026.",
+   "motivos_faixa": [
+    "índice 96.5 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 96.5
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P10",
+   "titulo": "Procuração particular com firma reconhecida",
+   "categoria": "pf",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Francisco Erivan Cavalcante. O caminho por procuração particular de 05/09/2026 (cartório iracema – 4º tabelionato de notas de fortaleza (fictício)) não vale: procuração particular com firma reconhecida.",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P11",
+   "titulo": "Procuração dada pela esposa, não pelo dono registral",
+   "categoria": "pf",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 4.7,
+   "confianca": 0.906,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Francisco Erivan Cavalcante. O caminho por procuração pública de 28/08/2026 (cartório iracema – 4º tabelionato de notas de fortaleza (fictício)) não vale: procuração de quem não é o proprietário do veículo.",
+   "motivos_faixa": [
+    "índice 4.7 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 4.7
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P12",
+   "titulo": "Dona é empresa: CPF do administrador",
+   "categoria": "pj",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Francisco Wellington Rocha pode assinar a ATPV-e — alienação de veículos — Cláusula Sétima.",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P13",
+   "titulo": "Dona é empresa: CPF de sócia sem poder, sem procuração",
+   "categoria": "pj",
+   "esperado": "INDETERMINADO",
+   "faixas_aceitaveis": [
+    "AMARELO"
+   ],
+   "previsto": "INDETERMINADO",
+   "faixa": "AMARELO",
+   "indice": 50.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Pelos atos apresentados, Ana Beatriz Holanda não tem poder para vender pela empresa (quem pode: Francisco Wellington Rocha). Se for procurador, anexe a procuração para conferir.",
+   "motivos_faixa": [
+    "indeterminado: falta a procuração de quem vai assinar",
+    "alerta: Precisa de procuração"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "INDETERMINADO",
+     "faixa": "AMARELO",
+     "indice": 50.0
+    }
+   },
+   "forcado": true,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P14",
+   "titulo": "Dona é empresa: CPF de procurador da empresa",
+   "categoria": "pj",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 90.6,
+   "confianca": 0.811,
+   "segundos": 0.0,
+   "resumo": "Pedro Henrique Lima pode assinar a ATPV-e — procuração pública de 10/02/2026 (Tabelionato Jangadeiro de Notas e Registros – Caucaia/CE).",
+   "motivos_faixa": [
+    "índice 90.6 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 90.6
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P15",
+   "titulo": "Comprador é empresa: CPF do administrador, abaixo da alçada",
+   "categoria": "pj",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Gilberto Araújo Nunes pode assinar a ATPV-e como comprador(a) — regra geral de representação — Cláusula Sétima.",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "comprador": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "comprador": true
+   }
+  }
+ ]
+}

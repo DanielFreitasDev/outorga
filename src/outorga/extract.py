@@ -225,8 +225,11 @@ POR_TIPO = {
 
 def _chamar(provedor: Provedor, doc_texto: str, tarefa: str, instrucao: str, schema: dict, i: int, temp: float,
             usar_cache: bool) -> tuple[dict, dict]:
-    """Chamada ao LLM com cache em disco (chave = provedor, modelo, prompts, schema, texto, amostra)."""
-    chave = hashlib.sha256(json.dumps([provedor.nome, provedor.modelo, pr.SISTEMA, instrucao, schema, doc_texto, i, temp],
+    """Chamada ao LLM com cache em disco (chave = provedor, modelo, variante, prompts, schema, texto, amostra).
+
+    A variante (ex.: o esforço do Claude) só entra na chave quando existe, para não invalidar o cache dos outros provedores."""
+    ident = [provedor.nome, provedor.modelo] + ([v] if (v := getattr(provedor, "variante", None)) else [])
+    chave = hashlib.sha256(json.dumps([*ident, pr.SISTEMA, instrucao, schema, doc_texto, i, temp],
                                       sort_keys=True, ensure_ascii=False).encode()).hexdigest()
     arq = CACHE_DIR / f"{chave[:2]}" / f"{chave}.json"
     if usar_cache and arq.exists():

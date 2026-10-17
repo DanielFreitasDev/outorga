@@ -29,7 +29,9 @@ Base normativa e prática administrativa pesquisadas em 16–17/10/2026: `docs/P
 | Especialidade: cláusula do veículo específico > veículos > bens móveis/ativo > regra geral | interpretação contratual | C13, C14 |
 | Restrição só sobre **imóveis** não alcança veículo (bem móvel) | CC, arts. 82 e 1.015 | C01 |
 | Alçada por valor: só vale se o valor do veículo cruzar o limite; sem valor → indeterminado | contrato | C08–C10 |
+| Em cláusula com incisos, o limite de valor só vale para o inciso em que está escrito (ou para todos, se estiver no cabeçalho): o "acima de R$ 300 mil" do inciso de empréstimos não vale para a venda de veículos | interpretação contratual | I06, teste de regressão |
 | Exigência de aprovação de sócios (quórum) → precondição; ata com quórum suficiente satisfaz; todos os sócios assinando também | CC, arts. 1.071–1.076 | C11, C12, C38 |
+| **Sentinela de leitura:** o texto tem cláusula de aprovação prévia (sócios, conselho, quórum) que alcança veículos ou bens, mas a leitura da IA não trouxe nenhuma regra de aprovação aplicável → **revisão**, com o trecho da cláusula (uma omissão da IA nunca vira aceite automático) | CC, arts. 1.010 e 1.015 | teste de regressão |
 | Revendedora: restrição a "ativo imobilizado" pode não alcançar o estoque → revisão | CC, art. 1.015 | C35 |
 | S.A.: representação pelos diretores na forma do estatuto (combinações) | LSA, arts. 138 e 144 | C32, C33 |
 | S.A. sem regra estatutária sobre alienação do ativo → autorização do Conselho | LSA, art. 142, VIII | — |

@@ -178,3 +178,71 @@ def test_classes_lexico():
     assert lx.menciona_classes("em conjunto por um Administrador A e um Administrador B")
     assert not lx.menciona_classes("ao administrador a quem compete representar a sociedade")
     assert lx.alteracoes_citadas("nos termos da Terceira Alteração Contratual") == {3}
+
+
+# ---------------------------------------------------------------- lições da comparação de modelos Claude (17/10/2026)
+_NONA = ("Dependerão de prévia aprovação de sócios titulares de quotas representativas de, no mínimo, 2/3 (dois terços) do "
+         "capital social: I – a alienação de veículos e quaisquer outros bens integrantes do ativo imobilizado; II – a "
+         "prestação de garantias; III – a contratação de empréstimos ou financiamentos de valor superior a R$ 300.000,00 "
+         "(trezentos mil reais).")
+
+
+@pytest.mark.parametrize("texto, valor", [
+    (_NONA, None),  # o limite é do inciso de empréstimos, não da venda
+    ("A alienação de veículos de valor superior a R$ 150.000,00 dependerá da assinatura conjunta.", 150000.0),
+    ("Exigirão a assinatura conjunta os atos de valor superior a R$ 100.000,00: I – a alienação de veículos; "
+     "II – a contratação de empréstimos.", 100000.0),  # limite no cabeçalho vale para os incisos
+    ("Compete aos administradores, isoladamente, vender bens móveis.", None),
+])
+def test_limite_de_valor_e_do_proprio_inciso(texto, valor):
+    assert lx.valor_limite_do_ato(texto) == valor
+
+
+def test_limite_de_outro_inciso_nao_afasta_a_aprovacao():
+    """O Haiku 5.5 citou a cláusula inteira (incisos I a IV) numa regra de venda; o motor pegava o 'superior a R$ 300 mil'
+    do inciso de empréstimos e achava que a aprovação não valia para um veículo mais barato: aceite automático indevido."""
+    leituras = leituras_gold("C01")
+    l = next(x for x in leituras if x.doc.id == "SERTAO_CS")
+    l.regras = copy.deepcopy(l.regras)
+    l.regras.regras.append(sc.Regra(
+        evidencia=_NONA, clausula="Cláusula Nona", expressao_modo=None, escopo="alienacao_veiculos", veiculo=None,
+        efeito="restringe", modo="nao_especificado", pessoas=[], cargo="socios", quantidade_minima=None, combinacoes=[],
+        valor_acima_de=None, valor_ate=None, exige_aprovacao_socios=True, quorum_percentual=66.67, exige_anuencia_de=[]))
+    res = analisar_leituras(leituras, _pedido("C01"), Politica())
+    assert res["veredito"] != "PODE" and res["faixa"] != "VERDE"
+    assert "DELIBERACAO_SOCIOS" in {p["codigo"] for p in res["precondicoes"]}
+
+
+@pytest.mark.parametrize("texto, atos", [
+    (_NONA, {"alienar"}),
+    ("A alienação de bens integrantes do ativo imobilizado da sociedade dependerá de aprovação de sócios que representem, "
+     "no mínimo, três quartos do capital social.", {"alienar"}),
+    ("A alienação ou a oneração de bens imóveis da sociedade dependerá da anuência expressa da sócia.", None),
+    ("A cessão de quotas a terceiros dependerá da aprovação dos demais sócios.", None),
+])
+def test_clausula_de_aprovacao_no_texto(texto, atos):
+    achados = lx.clausulas_de_aprovacao(texto)
+    assert (set(achados[0][1]) if achados else None) == atos
+
+
+def test_sentinela_restricao_nao_lida():
+    """Se a leitura omite a cláusula de aprovação prévia que alcança veículos, o caso vai para revisão (nunca VERDE)."""
+    pedido = _pedido("C11")
+    res = analisar_leituras(leituras_gold("C11"), pedido, Politica())
+    assert "RESTRICAO_NAO_LIDA" not in {a["codigo"] for a in res["achados"]}  # leitura completa: sem alarme
+    leituras = leituras_gold("C11")
+    l = next(x for x in leituras if x.doc.id == "CAMOCIM_CS")
+    l.regras = copy.deepcopy(l.regras)
+    l.regras.regras = [r for r in l.regras.regras if not r.exige_aprovacao_socios]  # a IA "esqueceu" a cláusula
+    res = analisar_leituras(leituras, pedido, Politica())
+    assert "RESTRICAO_NAO_LIDA" in {a["codigo"] for a in res["achados"]}
+    assert res["faixa"] != "VERDE"
+
+
+@pytest.mark.parametrize("nome, vazio", [
+    ("null", True), ("N/A", True), ("administradores", True), ("Os sócios", True), ("-", True), ("não informado", True),
+    ("RAQUEL MENDES BASTOS", False), ("Nilo Peçanha", False), ("Diretora Ana Lima", False),
+])
+def test_nome_que_nao_e_de_pessoa(nome, vazio):
+    """O Gemma 4 12B escreveu "null" no lugar de nomes; o motor criava a pessoa fantasma "null" nas combinações."""
+    assert lx.nome_vazio(nome) is vazio

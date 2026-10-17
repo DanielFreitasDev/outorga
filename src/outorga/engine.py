@@ -81,6 +81,8 @@ SO_ALERTA = {"ESTOQUE_OU_IMOBILIZADO", "REGRA_COM_ADMINISTRADOR_QUE_SAIU", "COMB
 INCERTEZA_CAMINHO = {"PODERES_DO_OUTORGANTE_INCERTOS", "PODERES_DO_OUTORGANTE_NAO_VERIFICADOS"}  # pendências que pedem revisão, mas não tornam o caso indeterminado
 NIVEL = {"geral": 0, "alienacao_bens": 1, "alienacao_bens_moveis": 2, "alienacao_ativo_imobilizado": 2,
          "alienacao_veiculos": 3, "veiculo_especifico": 4}
+# atos que trazem o texto inteiro do contrato/estatuto (os anteriores deixam de valer)
+ATOS_COMPLETOS = ("constituicao", "alteracao_e_consolidacao", "estatuto", "ato_constitutivo_slu", "requerimento_empresario")
 NAO_APLICAVEL = {
     "alienacao_bens_imoveis": "trata de bens imóveis; veículo é bem móvel",
     "onerar_bens": "trata de oneração/gravame, não de venda",
@@ -231,6 +233,8 @@ class Motor:
         self._lado = "vendedor"
 
     def nome(self, chave: str) -> str:
+        if not chave:
+            return "(sem nome)"
         if chave.startswith("?"):  # assinante que não aparece nos documentos: o nome (ou CPF) como informado
             n = chave[1:]
             return f"o {n}" if n.startswith("CPF ") else n
@@ -250,8 +254,7 @@ class Motor:
         rp: RegrasProcuracaoEmpresa | None = None
         bens: list = []
         for a in atos:
-            completo = a.consolida or a.tipo in ("constituicao", "alteracao_e_consolidacao", "estatuto",
-                                                 "ato_constitutivo_slu", "requerimento_empresario")
+            completo = a.consolida or a.tipo in ATOS_COMPLETOS
             if a.eleicao:
                 if a.administradores:
                     admins = list(a.administradores)
@@ -959,6 +962,25 @@ class Motor:
                                   f"{a.nome} não é sócio, administrador nem procurador em nenhum documento apresentado."))
         return frozenset(chaves), info, ach
 
+    def _restricao_nao_lida(self, regime: Regime, veic: VeiculoId, ato: str) -> list[Achado]:
+        """Sentinela de leitura: o texto vigente tem cláusula de aprovação prévia (sócios, conselho, quórum) que alcança
+        veículos, mas nenhuma regra lida pela IA exige aprovação para este ato. Uma omissão da leitura não pode virar
+        aceite automático: o caso vai para revisão, com o trecho da cláusula."""
+        lidas = [r for r in regime.regras if (r.exige_aprovacao_socios or r.efeito == "veda")
+                 and self.aplicabilidade(r, veic, None, ato)[0] is not False]
+        if lidas or not regime.atos:
+            return []
+        completos = [i for i, a in enumerate(regime.atos) if a.consolida or a.tipo in ATOS_COMPLETOS]
+        vigentes = regime.atos[completos[-1]:] if completos else regime.atos  # último texto completo e alterações posteriores
+        fontes = [f for a in vigentes for f, atos in a.restricoes_texto if ato in atos]
+        if not fontes:
+            return []
+        return [Achado("RESTRICAO_NAO_LIDA", Severidade.ALERTA, "Cláusula de aprovação prévia não lida pela IA",
+                       "O texto do contrato tem uma cláusula que exige aprovação prévia (de sócios, do conselho ou por quórum) "
+                       f"para {'vender' if ato == 'alienar' else 'comprar'} bens que podem incluir o veículo, mas a leitura da IA "
+                       "não a trouxe como regra aplicável. Confira a cláusula e, se ela valer, a ata de aprovação.",
+                       ["CC art. 1.010", "CC art. 1.015, parágrafo único"], fontes[:2])]
+
     def _checar_titularidade(self, pedido: Pedido, regime: Regime) -> list[Achado]:
         ach = []
         c = self.kb.crlv
@@ -1119,6 +1141,7 @@ class Motor:
                                       f"Há um ato de revogação ({rv.titulo}) que não foi possível ligar a nenhuma procuração "
                                       "apresentada. Confira se ele alcança a procuração usada na venda.", ["CC art. 682, I"],
                                       [rv.fonte]))
+        achados += self._restricao_nao_lida(regime, veic, ato)
         if not self.kb.atos:
             achados.append(Achado("SEM_ATO_CONSTITUTIVO", Severidade.ALERTA, "Contrato social/estatuto não apresentado",
                                   "Sem o ato constitutivo vigente não há como saber quem representa a empresa.",

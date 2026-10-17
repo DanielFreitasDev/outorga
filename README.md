@@ -115,6 +115,26 @@ processos reais anonimizados** antes de deixar o sistema decidir sozinho. Detalh
 [`docs/RESULTADOS.md`](docs/RESULTADOS.md). Máquina, IA, metodologia e horários de cada rodada em
 [`docs/COMO_FOI_TESTADO.md`](docs/COMO_FOI_TESTADO.md).
 
+### Qual IA usar
+
+Os mesmos 85 casos foram lidos pelos modelos Claude atuais em todos os níveis de esforço (17/10/2026, 30 rodadas, custo
+real de US$ 108,94):
+
+| IA | Acertos (de 85) | Aceites indevidos | Tempo por caso | Custo por caso |
+|---|---|---|---|---|
+| **Claude Sonnet 5.5**, esforço `medium` (padrão do Outorga) | 84 · 84 · 84 | 0 | ~14 s | US$ 0,029 |
+| **Claude Haiku 5.5**, esforço `medium` (mais barato) | 84 · 83 · 85 | 0 | ~25 s | **US$ 0,0025** |
+| Claude Sonnet 5.5, esforço `xhigh` (qualidade máxima) | 85 · 85 | 0 | ~29 s | US$ 0,045 |
+| Claude Opus 5.5, esforço `medium` | 84 · 85 | 0 | ~23 s | US$ 0,062 |
+| Qwen3.8-27B local (RTX 3060)¹ | 84 | 0 | 1–2 min | — (energia) |
+
+¹ Depois das correções do motor feitas olhando as leituras do próprio Qwen; nas primeiras rodadas cegas, ver a tabela
+acima.
+
+Esforço máximo (`max`) custou de 7 a 10 vezes mais e não acertou mais nada. Todos os erros acima são casos mandados para
+revisão humana, nunca uma aprovação automática errada. A comparação completa, com os modelos locais testados e o custo
+de cada configuração, está em [`docs/MODELOS.md`](docs/MODELOS.md).
+
 ## Como rodar
 
 ### Requisitos
@@ -137,7 +157,7 @@ processos reais anonimizados** antes de deixar o sistema decidir sozinho. Detalh
 git clone https://github.com/DanielFreitasDev/outorga.git && cd outorga
 uv sync                                    # dependências Python
 (cd web && pnpm install && pnpm build)     # interface
-uv run pytest -q                           # 230 testes, sem IA
+uv run pytest -q                           # 253 testes, sem IA
 ./scripts/iniciar.sh                       # API + interface em http://127.0.0.1:8765
 ```
 
@@ -158,7 +178,8 @@ uv run pytest -q                           # 230 testes, sem IA
 | [`docs/PARA_O_CHEFE.md`](docs/PARA_O_CHEFE.md) | resumo executivo: o pedido, o que existe, resultados, o que falta confirmar |
 | [`docs/COMO_FOI_TESTADO.md`](docs/COMO_FOI_TESTADO.md) | máquina, IA local, stack, metodologia, linha do tempo dos testes, uso sem GPU |
 | [`docs/IA.md`](docs/IA.md) | como ligar a IA: local (com ou sem GPU) ou por chave de API (Anthropic, OpenAI, Gemini…) |
-| [`docs/MODELOS.md`](docs/MODELOS.md) | comparação de modelos de IA local testados nesta máquina |
+| [`docs/MODELOS.md`](docs/MODELOS.md) | qual IA usar: os modelos Claude em todos os níveis de esforço (acerto, tempo e custo real) e modelos locais testados nesta máquina |
+| [`docs/TREINAMENTO.md`](docs/TREINAMENTO.md) | dá para treinar um modelo só para o Outorga? O que seria preciso (dados, máquina, tempo) e quando vale a pena |
 | [`docs/RESULTADOS.md`](docs/RESULTADOS.md) | todas as rodadas de avaliação, caso a caso, com as lições |
 | [`docs/REGRAS.md`](docs/REGRAS.md) | as regras jurídicas codificadas, com fundamento e caso de teste |
 | [`docs/ARQUITETURA.md`](docs/ARQUITETURA.md) | módulos, índice de aceitação, privacidade, desempenho |
@@ -175,7 +196,7 @@ src/outorga/   leitura (ingest, extract, prompts, schemas), conferência (lexico
 web/           interface React + TypeScript + Vite + Tailwind
 corpus/        85 cenários fictícios: fatos e gabarito (spec.py), documentos (docs/*.md), casos montados
                (casos/<ID>/), gabarito de leitura (gold.py), base veicular simulada
-tests/         230 testes (motor, cenários no modo oráculo, consulta por CPF, agente, API, provedores de IA)
+tests/         253 testes (motor, cenários no modo oráculo, consulta por CPF, agente, API, provedores de IA, Claude)
 avaliacoes/    resultados de todas as rodadas de avaliação (evidência dos números)
 .cache/leituras/  leituras da IA local para o corpus fictício (reproduz a avaliação sem GPU)
 docs/          documentação, pesquisa jurídica, imagens e página de demonstração

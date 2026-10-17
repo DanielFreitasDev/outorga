@@ -13,7 +13,7 @@ A escolha é feita por variáveis de ambiente, no terminal ou num arquivo `.env`
 |---|---|---|
 | `llamacpp` (padrão) | IA **local** num servidor llama.cpp (ou qualquer servidor compatível com a API da OpenAI) | `OUTORGA_LLM_URL`, `OUTORGA_LLM_MODELO` |
 | `ollama` · `lmstudio` | IA **local** no Ollama (`:11434`) ou no LM Studio (`:1234`) | `OUTORGA_LLM_MODELO` |
-| `anthropic` | **Claude** (Anthropic), pelo SDK oficial | `ANTHROPIC_API_KEY` e `uv sync --extra claude` |
+| `anthropic` | **Claude** (Anthropic), pelo SDK oficial | `ANTHROPIC_API_KEY` (e `ANTHROPIC_WORKSPACE_ID` se a chave for de usuário) e `uv sync --extra claude` |
 | `openai` | **OpenAI** | `OPENAI_API_KEY`, `OUTORGA_LLM_MODELO` |
 | `gemini` | **Google Gemini** (endpoint compatível com a OpenAI) | `GEMINI_API_KEY`, `OUTORGA_LLM_MODELO` |
 | `groq` · `openrouter` · `deepseek` · `mistral` · `together` · `xai` | serviços com API compatível com a da OpenAI | a chave do serviço (`GROQ_API_KEY`, `OPENROUTER_API_KEY`…) e `OUTORGA_LLM_MODELO` |
@@ -38,7 +38,8 @@ Nos testes foi usado o **llama.cpp** b11191 com o **Qwen3.8-27B** (GGUF UD-Q2_K_
 desliga o "raciocínio" do modelo (`enable_thinking: false`), o que deixa a leitura rápida e previsível.
 
 Trava térmica: com a IA local, `OUTORGA_TEMP_MAX` e `OUTORGA_TEMP_RETOMAR` (padrão 76 °C e 68 °C) pausam a leitura entre
-chamadas quando a GPU esquenta.
+chamadas quando a GPU esquenta. `OUTORGA_TEMP_CPU_MAX` e `OUTORGA_TEMP_CPU_RETOMAR` (padrão 85 °C e 75 °C) fazem o mesmo com
+o processador, o que importa quando parte do modelo roda na CPU (modelos MoE grandes).
 
 ## 2. IA local sem GPU
 
@@ -55,11 +56,28 @@ uv sync --extra claude
 # no .env:
 OUTORGA_LLM=anthropic
 ANTHROPIC_API_KEY=sk-ant-...
-# opcionais: OUTORGA_CLAUDE_MODELO=claude-opus-5   OUTORGA_CLAUDE_ESFORCO=high
+ANTHROPIC_WORKSPACE_ID=wrkspc_...      # só para chave ligada ao usuário (sk-ant-usr-...)
+# opcionais: OUTORGA_CLAUDE_MODELO=claude-sonnet-5-5   OUTORGA_CLAUDE_ESFORCO=medium
 ```
 
-Usa o SDK oficial da Anthropic, com saída estruturada, cache de prompt (o documento entra uma vez e é reaproveitado nas
-tarefas seguintes) e tratamento de recusa do classificador de segurança.
+- **Chave e workspace.** O console da Anthropic tem dois tipos de chave:
+  - a **chave de workspace** (`sk-ant-api03-…`) já sabe em que workspace roda;
+  - a **chave ligada ao usuário** (`sk-ant-usr-…`) precisa do ID do workspace em `ANTHROPIC_WORKSPACE_ID`. Sem ele, a API
+    responde que a chave "não está ligada a um workspace".
+
+  O workspace "Default" antigo **não tem ID**: crie um workspace com nome no console. O ID começa com `wrkspc_` e aparece
+  na página dele. Os créditos são da organização e valem em qualquer workspace.
+- **Modelo e esforço.** O padrão é o **Claude Sonnet 5.5 com esforço `medium`**, escolhido na comparação de
+  [`MODELOS.md`](MODELOS.md): acertou 84 dos 85 casos, sem aceite indevido, a ~US$ 0,03 por caso e ~15 s por caso. O
+  **Haiku 5.5 com esforço `medium`** acertou o mesmo, por ~US$ 0,0025 por caso. O esforço (`low`, `medium`, `high`, `xhigh`,
+  `max`) é o quanto o modelo pensa antes de responder: acima de `medium`, nesta tarefa, só aumentou o tempo e o custo.
+  O esforço faz parte da chave do cache de leituras, então trocar de esforço não reaproveita leituras feitas com outro.
+- **Como lê.** Usa o SDK oficial da Anthropic, com saída estruturada (JSON Schema), cache de prompt (as instruções e o
+  documento entram uma vez e são reaproveitados nas tarefas seguintes) e streaming. Quando o classificador de segurança
+  recusa um documento, o pedido é repassado a outro modelo indicado pela Anthropic (`OUTORGA_CLAUDE_FALLBACK=0` desliga).
+- **Créditos dos planos Max e Team.** Os créditos mensais de API desses planos cobrem a API usada pelo Outorga, com
+  qualquer modelo. Eles não cobrem o Claude Code interativo. Sem cartão cadastrado, quando o crédito acaba as leituras
+  param, e nada é cobrado no plano ([documentação](https://platform.claude.com/docs/en/about-claude/api-credits-for-subscribers)).
 
 ### OpenAI, Google Gemini, Groq, OpenRouter, DeepSeek, Mistral, Together, xAI
 

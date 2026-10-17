@@ -31,3 +31,8 @@ docs/mensagem-whatsapp-chefe.md
 
 # Segredos locais (chaves de API)
 .env
+
+# comparação de modelos: o resultado completo de cada caso (centenas de MB) é refeito sem custo com
+# `scripts/comparar_claude.py --reavaliar`; ficam versionados os resumos, o resultado de cada rodada e o cache de leituras
+avaliacoes/claude/*/t*/*/casos/
+avaliacoes/modelos/*/*/casos/

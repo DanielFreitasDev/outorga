@@ -152,6 +152,8 @@ class AtoSocietario:
     regras_procuracao: RegrasProcuracaoEmpresa | None
     bens: list[BemIntegralizado]
     eleicao: bool = False      # ata que elege diretoria (S.A.)
+    # cláusulas do texto que exigem aprovação prévia para vender/comprar bens que alcançam veículos (sentinela de leitura)
+    restricoes_texto: list = field(default_factory=list)
 
     @property
     def data_efeito(self) -> date | None:

@@ -69,7 +69,7 @@ Uma medição de ponta a ponta só em CPU, com o mesmo modelo dos testes, está 
 | Parecer | Jinja2 + **WeasyPrint** (HTML → PDF) |
 | Persistência e auditoria | SQLite, com trilha de auditoria encadeada por hash SHA-256 |
 | Interface | **React 19** + TypeScript + Vite + Tailwind CSS 4; ícones Lucide |
-| Testes | pytest (230 testes), avaliação contra gabarito (`outorga avaliar`), testes de interface no navegador com Playwright |
+| Testes | pytest (253 testes), avaliação contra gabarito (`outorga avaliar`), testes de interface no navegador com Playwright |
 | Ferramenta de desenvolvimento | o protótipo foi escrito com o **Claude Code** (Anthropic) operando na própria máquina; a IA que **lê os documentos** dentro do protótipo é a IA local acima |
 
 ## 4. Metodologia dos testes
@@ -125,7 +125,7 @@ Resultados completos, caso a caso e com as lições de cada rodada: [`RESULTADOS
 
 ```bash
 uv sync                                   # dependências Python
-uv run pytest -q                          # 230 testes (sem IA, segundos)
+uv run pytest -q                          # 253 testes (sem IA, segundos)
 uv run outorga avaliar oraculo            # motor com leitura perfeita (38 cenários)
 uv run python -m outorga.avaliacao oraculo --conjunto pf     # consulta por CPF
 uv run python -m outorga.avaliacao llm --conjunto todos      # com a IA configurada (usa o cache .cache/leituras)
@@ -157,3 +157,41 @@ Conclusão:
   quantização própria para CPU (Q4_K_M ou Q4_0) e, de preferência, um **modelo menor revalidado** com os lotes de teste
   ([`MODELOS.md`](MODELOS.md)).
 - Ou use uma **IA por chave de API** ([`IA.md`](IA.md)).
+
+## 8. Comparação de modelos (17/10/2026, à tarde)
+
+Depois de pronto o protótipo, a mesma avaliação foi repetida com outras IAs, para responder qual lê melhor, mais rápido e
+mais barato. Os resultados e a recomendação estão em [`MODELOS.md`](MODELOS.md). Aqui fica o registro de como e quando.
+
+### Modelos Claude, pela API da Anthropic
+
+- **Chave:** da conta do Daniel, com os créditos mensais do plano Max 20x (US$ 200 por mês, válidos para a API).
+- **Script:** [`scripts/comparar_claude.py`](../scripts/comparar_claude.py). Cada configuração (modelo e esforço) roda
+  num processo próprio, com cache de leituras próprio, 8 leituras ao mesmo tempo e o fallback do servidor desligado.
+- **Custo:** calculado pelos tokens que a API informa em cada resposta e pela tabela oficial de preços.
+- **Reavaliação sem custo:** `scripts/comparar_claude.py --reavaliar` roda de novo a avaliação com as leituras guardadas,
+  sem chamar a API, para medir o efeito de uma mudança no motor.
+
+| Rodada (17/10) | Início → fim | Configurações | Custo |
+|---|---|---|---|
+| 1ª: todas as configurações (3 modelos atuais × 5 esforços + 3 da geração anterior) | 13:23 → 14:20 | 18 | US$ 85,71 |
+| 2ª: segunda rodada das candidatas (Haiku e Sonnet 5.5 em low/medium/high, Opus 5.5 em low/medium, Sonnet 5.5 xhigh) | 13:57 → 14:15 | 9 | US$ 17,97 |
+| 3ª: terceira rodada de Haiku 5.5 medium, Sonnet 5.5 medium e high | 14:08 → 14:18 | 3 | US$ 4,39 |
+
+Antes, às 13:20, um piloto de 4 casos em três modelos (US$ 0,88) conferiu o caminho completo e o custo por chamada.
+Com 8 leituras ao mesmo tempo, cada configuração leu os 85 casos em 2 a 5 minutos; em `max`, de 22 a 27 minutos (o
+Haiku 5.5 em `max` levou 44 minutos, porque algumas leituras estouraram o limite de 64 mil tokens e foram repetidas).
+**Gasto total: US$ 108,94**, todo coberto pelo crédito mensal do plano Max 20x.
+
+### Modelos locais, na RTX 3060
+
+- **Script:** [`scripts/comparar_modelos.py`](../scripts/comparar_modelos.py). Ele sobe um `llama-server` só para o teste
+  (porta 8092, `--reasoning off`), roda os 33 casos da triagem (cegos, independentes e consulta por CPF) e apaga o modelo
+  baixado no fim.
+- **Trava térmica:** GPU em 70/62 °C e CPU em 85/75 °C (pausa / retoma). A trava de CPU foi criada nesta tarde, depois
+  que um modelo MoE com metade dos especialistas na RAM levou o processador a 87 °C.
+- **Vigia extra:** desligaria o servidor do teste se a CPU passasse de 90 °C por duas leituras seguidas. Não chegou a
+  disparar.
+
+{TABELA_TEMPOS_LOCAIS}
+

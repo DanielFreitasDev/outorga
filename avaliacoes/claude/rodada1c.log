@@ -1,0 +1,10 @@
+5 configuração(ões) na fila; gasto até agora US$ 26.28
+INÍCIO claude-haiku-5-5:medium
+INÍCIO claude-haiku-5-5:high
+FIM claude-haiku-5-5:medium: veredito 84/85 · perigosos 0 · caros 0 · erros 0 · 22.8s/caso · US$ 0.22 · gasto total US$ 30.78
+INÍCIO claude-haiku-5-5:xhigh
+FIM claude-haiku-5-5:high: veredito 82/85 · perigosos 1 · caros 0 · erros 0 · 32.2s/caso · US$ 0.23 · gasto total US$ 34.66
+INÍCIO claude-haiku-5-5:max
+FIM claude-haiku-5-5:xhigh: veredito 84/85 · perigosos 0 · caros 0 · erros 0 · 57.7s/caso · US$ 0.41 · gasto total US$ 50.39
+INÍCIO claude-haiku-4-5:padrao
+FIM claude-haiku-4-5:padrao: veredito 81/85 · perigosos 1 · caros 0 · erros 0 · 25.1s/caso · US$ 1.46 · gasto total US$ 58.02

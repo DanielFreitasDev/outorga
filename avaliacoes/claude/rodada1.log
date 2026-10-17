@@ -1,0 +1,13 @@
+18 configuração(ões) na fila; gasto até agora US$ 0.88
+INÍCIO claude-opus-5-5:low
+INÍCIO claude-sonnet-5-5:low
+INÍCIO claude-haiku-5-5:low
+INÍCIO claude-opus-5-5:medium
+FIM claude-sonnet-5-5:low: veredito 84/85 · perigosos 0 · caros 0 · erros 0 · 16.1s/caso · US$ 2.42 · gasto total US$ 11.80
+INÍCIO claude-sonnet-5-5:medium
+FIM claude-haiku-5-5:low: veredito 82/85 · perigosos 0 · caros 1 · erros 0 · 14.1s/caso · US$ 0.14 · gasto total US$ 12.21
+INÍCIO claude-haiku-5-5:medium
+FIM claude-opus-5-5:medium: veredito 84/85 · perigosos 0 · caros 0 · erros 0 · 23.9s/caso · US$ 4.21 · gasto total US$ 12.92
+INÍCIO claude-opus-5-5:high
+FIM claude-opus-5-5:low: veredito 84/85 · perigosos 0 · caros 0 · erros 0 · 22.2s/caso · US$ 4.63 · gasto total US$ 13.13
+INÍCIO claude-sonnet-5-5:high
