@@ -1,0 +1,49 @@
+{
+  "caso": "C23",
+  "titulo": "Substabelecimento com reserva, permitido",
+  "categoria": "substabelecimento",
+  "objetivo": "Cadeia empresa → procurador → substabelecida, toda válida.",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": [
+      [
+        "FRANCISCO"
+      ],
+      [
+        "PEDRO"
+      ],
+      [
+        "ANAPAULA"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 667"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "729.405.576-91"
+      ],
+      [
+        "939.761.584-02"
+      ],
+      [
+        "406.925.666-00"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Francisco Wellington Rocha"
+      ],
+      [
+        "Pedro Henrique Lima"
+      ],
+      [
+        "Ana Paula Bastos"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

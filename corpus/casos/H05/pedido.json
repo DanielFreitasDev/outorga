@@ -1,0 +1,26 @@
+{
+  "caso": "H05",
+  "vendedor": {
+    "razao_social": "DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA.",
+    "cnpj": "35.326.130/0001-01"
+  },
+  "veiculo": {
+    "placa": "MSL2F85",
+    "renavam": "01494700490",
+    "chassi": "93YE1HMUJLFHMUVAF",
+    "descricao": "RENAULT/DUSTER INTENSE 1.6"
+  },
+  "data_venda": "2026-09-22",
+  "valor": 96000,
+  "assinantes": [
+    {
+      "nome": "Nilton Arruda Coelho",
+      "cpf": "869.934.673-56"
+    }
+  ],
+  "comprador": {
+    "nome": "Rita de Cássia Moreira",
+    "cidade": "Fortaleza/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

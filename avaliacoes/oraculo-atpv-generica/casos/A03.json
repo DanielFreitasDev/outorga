@@ -1,0 +1,992 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T10:08:21",
+ "pedido": {
+  "veiculo": {
+   "descricao": "FIAT/TORO ENDURANCE 1.3 TURBO",
+   "placa": "NXR3N68",
+   "renavam": "07438789846",
+   "chassi": "9BD4TTZB15UMLT01Z"
+  },
+  "data_venda": "2026-10-07",
+  "valor": 135000.0,
+  "assinantes": [
+   {
+    "nome": "Simone Batista Nunes",
+    "cpf": "714.244.916-06"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "DÉBORA LINS MOURA",
+  "vendedor_cnpj": "73.701.393/0001-34",
+  "lado": "vendedor"
+ },
+ "empresa": {
+  "razao_social": "COMERCIAL BOM JARDIM LTDA.",
+  "cnpj": "73.701.393/0001-34",
+  "tipo": "LTDA",
+  "objeto": "comércio atacadista de produtos alimentícios e distribuição com frota própria",
+  "comercializa_veiculos": false,
+  "subtipo": null
+ },
+ "veredito": "PODE",
+ "faixa": "VERDE",
+ "indice": 100.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 2,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 100 ≥ limiar 85"
+ ],
+ "resumo": "Simone Batista Nunes pode assinar a ATPV-e — regra geral de representação — Contrato Social (2021).",
+ "assinantes": [
+  {
+   "informado": "Simone Batista Nunes",
+   "cpf": "714.244.916-06",
+   "chave": "71424491606",
+   "nome": "Simone Batista Nunes",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:69082868270",
+   "pessoas": [
+    {
+     "chave": "69082868270",
+     "nome": "Gilberto Araújo Nunes"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Contrato Social (2021)",
+   "cadeia": [
+    "BOMJARDIM_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  },
+  {
+   "id": "contrato:71424491606",
+   "pessoas": [
+    {
+     "chave": "71424491606",
+     "nome": "Simone Batista Nunes"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Contrato Social (2021)",
+   "cadeia": [
+    "BOMJARDIM_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": {
+  "id": "contrato:71424491606",
+  "pessoas": [
+   {
+    "chave": "71424491606",
+    "nome": "Simone Batista Nunes"
+   }
+  ],
+  "via": "contrato",
+  "descricao": "regra geral de representação — Contrato Social (2021)",
+  "cadeia": [
+   "BOMJARDIM_CS"
+  ],
+  "severidade": "ok",
+  "confianca": 1.0,
+  "achados": [],
+  "precondicoes": []
+ },
+ "faltantes": [],
+ "achados": [
+  {
+   "codigo": "CND_INSS",
+   "severidade": "info",
+   "titulo": "CND previdenciária",
+   "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+   "fundamento": [
+    "Lei 8.212/91, art. 47, I, \"c\""
+   ],
+   "fontes": [],
+   "caminho": null
+  },
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: COMERCIAL BOM JARDIM LTDA..",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "NXR3N68",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "BOMJARDIM_CS#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "BOMJARDIM_CS",
+    "doc_titulo": "Contrato Social (2021)",
+    "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá aos sócios GILBERTO ARAÚJO NUNES e SIMONE BATISTA NUNES, que a exercerão isoladamente",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3497,
+    "fim": 3653
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Gilberto Araújo Nunes",
+    "Simone Batista Nunes"
+   ],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "BOMJARDIM_CS#R2",
+   "escopo": "outro",
+   "aplicavel": false,
+   "motivo": "regra de compra (não se aplica à venda)",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "BOMJARDIM_CS",
+    "doc_titulo": "Contrato Social (2021)",
+    "trecho": "§ 1º A aquisição de veículos, máquinas e equipamentos de valor unitário superior a R$ 100.000,00 (cem mil reais) dependerá da assinatura conjunta de ambos os administradores",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 4090,
+    "fim": 4263
+   },
+   "modo": "conjunto",
+   "pessoas": [
+    "Gilberto Araújo Nunes",
+    "Simone Batista Nunes"
+   ],
+   "cargo": null,
+   "valor_acima_de": 100000.0,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "conjunto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "assinatura conjunta",
+      "ambos os administradores"
+     ]
+    }
+   ],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-10-07",
+  "atos": [
+   {
+    "doc": "BOMJARDIM_CS",
+    "titulo": "Contrato Social (2021)",
+    "efeito": "2021-09-13"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "69082868270",
+    "nome": "Gilberto Araújo Nunes",
+    "cargo": "sócio administrador",
+    "doc": "BOMJARDIM_CS"
+   },
+   {
+    "chave": "71424491606",
+    "nome": "Simone Batista Nunes",
+    "cargo": "sócio administrador",
+    "doc": "BOMJARDIM_CS"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "69082868270",
+    "nome": "Gilberto Araújo Nunes",
+    "percentual": 50.0
+   },
+   {
+    "chave": "71424491606",
+    "nome": "Simone Batista Nunes",
+    "percentual": 50.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "COMERCIAL BOM JARDIM LTDA.",
+    "sub": "73.701.393/0001-34"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "FIAT/TORO ENDURANCE 1.3 TURBO",
+    "sub": "NXR3N68"
+   },
+   {
+    "id": "69082868270",
+    "tipo": "pessoa",
+    "rotulo": "Gilberto Araújo Nunes",
+    "papeis": [
+     "sócio 50%",
+     "sócio administrador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "71424491606",
+    "tipo": "pessoa",
+    "rotulo": "Simone Batista Nunes",
+    "papeis": [
+     "sócio 50%",
+     "sócio administrador"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "69082868270",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "50%",
+    "status": "neutro"
+   },
+   {
+    "de": "71424491606",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "50%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "69082868270",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "BOMJARDIM_CS"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "71424491606",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "BOMJARDIM_CS"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2021-09-13",
+   "tipo": "ato",
+   "titulo": "Contrato Social (2021)",
+   "doc": "BOMJARDIM_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-10-07",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 135.000,00"
+  }
+ ],
+ "pessoas": {
+  "69082868270": {
+   "nome": "Gilberto Araújo Nunes",
+   "cpf": "69082868270"
+  },
+  "71424491606": {
+   "nome": "Simone Batista Nunes",
+   "cpf": "71424491606"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "comprovada",
+  "outorgante": {
+   "nome": "COMERCIAL BOM JARDIM LTDA.",
+   "cnpj": "73.701.393/0001-34",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Contrato Social (2021)",
+     "doc": "BOMJARDIM_CS",
+     "efeito": "2021-09-13"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Simone Batista Nunes",
+    "cpf": "714.244.916-06",
+    "identificacao": "CPF",
+    "qualidade": "sócio administrador"
+   }
+  ],
+  "poderes_conferidos": [
+   "Contrato Social (2021), cláusula de administração: qualquer administrador designado assina sozinho — exigida a assinatura indicada na cláusula específica"
+  ],
+  "prazo_validade": [
+   "Simone Batista Nunes (sócio administrador): mandato por prazo indeterminado"
+  ],
+  "revogacao": [
+   "Poder decorre do ato constitutivo vigente na data da venda; recomenda-se certidão simplificada atualizada da Junta Comercial para afastar alteração posterior ainda não apresentada."
+  ],
+  "fontes": [
+   {
+    "doc_id": "BOMJARDIM_CS",
+    "doc_titulo": "Contrato Social (2021)",
+    "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá aos sócios GILBERTO ARAÚJO NUNES e SIMONE BATISTA NUNES, que a exercerão isoladamente",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3497,
+    "fim": 3653
+   },
+   {
+    "doc_id": "BOMJARDIM_CS",
+    "doc_titulo": "Contrato Social (2021)",
+    "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá aos sócios GILBERTO ARAÚJO NUNES e SIMONE BATISTA NUNES",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3497,
+    "fim": 3623
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "BOMJARDIM_CS",
+    "titulo": "Contrato Social (2021)",
+    "arquivo": "BOMJARDIM_CS.pdf"
+   },
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "BOMJARDIM_CS",
+   "nome": "BOMJARDIM_CS.pdf",
+   "tipo": "contrato_social",
+   "titulo": "Contrato Social (2021)",
+   "data": "2021-09-13",
+   "paginas": [
+    "COMERCIAL BOM JARDIM LTDA. CNPJ nº 73.701.393/0001-34 – NIRE 23707208539\nCONTRATO SOCIAL DE CONSTITUIÇÃO\nPelo presente instrumento particular de contrato social, as partes a seguir qualificadas:\nGILBERTO ARAÚJO NUNES, brasileiro, casado sob o regime de comunhão parcial de bens,\ncomerciante, portador da Cédula de Identidade RG nº 71118144 SSP/CE, inscrito no CPF sob o nº\n690.828.682-70, residente e domiciliado na Rua dos Oitizeiros, nº 1.415, bairro Parquelândia,\nFortaleza/CE, CEP 60455-310; e\nSIMONE BATISTA NUNES, brasileira, casada sob o regime de comunhão parcial de bens,\ncomerciante, portadora da Cédula de Identidade RG nº 2497875 SSP/CE, inscrita no CPF sob o nº\n714.244.916-06, residente e domiciliada na Avenida das Sabiás, nº 980, casa 7, bairro Maraponga,\nFortaleza/CE, CEP 60711-095;\nresolvem, de comum acordo, constituir uma sociedade empresária limitada, mediante as cláusulas e\ncondições seguintes, regendo-se, nas omissões, pelas disposições da Lei nº 10.406, de 10 de janeiro\nde 2002 (Código Civil).\nCLÁUSULA PRIMEIRA – DA DENOMINAÇÃO E SEDE\nA sociedade girará sob o nome empresarial COMERCIAL BOM JARDIM LTDA. e terá sede na\nAvenida das Tamarineiras, nº 2.140, galpões 4 e 5, bairro Bom Jardim, Fortaleza/CE, CEP\n60540-275, podendo abrir, transferir e encerrar filiais, depósitos e centros de distribuição em\nqualquer ponto do território nacional, mediante alteração contratual.\nCLÁUSULA SEGUNDA – DO OBJETO SOCIAL\nA sociedade tem por objeto o comércio atacadista de produtos alimentícios e distribuição com frota\nprópria, compreendendo a compra, a armazenagem e a revenda de gêneros alimentícios em geral a\nsupermercados, mercearias, restaurantes e demais estabelecimentos comerciais, bem como a entrega\ndas mercadorias por ela comercializadas mediante veículos próprios, atividades enquadradas no\ncódigo CNAE 4639-7/01 (comércio atacadista de produtos alimentícios em geral).\nCLÁUSULA TERCEIRA – DO INÍCIO DAS ATIVIDADES E DO PRAZO DE DURAÇÃO\nA sociedade iniciará suas atividades na data do arquivamento deste instrumento na Junta Comercial\ndo Estado do Ceará – JUCEC, e seu prazo de duração é indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 400.000,00 (quatrocentos mil reais), dividido em 400.000 (quatrocentas mil)\nquotas, no valor nominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas,\nneste ato, em moeda corrente do País, distribuídas entre os sócios da seguinte forma:\nSócio\nQuotas\nValor (R$)\nParticipação\nGILBERTO ARAÚJO NUNES\n200.000\n200.000,00\n50%\nSIMONE BATISTA NUNES\n200.000\n200.000,00\n50%\nTOTAL\n400.000\n400.000,00\n100%\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "CLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social, na forma do art. 1.052 do Código Civil.\nCLÁUSULA SEXTA – DA CESSÃO E TRANSFERÊNCIA DE QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas ou transferidas a terceiros sem o consentimento\ndo outro sócio, a quem fica assegurado o direito de preferência, em igualdade de preço e condições,\nformalizando-se, se realizada a cessão, a alteração contratual pertinente.\nParágrafo único. O sócio que pretender ceder suas quotas notificará o outro, por escrito, informando\no preço e as condições de pagamento, e este disporá de 30 (trinta) dias, contados do recebimento da\nnotificação, para exercer o seu direito de preferência.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade caberá aos sócios GILBERTO ARAÚJO NUNES e SIMONE\nBATISTA NUNES, que a exercerão isoladamente, cada um deles com plenos poderes de gestão e de\nrepresentação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar, com a sua só\nassinatura, todos os atos compreendidos no objeto social e necessários à boa condução dos negócios\nsociais, inclusive a venda de bens da sociedade, vedado, no entanto, o uso do nome empresarial em\natividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.\n§ 1º A aquisição de veículos, máquinas e equipamentos de valor unitário superior a R$ 100.000,00\n(cem mil reais) dependerá da assinatura conjunta de ambos os administradores.\n§ 2º Pelo exercício da administração, os administradores farão jus a uma retirada mensal, a título de\npró-labore, em valor a ser fixado de comum acordo entre os sócios, observada a legislação tributária\ne previdenciária pertinente.\nCLÁUSULA OITAVA – DO EXERCÍCIO SOCIAL, DO BALANÇO E DOS RESULTADOS\nO exercício social terá início em 1º de janeiro e término em 31 de dezembro de cada ano, quando os\nadministradores prestarão contas justificadas de sua administração, procedendo à elaboração do\ninventário, do balanço patrimonial e do balanço de resultado econômico. Os lucros ou prejuízos\napurados serão atribuídos aos sócios na proporção de suas quotas.\nParágrafo único. Nos 4 (quatro) meses seguintes ao término do exercício social, os sócios\ndeliberarão sobre as contas e o balanço apresentados pelos administradores, nos termos do art. 1.078\ndo Código Civil.\nCLÁUSULA NONA – DO FALECIMENTO OU DA INCAPACIDADE DE SÓCIO\nFalecendo ou sendo declarado incapaz qualquer dos sócios, a sociedade continuará suas atividades\ncom os herdeiros, sucessores ou o representante legal do incapaz. Não sendo possível ou inexistindo\ninteresse destes ou do sócio remanescente, o valor de seus haveres será apurado e liquidado com\nbase na situação patrimonial da sociedade, à data da resolução, verificada em balanço especialmente\nlevantado, e pago em dinheiro no prazo de 90 (noventa) dias a partir da liquidação, nos termos do\nart. 1.031 do Código Civil.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "Parágrafo único. O mesmo procedimento será adotado nos demais casos em que a sociedade se\nresolva em relação a algum de seus sócios.\nCLÁUSULA DÉCIMA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nOs administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade, por lei especial, ou em virtude de condenação criminal, ou por se\nencontrarem sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\npúblicos; ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato, ou contra\na economia popular, contra o sistema financeiro nacional, contra normas de defesa da concorrência,\ncontra as relações de consumo, a fé pública ou a propriedade, nos termos do art. 1.011, § 1º, do\nCódigo Civil.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FORO\nFica eleito o foro da Comarca de Fortaleza, Estado do Ceará, para dirimir quaisquer questões\noriundas deste contrato, com renúncia expressa a qualquer outro, por mais privilegiado que seja.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em via única,\nque será levado a arquivamento na Junta Comercial do Estado do Ceará – JUCEC, para que produza\nos seus jurídicos e legais efeitos.\nFortaleza/CE, 13 de setembro de 2021.\n__________________________________ GILBERTO ARAÚJO NUNES\n__________________________________ SIMONE BATISTA NUNES\nVisto: Adriano Pimentel Sobral – OAB/CE nº 23.581\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 24/09/2021 sob o nº 40925582599\nProtocolo: 21/671.094-2 | NIRE: 23707208539\nEmpresa: COMERCIAL BOM JARDIM LTDA.\nAutenticação: B41E7D09C3A85F26E9D10B7A4C3F8E52\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "3cbad90cfeadad2cacb01edc6ce5172e021f7402f743697abd1039a27b9f5efb",
+   "leitura": {}
+  },
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n07438789846\nPLACA\nNXR3N68\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2023\nANO MODELO\n2023\nNÚMERO DO CRV\n393432784321\nCÓDIGO DE SEGURANÇA DO CLA\n11594071147\nMARCA / MODELO / VERSÃO\nFIAT/TORO ENDURANCE 1.3 TURBO\nESPÉCIE / TIPO\nCARGA/CAMINHONETE\nCHASSI\n9BD4TTZB15UMLT01Z\nCOR PREDOMINANTE\nCINZA\nCOMBUSTÍVEL\nÁLCOOL/GASOLINA\nNOME\nCOMERCIAL BOM JARDIM LTDA.\nCPF / CNPJ\n73.701.393/0001-34\nLOCAL\nFORTALEZA/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "3c6668f54b65af062532140f600f06c09197a7b40f40a7d06d2e97d761513d55",
+   "leitura": {}
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "gabarito",
+  "politica": "Código Civil (genérica)"
+ },
+ "lado": "vendedor",
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T10:08:21",
+   "pedido": {
+    "veiculo": {
+     "descricao": "FIAT/TORO ENDURANCE 1.3 TURBO",
+     "placa": "NXR3N68",
+     "renavam": "07438789846",
+     "chassi": "9BD4TTZB15UMLT01Z"
+    },
+    "data_venda": "2026-10-07",
+    "valor": 135000.0,
+    "assinantes": [
+     {
+      "nome": "Simone Batista Nunes",
+      "cpf": "714.244.916-06"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "DÉBORA LINS MOURA",
+    "vendedor_cnpj": "73.701.393/0001-34",
+    "lado": "vendedor"
+   },
+   "empresa": {
+    "razao_social": "COMERCIAL BOM JARDIM LTDA.",
+    "cnpj": "73.701.393/0001-34",
+    "tipo": "LTDA",
+    "objeto": "comércio atacadista de produtos alimentícios e distribuição com frota própria",
+    "comercializa_veiculos": false,
+    "subtipo": null
+   },
+   "veredito": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 2,
+    "menor_confianca_fato": 1.0,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "resumo": "Simone Batista Nunes pode assinar a ATPV-e — regra geral de representação — Contrato Social (2021).",
+   "assinantes": [
+    {
+     "informado": "Simone Batista Nunes",
+     "cpf": "714.244.916-06",
+     "chave": "71424491606",
+     "nome": "Simone Batista Nunes",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:69082868270",
+     "pessoas": [
+      {
+       "chave": "69082868270",
+       "nome": "Gilberto Araújo Nunes"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "regra geral de representação — Contrato Social (2021)",
+     "cadeia": [
+      "BOMJARDIM_CS"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    },
+    {
+     "id": "contrato:71424491606",
+     "pessoas": [
+      {
+       "chave": "71424491606",
+       "nome": "Simone Batista Nunes"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "regra geral de representação — Contrato Social (2021)",
+     "cadeia": [
+      "BOMJARDIM_CS"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [],
+   "caminho_escolhido": {
+    "id": "contrato:71424491606",
+    "pessoas": [
+     {
+      "chave": "71424491606",
+      "nome": "Simone Batista Nunes"
+     }
+    ],
+    "via": "contrato",
+    "descricao": "regra geral de representação — Contrato Social (2021)",
+    "cadeia": [
+     "BOMJARDIM_CS"
+    ],
+    "severidade": "ok",
+    "confianca": 1.0,
+    "achados": [],
+    "precondicoes": []
+   },
+   "faltantes": [],
+   "achados": [
+    {
+     "codigo": "CND_INSS",
+     "severidade": "info",
+     "titulo": "CND previdenciária",
+     "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+     "fundamento": [
+      "Lei 8.212/91, art. 47, I, \"c\""
+     ],
+     "fontes": [],
+     "caminho": null
+    },
+    {
+     "codigo": "TITULARIDADE_OK",
+     "severidade": "ok",
+     "titulo": "Veículo registrado no CNPJ da empresa",
+     "detalhe": "Proprietário no CRLV: COMERCIAL BOM JARDIM LTDA..",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [
+      {
+       "doc_id": "CRLV",
+       "doc_titulo": "CRLV",
+       "trecho": "NXR3N68",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 146,
+       "fim": 153
+      }
+     ],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "BOMJARDIM_CS#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "BOMJARDIM_CS",
+      "doc_titulo": "Contrato Social (2021)",
+      "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá aos sócios GILBERTO ARAÚJO NUNES e SIMONE BATISTA NUNES, que a exercerão isoladamente",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3497,
+      "fim": 3653
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Gilberto Araújo Nunes",
+      "Simone Batista Nunes"
+     ],
+     "cargo": null,
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente"
+       ]
+      }
+     ],
+     "decisiva": true
+    },
+    {
+     "regra": "BOMJARDIM_CS#R2",
+     "escopo": "outro",
+     "aplicavel": false,
+     "motivo": "regra de compra (não se aplica à venda)",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "BOMJARDIM_CS",
+      "doc_titulo": "Contrato Social (2021)",
+      "trecho": "§ 1º A aquisição de veículos, máquinas e equipamentos de valor unitário superior a R$ 100.000,00 (cem mil reais) dependerá da assinatura conjunta de ambos os administradores",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 4090,
+      "fim": 4263
+     },
+     "modo": "conjunto",
+     "pessoas": [
+      "Gilberto Araújo Nunes",
+      "Simone Batista Nunes"
+     ],
+     "cargo": null,
+     "valor_acima_de": 100000.0,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "conjunto",
+       "valor_lexico": "conjunto",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "assinatura conjunta",
+        "ambos os administradores"
+       ]
+      }
+     ],
+     "decisiva": false
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-10-07",
+    "atos": [
+     {
+      "doc": "BOMJARDIM_CS",
+      "titulo": "Contrato Social (2021)",
+      "efeito": "2021-09-13"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "69082868270",
+      "nome": "Gilberto Araújo Nunes",
+      "cargo": "sócio administrador",
+      "doc": "BOMJARDIM_CS"
+     },
+     {
+      "chave": "71424491606",
+      "nome": "Simone Batista Nunes",
+      "cargo": "sócio administrador",
+      "doc": "BOMJARDIM_CS"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "69082868270",
+      "nome": "Gilberto Araújo Nunes",
+      "percentual": 50.0
+     },
+     {
+      "chave": "71424491606",
+      "nome": "Simone Batista Nunes",
+      "percentual": 50.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "COMERCIAL BOM JARDIM LTDA.",
+      "sub": "73.701.393/0001-34"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "FIAT/TORO ENDURANCE 1.3 TURBO",
+      "sub": "NXR3N68"
+     },
+     {
+      "id": "69082868270",
+      "tipo": "pessoa",
+      "rotulo": "Gilberto Araújo Nunes",
+      "papeis": [
+       "sócio 50%",
+       "sócio administrador"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "71424491606",
+      "tipo": "pessoa",
+      "rotulo": "Simone Batista Nunes",
+      "papeis": [
+       "sócio 50%",
+       "sócio administrador"
+      ],
+      "assinante": true
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "valido"
+     },
+     {
+      "de": "69082868270",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "50%",
+      "status": "neutro"
+     },
+     {
+      "de": "71424491606",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "50%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "69082868270",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "BOMJARDIM_CS"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "71424491606",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "BOMJARDIM_CS"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2021-09-13",
+     "tipo": "ato",
+     "titulo": "Contrato Social (2021)",
+     "doc": "BOMJARDIM_CS",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-10-07",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 135.000,00"
+    }
+   ],
+   "pessoas": {
+    "69082868270": {
+     "nome": "Gilberto Araújo Nunes",
+     "cpf": "69082868270"
+    },
+    "71424491606": {
+     "nome": "Simone Batista Nunes",
+     "cpf": "71424491606"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "comprovada",
+    "outorgante": {
+     "nome": "COMERCIAL BOM JARDIM LTDA.",
+     "cnpj": "73.701.393/0001-34",
+     "tipo": "LTDA",
+     "atos_vigentes": [
+      {
+       "titulo": "Contrato Social (2021)",
+       "doc": "BOMJARDIM_CS",
+       "efeito": "2021-09-13"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "Simone Batista Nunes",
+      "cpf": "714.244.916-06",
+      "identificacao": "CPF",
+      "qualidade": "sócio administrador"
+     }
+    ],
+    "poderes_conferidos": [
+     "Contrato Social (2021), cláusula de administração: qualquer administrador designado assina sozinho — exigida a assinatura indicada na cláusula específica"
+    ],
+    "prazo_validade": [
+     "Simone Batista Nunes (sócio administrador): mandato por prazo indeterminado"
+    ],
+    "revogacao": [
+     "Poder decorre do ato constitutivo vigente na data da venda; recomenda-se certidão simplificada atualizada da Junta Comercial para afastar alteração posterior ainda não apresentada."
+    ],
+    "fontes": [
+     {
+      "doc_id": "BOMJARDIM_CS",
+      "doc_titulo": "Contrato Social (2021)",
+      "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá aos sócios GILBERTO ARAÚJO NUNES e SIMONE BATISTA NUNES, que a exercerão isoladamente",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3497,
+      "fim": 3653
+     },
+     {
+      "doc_id": "BOMJARDIM_CS",
+      "doc_titulo": "Contrato Social (2021)",
+      "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá aos sócios GILBERTO ARAÚJO NUNES e SIMONE BATISTA NUNES",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3497,
+      "fim": 3623
+     }
+    ],
+    "documentos_verificaveis": [
+     {
+      "id": "BOMJARDIM_CS",
+      "titulo": "Contrato Social (2021)",
+      "arquivo": "BOMJARDIM_CS.pdf"
+     },
+     {
+      "id": "CRLV",
+      "titulo": "CRLV",
+      "arquivo": "CRLV.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "BOMJARDIM_CS",
+     "nome": "BOMJARDIM_CS.pdf",
+     "tipo": "contrato_social",
+     "titulo": "Contrato Social (2021)",
+     "data": "2021-09-13",
+     "paginas": [
+      "COMERCIAL BOM JARDIM LTDA. CNPJ nº 73.701.393/0001-34 – NIRE 23707208539\nCONTRATO SOCIAL DE CONSTITUIÇÃO\nPelo presente instrumento particular de contrato social, as partes a seguir qualificadas:\nGILBERTO ARAÚJO NUNES, brasileiro, casado sob o regime de comunhão parcial de bens,\ncomerciante, portador da Cédula de Identidade RG nº 71118144 SSP/CE, inscrito no CPF sob o nº\n690.828.682-70, residente e domiciliado na Rua dos Oitizeiros, nº 1.415, bairro Parquelândia,\nFortaleza/CE, CEP 60455-310; e\nSIMONE BATISTA NUNES, brasileira, casada sob o regime de comunhão parcial de bens,\ncomerciante, portadora da Cédula de Identidade RG nº 2497875 SSP/CE, inscrita no CPF sob o nº\n714.244.916-06, residente e domiciliada na Avenida das Sabiás, nº 980, casa 7, bairro Maraponga,\nFortaleza/CE, CEP 60711-095;\nresolvem, de comum acordo, constituir uma sociedade empresária limitada, mediante as cláusulas e\ncondições seguintes, regendo-se, nas omissões, pelas disposições da Lei nº 10.406, de 10 de janeiro\nde 2002 (Código Civil).\nCLÁUSULA PRIMEIRA – DA DENOMINAÇÃO E SEDE\nA sociedade girará sob o nome empresarial COMERCIAL BOM JARDIM LTDA. e terá sede na\nAvenida das Tamarineiras, nº 2.140, galpões 4 e 5, bairro Bom Jardim, Fortaleza/CE, CEP\n60540-275, podendo abrir, transferir e encerrar filiais, depósitos e centros de distribuição em\nqualquer ponto do território nacional, mediante alteração contratual.\nCLÁUSULA SEGUNDA – DO OBJETO SOCIAL\nA sociedade tem por objeto o comércio atacadista de produtos alimentícios e distribuição com frota\nprópria, compreendendo a compra, a armazenagem e a revenda de gêneros alimentícios em geral a\nsupermercados, mercearias, restaurantes e demais estabelecimentos comerciais, bem como a entrega\ndas mercadorias por ela comercializadas mediante veículos próprios, atividades enquadradas no\ncódigo CNAE 4639-7/01 (comércio atacadista de produtos alimentícios em geral).\nCLÁUSULA TERCEIRA – DO INÍCIO DAS ATIVIDADES E DO PRAZO DE DURAÇÃO\nA sociedade iniciará suas atividades na data do arquivamento deste instrumento na Junta Comercial\ndo Estado do Ceará – JUCEC, e seu prazo de duração é indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 400.000,00 (quatrocentos mil reais), dividido em 400.000 (quatrocentas mil)\nquotas, no valor nominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas,\nneste ato, em moeda corrente do País, distribuídas entre os sócios da seguinte forma:\nSócio\nQuotas\nValor (R$)\nParticipação\nGILBERTO ARAÚJO NUNES\n200.000\n200.000,00\n50%\nSIMONE BATISTA NUNES\n200.000\n200.000,00\n50%\nTOTAL\n400.000\n400.000,00\n100%\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+      "CLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social, na forma do art. 1.052 do Código Civil.\nCLÁUSULA SEXTA – DA CESSÃO E TRANSFERÊNCIA DE QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas ou transferidas a terceiros sem o consentimento\ndo outro sócio, a quem fica assegurado o direito de preferência, em igualdade de preço e condições,\nformalizando-se, se realizada a cessão, a alteração contratual pertinente.\nParágrafo único. O sócio que pretender ceder suas quotas notificará o outro, por escrito, informando\no preço e as condições de pagamento, e este disporá de 30 (trinta) dias, contados do recebimento da\nnotificação, para exercer o seu direito de preferência.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade caberá aos sócios GILBERTO ARAÚJO NUNES e SIMONE\nBATISTA NUNES, que a exercerão isoladamente, cada um deles com plenos poderes de gestão e de\nrepresentação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar, com a sua só\nassinatura, todos os atos compreendidos no objeto social e necessários à boa condução dos negócios\nsociais, inclusive a venda de bens da sociedade, vedado, no entanto, o uso do nome empresarial em\natividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.\n§ 1º A aquisição de veículos, máquinas e equipamentos de valor unitário superior a R$ 100.000,00\n(cem mil reais) dependerá da assinatura conjunta de ambos os administradores.\n§ 2º Pelo exercício da administração, os administradores farão jus a uma retirada mensal, a título de\npró-labore, em valor a ser fixado de comum acordo entre os sócios, observada a legislação tributária\ne previdenciária pertinente.\nCLÁUSULA OITAVA – DO EXERCÍCIO SOCIAL, DO BALANÇO E DOS RESULTADOS\nO exercício social terá início em 1º de janeiro e término em 31 de dezembro de cada ano, quando os\nadministradores prestarão contas justificadas de sua administração, procedendo à elaboração do\ninventário, do balanço patrimonial e do balanço de resultado econômico. Os lucros ou prejuízos\napurados serão atribuídos aos sócios na proporção de suas quotas.\nParágrafo único. Nos 4 (quatro) meses seguintes ao término do exercício social, os sócios\ndeliberarão sobre as contas e o balanço apresentados pelos administradores, nos termos do art. 1.078\ndo Código Civil.\nCLÁUSULA NONA – DO FALECIMENTO OU DA INCAPACIDADE DE SÓCIO\nFalecendo ou sendo declarado incapaz qualquer dos sócios, a sociedade continuará suas atividades\ncom os herdeiros, sucessores ou o representante legal do incapaz. Não sendo possível ou inexistindo\ninteresse destes ou do sócio remanescente, o valor de seus haveres será apurado e liquidado com\nbase na situação patrimonial da sociedade, à data da resolução, verificada em balanço especialmente\nlevantado, e pago em dinheiro no prazo de 90 (noventa) dias a partir da liquidação, nos termos do\nart. 1.031 do Código Civil.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+      "Parágrafo único. O mesmo procedimento será adotado nos demais casos em que a sociedade se\nresolva em relação a algum de seus sócios.\nCLÁUSULA DÉCIMA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nOs administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade, por lei especial, ou em virtude de condenação criminal, ou por se\nencontrarem sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\npúblicos; ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato, ou contra\na economia popular, contra o sistema financeiro nacional, contra normas de defesa da concorrência,\ncontra as relações de consumo, a fé pública ou a propriedade, nos termos do art. 1.011, § 1º, do\nCódigo Civil.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FORO\nFica eleito o foro da Comarca de Fortaleza, Estado do Ceará, para dirimir quaisquer questões\noriundas deste contrato, com renúncia expressa a qualquer outro, por mais privilegiado que seja.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em via única,\nque será levado a arquivamento na Junta Comercial do Estado do Ceará – JUCEC, para que produza\nos seus jurídicos e legais efeitos.\nFortaleza/CE, 13 de setembro de 2021.\n__________________________________ GILBERTO ARAÚJO NUNES\n__________________________________ SIMONE BATISTA NUNES\nVisto: Adriano Pimentel Sobral – OAB/CE nº 23.581\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 24/09/2021 sob o nº 40925582599\nProtocolo: 21/671.094-2 | NIRE: 23707208539\nEmpresa: COMERCIAL BOM JARDIM LTDA.\nAutenticação: B41E7D09C3A85F26E9D10B7A4C3F8E52\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "3cbad90cfeadad2cacb01edc6ce5172e021f7402f743697abd1039a27b9f5efb",
+     "leitura": {}
+    },
+    {
+     "id": "CRLV",
+     "nome": "CRLV.pdf",
+     "tipo": "crlv",
+     "titulo": "CRLV",
+     "data": null,
+     "paginas": [
+      "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n07438789846\nPLACA\nNXR3N68\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2023\nANO MODELO\n2023\nNÚMERO DO CRV\n393432784321\nCÓDIGO DE SEGURANÇA DO CLA\n11594071147\nMARCA / MODELO / VERSÃO\nFIAT/TORO ENDURANCE 1.3 TURBO\nESPÉCIE / TIPO\nCARGA/CAMINHONETE\nCHASSI\n9BD4TTZB15UMLT01Z\nCOR PREDOMINANTE\nCINZA\nCOMBUSTÍVEL\nÁLCOOL/GASOLINA\nNOME\nCOMERCIAL BOM JARDIM LTDA.\nCPF / CNPJ\n73.701.393/0001-34\nLOCAL\nFORTALEZA/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "3c6668f54b65af062532140f600f06c09197a7b40f40a7d06d2e97d761513d55",
+     "leitura": {}
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "gabarito",
+    "politica": "Código Civil (genérica)"
+   },
+   "lado": "vendedor"
+  }
+ },
+ "geral": {
+  "veredito": "PODE",
+  "faixa": "VERDE",
+  "indice": 100.0,
+  "resumo": "Vendedor: Simone Batista Nunes pode assinar a ATPV-e — regra geral de representação — Contrato Social (2021).",
+  "motivos_faixa": [
+   "Vendedor — índice 100 ≥ limiar 85"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "FIAT/TORO ENDURANCE 1.3 TURBO",
+   "placa": "NXR3N68",
+   "renavam": "07438789846",
+   "chassi": "9BD4TTZB15UMLT01Z"
+  },
+  "data_venda": "2026-10-07",
+  "valor": 135000.0,
+  "vendedor": {
+   "tipo": "PJ",
+   "nome": "COMERCIAL BOM JARDIM LTDA.",
+   "documento": "73.701.393/0001-34",
+   "assinantes": [
+    {
+     "nome": "Simone Batista Nunes",
+     "cpf": "714.244.916-06"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": "DÉBORA LINS MOURA",
+   "documento": "045.115.091-07",
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "ATPV-e"
+ },
+ "hash_entrada": "5f8e1ba7769b7a2b8d1242d9cfb5d6b4c48589fca40ba0dc668a0b104f207b12"
+}

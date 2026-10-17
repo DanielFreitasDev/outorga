@@ -1,0 +1,705 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T00:54:27",
+ "pedido": {
+  "veiculo": {
+   "descricao": "M.BENZ/ATEGO 2426 6X2",
+   "placa": "CLY2R80",
+   "renavam": "06113875923",
+   "chassi": "9BMHFZSK56G4JFB64"
+  },
+  "data_venda": "2026-09-29",
+  "valor": 330000.0,
+  "assinantes": [
+   {
+    "nome": "Sérgio Paiva Gomes",
+    "cpf": "291.280.845-60"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "Auto Center Litoral Ltda."
+ },
+ "empresa": {
+  "razao_social": "LOGÍSTICA MARACANAÚ LTDA.",
+  "cnpj": "47.865.893/0001-00",
+  "tipo": "LTDA",
+  "objeto": "transporte rodoviário de cargas, a armazenagem e a operação logística, compreendendo as atividades classificadas nos códigos CNAE 4930-2/02 (transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e internacional) e 5211-7/99 (depósitos de mercadorias para terceiros, exceto armazéns gerais e guarda-móveis).",
+  "comercializa_veiculos": false
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 0.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 1,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 0 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: Gustavo Henrique Teles ou Bruna Teixeira Melo e Sérgio Paiva Gomes (procurador).",
+ "assinantes": [
+  {
+   "informado": "Sérgio Paiva Gomes",
+   "cpf": "291.280.845-60",
+   "chave": "29128084560",
+   "nome": "Sérgio Paiva Gomes",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:87663440005",
+   "pessoas": [
+    {
+     "chave": "87663440005",
+     "nome": "Gustavo Henrique Teles"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "alienação de veículos — Cláusula Sétima",
+   "cadeia": [
+    "MARACANAU_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  },
+  {
+   "id": "POA_SERGIO_BRUNA:29128084560+85003703864",
+   "pessoas": [
+    {
+     "chave": "85003703864",
+     "nome": "Bruna Teixeira Melo"
+    },
+    {
+     "chave": "29128084560",
+     "nome": "Sérgio Paiva Gomes"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 20/05/2026 (Cartório Pitaguary – 1º Ofício de Notas de Maracanaú/CE)",
+   "cadeia": [
+    "POA_SERGIO_BRUNA"
+   ],
+   "severidade": "atencao",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PJ",
+     "severidade": "ok",
+     "titulo": "Outorgada pela própria empresa",
+     "detalhe": "A outorgante é a empresa, representada por Gustavo Henrique Teles.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_SERGIO_BRUNA",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "LOGÍSTICA MARACANAÚ LTDA., sociedade empresária limitada, inscrita no CNPJ sob o nº 47.865.893/0001-00",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 572,
+       "fim": 674
+      }
+     ],
+     "caminho": "POA_SERGIO_BRUNA"
+    },
+    {
+     "codigo": "OUTORGA_COM_PODERES",
+     "severidade": "ok",
+     "titulo": "Quem outorgou tinha poder",
+     "detalhe": "Em 20/05/2026, Gustavo Henrique Teles podia representar a empresa nesse ato.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_SERGIO_BRUNA",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "LOGÍSTICA MARACANAÚ LTDA., sociedade empresária limitada, inscrita no CNPJ sob o nº 47.865.893/0001-00",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 572,
+       "fim": 674
+      },
+      {
+       "doc_id": "MARACANAU_CS",
+       "doc_titulo": "Contrato Social (2020)",
+       "trecho": "que representará a sociedade isoladamente, ativa e passivamente, em juízo ou fora dele, com poderes para praticar todos os atos de gestão compreendidos no objeto social, inclusive comprar, vender, alienar e onerar veículos da frota",
+       "clausula": "Cláusula Sétima",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 3510,
+       "fim": 3741
+      }
+     ],
+     "caminho": "POA_SERGIO_BRUNA"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar o ATPV.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_SERGIO_BRUNA",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "poderes especiais e expressos para, agindo sempre em conjunto, vender, ceder, transferir ou de qualquer forma alienar veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionarem; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e); receber o preço e dar quitação; requerer e assinar o que for necessário perante o DETRAN e demais órgãos de trânsito; e praticar os demais atos necessários ao fiel cumprimento deste mandato.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1774,
+       "fim": 2255
+      }
+     ],
+     "caminho": "POA_SERGIO_BRUNA"
+    },
+    {
+     "codigo": "PROCURACAO_NO_PRAZO",
+     "severidade": "ok",
+     "titulo": "Dentro do prazo",
+     "detalhe": "Válida até 20/05/2027.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "POA_SERGIO_BRUNA",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2353,
+       "fim": 2426
+      }
+     ],
+     "caminho": "POA_SERGIO_BRUNA"
+    },
+    {
+     "codigo": "PROCURACAO_SEM_VEICULO",
+     "severidade": "atencao",
+     "titulo": "Procuração não identifica o veículo",
+     "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+     "fundamento": [
+      "CJF, Enunciado 183"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_SERGIO_BRUNA",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "poderes especiais e expressos para, agindo sempre em conjunto, vender, ceder, transferir ou de qualquer forma alienar veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionarem; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e); receber o preço e dar quitação; requerer e assinar o que for necessário perante o DETRAN e demais órgãos de trânsito; e praticar os demais atos necessários ao fiel cumprimento deste mandato.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1774,
+       "fim": 2255
+      }
+     ],
+     "caminho": "POA_SERGIO_BRUNA"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "contrato:87663440005",
+   "via": "contrato",
+   "descricao": "alienação de veículos — Cláusula Sétima",
+   "pessoas": [
+    "87663440005"
+   ],
+   "faltam": [
+    "87663440005"
+   ],
+   "faltam_nomes": [
+    "Gustavo Henrique Teles"
+   ],
+   "pessoas_nomes": [
+    "Gustavo Henrique Teles"
+   ]
+  },
+  {
+   "alternativa": "POA_SERGIO_BRUNA:29128084560+85003703864",
+   "via": "procuracao",
+   "descricao": "Procuração pública de 20/05/2026 (Cartório Pitaguary – 1º Ofício de Notas de Maracanaú/CE)",
+   "pessoas": [
+    "29128084560",
+    "85003703864"
+   ],
+   "faltam": [
+    "85003703864"
+   ],
+   "faltam_nomes": [
+    "Bruna Teixeira Melo"
+   ],
+   "pessoas_nomes": [
+    "Sérgio Paiva Gomes",
+    "Bruna Teixeira Melo"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: LOGÍSTICA MARACANAÚ LTDA..",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "CLY2R80",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "MARACANAU_CS#R1",
+   "escopo": "alienacao_veiculos",
+   "aplicavel": true,
+   "motivo": "alienação de veículos",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "MARACANAU_CS",
+    "doc_titulo": "Contrato Social (2020)",
+    "trecho": "que representará a sociedade isoladamente, ativa e passivamente, em juízo ou fora dele, com poderes para praticar todos os atos de gestão compreendidos no objeto social, inclusive comprar, vender, alienar e onerar veículos da frota",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3510,
+    "fim": 3741
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Gustavo Henrique Teles"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "MARACANAU_CS#R2",
+   "escopo": "obrigacoes_garantias",
+   "aplicavel": false,
+   "motivo": "trata de avais, fianças e garantias",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "MARACANAU_CS",
+    "doc_titulo": "Contrato Social (2020)",
+    "trecho": "É vedado ao administrador o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+    "clausula": "Cláusula Sétima, Parágrafo segundo",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 4156,
+    "fim": 4302
+   },
+   "modo": "nao_especificado",
+   "pessoas": [
+    "Gustavo Henrique Teles"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "MARACANAU_CS#R3",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "MARACANAU_CS",
+    "doc_titulo": "Contrato Social (2020)",
+    "trecho": "Os sócios ROBERTO DINIZ CÂMARA e SANDRA HELENA PONTES não exercerão a administração da sociedade, participando dela exclusivamente na qualidade de quotistas.",
+    "clausula": "Cláusula Sétima, Parágrafo primeiro",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3979,
+    "fim": 4136
+   },
+   "modo": "nao_especificado",
+   "pessoas": [
+    "Roberto Diniz Câmara",
+    "Sandra Helena Pontes"
+   ],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-09-29",
+  "atos": [
+   {
+    "doc": "MARACANAU_CS",
+    "titulo": "Contrato Social (2020)",
+    "efeito": "2020-08-03"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "87663440005",
+    "nome": "Gustavo Henrique Teles",
+    "cargo": "administrador",
+    "doc": "MARACANAU_CS"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "20819672785",
+    "nome": "Roberto Diniz Câmara",
+    "percentual": 70.0
+   },
+   {
+    "chave": "17784864876",
+    "nome": "Sandra Helena Pontes",
+    "percentual": 30.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "LOGÍSTICA MARACANAÚ LTDA.",
+    "sub": "47.865.893/0001-00"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "M.BENZ/ATEGO 2426 6X2",
+    "sub": "CLY2R80"
+   },
+   {
+    "id": "20819672785",
+    "tipo": "pessoa",
+    "rotulo": "Roberto Diniz Câmara",
+    "papeis": [
+     "sócio 70%"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "17784864876",
+    "tipo": "pessoa",
+    "rotulo": "Sandra Helena Pontes",
+    "papeis": [
+     "sócio 30%"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "87663440005",
+    "tipo": "pessoa",
+    "rotulo": "Gustavo Henrique Teles",
+    "papeis": [
+     "administrador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "29128084560",
+    "tipo": "pessoa",
+    "rotulo": "Sérgio Paiva Gomes",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": true
+   },
+   {
+    "id": "85003703864",
+    "tipo": "pessoa",
+    "rotulo": "Bruna Teixeira Melo",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": false
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "20819672785",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "70%",
+    "status": "neutro"
+   },
+   {
+    "de": "17784864876",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "30%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "87663440005",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "MARACANAU_CS"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "29128084560",
+    "tipo": "procuracao",
+    "status": "valido",
+    "doc": "POA_SERGIO_BRUNA",
+    "rotulo": "procuração 20/05/2026",
+    "motivo": null
+   },
+   {
+    "de": "EMPRESA",
+    "para": "85003703864",
+    "tipo": "procuracao",
+    "status": "valido",
+    "doc": "POA_SERGIO_BRUNA",
+    "rotulo": "procuração 20/05/2026",
+    "motivo": null
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2020-08-03",
+   "tipo": "ato",
+   "titulo": "Contrato Social (2020)",
+   "doc": "MARACANAU_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-05-20",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Bruna Teixeira Melo e Sérgio Paiva Gomes",
+   "doc": "POA_SERGIO_BRUNA",
+   "detalhe": "publica"
+  },
+  {
+   "data": "2026-09-29",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 330.000,00"
+  },
+  {
+   "data": "2027-05-20",
+   "tipo": "vencimento",
+   "titulo": "Vence a procuração de Bruna Teixeira Melo e Sérgio Paiva Gomes",
+   "doc": "POA_SERGIO_BRUNA",
+   "detalhe": ""
+  }
+ ],
+ "pessoas": {
+  "20819672785": {
+   "nome": "Roberto Diniz Câmara",
+   "cpf": "20819672785"
+  },
+  "17784864876": {
+   "nome": "Sandra Helena Pontes",
+   "cpf": "17784864876"
+  },
+  "87663440005": {
+   "nome": "Gustavo Henrique Teles",
+   "cpf": "87663440005"
+  },
+  "29128084560": {
+   "nome": "Sérgio Paiva Gomes",
+   "cpf": "29128084560"
+  },
+  "85003703864": {
+   "nome": "Bruna Teixeira Melo",
+   "cpf": "85003703864"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "LOGÍSTICA MARACANAÚ LTDA.",
+   "cnpj": "47.865.893/0001-00",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Contrato Social (2020)",
+     "doc": "MARACANAU_CS",
+     "efeito": "2020-08-03"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Sérgio Paiva Gomes",
+    "cpf": "291.280.845-60",
+    "identificacao": "CPF",
+    "qualidade": "procurador(a) pela procuração de 20/05/2026"
+   }
+  ],
+  "poderes_conferidos": [
+   "Os assinantes informados não satisfazem nenhuma combinação de assinatura prevista."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [],
+  "documentos_verificaveis": [
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "MARACANAU_CS",
+    "titulo": "Contrato Social (2020)",
+    "arquivo": "MARACANAU_CS.pdf"
+   },
+   {
+    "id": "POA_SERGIO_BRUNA",
+    "titulo": "Procuração (2026)",
+    "arquivo": "POA_SERGIO_BRUNA.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n06113875923\nPLACA\nCLY2R80\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2020\nANO MODELO\n2020\nNÚMERO DO CRV\n295420138747\nCÓDIGO DE SEGURANÇA DO CLA\n17891301678\nMARCA / MODELO / VERSÃO\nM.BENZ/ATEGO 2426 6X2\nESPÉCIE / TIPO\nCARGA/CAMINHÃO\nCHASSI\n9BMHFZSK56G4JFB64\nCOR PREDOMINANTE\nBRANCA\nCOMBUSTÍVEL\nDIESEL\nNOME\nLOGÍSTICA MARACANAÚ LTDA.\nCPF / CNPJ\n47.865.893/0001-00\nLOCAL\nMARACANAÚ/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "0051ecdb7cbf11b7d47d006b057328940ef99d979064736182b208e78ba6e552",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "MARACANAU_CS",
+   "nome": "MARACANAU_CS.pdf",
+   "tipo": "contrato_social",
+   "titulo": "Contrato Social (2020)",
+   "data": "2020-08-03",
+   "paginas": [
+    "LOGÍSTICA MARACANAÚ LTDA. CNPJ nº 47.865.893/0001-00 – NIRE 23145883523\nCONTRATO SOCIAL DE CONSTITUIÇÃO\nPelo presente instrumento particular, as partes abaixo qualificadas:\nROBERTO DINIZ CÂMARA, brasileiro, casado sob o regime de comunhão parcial de bens,\nempresário, portador da Cédula de Identidade RG nº 31726097 SSP/CE, inscrito no CPF sob o nº\n208.196.727-85, residente e domiciliado na Rua das Acácias, nº 455, apartamento 1.802, bairro\nGuararapes, Fortaleza/CE, CEP 60810-160; e\nSANDRA HELENA PONTES, brasileira, casada sob o regime de comunhão universal de bens,\nempresária, portadora da Cédula de Identidade RG nº 87820486 SSP/CE, inscrita no CPF sob o nº\n177.848.648-76, residente e domiciliada na Rua Poço Verde, nº 1.120, bairro Cidade dos\nFuncionários, Fortaleza/CE, CEP 60822-415;\nresolvem, de comum acordo, constituir uma sociedade empresária limitada, que se regerá pelas\ncláusulas e condições seguintes e, nas omissões, pela Lei nº 10.406, de 10 de janeiro de 2002\n(Código Civil).\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL E DA SEDE\nA sociedade girará sob o nome empresarial LOGÍSTICA MARACANAÚ LTDA. e terá sede na\nRodovia Estadual Distrito Norte, nº 2.400, galpões 5 e 6, bairro Distrito Industrial I, Maracanaú/CE,\nCEP 61939-160, podendo abrir e encerrar filiais em qualquer parte do território nacional, mediante\nalteração contratual.\nCLÁUSULA SEGUNDA – DO OBJETO SOCIAL\nA sociedade tem por objeto o transporte rodoviário de cargas, a armazenagem e a operação logística,\ncompreendendo as atividades classificadas nos códigos CNAE 4930-2/02 (transporte rodoviário de\ncarga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e internacional) e\n5211-7/99 (depósitos de mercadorias para terceiros, exceto armazéns gerais e guarda-móveis).\nCLÁUSULA TERCEIRA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciará suas atividades na data do arquivamento deste instrumento na Junta Comercial\ndo Estado do Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 600.000,00 (seiscentos mil reais), dividido em 600.000 (seiscentas mil)\nquotas de valor nominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas, neste\nato, em moeda corrente do País, assim distribuídas entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nROBERTO DINIZ CÂMARA\n420.000\n420.000,00\n70%\nSANDRA HELENA PONTES\n180.000\n180.000,00\n30%\nTOTAL\n600.000\n600.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "A responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social.\nCLÁUSULA SEXTA – DA CESSÃO E TRANSFERÊNCIA DE QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas ou transferidas a terceiros sem o consentimento\ndo outro sócio, a quem fica assegurado, em igualdade de condições e preço, o direito de preferência\npara a sua aquisição.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade será exercida por administrador não sócio, ficando desde já designado,\ncom a aprovação da unanimidade dos sócios, em conformidade com o art. 1.061 do Código Civil, o\nSr. GUSTAVO HENRIQUE TELES, brasileiro, solteiro, administrador de empresas, portador da\nCédula de Identidade RG nº 21111687 SSP/CE, inscrito no CPF sob o nº 876.634.400-05, residente e\ndomiciliado na Rua Lagoa Azul, nº 77, bairro Jereissati I, Maracanaú/CE, CEP 61900-310, por prazo\nindeterminado, que representará a sociedade isoladamente, ativa e passivamente, em juízo ou fora\ndele, com poderes para praticar todos os atos de gestão compreendidos no objeto social, inclusive\ncomprar, vender, alienar e onerar veículos da frota, celebrar contratos de transporte e de\narmazenagem, admitir e demitir empregados, abrir e movimentar contas bancárias e representar a\nsociedade perante quaisquer repartições públicas federais, estaduais e municipais.\nParágrafo primeiro. Os sócios ROBERTO DINIZ CÂMARA e SANDRA HELENA PONTES não\nexercerão a administração da sociedade, participando dela exclusivamente na qualidade de quotistas.\nParágrafo segundo. É vedado ao administrador o uso do nome empresarial em atividades estranhas\nao objeto social, especialmente em avais, fianças e endossos de favor.\nParágrafo terceiro. O administrador fará jus a uma remuneração mensal fixada pelos sócios.\nParágrafo quarto. O administrador ora designado é investido no cargo mediante a assinatura do\ntermo de posse que integra este instrumento, nos termos do art. 1.062 do Código Civil.\nCLÁUSULA OITAVA – DO EXERCÍCIO SOCIAL E DOS RESULTADOS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, o administrador prestará\ncontas justificadas de sua administração, procedendo à elaboração do inventário, do balanço\npatrimonial e do balanço de resultado econômico, cabendo aos sócios, na proporção de suas quotas,\nos lucros ou as perdas apurados.\nParágrafo único. Nos quatro meses seguintes ao término do exercício social, os sócios deliberarão\nsobre as contas apresentadas pelo administrador e sobre a destinação dos resultados.\nCLÁUSULA NONA – DO FALECIMENTO OU DA INTERDIÇÃO DE SÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros, sucessores e o incapaz. Não sendo possível ou inexistindo interesse destes ou do sócio\nremanescente, o valor de seus haveres será apurado e liquidado com base na situação patrimonial da\nsociedade, à data da resolução, verificada em balanço especialmente levantado.\nCLÁUSULA DÉCIMA – DO FORO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "Fica eleito o foro da Comarca de Maracanaú, Estado do Ceará, para dirimir quaisquer dúvidas ou\nlitígios oriundos deste contrato, com renúncia expressa a qualquer outro, por mais privilegiado que\nseja.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em via única,\nque será levada a arquivamento na Junta Comercial do Estado do Ceará.\nMaracanaú/CE, 3 de agosto de 2020.\n__________________________________ ROBERTO DINIZ CÂMARA\n__________________________________ SANDRA HELENA PONTES\nVisto: Larissa Pinheiro Teófilo – OAB/CE nº 30.218\nTERMO DE POSSE\nPelo presente termo, GUSTAVO HENRIQUE TELES, acima qualificado, toma posse do cargo de\nadministrador não sócio da sociedade LOGÍSTICA MARACANAÚ LTDA., para o qual foi\ndesignado na Cláusula Sétima do contrato social, por prazo indeterminado, e declara, sob as penas\nda lei, que não está impedido de exercer a administração da sociedade, por lei especial, ou em\nvirtude de condenação criminal, ou por se encontrar sob os efeitos dela, a pena que vede, ainda que\ntemporariamente, o acesso a cargos públicos; ou por crime falimentar, de prevaricação, peita ou\nsuborno, concussão, peculato, ou contra a economia popular, contra o sistema financeiro nacional,\ncontra normas de defesa da concorrência, contra as relações de consumo, a fé pública ou a\npropriedade.\nMaracanaú/CE, 3 de agosto de 2020.\n__________________________________ GUSTAVO HENRIQUE TELES\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 18/08/2020 sob o nº 78597621541\nProtocolo: 20/158.364-2 | NIRE: 23145883523\nEmpresa: LOGÍSTICA MARACANAÚ LTDA.\nAutenticação: E62B1F09A7D34C85B0E9F21A6C3D7E48\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "50bf75aeee1778f734db0f48a76e4fecb718cb53d46fa1e6020759ff72d87038",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 46.0,
+      "tokens_saida": 832,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 34.4,
+      "tokens_saida": 774,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "POA_SERGIO_BRUNA",
+   "nome": "POA_SERGIO_BRUNA.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (2026)",
+   "data": "2026-05-20",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ – COMARCA DE MARACANAÚ\nCartório Pitaguary – 1º Ofício de Notas de Maracanaú/CE (fictício)\nGenésio Mota Arruda – Tabelião\nLIVRO 77 — FOLHAS 120/121\nPROCURAÇÃO QUE FAZ LOGÍSTICA MARACANAÚ LTDA. A SÉRGIO PAIVA GOMES\nE BRUNA TEIXEIRA MELO\nSAIBAM quantos este público instrumento de procuração virem que, aos vinte (20) dias do mês de\nmaio de dois mil e vinte e seis (2026), nesta cidade de Maracanaú, Estado do Ceará, neste Cartório,\nperante mim, Lívia Castelo Branco Siqueira, Escrevente Autorizada, compareceu como\nOUTORGANTE: LOGÍSTICA MARACANAÚ LTDA., sociedade empresária limitada, inscrita no\nCNPJ sob o nº 47.865.893/0001-00, NIRE 23145883523, com sede neste Município, neste ato\nrepresentada por seu administrador GUSTAVO HENRIQUE TELES, brasileiro, solteiro,\nadministrador de empresas, RG nº 21111687 SSP/CE, CPF nº 876.634.400-05, residente e\ndomiciliado em Maracanaú/CE, administrador não sócio designado no Contrato Social de\nConstituição registrado na JUCEC em 18/08/2020 sob o nº 78597621541, cuja cópia, acompanhada\nde certidão simplificada expedida pela JUCEC em 12/05/2026, fica arquivada nestas notas.\nReconhecido como o próprio por mim, à vista dos documentos apresentados, do que dou fé.\nPela outorgante, por seu administrador, foi dito que, por este instrumento, nomeia e constitui seus\nbastantes procuradores SÉRGIO PAIVA GOMES, brasileiro, casado, gerente de frota, RG nº\n85960701 SSP/CE, CPF nº 291.280.845-60, residente e domiciliado na Rua Paulino Nogueira, nº\n315, Benfica, Fortaleza/CE, e BRUNA TEIXEIRA MELO, brasileira, solteira, coordenadora de\nlogística, RG nº 21246318 SSP/CE, CPF nº 850.037.038-64, residente e domiciliada na Rua 15, nº\n210, Conjunto Jereissati I, Maracanaú/CE, aos quais confere poderes especiais e expressos para,\nagindo sempre em conjunto, vender, ceder, transferir ou de qualquer forma alienar veículos\nautomotores de propriedade da outorgante, a quem e pelo preço que convencionarem; assinar a\nAutorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e); receber o preço e dar\nquitação; requerer e assinar o que for necessário perante o DETRAN e demais órgãos de trânsito; e\npraticar os demais atos necessários ao fiel cumprimento deste mandato. Não terá validade perante a\noutorgante o ato praticado isoladamente por qualquer dos outorgados.\nO presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data.\nAssim o disse, do que dou fé, e me pediu que lavrasse este instrumento, que, lido em voz alta e\nachado conforme, aceita e assina. Eu, Lívia Castelo Branco Siqueira, Escrevente Autorizada, a\nlavrei. Eu, Genésio Mota Arruda, Tabelião, subscrevo e assino.\n(aa) GUSTAVO HENRIQUE TELES, pela outorgante.\nGENÉSIO MOTA ARRUDA, Tabelião.\nEmolumentos: R$ 226,15 · Taxa de fiscalização: R$ 11,31 · Total: R$ 237,46\nSelo Digital: PTG-0077-2026-6E2C35\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "TRASLADO — Extraído na mesma data e conferido com o original, do que dou fé.\nMaracanaú/CE, 20 de maio de 2026.\nGenésio Mota Arruda – Tabelião\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "0701babb7f3ccc01f1cbdc210041a6c7de4308ab85a0c322df42cd3c56c0f03d",
+   "leitura": {
+    "tarefas": {
+     "procuracao": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 41.8,
+      "tokens_saida": 749,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "politica": "DETRAN-CE"
+ },
+ "hash_entrada": "16d6f0499a95ea8b285f51bfedc954a511c5cf3304f39bc4afb3b315cbce1994"
+}

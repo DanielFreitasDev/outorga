@@ -1,0 +1,63 @@
+{
+  "caso": "C37",
+  "titulo": "Procuração antiga sem prazo (3 anos)",
+  "categoria": "forma",
+  "objetivo": "Válida (sem prazo e não revogada), mas antiga: pedir certidão atualizada.",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "AMARELO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "GUSTAVO"
+      ],
+      [
+        "BRUNA"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 682"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "876.634.400-05"
+      ],
+      [
+        "850.037.038-64"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Gustavo Henrique Teles"
+      ],
+      [
+        "Bruna Teixeira Melo"
+      ]
+    ]
+  },
+  "esperado_ce": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "GUSTAVO"
+      ]
+    ],
+    "fundamentos": [
+      "DETRAN-CE: validade de até 1 ano da expedição"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "876.634.400-05"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Gustavo Henrique Teles"
+      ]
+    ]
+  }
+}

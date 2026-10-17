@@ -1,0 +1,68 @@
+{
+  "caso": "A07",
+  "titulo": "PJ dos dois lados, assinaturas lidas da ATPV-e: comprador sem poder",
+  "categoria": "dois_lados",
+  "objetivo": "As assinaturas já registradas na ATPV-e: vendedor correto (os dois sócios), comprador assinado por quotista.",
+  "validacao_cega": false,
+  "lote": "atpv",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "vendedor": {
+      "veredito": "PODE",
+      "faixas_aceitaveis": [
+        "VERDE"
+      ],
+      "conjuntos_minimos": [
+        [
+          "CARLOS",
+          "LUCIANA"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "417.075.364-06",
+          "568.151.884-18"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Carlos Eduardo Bezerra",
+          "Luciana Moura Sampaio"
+        ]
+      ]
+    },
+    "comprador": {
+      "veredito": "NAO_PODE",
+      "faixas_aceitaveis": [
+        "VERMELHO"
+      ],
+      "conjuntos_minimos": [
+        [
+          "FRANCISCO"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "729.405.576-91"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Francisco Wellington Rocha"
+        ]
+      ]
+    }
+  }
+}

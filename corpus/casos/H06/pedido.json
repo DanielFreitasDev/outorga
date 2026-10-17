@@ -1,0 +1,26 @@
+{
+  "caso": "H06",
+  "vendedor": {
+    "razao_social": "TAVARES & MOURÃO EVENTOS LTDA.",
+    "cnpj": "38.601.295/0001-24"
+  },
+  "veiculo": {
+    "placa": "DWE4R61",
+    "renavam": "07567141273",
+    "chassi": "99A39TDZGJ08R5U38",
+    "descricao": "CAOA CHERY/ARRIZO 6 PRO 1.5T"
+  },
+  "data_venda": "2026-09-25",
+  "valor": 132000,
+  "assinantes": [
+    {
+      "nome": "Nilton Arruda Coelho",
+      "cpf": "869.934.673-56"
+    }
+  ],
+  "comprador": {
+    "nome": "Jefferson Lucas Araújo",
+    "cidade": "Caucaia/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

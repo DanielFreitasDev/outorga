@@ -1,0 +1,922 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T00:56:58",
+ "pedido": {
+  "veiculo": {
+   "descricao": "FIAT/FIORINO ENDURANCE 1.4",
+   "placa": "CRS0R60",
+   "renavam": "05106261488",
+   "chassi": "9BDS4GZLAKWT4GR0E"
+  },
+  "data_venda": "2026-09-08",
+  "valor": 94000.0,
+  "assinantes": [
+   {
+    "nome": "Davi Brito Alencar",
+    "cpf": "370.283.822-81"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "Patrícia Lemos Barroso"
+ },
+ "empresa": {
+  "razao_social": "PANIFICADORA CHAPADA DO ARARIPE LTDA.",
+  "cnpj": "87.526.239/0001-88",
+  "tipo": "LTDA",
+  "objeto": "panificação",
+  "comercializa_veiculos": false
+ },
+ "veredito": "PODE",
+ "faixa": "VERDE",
+ "indice": 97.0,
+ "confianca": 0.94,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 0.94,
+  "fatos_decisivos": 3,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 1,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 97 ≥ limiar 85"
+ ],
+ "resumo": "Davi Brito Alencar pode assinar o ATPV — procuração pública de 10/12/2025 (Tabelionato Araripe – 1º Ofício de Notas do Crato/CE).",
+ "assinantes": [
+  {
+   "informado": "Davi Brito Alencar",
+   "cpf": "370.283.822-81",
+   "chave": "37028382281",
+   "nome": "Davi Brito Alencar",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:18603208050",
+   "pessoas": [
+    {
+     "chave": "18603208050",
+     "nome": "Lúcia Helena Brito"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Cláusula Segunda; regra geral de representação — Cláusula Sétima",
+   "cadeia": [
+    "CHAPADA_ALT1"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  },
+  {
+   "id": "POA_DAVI:37028382281",
+   "pessoas": [
+    {
+     "chave": "37028382281",
+     "nome": "Davi Brito Alencar"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 10/12/2025 (Tabelionato Araripe – 1º Ofício de Notas do Crato/CE)",
+   "cadeia": [
+    "POA_DAVI"
+   ],
+   "severidade": "atencao",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PJ",
+     "severidade": "ok",
+     "titulo": "Outorgada pela própria empresa",
+     "detalhe": "A outorgante é a empresa, representada por Joaquim Moreira Brito.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_DAVI",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "PANIFICADORA CHAPADA DO ARARIPE LTDA., sociedade empresária limitada, inscrita no CNPJ sob o nº 87.526.239/0001-88",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 587,
+       "fim": 701
+      }
+     ],
+     "caminho": "POA_DAVI"
+    },
+    {
+     "codigo": "OUTORGA_COM_PODERES",
+     "severidade": "ok",
+     "titulo": "Quem outorgou tinha poder",
+     "detalhe": "Em 10/12/2025, Joaquim Moreira Brito podia representar a empresa nesse ato.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_DAVI",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "PANIFICADORA CHAPADA DO ARARIPE LTDA., sociedade empresária limitada, inscrita no CNPJ sob o nº 87.526.239/0001-88",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 587,
+       "fim": 701
+      },
+      {
+       "doc_id": "CHAPADA_CS",
+       "doc_titulo": "Contrato Social (2019)",
+       "trecho": "A administração da sociedade será exercida exclusivamente pelo sócio JOAQUIM MOREIRA BRITO, por prazo indeterminado, a quem compete, isoladamente, a representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos necessários ao seu regular funcionamento e à consecução do objeto social",
+       "clausula": "Cláusula Sétima",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 2832,
+       "fim": 3151
+      }
+     ],
+     "caminho": "POA_DAVI"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar o ATPV.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_DAVI",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionar; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e), inclusive em meio eletrônico",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1559,
+       "fim": 1848
+      }
+     ],
+     "caminho": "POA_DAVI"
+    },
+    {
+     "codigo": "PROCURACAO_NO_PRAZO",
+     "severidade": "ok",
+     "titulo": "Dentro do prazo",
+     "detalhe": "Válida até 10/12/2026.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "POA_DAVI",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "O presente mandato é válido até 10 de dezembro de 2026, data em que se extinguirá de pleno direito, independentemente de notificação.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2113,
+       "fim": 2246
+      }
+     ],
+     "caminho": "POA_DAVI"
+    },
+    {
+     "codigo": "PROCURACAO_SEM_VEICULO",
+     "severidade": "atencao",
+     "titulo": "Procuração não identifica o veículo",
+     "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+     "fundamento": [
+      "CJF, Enunciado 183"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_DAVI",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionar; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e), inclusive em meio eletrônico",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1559,
+       "fim": 1848
+      }
+     ],
+     "caminho": "POA_DAVI"
+    },
+    {
+     "codigo": "MANDATO_SUBSISTE",
+     "severidade": "info",
+     "titulo": "Quem outorgou não é mais administrador",
+     "detalhe": "Joaquim Moreira Brito deixou a administração depois da outorga, mas o mandato foi dado pela empresa e não se extingue com a troca do administrador (as causas de extinção estão no art. 682).",
+     "fundamento": [
+      "CC art. 682"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_DAVI",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "PANIFICADORA CHAPADA DO ARARIPE LTDA., sociedade empresária limitada, inscrita no CNPJ sob o nº 87.526.239/0001-88",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 587,
+       "fim": 701
+      }
+     ],
+     "caminho": "POA_DAVI"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": {
+  "id": "POA_DAVI:37028382281",
+  "pessoas": [
+   {
+    "chave": "37028382281",
+    "nome": "Davi Brito Alencar"
+   }
+  ],
+  "via": "procuracao",
+  "descricao": "Procuração pública de 10/12/2025 (Tabelionato Araripe – 1º Ofício de Notas do Crato/CE)",
+  "cadeia": [
+   "POA_DAVI"
+  ],
+  "severidade": "atencao",
+  "confianca": 1.0,
+  "achados": [
+   {
+    "codigo": "OUTORGANTE_PJ",
+    "severidade": "ok",
+    "titulo": "Outorgada pela própria empresa",
+    "detalhe": "A outorgante é a empresa, representada por Joaquim Moreira Brito.",
+    "fundamento": [
+     "CC art. 1.018"
+    ],
+    "fontes": [
+     {
+      "doc_id": "POA_DAVI",
+      "doc_titulo": "Procuração (2025)",
+      "trecho": "PANIFICADORA CHAPADA DO ARARIPE LTDA., sociedade empresária limitada, inscrita no CNPJ sob o nº 87.526.239/0001-88",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 587,
+      "fim": 701
+     }
+    ],
+    "caminho": "POA_DAVI"
+   },
+   {
+    "codigo": "OUTORGA_COM_PODERES",
+    "severidade": "ok",
+    "titulo": "Quem outorgou tinha poder",
+    "detalhe": "Em 10/12/2025, Joaquim Moreira Brito podia representar a empresa nesse ato.",
+    "fundamento": [
+     "CC art. 1.018"
+    ],
+    "fontes": [
+     {
+      "doc_id": "POA_DAVI",
+      "doc_titulo": "Procuração (2025)",
+      "trecho": "PANIFICADORA CHAPADA DO ARARIPE LTDA., sociedade empresária limitada, inscrita no CNPJ sob o nº 87.526.239/0001-88",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 587,
+      "fim": 701
+     },
+     {
+      "doc_id": "CHAPADA_CS",
+      "doc_titulo": "Contrato Social (2019)",
+      "trecho": "A administração da sociedade será exercida exclusivamente pelo sócio JOAQUIM MOREIRA BRITO, por prazo indeterminado, a quem compete, isoladamente, a representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos necessários ao seu regular funcionamento e à consecução do objeto social",
+      "clausula": "Cláusula Sétima",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 2832,
+      "fim": 3151
+     }
+    ],
+    "caminho": "POA_DAVI"
+   },
+   {
+    "codigo": "PODERES_ESPECIAIS",
+    "severidade": "ok",
+    "titulo": "Poder expresso para alienar veículos",
+    "detalhe": "Confere poder expresso para vender/transferir veículos e assinar o ATPV.",
+    "fundamento": [
+     "CC art. 661, §1º"
+    ],
+    "fontes": [
+     {
+      "doc_id": "POA_DAVI",
+      "doc_titulo": "Procuração (2025)",
+      "trecho": "poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionar; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e), inclusive em meio eletrônico",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 1559,
+      "fim": 1848
+     }
+    ],
+    "caminho": "POA_DAVI"
+   },
+   {
+    "codigo": "PROCURACAO_NO_PRAZO",
+    "severidade": "ok",
+    "titulo": "Dentro do prazo",
+    "detalhe": "Válida até 10/12/2026.",
+    "fundamento": [],
+    "fontes": [
+     {
+      "doc_id": "POA_DAVI",
+      "doc_titulo": "Procuração (2025)",
+      "trecho": "O presente mandato é válido até 10 de dezembro de 2026, data em que se extinguirá de pleno direito, independentemente de notificação.",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 2113,
+      "fim": 2246
+     }
+    ],
+    "caminho": "POA_DAVI"
+   },
+   {
+    "codigo": "PROCURACAO_SEM_VEICULO",
+    "severidade": "atencao",
+    "titulo": "Procuração não identifica o veículo",
+    "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+    "fundamento": [
+     "CJF, Enunciado 183"
+    ],
+    "fontes": [
+     {
+      "doc_id": "POA_DAVI",
+      "doc_titulo": "Procuração (2025)",
+      "trecho": "poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionar; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e), inclusive em meio eletrônico",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 1559,
+      "fim": 1848
+     }
+    ],
+    "caminho": "POA_DAVI"
+   },
+   {
+    "codigo": "MANDATO_SUBSISTE",
+    "severidade": "info",
+    "titulo": "Quem outorgou não é mais administrador",
+    "detalhe": "Joaquim Moreira Brito deixou a administração depois da outorga, mas o mandato foi dado pela empresa e não se extingue com a troca do administrador (as causas de extinção estão no art. 682).",
+    "fundamento": [
+     "CC art. 682"
+    ],
+    "fontes": [
+     {
+      "doc_id": "POA_DAVI",
+      "doc_titulo": "Procuração (2025)",
+      "trecho": "PANIFICADORA CHAPADA DO ARARIPE LTDA., sociedade empresária limitada, inscrita no CNPJ sob o nº 87.526.239/0001-88",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 587,
+      "fim": 701
+     }
+    ],
+    "caminho": "POA_DAVI"
+   }
+  ],
+  "precondicoes": []
+ },
+ "faltantes": [],
+ "achados": [
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: PANIFICADORA CHAPADA DO ARARIPE.",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "CRS0R60",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "CHAPADA_ALT1#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "CHAPADA_ALT1",
+    "doc_titulo": "Alteração Contratual (2026)",
+    "trecho": "A administração da sociedade passa a ser exercida exclusivamente pela sócia LÚCIA HELENA BRITO, isoladamente",
+    "clausula": "Cláusula Segunda",
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 1562,
+    "fim": 1670
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Lúcia Helena Brito"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "CHAPADA_ALT1#R2",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "CHAPADA_ALT1",
+    "doc_titulo": "Alteração Contratual (2026)",
+    "trecho": "A administração da sociedade será exercida exclusivamente pela sócia LÚCIA HELENA BRITO, isoladamente, por prazo indeterminado, a quem compete a representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos necessários ao seu regular funcionamento e à consecução do objeto social",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 1831,
+    "fim": 2146
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Lúcia Helena Brito"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "CHAPADA_ALT1#R3",
+   "escopo": "obrigacoes_garantias",
+   "aplicavel": false,
+   "motivo": "trata de avais, fianças e garantias",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "CHAPADA_ALT1",
+    "doc_titulo": "Alteração Contratual (2026)",
+    "trecho": "vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 2148,
+    "fim": 2287
+   },
+   "modo": "nao_especificado",
+   "pessoas": [
+    "Lúcia Helena Brito"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "CHAPADA_ALT1#R4",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "CHAPADA_ALT1",
+    "doc_titulo": "Alteração Contratual (2026)",
+    "trecho": "O sócio JOAQUIM MOREIRA BRITO não exercerá funções de administração, participando da sociedade exclusivamente na condição de sócio quotista.",
+    "clausula": "Cláusula Sétima, Parágrafo único",
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 2306,
+    "fim": 2446
+   },
+   "modo": "nao_especificado",
+   "pessoas": [
+    "Joaquim Moreira Brito"
+   ],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-09-08",
+  "atos": [
+   {
+    "doc": "CHAPADA_CS",
+    "titulo": "Contrato Social (2019)",
+    "efeito": "2019-03-18"
+   },
+   {
+    "doc": "CHAPADA_ALT1",
+    "titulo": "Alteração Contratual (2026)",
+    "efeito": "2026-04-15"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "18603208050",
+    "nome": "Lúcia Helena Brito",
+    "cargo": "administradora",
+    "doc": "CHAPADA_ALT1"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "29836957944",
+    "nome": "Joaquim Moreira Brito",
+    "percentual": 60.0
+   },
+   {
+    "chave": "18603208050",
+    "nome": "Lúcia Helena Brito",
+    "percentual": 40.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "PANIFICADORA CHAPADA DO ARARIPE LTDA.",
+    "sub": "87.526.239/0001-88"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "FIAT/FIORINO ENDURANCE 1.4",
+    "sub": "CRS0R60"
+   },
+   {
+    "id": "29836957944",
+    "tipo": "pessoa",
+    "rotulo": "Joaquim Moreira Brito",
+    "papeis": [
+     "sócio 60%"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "18603208050",
+    "tipo": "pessoa",
+    "rotulo": "Lúcia Helena Brito",
+    "papeis": [
+     "sócio 40%",
+     "administradora"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "37028382281",
+    "tipo": "pessoa",
+    "rotulo": "Davi Brito Alencar",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "29836957944",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "60%",
+    "status": "neutro"
+   },
+   {
+    "de": "18603208050",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "40%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "18603208050",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "CHAPADA_ALT1"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "37028382281",
+    "tipo": "procuracao",
+    "status": "valido",
+    "doc": "POA_DAVI",
+    "rotulo": "procuração 10/12/2025",
+    "motivo": null
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2019-03-18",
+   "tipo": "ato",
+   "titulo": "Contrato Social (2019)",
+   "doc": "CHAPADA_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2025-12-10",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Davi Brito Alencar",
+   "doc": "POA_DAVI",
+   "detalhe": "publica"
+  },
+  {
+   "data": "2026-04-15",
+   "tipo": "ato",
+   "titulo": "Alteração Contratual (2026)",
+   "doc": "CHAPADA_ALT1",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-09-08",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 94.000,00"
+  },
+  {
+   "data": "2026-12-10",
+   "tipo": "vencimento",
+   "titulo": "Vence a procuração de Davi Brito Alencar",
+   "doc": "POA_DAVI",
+   "detalhe": ""
+  }
+ ],
+ "pessoas": {
+  "29836957944": {
+   "nome": "Joaquim Moreira Brito",
+   "cpf": "29836957944"
+  },
+  "18603208050": {
+   "nome": "Lúcia Helena Brito",
+   "cpf": "18603208050"
+  },
+  "37028382281": {
+   "nome": "Davi Brito Alencar",
+   "cpf": "37028382281"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "comprovada",
+  "outorgante": {
+   "nome": "PANIFICADORA CHAPADA DO ARARIPE LTDA.",
+   "cnpj": "87.526.239/0001-88",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Contrato Social (2019)",
+     "doc": "CHAPADA_CS",
+     "efeito": "2019-03-18"
+    },
+    {
+     "titulo": "Alteração Contratual (2026)",
+     "doc": "CHAPADA_ALT1",
+     "efeito": "2026-04-15"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Davi Brito Alencar",
+    "cpf": "370.283.822-81",
+    "identificacao": "CPF",
+    "qualidade": "procurador(a)"
+   }
+  ],
+  "poderes_conferidos": [
+   "Procuração pública de 10/12/2025 (Tabelionato Araripe – 1º Ofício de Notas do Crato/CE, livro 96, folhas 178/179), outorgada por PANIFICADORA CHAPADA DO ARARIPE LTDA. (repr. Joaquim Moreira Brito): poderes especiais e expressos para vender veículos e assinar o ATPV"
+  ],
+  "prazo_validade": [
+   "Procuração pública válida até 10/12/2026"
+  ],
+  "revogacao": [
+   "Nenhuma revogação nos documentos apresentados; a revogação fica anotada na serventia de origem — confirmar com certidão atualizada do cartório."
+  ],
+  "fontes": [
+   {
+    "doc_id": "POA_DAVI",
+    "doc_titulo": "Procuração (2025)",
+    "trecho": "poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionar; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e), inclusive em meio eletrônico",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 1559,
+    "fim": 1848
+   },
+   {
+    "doc_id": "POA_DAVI",
+    "doc_titulo": "Procuração (2025)",
+    "trecho": "O presente mandato é válido até 10 de dezembro de 2026, data em que se extinguirá de pleno direito, independentemente de notificação.",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 2113,
+    "fim": 2246
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "CHAPADA_ALT1",
+    "titulo": "Alteração Contratual (2026)",
+    "arquivo": "CHAPADA_ALT1.pdf"
+   },
+   {
+    "id": "CHAPADA_CS",
+    "titulo": "Contrato Social (2019)",
+    "arquivo": "CHAPADA_CS.pdf"
+   },
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "POA_DAVI",
+    "titulo": "Procuração (2025)",
+    "arquivo": "POA_DAVI.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "CHAPADA_ALT1",
+   "nome": "CHAPADA_ALT1.pdf",
+   "tipo": "alteracao_contratual",
+   "titulo": "Alteração Contratual (2026)",
+   "data": "2026-04-15",
+   "paginas": [
+    "PRIMEIRA ALTERAÇÃO DO CONTRATO SOCIAL\nPANIFICADORA CHAPADA DO ARARIPE LTDA.\nCNPJ nº 87.526.239/0001-88 – NIRE 23423791390\nJOAQUIM MOREIRA BRITO, brasileiro, casado sob o regime de comunhão parcial de bens,\npanificador, portador da carteira de identidade nº 32316553 SSP/CE e inscrito no CPF sob o nº\n298.369.579-44, residente e domiciliado na Rua Doutor João Pessoa, nº 215, bairro Pimenta, Crato/\nCE, CEP 63105-010; e\nLÚCIA HELENA BRITO, brasileira, casada sob o regime de comunhão parcial de bens, empresária,\nportadora da carteira de identidade nº 61642368 SSP/CE e inscrita no CPF sob o nº 186.032.080-50,\nresidente e domiciliada na Rua Bárbara de Alencar, nº 980, bairro Centro, Crato/CE, CEP\n63100-055;\núnicos sócios da sociedade empresária limitada PANIFICADORA CHAPADA DO ARARIPE\nLTDA., com sede na Rua Senador Pompeu, nº 410, bairro Centro, Crato/CE, CEP 63100-020,\ninscrita no CNPJ sob o nº 87.526.239/0001-88, com contrato social arquivado na Junta Comercial do\nEstado do Ceará sob o NIRE 23423791390, em 01/04/2019, resolvem alterar o contrato social\nmediante as cláusulas seguintes:\nCLÁUSULA PRIMEIRA – DA RENÚNCIA DO ADMINISTRADOR\nO sócio JOAQUIM MOREIRA BRITO renuncia, neste ato, ao cargo de administrador da sociedade,\npermanecendo na condição de sócio quotista, titular de 90.000 (noventa mil) quotas, equivalentes a\n60% (sessenta por cento) do capital social. A sócia LÚCIA HELENA BRITO dá ao sócio\nrenunciante plena, geral e irrevogável quitação pelos atos de gestão por ele praticados até esta data.\nCLÁUSULA SEGUNDA – DA NOVA ADMINISTRAÇÃO\nA administração da sociedade passa a ser exercida exclusivamente pela sócia LÚCIA HELENA\nBRITO, isoladamente, razão pela qual a Cláusula Sétima do contrato social, que trata da\nadministração, passa a vigorar com a seguinte redação:\n\"CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO. A administração da sociedade será exercida\nexclusivamente pela sócia LÚCIA HELENA BRITO, isoladamente, por prazo indeterminado, a\nquem compete a representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar\ntodos os atos necessários ao seu regular funcionamento e à consecução do objeto social, vedado, no\nentanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em\navais, fianças e endossos de favor.\nParágrafo único. O sócio JOAQUIM MOREIRA BRITO não exercerá funções de administração,\nparticipando da sociedade exclusivamente na condição de sócio quotista.\"\nCLÁUSULA TERCEIRA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nA administradora ora designada, LÚCIA HELENA BRITO, declara, sob as penas da lei, que não está\nimpedida de exercer a administração da sociedade por lei especial, ou em virtude de condenação\ncriminal, ou por se encontrar sob os efeitos dela, a pena que vede, ainda que temporariamente, o\nacesso a cargos públicos; ou por crime falimentar, de prevaricação, peita ou suborno, concussão,\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "peculato; ou contra a economia popular, contra o sistema financeiro nacional, contra as normas de\ndefesa da concorrência, contra as relações de consumo, a fé pública ou a propriedade.\nCLÁUSULA QUARTA – DA RATIFICAÇÃO DAS DEMAIS CLÁUSULAS\nPermanecem inalteradas as demais cláusulas do contrato social, que os sócios ratificam\nexpressamente, inclusive quanto ao capital social de R$ 150.000,00 (cento e cinquenta mil reais) e à\nsua distribuição entre os sócios, que não sofre qualquer modificação em razão deste instrumento.\nE, por estarem assim justos e contratados, os sócios assinam a presente alteração em via única, para\nque produza seus efeitos legais após o arquivamento na Junta Comercial do Estado do Ceará.\nCrato/CE, 15 de abril de 2026.\nJOAQUIM MOREIRA BRITO\nLÚCIA HELENA BRITO\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 28/04/2026 sob o nº 87459967425\nProtocolo: 26/207.931-4 | NIRE: 23423791390\nEmpresa: PANIFICADORA CHAPADA DO ARARIPE LTDA. | CNPJ: 87.526.239/0001-88\nAutenticação: 5C2E8A91F07B44D3A1C6E90B\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "219b37f26f27101747064ab337921d93c76c95f89e65cb8e18e2bcd1b7e12613",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 29.8,
+      "tokens_saida": 502,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 38.6,
+      "tokens_saida": 963,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "CHAPADA_CS",
+   "nome": "CHAPADA_CS.pdf",
+   "tipo": "contrato_social",
+   "titulo": "Contrato Social (2019)",
+   "data": "2019-03-18",
+   "paginas": [
+    "CONTRATO SOCIAL DE CONSTITUIÇÃO\nPANIFICADORA CHAPADA DO ARARIPE LTDA.\nPelo presente instrumento particular, os abaixo assinados:\nJOAQUIM MOREIRA BRITO, brasileiro, casado sob o regime de comunhão parcial de bens,\npanificador, portador da carteira de identidade nº 32316553 SSP/CE e inscrito no CPF sob o nº\n298.369.579-44, residente e domiciliado na Rua Doutor João Pessoa, nº 215, bairro Pimenta, Crato/\nCE, CEP 63105-010; e\nLÚCIA HELENA BRITO, brasileira, casada sob o regime de comunhão parcial de bens, empresária,\nportadora da carteira de identidade nº 61642368 SSP/CE e inscrita no CPF sob o nº 186.032.080-50,\nresidente e domiciliada na Rua Bárbara de Alencar, nº 980, bairro Centro, Crato/CE, CEP\n63100-055;\nresolvem constituir uma sociedade empresária limitada, que se regerá pelas cláusulas e condições\nseguintes e, nas omissões, pelas disposições do Código Civil aplicáveis às sociedades limitadas.\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL\nA sociedade girará sob o nome empresarial PANIFICADORA CHAPADA DO ARARIPE LTDA. e\npoderá utilizar o nome fantasia \"Pães Chapada\".\nCLÁUSULA SEGUNDA – DA SEDE\nA sociedade terá sede na Rua Senador Pompeu, nº 410, bairro Centro, Crato/CE, CEP 63100-020,\npodendo abrir e encerrar filiais e outros estabelecimentos em qualquer parte do território nacional,\nmediante alteração contratual.\nCLÁUSULA TERCEIRA – DO OBJETO SOCIAL\nA sociedade tem por objeto a fabricação de produtos de panificação e o comércio varejista de\nprodutos alimentícios.\nParágrafo único. As atividades correspondem aos códigos CNAE 1091-1/02 – fabricação de\nprodutos de padaria e confeitaria com predominância de produção própria; e 4729-6/99 – comércio\nvarejista de produtos alimentícios em geral ou especializado em produtos alimentícios não\nespecificados anteriormente.\nCLÁUSULA QUARTA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciará suas atividades na data do registro deste contrato na Junta Comercial do Estado\ndo Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUINTA – DO CAPITAL SOCIAL\nO capital social é de R$ 150.000,00 (cento e cinquenta mil reais), dividido em 150.000 (cento e\ncinquenta mil) quotas de valor nominal de R$ 1,00 (um real) cada uma, totalmente subscritas e\nintegralizadas neste ato, em moeda corrente do País, assim distribuídas entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nJOAQUIM MOREIRA BRITO\n90.000\n90.000,00\n60%\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "Sócio\nQuotas\nValor (R$)\nParticipação\nLÚCIA HELENA BRITO\n60.000\n60.000,00\n40%\nTotal\n150.000\n150.000,00\n100%\nCLÁUSULA SEXTA – DA RESPONSABILIDADE DOS SÓCIOS\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social, nos termos do art. 1.052 do Código Civil.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade será exercida exclusivamente pelo sócio JOAQUIM MOREIRA\nBRITO, por prazo indeterminado, a quem compete, isoladamente, a representação ativa e passiva da\nsociedade, em juízo ou fora dele, podendo praticar todos os atos necessários ao seu regular\nfuncionamento e à consecução do objeto social, vedado, no entanto, o uso do nome empresarial em\natividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.\nParágrafo único. A sócia LÚCIA HELENA BRITO não exercerá funções de administração,\nparticipando da sociedade exclusivamente na condição de sócia quotista.\nCLÁUSULA OITAVA – DO PRÓ-LABORE\nO administrador terá direito a uma retirada mensal a título de pró-labore, em valor a ser fixado de\ncomum acordo entre os sócios, observada a legislação tributária e previdenciária.\nCLÁUSULA NONA – DO EXERCÍCIO SOCIAL E DOS RESULTADOS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, em 31 de dezembro, o\nadministrador prestará contas justificadas de sua administração, procedendo à elaboração do\ninventário, do balanço patrimonial e do balanço de resultado econômico, cabendo aos sócios, na\nproporção de suas quotas, os lucros ou as perdas apurados.\nCLÁUSULA DÉCIMA – DAS DELIBERAÇÕES SOCIAIS\nAs deliberações dos sócios serão tomadas em reunião, convocada na forma da lei, observados os\nquóruns previstos no Código Civil, ficando dispensada a reunião quando todos os sócios decidirem,\npor escrito, sobre a matéria que seria objeto dela. Nos quatro meses seguintes ao término do\nexercício social, os sócios deliberarão sobre as contas e designarão administrador, quando for o caso.\nCLÁUSULA DÉCIMA PRIMEIRA – DA CESSÃO DE QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas ou transferidas a terceiros sem o consentimento\ndo outro sócio, a quem fica assegurado, em igualdade de condições e preço, o direito de preferência\npara a sua aquisição, que deverá ser exercido no prazo de 30 (trinta) dias contados da comunicação\nescrita da intenção de venda.\nCLÁUSULA DÉCIMA SEGUNDA – DO FALECIMENTO OU DA INCAPACIDADE DE\nSÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros, sucessores ou o representante legal do incapaz. Não sendo possível ou inexistindo\ninteresse destes ou do sócio remanescente, o valor de seus haveres será apurado e liquidado com\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "base na situação patrimonial da sociedade, à data da resolução, verificada em balanço especialmente\nlevantado.\nCLÁUSULA DÉCIMA TERCEIRA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nO administrador declara, sob as penas da lei, que não está impedido de exercer a administração da\nsociedade por lei especial, ou em virtude de condenação criminal, ou por se encontrar sob os efeitos\ndela, a pena que vede, ainda que temporariamente, o acesso a cargos públicos; ou por crime\nfalimentar, de prevaricação, peita ou suborno, concussão, peculato; ou contra a economia popular,\ncontra o sistema financeiro nacional, contra as normas de defesa da concorrência, contra as relações\nde consumo, a fé pública ou a propriedade.\nCLÁUSULA DÉCIMA QUARTA – DO ENQUADRAMENTO\nOs sócios declaram que a sociedade se enquadra como microempresa, nos termos da Lei\nComplementar nº 123/2006, e que não se enquadra em qualquer das hipóteses de exclusão previstas\nno § 4º do art. 3º da referida lei.\nCLÁUSULA DÉCIMA QUINTA – DO FORO\nFica eleito o foro da Comarca do Crato/CE para o exercício e o cumprimento dos direitos e das\nobrigações resultantes deste contrato.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em via única,\npara que produza seus efeitos legais após o arquivamento na Junta Comercial do Estado do Ceará.\nCrato/CE, 18 de março de 2019.\nJOAQUIM MOREIRA BRITO\nLÚCIA HELENA BRITO\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 01/04/2019 sob o nº 53706803929\nProtocolo: 19/112.408-5 | NIRE: 23423791390\nEmpresa: PANIFICADORA CHAPADA DO ARARIPE LTDA. | CNPJ: 87.526.239/0001-88\nAutenticação: B41D07E9A2C3385F10D6E7A2\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "91da44d4da991c207db8d0b104ed707a61c02ea034706ef3755c78081d2ecabe",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 24.8,
+      "tokens_saida": 581,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 19.2,
+      "tokens_saida": 741,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n05106261488\nPLACA\nCRS0R60\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2023\nANO MODELO\n2023\nNÚMERO DO CRV\n779806480136\nCÓDIGO DE SEGURANÇA DO\nCLA\n26829629286\nMARCA / MODELO / VERSÃO\nFIAT/FIORINO ENDURANCE 1.4\nESPÉCIE / TIPO\nCARGA/FURGÃO\nCHASSI\n9BDS4GZLAKWT4GR0E\nCOR PREDOMINANTE\nBRANCA\nCOMBUSTÍVEL\nÁLCOOL/\nGASOLINA\nNOME\nPANIFICADORA CHAPADA DO ARARIPE\nLTDA.\nCPF / CNPJ\n87.526.239/0001-88\nLOCAL\nCRATO/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "9187c11cd2a6668f3fcc6d00ca04ce5c67c102f6ae9e431d5a17e266b6126bc8",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "POA_DAVI",
+   "nome": "POA_DAVI.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (2025)",
+   "data": "2025-12-10",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ – COMARCA DO CRATO\nTabelionato Araripe – 1º Ofício de Notas do Crato/CE (fictício)\nMaria Socorro Peixoto Esmeraldo – Tabeliã\nLIVRO 96 — FOLHAS 178/179\nPROCURAÇÃO BASTANTE QUE FAZ PANIFICADORA CHAPADA DO ARARIPE LTDA.\nA DAVI BRITO ALENCAR\nSAIBAM quantos este público instrumento de procuração virem que, aos dez (10) dias do mês de\ndezembro do ano de dois mil e vinte e cinco (2025), nesta cidade do Crato, Estado do Ceará, neste\nTabelionato, perante mim, Francisco de Assis Bezerra Filho, Escrevente Autorizado, compareceu\ncomo OUTORGANTE: PANIFICADORA CHAPADA DO ARARIPE LTDA., sociedade empresária\nlimitada, inscrita no CNPJ sob o nº 87.526.239/0001-88, NIRE 23423791390, com sede nesta\ncidade, neste ato representada por seu sócio administrador JOAQUIM MOREIRA BRITO,\nbrasileiro, casado, panificador, RG nº 32316553 SSP/CE, CPF nº 298.369.579-44, residente e\ndomiciliado no Crato/CE, nos termos do Contrato Social de Constituição registrado na JUCEC em\n01/04/2019 sob o nº 53706803929, cuja cópia, juntamente com a certidão simplificada expedida pela\nJUCEC em 04/12/2025, fica arquivada nestas notas. Identificado como o próprio por mim, à vista\ndos documentos apresentados, do que dou fé.\nE, pela outorgante, por seu representante, me foi dito que, por este instrumento, nomeia e constitui\nseu bastante procurador DAVI BRITO ALENCAR, brasileiro, solteiro, gerente comercial, RG nº\n89747837 SSP/CE, CPF nº 370.283.822-81, residente e domiciliado na Rua Senador Pompeu, nº 98,\nCentro, Crato/CE, a quem confere poderes especiais e expressos para vender, ceder, transferir ou de\nqualquer forma alienar veículos automotores de propriedade da outorgante, a quem e pelo preço que\nconvencionar; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e),\ninclusive em meio eletrônico; receber o preço e dar quitação; requerer e assinar o que for necessário\nperante o DETRAN, inclusive vistorias, segundas vias e comunicação de venda; recolher taxas,\ntributos e multas; e praticar todos os demais atos necessários ao fiel cumprimento deste mandato.\nO presente mandato é válido até 10 de dezembro de 2026, data em que se extinguirá de pleno direito,\nindependentemente de notificação.\nAssim o disse, do que dou fé, e me pediu que lavrasse este instrumento, que, lido em voz alta e\nachado conforme, aceita e assina. Eu, Francisco de Assis Bezerra Filho, Escrevente Autorizado, a\nlavrei. Eu, Maria Socorro Peixoto Esmeraldo, Tabeliã, a subscrevo.\n(aa) JOAQUIM MOREIRA BRITO, pela outorgante.\nMARIA SOCORRO PEIXOTO ESMERALDO, Tabeliã.\nEmolumentos: R$ 201,95 · Taxa de fiscalização: R$ 10,10 · Total: R$ 212,05\nSelo Digital: ARP-0096-2025-4B8F10\nTRASLADO — Trasladada em seguida, conferida e achada conforme, do que dou fé.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "Crato/CE, 10 de dezembro de 2025.\nMaria Socorro Peixoto Esmeraldo – Tabeliã\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "4f2717e90965a21bbb0ed975d905942e66b3df22cca81d05f7cd2ae6a8842bc5",
+   "leitura": {
+    "tarefas": {
+     "procuracao": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 38.1,
+      "tokens_saida": 677,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "politica": "DETRAN-CE"
+ },
+ "hash_entrada": "6499ebfb5f174adc7a91cd2aeac7f46121f887a687b9429ccf06b3b45540ed9b"
+}

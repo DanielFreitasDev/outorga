@@ -1,0 +1,41 @@
+{
+  "caso": "C19",
+  "titulo": "Procuração revogada",
+  "categoria": "procuracao",
+  "objetivo": "Revogada por escritura pública antes da venda (revogada por outra administradora: vale, pois a outorgante é a PJ).",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "ANTONIO"
+      ],
+      [
+        "JOSEFA"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 682, I",
+      "CC art. 686"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "847.267.147-08"
+      ],
+      [
+        "136.270.107-60"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Antônio Cícero Lobo"
+      ],
+      [
+        "Josefa Alencar Lobo"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

@@ -1,0 +1,269 @@
+{
+ "resumo": {
+  "modo": "llm",
+  "conjunto": "independente",
+  "casos": 10,
+  "duracao_s": 1316.5,
+  "data": "2026-10-17T07:18:12",
+  "veredito_correto": 7,
+  "faixa_aceitavel": 7,
+  "quem_pode_correto": 5,
+  "quem_pode_avaliados": 8,
+  "erros_perigosos": 2,
+  "erros_caros": 0,
+  "cobertura_automatica": 0.7,
+  "acerto_na_faixa_automatica": 0.571,
+  "politica": {
+   "nome": "DETRAN-CE",
+   "limiar_aceite": 85.0,
+   "limiar_recusa": 15.0
+  }
+ },
+ "linhas": [
+  {
+   "caso": "I01",
+   "titulo": "S.A. com Diretoria de mandato vencido, prorrogado por lei, e nova Diretoria eleita depois da venda",
+   "categoria": "sociedade_anonima / mandato_vencido / forma_de_representacao",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE",
+    "AMARELO"
+   ],
+   "previsto": "PODE",
+   "faixa": "AMARELO",
+   "indice": 86.2,
+   "confianca": 0.725,
+   "segundos": 0.1,
+   "resumo": "Lúcia Helena Brígido Sampaio e Rogério Alencar Feitosa podem, em conjunto, assinar o ATPV — regra geral de representação — Art. 18, incisos (a) e (b); regra geral de representação — Art. 18, § 1º.",
+   "motivos_faixa": [
+    "1 fato(s) decisivo(s) com citação pouco ancorada no texto"
+   ],
+   "forcado": true,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "I02",
+   "titulo": "Dois administradores assinam juntos, mas da mesma classe: a cláusula exige um Administrador A e um Administrador B",
+   "categoria": "forma_de_atuacao_incomum / leitura_semantica / alteracao_no_tempo",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 91.2,
+   "confianca": 0.823,
+   "segundos": 0.1,
+   "resumo": "Germana Castro Leite e Raimundo Nonato Castro Filho podem, em conjunto, assinar o ATPV — alienação de veículos — Cláusula Oitava, § 2º, I; alienação de veículos — Cláusula Oitava, § 2º, I.",
+   "motivos_faixa": [
+    "índice 91.2 ≥ limiar 85"
+   ],
+   "forcado": false,
+   "veredito_ok": false,
+   "faixa_ok": false,
+   "conjuntos_ok": false,
+   "erro_perigoso": true,
+   "erro_caro": false
+  },
+  {
+   "caso": "I03",
+   "titulo": "Procuração de venda revogada por nova procuração que só autoriza assinar a ATPV-e 'na qualidade de adquirente'",
+   "categoria": "procuracao_poderes / revogacao_expressa / leitura_semantica",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 6.6,
+   "confianca": 0.867,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Hélio Benevides Maia. O caminho por procuração pública de 14/10/2025 (cartório nogueira – 1º ofício de notas de limoeiro do norte) não vale: procuração revogada.",
+   "motivos_faixa": [
+    "índice 6.6 ≤ limiar 15"
+   ],
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "I04",
+   "titulo": "Cadeia de substabelecimentos: o primeiro 'sem reserva' e o último por instrumento particular",
+   "categoria": "substabelecimento_em_cadeia / forma_da_procuracao / leitura_semantica",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO",
+    "AMARELO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 6.2,
+   "confianca": 0.875,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Jefferson Araújo Veras ou Kátia Regina Veras Aguiar ou Rafaela Cunha Fontenele (procurador). O caminho por substabelecimento com reserva de 20/07/2026 não vale: quem substabeleceu não é o procurador.",
+   "motivos_faixa": [
+    "índice 6.2 ≤ limiar 15"
+   ],
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "I05",
+   "titulo": "Procuração pública sem prazo, com mais de 1 ano, outorgada por administrador que depois saiu da sociedade",
+   "categoria": "procuracao_prazo / outorgante_que_saiu / politica_detran_ce",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO",
+    "AMARELO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "AMARELO",
+   "indice": 6.6,
+   "confianca": 0.867,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: ninguém. O caminho por procuração pública de 23/06/2025 (tabelionato ponte ferreira – 2º ofício de notas de sobral) não vale: procuração com mais de 1 ano.",
+   "motivos_faixa": [
+    "alerta: Ninguém com poder de administração em vigor"
+   ],
+   "forcado": true,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": false,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "I06",
+   "titulo": "Ata 'aprovada por unanimidade dos presentes' e pela 'maioria dos sócios', mas com só 55% do capital quando o contrato exige 2/3",
+   "categoria": "aprovacao_de_socios / quorum / leitura_semantica",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 41.7,
+   "resumo": "Ivanilda Bezerra Correia pode assinar o ATPV — regra geral de representação — Cláusula Sétima.",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "forcado": false,
+   "veredito_ok": false,
+   "faixa_ok": false,
+   "conjuntos_ok": false,
+   "erro_perigoso": true,
+   "erro_caro": false
+  },
+  {
+   "caso": "I07",
+   "titulo": "Procuração outorgada por sócio cujo poder de administração depende de alterações contratuais não apresentadas",
+   "categoria": "procuracao_quem_outorgou / documento_ausente",
+   "esperado": "INDETERMINADO",
+   "faixas_aceitaveis": [
+    "AMARELO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 6.6,
+   "confianca": 0.867,
+   "segundos": 352.9,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Tereza Cristina Sobreira ou Afonso Henrique Sobreira Maciel. O caminho por procuração pública de 04/12/2025 (cartório alencar peixoto – 1º ofício de notas do crato (fictício)) não vale: quem outorgou não tinha poder sozinho, outorga em desacordo com o estatuto/contrato.",
+   "motivos_faixa": [
+    "índice 6.6 ≤ limiar 15"
+   ],
+   "forcado": false,
+   "veredito_ok": false,
+   "faixa_ok": false,
+   "conjuntos_ok": null,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "I08",
+   "titulo": "Sócio único de SLU assina a venda, mas só foi nomeado administrador uma semana depois; a administradora era não sócia",
+   "categoria": "sociedade_limitada_unipessoal / administrador_nomeado_depois_da_venda / procuracao_prazo",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 320.4,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Renata Siqueira Bandeira. Regra aplicável: alienação de veículos (Cláusula Sétima).",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "I09",
+   "titulo": "Alçada de valor para assinatura conjunta, alterada no tempo, e venda sem valor informado",
+   "categoria": "alcada / alteracao_no_tempo / dado_faltante",
+   "esperado": "INDETERMINADO",
+   "faixas_aceitaveis": [
+    "AMARELO"
+   ],
+   "previsto": "INDETERMINADO",
+   "faixa": "AMARELO",
+   "indice": 50.0,
+   "confianca": 0.94,
+   "segundos": 243.7,
+   "resumo": "Não é possível decidir com segurança: valor do veículo não informado — a regra de alçada não pode ser aplicada.",
+   "motivos_faixa": [
+    "indeterminado: valor do veículo não informado — a regra de alçada não pode ser aplicada",
+    "alerta: Valor do veículo não informado",
+    "alerta: Contrato omisso sobre a forma de atuação"
+   ],
+   "forcado": true,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": null,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "I10",
+   "titulo": "Ex-EIRELI com nome alterado: CRLV no nome antigo e mesmo CNPJ, restrição só para imóveis e revogação genérica de procuração anterior",
+   "categoria": "eireli_transformada / crlv_nome_diferente / restricao_que_nao_alcanca_veiculo / revogacao_generica",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 357.5,
+   "resumo": "Juliana Gurgel Frota pode assinar o ATPV — alienação de bens móveis — Cláusula Sexta.",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  }
+ ]
+}

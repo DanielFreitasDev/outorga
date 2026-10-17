@@ -1,0 +1,26 @@
+{
+  "caso": "C29",
+  "vendedor": {
+    "razao_social": "CERÂMICA RUSSAS LTDA.",
+    "cnpj": "24.646.686/0001-50"
+  },
+  "veiculo": {
+    "placa": "PXC9W33",
+    "renavam": "05699439826",
+    "chassi": "9BV3TCT6V3TP5LZWT",
+    "descricao": "VOLVO/FH 460 6X2T"
+  },
+  "data_venda": "2026-09-14",
+  "valor": 420000,
+  "assinantes": [
+    {
+      "nome": "Hélio Bandeira Forte",
+      "cpf": "264.686.164-84"
+    }
+  ],
+  "comprador": {
+    "nome": "Frota Fácil Locações Ltda.",
+    "cidade": "Maracanaú/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

@@ -1,0 +1,458 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T00:45:27",
+ "pedido": {
+  "veiculo": {
+   "descricao": "TOYOTA/COROLLA XEI 2.0 FLEX",
+   "placa": "ZYW2D22",
+   "renavam": "03636082444",
+   "chassi": "9BR02A76UZ8JGKRZ6"
+  },
+  "data_venda": "2026-09-11",
+  "valor": 128000.0,
+  "assinantes": [
+   {
+    "nome": "Leonardo Sales Pinheiro",
+    "cpf": "161.055.008-07"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "Rita de Cássia Moreira"
+ },
+ "empresa": {
+  "razao_social": "NORDESTE PRIME SERVIÇOS ADMINISTRATIVOS LTDA.",
+  "cnpj": "76.151.413/0001-39",
+  "tipo": "LTDA",
+  "objeto": "A sociedade terá por objeto a prestação de serviços combinados de escritório e apoio administrativo.",
+  "comercializa_veiculos": false
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 0.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 1,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 0 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: Marcos Antônio Girão.",
+ "assinantes": [
+  {
+   "informado": "Leonardo Sales Pinheiro",
+   "cpf": "161.055.008-07",
+   "chave": "16105500807",
+   "nome": "Leonardo Sales Pinheiro",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:94866283602",
+   "pessoas": [
+    {
+     "chave": "94866283602",
+     "nome": "Marcos Antônio Girão"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "cláusula do veículo específico — Cláusula Oitava, Parágrafo único",
+   "cadeia": [
+    "PRIME_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "contrato:94866283602",
+   "via": "contrato",
+   "descricao": "cláusula do veículo específico — Cláusula Oitava, Parágrafo único",
+   "pessoas": [
+    "94866283602"
+   ],
+   "faltam": [
+    "94866283602"
+   ],
+   "faltam_nomes": [
+    "Marcos Antônio Girão"
+   ],
+   "pessoas_nomes": [
+    "Marcos Antônio Girão"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: NORDESTE PRIME SERVIÇOS.",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "ZYW2D22",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "PRIME_CS#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "PRIME_CS",
+    "doc_titulo": "Contrato Social (2024)",
+    "trecho": "A administração da sociedade caberá a ambos os sócios, MARCOS ANTÔNIO GIRÃO e LEONARDO SALES PINHEIRO, com poderes e atribuições de representação ativa e passiva da sociedade, judicial e extrajudicial, podendo praticar, qualquer um deles isoladamente, todos os atos compreendidos no objeto social, sempre no interesse da sociedade, vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+    "clausula": "Cláusula Oitava",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 4358,
+    "fim": 4817
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Marcos Antônio Girão",
+    "Leonardo Sales Pinheiro"
+   ],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente",
+      "qualquer um deles"
+     ]
+    }
+   ],
+   "decisiva": false
+  },
+  {
+   "regra": "PRIME_CS#R2",
+   "escopo": "obrigacoes_garantias",
+   "aplicavel": false,
+   "motivo": "trata de avais, fianças e garantias",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "PRIME_CS",
+    "doc_titulo": "Contrato Social (2024)",
+    "trecho": "vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+    "clausula": "Cláusula Oitava",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 4690,
+    "fim": 4817
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "PRIME_CS#R3",
+   "escopo": "veiculo_especifico",
+   "aplicavel": true,
+   "motivo": "cláusula do veículo específico",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "PRIME_CS",
+    "doc_titulo": "Contrato Social (2024)",
+    "trecho": "O veículo TOYOTA/COROLLA XEI 2.0 FLEX, placa ZYW2D22, RENAVAM 03636082444, chassi 9BR02A76UZ8JGKRZ6, conferido ao capital social pelo sócio MARCOS ANTÔNIO GIRÃO na forma da Cláusula Quinta, somente poderá ser alienado, a qualquer título, mediante a assinatura do sócio MARCOS ANTÔNIO GIRÃO, que representará a sociedade nesse ato.",
+    "clausula": "Cláusula Oitava, Parágrafo único",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 4835,
+    "fim": 5165
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Marcos Antônio Girão"
+   ],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": true
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-09-11",
+  "atos": [
+   {
+    "doc": "PRIME_CS",
+    "titulo": "Contrato Social (2024)",
+    "efeito": "2024-02-20"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "94866283602",
+    "nome": "Marcos Antônio Girão",
+    "cargo": "Sócio-Administrador",
+    "doc": "PRIME_CS"
+   },
+   {
+    "chave": "16105500807",
+    "nome": "Leonardo Sales Pinheiro",
+    "cargo": "Sócio-Administrador",
+    "doc": "PRIME_CS"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "94866283602",
+    "nome": "Marcos Antônio Girão",
+    "percentual": 50.0
+   },
+   {
+    "chave": "16105500807",
+    "nome": "Leonardo Sales Pinheiro",
+    "percentual": 50.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "NORDESTE PRIME SERVIÇOS ADMINISTRATIVOS LTDA.",
+    "sub": "76.151.413/0001-39"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "TOYOTA/COROLLA XEI 2.0 FLEX",
+    "sub": "ZYW2D22"
+   },
+   {
+    "id": "94866283602",
+    "tipo": "pessoa",
+    "rotulo": "Marcos Antônio Girão",
+    "papeis": [
+     "sócio 50%",
+     "Sócio-Administrador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "16105500807",
+    "tipo": "pessoa",
+    "rotulo": "Leonardo Sales Pinheiro",
+    "papeis": [
+     "sócio 50%",
+     "Sócio-Administrador"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "94866283602",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "50%",
+    "status": "neutro"
+   },
+   {
+    "de": "16105500807",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "50%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "94866283602",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "PRIME_CS"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "16105500807",
+    "tipo": "administracao",
+    "rotulo": "administra · sem poder para este ato",
+    "status": "invalido",
+    "doc": "PRIME_CS"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2024-02-20",
+   "tipo": "ato",
+   "titulo": "Contrato Social (2024)",
+   "doc": "PRIME_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-09-11",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 128.000,00"
+  }
+ ],
+ "pessoas": {
+  "94866283602": {
+   "nome": "Marcos Antônio Girão",
+   "cpf": "94866283602"
+  },
+  "16105500807": {
+   "nome": "Leonardo Sales Pinheiro",
+   "cpf": "16105500807"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "NORDESTE PRIME SERVIÇOS ADMINISTRATIVOS LTDA.",
+   "cnpj": "76.151.413/0001-39",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Contrato Social (2024)",
+     "doc": "PRIME_CS",
+     "efeito": "2024-02-20"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Leonardo Sales Pinheiro",
+    "cpf": "161.055.008-07",
+    "identificacao": "CPF",
+    "qualidade": "Sócio-Administrador"
+   }
+  ],
+  "poderes_conferidos": [
+   "Os assinantes informados não satisfazem nenhuma combinação de assinatura prevista."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [],
+  "documentos_verificaveis": [
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "PRIME_CS",
+    "titulo": "Contrato Social (2024)",
+    "arquivo": "PRIME_CS.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n03636082444\nPLACA\nZYW2D22\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2022\nANO MODELO\n2023\nNÚMERO DO CRV\n191332799245\nCÓDIGO DE SEGURANÇA DO CLA\n17029982731\nMARCA / MODELO / VERSÃO\nTOYOTA/COROLLA XEI 2.0 FLEX\nESPÉCIE / TIPO\nPASSAGEIRO/\nAUTOMÓVEL\nCHASSI\n9BR02A76UZ8JGKRZ6\nCOR PREDOMINANTE\nPRETA\nCOMBUSTÍVEL\nÁLCOOL/\nGASOLINA\nNOME\nNORDESTE PRIME SERVIÇOS\nADMINISTRATIVOS LTDA.\nCPF / CNPJ\n76.151.413/0001-39\nLOCAL\nFORTALEZA/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "cb09a2c3c825d87342f0350956f7d462ba84484a6f814b74ce21fe88d8e6345c",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "PRIME_CS",
+   "nome": "PRIME_CS.pdf",
+   "tipo": "contrato_social",
+   "titulo": "Contrato Social (2024)",
+   "data": "2024-02-20",
+   "paginas": [
+    "NORDESTE PRIME SERVIÇOS ADMINISTRATIVOS LTDA. CNPJ nº 76.151.413/0001-39 –\nNIRE 23553842027\nCONTRATO SOCIAL DE CONSTITUIÇÃO\nPelo presente instrumento particular, as partes abaixo qualificadas:\nMARCOS ANTÔNIO GIRÃO, brasileiro, casado sob o regime de comunhão parcial de bens,\nempresário, portador da cédula de identidade RG nº 2896747 SSP/CE, inscrito no CPF sob o nº\n948.662.836-02, residente e domiciliado na Rua Silva Paulet, nº 2.315, apartamento 801, bairro\nAldeota, Fortaleza/CE, CEP 60120-021; e\nLEONARDO SALES PINHEIRO, brasileiro, solteiro, empresário, portador da cédula de identidade\nRG nº 64890916 SSP/CE, inscrito no CPF sob o nº 161.055.008-07, residente e domiciliado na Rua\ndas Acácias, nº 355, casa 12, bairro Precabura, Eusébio/CE, CEP 61760-000;\ntêm entre si justa e contratada a constituição de uma sociedade empresária limitada, que se regerá\npelas cláusulas e condições seguintes e, nas omissões, pelos arts. 1.052 e seguintes do Código Civil\n(Lei nº 10.406/2002).\nCLÁUSULA PRIMEIRA – DA DENOMINAÇÃO E SEDE\nA sociedade girará sob o nome empresarial NORDESTE PRIME SERVIÇOS ADMINISTRATIVOS\nLTDA. e terá sede na Avenida Santos Dumont, nº 3.060, sala 1.204, bairro Aldeota, Fortaleza/CE,\nCEP 60150-161, podendo abrir e encerrar filiais e escritórios em qualquer parte do território\nnacional, mediante alteração contratual.\nCLÁUSULA SEGUNDA – DO OBJETO SOCIAL\nA sociedade terá por objeto a prestação de serviços combinados de escritório e apoio administrativo.\nCLÁUSULA TERCEIRA – DO INÍCIO DAS ATIVIDADES E DO PRAZO DE DURAÇÃO\nA sociedade iniciará suas atividades na data do registro deste instrumento na Junta Comercial do\nEstado do Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 240.000,00 (duzentos e quarenta mil reais), dividido em 240.000 (duzentas e\nquarenta mil) quotas no valor nominal de R$ 1,00 (um real) cada uma, totalmente subscrito e\nintegralizado neste ato, da seguinte forma: (a) o sócio MARCOS ANTÔNIO GIRÃO subscreve\n120.000 (cento e vinte mil) quotas, no valor de R$ 120.000,00 (cento e vinte mil reais),\nintegralizadas mediante a conferência do bem descrito na Cláusula Quinta; e (b) o sócio\nLEONARDO SALES PINHEIRO subscreve 120.000 (cento e vinte mil) quotas, no valor de R$\n120.000,00 (cento e vinte mil reais), integralizadas em moeda corrente do País.\nSócio\nQuotas\nValor (R$)\nForma de integralização\nParticipação\nMARCOS ANTÔNIO GIRÃO\n120.000\n120.000,00\nConferência de bem (veículo)\n50%\nLEONARDO SALES PINHEIRO\n120.000\n120.000,00\nMoeda corrente\n50%\nTOTAL\n240.000\n240.000,00\n100%\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "CLÁUSULA QUINTA – DA CONFERÊNCIA DE BEM AO CAPITAL SOCIAL\nO sócio MARCOS ANTÔNIO GIRÃO integraliza a totalidade de suas quotas mediante a\nconferência à sociedade do seguinte bem de sua propriedade: veículo TOYOTA/COROLLA XEI 2.0\nFLEX, espécie/tipo passageiro/automóvel, ano de fabricação 2022, ano modelo 2023, cor preta,\ncombustível álcool/gasolina, placa ZYW2D22, RENAVAM 03636082444, chassi\n9BR02A76UZ8JGKRZ6, livre e desembaraçado de quaisquer ônus, gravames ou restrições,\navaliado de comum acordo pelos sócios em R$ 120.000,00 (cento e vinte mil reais).\nParágrafo primeiro. O sócio MARCOS ANTÔNIO GIRÃO transfere à sociedade, neste ato, a posse\ne a propriedade plena do veículo acima descrito, a título de integralização de capital, obrigando-se a\nfirmar os documentos necessários à transferência do registro do veículo para o nome da sociedade\nperante o Departamento Estadual de Trânsito do Ceará – DETRAN/CE.\nParágrafo segundo. Nos termos do art. 1.055, § 1º, do Código Civil, pela exata estimação do bem\nconferido ao capital social respondem solidariamente todos os sócios, até o prazo de 5 (cinco) anos\nda data do registro da sociedade.\nCLÁUSULA SEXTA – DA RESPONSABILIDADE DOS SÓCIOS\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social, nos termos do art. 1.052 do Código Civil.\nCLÁUSULA SÉTIMA – DAS QUOTAS E DE SUA CESSÃO\nAs quotas são indivisíveis em relação à sociedade e não poderão ser cedidas ou transferidas a\nterceiros sem o consentimento do outro sócio, a quem fica assegurado, em igualdade de condições e\npreço, o direito de preferência para sua aquisição.\nCLÁUSULA OITAVA – DA ADMINISTRAÇÃO\nA administração da sociedade caberá a ambos os sócios, MARCOS ANTÔNIO GIRÃO e\nLEONARDO SALES PINHEIRO, com poderes e atribuições de representação ativa e passiva da\nsociedade, judicial e extrajudicial, podendo praticar, qualquer um deles isoladamente, todos os atos\ncompreendidos no objeto social, sempre no interesse da sociedade, vedado o uso do nome\nempresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de\nfavor.\nParágrafo único. O veículo TOYOTA/COROLLA XEI 2.0 FLEX, placa ZYW2D22, RENAVAM\n03636082444, chassi 9BR02A76UZ8JGKRZ6, conferido ao capital social pelo sócio MARCOS\nANTÔNIO GIRÃO na forma da Cláusula Quinta, somente poderá ser alienado, a qualquer título,\nmediante a assinatura do sócio MARCOS ANTÔNIO GIRÃO, que representará a sociedade nesse\nato.\nCLÁUSULA NONA – DO PRÓ-LABORE\nOs sócios administradores poderão fazer retirada mensal a título de pró-labore, em valor fixado de\ncomum acordo entre os sócios, observadas as disposições regulamentares pertinentes.\nCLÁUSULA DÉCIMA – DO EXERCÍCIO SOCIAL E DA TOMADA DE CONTAS\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "O exercício social coincidirá com o ano civil. Ao término de cada exercício, os administradores\nprestarão contas justificadas de sua administração, procedendo à elaboração do inventário, do\nbalanço patrimonial e do balanço de resultado econômico, cabendo aos sócios, na proporção de suas\nquotas, os lucros ou as perdas apurados. Nos 4 (quatro) meses seguintes ao término do exercício, os\nsócios reunir-se-ão para tomar as contas dos administradores, na forma do art. 1.078 do Código\nCivil.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FALECIMENTO OU DA INCAPACIDADE DE SÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros ou sucessores do falecido ou com o representante legal do incapaz. Não sendo possível ou\ninexistindo interesse destes ou do sócio remanescente, o valor de seus haveres será apurado e\nliquidado com base na situação patrimonial da sociedade à data da resolução, verificada em balanço\nespecialmente levantado.\nCLÁUSULA DÉCIMA SEGUNDA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nOs administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade, por lei especial, ou em virtude de condenação criminal, ou por se\nencontrarem sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\npúblicos, ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato, ou contra\na economia popular, contra o sistema financeiro nacional, contra normas de defesa da concorrência,\ncontra as relações de consumo, a fé pública ou a propriedade, nos termos do art. 1.011, § 1º, do\nCódigo Civil.\nCLÁUSULA DÉCIMA TERCEIRA – DO FORO\nFica eleito o foro da Comarca de Fortaleza/CE para dirimir quaisquer questões oriundas deste\ncontrato, com renúncia expressa a qualquer outro, por mais privilegiado que seja.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em 3 (três) vias\nde igual teor e forma.\nFortaleza/CE, 20 de fevereiro de 2024.\n____________________________________ MARCOS ANTÔNIO GIRÃO\n____________________________________ LEONARDO SALES PINHEIRO\nVisto: Cecília Távora Bonfim – OAB/CE nº 41.208\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 01/03/2024 sob o nº 17403291634\nProtocolo: 24/019.552-3 | NIRE: 23553842027\nEmpresa: NORDESTE PRIME SERVIÇOS ADMINISTRATIVOS LTDA.\nAutenticação: 0B9E47D1C6A83F25E7D04B19A6C82E5F\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "c2dc3066cbb16b45874af807e0e6e84cd5a7c8b795fe93ad8d31e872f1af7bf9",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 53.9,
+      "tokens_saida": 1091,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 40.2,
+      "tokens_saida": 986,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "politica": "DETRAN-CE"
+ },
+ "hash_entrada": "f79f13b4412a4f8c9d638b4a41e90d3e6b7dbe56383cf7c954e17431c13899f2"
+}

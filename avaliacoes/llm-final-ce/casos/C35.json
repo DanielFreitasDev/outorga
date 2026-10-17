@@ -1,0 +1,1146 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T10:07:21",
+ "pedido": {
+  "veiculo": {
+   "descricao": "GM/ONIX LT 1.0",
+   "placa": "DGR6C46",
+   "renavam": "06105914834",
+   "chassi": "9BGNYTFWHER6ZJLKN"
+  },
+  "data_venda": "2026-09-27",
+  "valor": 76000.0,
+  "assinantes": [
+   {
+    "nome": "Eduardo Martins Leal",
+    "cpf": "460.013.041-30"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "Frota Fácil Locações Ltda.",
+  "vendedor_cnpj": "67.704.410/0001-94",
+  "lado": "vendedor"
+ },
+ "empresa": {
+  "razao_social": "BEIRA-MAR VEÍCULOS LTDA.",
+  "cnpj": "67.704.410/0001-94",
+  "tipo": "LTDA",
+  "objeto": "comércio a varejo de automóveis, camionetas e utilitários novos e usados",
+  "comercializa_veiculos": true,
+  "subtipo": null
+ },
+ "veredito": "PODE",
+ "faixa": "AMARELO",
+ "indice": 100.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 2,
+  "menor_confianca_fato": 1.0,
+  "alertas": 1,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "alerta: Confirmar se o veículo é estoque (mercadoria) ou ativo imobilizado"
+ ],
+ "resumo": "Eduardo Martins Leal pode assinar a ATPV-e — regra geral de representação — Cláusula Sétima.",
+ "assinantes": [
+  {
+   "informado": "Eduardo Martins Leal",
+   "cpf": "460.013.041-30",
+   "chave": "46001304130",
+   "nome": "Eduardo Martins Leal",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:46001304130",
+   "pessoas": [
+    {
+     "chave": "46001304130",
+     "nome": "Eduardo Martins Leal"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Cláusula Sétima",
+   "cadeia": [
+    "BEIRAMAR_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": [
+    {
+     "codigo": "ESTOQUE_OU_IMOBILIZADO",
+     "descricao": "Confirmar se o veículo é estoque (mercadoria) ou ativo imobilizado",
+     "quorum": null,
+     "satisfeita": null,
+     "detalhe": "a empresa revende veículos: se o carro for estoque (mercadoria), a restrição ao imobilizado não se aplica",
+     "fontes": [
+      {
+       "doc_id": "BEIRAMAR_CS",
+       "doc_titulo": "Contrato Social (2019)",
+       "trecho": "A alienação de bens integrantes do ativo imobilizado da sociedade dependerá de aprovação de sócios que representem, no mínimo, três quartos do capital social.",
+       "clausula": "Cláusula Sétima, Parágrafo segundo",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 3361,
+       "fim": 3519
+      }
+     ],
+     "pessoas": []
+    }
+   ]
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": {
+  "id": "contrato:46001304130",
+  "pessoas": [
+   {
+    "chave": "46001304130",
+    "nome": "Eduardo Martins Leal"
+   }
+  ],
+  "via": "contrato",
+  "descricao": "regra geral de representação — Cláusula Sétima",
+  "cadeia": [
+   "BEIRAMAR_CS"
+  ],
+  "severidade": "ok",
+  "confianca": 1.0,
+  "achados": [],
+  "precondicoes": [
+   {
+    "codigo": "ESTOQUE_OU_IMOBILIZADO",
+    "descricao": "Confirmar se o veículo é estoque (mercadoria) ou ativo imobilizado",
+    "quorum": null,
+    "satisfeita": null,
+    "detalhe": "a empresa revende veículos: se o carro for estoque (mercadoria), a restrição ao imobilizado não se aplica",
+    "fontes": [
+     {
+      "doc_id": "BEIRAMAR_CS",
+      "doc_titulo": "Contrato Social (2019)",
+      "trecho": "A alienação de bens integrantes do ativo imobilizado da sociedade dependerá de aprovação de sócios que representem, no mínimo, três quartos do capital social.",
+      "clausula": "Cláusula Sétima, Parágrafo segundo",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3361,
+      "fim": 3519
+     }
+    ],
+    "pessoas": []
+   }
+  ]
+ },
+ "faltantes": [],
+ "achados": [
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: BEIRA-MAR VEÍCULOS LTDA..",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "DGR6C46",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  },
+  {
+   "codigo": "ESTOQUE_OU_IMOBILIZADO",
+   "severidade": "alerta",
+   "titulo": "Confirmar se o veículo é estoque (mercadoria) ou ativo imobilizado",
+   "detalhe": "a empresa revende veículos: se o carro for estoque (mercadoria), a restrição ao imobilizado não se aplica",
+   "fundamento": [
+    "CC art. 1.015"
+   ],
+   "fontes": [
+    {
+     "doc_id": "BEIRAMAR_CS",
+     "doc_titulo": "Contrato Social (2019)",
+     "trecho": "A alienação de bens integrantes do ativo imobilizado da sociedade dependerá de aprovação de sócios que representem, no mínimo, três quartos do capital social.",
+     "clausula": "Cláusula Sétima, Parágrafo segundo",
+     "ancoragem": 100.0,
+     "pagina": 2,
+     "inicio": 3361,
+     "fim": 3519
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "BEIRAMAR_CS#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "BEIRAMAR_CS",
+    "doc_titulo": "Contrato Social (2019)",
+    "trecho": "A administração da sociedade caberá ao sócio EDUARDO MARTINS LEAL, que a exercerá isoladamente, por prazo indeterminado, com poderes e atribuições de representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos compreendidos no objeto social",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2760,
+    "fim": 3038
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Eduardo Martins Leal"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "BEIRAMAR_CS#R2",
+   "escopo": "alienacao_ativo_imobilizado",
+   "aplicavel": null,
+   "motivo": "a empresa revende veículos: se o carro for estoque (mercadoria), a restrição ao imobilizado não se aplica",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "BEIRAMAR_CS",
+    "doc_titulo": "Contrato Social (2019)",
+    "trecho": "A alienação de bens integrantes do ativo imobilizado da sociedade dependerá de aprovação de sócios que representem, no mínimo, três quartos do capital social.",
+    "clausula": "Cláusula Sétima, Parágrafo segundo",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3361,
+    "fim": 3519
+   },
+   "modo": "quantidade_minima",
+   "pessoas": [],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "BEIRAMAR_CS#R3",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "BEIRAMAR_CS",
+    "doc_titulo": "Contrato Social (2019)",
+    "trecho": "A sócia FERNANDA QUEIROZ LEAL não exercerá funções de administração, participando da sociedade exclusivamente na condição de sócia quotista.",
+    "clausula": "Cláusula Sétima, Parágrafo primeiro",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3201,
+    "fim": 3341
+   },
+   "modo": "nao_especificado",
+   "pessoas": [
+    "Fernanda Queiroz Leal"
+   ],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [
+  {
+   "codigo": "ESTOQUE_OU_IMOBILIZADO",
+   "descricao": "Confirmar se o veículo é estoque (mercadoria) ou ativo imobilizado",
+   "quorum": null,
+   "satisfeita": null,
+   "detalhe": "a empresa revende veículos: se o carro for estoque (mercadoria), a restrição ao imobilizado não se aplica",
+   "fontes": [
+    {
+     "doc_id": "BEIRAMAR_CS",
+     "doc_titulo": "Contrato Social (2019)",
+     "trecho": "A alienação de bens integrantes do ativo imobilizado da sociedade dependerá de aprovação de sócios que representem, no mínimo, três quartos do capital social.",
+     "clausula": "Cláusula Sétima, Parágrafo segundo",
+     "ancoragem": 100.0,
+     "pagina": 2,
+     "inicio": 3361,
+     "fim": 3519
+    }
+   ],
+   "pessoas": []
+  }
+ ],
+ "regime": {
+  "data": "2026-09-27",
+  "atos": [
+   {
+    "doc": "BEIRAMAR_CS",
+    "titulo": "Contrato Social (2019)",
+    "efeito": "2019-11-11"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "46001304130",
+    "nome": "Eduardo Martins Leal",
+    "cargo": "Sócio-Administrador",
+    "doc": "BEIRAMAR_CS"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "46001304130",
+    "nome": "Eduardo Martins Leal",
+    "percentual": 60.0
+   },
+   {
+    "chave": "89557990635",
+    "nome": "Fernanda Queiroz Leal",
+    "percentual": 40.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "BEIRA-MAR VEÍCULOS LTDA.",
+    "sub": "67.704.410/0001-94"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "GM/ONIX LT 1.0",
+    "sub": "DGR6C46"
+   },
+   {
+    "id": "46001304130",
+    "tipo": "pessoa",
+    "rotulo": "Eduardo Martins Leal",
+    "papeis": [
+     "sócio 60%",
+     "Sócio-Administrador"
+    ],
+    "assinante": true
+   },
+   {
+    "id": "89557990635",
+    "tipo": "pessoa",
+    "rotulo": "Fernanda Queiroz Leal",
+    "papeis": [
+     "sócio 40%"
+    ],
+    "assinante": false
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "46001304130",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "60%",
+    "status": "neutro"
+   },
+   {
+    "de": "89557990635",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "40%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "46001304130",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "BEIRAMAR_CS"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2019-11-11",
+   "tipo": "ato",
+   "titulo": "Contrato Social (2019)",
+   "doc": "BEIRAMAR_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-09-27",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 76.000,00"
+  }
+ ],
+ "pessoas": {
+  "46001304130": {
+   "nome": "Eduardo Martins Leal",
+   "cpf": "46001304130"
+  },
+  "89557990635": {
+   "nome": "Fernanda Queiroz Leal",
+   "cpf": "89557990635"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "comprovada",
+  "outorgante": {
+   "nome": "BEIRA-MAR VEÍCULOS LTDA.",
+   "cnpj": "67.704.410/0001-94",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Contrato Social (2019)",
+     "doc": "BEIRAMAR_CS",
+     "efeito": "2019-11-11"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Eduardo Martins Leal",
+    "cpf": "460.013.041-30",
+    "identificacao": "CPF",
+    "qualidade": "Sócio-Administrador"
+   }
+  ],
+  "poderes_conferidos": [
+   "Contrato Social (2019), Cláusula Sétima: qualquer administrador designado assina sozinho — exigida a assinatura indicada na cláusula específica"
+  ],
+  "prazo_validade": [
+   "Eduardo Martins Leal (Sócio-Administrador): mandato por prazo indeterminado"
+  ],
+  "revogacao": [
+   "Poder decorre do ato constitutivo vigente na data da venda; recomenda-se certidão simplificada atualizada da Junta Comercial para afastar alteração posterior ainda não apresentada."
+  ],
+  "fontes": [
+   {
+    "doc_id": "BEIRAMAR_CS",
+    "doc_titulo": "Contrato Social (2019)",
+    "trecho": "A administração da sociedade caberá ao sócio EDUARDO MARTINS LEAL, que a exercerá isoladamente, por prazo indeterminado, com poderes e atribuições de representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos compreendidos no objeto social",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2760,
+    "fim": 3038
+   },
+   {
+    "doc_id": "BEIRAMAR_CS",
+    "doc_titulo": "Contrato Social (2019)",
+    "trecho": "A administração da sociedade caberá ao sócio EDUARDO MARTINS LEAL, que a exercerá isoladamente, por prazo indeterminado",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2760,
+    "fim": 2879
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "BEIRAMAR_CS",
+    "titulo": "Contrato Social (2019)",
+    "arquivo": "BEIRAMAR_CS.pdf"
+   },
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "BEIRAMAR_CS",
+   "nome": "BEIRAMAR_CS.pdf",
+   "tipo": "contrato_social",
+   "titulo": "Contrato Social (2019)",
+   "data": "2019-11-11",
+   "paginas": [
+    "CONTRATO SOCIAL DE CONSTITUIÇÃO\nBEIRA-MAR VEÍCULOS LTDA.\nPelo presente instrumento particular, os abaixo assinados:\nEDUARDO MARTINS LEAL, brasileiro, casado sob o regime de comunhão parcial de bens,\nempresário, portador da carteira de identidade nº 13599037 SSP/CE e inscrito no CPF sob o nº\n460.013.041-30, residente e domiciliado na Rua Ana Bilhar, nº 1.200, apartamento 1.001, bairro\nMeireles, Fortaleza/CE, CEP 60160-110; e\nFERNANDA QUEIROZ LEAL, brasileira, casada sob o regime de comunhão parcial de bens,\nempresária, portadora da carteira de identidade nº 43421355 SSP/CE e inscrita no CPF sob o nº\n895.579.906-35, residente e domiciliada na Rua Vicente Leite, nº 950, apartamento 600, bairro\nAldeota, Fortaleza/CE, CEP 60170-150;\nresolvem constituir uma sociedade empresária limitada, que se regerá pelas cláusulas e condições\nseguintes e, nas omissões, pelas disposições do Código Civil aplicáveis às sociedades limitadas.\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL\nA sociedade girará sob o nome empresarial BEIRA-MAR VEÍCULOS LTDA. e poderá utilizar o\nnome fantasia \"Beira-Mar Seminovos\".\nCLÁUSULA SEGUNDA – DA SEDE\nA sociedade terá sede na Avenida Washington Soares, nº 4.400, bairro Edson Queiroz, Fortaleza/CE,\nCEP 60811-341, podendo abrir e encerrar filiais, lojas e depósitos em qualquer parte do território\nnacional, mediante alteração contratual.\nCLÁUSULA TERCEIRA – DO OBJETO SOCIAL\nA sociedade tem por objeto o comércio a varejo de automóveis, camionetas e utilitários novos e\nusados.\nParágrafo único. As atividades correspondem aos códigos CNAE 4511-1/01 – comércio a varejo de\nautomóveis, camionetas e utilitários novos; e 4511-1/02 – comércio a varejo de automóveis,\ncamionetas e utilitários usados.\nCLÁUSULA QUARTA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciará suas atividades na data do registro deste contrato na Junta Comercial do Estado\ndo Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUINTA – DO CAPITAL SOCIAL\nO capital social é de R$ 1.000.000,00 (um milhão de reais), dividido em 1.000.000 (um milhão) de\nquotas de valor nominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas neste\nato, em moeda corrente do País, assim distribuídas entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nEDUARDO MARTINS LEAL\n600.000\n600.000,00\n60%\nFERNANDA QUEIROZ LEAL\n400.000\n400.000,00\n40%\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "Sócio\nQuotas\nValor (R$)\nParticipação\nTotal\n1.000.000\n1.000.000,00\n100%\nCLÁUSULA SEXTA – DA RESPONSABILIDADE DOS SÓCIOS\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social, nos termos do art. 1.052 do Código Civil.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade caberá ao sócio EDUARDO MARTINS LEAL, que a exercerá\nisoladamente, por prazo indeterminado, com poderes e atribuições de representação ativa e passiva\nda sociedade, em juízo ou fora dele, podendo praticar todos os atos compreendidos no objeto social,\nvedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto social,\nespecialmente em avais, fianças e endossos de favor.\nParágrafo primeiro. A sócia FERNANDA QUEIROZ LEAL não exercerá funções de administração,\nparticipando da sociedade exclusivamente na condição de sócia quotista.\nParágrafo segundo. A alienação de bens integrantes do ativo imobilizado da sociedade dependerá de\naprovação de sócios que representem, no mínimo, três quartos do capital social.\nCLÁUSULA OITAVA – DO PRÓ-LABORE\nO administrador terá direito a uma retirada mensal a título de pró-labore, em valor a ser fixado de\ncomum acordo entre os sócios, observada a legislação tributária e previdenciária.\nCLÁUSULA NONA – DO EXERCÍCIO SOCIAL E DOS RESULTADOS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, em 31 de dezembro, o\nadministrador prestará contas justificadas de sua administração, procedendo à elaboração do\ninventário, do balanço patrimonial e do balanço de resultado econômico, cabendo aos sócios, na\nproporção de suas quotas, os lucros ou as perdas apurados.\nCLÁUSULA DÉCIMA – DAS DELIBERAÇÕES SOCIAIS\nAs deliberações dos sócios serão tomadas em reunião, convocada na forma da lei, observados os\nquóruns previstos no Código Civil, ficando dispensada a reunião quando todos os sócios decidirem,\npor escrito, sobre a matéria que seria objeto dela.\nCLÁUSULA DÉCIMA PRIMEIRA – DA CESSÃO DE QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas ou transferidas a terceiros sem o consentimento\ndo outro sócio, a quem fica assegurado, em igualdade de condições e preço, o direito de preferência\npara a sua aquisição, a ser exercido no prazo de 30 (trinta) dias contados da comunicação escrita da\nintenção de venda.\nCLÁUSULA DÉCIMA SEGUNDA – DO FALECIMENTO OU DA INCAPACIDADE DE\nSÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros, sucessores ou o representante legal do incapaz. Não sendo possível ou inexistindo\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "interesse destes ou do sócio remanescente, o valor de seus haveres será apurado e liquidado com\nbase na situação patrimonial da sociedade, à data da resolução, verificada em balanço especialmente\nlevantado.\nCLÁUSULA DÉCIMA TERCEIRA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nO administrador declara, sob as penas da lei, que não está impedido de exercer a administração da\nsociedade por lei especial, ou em virtude de condenação criminal, ou por se encontrar sob os efeitos\ndela, a pena que vede, ainda que temporariamente, o acesso a cargos públicos; ou por crime\nfalimentar, de prevaricação, peita ou suborno, concussão, peculato; ou contra a economia popular,\ncontra o sistema financeiro nacional, contra as normas de defesa da concorrência, contra as relações\nde consumo, a fé pública ou a propriedade.\nCLÁUSULA DÉCIMA QUARTA – DO FORO\nFica eleito o foro da Comarca de Fortaleza/CE para o exercício e o cumprimento dos direitos e das\nobrigações resultantes deste contrato.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em via única,\npara que produza seus efeitos legais após o arquivamento na Junta Comercial do Estado do Ceará.\nFortaleza/CE, 11 de novembro de 2019.\nEDUARDO MARTINS LEAL\nFERNANDA QUEIROZ LEAL\nVisto: Mariana Esteves Coelho – OAB/CE nº 27.915\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 25/11/2019 sob o nº 71713926630\nProtocolo: 19/402.316-6 | NIRE: 23396225663\nEmpresa: BEIRA-MAR VEÍCULOS LTDA. | CNPJ: 67.704.410/0001-94\nAutenticação: A2F7C41E6B09D35A8C2F17E0\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "32fffe0c05918e57dcb022699b829cb5d58ed7d06f2f7e1f8d975506a3943cd1",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 30.4,
+      "tokens_saida": 508,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 32.5,
+      "tokens_saida": 746,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n06105914834\nPLACA\nDGR6C46\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2022\nANO MODELO\n2022\nNÚMERO DO CRV\n669932524948\nCÓDIGO DE SEGURANÇA DO CLA\n78654501308\nMARCA / MODELO / VERSÃO\nGM/ONIX LT 1.0\nESPÉCIE / TIPO\nPASSAGEIRO/AUTOMÓVEL\nCHASSI\n9BGNYTFWHER6ZJLKN\nCOR PREDOMINANTE\nPRATA\nCOMBUSTÍVEL\nÁLCOOL/GASOLINA\nNOME\nBEIRA-MAR VEÍCULOS LTDA.\nCPF / CNPJ\n67.704.410/0001-94\nLOCAL\nFORTALEZA/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "a47412d1ad9977fde1d4dfbee75a5459e6e41c8e3c86ce5ff29e127246fc316d",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "llamacpp",
+  "modelo": "qwen3.8-27b",
+  "politica": "DETRAN-CE"
+ },
+ "lado": "vendedor",
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T10:07:21",
+   "pedido": {
+    "veiculo": {
+     "descricao": "GM/ONIX LT 1.0",
+     "placa": "DGR6C46",
+     "renavam": "06105914834",
+     "chassi": "9BGNYTFWHER6ZJLKN"
+    },
+    "data_venda": "2026-09-27",
+    "valor": 76000.0,
+    "assinantes": [
+     {
+      "nome": "Eduardo Martins Leal",
+      "cpf": "460.013.041-30"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "Frota Fácil Locações Ltda.",
+    "vendedor_cnpj": "67.704.410/0001-94",
+    "lado": "vendedor"
+   },
+   "empresa": {
+    "razao_social": "BEIRA-MAR VEÍCULOS LTDA.",
+    "cnpj": "67.704.410/0001-94",
+    "tipo": "LTDA",
+    "objeto": "comércio a varejo de automóveis, camionetas e utilitários novos e usados",
+    "comercializa_veiculos": true,
+    "subtipo": null
+   },
+   "veredito": "PODE",
+   "faixa": "AMARELO",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 2,
+    "menor_confianca_fato": 1.0,
+    "alertas": 1,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "alerta: Confirmar se o veículo é estoque (mercadoria) ou ativo imobilizado"
+   ],
+   "resumo": "Eduardo Martins Leal pode assinar a ATPV-e — regra geral de representação — Cláusula Sétima.",
+   "assinantes": [
+    {
+     "informado": "Eduardo Martins Leal",
+     "cpf": "460.013.041-30",
+     "chave": "46001304130",
+     "nome": "Eduardo Martins Leal",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:46001304130",
+     "pessoas": [
+      {
+       "chave": "46001304130",
+       "nome": "Eduardo Martins Leal"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "regra geral de representação — Cláusula Sétima",
+     "cadeia": [
+      "BEIRAMAR_CS"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": [
+      {
+       "codigo": "ESTOQUE_OU_IMOBILIZADO",
+       "descricao": "Confirmar se o veículo é estoque (mercadoria) ou ativo imobilizado",
+       "quorum": null,
+       "satisfeita": null,
+       "detalhe": "a empresa revende veículos: se o carro for estoque (mercadoria), a restrição ao imobilizado não se aplica",
+       "fontes": [
+        {
+         "doc_id": "BEIRAMAR_CS",
+         "doc_titulo": "Contrato Social (2019)",
+         "trecho": "A alienação de bens integrantes do ativo imobilizado da sociedade dependerá de aprovação de sócios que representem, no mínimo, três quartos do capital social.",
+         "clausula": "Cláusula Sétima, Parágrafo segundo",
+         "ancoragem": 100.0,
+         "pagina": 2,
+         "inicio": 3361,
+         "fim": 3519
+        }
+       ],
+       "pessoas": []
+      }
+     ]
+    }
+   ],
+   "caminhos_invalidos": [],
+   "caminho_escolhido": {
+    "id": "contrato:46001304130",
+    "pessoas": [
+     {
+      "chave": "46001304130",
+      "nome": "Eduardo Martins Leal"
+     }
+    ],
+    "via": "contrato",
+    "descricao": "regra geral de representação — Cláusula Sétima",
+    "cadeia": [
+     "BEIRAMAR_CS"
+    ],
+    "severidade": "ok",
+    "confianca": 1.0,
+    "achados": [],
+    "precondicoes": [
+     {
+      "codigo": "ESTOQUE_OU_IMOBILIZADO",
+      "descricao": "Confirmar se o veículo é estoque (mercadoria) ou ativo imobilizado",
+      "quorum": null,
+      "satisfeita": null,
+      "detalhe": "a empresa revende veículos: se o carro for estoque (mercadoria), a restrição ao imobilizado não se aplica",
+      "fontes": [
+       {
+        "doc_id": "BEIRAMAR_CS",
+        "doc_titulo": "Contrato Social (2019)",
+        "trecho": "A alienação de bens integrantes do ativo imobilizado da sociedade dependerá de aprovação de sócios que representem, no mínimo, três quartos do capital social.",
+        "clausula": "Cláusula Sétima, Parágrafo segundo",
+        "ancoragem": 100.0,
+        "pagina": 2,
+        "inicio": 3361,
+        "fim": 3519
+       }
+      ],
+      "pessoas": []
+     }
+    ]
+   },
+   "faltantes": [],
+   "achados": [
+    {
+     "codigo": "TITULARIDADE_OK",
+     "severidade": "ok",
+     "titulo": "Veículo registrado no CNPJ da empresa",
+     "detalhe": "Proprietário no CRLV: BEIRA-MAR VEÍCULOS LTDA..",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [
+      {
+       "doc_id": "CRLV",
+       "doc_titulo": "CRLV",
+       "trecho": "DGR6C46",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 146,
+       "fim": 153
+      }
+     ],
+     "caminho": null
+    },
+    {
+     "codigo": "ESTOQUE_OU_IMOBILIZADO",
+     "severidade": "alerta",
+     "titulo": "Confirmar se o veículo é estoque (mercadoria) ou ativo imobilizado",
+     "detalhe": "a empresa revende veículos: se o carro for estoque (mercadoria), a restrição ao imobilizado não se aplica",
+     "fundamento": [
+      "CC art. 1.015"
+     ],
+     "fontes": [
+      {
+       "doc_id": "BEIRAMAR_CS",
+       "doc_titulo": "Contrato Social (2019)",
+       "trecho": "A alienação de bens integrantes do ativo imobilizado da sociedade dependerá de aprovação de sócios que representem, no mínimo, três quartos do capital social.",
+       "clausula": "Cláusula Sétima, Parágrafo segundo",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 3361,
+       "fim": 3519
+      }
+     ],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "BEIRAMAR_CS#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "BEIRAMAR_CS",
+      "doc_titulo": "Contrato Social (2019)",
+      "trecho": "A administração da sociedade caberá ao sócio EDUARDO MARTINS LEAL, que a exercerá isoladamente, por prazo indeterminado, com poderes e atribuições de representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos compreendidos no objeto social",
+      "clausula": "Cláusula Sétima",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 2760,
+      "fim": 3038
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Eduardo Martins Leal"
+     ],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente"
+       ]
+      }
+     ],
+     "decisiva": true
+    },
+    {
+     "regra": "BEIRAMAR_CS#R2",
+     "escopo": "alienacao_ativo_imobilizado",
+     "aplicavel": null,
+     "motivo": "a empresa revende veículos: se o carro for estoque (mercadoria), a restrição ao imobilizado não se aplica",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "BEIRAMAR_CS",
+      "doc_titulo": "Contrato Social (2019)",
+      "trecho": "A alienação de bens integrantes do ativo imobilizado da sociedade dependerá de aprovação de sócios que representem, no mínimo, três quartos do capital social.",
+      "clausula": "Cláusula Sétima, Parágrafo segundo",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3361,
+      "fim": 3519
+     },
+     "modo": "quantidade_minima",
+     "pessoas": [],
+     "cargo": "socios",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    },
+    {
+     "regra": "BEIRAMAR_CS#R3",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "BEIRAMAR_CS",
+      "doc_titulo": "Contrato Social (2019)",
+      "trecho": "A sócia FERNANDA QUEIROZ LEAL não exercerá funções de administração, participando da sociedade exclusivamente na condição de sócia quotista.",
+      "clausula": "Cláusula Sétima, Parágrafo primeiro",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3201,
+      "fim": 3341
+     },
+     "modo": "nao_especificado",
+     "pessoas": [
+      "Fernanda Queiroz Leal"
+     ],
+     "cargo": "socios",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    }
+   ],
+   "precondicoes": [
+    {
+     "codigo": "ESTOQUE_OU_IMOBILIZADO",
+     "descricao": "Confirmar se o veículo é estoque (mercadoria) ou ativo imobilizado",
+     "quorum": null,
+     "satisfeita": null,
+     "detalhe": "a empresa revende veículos: se o carro for estoque (mercadoria), a restrição ao imobilizado não se aplica",
+     "fontes": [
+      {
+       "doc_id": "BEIRAMAR_CS",
+       "doc_titulo": "Contrato Social (2019)",
+       "trecho": "A alienação de bens integrantes do ativo imobilizado da sociedade dependerá de aprovação de sócios que representem, no mínimo, três quartos do capital social.",
+       "clausula": "Cláusula Sétima, Parágrafo segundo",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 3361,
+       "fim": 3519
+      }
+     ],
+     "pessoas": []
+    }
+   ],
+   "regime": {
+    "data": "2026-09-27",
+    "atos": [
+     {
+      "doc": "BEIRAMAR_CS",
+      "titulo": "Contrato Social (2019)",
+      "efeito": "2019-11-11"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "46001304130",
+      "nome": "Eduardo Martins Leal",
+      "cargo": "Sócio-Administrador",
+      "doc": "BEIRAMAR_CS"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "46001304130",
+      "nome": "Eduardo Martins Leal",
+      "percentual": 60.0
+     },
+     {
+      "chave": "89557990635",
+      "nome": "Fernanda Queiroz Leal",
+      "percentual": 40.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "BEIRA-MAR VEÍCULOS LTDA.",
+      "sub": "67.704.410/0001-94"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "GM/ONIX LT 1.0",
+      "sub": "DGR6C46"
+     },
+     {
+      "id": "46001304130",
+      "tipo": "pessoa",
+      "rotulo": "Eduardo Martins Leal",
+      "papeis": [
+       "sócio 60%",
+       "Sócio-Administrador"
+      ],
+      "assinante": true
+     },
+     {
+      "id": "89557990635",
+      "tipo": "pessoa",
+      "rotulo": "Fernanda Queiroz Leal",
+      "papeis": [
+       "sócio 40%"
+      ],
+      "assinante": false
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "valido"
+     },
+     {
+      "de": "46001304130",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "60%",
+      "status": "neutro"
+     },
+     {
+      "de": "89557990635",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "40%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "46001304130",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "BEIRAMAR_CS"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2019-11-11",
+     "tipo": "ato",
+     "titulo": "Contrato Social (2019)",
+     "doc": "BEIRAMAR_CS",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-09-27",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 76.000,00"
+    }
+   ],
+   "pessoas": {
+    "46001304130": {
+     "nome": "Eduardo Martins Leal",
+     "cpf": "46001304130"
+    },
+    "89557990635": {
+     "nome": "Fernanda Queiroz Leal",
+     "cpf": "89557990635"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "comprovada",
+    "outorgante": {
+     "nome": "BEIRA-MAR VEÍCULOS LTDA.",
+     "cnpj": "67.704.410/0001-94",
+     "tipo": "LTDA",
+     "atos_vigentes": [
+      {
+       "titulo": "Contrato Social (2019)",
+       "doc": "BEIRAMAR_CS",
+       "efeito": "2019-11-11"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "Eduardo Martins Leal",
+      "cpf": "460.013.041-30",
+      "identificacao": "CPF",
+      "qualidade": "Sócio-Administrador"
+     }
+    ],
+    "poderes_conferidos": [
+     "Contrato Social (2019), Cláusula Sétima: qualquer administrador designado assina sozinho — exigida a assinatura indicada na cláusula específica"
+    ],
+    "prazo_validade": [
+     "Eduardo Martins Leal (Sócio-Administrador): mandato por prazo indeterminado"
+    ],
+    "revogacao": [
+     "Poder decorre do ato constitutivo vigente na data da venda; recomenda-se certidão simplificada atualizada da Junta Comercial para afastar alteração posterior ainda não apresentada."
+    ],
+    "fontes": [
+     {
+      "doc_id": "BEIRAMAR_CS",
+      "doc_titulo": "Contrato Social (2019)",
+      "trecho": "A administração da sociedade caberá ao sócio EDUARDO MARTINS LEAL, que a exercerá isoladamente, por prazo indeterminado, com poderes e atribuições de representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos compreendidos no objeto social",
+      "clausula": "Cláusula Sétima",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 2760,
+      "fim": 3038
+     },
+     {
+      "doc_id": "BEIRAMAR_CS",
+      "doc_titulo": "Contrato Social (2019)",
+      "trecho": "A administração da sociedade caberá ao sócio EDUARDO MARTINS LEAL, que a exercerá isoladamente, por prazo indeterminado",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 2760,
+      "fim": 2879
+     }
+    ],
+    "documentos_verificaveis": [
+     {
+      "id": "BEIRAMAR_CS",
+      "titulo": "Contrato Social (2019)",
+      "arquivo": "BEIRAMAR_CS.pdf"
+     },
+     {
+      "id": "CRLV",
+      "titulo": "CRLV",
+      "arquivo": "CRLV.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "BEIRAMAR_CS",
+     "nome": "BEIRAMAR_CS.pdf",
+     "tipo": "contrato_social",
+     "titulo": "Contrato Social (2019)",
+     "data": "2019-11-11",
+     "paginas": [
+      "CONTRATO SOCIAL DE CONSTITUIÇÃO\nBEIRA-MAR VEÍCULOS LTDA.\nPelo presente instrumento particular, os abaixo assinados:\nEDUARDO MARTINS LEAL, brasileiro, casado sob o regime de comunhão parcial de bens,\nempresário, portador da carteira de identidade nº 13599037 SSP/CE e inscrito no CPF sob o nº\n460.013.041-30, residente e domiciliado na Rua Ana Bilhar, nº 1.200, apartamento 1.001, bairro\nMeireles, Fortaleza/CE, CEP 60160-110; e\nFERNANDA QUEIROZ LEAL, brasileira, casada sob o regime de comunhão parcial de bens,\nempresária, portadora da carteira de identidade nº 43421355 SSP/CE e inscrita no CPF sob o nº\n895.579.906-35, residente e domiciliada na Rua Vicente Leite, nº 950, apartamento 600, bairro\nAldeota, Fortaleza/CE, CEP 60170-150;\nresolvem constituir uma sociedade empresária limitada, que se regerá pelas cláusulas e condições\nseguintes e, nas omissões, pelas disposições do Código Civil aplicáveis às sociedades limitadas.\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL\nA sociedade girará sob o nome empresarial BEIRA-MAR VEÍCULOS LTDA. e poderá utilizar o\nnome fantasia \"Beira-Mar Seminovos\".\nCLÁUSULA SEGUNDA – DA SEDE\nA sociedade terá sede na Avenida Washington Soares, nº 4.400, bairro Edson Queiroz, Fortaleza/CE,\nCEP 60811-341, podendo abrir e encerrar filiais, lojas e depósitos em qualquer parte do território\nnacional, mediante alteração contratual.\nCLÁUSULA TERCEIRA – DO OBJETO SOCIAL\nA sociedade tem por objeto o comércio a varejo de automóveis, camionetas e utilitários novos e\nusados.\nParágrafo único. As atividades correspondem aos códigos CNAE 4511-1/01 – comércio a varejo de\nautomóveis, camionetas e utilitários novos; e 4511-1/02 – comércio a varejo de automóveis,\ncamionetas e utilitários usados.\nCLÁUSULA QUARTA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciará suas atividades na data do registro deste contrato na Junta Comercial do Estado\ndo Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUINTA – DO CAPITAL SOCIAL\nO capital social é de R$ 1.000.000,00 (um milhão de reais), dividido em 1.000.000 (um milhão) de\nquotas de valor nominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas neste\nato, em moeda corrente do País, assim distribuídas entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nEDUARDO MARTINS LEAL\n600.000\n600.000,00\n60%\nFERNANDA QUEIROZ LEAL\n400.000\n400.000,00\n40%\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+      "Sócio\nQuotas\nValor (R$)\nParticipação\nTotal\n1.000.000\n1.000.000,00\n100%\nCLÁUSULA SEXTA – DA RESPONSABILIDADE DOS SÓCIOS\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social, nos termos do art. 1.052 do Código Civil.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade caberá ao sócio EDUARDO MARTINS LEAL, que a exercerá\nisoladamente, por prazo indeterminado, com poderes e atribuições de representação ativa e passiva\nda sociedade, em juízo ou fora dele, podendo praticar todos os atos compreendidos no objeto social,\nvedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto social,\nespecialmente em avais, fianças e endossos de favor.\nParágrafo primeiro. A sócia FERNANDA QUEIROZ LEAL não exercerá funções de administração,\nparticipando da sociedade exclusivamente na condição de sócia quotista.\nParágrafo segundo. A alienação de bens integrantes do ativo imobilizado da sociedade dependerá de\naprovação de sócios que representem, no mínimo, três quartos do capital social.\nCLÁUSULA OITAVA – DO PRÓ-LABORE\nO administrador terá direito a uma retirada mensal a título de pró-labore, em valor a ser fixado de\ncomum acordo entre os sócios, observada a legislação tributária e previdenciária.\nCLÁUSULA NONA – DO EXERCÍCIO SOCIAL E DOS RESULTADOS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, em 31 de dezembro, o\nadministrador prestará contas justificadas de sua administração, procedendo à elaboração do\ninventário, do balanço patrimonial e do balanço de resultado econômico, cabendo aos sócios, na\nproporção de suas quotas, os lucros ou as perdas apurados.\nCLÁUSULA DÉCIMA – DAS DELIBERAÇÕES SOCIAIS\nAs deliberações dos sócios serão tomadas em reunião, convocada na forma da lei, observados os\nquóruns previstos no Código Civil, ficando dispensada a reunião quando todos os sócios decidirem,\npor escrito, sobre a matéria que seria objeto dela.\nCLÁUSULA DÉCIMA PRIMEIRA – DA CESSÃO DE QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas ou transferidas a terceiros sem o consentimento\ndo outro sócio, a quem fica assegurado, em igualdade de condições e preço, o direito de preferência\npara a sua aquisição, a ser exercido no prazo de 30 (trinta) dias contados da comunicação escrita da\nintenção de venda.\nCLÁUSULA DÉCIMA SEGUNDA – DO FALECIMENTO OU DA INCAPACIDADE DE\nSÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros, sucessores ou o representante legal do incapaz. Não sendo possível ou inexistindo\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+      "interesse destes ou do sócio remanescente, o valor de seus haveres será apurado e liquidado com\nbase na situação patrimonial da sociedade, à data da resolução, verificada em balanço especialmente\nlevantado.\nCLÁUSULA DÉCIMA TERCEIRA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nO administrador declara, sob as penas da lei, que não está impedido de exercer a administração da\nsociedade por lei especial, ou em virtude de condenação criminal, ou por se encontrar sob os efeitos\ndela, a pena que vede, ainda que temporariamente, o acesso a cargos públicos; ou por crime\nfalimentar, de prevaricação, peita ou suborno, concussão, peculato; ou contra a economia popular,\ncontra o sistema financeiro nacional, contra as normas de defesa da concorrência, contra as relações\nde consumo, a fé pública ou a propriedade.\nCLÁUSULA DÉCIMA QUARTA – DO FORO\nFica eleito o foro da Comarca de Fortaleza/CE para o exercício e o cumprimento dos direitos e das\nobrigações resultantes deste contrato.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em via única,\npara que produza seus efeitos legais após o arquivamento na Junta Comercial do Estado do Ceará.\nFortaleza/CE, 11 de novembro de 2019.\nEDUARDO MARTINS LEAL\nFERNANDA QUEIROZ LEAL\nVisto: Mariana Esteves Coelho – OAB/CE nº 27.915\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 25/11/2019 sob o nº 71713926630\nProtocolo: 19/402.316-6 | NIRE: 23396225663\nEmpresa: BEIRA-MAR VEÍCULOS LTDA. | CNPJ: 67.704.410/0001-94\nAutenticação: A2F7C41E6B09D35A8C2F17E0\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "32fffe0c05918e57dcb022699b829cb5d58ed7d06f2f7e1f8d975506a3943cd1",
+     "leitura": {
+      "tarefas": {
+       "partes": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 30.4,
+        "tokens_saida": 508,
+        "modelo": "qwen3.8-27b"
+       },
+       "regras": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 32.5,
+        "tokens_saida": 746,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "CRLV",
+     "nome": "CRLV.pdf",
+     "tipo": "crlv",
+     "titulo": "CRLV",
+     "data": null,
+     "paginas": [
+      "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n06105914834\nPLACA\nDGR6C46\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2022\nANO MODELO\n2022\nNÚMERO DO CRV\n669932524948\nCÓDIGO DE SEGURANÇA DO CLA\n78654501308\nMARCA / MODELO / VERSÃO\nGM/ONIX LT 1.0\nESPÉCIE / TIPO\nPASSAGEIRO/AUTOMÓVEL\nCHASSI\n9BGNYTFWHER6ZJLKN\nCOR PREDOMINANTE\nPRATA\nCOMBUSTÍVEL\nÁLCOOL/GASOLINA\nNOME\nBEIRA-MAR VEÍCULOS LTDA.\nCPF / CNPJ\n67.704.410/0001-94\nLOCAL\nFORTALEZA/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "a47412d1ad9977fde1d4dfbee75a5459e6e41c8e3c86ce5ff29e127246fc316d",
+     "leitura": {
+      "tarefas": {
+       "crlv": {
+        "metodo": "regex"
+       }
+      },
+      "texto_truncado": false
+     }
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "llamacpp",
+    "modelo": "qwen3.8-27b",
+    "politica": "DETRAN-CE"
+   },
+   "lado": "vendedor"
+  }
+ },
+ "geral": {
+  "veredito": "PODE",
+  "faixa": "AMARELO",
+  "indice": 100.0,
+  "resumo": "Vendedor: Eduardo Martins Leal pode assinar a ATPV-e — regra geral de representação — Cláusula Sétima.",
+  "motivos_faixa": [
+   "Vendedor — alerta: Confirmar se o veículo é estoque (mercadoria) ou ativo imobilizado"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "GM/ONIX LT 1.0",
+   "placa": "DGR6C46",
+   "renavam": "06105914834",
+   "chassi": "9BGNYTFWHER6ZJLKN"
+  },
+  "data_venda": "2026-09-27",
+  "valor": 76000.0,
+  "vendedor": {
+   "tipo": "PJ",
+   "nome": "BEIRA-MAR VEÍCULOS LTDA.",
+   "documento": "67.704.410/0001-94",
+   "assinantes": [
+    {
+     "nome": "Eduardo Martins Leal",
+     "cpf": "460.013.041-30"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": "Frota Fácil Locações Ltda.",
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "informado"
+ },
+ "hash_entrada": "116f4286fd4b96118661c3b803de435c4d357f80b514c026cf855f115e5c2eca"
+}

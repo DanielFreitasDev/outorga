@@ -1,0 +1,26 @@
+{
+  "caso": "C22",
+  "vendedor": {
+    "razao_social": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+    "cnpj": "33.437.010/0001-48"
+  },
+  "veiculo": {
+    "placa": "ALF7V12",
+    "renavam": "03729871120",
+    "chassi": "93HAWK3TB5VK1A5HG",
+    "descricao": "HONDA/HR-V EXL 1.5"
+  },
+  "data_venda": "2026-09-12",
+  "valor": 155000,
+  "assinantes": [
+    {
+      "nome": "Ana Paula Bastos",
+      "cpf": "406.925.666-00"
+    }
+  ],
+  "comprador": {
+    "nome": "Patrícia Lemos Barroso",
+    "cidade": "Sobral/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

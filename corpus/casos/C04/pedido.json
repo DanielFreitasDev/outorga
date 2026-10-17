@@ -1,0 +1,26 @@
+{
+  "caso": "C04",
+  "vendedor": {
+    "razao_social": "LOCADORA JANGADA LTDA.",
+    "cnpj": "38.005.305/0001-69"
+  },
+  "veiculo": {
+    "placa": "WWH2D41",
+    "renavam": "07116494155",
+    "chassi": "9BH78HSZ6ZFEF8WTR",
+    "descricao": "HYUNDAI/HB20 1.0M SENSE"
+  },
+  "data_venda": "2026-09-04",
+  "valor": 72000,
+  "assinantes": [
+    {
+      "nome": "Ana Beatriz Holanda",
+      "cpf": "698.716.897-05"
+    }
+  ],
+  "comprador": {
+    "nome": "Patrícia Lemos Barroso",
+    "cidade": "Sobral/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

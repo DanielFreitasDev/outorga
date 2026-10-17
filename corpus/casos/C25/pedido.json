@@ -1,0 +1,26 @@
+{
+  "caso": "C25",
+  "vendedor": {
+    "razao_social": "AGROPECUÁRIA CARIRI LTDA.",
+    "cnpj": "84.885.681/0001-02"
+  },
+  "veiculo": {
+    "placa": "WKB9T43",
+    "renavam": "08463884987",
+    "chassi": "9BDZZ1RA3410S1ZBG",
+    "descricao": "FIAT/STRADA ENDURANCE 1.3 CS"
+  },
+  "data_venda": "2026-09-10",
+  "valor": 92000,
+  "assinantes": [
+    {
+      "nome": "Fábio Júnior Arrais",
+      "cpf": "129.110.285-03"
+    }
+  ],
+  "comprador": {
+    "nome": "Rita de Cássia Moreira",
+    "cidade": "Fortaleza/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

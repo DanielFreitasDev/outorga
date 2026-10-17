@@ -1,0 +1,26 @@
+{
+  "caso": "C26",
+  "vendedor": {
+    "razao_social": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+    "cnpj": "33.437.010/0001-48"
+  },
+  "veiculo": {
+    "placa": "HGF7W50",
+    "renavam": "07268350814",
+    "chassi": "9BDGHP2H6ZG3SXWAG",
+    "descricao": "FIAT/PULSE DRIVE 1.3"
+  },
+  "data_venda": "2026-09-12",
+  "valor": 98000,
+  "assinantes": [
+    {
+      "nome": "Camila Freire Rocha",
+      "cpf": "230.048.764-00"
+    }
+  ],
+  "comprador": {
+    "nome": "Jefferson Lucas Araújo",
+    "cidade": "Caucaia/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

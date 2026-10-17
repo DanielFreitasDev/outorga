@@ -1,0 +1,29 @@
+{
+  "caso": "I04",
+  "vendedor": {
+    "razao_social": "MARÉ ALTA PESCADOS LTDA",
+    "cnpj": "65.651.550/0001-16"
+  },
+  "veiculo": {
+    "placa": "KGJ4N36",
+    "renavam": "08633315538",
+    "chassi": "9BDAJCLTERKHUS4RD",
+    "descricao": "FIAT/STRADA"
+  },
+  "data_venda": "2026-08-26",
+  "valor": 89900.0,
+  "assinantes": [
+    {
+      "nome": "DIEGO MATOS SABINO",
+      "cpf": "656.742.959-30"
+    }
+  ],
+  "crlv_proprietario": {
+    "nome": "MARÉ ALTA PESCADOS LTDA",
+    "documento": "65.651.550/0001-16"
+  },
+  "comprador": {
+    "nome": "POUSADA VENTOS DE CAMOCIM LTDA"
+  },
+  "forma_assinatura": "ATPV-e"
+}

@@ -1,0 +1,15 @@
+{
+  "caso": "A12",
+  "forma_assinatura": "ATPV-e",
+  "vendedor": {
+    "assinantes": []
+  },
+  "comprador": {
+    "assinantes": [
+      {
+        "nome": "Cláudia Mendes Lima",
+        "cpf": "889.568.083-92"
+      }
+    ]
+  }
+}

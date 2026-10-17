@@ -1,0 +1,36 @@
+{
+  "caso": "C20",
+  "titulo": "Procuração outorgada por quem não tinha poder sozinho",
+  "categoria": "procuracao",
+  "objetivo": "Contrato exige os dois administradores; só um outorgou: ninguém delega mais poder do que tem.",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO",
+      "AMARELO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "CARLOS",
+        "LUCIANA"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 1.014",
+      "CC art. 47"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "417.075.364-06",
+        "568.151.884-18"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Carlos Eduardo Bezerra",
+        "Luciana Moura Sampaio"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

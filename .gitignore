@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.venv/
+.pytest_cache/
+
+# Interface (gerada por `pnpm build`)
+web/node_modules/
+web/dist/
+
+# Dados de execução local (banco SQLite, uploads, leituras salvas)
+dados/
+
+# Intermediários regeneráveis
+corpus/pdf/
+.playwright-mcp/
+
+# Dados de idioma do Tesseract (instale tesseract-ocr-por ou rode scripts/baixar_tessdata.sh)
+vendor/
+
+# Cache das leituras da IA: só o do corpus fictício é versionado (reprodutibilidade sem GPU)
+.cache/*
+!.cache/leituras/
+
+# Anotações internas de conversa (não são documentação)
+docs/mensagem-whatsapp-chefe.md

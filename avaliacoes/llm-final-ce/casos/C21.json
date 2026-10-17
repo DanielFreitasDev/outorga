@@ -1,0 +1,1536 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T10:07:21",
+ "pedido": {
+  "veiculo": {
+   "descricao": "IVECO/DAILY 35-150 CS",
+   "placa": "CHB0P49",
+   "renavam": "08179223289",
+   "chassi": "93ZN9Y2UL6FBZEJS7"
+  },
+  "data_venda": "2026-09-26",
+  "valor": 245000.0,
+  "assinantes": [
+   {
+    "nome": "Kleber Jorge Matos",
+    "cpf": "659.085.380-00"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "Auto Center Litoral Ltda.",
+  "vendedor_cnpj": "34.146.175/0001-23",
+  "lado": "vendedor"
+ },
+ "empresa": {
+  "razao_social": "TRANSPORTES SERTÃO VERDE LTDA.",
+  "cnpj": "34.146.175/0001-23",
+  "tipo": "LTDA",
+  "objeto": "transporte rodoviário de cargas em geral, municipal, intermunicipal e interestadual, compreendendo as atividades classificadas nos códigos CNAE 4930-2/01 (transporte rodoviário de carga, exceto produtos perigosos e mudanças, municipal) e 4930-2/02 (transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e internacional).",
+  "comercializa_veiculos": false,
+  "subtipo": null
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 0.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 2,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 0 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: João Batista Andrade ou Maria Clara Fontenele. O caminho por procuração particular de 14/05/2026 (irácema – 4º tabelionato de notas de fortaleza (fictício)) não vale: procuração da pessoa física, não da empresa, procuração particular com firma reconhecida.",
+ "assinantes": [
+  {
+   "informado": "Kleber Jorge Matos",
+   "cpf": "659.085.380-00",
+   "chave": "65908538000",
+   "nome": "Kleber Jorge Matos",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:15881399803",
+   "pessoas": [
+    {
+     "chave": "15881399803",
+     "nome": "João Batista Andrade"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Cláusula Sétima",
+   "cadeia": [
+    "SERTAO_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  },
+  {
+   "id": "contrato:98797309176",
+   "pessoas": [
+    {
+     "chave": "98797309176",
+     "nome": "Maria Clara Fontenele"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Cláusula Sétima",
+   "cadeia": [
+    "SERTAO_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [
+  {
+   "id": "POA_PF_JOAO:bloqueada",
+   "pessoas": [
+    {
+     "chave": "65908538000",
+     "nome": "Kleber Jorge Matos"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração particular de 14/05/2026 (Irácema – 4º Tabelionato de Notas de Fortaleza (fictício))",
+   "cadeia": [
+    "POA_PF_JOAO"
+   ],
+   "severidade": "atencao",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PF",
+     "severidade": "bloqueio",
+     "titulo": "Procuração da pessoa física, não da empresa",
+     "detalhe": "JOÃO BATISTA ANDRADE outorgou como pessoa física, para bens 'de propriedade do outorgante'. O veículo é da empresa: só a sociedade, representada por quem tem poder, pode constituir procurador para vendê-lo.",
+     "fundamento": [
+      "CC art. 1.018",
+      "CC art. 47"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_JOAO",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "OUTORGANTE: JOÃO BATISTA ANDRADE, brasileiro, casado, empresário, portador da cédula de identidade RG nº 57453983 SSP/CE, inscrito no CPF sob o nº 158.813.998-03, residente e domiciliado nesta cidade de Fortaleza/CE.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 11,
+       "fim": 227
+      },
+      {
+       "doc_id": "POA_PF_JOAO",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "poderes especiais para vender, transferir e alienar veículos de propriedade do outorgante, a quem convier e pelo preço, prazo e condições que ajustar; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e), em meio físico ou eletrônico, bem como contratos, recibos e termos de compra e venda; receber o preço, total ou parcialmente, e dar a respectiva quitação; requerer, perante o DETRAN e demais órgãos de trânsito, vistorias, segundas vias de documentos, certidões de débitos e a comunicação de venda; recolher taxas, tributos, licenciamentos e multas que recaiam sobre os referidos veículos; assinar declarações, requerimentos e termos de responsabilidade; entregar os veículos e seus documentos aos adquirentes; e praticar, enfim, todos os demais atos necessários ao bom e fiel cumprimento deste mandato, que o outorgante dá por firme e valioso.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 642,
+       "fim": 1518
+      }
+     ],
+     "caminho": "POA_PF_JOAO"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_JOAO",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "poderes especiais para vender, transferir e alienar veículos de propriedade do outorgante, a quem convier e pelo preço, prazo e condições que ajustar; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e), em meio físico ou eletrônico, bem como contratos, recibos e termos de compra e venda; receber o preço, total ou parcialmente, e dar a respectiva quitação; requerer, perante o DETRAN e demais órgãos de trânsito, vistorias, segundas vias de documentos, certidões de débitos e a comunicação de venda; recolher taxas, tributos, licenciamentos e multas que recaiam sobre os referidos veículos; assinar declarações, requerimentos e termos de responsabilidade; entregar os veículos e seus documentos aos adquirentes; e praticar, enfim, todos os demais atos necessários ao bom e fiel cumprimento deste mandato, que o outorgante dá por firme e valioso.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 642,
+       "fim": 1518
+      }
+     ],
+     "caminho": "POA_PF_JOAO"
+    },
+    {
+     "codigo": "PROCURACAO_NO_PRAZO",
+     "severidade": "ok",
+     "titulo": "Dentro do prazo",
+     "detalhe": "Válida até 14/05/2027.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_JOAO",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "O presente mandato é válido pelo prazo de 1 (um) ano, contado da data de sua assinatura.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1526,
+       "fim": 1614
+      }
+     ],
+     "caminho": "POA_PF_JOAO"
+    },
+    {
+     "codigo": "FORMA_PARTICULAR",
+     "severidade": "bloqueio",
+     "titulo": "Procuração particular com firma reconhecida",
+     "detalhe": "O DETRAN-CE só aceita procurador por instrumento de procuração PÚBLICA e específica para o ato. (Civilmente o instrumento particular é válido; a exigência é do órgão.)",
+     "fundamento": [
+      "DETRAN-CE (serviço de transferência)",
+      "CC art. 654, §2º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_JOAO",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "OUTORGANTE: JOÃO BATISTA ANDRADE, brasileiro, casado, empresário, portador da cédula de identidade RG nº 57453983 SSP/CE, inscrito no CPF sob o nº 158.813.998-03, residente e domiciliado nesta cidade de Fortaleza/CE.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 11,
+       "fim": 227
+      }
+     ],
+     "caminho": "POA_PF_JOAO"
+    },
+    {
+     "codigo": "PROCURACAO_SEM_VEICULO",
+     "severidade": "atencao",
+     "titulo": "Procuração não identifica o veículo",
+     "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+     "fundamento": [
+      "CJF, Enunciado 183"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_JOAO",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "poderes especiais para vender, transferir e alienar veículos de propriedade do outorgante, a quem convier e pelo preço, prazo e condições que ajustar; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e), em meio físico ou eletrônico, bem como contratos, recibos e termos de compra e venda; receber o preço, total ou parcialmente, e dar a respectiva quitação; requerer, perante o DETRAN e demais órgãos de trânsito, vistorias, segundas vias de documentos, certidões de débitos e a comunicação de venda; recolher taxas, tributos, licenciamentos e multas que recaiam sobre os referidos veículos; assinar declarações, requerimentos e termos de responsabilidade; entregar os veículos e seus documentos aos adquirentes; e praticar, enfim, todos os demais atos necessários ao bom e fiel cumprimento deste mandato, que o outorgante dá por firme e valioso.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 642,
+       "fim": 1518
+      }
+     ],
+     "caminho": "POA_PF_JOAO"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "contrato:15881399803",
+   "via": "contrato",
+   "descricao": "regra geral de representação — Cláusula Sétima",
+   "pessoas": [
+    "15881399803"
+   ],
+   "faltam": [
+    "15881399803"
+   ],
+   "faltam_nomes": [
+    "João Batista Andrade"
+   ],
+   "pessoas_nomes": [
+    "João Batista Andrade"
+   ]
+  },
+  {
+   "alternativa": "contrato:98797309176",
+   "via": "contrato",
+   "descricao": "regra geral de representação — Cláusula Sétima",
+   "pessoas": [
+    "98797309176"
+   ],
+   "faltam": [
+    "98797309176"
+   ],
+   "faltam_nomes": [
+    "Maria Clara Fontenele"
+   ],
+   "pessoas_nomes": [
+    "Maria Clara Fontenele"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "CND_INSS",
+   "severidade": "info",
+   "titulo": "CND previdenciária",
+   "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+   "fundamento": [
+    "Lei 8.212/91, art. 47, I, \"c\""
+   ],
+   "fontes": [],
+   "caminho": null
+  },
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: TRANSPORTES SERTÃO VERDE LTDA..",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "CHB0P49",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "SERTAO_CS#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "SERTAO_CS",
+    "doc_titulo": "Contrato Social (2019)",
+    "trecho": "A administração da sociedade caberá aos sócios JOÃO BATISTA ANDRADE e MARIA CLARA FONTENELE, que a exercerão indistintamente, com poderes e atribuições de representação ativa e passiva da sociedade, judicial e extrajudicial, podendo praticar todos os atos compreendidos no objeto social e necessários à boa condução dos negócios sociais",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3470,
+    "fim": 3806
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "João Batista Andrade",
+    "Maria Clara Fontenele"
+   ],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "indistintamente"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "SERTAO_CS#R2",
+   "escopo": "alienacao_bens_imoveis",
+   "aplicavel": false,
+   "motivo": "trata de bens imóveis; veículo é bem móvel",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "SERTAO_CS",
+    "doc_titulo": "Contrato Social (2019)",
+    "trecho": "vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor, ou assumir obrigações em favor de qualquer dos quotistas ou de terceiros, bem como onerar ou alienar bens imóveis da sociedade, sem autorização dos sócios que representem três quartos do capital social.",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3808,
+    "fim": 4151
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "SERTAO_CS#R3",
+   "escopo": "alienacao_bens_imoveis",
+   "aplicavel": false,
+   "motivo": "trata de bens imóveis; veículo é bem móvel",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "SERTAO_CS",
+    "doc_titulo": "Contrato Social (2019)",
+    "trecho": "vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor, ou assumir obrigações em favor de qualquer dos quotistas ou de terceiros, bem como onerar ou alienar bens imóveis da sociedade, sem autorização dos sócios que representem três quartos do capital social.",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3808,
+    "fim": 4151
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 0.8,
+   "verificacoes": [
+    {
+     "campo": "escopo",
+     "valor_llm": "onerar_bens",
+     "valor_lexico": "alienacao_bens_imoveis",
+     "divergiu": true,
+     "corrigido_para": "alienacao_bens_imoveis",
+     "expressoes": []
+    }
+   ],
+   "decisiva": false
+  },
+  {
+   "regra": "SERTAO_CS#R4",
+   "escopo": "obrigacoes_garantias",
+   "aplicavel": false,
+   "motivo": "trata de avais, fianças e garantias",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "SERTAO_CS",
+    "doc_titulo": "Contrato Social (2019)",
+    "trecho": "vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor, ou assumir obrigações em favor de qualquer dos quotistas ou de terceiros, bem como onerar ou alienar bens imóveis da sociedade, sem autorização dos sócios que representem três quartos do capital social.",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3808,
+    "fim": 4151
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-09-26",
+  "atos": [
+   {
+    "doc": "SERTAO_CS",
+    "titulo": "Contrato Social (2019)",
+    "efeito": "2019-05-06"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "15881399803",
+    "nome": "João Batista Andrade",
+    "cargo": "sócio-administrador",
+    "doc": "SERTAO_CS"
+   },
+   {
+    "chave": "98797309176",
+    "nome": "Maria Clara Fontenele",
+    "cargo": "sócio-administrador",
+    "doc": "SERTAO_CS"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "15881399803",
+    "nome": "João Batista Andrade",
+    "percentual": 50.0
+   },
+   {
+    "chave": "98797309176",
+    "nome": "Maria Clara Fontenele",
+    "percentual": 50.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "TRANSPORTES SERTÃO VERDE LTDA.",
+    "sub": "34.146.175/0001-23"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "IVECO/DAILY 35-150 CS",
+    "sub": "CHB0P49"
+   },
+   {
+    "id": "15881399803",
+    "tipo": "pessoa",
+    "rotulo": "João Batista Andrade",
+    "papeis": [
+     "sócio 50%",
+     "sócio-administrador",
+     "outorgante (pessoa física)"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "98797309176",
+    "tipo": "pessoa",
+    "rotulo": "Maria Clara Fontenele",
+    "papeis": [
+     "sócio 50%",
+     "sócio-administrador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "65908538000",
+    "tipo": "pessoa",
+    "rotulo": "Kleber Jorge Matos",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "15881399803",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "50%",
+    "status": "neutro"
+   },
+   {
+    "de": "98797309176",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "50%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "15881399803",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "SERTAO_CS"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "98797309176",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "SERTAO_CS"
+   },
+   {
+    "de": "15881399803",
+    "para": "65908538000",
+    "tipo": "procuracao",
+    "status": "invalido",
+    "doc": "POA_PF_JOAO",
+    "rotulo": "procuração 14/05/2026 · Procuração da pessoa física, não da empresa",
+    "motivo": "Procuração da pessoa física, não da empresa"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2019-05-06",
+   "tipo": "ato",
+   "titulo": "Contrato Social (2019)",
+   "doc": "SERTAO_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-05-14",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Kleber Jorge Matos",
+   "doc": "POA_PF_JOAO",
+   "detalhe": "particular"
+  },
+  {
+   "data": "2026-09-26",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 245.000,00"
+  },
+  {
+   "data": "2027-05-14",
+   "tipo": "vencimento",
+   "titulo": "Vence a procuração de Kleber Jorge Matos",
+   "doc": "POA_PF_JOAO",
+   "detalhe": ""
+  }
+ ],
+ "pessoas": {
+  "15881399803": {
+   "nome": "João Batista Andrade",
+   "cpf": "15881399803"
+  },
+  "65908538000": {
+   "nome": "Kleber Jorge Matos",
+   "cpf": "65908538000"
+  },
+  "98797309176": {
+   "nome": "Maria Clara Fontenele",
+   "cpf": "98797309176"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "TRANSPORTES SERTÃO VERDE LTDA.",
+   "cnpj": "34.146.175/0001-23",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Contrato Social (2019)",
+     "doc": "SERTAO_CS",
+     "efeito": "2019-05-06"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Kleber Jorge Matos",
+    "cpf": "659.085.380-00",
+    "identificacao": "CPF",
+    "qualidade": "procurador(a) pela procuração de 14/05/2026"
+   }
+  ],
+  "poderes_conferidos": [
+   "Procuração particular de 14/05/2026 (Irácema – 4º Tabelionato de Notas de Fortaleza (fictício)): não comprova poderes (Procuração da pessoa física, não da empresa; Procuração particular com firma reconhecida)."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [],
+  "documentos_verificaveis": [
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "POA_PF_JOAO",
+    "titulo": "Procuração (2026)",
+    "arquivo": "POA_PF_JOAO.pdf"
+   },
+   {
+    "id": "SERTAO_CS",
+    "titulo": "Contrato Social (2019)",
+    "arquivo": "SERTAO_CS.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n08179223289\nPLACA\nCHB0P49\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2022\nANO MODELO\n2022\nNÚMERO DO CRV\n143269514004\nCÓDIGO DE SEGURANÇA DO CLA\n26673017649\nMARCA / MODELO / VERSÃO\nIVECO/DAILY 35-150 CS\nESPÉCIE / TIPO\nCARGA/CAMINHÃO\nCHASSI\n93ZN9Y2UL6FBZEJS7\nCOR PREDOMINANTE\nBRANCA\nCOMBUSTÍVEL\nDIESEL\nNOME\nTRANSPORTES SERTÃO VERDE LTDA.\nCPF / CNPJ\n34.146.175/0001-23\nLOCAL\nFORTALEZA/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "1f5cf3e2c08cb9f8f60e02ccc96c3b9ecb254979288bcd3ef0313a340393a437",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "POA_PF_JOAO",
+   "nome": "POA_PF_JOAO.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (2026)",
+   "data": "2026-05-14",
+   "paginas": [
+    "PROCURAÇÃO\nOUTORGANTE: JOÃO BATISTA ANDRADE, brasileiro, casado, empresário, portador da cédula\nde identidade RG nº 57453983 SSP/CE, inscrito no CPF sob o nº 158.813.998-03, residente e\ndomiciliado nesta cidade de Fortaleza/CE.\nOUTORGADO: KLEBER JORGE MATOS, brasileiro, casado, despachante documentalista,\nportador da cédula de identidade RG nº 97862011 SSP/CE, inscrito no CPF sob o nº\n659.085.380-00, com escritório na Rua Senador Pompeu, nº 2.310, sala 4, Centro, Fortaleza/CE.\nPODERES: Pelo presente instrumento particular de mandato, o outorgante acima qualificado\nnomeia e constitui seu bastante procurador o outorgado, a quem confere poderes especiais para\nvender, transferir e alienar veículos de propriedade do outorgante, a quem convier e pelo preço,\nprazo e condições que ajustar; assinar a Autorização para Transferência de Propriedade do Veículo\n(ATPV/ATPV-e), em meio físico ou eletrônico, bem como contratos, recibos e termos de compra e\nvenda; receber o preço, total ou parcialmente, e dar a respectiva quitação; requerer, perante o\nDETRAN e demais órgãos de trânsito, vistorias, segundas vias de documentos, certidões de débitos\ne a comunicação de venda; recolher taxas, tributos, licenciamentos e multas que recaiam sobre os\nreferidos veículos; assinar declarações, requerimentos e termos de responsabilidade; entregar os\nveículos e seus documentos aos adquirentes; e praticar, enfim, todos os demais atos necessários ao\nbom e fiel cumprimento deste mandato, que o outorgante dá por firme e valioso.\nPRAZO: O presente mandato é válido pelo prazo de 1 (um) ano, contado da data de sua assinatura.\nDECLARAÇÃO: O outorgante declara que assina este instrumento de livre e espontânea vontade,\nresponsabilizando-se pela veracidade das informações nele contidas.\nFortaleza/CE, 14 de maio de 2026.\n______________________________________\nJOÃO BATISTA ANDRADE\nCPF nº 158.813.998-03\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nRECONHECIMENTO DE FIRMA POR AUTENTICIDADE\nReconheço, por autenticidade, a firma de JOÃO BATISTA ANDRADE, CPF nº 158.813.998-03,\naposta em minha presença neste documento, do que dou fé.\nFortaleza/CE, 14 de maio de 2026. Em testemunho da verdade.\nPatrícia Viana Duarte – Escrevente Autorizada\nSelo Digital: IRA-AUT-2026-51C8D3 · Emolumentos: R$ 9,85\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/1"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "9b14ae300087ae7615577812f60d9b704f37d8894fde6fb50eeed831711d3ee5",
+   "leitura": {
+    "tarefas": {
+     "procuracao": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 34.9,
+      "tokens_saida": 771,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "SERTAO_CS",
+   "nome": "SERTAO_CS.pdf",
+   "tipo": "contrato_social",
+   "titulo": "Contrato Social (2019)",
+   "data": "2019-05-06",
+   "paginas": [
+    "TRANSPORTES SERTÃO VERDE LTDA. CNPJ nº 34.146.175/0001-23 – NIRE 23404887190\nCONTRATO SOCIAL DE CONSTITUIÇÃO\nPelo presente instrumento particular, as partes abaixo qualificadas:\nJOÃO BATISTA ANDRADE, brasileiro, casado sob o regime de comunhão parcial de bens,\nempresário, portador da Cédula de Identidade RG nº 57453983 SSP/CE, inscrito no CPF sob o nº\n158.813.998-03, residente e domiciliado na Rua das Carnaúbas, nº 1.250, apartamento 702, bairro\nAldeota, Fortaleza/CE, CEP 60150-210; e\nMARIA CLARA FONTENELE, brasileira, divorciada, administradora de empresas, portadora da\nCédula de Identidade RG nº 15862807 SSP/CE, inscrita no CPF sob o nº 987.973.091-76, residente\ne domiciliada na Avenida dos Ipês, nº 2.020, apartamento 1.104, bairro Dionísio Torres, Fortaleza/\nCE, CEP 60135-415;\nresolvem, de comum acordo, constituir uma sociedade empresária limitada, que se regerá pelas\ncláusulas e condições seguintes e, nas omissões, pelas disposições da Lei nº 10.406, de 10 de janeiro\nde 2002 (Código Civil).\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL E DA SEDE\nA sociedade girará sob o nome empresarial TRANSPORTES SERTÃO VERDE LTDA. e terá\nsede na Rua Pedra Branca, nº 480, galpão 3, bairro Mondubim, Fortaleza/CE, CEP 60762-330,\npodendo abrir e encerrar filiais, agências ou escritórios em qualquer parte do território nacional,\nmediante alteração deste contrato.\nCLÁUSULA SEGUNDA – DO OBJETO SOCIAL\nA sociedade tem por objeto o transporte rodoviário de cargas em geral, municipal, intermunicipal e\ninterestadual, compreendendo as atividades classificadas nos códigos CNAE 4930-2/01 (transporte\nrodoviário de carga, exceto produtos perigosos e mudanças, municipal) e 4930-2/02 (transporte\nrodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e\ninternacional).\nCLÁUSULA TERCEIRA – DO INÍCIO DAS ATIVIDADES E DO PRAZO DE DURAÇÃO\nA sociedade iniciará suas atividades na data do arquivamento deste instrumento na Junta Comercial\ndo Estado do Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 300.000,00 (trezentos mil reais), dividido em 300.000 (trezentas mil) quotas\nde valor nominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas, neste ato,\nem moeda corrente do País, assim distribuídas entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nJOÃO BATISTA ANDRADE\n150.000\n150.000,00\n50%\nMARIA CLARA FONTENELE\n150.000\n150.000,00\n50%\nTOTAL\n300.000\n300.000,00\n100%\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "CLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social, nos termos do art. 1.052 do Código Civil.\nCLÁUSULA SEXTA – DA CESSÃO E TRANSFERÊNCIA DE QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas ou transferidas a terceiros sem o consentimento\ndo outro sócio, a quem fica assegurado, em igualdade de condições e preço, o direito de preferência\npara a sua aquisição, se postas à venda, formalizando-se, se realizada a cessão delas, a alteração\ncontratual pertinente.\nParágrafo único. O sócio que pretender ceder suas quotas deverá comunicar sua intenção ao outro\nsócio por escrito, indicando preço e condições de pagamento, e este terá o prazo de 30 (trinta) dias,\ncontados do recebimento da comunicação, para exercer o direito de preferência.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade caberá aos sócios JOÃO BATISTA ANDRADE e MARIA CLARA\nFONTENELE, que a exercerão indistintamente, com poderes e atribuições de representação ativa e\npassiva da sociedade, judicial e extrajudicial, podendo praticar todos os atos compreendidos no\nobjeto social e necessários à boa condução dos negócios sociais, vedado, no entanto, o uso do nome\nempresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de\nfavor, ou assumir obrigações em favor de qualquer dos quotistas ou de terceiros, bem como onerar\nou alienar bens imóveis da sociedade, sem autorização dos sócios que representem três quartos do\ncapital social.\nParágrafo único. Os administradores farão jus a uma retirada mensal, a título de pró-labore, em valor\na ser fixado de comum acordo entre os sócios, observadas as disposições regulamentares pertinentes.\nCLÁUSULA OITAVA – DO EXERCÍCIO SOCIAL E DAS DEMONSTRAÇÕES FINANCEIRAS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, os administradores\nprestarão contas justificadas de sua administração, procedendo à elaboração do inventário, do\nbalanço patrimonial e do balanço de resultado econômico, cabendo aos sócios, na proporção de suas\nquotas, os lucros ou as perdas apurados.\nParágrafo único. Nos quatro meses seguintes ao término do exercício social, os sócios deliberarão\nsobre as contas apresentadas pelos administradores e sobre a destinação dos resultados, na forma do\nart. 1.078 do Código Civil.\nCLÁUSULA NONA – DO FALECIMENTO OU DA INTERDIÇÃO DE SÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros, sucessores e o incapaz. Não sendo possível ou inexistindo interesse destes ou do sócio\nremanescente, o valor de seus haveres será apurado e liquidado com base na situação patrimonial da\nsociedade, à data da resolução, verificada em balanço especialmente levantado.\nParágrafo único. O mesmo procedimento será adotado em outros casos em que a sociedade se\nresolva em relação a algum de seus sócios.\nCLÁUSULA DÉCIMA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "Os administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade, por lei especial, ou em virtude de condenação criminal, ou por se\nencontrarem sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\npúblicos; ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato, ou contra\na economia popular, contra o sistema financeiro nacional, contra normas de defesa da concorrência,\ncontra as relações de consumo, a fé pública ou a propriedade, nos termos do art. 1.011, § 1º, do\nCódigo Civil.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FORO\nFica eleito o foro da Comarca de Fortaleza, Estado do Ceará, para dirimir quaisquer dúvidas ou\nlitígios oriundos deste contrato, com renúncia expressa a qualquer outro, por mais privilegiado que\nseja.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em via única,\nque será levada a arquivamento na Junta Comercial do Estado do Ceará.\nFortaleza/CE, 6 de maio de 2019.\n__________________________________ JOÃO BATISTA ANDRADE\n__________________________________ MARIA CLARA FONTENELE\nVisto: Rômulo Tavares Linhares – OAB/CE nº 18.437\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 20/05/2019 sob o nº 72328931444\nProtocolo: 19/284.517-3 | NIRE: 23404887190\nEmpresa: TRANSPORTES SERTÃO VERDE LTDA.\nAutenticação: 7F3A9C21E4B85D06A1C3F92E7B4D58A0\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "5d6c763fdf81c1f5ac117f8e1c43fd00fc56afd389386c0813a2e518c15a385e",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 18.9,
+      "tokens_saida": 778,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 34.1,
+      "tokens_saida": 1083,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "llamacpp",
+  "modelo": "qwen3.8-27b",
+  "politica": "DETRAN-CE"
+ },
+ "lado": "vendedor",
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T10:07:21",
+   "pedido": {
+    "veiculo": {
+     "descricao": "IVECO/DAILY 35-150 CS",
+     "placa": "CHB0P49",
+     "renavam": "08179223289",
+     "chassi": "93ZN9Y2UL6FBZEJS7"
+    },
+    "data_venda": "2026-09-26",
+    "valor": 245000.0,
+    "assinantes": [
+     {
+      "nome": "Kleber Jorge Matos",
+      "cpf": "659.085.380-00"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "Auto Center Litoral Ltda.",
+    "vendedor_cnpj": "34.146.175/0001-23",
+    "lado": "vendedor"
+   },
+   "empresa": {
+    "razao_social": "TRANSPORTES SERTÃO VERDE LTDA.",
+    "cnpj": "34.146.175/0001-23",
+    "tipo": "LTDA",
+    "objeto": "transporte rodoviário de cargas em geral, municipal, intermunicipal e interestadual, compreendendo as atividades classificadas nos códigos CNAE 4930-2/01 (transporte rodoviário de carga, exceto produtos perigosos e mudanças, municipal) e 4930-2/02 (transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e internacional).",
+    "comercializa_veiculos": false,
+    "subtipo": null
+   },
+   "veredito": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 2,
+    "menor_confianca_fato": 1.0,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: João Batista Andrade ou Maria Clara Fontenele. O caminho por procuração particular de 14/05/2026 (irácema – 4º tabelionato de notas de fortaleza (fictício)) não vale: procuração da pessoa física, não da empresa, procuração particular com firma reconhecida.",
+   "assinantes": [
+    {
+     "informado": "Kleber Jorge Matos",
+     "cpf": "659.085.380-00",
+     "chave": "65908538000",
+     "nome": "Kleber Jorge Matos",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:15881399803",
+     "pessoas": [
+      {
+       "chave": "15881399803",
+       "nome": "João Batista Andrade"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "regra geral de representação — Cláusula Sétima",
+     "cadeia": [
+      "SERTAO_CS"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    },
+    {
+     "id": "contrato:98797309176",
+     "pessoas": [
+      {
+       "chave": "98797309176",
+       "nome": "Maria Clara Fontenele"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "regra geral de representação — Cláusula Sétima",
+     "cadeia": [
+      "SERTAO_CS"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [
+    {
+     "id": "POA_PF_JOAO:bloqueada",
+     "pessoas": [
+      {
+       "chave": "65908538000",
+       "nome": "Kleber Jorge Matos"
+      }
+     ],
+     "via": "procuracao",
+     "descricao": "Procuração particular de 14/05/2026 (Irácema – 4º Tabelionato de Notas de Fortaleza (fictício))",
+     "cadeia": [
+      "POA_PF_JOAO"
+     ],
+     "severidade": "atencao",
+     "confianca": 1.0,
+     "achados": [
+      {
+       "codigo": "OUTORGANTE_PF",
+       "severidade": "bloqueio",
+       "titulo": "Procuração da pessoa física, não da empresa",
+       "detalhe": "JOÃO BATISTA ANDRADE outorgou como pessoa física, para bens 'de propriedade do outorgante'. O veículo é da empresa: só a sociedade, representada por quem tem poder, pode constituir procurador para vendê-lo.",
+       "fundamento": [
+        "CC art. 1.018",
+        "CC art. 47"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_JOAO",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "OUTORGANTE: JOÃO BATISTA ANDRADE, brasileiro, casado, empresário, portador da cédula de identidade RG nº 57453983 SSP/CE, inscrito no CPF sob o nº 158.813.998-03, residente e domiciliado nesta cidade de Fortaleza/CE.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 11,
+         "fim": 227
+        },
+        {
+         "doc_id": "POA_PF_JOAO",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "poderes especiais para vender, transferir e alienar veículos de propriedade do outorgante, a quem convier e pelo preço, prazo e condições que ajustar; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e), em meio físico ou eletrônico, bem como contratos, recibos e termos de compra e venda; receber o preço, total ou parcialmente, e dar a respectiva quitação; requerer, perante o DETRAN e demais órgãos de trânsito, vistorias, segundas vias de documentos, certidões de débitos e a comunicação de venda; recolher taxas, tributos, licenciamentos e multas que recaiam sobre os referidos veículos; assinar declarações, requerimentos e termos de responsabilidade; entregar os veículos e seus documentos aos adquirentes; e praticar, enfim, todos os demais atos necessários ao bom e fiel cumprimento deste mandato, que o outorgante dá por firme e valioso.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 642,
+         "fim": 1518
+        }
+       ],
+       "caminho": "POA_PF_JOAO"
+      },
+      {
+       "codigo": "PODERES_ESPECIAIS",
+       "severidade": "ok",
+       "titulo": "Poder expresso para alienar veículos",
+       "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+       "fundamento": [
+        "CC art. 661, §1º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_JOAO",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "poderes especiais para vender, transferir e alienar veículos de propriedade do outorgante, a quem convier e pelo preço, prazo e condições que ajustar; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e), em meio físico ou eletrônico, bem como contratos, recibos e termos de compra e venda; receber o preço, total ou parcialmente, e dar a respectiva quitação; requerer, perante o DETRAN e demais órgãos de trânsito, vistorias, segundas vias de documentos, certidões de débitos e a comunicação de venda; recolher taxas, tributos, licenciamentos e multas que recaiam sobre os referidos veículos; assinar declarações, requerimentos e termos de responsabilidade; entregar os veículos e seus documentos aos adquirentes; e praticar, enfim, todos os demais atos necessários ao bom e fiel cumprimento deste mandato, que o outorgante dá por firme e valioso.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 642,
+         "fim": 1518
+        }
+       ],
+       "caminho": "POA_PF_JOAO"
+      },
+      {
+       "codigo": "PROCURACAO_NO_PRAZO",
+       "severidade": "ok",
+       "titulo": "Dentro do prazo",
+       "detalhe": "Válida até 14/05/2027.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_JOAO",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "O presente mandato é válido pelo prazo de 1 (um) ano, contado da data de sua assinatura.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1526,
+         "fim": 1614
+        }
+       ],
+       "caminho": "POA_PF_JOAO"
+      },
+      {
+       "codigo": "FORMA_PARTICULAR",
+       "severidade": "bloqueio",
+       "titulo": "Procuração particular com firma reconhecida",
+       "detalhe": "O DETRAN-CE só aceita procurador por instrumento de procuração PÚBLICA e específica para o ato. (Civilmente o instrumento particular é válido; a exigência é do órgão.)",
+       "fundamento": [
+        "DETRAN-CE (serviço de transferência)",
+        "CC art. 654, §2º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_JOAO",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "OUTORGANTE: JOÃO BATISTA ANDRADE, brasileiro, casado, empresário, portador da cédula de identidade RG nº 57453983 SSP/CE, inscrito no CPF sob o nº 158.813.998-03, residente e domiciliado nesta cidade de Fortaleza/CE.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 11,
+         "fim": 227
+        }
+       ],
+       "caminho": "POA_PF_JOAO"
+      },
+      {
+       "codigo": "PROCURACAO_SEM_VEICULO",
+       "severidade": "atencao",
+       "titulo": "Procuração não identifica o veículo",
+       "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+       "fundamento": [
+        "CJF, Enunciado 183"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_JOAO",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "poderes especiais para vender, transferir e alienar veículos de propriedade do outorgante, a quem convier e pelo preço, prazo e condições que ajustar; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e), em meio físico ou eletrônico, bem como contratos, recibos e termos de compra e venda; receber o preço, total ou parcialmente, e dar a respectiva quitação; requerer, perante o DETRAN e demais órgãos de trânsito, vistorias, segundas vias de documentos, certidões de débitos e a comunicação de venda; recolher taxas, tributos, licenciamentos e multas que recaiam sobre os referidos veículos; assinar declarações, requerimentos e termos de responsabilidade; entregar os veículos e seus documentos aos adquirentes; e praticar, enfim, todos os demais atos necessários ao bom e fiel cumprimento deste mandato, que o outorgante dá por firme e valioso.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 642,
+         "fim": 1518
+        }
+       ],
+       "caminho": "POA_PF_JOAO"
+      }
+     ],
+     "precondicoes": []
+    }
+   ],
+   "caminho_escolhido": null,
+   "faltantes": [
+    {
+     "alternativa": "contrato:15881399803",
+     "via": "contrato",
+     "descricao": "regra geral de representação — Cláusula Sétima",
+     "pessoas": [
+      "15881399803"
+     ],
+     "faltam": [
+      "15881399803"
+     ],
+     "faltam_nomes": [
+      "João Batista Andrade"
+     ],
+     "pessoas_nomes": [
+      "João Batista Andrade"
+     ]
+    },
+    {
+     "alternativa": "contrato:98797309176",
+     "via": "contrato",
+     "descricao": "regra geral de representação — Cláusula Sétima",
+     "pessoas": [
+      "98797309176"
+     ],
+     "faltam": [
+      "98797309176"
+     ],
+     "faltam_nomes": [
+      "Maria Clara Fontenele"
+     ],
+     "pessoas_nomes": [
+      "Maria Clara Fontenele"
+     ]
+    }
+   ],
+   "achados": [
+    {
+     "codigo": "CND_INSS",
+     "severidade": "info",
+     "titulo": "CND previdenciária",
+     "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+     "fundamento": [
+      "Lei 8.212/91, art. 47, I, \"c\""
+     ],
+     "fontes": [],
+     "caminho": null
+    },
+    {
+     "codigo": "TITULARIDADE_OK",
+     "severidade": "ok",
+     "titulo": "Veículo registrado no CNPJ da empresa",
+     "detalhe": "Proprietário no CRLV: TRANSPORTES SERTÃO VERDE LTDA..",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [
+      {
+       "doc_id": "CRLV",
+       "doc_titulo": "CRLV",
+       "trecho": "CHB0P49",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 146,
+       "fim": 153
+      }
+     ],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "SERTAO_CS#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "SERTAO_CS",
+      "doc_titulo": "Contrato Social (2019)",
+      "trecho": "A administração da sociedade caberá aos sócios JOÃO BATISTA ANDRADE e MARIA CLARA FONTENELE, que a exercerão indistintamente, com poderes e atribuições de representação ativa e passiva da sociedade, judicial e extrajudicial, podendo praticar todos os atos compreendidos no objeto social e necessários à boa condução dos negócios sociais",
+      "clausula": "Cláusula Sétima",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3470,
+      "fim": 3806
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "João Batista Andrade",
+      "Maria Clara Fontenele"
+     ],
+     "cargo": "socios",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "indistintamente"
+       ]
+      }
+     ],
+     "decisiva": true
+    },
+    {
+     "regra": "SERTAO_CS#R2",
+     "escopo": "alienacao_bens_imoveis",
+     "aplicavel": false,
+     "motivo": "trata de bens imóveis; veículo é bem móvel",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "SERTAO_CS",
+      "doc_titulo": "Contrato Social (2019)",
+      "trecho": "vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor, ou assumir obrigações em favor de qualquer dos quotistas ou de terceiros, bem como onerar ou alienar bens imóveis da sociedade, sem autorização dos sócios que representem três quartos do capital social.",
+      "clausula": "Cláusula Sétima",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3808,
+      "fim": 4151
+     },
+     "modo": "nao_especificado",
+     "pessoas": [],
+     "cargo": "socios",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    },
+    {
+     "regra": "SERTAO_CS#R3",
+     "escopo": "alienacao_bens_imoveis",
+     "aplicavel": false,
+     "motivo": "trata de bens imóveis; veículo é bem móvel",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "SERTAO_CS",
+      "doc_titulo": "Contrato Social (2019)",
+      "trecho": "vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor, ou assumir obrigações em favor de qualquer dos quotistas ou de terceiros, bem como onerar ou alienar bens imóveis da sociedade, sem autorização dos sócios que representem três quartos do capital social.",
+      "clausula": "Cláusula Sétima",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3808,
+      "fim": 4151
+     },
+     "modo": "nao_especificado",
+     "pessoas": [],
+     "cargo": "socios",
+     "valor_acima_de": null,
+     "confianca": 0.8,
+     "verificacoes": [
+      {
+       "campo": "escopo",
+       "valor_llm": "onerar_bens",
+       "valor_lexico": "alienacao_bens_imoveis",
+       "divergiu": true,
+       "corrigido_para": "alienacao_bens_imoveis",
+       "expressoes": []
+      }
+     ],
+     "decisiva": false
+    },
+    {
+     "regra": "SERTAO_CS#R4",
+     "escopo": "obrigacoes_garantias",
+     "aplicavel": false,
+     "motivo": "trata de avais, fianças e garantias",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "SERTAO_CS",
+      "doc_titulo": "Contrato Social (2019)",
+      "trecho": "vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor, ou assumir obrigações em favor de qualquer dos quotistas ou de terceiros, bem como onerar ou alienar bens imóveis da sociedade, sem autorização dos sócios que representem três quartos do capital social.",
+      "clausula": "Cláusula Sétima",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3808,
+      "fim": 4151
+     },
+     "modo": "nao_especificado",
+     "pessoas": [],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-09-26",
+    "atos": [
+     {
+      "doc": "SERTAO_CS",
+      "titulo": "Contrato Social (2019)",
+      "efeito": "2019-05-06"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "15881399803",
+      "nome": "João Batista Andrade",
+      "cargo": "sócio-administrador",
+      "doc": "SERTAO_CS"
+     },
+     {
+      "chave": "98797309176",
+      "nome": "Maria Clara Fontenele",
+      "cargo": "sócio-administrador",
+      "doc": "SERTAO_CS"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "15881399803",
+      "nome": "João Batista Andrade",
+      "percentual": 50.0
+     },
+     {
+      "chave": "98797309176",
+      "nome": "Maria Clara Fontenele",
+      "percentual": 50.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "TRANSPORTES SERTÃO VERDE LTDA.",
+      "sub": "34.146.175/0001-23"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "IVECO/DAILY 35-150 CS",
+      "sub": "CHB0P49"
+     },
+     {
+      "id": "15881399803",
+      "tipo": "pessoa",
+      "rotulo": "João Batista Andrade",
+      "papeis": [
+       "sócio 50%",
+       "sócio-administrador",
+       "outorgante (pessoa física)"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "98797309176",
+      "tipo": "pessoa",
+      "rotulo": "Maria Clara Fontenele",
+      "papeis": [
+       "sócio 50%",
+       "sócio-administrador"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "65908538000",
+      "tipo": "pessoa",
+      "rotulo": "Kleber Jorge Matos",
+      "papeis": [
+       "procurador"
+      ],
+      "assinante": true
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "valido"
+     },
+     {
+      "de": "15881399803",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "50%",
+      "status": "neutro"
+     },
+     {
+      "de": "98797309176",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "50%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "15881399803",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "SERTAO_CS"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "98797309176",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "SERTAO_CS"
+     },
+     {
+      "de": "15881399803",
+      "para": "65908538000",
+      "tipo": "procuracao",
+      "status": "invalido",
+      "doc": "POA_PF_JOAO",
+      "rotulo": "procuração 14/05/2026 · Procuração da pessoa física, não da empresa",
+      "motivo": "Procuração da pessoa física, não da empresa"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2019-05-06",
+     "tipo": "ato",
+     "titulo": "Contrato Social (2019)",
+     "doc": "SERTAO_CS",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-05-14",
+     "tipo": "procuracao",
+     "titulo": "Procuração para Kleber Jorge Matos",
+     "doc": "POA_PF_JOAO",
+     "detalhe": "particular"
+    },
+    {
+     "data": "2026-09-26",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 245.000,00"
+    },
+    {
+     "data": "2027-05-14",
+     "tipo": "vencimento",
+     "titulo": "Vence a procuração de Kleber Jorge Matos",
+     "doc": "POA_PF_JOAO",
+     "detalhe": ""
+    }
+   ],
+   "pessoas": {
+    "15881399803": {
+     "nome": "João Batista Andrade",
+     "cpf": "15881399803"
+    },
+    "65908538000": {
+     "nome": "Kleber Jorge Matos",
+     "cpf": "65908538000"
+    },
+    "98797309176": {
+     "nome": "Maria Clara Fontenele",
+     "cpf": "98797309176"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "não comprovada",
+    "outorgante": {
+     "nome": "TRANSPORTES SERTÃO VERDE LTDA.",
+     "cnpj": "34.146.175/0001-23",
+     "tipo": "LTDA",
+     "atos_vigentes": [
+      {
+       "titulo": "Contrato Social (2019)",
+       "doc": "SERTAO_CS",
+       "efeito": "2019-05-06"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "Kleber Jorge Matos",
+      "cpf": "659.085.380-00",
+      "identificacao": "CPF",
+      "qualidade": "procurador(a) pela procuração de 14/05/2026"
+     }
+    ],
+    "poderes_conferidos": [
+     "Procuração particular de 14/05/2026 (Irácema – 4º Tabelionato de Notas de Fortaleza (fictício)): não comprova poderes (Procuração da pessoa física, não da empresa; Procuração particular com firma reconhecida)."
+    ],
+    "prazo_validade": [
+     "—"
+    ],
+    "revogacao": [
+     "—"
+    ],
+    "fontes": [],
+    "documentos_verificaveis": [
+     {
+      "id": "CRLV",
+      "titulo": "CRLV",
+      "arquivo": "CRLV.pdf"
+     },
+     {
+      "id": "POA_PF_JOAO",
+      "titulo": "Procuração (2026)",
+      "arquivo": "POA_PF_JOAO.pdf"
+     },
+     {
+      "id": "SERTAO_CS",
+      "titulo": "Contrato Social (2019)",
+      "arquivo": "SERTAO_CS.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "CRLV",
+     "nome": "CRLV.pdf",
+     "tipo": "crlv",
+     "titulo": "CRLV",
+     "data": null,
+     "paginas": [
+      "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n08179223289\nPLACA\nCHB0P49\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2022\nANO MODELO\n2022\nNÚMERO DO CRV\n143269514004\nCÓDIGO DE SEGURANÇA DO CLA\n26673017649\nMARCA / MODELO / VERSÃO\nIVECO/DAILY 35-150 CS\nESPÉCIE / TIPO\nCARGA/CAMINHÃO\nCHASSI\n93ZN9Y2UL6FBZEJS7\nCOR PREDOMINANTE\nBRANCA\nCOMBUSTÍVEL\nDIESEL\nNOME\nTRANSPORTES SERTÃO VERDE LTDA.\nCPF / CNPJ\n34.146.175/0001-23\nLOCAL\nFORTALEZA/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "1f5cf3e2c08cb9f8f60e02ccc96c3b9ecb254979288bcd3ef0313a340393a437",
+     "leitura": {
+      "tarefas": {
+       "crlv": {
+        "metodo": "regex"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "POA_PF_JOAO",
+     "nome": "POA_PF_JOAO.pdf",
+     "tipo": "procuracao",
+     "titulo": "Procuração (2026)",
+     "data": "2026-05-14",
+     "paginas": [
+      "PROCURAÇÃO\nOUTORGANTE: JOÃO BATISTA ANDRADE, brasileiro, casado, empresário, portador da cédula\nde identidade RG nº 57453983 SSP/CE, inscrito no CPF sob o nº 158.813.998-03, residente e\ndomiciliado nesta cidade de Fortaleza/CE.\nOUTORGADO: KLEBER JORGE MATOS, brasileiro, casado, despachante documentalista,\nportador da cédula de identidade RG nº 97862011 SSP/CE, inscrito no CPF sob o nº\n659.085.380-00, com escritório na Rua Senador Pompeu, nº 2.310, sala 4, Centro, Fortaleza/CE.\nPODERES: Pelo presente instrumento particular de mandato, o outorgante acima qualificado\nnomeia e constitui seu bastante procurador o outorgado, a quem confere poderes especiais para\nvender, transferir e alienar veículos de propriedade do outorgante, a quem convier e pelo preço,\nprazo e condições que ajustar; assinar a Autorização para Transferência de Propriedade do Veículo\n(ATPV/ATPV-e), em meio físico ou eletrônico, bem como contratos, recibos e termos de compra e\nvenda; receber o preço, total ou parcialmente, e dar a respectiva quitação; requerer, perante o\nDETRAN e demais órgãos de trânsito, vistorias, segundas vias de documentos, certidões de débitos\ne a comunicação de venda; recolher taxas, tributos, licenciamentos e multas que recaiam sobre os\nreferidos veículos; assinar declarações, requerimentos e termos de responsabilidade; entregar os\nveículos e seus documentos aos adquirentes; e praticar, enfim, todos os demais atos necessários ao\nbom e fiel cumprimento deste mandato, que o outorgante dá por firme e valioso.\nPRAZO: O presente mandato é válido pelo prazo de 1 (um) ano, contado da data de sua assinatura.\nDECLARAÇÃO: O outorgante declara que assina este instrumento de livre e espontânea vontade,\nresponsabilizando-se pela veracidade das informações nele contidas.\nFortaleza/CE, 14 de maio de 2026.\n______________________________________\nJOÃO BATISTA ANDRADE\nCPF nº 158.813.998-03\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nRECONHECIMENTO DE FIRMA POR AUTENTICIDADE\nReconheço, por autenticidade, a firma de JOÃO BATISTA ANDRADE, CPF nº 158.813.998-03,\naposta em minha presença neste documento, do que dou fé.\nFortaleza/CE, 14 de maio de 2026. Em testemunho da verdade.\nPatrícia Viana Duarte – Escrevente Autorizada\nSelo Digital: IRA-AUT-2026-51C8D3 · Emolumentos: R$ 9,85\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/1"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "9b14ae300087ae7615577812f60d9b704f37d8894fde6fb50eeed831711d3ee5",
+     "leitura": {
+      "tarefas": {
+       "procuracao": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 34.9,
+        "tokens_saida": 771,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "SERTAO_CS",
+     "nome": "SERTAO_CS.pdf",
+     "tipo": "contrato_social",
+     "titulo": "Contrato Social (2019)",
+     "data": "2019-05-06",
+     "paginas": [
+      "TRANSPORTES SERTÃO VERDE LTDA. CNPJ nº 34.146.175/0001-23 – NIRE 23404887190\nCONTRATO SOCIAL DE CONSTITUIÇÃO\nPelo presente instrumento particular, as partes abaixo qualificadas:\nJOÃO BATISTA ANDRADE, brasileiro, casado sob o regime de comunhão parcial de bens,\nempresário, portador da Cédula de Identidade RG nº 57453983 SSP/CE, inscrito no CPF sob o nº\n158.813.998-03, residente e domiciliado na Rua das Carnaúbas, nº 1.250, apartamento 702, bairro\nAldeota, Fortaleza/CE, CEP 60150-210; e\nMARIA CLARA FONTENELE, brasileira, divorciada, administradora de empresas, portadora da\nCédula de Identidade RG nº 15862807 SSP/CE, inscrita no CPF sob o nº 987.973.091-76, residente\ne domiciliada na Avenida dos Ipês, nº 2.020, apartamento 1.104, bairro Dionísio Torres, Fortaleza/\nCE, CEP 60135-415;\nresolvem, de comum acordo, constituir uma sociedade empresária limitada, que se regerá pelas\ncláusulas e condições seguintes e, nas omissões, pelas disposições da Lei nº 10.406, de 10 de janeiro\nde 2002 (Código Civil).\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL E DA SEDE\nA sociedade girará sob o nome empresarial TRANSPORTES SERTÃO VERDE LTDA. e terá\nsede na Rua Pedra Branca, nº 480, galpão 3, bairro Mondubim, Fortaleza/CE, CEP 60762-330,\npodendo abrir e encerrar filiais, agências ou escritórios em qualquer parte do território nacional,\nmediante alteração deste contrato.\nCLÁUSULA SEGUNDA – DO OBJETO SOCIAL\nA sociedade tem por objeto o transporte rodoviário de cargas em geral, municipal, intermunicipal e\ninterestadual, compreendendo as atividades classificadas nos códigos CNAE 4930-2/01 (transporte\nrodoviário de carga, exceto produtos perigosos e mudanças, municipal) e 4930-2/02 (transporte\nrodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e\ninternacional).\nCLÁUSULA TERCEIRA – DO INÍCIO DAS ATIVIDADES E DO PRAZO DE DURAÇÃO\nA sociedade iniciará suas atividades na data do arquivamento deste instrumento na Junta Comercial\ndo Estado do Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 300.000,00 (trezentos mil reais), dividido em 300.000 (trezentas mil) quotas\nde valor nominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas, neste ato,\nem moeda corrente do País, assim distribuídas entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nJOÃO BATISTA ANDRADE\n150.000\n150.000,00\n50%\nMARIA CLARA FONTENELE\n150.000\n150.000,00\n50%\nTOTAL\n300.000\n300.000,00\n100%\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+      "CLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social, nos termos do art. 1.052 do Código Civil.\nCLÁUSULA SEXTA – DA CESSÃO E TRANSFERÊNCIA DE QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas ou transferidas a terceiros sem o consentimento\ndo outro sócio, a quem fica assegurado, em igualdade de condições e preço, o direito de preferência\npara a sua aquisição, se postas à venda, formalizando-se, se realizada a cessão delas, a alteração\ncontratual pertinente.\nParágrafo único. O sócio que pretender ceder suas quotas deverá comunicar sua intenção ao outro\nsócio por escrito, indicando preço e condições de pagamento, e este terá o prazo de 30 (trinta) dias,\ncontados do recebimento da comunicação, para exercer o direito de preferência.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade caberá aos sócios JOÃO BATISTA ANDRADE e MARIA CLARA\nFONTENELE, que a exercerão indistintamente, com poderes e atribuições de representação ativa e\npassiva da sociedade, judicial e extrajudicial, podendo praticar todos os atos compreendidos no\nobjeto social e necessários à boa condução dos negócios sociais, vedado, no entanto, o uso do nome\nempresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de\nfavor, ou assumir obrigações em favor de qualquer dos quotistas ou de terceiros, bem como onerar\nou alienar bens imóveis da sociedade, sem autorização dos sócios que representem três quartos do\ncapital social.\nParágrafo único. Os administradores farão jus a uma retirada mensal, a título de pró-labore, em valor\na ser fixado de comum acordo entre os sócios, observadas as disposições regulamentares pertinentes.\nCLÁUSULA OITAVA – DO EXERCÍCIO SOCIAL E DAS DEMONSTRAÇÕES FINANCEIRAS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, os administradores\nprestarão contas justificadas de sua administração, procedendo à elaboração do inventário, do\nbalanço patrimonial e do balanço de resultado econômico, cabendo aos sócios, na proporção de suas\nquotas, os lucros ou as perdas apurados.\nParágrafo único. Nos quatro meses seguintes ao término do exercício social, os sócios deliberarão\nsobre as contas apresentadas pelos administradores e sobre a destinação dos resultados, na forma do\nart. 1.078 do Código Civil.\nCLÁUSULA NONA – DO FALECIMENTO OU DA INTERDIÇÃO DE SÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros, sucessores e o incapaz. Não sendo possível ou inexistindo interesse destes ou do sócio\nremanescente, o valor de seus haveres será apurado e liquidado com base na situação patrimonial da\nsociedade, à data da resolução, verificada em balanço especialmente levantado.\nParágrafo único. O mesmo procedimento será adotado em outros casos em que a sociedade se\nresolva em relação a algum de seus sócios.\nCLÁUSULA DÉCIMA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+      "Os administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade, por lei especial, ou em virtude de condenação criminal, ou por se\nencontrarem sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\npúblicos; ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato, ou contra\na economia popular, contra o sistema financeiro nacional, contra normas de defesa da concorrência,\ncontra as relações de consumo, a fé pública ou a propriedade, nos termos do art. 1.011, § 1º, do\nCódigo Civil.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FORO\nFica eleito o foro da Comarca de Fortaleza, Estado do Ceará, para dirimir quaisquer dúvidas ou\nlitígios oriundos deste contrato, com renúncia expressa a qualquer outro, por mais privilegiado que\nseja.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em via única,\nque será levada a arquivamento na Junta Comercial do Estado do Ceará.\nFortaleza/CE, 6 de maio de 2019.\n__________________________________ JOÃO BATISTA ANDRADE\n__________________________________ MARIA CLARA FONTENELE\nVisto: Rômulo Tavares Linhares – OAB/CE nº 18.437\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 20/05/2019 sob o nº 72328931444\nProtocolo: 19/284.517-3 | NIRE: 23404887190\nEmpresa: TRANSPORTES SERTÃO VERDE LTDA.\nAutenticação: 7F3A9C21E4B85D06A1C3F92E7B4D58A0\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "5d6c763fdf81c1f5ac117f8e1c43fd00fc56afd389386c0813a2e518c15a385e",
+     "leitura": {
+      "tarefas": {
+       "partes": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 18.9,
+        "tokens_saida": 778,
+        "modelo": "qwen3.8-27b"
+       },
+       "regras": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 34.1,
+        "tokens_saida": 1083,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "llamacpp",
+    "modelo": "qwen3.8-27b",
+    "politica": "DETRAN-CE"
+   },
+   "lado": "vendedor"
+  }
+ },
+ "geral": {
+  "veredito": "NAO_PODE",
+  "faixa": "VERMELHO",
+  "indice": 0.0,
+  "resumo": "Vendedor: Os assinantes informados não bastam. Quem pode assinar: João Batista Andrade ou Maria Clara Fontenele. O caminho por procuração particular de 14/05/2026 (irácema – 4º tabelionato de notas de fortaleza (fictício)) não vale: procuração da pessoa física, não da empresa, procuração particular com firma reconhecida.",
+  "motivos_faixa": [
+   "Vendedor — índice 0 ≤ limiar 15"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "IVECO/DAILY 35-150 CS",
+   "placa": "CHB0P49",
+   "renavam": "08179223289",
+   "chassi": "93ZN9Y2UL6FBZEJS7"
+  },
+  "data_venda": "2026-09-26",
+  "valor": 245000.0,
+  "vendedor": {
+   "tipo": "PJ",
+   "nome": "TRANSPORTES SERTÃO VERDE LTDA.",
+   "documento": "34.146.175/0001-23",
+   "assinantes": [
+    {
+     "nome": "Kleber Jorge Matos",
+     "cpf": "659.085.380-00"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": "Auto Center Litoral Ltda.",
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "informado"
+ },
+ "hash_entrada": "8ebf523d60745c5394f33d5c743ba8dedc852fc37a722a5c12f99e063b70cfda"
+}

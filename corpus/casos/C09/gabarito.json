@@ -1,0 +1,34 @@
+{
+  "caso": "C09",
+  "titulo": "Alçada por valor — acima do limite",
+  "categoria": "alcada",
+  "objetivo": "Veículo de R$ 215 mil, limite R$ 150 mil: exige os dois.",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "ANTONIO",
+        "JOSEFA"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 47"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "847.267.147-08",
+        "136.270.107-60"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Antônio Cícero Lobo",
+        "Josefa Alencar Lobo"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

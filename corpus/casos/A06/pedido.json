@@ -1,0 +1,20 @@
+{
+  "caso": "A06",
+  "forma_assinatura": "ATPV-e",
+  "vendedor": {
+    "assinantes": [
+      {
+        "nome": "João Batista Andrade",
+        "cpf": "158.813.998-03"
+      }
+    ]
+  },
+  "comprador": {
+    "assinantes": [
+      {
+        "nome": "Simone Batista Nunes",
+        "cpf": "714.244.916-06"
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "caso": "C23",
+  "vendedor": {
+    "razao_social": "LOCADORA JANGADA LTDA.",
+    "cnpj": "38.005.305/0001-69"
+  },
+  "veiculo": {
+    "placa": "HLR1N35",
+    "renavam": "07744796749",
+    "chassi": "9BDXLGBPPV2RXLGR1",
+    "descricao": "FIAT/TORO VOLCANO 2.0 DIESEL 4X4"
+  },
+  "data_venda": "2026-09-18",
+  "valor": 165000,
+  "assinantes": [
+    {
+      "nome": "Ana Paula Bastos",
+      "cpf": "406.925.666-00"
+    }
+  ],
+  "comprador": {
+    "nome": "Frota Fácil Locações Ltda.",
+    "cidade": "Maracanaú/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

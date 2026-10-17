@@ -1,0 +1,35 @@
+{
+  "caso": "C02",
+  "titulo": "Assinatura conjunta exigida — só um assina",
+  "categoria": "administracao",
+  "objetivo": "Regra de assinatura conjunta: um sócio sozinho não pode.",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "CARLOS",
+        "LUCIANA"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 1.014",
+      "CC art. 47"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "417.075.364-06",
+        "568.151.884-18"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Carlos Eduardo Bezerra",
+        "Luciana Moura Sampaio"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

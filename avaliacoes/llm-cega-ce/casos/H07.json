@@ -1,0 +1,546 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T01:34:54",
+ "pedido": {
+  "veiculo": {
+   "descricao": "MITSUBISHI/L200 TRITON SPORT HPE",
+   "placa": "TSS1Z68",
+   "renavam": "00337387460",
+   "chassi": "93XWENGS6NKZP0YAT"
+  },
+  "data_venda": "2026-09-18",
+  "valor": 245000.0,
+  "assinantes": [
+   {
+    "nome": "Vera Lúcia Holanda",
+    "cpf": "532.680.861-79"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "Auto Center Litoral Ltda.",
+  "vendedor_cnpj": "56.485.814/0001-18"
+ },
+ "empresa": {
+  "razao_social": "AGRÍCOLA SERTANEJA DE QUIXADÁ LTDA.",
+  "cnpj": "56.485.814/0001-18",
+  "tipo": "LTDA",
+  "objeto": "nao_informado",
+  "comercializa_veiculos": false
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 0.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 1,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 0 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: Jonas Holanda Freire. Regra aplicável: regra geral de representação (Cláusula 6 – DA ADMINISTRAÇÃO).",
+ "assinantes": [
+  {
+   "informado": "Vera Lúcia Holanda",
+   "cpf": "532.680.861-79",
+   "chave": "53268086179",
+   "nome": "Vera Lúcia Holanda",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:93754188208",
+   "pessoas": [
+    {
+     "chave": "93754188208",
+     "nome": "Jonas Holanda Freire"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Cláusula 6 – DA ADMINISTRAÇÃO",
+   "cadeia": [
+    "SERTANEJA_ALT2"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "contrato:93754188208",
+   "via": "contrato",
+   "descricao": "regra geral de representação — Cláusula 6 – DA ADMINISTRAÇÃO",
+   "pessoas": [
+    "93754188208"
+   ],
+   "faltam": [
+    "93754188208"
+   ],
+   "faltam_nomes": [
+    "Jonas Holanda Freire"
+   ],
+   "pessoas_nomes": [
+    "Jonas Holanda Freire"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "CND_INSS",
+   "severidade": "info",
+   "titulo": "CND previdenciária",
+   "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+   "fundamento": [
+    "Lei 8.212/91, art. 47, I, \"c\""
+   ],
+   "fontes": [],
+   "caminho": null
+  },
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: AGRÍCOLA SERTANEJA DE QUIXADÁ LTDA..",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "TSS1Z68",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "SERTANEJA_ALT2#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "SERTANEJA_ALT2",
+    "doc_titulo": "Alteração Contratual (2026)",
+    "trecho": "A administração da sociedade passa a ser exercida exclusivamente pelo sócio JONAS HOLANDA FREIRE, que a desempenhará individualmente, por prazo indeterminado, com poderes para representar a sociedade ativa e passivamente, em juízo e fora dele, e para praticar todos os atos de gestão pertinentes ao objeto social.",
+    "clausula": "Cláusula 6 – DA ADMINISTRAÇÃO",
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 1672,
+    "fim": 1985
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Jonas Holanda Freire"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "individualmente"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "SERTANEJA_ALT2#R2",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "SERTANEJA_ALT2",
+    "doc_titulo": "Alteração Contratual (2026)",
+    "trecho": "As sócias VERA LÚCIA HOLANDA e TALITA FREIRE GURGEL participarão da sociedade na qualidade de quotistas, sem atribuições de administração.",
+    "clausula": "Cláusula 6 – DA ADMINISTRAÇÃO, Parágrafo primeiro",
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 2006,
+    "fim": 2144
+   },
+   "modo": "nao_especificado",
+   "pessoas": [
+    "Vera Lúcia Holanda",
+    "Talita Freire Gurgel"
+   ],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "SERTANEJA_ALT2#R3",
+   "escopo": "obrigacoes_garantias",
+   "aplicavel": false,
+   "motivo": "trata de avais, fianças e garantias",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "SERTANEJA_ALT2",
+    "doc_titulo": "Alteração Contratual (2026)",
+    "trecho": "É vedado o uso da denominação social em negócios estranhos ao objeto social, especialmente na prestação de avais, fianças ou endossos de favor.",
+    "clausula": "Cláusula 6 – DA ADMINISTRAÇÃO, Parágrafo segundo",
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 2164,
+    "fim": 2307
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-09-18",
+  "atos": [
+   {
+    "doc": "SERTANEJA_CS",
+    "titulo": "Contrato Social (2018)",
+    "efeito": "2018-02-12"
+   },
+   {
+    "doc": "SERTANEJA_ALT2",
+    "titulo": "Alteração Contratual (2026)",
+    "efeito": "2026-03-09"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "93754188208",
+    "nome": "Jonas Holanda Freire",
+    "cargo": "Administrador",
+    "doc": "SERTANEJA_ALT2"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "53268086179",
+    "nome": "Vera Lúcia Holanda",
+    "percentual": 33.33
+   },
+   {
+    "chave": "93754188208",
+    "nome": "Jonas Holanda Freire",
+    "percentual": 33.33
+   },
+   {
+    "chave": "02087233586",
+    "nome": "Talita Freire Gurgel",
+    "percentual": 33.33
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "AGRÍCOLA SERTANEJA DE QUIXADÁ LTDA.",
+    "sub": "56.485.814/0001-18"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "MITSUBISHI/L200 TRITON SPORT HPE",
+    "sub": "TSS1Z68"
+   },
+   {
+    "id": "53268086179",
+    "tipo": "pessoa",
+    "rotulo": "Vera Lúcia Holanda",
+    "papeis": [
+     "sócio 33.33%"
+    ],
+    "assinante": true
+   },
+   {
+    "id": "93754188208",
+    "tipo": "pessoa",
+    "rotulo": "Jonas Holanda Freire",
+    "papeis": [
+     "sócio 33.33%",
+     "Administrador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "02087233586",
+    "tipo": "pessoa",
+    "rotulo": "Talita Freire Gurgel",
+    "papeis": [
+     "sócio 33.33%"
+    ],
+    "assinante": false
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "53268086179",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "33.33%",
+    "status": "neutro"
+   },
+   {
+    "de": "93754188208",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "33.33%",
+    "status": "neutro"
+   },
+   {
+    "de": "02087233586",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "33.33%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "93754188208",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "SERTANEJA_ALT2"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2018-02-12",
+   "tipo": "ato",
+   "titulo": "Contrato Social (2018)",
+   "doc": "SERTANEJA_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-03-09",
+   "tipo": "ato",
+   "titulo": "Alteração Contratual (2026)",
+   "doc": "SERTANEJA_ALT2",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-09-18",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 245.000,00"
+  }
+ ],
+ "pessoas": {
+  "53268086179": {
+   "nome": "Vera Lúcia Holanda",
+   "cpf": "53268086179"
+  },
+  "93754188208": {
+   "nome": "Jonas Holanda Freire",
+   "cpf": "93754188208"
+  },
+  "02087233586": {
+   "nome": "Talita Freire Gurgel",
+   "cpf": "02087233586"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "AGRÍCOLA SERTANEJA DE QUIXADÁ LTDA.",
+   "cnpj": "56.485.814/0001-18",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Contrato Social (2018)",
+     "doc": "SERTANEJA_CS",
+     "efeito": "2018-02-12"
+    },
+    {
+     "titulo": "Alteração Contratual (2026)",
+     "doc": "SERTANEJA_ALT2",
+     "efeito": "2026-03-09"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Vera Lúcia Holanda",
+    "cpf": "532.680.861-79",
+    "identificacao": "CPF",
+    "qualidade": "administradora"
+   }
+  ],
+  "poderes_conferidos": [
+   "Alteração Contratual (2026), Cláusula 6 – DA ADMINISTRAÇÃO: para este veículo, exige Jonas Holanda Freire.",
+   "Assinantes informados (Vera Lúcia Holanda) não atendem a essa exigência."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [
+   {
+    "doc_id": "SERTANEJA_ALT2",
+    "doc_titulo": "Alteração Contratual (2026)",
+    "trecho": "A administração da sociedade passa a ser exercida exclusivamente pelo sócio JONAS HOLANDA FREIRE, que a desempenhará individualmente, por prazo indeterminado, com poderes para representar a sociedade ativa e passivamente, em juízo e fora dele, e para praticar todos os atos de gestão pertinentes ao objeto social.",
+    "clausula": "Cláusula 6 – DA ADMINISTRAÇÃO",
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 1672,
+    "fim": 1985
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "SERTANEJA_ALT2",
+    "titulo": "Alteração Contratual (2026)",
+    "arquivo": "SERTANEJA_ALT2.pdf"
+   },
+   {
+    "id": "SERTANEJA_CS",
+    "titulo": "Contrato Social (2018)",
+    "arquivo": "SERTANEJA_CS.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n00337387460\nPLACA\nTSS1Z68\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2023\nANO MODELO\n2023\nNÚMERO DO CRV\n708484539576\nCÓDIGO DE SEGURANÇA DO CLA\n42101694741\nMARCA / MODELO / VERSÃO\nMITSUBISHI/L200 TRITON SPORT HPE\nESPÉCIE / TIPO\nCARGA/CAMINHONETE\nCHASSI\n93XWENGS6NKZP0YAT\nCOR PREDOMINANTE\nBRANCA\nCOMBUSTÍVEL\nDIESEL\nNOME\nAGRÍCOLA SERTANEJA DE QUIXADÁ LTDA.\nCPF / CNPJ\n56.485.814/0001-18\nLOCAL\nQUIXADÁ/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "a27f88ae10e6409d032c8a2f6d73aa460f5cbce7f0349d19325e75ee5602f3c4",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "SERTANEJA_ALT2",
+   "nome": "SERTANEJA_ALT2.pdf",
+   "tipo": "alteracao_contratual",
+   "titulo": "Alteração Contratual (2026)",
+   "data": "2026-03-09",
+   "paginas": [
+    "AGRÍCOLA SERTANEJA DE QUIXADÁ LTDA.\nCNPJ nº 56.485.814/0001-18 — NIRE 23616547286\nSEGUNDA ALTERAÇÃO DO CONTRATO SOCIAL\nVERA LÚCIA HOLANDA, brasileira, viúva, empresária, RG nº 66025815 SSP/CE, CPF nº\n532.680.861-79, residente e domiciliada no Sítio Riacho Verde, s/n, Distrito de Juatama, Quixadá/\nCE, CEP 63900-000;\nJONAS HOLANDA FREIRE, brasileiro, solteiro, maior, engenheiro agrônomo, RG nº 4307371\nSSP/CE, CPF nº 937.541.882-08, residente e domiciliado na Rua José Jucá, nº 512, bairro Campo\nNovo, Quixadá/CE, CEP 63900-215; e\nTALITA FREIRE GURGEL, brasileira, solteira, maior, contadora, RG nº 50634390 SSP/CE, CPF nº\n020.872.335-86, residente e domiciliada na Rua Tenente Cravo, nº 88, Centro, Quixadá/CE, CEP\n63900-140;\núnicos sócios da sociedade empresária limitada AGRÍCOLA SERTANEJA DE QUIXADÁ LTDA.,\ncom sede na Estrada Quixadá–Juatama, Km 9, Fazenda Pedra do Cavalo, zona rural, Quixadá/CE,\nCEP 63900-000, cujo contrato social foi arquivado na JUCEC em 26/02/2018 sob o nº\n79947091462, e cuja primeira alteração, arquivada em 2022, tratou exclusivamente da atualização\ndo endereço de correspondência da sede, resolvem, de comum acordo, alterar o contrato social\nmediante as cláusulas seguintes:\nPRIMEIRA – DA RENÚNCIA AO CARGO DE ADMINISTRADORA\nA sócia VERA LÚCIA HOLANDA renuncia, nesta data, ao cargo de administradora da sociedade,\nque vinha exercendo desde a constituição, permanecendo no quadro social com a totalidade de suas\nquotas, sem qualquer alteração em sua participação no capital.\nSEGUNDA – DA NOVA ADMINISTRAÇÃO\nEm razão da renúncia acima, a Cláusula 6 do contrato social passa a vigorar com a seguinte redação:\n\"CLÁUSULA 6 – DA ADMINISTRAÇÃO. A administração da sociedade passa a ser exercida\nexclusivamente pelo sócio JONAS HOLANDA FREIRE, que a desempenhará individualmente, por\nprazo indeterminado, com poderes para representar a sociedade ativa e passivamente, em juízo e fora\ndele, e para praticar todos os atos de gestão pertinentes ao objeto social.\nParágrafo primeiro. As sócias VERA LÚCIA HOLANDA e TALITA FREIRE GURGEL participarão\nda sociedade na qualidade de quotistas, sem atribuições de administração.\nParágrafo segundo. É vedado o uso da denominação social em negócios estranhos ao objeto social,\nespecialmente na prestação de avais, fianças ou endossos de favor.\"\nTERCEIRA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nO administrador ora designado, JONAS HOLANDA FREIRE, declara, sob as penas da lei, que não\nestá impedido de exercer a administração da sociedade, por lei especial ou em virtude de condenação\ncriminal, ou por se encontrar sob os efeitos dela, a pena que vede, ainda que temporariamente, o\nacesso a cargos públicos, nos termos do art. 1.011, § 1º, do Código Civil.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "QUARTA – DA RATIFICAÇÃO\nPermanecem inalteradas e em pleno vigor todas as demais cláusulas e condições do contrato social e\nde sua primeira alteração que não colidirem com as disposições do presente instrumento.\nE, por estarem justos e acordados, os sócios assinam a presente alteração em via digital, para\narquivamento na Junta Comercial do Estado do Ceará.\nQuixadá/CE, 9 de março de 2026.\n____________________________________ VERA LÚCIA HOLANDA\n____________________________________ JONAS HOLANDA FREIRE\n____________________________________ TALITA FREIRE GURGEL\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 20/03/2026 sob o nº 65554875265\nProtocolo: 26/071.522-9 | NIRE: 23616547286\nEmpresa: AGRÍCOLA SERTANEJA DE QUIXADÁ LTDA.\nAutenticação: 9E4A61C2D07B3F58E1A6C09D4B2F7E35\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "581c97ab53552a610c3e7d4502d342179bdd55868b86cc628f599d5314d30ca8",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 99.1,
+      "tokens_saida": 560,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 90.2,
+      "tokens_saida": 769,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "SERTANEJA_CS",
+   "nome": "SERTANEJA_CS.pdf",
+   "tipo": "contrato_social",
+   "titulo": "Contrato Social (2018)",
+   "data": "2018-02-12",
+   "paginas": [
+    "AGRÍCOLA SERTANEJA DE QUIXADÁ LTDA.\nCNPJ nº 56.485.814/0001-18 — NIRE 23616547286\nCONTRATO SOCIAL DE CONSTITUIÇÃO\nPelo presente instrumento particular de contrato social, as partes abaixo nomeadas e qualificadas:\nVERA LÚCIA HOLANDA, brasileira, viúva, empresária, portadora da cédula de identidade RG nº\n66025815 SSP/CE, inscrita no CPF sob o nº 532.680.861-79, residente e domiciliada no Sítio\nRiacho Verde, s/n, Distrito de Juatama, Quixadá/CE, CEP 63900-000;\nJONAS HOLANDA FREIRE, brasileiro, solteiro, maior, engenheiro agrônomo, portador da cédula\nde identidade RG nº 4307371 SSP/CE, inscrito no CPF sob o nº 937.541.882-08, residente e\ndomiciliado na Rua José Jucá, nº 512, bairro Campo Novo, Quixadá/CE, CEP 63900-215; e\nTALITA FREIRE GURGEL, brasileira, solteira, maior, contadora, portadora da cédula de identidade\nRG nº 50634390 SSP/CE, inscrita no CPF sob o nº 020.872.335-86, residente e domiciliada na Rua\nTenente Cravo, nº 88, Centro, Quixadá/CE, CEP 63900-140;\nresolvem constituir, como de fato constituído têm, uma sociedade empresária limitada, mediante as\ncondições e cláusulas seguintes.\nCLÁUSULA 1 – DA DENOMINAÇÃO E DA SEDE\nA sociedade adotará a denominação AGRÍCOLA SERTANEJA DE QUIXADÁ LTDA., com sede na\nEstrada Quixadá–Juatama, Km 9, Fazenda Pedra do Cavalo, zona rural, Quixadá/CE, CEP\n63900-000, podendo manter filiais e pontos de venda mediante alteração contratual.\nCLÁUSULA 2 – DO OBJETO\nA sociedade terá por objeto o cultivo de frutas e o comércio de insumos agrícolas, abrangendo a\nprodução de manga, caju, goiaba e acerola em regime irrigado, a embalagem e a comercialização da\nprodução própria e a revenda de sementes, adubos, defensivos e implementos de pequeno porte.\nCLÁUSULA 3 – DO PRAZO\nA sociedade iniciará suas atividades na data do arquivamento deste ato e funcionará por tempo\nindeterminado.\nCLÁUSULA 4 – DO CAPITAL SOCIAL\nO capital social é de R$ 650.000,00 (seiscentos e cinquenta mil reais), dividido em 650.000\n(seiscentas e cinquenta mil) quotas de R$ 1,00 (um real) cada uma, subscrito e integralizado, nesta\ndata, em moeda corrente do País, da seguinte forma:\nSócia/Sócio\nQuotas\nValor (R$)\nParticipação\nVERA LÚCIA HOLANDA\n325.000\n325.000,00\n50%\nJONAS HOLANDA FREIRE\n162.500\n162.500,00\n25%\nTALITA FREIRE GURGEL\n162.500\n162.500,00\n25%\nTotal\n650.000\n650.000,00\n100%\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "Parágrafo único. A responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos\nrespondem solidariamente pela integralização do capital social.\nCLÁUSULA 5 – DAS QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas ou transferidas a terceiros sem o prévio\noferecimento aos demais sócios, que terão preferência para adquiri-las, na proporção de suas\nparticipações, no prazo de 30 (trinta) dias da comunicação.\nCLÁUSULA 6 – DA ADMINISTRAÇÃO\nA administração da sociedade compete exclusivamente à sócia VERA LÚCIA HOLANDA, que a\nexercerá individualmente, por prazo indeterminado, com poderes para representar a sociedade ativa\ne passivamente, em juízo e fora dele, e para praticar todos os atos de gestão pertinentes ao objeto\nsocial, inclusive perante instituições financeiras, órgãos ambientais e de defesa agropecuária.\nParágrafo primeiro. Os sócios JONAS HOLANDA FREIRE e TALITA FREIRE GURGEL\nparticiparão da sociedade na qualidade de quotistas, sem atribuições de administração.\nParágrafo segundo. É vedado o uso da denominação social em negócios estranhos ao objeto social,\nespecialmente na prestação de avais, fianças ou endossos de favor.\nParágrafo terceiro. A administradora declara, sob as penas da lei, que não está impedida de exercer a\nadministração da sociedade, por lei especial ou em virtude de condenação criminal, ou por se\nencontrar sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\npúblicos, ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato, ou contra\na economia popular, contra o sistema financeiro nacional, contra normas de defesa da concorrência,\ncontra as relações de consumo, a fé pública ou a propriedade.\nCLÁUSULA 7 – DO PRÓ-LABORE\nA administradora poderá fazer retirada mensal a título de pró-labore, em valor definido pelos sócios,\nrespeitadas as normas fiscais e previdenciárias.\nCLÁUSULA 8 – DO EXERCÍCIO SOCIAL\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, a administradora\nprestará contas justificadas de sua administração, procedendo à elaboração do inventário, do balanço\npatrimonial e do balanço de resultado econômico, cabendo aos sócios, na proporção de suas quotas,\nos lucros ou as perdas apurados.\nCLÁUSULA 9 – DO FALECIMENTO OU INCAPACIDADE\nFalecendo ou sendo declarado incapaz qualquer dos sócios, a sociedade continuará suas atividades\ncom os herdeiros, sucessores ou representante legal do sócio falecido ou incapaz. Não havendo\ninteresse destes, os haveres serão apurados em balanço especial levantado na data do evento e pagos\nem até 12 (doze) parcelas mensais.\nCLÁUSULA 10 – DO ENQUADRAMENTO\nOs sócios declaram que a sociedade se enquadra como microempresa, nos termos da Lei\nComplementar nº 123/2006.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "CLÁUSULA 11 – DO FORO\nFica eleito o foro da Comarca de Quixadá/CE para o exercício e o cumprimento dos direitos e\nobrigações resultantes deste contrato.\nE, por estarem assim justos e contratados, lavram e assinam o presente instrumento em 3 (três) vias\nde igual forma e teor.\nQuixadá/CE, 12 de fevereiro de 2018.\n____________________________________ VERA LÚCIA HOLANDA\n____________________________________ JONAS HOLANDA FREIRE\n____________________________________ TALITA FREIRE GURGEL\nDeclaração de enquadramento como microempresa (LC nº 123/2006, art. 9º, § 2º): dispensado o\nvisto de advogado.\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 26/02/2018 sob o nº 79947091462\nProtocolo: 18/051.937-4 | NIRE: 23616547286\nEmpresa: AGRÍCOLA SERTANEJA DE QUIXADÁ LTDA.\nAutenticação: 3C8F0D2B6E17A94C05D3B8E1F6A2C790\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "6d2451591534d33dc4fece5cd847768ae1fd6f85aedde1388a6e983ffdaf6256",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 57.3,
+      "tokens_saida": 615,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 65.0,
+      "tokens_saida": 769,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "politica": "DETRAN-CE"
+ },
+ "hash_entrada": "f9367d81dedd02a04d842973df3252d21c73e94b02b558ed26caca5188eb43d1"
+}

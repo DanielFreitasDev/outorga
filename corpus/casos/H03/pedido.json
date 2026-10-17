@@ -1,0 +1,26 @@
+{
+  "caso": "H03",
+  "vendedor": {
+    "razao_social": "TRANSPORTADORA LITORAL LESTE LTDA.",
+    "cnpj": "10.601.907/0001-60"
+  },
+  "veiculo": {
+    "placa": "PEZ5C11",
+    "renavam": "02133290596",
+    "chassi": "9BM8B32KTD596FCK6",
+    "descricao": "M.BENZ/ACTROS 2651 S 6X4"
+  },
+  "data_venda": "2026-09-17",
+  "valor": 520000,
+  "assinantes": [
+    {
+      "nome": "Ivan Cordeiro Mota",
+      "cpf": "717.429.247-00"
+    }
+  ],
+  "comprador": {
+    "nome": "Frota Fácil Locações Ltda.",
+    "cidade": "Maracanaú/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

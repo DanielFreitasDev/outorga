@@ -1,0 +1,628 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T12:00:03",
+ "pedido": {
+  "veiculo": {
+   "descricao": "HYUNDAI/HB20 1.0 COMFORT",
+   "placa": "HNM2Z92",
+   "renavam": "02291958849",
+   "chassi": "9BHHU7V697PRBDC3C"
+  },
+  "data_venda": "2026-10-16",
+  "valor": null,
+  "assinantes": [
+   {
+    "nome": "CPF 320.908.841-18",
+    "cpf": "320.908.841-18"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": null,
+  "vendedor_cnpj": "320.908.841-18",
+  "lado": "vendedor",
+  "consulta": true
+ },
+ "empresa": {
+  "razao_social": "Raimunda Nonata Siqueira",
+  "cnpj": null,
+  "tipo": "PF",
+  "objeto": "",
+  "comercializa_veiculos": false,
+  "subtipo": "PF",
+  "cpf": "320.908.841-18"
+ },
+ "veredito": "PODE",
+ "faixa": "VERDE",
+ "indice": 100.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 2,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 100 ≥ limiar 85"
+ ],
+ "resumo": "Raimunda Nonata Siqueira é o próprio proprietário (pessoa física): assina em nome próprio.",
+ "assinantes": [
+  {
+   "informado": "CPF 320.908.841-18",
+   "cpf": "320.908.841-18",
+   "chave": "32090884118",
+   "nome": "Raimunda Nonata Siqueira",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:32090884118",
+   "pessoas": [
+    {
+     "chave": "32090884118",
+     "nome": "Raimunda Nonata Siqueira"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "Assinatura do próprio proprietário (pessoa física)",
+   "cadeia": [
+    "TITULAR"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": {
+  "id": "contrato:32090884118",
+  "pessoas": [
+   {
+    "chave": "32090884118",
+    "nome": "Raimunda Nonata Siqueira"
+   }
+  ],
+  "via": "contrato",
+  "descricao": "Assinatura do próprio proprietário (pessoa física)",
+  "cadeia": [
+   "TITULAR"
+  ],
+  "severidade": "ok",
+  "confianca": 1.0,
+  "achados": [],
+  "precondicoes": []
+ },
+ "faltantes": [],
+ "achados": [
+  {
+   "codigo": "TITULARIDADE_BASE",
+   "severidade": "ok",
+   "titulo": "Proprietário conferido na base veicular",
+   "detalhe": "Pela placa/RENAVAM, o veículo está em nome de Raimunda Nonata Siqueira.",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "TITULAR#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "TITULAR",
+    "doc_titulo": "Base veicular (simulada)",
+    "trecho": "RAIMUNDA NONATA SIQUEIRA — CPF 320.908.841-18",
+    "clausula": "titularidade",
+    "ancoragem": 100.0,
+    "pagina": null,
+    "inicio": null,
+    "fim": null
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Raimunda Nonata Siqueira"
+   ],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": true
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-10-16",
+  "atos": [
+   {
+    "doc": "TITULAR",
+    "titulo": "Titularidade (pessoa física)",
+    "efeito": "1900-01-01"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "32090884118",
+    "nome": "Raimunda Nonata Siqueira",
+    "cargo": "titular (pessoa física)",
+    "doc": "TITULAR"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "32090884118",
+    "nome": "Raimunda Nonata Siqueira",
+    "percentual": 100.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "Raimunda Nonata Siqueira",
+    "sub": ""
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "HYUNDAI/HB20 1.0 COMFORT",
+    "sub": "HNM2Z92"
+   },
+   {
+    "id": "32090884118",
+    "tipo": "pessoa",
+    "rotulo": "Raimunda Nonata Siqueira",
+    "papeis": [
+     "sócio 100%",
+     "titular (pessoa física)"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "alerta"
+   },
+   {
+    "de": "32090884118",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "100%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "32090884118",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "TITULAR"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "1900-01-01",
+   "tipo": "ato",
+   "titulo": "Titularidade (pessoa física)",
+   "doc": "TITULAR",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-10-16",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "valor não informado"
+  }
+ ],
+ "pessoas": {
+  "32090884118": {
+   "nome": "Raimunda Nonata Siqueira",
+   "cpf": "32090884118"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "comprovada",
+  "outorgante": {
+   "nome": "Raimunda Nonata Siqueira",
+   "cnpj": null,
+   "tipo": "PF",
+   "cpf": "32090884118",
+   "documento": "32090884118",
+   "atos_vigentes": [],
+   "titularidade": "Base veicular (simulada)"
+  },
+  "outorgado": [
+   {
+    "nome": "Raimunda Nonata Siqueira",
+    "cpf": "320.908.841-18",
+    "identificacao": "CPF",
+    "qualidade": "titular (pessoa física)"
+   }
+  ],
+  "poderes_conferidos": [
+   "Assinatura do próprio proprietário (pessoa física): não há poderes a comprovar além da identidade (CPF)."
+  ],
+  "prazo_validade": [
+   "Não se aplica (não há outorga)."
+  ],
+  "revogacao": [
+   "Não se aplica (não há outorga)."
+  ],
+  "fontes": [
+   {
+    "doc_id": "TITULAR",
+    "doc_titulo": "Base veicular (simulada)",
+    "trecho": "RAIMUNDA NONATA SIQUEIRA — CPF 320.908.841-18",
+    "clausula": "titularidade",
+    "ancoragem": 100.0,
+    "pagina": null,
+    "inicio": null,
+    "fim": null
+   }
+  ],
+  "documentos_verificaveis": []
+ },
+ "documentos": [],
+ "avisos": [],
+ "meta": {
+  "provedor": "gabarito",
+  "politica": "Código Civil (genérica)"
+ },
+ "lado": "vendedor",
+ "pendencias": [],
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T12:00:03",
+   "pedido": {
+    "veiculo": {
+     "descricao": "HYUNDAI/HB20 1.0 COMFORT",
+     "placa": "HNM2Z92",
+     "renavam": "02291958849",
+     "chassi": "9BHHU7V697PRBDC3C"
+    },
+    "data_venda": "2026-10-16",
+    "valor": null,
+    "assinantes": [
+     {
+      "nome": "CPF 320.908.841-18",
+      "cpf": "320.908.841-18"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": null,
+    "vendedor_cnpj": "320.908.841-18",
+    "lado": "vendedor",
+    "consulta": true
+   },
+   "empresa": {
+    "razao_social": "Raimunda Nonata Siqueira",
+    "cnpj": null,
+    "tipo": "PF",
+    "objeto": "",
+    "comercializa_veiculos": false,
+    "subtipo": "PF",
+    "cpf": "320.908.841-18"
+   },
+   "veredito": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 2,
+    "menor_confianca_fato": 1.0,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "resumo": "Raimunda Nonata Siqueira é o próprio proprietário (pessoa física): assina em nome próprio.",
+   "assinantes": [
+    {
+     "informado": "CPF 320.908.841-18",
+     "cpf": "320.908.841-18",
+     "chave": "32090884118",
+     "nome": "Raimunda Nonata Siqueira",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:32090884118",
+     "pessoas": [
+      {
+       "chave": "32090884118",
+       "nome": "Raimunda Nonata Siqueira"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "Assinatura do próprio proprietário (pessoa física)",
+     "cadeia": [
+      "TITULAR"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [],
+   "caminho_escolhido": {
+    "id": "contrato:32090884118",
+    "pessoas": [
+     {
+      "chave": "32090884118",
+      "nome": "Raimunda Nonata Siqueira"
+     }
+    ],
+    "via": "contrato",
+    "descricao": "Assinatura do próprio proprietário (pessoa física)",
+    "cadeia": [
+     "TITULAR"
+    ],
+    "severidade": "ok",
+    "confianca": 1.0,
+    "achados": [],
+    "precondicoes": []
+   },
+   "faltantes": [],
+   "achados": [
+    {
+     "codigo": "TITULARIDADE_BASE",
+     "severidade": "ok",
+     "titulo": "Proprietário conferido na base veicular",
+     "detalhe": "Pela placa/RENAVAM, o veículo está em nome de Raimunda Nonata Siqueira.",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "TITULAR#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "TITULAR",
+      "doc_titulo": "Base veicular (simulada)",
+      "trecho": "RAIMUNDA NONATA SIQUEIRA — CPF 320.908.841-18",
+      "clausula": "titularidade",
+      "ancoragem": 100.0,
+      "pagina": null,
+      "inicio": null,
+      "fim": null
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Raimunda Nonata Siqueira"
+     ],
+     "cargo": null,
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": true
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-10-16",
+    "atos": [
+     {
+      "doc": "TITULAR",
+      "titulo": "Titularidade (pessoa física)",
+      "efeito": "1900-01-01"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "32090884118",
+      "nome": "Raimunda Nonata Siqueira",
+      "cargo": "titular (pessoa física)",
+      "doc": "TITULAR"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "32090884118",
+      "nome": "Raimunda Nonata Siqueira",
+      "percentual": 100.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "Raimunda Nonata Siqueira",
+      "sub": ""
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "HYUNDAI/HB20 1.0 COMFORT",
+      "sub": "HNM2Z92"
+     },
+     {
+      "id": "32090884118",
+      "tipo": "pessoa",
+      "rotulo": "Raimunda Nonata Siqueira",
+      "papeis": [
+       "sócio 100%",
+       "titular (pessoa física)"
+      ],
+      "assinante": true
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "alerta"
+     },
+     {
+      "de": "32090884118",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "100%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "32090884118",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "TITULAR"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "1900-01-01",
+     "tipo": "ato",
+     "titulo": "Titularidade (pessoa física)",
+     "doc": "TITULAR",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-10-16",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "valor não informado"
+    }
+   ],
+   "pessoas": {
+    "32090884118": {
+     "nome": "Raimunda Nonata Siqueira",
+     "cpf": "32090884118"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "comprovada",
+    "outorgante": {
+     "nome": "Raimunda Nonata Siqueira",
+     "cnpj": null,
+     "tipo": "PF",
+     "cpf": "32090884118",
+     "documento": "32090884118",
+     "atos_vigentes": [],
+     "titularidade": "Base veicular (simulada)"
+    },
+    "outorgado": [
+     {
+      "nome": "Raimunda Nonata Siqueira",
+      "cpf": "320.908.841-18",
+      "identificacao": "CPF",
+      "qualidade": "titular (pessoa física)"
+     }
+    ],
+    "poderes_conferidos": [
+     "Assinatura do próprio proprietário (pessoa física): não há poderes a comprovar além da identidade (CPF)."
+    ],
+    "prazo_validade": [
+     "Não se aplica (não há outorga)."
+    ],
+    "revogacao": [
+     "Não se aplica (não há outorga)."
+    ],
+    "fontes": [
+     {
+      "doc_id": "TITULAR",
+      "doc_titulo": "Base veicular (simulada)",
+      "trecho": "RAIMUNDA NONATA SIQUEIRA — CPF 320.908.841-18",
+      "clausula": "titularidade",
+      "ancoragem": 100.0,
+      "pagina": null,
+      "inicio": null,
+      "fim": null
+     }
+    ],
+    "documentos_verificaveis": []
+   },
+   "documentos": [],
+   "avisos": [],
+   "meta": {
+    "provedor": "gabarito",
+    "politica": "Código Civil (genérica)"
+   },
+   "lado": "vendedor",
+   "pendencias": []
+  }
+ },
+ "geral": {
+  "veredito": "PODE",
+  "faixa": "VERDE",
+  "indice": 100.0,
+  "resumo": "Vendedor: Raimunda Nonata Siqueira é o próprio proprietário (pessoa física): assina em nome próprio.",
+  "motivos_faixa": [
+   "Vendedor — índice 100 ≥ limiar 85"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "HYUNDAI/HB20 1.0 COMFORT",
+   "placa": "HNM2Z92",
+   "renavam": "02291958849",
+   "chassi": "9BHHU7V697PRBDC3C"
+  },
+  "data_venda": "2026-10-16",
+  "valor": null,
+  "vendedor": {
+   "tipo": "PF",
+   "nome": "RAIMUNDA NONATA SIQUEIRA",
+   "documento": "320.908.841-18",
+   "assinantes": [
+    {
+     "nome": "CPF 320.908.841-18",
+     "cpf": "320.908.841-18"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": null,
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "consulta por CPF",
+  "alvo": "vendedor",
+  "titular_fonte": "base veicular"
+ },
+ "hash_entrada": "ba854847ddec0ece2379d274a57802843667f2bf21afa9c0f7eb6ce71ad54172"
+}

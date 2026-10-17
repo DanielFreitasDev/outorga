@@ -1,0 +1,633 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T07:12:15",
+ "pedido": {
+  "veiculo": {
+   "descricao": "FIAT/TORO",
+   "placa": "TZF3H42",
+   "renavam": "03846540171",
+   "chassi": "9BDDBCWJ25MU5GY74"
+  },
+  "data_venda": "2026-10-02",
+  "valor": null,
+  "assinantes": [
+   {
+    "nome": "EDMILSON FURTADO QUEIROZ",
+    "cpf": "758.767.425-03"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "GRANJA BOA ESPERANÇA LTDA",
+  "vendedor_cnpj": "62.880.687/0001-54"
+ },
+ "empresa": {
+  "razao_social": "AVÍCOLA SERRA DE BATURITÉ LTDA",
+  "cnpj": "62.880.687/0001-54",
+  "tipo": "LTDA",
+  "objeto": "A sociedade tem por objeto a criação de aves para corte e postura, a produção e o comércio de ovos e de aves vivas ou abatidas, a fabricação e o comércio de rações para animais e o transporte rodoviário de cargas próprias.",
+  "comercializa_veiculos": false
+ },
+ "veredito": "INDETERMINADO",
+ "faixa": "AMARELO",
+ "indice": 50.0,
+ "confianca": 0.94,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 0.94,
+  "fatos_decisivos": 1,
+  "menor_confianca_fato": 1.0,
+  "alertas": 2,
+  "atencoes": 1,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "indeterminado: valor do veículo não informado — a regra de alçada não pode ser aplicada",
+  "alerta: Valor do veículo não informado",
+  "alerta: Contrato omisso sobre a forma de atuação"
+ ],
+ "resumo": "Não é possível decidir com segurança: valor do veículo não informado — a regra de alçada não pode ser aplicada.",
+ "assinantes": [
+  {
+   "informado": "EDMILSON FURTADO QUEIROZ",
+   "cpf": "758.767.425-03",
+   "chave": "75876742503",
+   "nome": "Edmilson Furtado Queiroz",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:16589231702",
+   "pessoas": [
+    {
+     "chave": "16589231702",
+     "nome": "Rosângela Queiroz Barreira"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "Regra supletiva (contrato não define a forma de assinar)",
+   "cadeia": [
+    "QUARTA_ALTERACAO_2025"
+   ],
+   "severidade": "alerta",
+   "confianca": 0.85,
+   "achados": [
+    {
+     "codigo": "FORMA_ATUACAO_OMISSA",
+     "severidade": "alerta",
+     "titulo": "Contrato omisso sobre a forma de atuação",
+     "detalhe": "Há mais de um administrador e o contrato não diz se atuam isolada ou conjuntamente. A regra supletiva (art. 1.013) indica atuação separada, mas há risco de questionamento: recomenda-se assinatura conjunta ou declaração dos sócios.",
+     "fundamento": [
+      "CC art. 1.013",
+      "CC art. 1.014"
+     ],
+     "fontes": [],
+     "caminho": "contrato"
+    },
+    {
+     "codigo": "SEM_REGRA_ESPECIFICA",
+     "severidade": "atencao",
+     "titulo": "Sem cláusula sobre quem assina",
+     "detalhe": "Nenhuma cláusula define quem representa a empresa neste ato; aplicada a regra supletiva.",
+     "fundamento": [
+      "CC art. 1.013",
+      "CC art. 1.060"
+     ],
+     "fontes": [],
+     "caminho": "contrato"
+    }
+   ],
+   "precondicoes": []
+  },
+  {
+   "id": "contrato:75876742503",
+   "pessoas": [
+    {
+     "chave": "75876742503",
+     "nome": "Edmilson Furtado Queiroz"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "Regra supletiva (contrato não define a forma de assinar)",
+   "cadeia": [
+    "QUARTA_ALTERACAO_2025"
+   ],
+   "severidade": "alerta",
+   "confianca": 0.85,
+   "achados": [
+    {
+     "codigo": "FORMA_ATUACAO_OMISSA",
+     "severidade": "alerta",
+     "titulo": "Contrato omisso sobre a forma de atuação",
+     "detalhe": "Há mais de um administrador e o contrato não diz se atuam isolada ou conjuntamente. A regra supletiva (art. 1.013) indica atuação separada, mas há risco de questionamento: recomenda-se assinatura conjunta ou declaração dos sócios.",
+     "fundamento": [
+      "CC art. 1.013",
+      "CC art. 1.014"
+     ],
+     "fontes": [],
+     "caminho": "contrato"
+    },
+    {
+     "codigo": "SEM_REGRA_ESPECIFICA",
+     "severidade": "atencao",
+     "titulo": "Sem cláusula sobre quem assina",
+     "detalhe": "Nenhuma cláusula define quem representa a empresa neste ato; aplicada a regra supletiva.",
+     "fundamento": [
+      "CC art. 1.013",
+      "CC art. 1.060"
+     ],
+     "fontes": [],
+     "caminho": "contrato"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": {
+  "id": "contrato:75876742503",
+  "pessoas": [
+   {
+    "chave": "75876742503",
+    "nome": "Edmilson Furtado Queiroz"
+   }
+  ],
+  "via": "contrato",
+  "descricao": "Regra supletiva (contrato não define a forma de assinar)",
+  "cadeia": [
+   "QUARTA_ALTERACAO_2025"
+  ],
+  "severidade": "alerta",
+  "confianca": 0.85,
+  "achados": [
+   {
+    "codigo": "FORMA_ATUACAO_OMISSA",
+    "severidade": "alerta",
+    "titulo": "Contrato omisso sobre a forma de atuação",
+    "detalhe": "Há mais de um administrador e o contrato não diz se atuam isolada ou conjuntamente. A regra supletiva (art. 1.013) indica atuação separada, mas há risco de questionamento: recomenda-se assinatura conjunta ou declaração dos sócios.",
+    "fundamento": [
+     "CC art. 1.013",
+     "CC art. 1.014"
+    ],
+    "fontes": [],
+    "caminho": "contrato"
+   },
+   {
+    "codigo": "SEM_REGRA_ESPECIFICA",
+    "severidade": "atencao",
+    "titulo": "Sem cláusula sobre quem assina",
+    "detalhe": "Nenhuma cláusula define quem representa a empresa neste ato; aplicada a regra supletiva.",
+    "fundamento": [
+     "CC art. 1.013",
+     "CC art. 1.060"
+    ],
+    "fontes": [],
+    "caminho": "contrato"
+   }
+  ],
+  "precondicoes": []
+ },
+ "faltantes": [],
+ "achados": [
+  {
+   "codigo": "VALOR_NAO_INFORMADO",
+   "severidade": "alerta",
+   "titulo": "Valor do veículo não informado",
+   "detalhe": "O contrato tem alçada por valor; informe o valor de venda (ou FIPE) para decidir.",
+   "fundamento": [],
+   "fontes": [
+    {
+     "doc_id": "QUARTA_ALTERACAO_2025",
+     "doc_titulo": "Alteração Contratual (2025)",
+     "trecho": "§ 2º Será exigida a assinatura conjunta de ambos os administradores na alienação ou oneração de bens móveis integrantes do ativo imobilizado, neles incluídos veículos, máquinas e equipamentos, sempre que o valor da operação exceder R$ 150.000,00 (cento e cinquenta mil reais).",
+     "clausula": "Cláusula Segunda, Parágrafo 2º",
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 1602,
+     "fim": 1878
+    }
+   ],
+   "caminho": null
+  },
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: AVÍCOLA SERRA DE BATURITÉ LTDA.",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "TZF3H42",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2024#R4",
+   "escopo": "alienacao_bens_imoveis",
+   "aplicavel": false,
+   "motivo": "trata de bens imóveis; veículo é bem móvel",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2024",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2024)",
+    "trecho": "§ 3º A venda ou a oneração de bens imóveis dependerá do que decidirem os sócios titulares de mais da metade do capital social.",
+    "clausula": "Cláusula Oitava, § 3º",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 4151,
+    "fim": 4277
+   },
+   "modo": "quantidade_minima",
+   "pessoas": [],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2024#R5",
+   "escopo": "obrigacoes_garantias",
+   "aplicavel": false,
+   "motivo": "trata de avais, fianças e garantias",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2024",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2024)",
+    "trecho": "§ 4º É vedado o uso da denominação social em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+    "clausula": "Cláusula Oitava, § 4º",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 4278,
+    "fim": 4414
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "QUARTA_ALTERACAO_2025#R1",
+   "escopo": "alienacao_ativo_imobilizado",
+   "aplicavel": null,
+   "motivo": "a regra depende do valor do veículo, que não foi informado",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "QUARTA_ALTERACAO_2025",
+    "doc_titulo": "Alteração Contratual (2025)",
+    "trecho": "§ 2º Será exigida a assinatura conjunta de ambos os administradores na alienação ou oneração de bens móveis integrantes do ativo imobilizado, neles incluídos veículos, máquinas e equipamentos, sempre que o valor da operação exceder R$ 150.000,00 (cento e cinquenta mil reais).",
+    "clausula": "Cláusula Segunda, Parágrafo 2º",
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 1602,
+    "fim": 1878
+   },
+   "modo": "conjunto",
+   "pessoas": [],
+   "cargo": "administradores",
+   "valor_acima_de": 150000.0,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "conjunto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "assinatura conjunta"
+     ]
+    }
+   ],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-10-02",
+  "atos": [
+   {
+    "doc": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2024",
+    "titulo": "Alteração e Consolidação do Contrato Social (2024)",
+    "efeito": "2024-06-17"
+   },
+   {
+    "doc": "QUARTA_ALTERACAO_2025",
+    "titulo": "Alteração Contratual (2025)",
+    "efeito": "2025-09-29"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "75876742503",
+    "nome": "Edmilson Furtado Queiroz",
+    "cargo": "administrador",
+    "doc": "QUARTA_ALTERACAO_2025"
+   },
+   {
+    "chave": "16589231702",
+    "nome": "Rosângela Queiroz Barreira",
+    "cargo": "administradora",
+    "doc": "QUARTA_ALTERACAO_2025"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "75876742503",
+    "nome": "Edmilson Furtado Queiroz",
+    "percentual": 50.0
+   },
+   {
+    "chave": "16589231702",
+    "nome": "Rosângela Queiroz Barreira",
+    "percentual": 50.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "AVÍCOLA SERRA DE BATURITÉ LTDA",
+    "sub": "62.880.687/0001-54"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "FIAT/TORO",
+    "sub": "TZF3H42"
+   },
+   {
+    "id": "75876742503",
+    "tipo": "pessoa",
+    "rotulo": "Edmilson Furtado Queiroz",
+    "papeis": [
+     "sócio 50%",
+     "administrador"
+    ],
+    "assinante": true
+   },
+   {
+    "id": "16589231702",
+    "tipo": "pessoa",
+    "rotulo": "Rosângela Queiroz Barreira",
+    "papeis": [
+     "sócio 50%",
+     "administradora"
+    ],
+    "assinante": false
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "75876742503",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "50%",
+    "status": "neutro"
+   },
+   {
+    "de": "16589231702",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "50%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "75876742503",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "QUARTA_ALTERACAO_2025"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "16589231702",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "QUARTA_ALTERACAO_2025"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2024-06-17",
+   "tipo": "ato",
+   "titulo": "Alteração e Consolidação do Contrato Social (2024)",
+   "doc": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2024",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2025-09-29",
+   "tipo": "ato",
+   "titulo": "Alteração Contratual (2025)",
+   "doc": "QUARTA_ALTERACAO_2025",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-10-02",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "valor não informado"
+  }
+ ],
+ "pessoas": {
+  "75876742503": {
+   "nome": "Edmilson Furtado Queiroz",
+   "cpf": "75876742503"
+  },
+  "16589231702": {
+   "nome": "Rosângela Queiroz Barreira",
+   "cpf": "16589231702"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "pendente",
+  "outorgante": {
+   "nome": "AVÍCOLA SERRA DE BATURITÉ LTDA",
+   "cnpj": "62.880.687/0001-54",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Alteração e Consolidação do Contrato Social (2024)",
+     "doc": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2024",
+     "efeito": "2024-06-17"
+    },
+    {
+     "titulo": "Alteração Contratual (2025)",
+     "doc": "QUARTA_ALTERACAO_2025",
+     "efeito": "2025-09-29"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Edmilson Furtado Queiroz",
+    "cpf": "758.767.425-03",
+    "identificacao": "CPF",
+    "qualidade": "Sócio-Administrador"
+   }
+  ],
+  "poderes_conferidos": [
+   "Regra supletiva do Código Civil (o ato constitutivo não define a forma de assinar)."
+  ],
+  "prazo_validade": [
+   "Edmilson Furtado Queiroz (administrador): mandato por prazo indeterminado"
+  ],
+  "revogacao": [
+   "Poder decorre do ato constitutivo vigente na data da venda; recomenda-se certidão simplificada atualizada da Junta Comercial para afastar alteração posterior ainda não apresentada."
+  ],
+  "fontes": [
+   {
+    "doc_id": "QUARTA_ALTERACAO_2025",
+    "doc_titulo": "Alteração Contratual (2025)",
+    "trecho": "§ 2º Será exigida a assinatura conjunta de ambos os administradores na alienação ou oneração de bens móveis integrantes do ativo imobilizado, neles incluídos veículos, máquinas e equipamentos, sempre que o valor da operação exceder R$ 150.000,00 (cento e cinquenta mil reais).",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 1602,
+    "fim": 1878
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "QUARTA_ALTERACAO_2025",
+    "titulo": "Alteração Contratual (2025)",
+    "arquivo": "QUARTA_ALTERACAO_2025.pdf"
+   },
+   {
+    "id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2024",
+    "titulo": "Alteração e Consolidação do Contrato Social (2024)",
+    "arquivo": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2024.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n03846540171\nPLACA\nTZF3H42\nEXERCÍCIO\n2026\nMARCA / MODELO / VERSÃO\nFIAT/TORO\nCHASSI\n9BDDBCWJ25MU5GY74\nNOME\nAVÍCOLA SERRA DE BATURITÉ LTDA\nCPF / CNPJ\n62.880.687/0001-54\nDATA\n15/01/2026\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "de7a516ed529280a86e0338f3ee23bc23e8191b89c24548f6c0cc8ce41019aa6",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "QUARTA_ALTERACAO_2025",
+   "nome": "QUARTA_ALTERACAO_2025.pdf",
+   "tipo": "alteracao_contratual",
+   "titulo": "Alteração Contratual (2025)",
+   "data": "2025-09-29",
+   "paginas": [
+    "QUARTA ALTERAÇÃO DO CONTRATO SOCIAL DA AVÍCOLA SERRA DE BATURITÉ\nLTDA\nCNPJ nº 62.880.687/0001-54 – NIRE 23201432567\nEDMILSON FURTADO QUEIROZ, brasileiro, casado sob o regime da comunhão parcial de bens,\nmédico veterinário, portador da cédula de identidade RG nº 93005678901 SSP/CE, inscrito no CPF\nsob o nº 758.767.425-03, residente e domiciliado na Rua Antônio Pereira de Lima, nº 220, Centro,\nPacajus/CE, CEP 62870-000; e\nROSÂNGELA QUEIROZ BARREIRA, brasileira, casada sob o regime da comunhão parcial de\nbens, zootecnista, portadora da cédula de identidade RG nº 96006789012 SSP/CE, inscrita no CPF\nsob o nº 165.892.317-02, residente e domiciliada na Rua Sete de Setembro, nº 1.045, Centro,\nHorizonte/CE, CEP 62880-000;\núnicos sócios da AVÍCOLA SERRA DE BATURITÉ LTDA, com sede no Sítio Lagoa Seca, s/n,\nZona Rural, Pacajus/CE, CEP 62870-000, inscrita no CNPJ sob o nº 62.880.687/0001-54, cujo\ncontrato social consolidado se encontra arquivado na JUCEC sob o nº 6418806, em 02/07/2024,\nresolvem alterar o contrato social mediante as cláusulas seguintes.\nCLÁUSULA PRIMEIRA – DO OBJETO SOCIAL\nA Cláusula Segunda do contrato social passa a vigorar com a seguinte redação: \"A sociedade tem\npor objeto a criação de aves para corte e postura, a produção e o comércio de ovos e de aves vivas ou\nabatidas, a fabricação e o comércio de rações para animais e o transporte rodoviário de cargas\npróprias.\"\nCLÁUSULA SEGUNDA – DO LIMITE PARA ATUAÇÃO CONJUNTA\nConsiderando a atualização dos valores da frota e dos equipamentos, o § 2º da Cláusula Oitava do\ncontrato social passa a vigorar com a seguinte redação: \"§ 2º Será exigida a assinatura conjunta de\nambos os administradores na alienação ou oneração de bens móveis integrantes do ativo\nimobilizado, neles incluídos veículos, máquinas e equipamentos, sempre que o valor da operação\nexceder R$ 150.000,00 (cento e cinquenta mil reais).\"\nCLÁUSULA TERCEIRA – DAS DEMAIS CLÁUSULAS\nPermanecem inalteradas e em pleno vigor as demais cláusulas e parágrafos do contrato social\nconsolidado, inclusive o caput e os §§ 1º, 3º e 4º da Cláusula Oitava.\nE, por estarem justos e contratados, assinam o presente instrumento.\nPacajus/CE, 29 de setembro de 2025.\nEDMILSON FURTADO QUEIROZ\nROSÂNGELA QUEIROZ BARREIRA\nVisto: GUSTAVO BARREIRA NOJOSA – OAB/CE nº 22.581\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "JUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 14/10/2025 sob o nº 6512647\nProtocolo: 25/102256-1 | NIRE: 23201432567\nEmpresa: AVÍCOLA SERRA DE BATURITÉ LTDA\nAutenticação: D1A6C3F9E0B47285\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "69af3761222dccd6e3ecf628dc76606858ca8d4712bc0dd38b96a71084d819cb",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 37.5,
+      "tokens_saida": 806,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 16.4,
+      "tokens_saida": 378,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2024",
+   "nome": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2024.pdf",
+   "tipo": "contrato_consolidado",
+   "titulo": "Alteração e Consolidação do Contrato Social (2024)",
+   "data": "2024-06-17",
+   "paginas": [
+    "TERCEIRA ALTERAÇÃO E CONSOLIDAÇÃO DO CONTRATO SOCIAL DA AVÍCOLA\nSERRA DE BATURITÉ LTDA\nCNPJ nº 62.880.687/0001-54 – NIRE 23201432567\nEDMILSON FURTADO QUEIROZ, brasileiro, casado sob o regime da comunhão parcial de bens,\nmédico veterinário, portador da cédula de identidade RG nº 93005678901 SSP/CE, inscrito no CPF\nsob o nº 758.767.425-03, residente e domiciliado na Rua Antônio Pereira de Lima, nº 220, Centro,\nPacajus/CE, CEP 62870-000; e\nROSÂNGELA QUEIROZ BARREIRA, brasileira, casada sob o regime da comunhão parcial de\nbens, zootecnista, portadora da cédula de identidade RG nº 96006789012 SSP/CE, inscrita no CPF\nsob o nº 165.892.317-02, residente e domiciliada na Rua Sete de Setembro, nº 1.045, Centro,\nHorizonte/CE, CEP 62880-000;\núnicos sócios da sociedade empresária limitada AVÍCOLA SERRA DE BATURITÉ LTDA, com\nsede no Sítio Lagoa Seca, s/n, Zona Rural, Pacajus/CE, CEP 62870-000, inscrita no CNPJ sob o nº\n62.880.687/0001-54, com contrato social arquivado na JUCEC sob o NIRE 23201432567, resolvem\nalterar e consolidar o contrato social conforme as cláusulas abaixo.\nI – DAS ALTERAÇÕES\nCLÁUSULA PRIMEIRA – DO CAPITAL SOCIAL\nO capital social, de R$ 500.000,00 (quinhentos mil reais), é aumentado para R$ 800.000,00\n(oitocentos mil reais), mediante a emissão de 300.000 (trezentas mil) novas quotas de R$ 1,00 (um\nreal), subscritas em partes iguais pelos sócios e integralizadas neste ato com créditos de lucros\nacumulados.\nCLÁUSULA SEGUNDA – DA ADMINISTRAÇÃO\nA administração da sociedade, até então exercida apenas pelo sócio EDMILSON FURTADO\nQUEIROZ, passa a ser exercida também pela sócia ROSÂNGELA QUEIROZ BARREIRA, nos\ntermos da Cláusula Oitava do contrato consolidado.\nCLÁUSULA TERCEIRA – DA CONSOLIDAÇÃO\nOs sócios resolvem consolidar o contrato social, que passa a ter a seguinte redação.\nII – CONTRATO SOCIAL CONSOLIDADO\nCLÁUSULA PRIMEIRA – DA DENOMINAÇÃO E SEDE\nA sociedade gira sob a denominação AVÍCOLA SERRA DE BATURITÉ LTDA e tem sede no Sítio\nLagoa Seca, s/n, Zona Rural, Pacajus/CE, CEP 62870-000.\nCLÁUSULA SEGUNDA – DO OBJETO\nA sociedade tem por objeto a criação de aves para corte e postura, a produção e o comércio de ovos\ne de aves vivas ou abatidas e o transporte rodoviário de cargas próprias.\nCLÁUSULA TERCEIRA – DO PRAZO\nA sociedade iniciou suas atividades em 5 de agosto de 2015 e vigorará por prazo indeterminado.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "CLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 800.000,00 (oitocentos mil reais), totalmente integralizado, dividido em\n800.000 (oitocentas mil) quotas de R$ 1,00 (um real) cada, assim distribuídas:\nSócio\nQuotas\nValor (R$)\nParticipação\nEDMILSON FURTADO QUEIROZ\n400.000\n400.000,00\n50%\nROSÂNGELA QUEIROZ BARREIRA\n400.000\n400.000,00\n50%\nTotal\n800.000\n800.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE\nA responsabilidade dos sócios é restrita ao valor de suas quotas, mas ambos respondem\nsolidariamente pela integralização do capital.\nCLÁUSULA SEXTA – DA CESSÃO DE QUOTAS\nNenhum sócio poderá ceder quotas a terceiros sem antes oferecê-las ao outro, que terá direito de\npreferência pelo prazo de 30 (trinta) dias.\nCLÁUSULA SÉTIMA – DAS DELIBERAÇÕES\nAs deliberações dos sócios serão tomadas em reunião ou por documento escrito assinado por ambos,\nobservados os quóruns legais.\nCLÁUSULA OITAVA – DA ADMINISTRAÇÃO\nA administração da sociedade cabe aos sócios EDMILSON FURTADO QUEIROZ e ROSÂNGELA\nQUEIROZ BARREIRA, que a exercerão isoladamente e por prazo indeterminado, com poderes para\nrepresentar a sociedade em juízo ou fora dele e praticar todos os atos de gestão, inclusive a compra\nde insumos, a venda da produção e a constituição de procuradores com poderes específicos.\n§ 1º Os administradores poderão, isoladamente, movimentar contas bancárias e representar a\nsociedade perante repartições públicas, autarquias e instituições financeiras.\n§ 2º Será exigida a assinatura conjunta de ambos os administradores na alienação ou oneração de\nbens móveis integrantes do ativo imobilizado, neles incluídos veículos, máquinas e equipamentos,\nsempre que o valor da operação exceder R$ 120.000,00 (cento e vinte mil reais).\n§ 3º A venda ou a oneração de bens imóveis dependerá do que decidirem os sócios titulares de mais\nda metade do capital social.\n§ 4º É vedado o uso da denominação social em atividades estranhas ao objeto social, especialmente\nem avais, fianças e endossos de favor.\nCLÁUSULA NONA – DO PRÓ-LABORE E DO EXERCÍCIO SOCIAL\nOs administradores perceberão pró-labore fixado de comum acordo. O exercício social coincide com\no ano civil, ao término do qual serão levantados o balanço patrimonial e o de resultado econômico.\nCLÁUSULA DÉCIMA – DO FALECIMENTO DE SÓCIO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "O falecimento de qualquer sócio não dissolverá a sociedade, cujos haveres serão apurados e pagos\naos herdeiros que não desejarem nela ingressar.\nCLÁUSULA DÉCIMA PRIMEIRA – DO DESIMPEDIMENTO\nOs administradores declaram, sob as penas da lei, não estar impedidos de exercer a administração da\nsociedade.\nCLÁUSULA DÉCIMA SEGUNDA – DO FORO\nFica eleito o foro da Comarca de Pacajus/CE para dirimir as questões oriundas deste contrato.\nE, por estarem justos e contratados, assinam o presente instrumento.\nPacajus/CE, 17 de junho de 2024.\nEDMILSON FURTADO QUEIROZ\nROSÂNGELA QUEIROZ BARREIRA\nVisto: GUSTAVO BARREIRA NOJOSA – OAB/CE nº 22.581\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 02/07/2024 sob o nº 6418806\nProtocolo: 24/071140-8 | NIRE: 23201432567\nEmpresa: AVÍCOLA SERRA DE BATURITÉ LTDA\nAutenticação: 7B2E5F8C1A94D036\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "6ea497d2a56c264e9ea19f955151ace0a167f44d0f1bc4f6082fe7a773f9802e",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 34.5,
+      "tokens_saida": 796,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 44.8,
+      "tokens_saida": 1252,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "politica": "DETRAN-CE"
+ },
+ "hash_entrada": "6ee7910212aa9c30a5b35cb39c3735a7f9210cd47b89d64964c0d9299088e070"
+}

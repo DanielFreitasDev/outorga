@@ -1,0 +1,26 @@
+{
+  "caso": "C12",
+  "vendedor": {
+    "razao_social": "PESCADOS CAMOCIM LTDA.",
+    "cnpj": "06.709.072/0001-99"
+  },
+  "veiculo": {
+    "placa": "YEP9S69",
+    "renavam": "00438581768",
+    "chassi": "9BWKXK9C7ADGZTYBL",
+    "descricao": "VW/DELIVERY 9.170"
+  },
+  "data_venda": "2026-09-24",
+  "valor": 310000,
+  "assinantes": [
+    {
+      "nome": "Márcia Regina Sá",
+      "cpf": "520.599.728-17"
+    }
+  ],
+  "comprador": {
+    "nome": "Diego Fernandes Uchoa",
+    "cidade": "Juazeiro do Norte/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

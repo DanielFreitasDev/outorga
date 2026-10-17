@@ -1,0 +1,34 @@
+{
+  "caso": "C38",
+  "vendedor": {
+    "razao_social": "PESCADOS CAMOCIM LTDA.",
+    "cnpj": "06.709.072/0001-99"
+  },
+  "veiculo": {
+    "placa": "TGC6Y55",
+    "renavam": "03233735288",
+    "chassi": "9BR4460PW57FPNHFZ",
+    "descricao": "TOYOTA/HILUX CD SR 4X2 2.8"
+  },
+  "data_venda": "2026-09-24",
+  "valor": 185000,
+  "assinantes": [
+    {
+      "nome": "Valdir Cunha Teixeira",
+      "cpf": "819.331.908-76"
+    },
+    {
+      "nome": "Márcia Regina Sá",
+      "cpf": "520.599.728-17"
+    },
+    {
+      "nome": "Osvaldo Lima Prado",
+      "cpf": "792.984.162-61"
+    }
+  ],
+  "comprador": {
+    "nome": "Jefferson Lucas Araújo",
+    "cidade": "Caucaia/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

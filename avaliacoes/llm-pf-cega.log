@@ -1,0 +1,17 @@
+✓ P01 Pessoa física: o próprio dono vai assinar                  esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+✓ P02 Procurador com procuração pública e específica             esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok  45.6s
+✓ P03 CPF diferente do dono, sem procuração                      esp=INDETERMINADO prev=INDETERMINADO AMARELO  idx= 50.0 quem=ok   0.0s
+✓ P04 Procuração só com poderes gerais (DETRAN, IPVA, multas)    esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok  56.7s
+✓ P05 Procuração de 6 meses, vencida                             esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok  44.7s
+✓ P06 Procuração específica de outro veículo                     esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok  51.1s
+✓ P07 Compradora pessoa física representada por procuradora      esp=PODE          prev=PODE          VERDE    idx= 92.5 quem=ok  48.6s
+✓ P08 Procuração revogada                                        esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok 119.5s
+✓ P09 Substabelecida pelo procurador, com reserva                esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok  57.5s
+✓ P10 Procuração particular com firma reconhecida                esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok  83.3s
+✓ P11 Procuração dada pela esposa, não pelo dono registral       esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok  68.5s
+✓ P12 Dona é empresa: CPF do administrador                       esp=PODE          prev=PODE          VERDE    idx= 90.8 quem=ok   0.0s
+✓ P13 Dona é empresa: CPF de sócia sem poder, sem procuração     esp=INDETERMINADO prev=INDETERMINADO AMARELO  idx= 50.0 quem=ok   0.0s
+✓ P14 Dona é empresa: CPF de procurador da empresa               esp=PODE          prev=PODE          VERDE    idx= 90.8 quem=ok   0.0s
+✓ P15 Comprador é empresa: CPF do administrador, abaixo da alçad esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+
+veredito 15/15 · faixa aceitável 15/15 · quem pode 15/15 · perigosos 0 · caros 0 · automático 87% · 575.6s

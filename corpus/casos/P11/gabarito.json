@@ -1,0 +1,44 @@
+{
+  "caso": "P11",
+  "titulo": "Procuração dada pela esposa, não pelo dono registral",
+  "categoria": "pf",
+  "objetivo": "Só o proprietário que consta no registro pode constituir procurador para assinar a ATPV-e.",
+  "validacao_cega": false,
+  "lote": "pf",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "vendedor": {
+      "veredito": "NAO_PODE",
+      "faixas_aceitaveis": [
+        "VERMELHO"
+      ],
+      "conjuntos_minimos": [
+        [
+          "ERIVAN"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "812.329.658-47"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Francisco Erivan Cavalcante"
+        ]
+      ]
+    }
+  },
+  "esperado_lados_ce": null
+}

@@ -1,0 +1,2454 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T10:07:36",
+ "pedido": {
+  "veiculo": {
+   "descricao": "TOYOTA/HILUX CD SRV 4X4 2.8",
+   "placa": "DYW8T81",
+   "renavam": "09042163114",
+   "chassi": "9BRGE1CJ5BV305ND3"
+  },
+  "data_venda": "2026-09-23",
+  "valor": 230000.0,
+  "assinantes": [
+   {
+    "nome": "Tiago Rolim Vasconcelos",
+    "cpf": "621.052.185-12"
+   },
+   {
+    "nome": "Sérgio Paiva Gomes",
+    "cpf": "291.280.845-60"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "Auto Center Litoral Ltda.",
+  "vendedor_cnpj": "74.535.813/0001-12",
+  "lado": "vendedor"
+ },
+ "empresa": {
+  "razao_social": "DISTRIBUIDORA ARACATI S.A.",
+  "cnpj": "74.535.813/0001-12",
+  "tipo": "SA",
+  "objeto": "comércio atacadista e a distribuição de bebidas",
+  "comercializa_veiculos": false,
+  "subtipo": null
+ },
+ "veredito": "PODE",
+ "faixa": "VERDE",
+ "indice": 99.9,
+ "confianca": 0.998,
+ "componentes": {
+  "leitura": 0.998,
+  "juridica": 1.0,
+  "fatos_decisivos": 2,
+  "menor_confianca_fato": 0.997,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 99.9 ≥ limiar 85"
+ ],
+ "resumo": "Sérgio Paiva Gomes e Tiago Rolim Vasconcelos podem, em conjunto, assinar a ATPV-e — procuração pública de 18/02/2026 (Tabelionato Jaguaribe – Ofício Único de Notas de Aracati/CE).",
+ "assinantes": [
+  {
+   "informado": "Tiago Rolim Vasconcelos",
+   "cpf": "621.052.185-12",
+   "chave": "62105218512",
+   "nome": "Tiago Rolim Vasconcelos",
+   "criterio": "CPF"
+  },
+  {
+   "informado": "Sérgio Paiva Gomes",
+   "cpf": "291.280.845-60",
+   "chave": "29128084560",
+   "nome": "Sérgio Paiva Gomes",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:39494821483+58983194847",
+   "pessoas": [
+    {
+     "chave": "39494821483",
+     "nome": "Helena Castro Lins"
+    },
+    {
+     "chave": "58983194847",
+     "nome": "Marcelo Augusto Feitosa"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Art. 18",
+   "cadeia": [
+    "ARACATI_ESTATUTO"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  },
+  {
+   "id": "contrato:39494821483+62105218512",
+   "pessoas": [
+    {
+     "chave": "39494821483",
+     "nome": "Helena Castro Lins"
+    },
+    {
+     "chave": "62105218512",
+     "nome": "Tiago Rolim Vasconcelos"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Art. 18",
+   "cadeia": [
+    "ARACATI_ESTATUTO"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  },
+  {
+   "id": "contrato:58983194847+62105218512",
+   "pessoas": [
+    {
+     "chave": "58983194847",
+     "nome": "Marcelo Augusto Feitosa"
+    },
+    {
+     "chave": "62105218512",
+     "nome": "Tiago Rolim Vasconcelos"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Art. 18",
+   "cadeia": [
+    "ARACATI_ESTATUTO"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  },
+  {
+   "id": "POA_SERGIO_SA:29128084560+58983194847",
+   "pessoas": [
+    {
+     "chave": "58983194847",
+     "nome": "Marcelo Augusto Feitosa"
+    },
+    {
+     "chave": "29128084560",
+     "nome": "Sérgio Paiva Gomes"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 18/02/2026 (Tabelionato Jaguaribe – Ofício Único de Notas de Aracati/CE)",
+   "cadeia": [
+    "POA_SERGIO_SA"
+   ],
+   "severidade": "ok",
+   "confianca": 0.997,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PJ",
+     "severidade": "ok",
+     "titulo": "Outorgada pela própria empresa",
+     "detalhe": "A outorgante é a empresa, representada por Helena Castro Lins e Marcelo Augusto Feitosa.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_SERGIO_SA",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "DISTRIBUIDORA ARACATI S.A., sociedade anônima de capital fechado, inscrita no CNPJ sob o nº 74.535.813/0001-12, NIRE 23894229772, com sede nesta cidade de Aracati/CE, neste ato representada, na forma do art. 19 do seu Estatuto Social, por seus Diretores MARCELO AUGUSTO FEITOSA... e HELENA CASTRO LINS...",
+       "clausula": null,
+       "ancoragem": 94.7,
+       "pagina": 1,
+       "inicio": 557,
+       "fim": 861
+      }
+     ],
+     "caminho": "POA_SERGIO_SA"
+    },
+    {
+     "codigo": "OUTORGA_COM_PODERES",
+     "severidade": "ok",
+     "titulo": "Quem outorgou tinha poder",
+     "detalhe": "Em 18/02/2026, Helena Castro Lins e Marcelo Augusto Feitosa podia representar a empresa nesse ato.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_SERGIO_SA",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "DISTRIBUIDORA ARACATI S.A., sociedade anônima de capital fechado, inscrita no CNPJ sob o nº 74.535.813/0001-12, NIRE 23894229772, com sede nesta cidade de Aracati/CE, neste ato representada, na forma do art. 19 do seu Estatuto Social, por seus Diretores MARCELO AUGUSTO FEITOSA... e HELENA CASTRO LINS...",
+       "clausula": null,
+       "ancoragem": 94.7,
+       "pagina": 1,
+       "inicio": 557,
+       "fim": 861
+      },
+      {
+       "doc_id": "ARACATI_ESTATUTO",
+       "doc_titulo": "Estatuto Social (2024)",
+       "trecho": "a) por 2 (dois) Diretores em conjunto; b) por 1 (um) Diretor em conjunto com 1 (um) procurador; ou c) por 1 (um) ou mais procuradores, nos termos do respectivo mandato.",
+       "clausula": "Art. 18",
+       "ancoragem": 100.0,
+       "pagina": 3,
+       "inicio": 5420,
+       "fim": 5588
+      }
+     ],
+     "caminho": "POA_SERGIO_SA"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_SERGIO_SA",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "a quem confere poderes especiais e expressos para, sempre em conjunto com um Diretor da Companhia, vender, ceder e transferir veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionar; assinar a Autorização para Transferência de Propriedade do Veículo em meio digital (ATPV-e); receber o preço e dar quitação; requerer o que for necessário perante o DETRAN; e praticar os demais atos necessários ao fiel cumprimento deste mandato.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1924,
+       "fim": 2384
+      }
+     ],
+     "caminho": "POA_SERGIO_SA"
+    },
+    {
+     "codigo": "PROCURACAO_NO_PRAZO",
+     "severidade": "ok",
+     "titulo": "Dentro do prazo",
+     "detalhe": "Válida até 18/02/2027.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "POA_SERGIO_SA",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data, sendo vedado o substabelecimento.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2385,
+       "fim": 2492
+      }
+     ],
+     "caminho": "POA_SERGIO_SA"
+    }
+   ],
+   "precondicoes": []
+  },
+  {
+   "id": "POA_SERGIO_SA:29128084560+39494821483",
+   "pessoas": [
+    {
+     "chave": "39494821483",
+     "nome": "Helena Castro Lins"
+    },
+    {
+     "chave": "29128084560",
+     "nome": "Sérgio Paiva Gomes"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 18/02/2026 (Tabelionato Jaguaribe – Ofício Único de Notas de Aracati/CE)",
+   "cadeia": [
+    "POA_SERGIO_SA"
+   ],
+   "severidade": "ok",
+   "confianca": 0.997,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PJ",
+     "severidade": "ok",
+     "titulo": "Outorgada pela própria empresa",
+     "detalhe": "A outorgante é a empresa, representada por Helena Castro Lins e Marcelo Augusto Feitosa.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_SERGIO_SA",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "DISTRIBUIDORA ARACATI S.A., sociedade anônima de capital fechado, inscrita no CNPJ sob o nº 74.535.813/0001-12, NIRE 23894229772, com sede nesta cidade de Aracati/CE, neste ato representada, na forma do art. 19 do seu Estatuto Social, por seus Diretores MARCELO AUGUSTO FEITOSA... e HELENA CASTRO LINS...",
+       "clausula": null,
+       "ancoragem": 94.7,
+       "pagina": 1,
+       "inicio": 557,
+       "fim": 861
+      }
+     ],
+     "caminho": "POA_SERGIO_SA"
+    },
+    {
+     "codigo": "OUTORGA_COM_PODERES",
+     "severidade": "ok",
+     "titulo": "Quem outorgou tinha poder",
+     "detalhe": "Em 18/02/2026, Helena Castro Lins e Marcelo Augusto Feitosa podia representar a empresa nesse ato.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_SERGIO_SA",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "DISTRIBUIDORA ARACATI S.A., sociedade anônima de capital fechado, inscrita no CNPJ sob o nº 74.535.813/0001-12, NIRE 23894229772, com sede nesta cidade de Aracati/CE, neste ato representada, na forma do art. 19 do seu Estatuto Social, por seus Diretores MARCELO AUGUSTO FEITOSA... e HELENA CASTRO LINS...",
+       "clausula": null,
+       "ancoragem": 94.7,
+       "pagina": 1,
+       "inicio": 557,
+       "fim": 861
+      },
+      {
+       "doc_id": "ARACATI_ESTATUTO",
+       "doc_titulo": "Estatuto Social (2024)",
+       "trecho": "a) por 2 (dois) Diretores em conjunto; b) por 1 (um) Diretor em conjunto com 1 (um) procurador; ou c) por 1 (um) ou mais procuradores, nos termos do respectivo mandato.",
+       "clausula": "Art. 18",
+       "ancoragem": 100.0,
+       "pagina": 3,
+       "inicio": 5420,
+       "fim": 5588
+      }
+     ],
+     "caminho": "POA_SERGIO_SA"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_SERGIO_SA",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "a quem confere poderes especiais e expressos para, sempre em conjunto com um Diretor da Companhia, vender, ceder e transferir veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionar; assinar a Autorização para Transferência de Propriedade do Veículo em meio digital (ATPV-e); receber o preço e dar quitação; requerer o que for necessário perante o DETRAN; e praticar os demais atos necessários ao fiel cumprimento deste mandato.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1924,
+       "fim": 2384
+      }
+     ],
+     "caminho": "POA_SERGIO_SA"
+    },
+    {
+     "codigo": "PROCURACAO_NO_PRAZO",
+     "severidade": "ok",
+     "titulo": "Dentro do prazo",
+     "detalhe": "Válida até 18/02/2027.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "POA_SERGIO_SA",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data, sendo vedado o substabelecimento.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2385,
+       "fim": 2492
+      }
+     ],
+     "caminho": "POA_SERGIO_SA"
+    }
+   ],
+   "precondicoes": []
+  },
+  {
+   "id": "POA_SERGIO_SA:29128084560+62105218512",
+   "pessoas": [
+    {
+     "chave": "29128084560",
+     "nome": "Sérgio Paiva Gomes"
+    },
+    {
+     "chave": "62105218512",
+     "nome": "Tiago Rolim Vasconcelos"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 18/02/2026 (Tabelionato Jaguaribe – Ofício Único de Notas de Aracati/CE)",
+   "cadeia": [
+    "POA_SERGIO_SA"
+   ],
+   "severidade": "ok",
+   "confianca": 0.997,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PJ",
+     "severidade": "ok",
+     "titulo": "Outorgada pela própria empresa",
+     "detalhe": "A outorgante é a empresa, representada por Helena Castro Lins e Marcelo Augusto Feitosa.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_SERGIO_SA",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "DISTRIBUIDORA ARACATI S.A., sociedade anônima de capital fechado, inscrita no CNPJ sob o nº 74.535.813/0001-12, NIRE 23894229772, com sede nesta cidade de Aracati/CE, neste ato representada, na forma do art. 19 do seu Estatuto Social, por seus Diretores MARCELO AUGUSTO FEITOSA... e HELENA CASTRO LINS...",
+       "clausula": null,
+       "ancoragem": 94.7,
+       "pagina": 1,
+       "inicio": 557,
+       "fim": 861
+      }
+     ],
+     "caminho": "POA_SERGIO_SA"
+    },
+    {
+     "codigo": "OUTORGA_COM_PODERES",
+     "severidade": "ok",
+     "titulo": "Quem outorgou tinha poder",
+     "detalhe": "Em 18/02/2026, Helena Castro Lins e Marcelo Augusto Feitosa podia representar a empresa nesse ato.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_SERGIO_SA",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "DISTRIBUIDORA ARACATI S.A., sociedade anônima de capital fechado, inscrita no CNPJ sob o nº 74.535.813/0001-12, NIRE 23894229772, com sede nesta cidade de Aracati/CE, neste ato representada, na forma do art. 19 do seu Estatuto Social, por seus Diretores MARCELO AUGUSTO FEITOSA... e HELENA CASTRO LINS...",
+       "clausula": null,
+       "ancoragem": 94.7,
+       "pagina": 1,
+       "inicio": 557,
+       "fim": 861
+      },
+      {
+       "doc_id": "ARACATI_ESTATUTO",
+       "doc_titulo": "Estatuto Social (2024)",
+       "trecho": "a) por 2 (dois) Diretores em conjunto; b) por 1 (um) Diretor em conjunto com 1 (um) procurador; ou c) por 1 (um) ou mais procuradores, nos termos do respectivo mandato.",
+       "clausula": "Art. 18",
+       "ancoragem": 100.0,
+       "pagina": 3,
+       "inicio": 5420,
+       "fim": 5588
+      }
+     ],
+     "caminho": "POA_SERGIO_SA"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_SERGIO_SA",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "a quem confere poderes especiais e expressos para, sempre em conjunto com um Diretor da Companhia, vender, ceder e transferir veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionar; assinar a Autorização para Transferência de Propriedade do Veículo em meio digital (ATPV-e); receber o preço e dar quitação; requerer o que for necessário perante o DETRAN; e praticar os demais atos necessários ao fiel cumprimento deste mandato.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1924,
+       "fim": 2384
+      }
+     ],
+     "caminho": "POA_SERGIO_SA"
+    },
+    {
+     "codigo": "PROCURACAO_NO_PRAZO",
+     "severidade": "ok",
+     "titulo": "Dentro do prazo",
+     "detalhe": "Válida até 18/02/2027.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "POA_SERGIO_SA",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data, sendo vedado o substabelecimento.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2385,
+       "fim": 2492
+      }
+     ],
+     "caminho": "POA_SERGIO_SA"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": {
+  "id": "POA_SERGIO_SA:29128084560+62105218512",
+  "pessoas": [
+   {
+    "chave": "29128084560",
+    "nome": "Sérgio Paiva Gomes"
+   },
+   {
+    "chave": "62105218512",
+    "nome": "Tiago Rolim Vasconcelos"
+   }
+  ],
+  "via": "procuracao",
+  "descricao": "Procuração pública de 18/02/2026 (Tabelionato Jaguaribe – Ofício Único de Notas de Aracati/CE)",
+  "cadeia": [
+   "POA_SERGIO_SA"
+  ],
+  "severidade": "ok",
+  "confianca": 0.997,
+  "achados": [
+   {
+    "codigo": "OUTORGANTE_PJ",
+    "severidade": "ok",
+    "titulo": "Outorgada pela própria empresa",
+    "detalhe": "A outorgante é a empresa, representada por Helena Castro Lins e Marcelo Augusto Feitosa.",
+    "fundamento": [
+     "CC art. 1.018"
+    ],
+    "fontes": [
+     {
+      "doc_id": "POA_SERGIO_SA",
+      "doc_titulo": "Procuração (2026)",
+      "trecho": "DISTRIBUIDORA ARACATI S.A., sociedade anônima de capital fechado, inscrita no CNPJ sob o nº 74.535.813/0001-12, NIRE 23894229772, com sede nesta cidade de Aracati/CE, neste ato representada, na forma do art. 19 do seu Estatuto Social, por seus Diretores MARCELO AUGUSTO FEITOSA... e HELENA CASTRO LINS...",
+      "clausula": null,
+      "ancoragem": 94.7,
+      "pagina": 1,
+      "inicio": 557,
+      "fim": 861
+     }
+    ],
+    "caminho": "POA_SERGIO_SA"
+   },
+   {
+    "codigo": "OUTORGA_COM_PODERES",
+    "severidade": "ok",
+    "titulo": "Quem outorgou tinha poder",
+    "detalhe": "Em 18/02/2026, Helena Castro Lins e Marcelo Augusto Feitosa podia representar a empresa nesse ato.",
+    "fundamento": [
+     "CC art. 1.018"
+    ],
+    "fontes": [
+     {
+      "doc_id": "POA_SERGIO_SA",
+      "doc_titulo": "Procuração (2026)",
+      "trecho": "DISTRIBUIDORA ARACATI S.A., sociedade anônima de capital fechado, inscrita no CNPJ sob o nº 74.535.813/0001-12, NIRE 23894229772, com sede nesta cidade de Aracati/CE, neste ato representada, na forma do art. 19 do seu Estatuto Social, por seus Diretores MARCELO AUGUSTO FEITOSA... e HELENA CASTRO LINS...",
+      "clausula": null,
+      "ancoragem": 94.7,
+      "pagina": 1,
+      "inicio": 557,
+      "fim": 861
+     },
+     {
+      "doc_id": "ARACATI_ESTATUTO",
+      "doc_titulo": "Estatuto Social (2024)",
+      "trecho": "a) por 2 (dois) Diretores em conjunto; b) por 1 (um) Diretor em conjunto com 1 (um) procurador; ou c) por 1 (um) ou mais procuradores, nos termos do respectivo mandato.",
+      "clausula": "Art. 18",
+      "ancoragem": 100.0,
+      "pagina": 3,
+      "inicio": 5420,
+      "fim": 5588
+     }
+    ],
+    "caminho": "POA_SERGIO_SA"
+   },
+   {
+    "codigo": "PODERES_ESPECIAIS",
+    "severidade": "ok",
+    "titulo": "Poder expresso para alienar veículos",
+    "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+    "fundamento": [
+     "CC art. 661, §1º"
+    ],
+    "fontes": [
+     {
+      "doc_id": "POA_SERGIO_SA",
+      "doc_titulo": "Procuração (2026)",
+      "trecho": "a quem confere poderes especiais e expressos para, sempre em conjunto com um Diretor da Companhia, vender, ceder e transferir veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionar; assinar a Autorização para Transferência de Propriedade do Veículo em meio digital (ATPV-e); receber o preço e dar quitação; requerer o que for necessário perante o DETRAN; e praticar os demais atos necessários ao fiel cumprimento deste mandato.",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 1924,
+      "fim": 2384
+     }
+    ],
+    "caminho": "POA_SERGIO_SA"
+   },
+   {
+    "codigo": "PROCURACAO_NO_PRAZO",
+    "severidade": "ok",
+    "titulo": "Dentro do prazo",
+    "detalhe": "Válida até 18/02/2027.",
+    "fundamento": [],
+    "fontes": [
+     {
+      "doc_id": "POA_SERGIO_SA",
+      "doc_titulo": "Procuração (2026)",
+      "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data, sendo vedado o substabelecimento.",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 2385,
+      "fim": 2492
+     }
+    ],
+    "caminho": "POA_SERGIO_SA"
+   }
+  ],
+  "precondicoes": []
+ },
+ "faltantes": [],
+ "achados": [
+  {
+   "codigo": "CND_INSS",
+   "severidade": "info",
+   "titulo": "CND previdenciária",
+   "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+   "fundamento": [
+    "Lei 8.212/91, art. 47, I, \"c\""
+   ],
+   "fontes": [],
+   "caminho": null
+  },
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: DISTRIBUIDORA ARACATI S.A..",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "DYW8T81",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "ARACATI_ESTATUTO#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "ARACATI_ESTATUTO",
+    "doc_titulo": "Estatuto Social (2024)",
+    "trecho": "a) por 2 (dois) Diretores em conjunto; b) por 1 (um) Diretor em conjunto com 1 (um) procurador; ou c) por 1 (um) ou mais procuradores, nos termos do respectivo mandato.",
+    "clausula": "Art. 18",
+    "ancoragem": 100.0,
+    "pagina": 3,
+    "inicio": 5420,
+    "fim": 5588
+   },
+   "modo": "misto",
+   "pessoas": [],
+   "cargo": "diretores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "misto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "em conjunto"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "ARACATI_ESTATUTO#R2",
+   "escopo": "outorgar_procuracoes",
+   "aplicavel": false,
+   "motivo": "regula a outorga de procurações (usada para validar procurações)",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "ARACATI_ESTATUTO",
+    "doc_titulo": "Estatuto Social (2024)",
+    "trecho": "As procurações serão outorgadas pela Companhia mediante a assinatura de 2 (dois) Diretores, deverão especificar os poderes conferidos e, com exceção daquelas outorgadas para fins judiciais (ad judicia), terão prazo de validade não superior a 1 (um) ano.",
+    "clausula": "Art. 19",
+    "ancoragem": 100.0,
+    "pagina": 3,
+    "inicio": 5598,
+    "fim": 5851
+   },
+   "modo": "quantidade_minima",
+   "pessoas": [],
+   "cargo": "diretores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "conjunto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "2 (dois) diretores"
+     ]
+    },
+    {
+     "campo": "quantidade_minima",
+     "valor_llm": "conjunto/2",
+     "valor_lexico": "quantidade_minima/2",
+     "divergiu": false,
+     "corrigido_para": "quantidade_minima/2",
+     "expressoes": []
+    }
+   ],
+   "decisiva": false
+  },
+  {
+   "regra": "ARACATI_ESTATUTO#R3",
+   "escopo": "alienacao_ativo_imobilizado",
+   "aplicavel": false,
+   "motivo": "valor R$ 230.000,00 não cruza o limite de R$ 1.000.000,00",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "ARACATI_ESTATUTO",
+    "doc_titulo": "Estatuto Social (2024)",
+    "trecho": "somente dependerá de prévia autorização do Conselho de Administração a alienação de bens do ativo não circulante de valor superior a R$ 1.000.000,00 (um milhão de reais), por operação.",
+    "clausula": "Art. 20",
+    "ancoragem": 100.0,
+    "pagina": 3,
+    "inicio": 5922,
+    "fim": 6106
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": "administradores",
+   "valor_acima_de": 1000000.0,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "ARACATI_ESTATUTO#R4",
+   "escopo": "obrigacoes_garantias",
+   "aplicavel": false,
+   "motivo": "trata de avais, fianças e garantias",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "ARACATI_ESTATUTO",
+    "doc_titulo": "Estatuto Social (2024)",
+    "trecho": "São expressamente vedados, sendo nulos e ineficazes em relação à Companhia, os atos de qualquer Diretor, procurador ou empregado que a envolverem em obrigações relativas a negócios ou operações estranhos ao objeto social, tais como fianças, avais, endossos ou quaisquer garantias em favor de terceiros.",
+    "clausula": "Art. 21",
+    "ancoragem": 100.0,
+    "pagina": 3,
+    "inicio": 6116,
+    "fim": 6418
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": "diretores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-09-23",
+  "atos": [
+   {
+    "doc": "ARACATI_ESTATUTO",
+    "titulo": "Estatuto Social (2024)",
+    "efeito": "2024-04-25"
+   },
+   {
+    "doc": "ARACATI_RCA",
+    "titulo": "Ata do Conselho de Administração (2025)",
+    "efeito": "2025-05-02"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "58983194847",
+    "nome": "Marcelo Augusto Feitosa",
+    "cargo": "Diretor-Presidente",
+    "doc": "ARACATI_RCA"
+   },
+   {
+    "chave": "39494821483",
+    "nome": "Helena Castro Lins",
+    "cargo": "Diretora Financeira",
+    "doc": "ARACATI_RCA"
+   },
+   {
+    "chave": "62105218512",
+    "nome": "Tiago Rolim Vasconcelos",
+    "cargo": "Diretor Comercial",
+    "doc": "ARACATI_RCA"
+   }
+  ],
+  "encerrados": [],
+  "socios": []
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "DISTRIBUIDORA ARACATI S.A.",
+    "sub": "74.535.813/0001-12"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "TOYOTA/HILUX CD SRV 4X4 2.8",
+    "sub": "DYW8T81"
+   },
+   {
+    "id": "58983194847",
+    "tipo": "pessoa",
+    "rotulo": "Marcelo Augusto Feitosa",
+    "papeis": [
+     "Diretor-Presidente"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "39494821483",
+    "tipo": "pessoa",
+    "rotulo": "Helena Castro Lins",
+    "papeis": [
+     "Diretora Financeira"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "62105218512",
+    "tipo": "pessoa",
+    "rotulo": "Tiago Rolim Vasconcelos",
+    "papeis": [
+     "Diretor Comercial"
+    ],
+    "assinante": true
+   },
+   {
+    "id": "29128084560",
+    "tipo": "pessoa",
+    "rotulo": "Sérgio Paiva Gomes",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "58983194847",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "ARACATI_RCA"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "39494821483",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "ARACATI_RCA"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "62105218512",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "ARACATI_RCA"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "29128084560",
+    "tipo": "procuracao",
+    "status": "valido",
+    "doc": "POA_SERGIO_SA",
+    "rotulo": "procuração 18/02/2026",
+    "motivo": null
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2024-04-25",
+   "tipo": "ato",
+   "titulo": "Estatuto Social (2024)",
+   "doc": "ARACATI_ESTATUTO",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2025-05-02",
+   "tipo": "ato",
+   "titulo": "Ata do Conselho de Administração (2025)",
+   "doc": "ARACATI_RCA",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-02-18",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Sérgio Paiva Gomes",
+   "doc": "POA_SERGIO_SA",
+   "detalhe": "publica"
+  },
+  {
+   "data": "2026-09-23",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 230.000,00"
+  },
+  {
+   "data": "2027-02-18",
+   "tipo": "vencimento",
+   "titulo": "Vence a procuração de Sérgio Paiva Gomes",
+   "doc": "POA_SERGIO_SA",
+   "detalhe": ""
+  },
+  {
+   "data": "2027-05-02",
+   "tipo": "fim_mandato",
+   "titulo": "Fim do mandato de Marcelo Augusto Feitosa",
+   "doc": "ARACATI_RCA",
+   "detalhe": "com mandato de 2 (dois) anos a contar desta data, que se estenderá até a posse dos Diretores que forem eleitos na reunião do Conselho de Administração que eleger a nova Diretoria em 2027"
+  },
+  {
+   "data": "2027-05-02",
+   "tipo": "fim_mandato",
+   "titulo": "Fim do mandato de Helena Castro Lins",
+   "doc": "ARACATI_RCA",
+   "detalhe": "com mandato de 2 (dois) anos a contar desta data, que se estenderá até a posse dos Diretores que forem eleitos na reunião do Conselho de Administração que eleger a nova Diretoria em 2027"
+  },
+  {
+   "data": "2027-05-02",
+   "tipo": "fim_mandato",
+   "titulo": "Fim do mandato de Tiago Rolim Vasconcelos",
+   "doc": "ARACATI_RCA",
+   "detalhe": "com mandato de 2 (dois) anos a contar desta data, que se estenderá até a posse dos Diretores que forem eleitos na reunião do Conselho de Administração que eleger a nova Diretoria em 2027"
+  }
+ ],
+ "pessoas": {
+  "N:AFONSO HENRIQUE FEITOSA": {
+   "nome": "Afonso Henrique Feitosa",
+   "cpf": null
+  },
+  "N:CELINA MARIA LINS": {
+   "nome": "Celina Maria Lins",
+   "cpf": null
+  },
+  "N:OTAVIO ROLIM NETO": {
+   "nome": "Otávio Rolim Neto",
+   "cpf": null
+  },
+  "58983194847": {
+   "nome": "Marcelo Augusto Feitosa",
+   "cpf": "58983194847"
+  },
+  "39494821483": {
+   "nome": "Helena Castro Lins",
+   "cpf": "39494821483"
+  },
+  "62105218512": {
+   "nome": "Tiago Rolim Vasconcelos",
+   "cpf": "62105218512"
+  },
+  "29128084560": {
+   "nome": "Sérgio Paiva Gomes",
+   "cpf": "29128084560"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "comprovada",
+  "outorgante": {
+   "nome": "DISTRIBUIDORA ARACATI S.A.",
+   "cnpj": "74.535.813/0001-12",
+   "tipo": "SA",
+   "atos_vigentes": [
+    {
+     "titulo": "Estatuto Social (2024)",
+     "doc": "ARACATI_ESTATUTO",
+     "efeito": "2024-04-25"
+    },
+    {
+     "titulo": "Ata do Conselho de Administração (2025)",
+     "doc": "ARACATI_RCA",
+     "efeito": "2025-05-02"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Tiago Rolim Vasconcelos",
+    "cpf": "621.052.185-12",
+    "identificacao": "CPF",
+    "qualidade": "Diretor Comercial"
+   },
+   {
+    "nome": "Sérgio Paiva Gomes",
+    "cpf": "291.280.845-60",
+    "identificacao": "CPF",
+    "qualidade": "procurador(a)"
+   }
+  ],
+  "poderes_conferidos": [
+   "Procuração pública de 18/02/2026 (Tabelionato Jaguaribe – Ofício Único de Notas de Aracati/CE, livro 41, folhas 090/091), outorgada por DISTRIBUIDORA ARACATI S.A. (repr. Helena Castro Lins e Marcelo Augusto Feitosa): poderes especiais e expressos para vender veículos e assinar a ATPV/ATPV-e; somente em conjunto com diretor"
+  ],
+  "prazo_validade": [
+   "Procuração pública válida até 18/02/2027"
+  ],
+  "revogacao": [
+   "Nenhuma revogação nos documentos apresentados; a revogação fica anotada na serventia de origem — confirmar com certidão atualizada do cartório."
+  ],
+  "fontes": [
+   {
+    "doc_id": "POA_SERGIO_SA",
+    "doc_titulo": "Procuração (2026)",
+    "trecho": "a quem confere poderes especiais e expressos para, sempre em conjunto com um Diretor da Companhia, vender, ceder e transferir veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionar; assinar a Autorização para Transferência de Propriedade do Veículo em meio digital (ATPV-e); receber o preço e dar quitação; requerer o que for necessário perante o DETRAN; e praticar os demais atos necessários ao fiel cumprimento deste mandato.",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 1924,
+    "fim": 2384
+   },
+   {
+    "doc_id": "POA_SERGIO_SA",
+    "doc_titulo": "Procuração (2026)",
+    "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data, sendo vedado o substabelecimento.",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 2385,
+    "fim": 2492
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "ARACATI_ESTATUTO",
+    "titulo": "Estatuto Social (2024)",
+    "arquivo": "ARACATI_ESTATUTO.pdf"
+   },
+   {
+    "id": "ARACATI_RCA",
+    "titulo": "Ata do Conselho de Administração (2025)",
+    "arquivo": "ARACATI_RCA.pdf"
+   },
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "POA_SERGIO_SA",
+    "titulo": "Procuração (2026)",
+    "arquivo": "POA_SERGIO_SA.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "ARACATI_ESTATUTO",
+   "nome": "ARACATI_ESTATUTO.pdf",
+   "tipo": "estatuto_social",
+   "titulo": "Estatuto Social (2024)",
+   "data": "2024-04-25",
+   "paginas": [
+    "DISTRIBUIDORA ARACATI S.A.\nCNPJ nº 74.535.813/0001-12 – NIRE 23894229772\nCompanhia Fechada\nESTATUTO SOCIAL CONSOLIDADO\n(aprovado pela Assembleia Geral Extraordinária realizada em 25 de abril de 2024)\nCAPÍTULO I – DA DENOMINAÇÃO, SEDE, OBJETO E DURAÇÃO\nArt. 1º A DISTRIBUIDORA ARACATI S.A. (\"Companhia\") é uma sociedade anônima de capital\nfechado, regida pelo presente Estatuto Social e pelas disposições legais aplicáveis, em especial pela\nLei nº 6.404, de 15 de dezembro de 1976.\nArt. 2º A Companhia tem sede e foro na cidade de Aracati, Estado do Ceará, na Rodovia BR-304,\nKm 46, Galpão 2, Distrito Industrial, CEP 62800-000, podendo, por deliberação da Diretoria, abrir,\ntransferir e encerrar filiais, depósitos e escritórios em qualquer parte do território nacional.\nArt. 3º A Companhia tem por objeto o comércio atacadista e a distribuição de bebidas.\nArt. 4º O prazo de duração da Companhia é indeterminado.\nCAPÍTULO II – DO CAPITAL SOCIAL E DAS AÇÕES\nArt. 5º O capital social, totalmente subscrito e integralizado, é de R$ 5.000.000,00 (cinco milhões de\nreais), dividido em 5.000.000 (cinco milhões) de ações ordinárias nominativas, sem valor nominal.\nArt. 6º Cada ação ordinária confere a seu titular o direito a um voto nas deliberações da Assembleia\nGeral.\nArt. 7º A propriedade das ações será comprovada pela inscrição do nome do acionista no Livro de\nRegistro de Ações Nominativas, e a sua transferência operar-se-á por termo lavrado no Livro de\nTransferência de Ações Nominativas, datado e assinado pelo cedente e pelo cessionário.\nArt. 8º Os acionistas terão direito de preferência na subscrição de aumentos de capital, na proporção\nde suas participações, no prazo de 30 (trinta) dias contados da publicação da respectiva deliberação.\nCAPÍTULO III – DA ASSEMBLEIA GERAL\nArt. 9º A Assembleia Geral reunir-se-á, ordinariamente, nos 4 (quatro) primeiros meses seguintes ao\ntérmino do exercício social, para os fins previstos no art. 132 da Lei nº 6.404/1976, e,\nextraordinariamente, sempre que os interesses sociais o exigirem.\nArt. 10. A Assembleia Geral será convocada pelo Presidente do Conselho de Administração ou na\nforma da lei, e será instalada e presidida pelo Presidente do Conselho de Administração ou, na sua\nausência, por acionista escolhido pelos presentes, que convidará um dos presentes para secretariar os\ntrabalhos.\nArt. 11. Compete à Assembleia Geral, além das atribuições previstas em lei, eleger e destituir os\nmembros do Conselho de Administração, designar o seu Presidente e fixar a remuneração global dos\nadministradores.\nCAPÍTULO IV – DA ADMINISTRAÇÃO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/4",
+    "Seção I – Disposições Gerais\nArt. 12. A Companhia será administrada por um Conselho de Administração e por uma Diretoria, na\nforma da lei e deste Estatuto.\nArt. 13. Os administradores serão investidos em seus cargos mediante assinatura de termo de posse\nlavrado no livro próprio, dispensada a prestação de garantia de gestão, e o prazo de gestão estenderse-á até a investidura dos novos administradores eleitos.\nSeção II – Do Conselho de Administração\nArt. 14. O Conselho de Administração será composto por 3 (três) membros, acionistas ou não,\neleitos e destituíveis a qualquer tempo pela Assembleia Geral, com mandato unificado de 2 (dois)\nanos, permitida a reeleição.\nArt. 15. O Conselho de Administração reunir-se-á, ordinariamente, uma vez a cada trimestre e,\nextraordinariamente, sempre que convocado por seu Presidente, instalando-se com a presença da\nmaioria de seus membros e deliberando pelo voto da maioria dos presentes. Das reuniões serão\nlavradas atas no livro próprio.\nArt. 16. Compete ao Conselho de Administração:\nI – fixar a orientação geral dos negócios da Companhia;\nII – eleger e destituir os Diretores da Companhia e fixar-lhes as atribuições, observado o disposto\nneste Estatuto;\nIII – fiscalizar a gestão dos Diretores, examinar, a qualquer tempo, os livros e papéis da Companhia\ne solicitar informações sobre contratos celebrados ou em vias de celebração;\nIV – manifestar-se sobre o relatório da administração e as contas da Diretoria;\nV – escolher e destituir os auditores independentes, se houver;\nVI – deliberar sobre a matéria prevista no art. 20 deste Estatuto.\nSeção III – Da Diretoria\nArt. 17. A Diretoria será composta por 3 (três) Diretores, acionistas ou não, residentes no País, sendo\num Diretor-Presidente, um Diretor Financeiro e um Diretor Comercial, eleitos e destituíveis a\nqualquer tempo pelo Conselho de Administração, para mandato de 2 (dois) anos, permitida a\nreeleição.\n§ 1º Compete à Diretoria a administração dos negócios sociais e a prática de todos os atos\nnecessários ao funcionamento regular da Companhia, ressalvadas as matérias de competência\nprivativa da Assembleia Geral e do Conselho de Administração.\n§ 2º Compete ao Diretor-Presidente coordenar as atividades da Diretoria e convocar e presidir as\nsuas reuniões; ao Diretor Financeiro, a gestão financeira, contábil e tributária da Companhia; e ao\nDiretor Comercial, a gestão das vendas, da logística de distribuição e da frota.\n§ 3º Em caso de vacância de cargo de Diretor, o Conselho de Administração elegerá o substituto, que\ncompletará o mandato do substituído.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/4",
+    "Art. 18. A Companhia será representada, ativa e passivamente, em juízo ou fora dele, e obrigar-se-á\nperante terceiros:\na) por 2 (dois) Diretores em conjunto;\nb) por 1 (um) Diretor em conjunto com 1 (um) procurador; ou\nc) por 1 (um) ou mais procuradores, nos termos do respectivo mandato.\nArt. 19. As procurações serão outorgadas pela Companhia mediante a assinatura de 2 (dois)\nDiretores, deverão especificar os poderes conferidos e, com exceção daquelas outorgadas para fins\njudiciais (ad judicia), terão prazo de validade não superior a 1 (um) ano.\nArt. 20. Para os fins do art. 142, inciso VIII, da Lei nº 6.404/1976, somente dependerá de prévia\nautorização do Conselho de Administração a alienação de bens do ativo não circulante de valor\nsuperior a R$ 1.000.000,00 (um milhão de reais), por operação.\nArt. 21. São expressamente vedados, sendo nulos e ineficazes em relação à Companhia, os atos de\nqualquer Diretor, procurador ou empregado que a envolverem em obrigações relativas a negócios ou\noperações estranhos ao objeto social, tais como fianças, avais, endossos ou quaisquer garantias em\nfavor de terceiros.\nCAPÍTULO V – DO CONSELHO FISCAL\nArt. 22. O Conselho Fiscal, de funcionamento não permanente, será composto por 3 (três) membros\nefetivos e igual número de suplentes, acionistas ou não, e somente será instalado pela Assembleia\nGeral a pedido de acionistas, nos casos previstos em lei.\nCAPÍTULO VI – DO EXERCÍCIO SOCIAL E DA DESTINAÇÃO DOS LUCROS\nArt. 23. O exercício social terá início em 1º de janeiro e término em 31 de dezembro de cada ano,\nocasião em que serão elaboradas as demonstrações financeiras previstas em lei.\nArt. 24. Do lucro líquido do exercício, 5% (cinco por cento) serão aplicados na constituição da\nreserva legal, que não excederá 20% (vinte por cento) do capital social, e 25% (vinte e cinco por\ncento) do lucro líquido ajustado serão distribuídos aos acionistas como dividendo mínimo\nobrigatório, nos termos do art. 202 da Lei nº 6.404/1976. O saldo terá a destinação que lhe for dada\npela Assembleia Geral, observada a legislação aplicável.\nArt. 25. A Companhia poderá levantar balanços semestrais ou em períodos menores e, por\ndeliberação do Conselho de Administração, declarar dividendos intermediários à conta de lucros\napurados nesses balanços ou de reservas de lucros existentes.\nCAPÍTULO VII – DA LIQUIDAÇÃO\nArt. 26. A Companhia entrará em liquidação nos casos previstos em lei, competindo à Assembleia\nGeral determinar o modo de liquidação, eleger o liquidante e instalar o Conselho Fiscal que deverá\nfuncionar durante o período de liquidação.\nCAPÍTULO VIII – DAS DISPOSIÇÕES GERAIS\nArt. 27. Os casos omissos neste Estatuto serão regulados pela Lei nº 6.404/1976 e pela legislação\naplicável.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/4",
+    "Art. 28. Fica eleito o foro da Comarca de Aracati/CE para dirimir quaisquer questões oriundas deste\nEstatuto, com renúncia a qualquer outro, por mais privilegiado que seja.\nAracati/CE, 25 de abril de 2024.\nMesa:\nMARCELO AUGUSTO FEITOSA – Presidente da Assembleia\nHELENA CASTRO LINS – Secretária\nVisto: Paulo Roberto Mendonça – OAB/CE nº 11.208\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 08/05/2024 sob o nº 48024523274\nProtocolo: 24/155.690-7 | NIRE: 23894229772\nEmpresa: DISTRIBUIDORA ARACATI S.A. | CNPJ: 74.535.813/0001-12\nAutenticação: 9E1F6A3C08D24B75C3A9E41D\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 4/4"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "1ecc309e3c077552ee5a0ff69f0533c2641f252158822dd0563be00f23eb4467",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 21.9,
+      "tokens_saida": 299,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 59.4,
+      "tokens_saida": 1286,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "ARACATI_RCA",
+   "nome": "ARACATI_RCA.pdf",
+   "tipo": "ata_conselho",
+   "titulo": "Ata do Conselho de Administração (2025)",
+   "data": "2025-05-02",
+   "paginas": [
+    "DISTRIBUIDORA ARACATI S.A.\nCNPJ nº 74.535.813/0001-12 – NIRE 23894229772\nCompanhia Fechada\nATA DA REUNIÃO DO CONSELHO DE ADMINISTRAÇÃO REALIZADA EM 2 DE MAIO\nDE 2025\n1. DATA, HORA E LOCAL: Aos 2 (dois) dias do mês de maio de 2025, às 10h00, na sede social\nda Companhia, situada na Rodovia BR-304, Km 46, Galpão 2, Distrito Industrial, Aracati/CE, CEP\n62800-000.\n2. CONVOCAÇÃO E PRESENÇA: Dispensada a convocação, em razão da presença da totalidade\ndos membros do Conselho de Administração, a saber: Afonso Henrique Feitosa (Presidente do\nConselho), Celina Maria Lins e Otávio Rolim Neto.\n3. MESA: Presidente: Afonso Henrique Feitosa. Secretária: Celina Maria Lins.\n4. ORDEM DO DIA: Eleição dos membros da Diretoria da Companhia, nos termos do art. 16,\ninciso II, e do art. 17 do Estatuto Social.\n5. DELIBERAÇÕES: Instalada a reunião e após exame e discussão da matéria constante da ordem\ndo dia, os conselheiros, por unanimidade de votos e sem quaisquer ressalvas, deliberaram eleger,\ncom mandato de 2 (dois) anos a contar desta data, que se estenderá até a posse dos Diretores que\nforem eleitos na reunião do Conselho de Administração que eleger a nova Diretoria em 2027, os\nseguintes membros da Diretoria:\n(i) para o cargo de Diretor-Presidente, MARCELO AUGUSTO FEITOSA, brasileiro, casado,\nadministrador de empresas, portador da carteira de identidade nº 77241241 SSP/CE, inscrito no CPF\nsob o nº 589.831.948-47, residente e domiciliado na Rua Coronel Alexanzito, nº 600, bairro Centro,\nAracati/CE, CEP 62800-000;\n(ii) para o cargo de Diretora Financeira, HELENA CASTRO LINS, brasileira, casada, economista,\nportadora da carteira de identidade nº 13942714 SSP/CE, inscrita no CPF sob o nº 394.948.214-83,\nresidente e domiciliada na Avenida Beira Mar, nº 2.900, apartamento 1.502, bairro Meireles,\nFortaleza/CE, CEP 60165-121; e\n(iii) para o cargo de Diretor Comercial, TIAGO ROLIM VASCONCELOS, brasileiro, solteiro,\nadministrador de empresas, portador da carteira de identidade nº 38149597 SSP/CE, inscrito no CPF\nsob o nº 621.052.185-12, residente e domiciliado na Rua Santos Dumont, nº 77, bairro Centro,\nAracati/CE, CEP 62800-000.\n5.1. Os Diretores ora eleitos tomam posse nesta data, mediante a assinatura dos respectivos termos\nde posse lavrados no Livro de Atas das Reuniões da Diretoria, e declaram, sob as penas da lei, que\nnão estão impedidos de exercer a administração da Companhia por lei especial, ou em virtude de\ncondenação criminal, ou por se encontrarem sob os efeitos dela, a pena que vede, ainda que\ntemporariamente, o acesso a cargos públicos; ou por crime falimentar, de prevaricação, peita ou\nsuborno, concussão, peculato, contra a economia popular, a fé pública ou a propriedade, nos termos\ndo art. 147 da Lei nº 6.404/1976.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "5.2. A representação da Companhia observará o disposto no art. 18 do Estatuto Social.\n5.3. Autorizar a Diretoria a promover o arquivamento da presente ata na Junta Comercial do Estado\ndo Ceará e as demais providências decorrentes das deliberações aqui tomadas.\n6. ENCERRAMENTO: Nada mais havendo a tratar, foi encerrada a reunião, da qual se lavrou a\npresente ata, que, lida e achada conforme, foi aprovada e assinada por todos os conselheiros\npresentes e pelos Diretores eleitos, em sinal de ciência e aceite.\nAracati/CE, 2 de maio de 2025.\nConselheiros:\nAFONSO HENRIQUE FEITOSA – Presidente da Mesa e do Conselho\nCELINA MARIA LINS – Secretária\nOTÁVIO ROLIM NETO – Conselheiro\nDiretores eleitos (ciência e aceite):\nMARCELO AUGUSTO FEITOSA – Diretor-Presidente\nHELENA CASTRO LINS – Diretora Financeira\nTIAGO ROLIM VASCONCELOS – Diretor Comercial\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 15/05/2025 sob o nº 85932944380\nProtocolo: 25/170.442-8 | NIRE: 23894229772\nEmpresa: DISTRIBUIDORA ARACATI S.A. | CNPJ: 74.535.813/0001-12\nAutenticação: C7B20E5A9F14D86E2B0A73F5\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "5efa457332626f548b01000eccf30ac341a201936515cf26de5bd7c073a3943b",
+   "leitura": {
+    "tarefas": {
+     "ata": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 57.9,
+      "tokens_saida": 1162,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n09042163114\nPLACA\nDYW8T81\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2022\nANO MODELO\n2022\nNÚMERO DO CRV\n158101335516\nCÓDIGO DE SEGURANÇA DO CLA\n26431135258\nMARCA / MODELO / VERSÃO\nTOYOTA/HILUX CD SRV 4X4 2.8\nESPÉCIE / TIPO\nCARGA/CAMINHONETE\nCHASSI\n9BRGE1CJ5BV305ND3\nCOR PREDOMINANTE\nBRANCA\nCOMBUSTÍVEL\nDIESEL\nNOME\nDISTRIBUIDORA ARACATI S.A.\nCPF / CNPJ\n74.535.813/0001-12\nLOCAL\nARACATI/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "550b29c2215a895407bdc5295fda3c8e8bf788bb5b258846c18328dc98760934",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "POA_SERGIO_SA",
+   "nome": "POA_SERGIO_SA.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (2026)",
+   "data": "2026-02-18",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ – COMARCA DE ARACATI\nTabelionato Jaguaribe – Ofício Único de Notas de Aracati/CE (fictício)\nOtacílio Freire Barbosa – Tabelião\nLIVRO 41 — FOLHAS 090/091\nPROCURAÇÃO QUE FAZ DISTRIBUIDORA ARACATI S.A. A SÉRGIO PAIVA GOMES\nSAIBAM quantos este público instrumento de procuração virem que, aos dezoito (18) dias do mês\nde fevereiro de dois mil e vinte e seis (2026), nesta cidade de Aracati, Estado do Ceará, neste\nTabelionato, perante mim, Aline Façanha Moreira, Escrevente Autorizada, compareceu como\nOUTORGANTE: DISTRIBUIDORA ARACATI S.A., sociedade anônima de capital fechado,\ninscrita no CNPJ sob o nº 74.535.813/0001-12, NIRE 23894229772, com sede nesta cidade de\nAracati/CE, neste ato representada, na forma do art. 19 do seu Estatuto Social, por seus Diretores\nMARCELO AUGUSTO FEITOSA, brasileiro, casado, administrador de empresas, RG nº 77241241\nSSP/CE, CPF nº 589.831.948-47, residente e domiciliado em Aracati/CE, Diretor-Presidente, e\nHELENA CASTRO LINS, brasileira, casada, economista, RG nº 13942714 SSP/CE, CPF nº\n394.948.214-83, residente e domiciliada em Fortaleza/CE, Diretora Financeira, eleitos na Reunião\ndo Conselho de Administração realizada em 02/05/2025, cuja ata foi registrada na JUCEC em\n15/05/2025 sob o nº 85932944380, para mandato de 2 (dois) anos, conforme o Estatuto Social\nconsolidado aprovado na Assembleia Geral Extraordinária de 25/04/2024 e registrado na JUCEC em\n08/05/2024 sob o nº 48024523274, documentos cujas cópias ficam arquivadas nestas notas.\nReconhecidos como os próprios por mim, à vista dos documentos apresentados, do que dou fé.\nPela outorgante, assim representada, foi dito que, por este instrumento, nomeia e constitui seu\nbastante procurador SÉRGIO PAIVA GOMES, brasileiro, casado, gerente de frota, RG nº 85960701\nSSP/CE, CPF nº 291.280.845-60, residente e domiciliado na Rua Paulino Nogueira, nº 315, Benfica,\nFortaleza/CE, a quem confere poderes especiais e expressos para, sempre em conjunto com um\nDiretor da Companhia, vender, ceder e transferir veículos automotores de propriedade da outorgante,\na quem e pelo preço que convencionar; assinar a Autorização para Transferência de Propriedade do\nVeículo em meio digital (ATPV-e); receber o preço e dar quitação; requerer o que for necessário\nperante o DETRAN; e praticar os demais atos necessários ao fiel cumprimento deste mandato.\nO presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data, sendo vedado o\nsubstabelecimento.\nAssim o disseram, do que dou fé, e me pediram que lavrasse este instrumento, que, lido em voz alta\ne achado conforme, aceitam e assinam. Eu, Aline Façanha Moreira, Escrevente Autorizada, a lavrei.\nEu, Otacílio Freire Barbosa, Tabelião, subscrevo e assino.\n(aa) MARCELO AUGUSTO FEITOSA – HELENA CASTRO LINS – pela outorgante.\nOTACÍLIO FREIRE BARBOSA, Tabelião.\nEmolumentos: R$ 219,80 · Taxa de fiscalização: R$ 10,99 · Total: R$ 230,79\nSelo Digital: JGB-0041-2026-9D5A62\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "TRASLADO — Conferido com o original, a que me reporto e dou fé.\nAracati/CE, 18 de fevereiro de 2026.\nOtacílio Freire Barbosa – Tabelião\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "4f24acb05a5b897e04cdfb94ce6ab299cd4f4e17e519255704a80f0e0d59901b",
+   "leitura": {
+    "tarefas": {
+     "procuracao": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 45.9,
+      "tokens_saida": 831,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "llamacpp",
+  "modelo": "qwen3.8-27b",
+  "politica": "Código Civil (genérica)"
+ },
+ "lado": "vendedor",
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T10:07:36",
+   "pedido": {
+    "veiculo": {
+     "descricao": "TOYOTA/HILUX CD SRV 4X4 2.8",
+     "placa": "DYW8T81",
+     "renavam": "09042163114",
+     "chassi": "9BRGE1CJ5BV305ND3"
+    },
+    "data_venda": "2026-09-23",
+    "valor": 230000.0,
+    "assinantes": [
+     {
+      "nome": "Tiago Rolim Vasconcelos",
+      "cpf": "621.052.185-12"
+     },
+     {
+      "nome": "Sérgio Paiva Gomes",
+      "cpf": "291.280.845-60"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "Auto Center Litoral Ltda.",
+    "vendedor_cnpj": "74.535.813/0001-12",
+    "lado": "vendedor"
+   },
+   "empresa": {
+    "razao_social": "DISTRIBUIDORA ARACATI S.A.",
+    "cnpj": "74.535.813/0001-12",
+    "tipo": "SA",
+    "objeto": "comércio atacadista e a distribuição de bebidas",
+    "comercializa_veiculos": false,
+    "subtipo": null
+   },
+   "veredito": "PODE",
+   "faixa": "VERDE",
+   "indice": 99.9,
+   "confianca": 0.998,
+   "componentes": {
+    "leitura": 0.998,
+    "juridica": 1.0,
+    "fatos_decisivos": 2,
+    "menor_confianca_fato": 0.997,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 99.9 ≥ limiar 85"
+   ],
+   "resumo": "Sérgio Paiva Gomes e Tiago Rolim Vasconcelos podem, em conjunto, assinar a ATPV-e — procuração pública de 18/02/2026 (Tabelionato Jaguaribe – Ofício Único de Notas de Aracati/CE).",
+   "assinantes": [
+    {
+     "informado": "Tiago Rolim Vasconcelos",
+     "cpf": "621.052.185-12",
+     "chave": "62105218512",
+     "nome": "Tiago Rolim Vasconcelos",
+     "criterio": "CPF"
+    },
+    {
+     "informado": "Sérgio Paiva Gomes",
+     "cpf": "291.280.845-60",
+     "chave": "29128084560",
+     "nome": "Sérgio Paiva Gomes",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:39494821483+58983194847",
+     "pessoas": [
+      {
+       "chave": "39494821483",
+       "nome": "Helena Castro Lins"
+      },
+      {
+       "chave": "58983194847",
+       "nome": "Marcelo Augusto Feitosa"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "regra geral de representação — Art. 18",
+     "cadeia": [
+      "ARACATI_ESTATUTO"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    },
+    {
+     "id": "contrato:39494821483+62105218512",
+     "pessoas": [
+      {
+       "chave": "39494821483",
+       "nome": "Helena Castro Lins"
+      },
+      {
+       "chave": "62105218512",
+       "nome": "Tiago Rolim Vasconcelos"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "regra geral de representação — Art. 18",
+     "cadeia": [
+      "ARACATI_ESTATUTO"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    },
+    {
+     "id": "contrato:58983194847+62105218512",
+     "pessoas": [
+      {
+       "chave": "58983194847",
+       "nome": "Marcelo Augusto Feitosa"
+      },
+      {
+       "chave": "62105218512",
+       "nome": "Tiago Rolim Vasconcelos"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "regra geral de representação — Art. 18",
+     "cadeia": [
+      "ARACATI_ESTATUTO"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    },
+    {
+     "id": "POA_SERGIO_SA:29128084560+58983194847",
+     "pessoas": [
+      {
+       "chave": "58983194847",
+       "nome": "Marcelo Augusto Feitosa"
+      },
+      {
+       "chave": "29128084560",
+       "nome": "Sérgio Paiva Gomes"
+      }
+     ],
+     "via": "procuracao",
+     "descricao": "Procuração pública de 18/02/2026 (Tabelionato Jaguaribe – Ofício Único de Notas de Aracati/CE)",
+     "cadeia": [
+      "POA_SERGIO_SA"
+     ],
+     "severidade": "ok",
+     "confianca": 0.997,
+     "achados": [
+      {
+       "codigo": "OUTORGANTE_PJ",
+       "severidade": "ok",
+       "titulo": "Outorgada pela própria empresa",
+       "detalhe": "A outorgante é a empresa, representada por Helena Castro Lins e Marcelo Augusto Feitosa.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_SERGIO_SA",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "DISTRIBUIDORA ARACATI S.A., sociedade anônima de capital fechado, inscrita no CNPJ sob o nº 74.535.813/0001-12, NIRE 23894229772, com sede nesta cidade de Aracati/CE, neste ato representada, na forma do art. 19 do seu Estatuto Social, por seus Diretores MARCELO AUGUSTO FEITOSA... e HELENA CASTRO LINS...",
+         "clausula": null,
+         "ancoragem": 94.7,
+         "pagina": 1,
+         "inicio": 557,
+         "fim": 861
+        }
+       ],
+       "caminho": "POA_SERGIO_SA"
+      },
+      {
+       "codigo": "OUTORGA_COM_PODERES",
+       "severidade": "ok",
+       "titulo": "Quem outorgou tinha poder",
+       "detalhe": "Em 18/02/2026, Helena Castro Lins e Marcelo Augusto Feitosa podia representar a empresa nesse ato.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_SERGIO_SA",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "DISTRIBUIDORA ARACATI S.A., sociedade anônima de capital fechado, inscrita no CNPJ sob o nº 74.535.813/0001-12, NIRE 23894229772, com sede nesta cidade de Aracati/CE, neste ato representada, na forma do art. 19 do seu Estatuto Social, por seus Diretores MARCELO AUGUSTO FEITOSA... e HELENA CASTRO LINS...",
+         "clausula": null,
+         "ancoragem": 94.7,
+         "pagina": 1,
+         "inicio": 557,
+         "fim": 861
+        },
+        {
+         "doc_id": "ARACATI_ESTATUTO",
+         "doc_titulo": "Estatuto Social (2024)",
+         "trecho": "a) por 2 (dois) Diretores em conjunto; b) por 1 (um) Diretor em conjunto com 1 (um) procurador; ou c) por 1 (um) ou mais procuradores, nos termos do respectivo mandato.",
+         "clausula": "Art. 18",
+         "ancoragem": 100.0,
+         "pagina": 3,
+         "inicio": 5420,
+         "fim": 5588
+        }
+       ],
+       "caminho": "POA_SERGIO_SA"
+      },
+      {
+       "codigo": "PODERES_ESPECIAIS",
+       "severidade": "ok",
+       "titulo": "Poder expresso para alienar veículos",
+       "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+       "fundamento": [
+        "CC art. 661, §1º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_SERGIO_SA",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "a quem confere poderes especiais e expressos para, sempre em conjunto com um Diretor da Companhia, vender, ceder e transferir veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionar; assinar a Autorização para Transferência de Propriedade do Veículo em meio digital (ATPV-e); receber o preço e dar quitação; requerer o que for necessário perante o DETRAN; e praticar os demais atos necessários ao fiel cumprimento deste mandato.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1924,
+         "fim": 2384
+        }
+       ],
+       "caminho": "POA_SERGIO_SA"
+      },
+      {
+       "codigo": "PROCURACAO_NO_PRAZO",
+       "severidade": "ok",
+       "titulo": "Dentro do prazo",
+       "detalhe": "Válida até 18/02/2027.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "POA_SERGIO_SA",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data, sendo vedado o substabelecimento.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 2385,
+         "fim": 2492
+        }
+       ],
+       "caminho": "POA_SERGIO_SA"
+      }
+     ],
+     "precondicoes": []
+    },
+    {
+     "id": "POA_SERGIO_SA:29128084560+39494821483",
+     "pessoas": [
+      {
+       "chave": "39494821483",
+       "nome": "Helena Castro Lins"
+      },
+      {
+       "chave": "29128084560",
+       "nome": "Sérgio Paiva Gomes"
+      }
+     ],
+     "via": "procuracao",
+     "descricao": "Procuração pública de 18/02/2026 (Tabelionato Jaguaribe – Ofício Único de Notas de Aracati/CE)",
+     "cadeia": [
+      "POA_SERGIO_SA"
+     ],
+     "severidade": "ok",
+     "confianca": 0.997,
+     "achados": [
+      {
+       "codigo": "OUTORGANTE_PJ",
+       "severidade": "ok",
+       "titulo": "Outorgada pela própria empresa",
+       "detalhe": "A outorgante é a empresa, representada por Helena Castro Lins e Marcelo Augusto Feitosa.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_SERGIO_SA",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "DISTRIBUIDORA ARACATI S.A., sociedade anônima de capital fechado, inscrita no CNPJ sob o nº 74.535.813/0001-12, NIRE 23894229772, com sede nesta cidade de Aracati/CE, neste ato representada, na forma do art. 19 do seu Estatuto Social, por seus Diretores MARCELO AUGUSTO FEITOSA... e HELENA CASTRO LINS...",
+         "clausula": null,
+         "ancoragem": 94.7,
+         "pagina": 1,
+         "inicio": 557,
+         "fim": 861
+        }
+       ],
+       "caminho": "POA_SERGIO_SA"
+      },
+      {
+       "codigo": "OUTORGA_COM_PODERES",
+       "severidade": "ok",
+       "titulo": "Quem outorgou tinha poder",
+       "detalhe": "Em 18/02/2026, Helena Castro Lins e Marcelo Augusto Feitosa podia representar a empresa nesse ato.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_SERGIO_SA",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "DISTRIBUIDORA ARACATI S.A., sociedade anônima de capital fechado, inscrita no CNPJ sob o nº 74.535.813/0001-12, NIRE 23894229772, com sede nesta cidade de Aracati/CE, neste ato representada, na forma do art. 19 do seu Estatuto Social, por seus Diretores MARCELO AUGUSTO FEITOSA... e HELENA CASTRO LINS...",
+         "clausula": null,
+         "ancoragem": 94.7,
+         "pagina": 1,
+         "inicio": 557,
+         "fim": 861
+        },
+        {
+         "doc_id": "ARACATI_ESTATUTO",
+         "doc_titulo": "Estatuto Social (2024)",
+         "trecho": "a) por 2 (dois) Diretores em conjunto; b) por 1 (um) Diretor em conjunto com 1 (um) procurador; ou c) por 1 (um) ou mais procuradores, nos termos do respectivo mandato.",
+         "clausula": "Art. 18",
+         "ancoragem": 100.0,
+         "pagina": 3,
+         "inicio": 5420,
+         "fim": 5588
+        }
+       ],
+       "caminho": "POA_SERGIO_SA"
+      },
+      {
+       "codigo": "PODERES_ESPECIAIS",
+       "severidade": "ok",
+       "titulo": "Poder expresso para alienar veículos",
+       "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+       "fundamento": [
+        "CC art. 661, §1º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_SERGIO_SA",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "a quem confere poderes especiais e expressos para, sempre em conjunto com um Diretor da Companhia, vender, ceder e transferir veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionar; assinar a Autorização para Transferência de Propriedade do Veículo em meio digital (ATPV-e); receber o preço e dar quitação; requerer o que for necessário perante o DETRAN; e praticar os demais atos necessários ao fiel cumprimento deste mandato.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1924,
+         "fim": 2384
+        }
+       ],
+       "caminho": "POA_SERGIO_SA"
+      },
+      {
+       "codigo": "PROCURACAO_NO_PRAZO",
+       "severidade": "ok",
+       "titulo": "Dentro do prazo",
+       "detalhe": "Válida até 18/02/2027.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "POA_SERGIO_SA",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data, sendo vedado o substabelecimento.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 2385,
+         "fim": 2492
+        }
+       ],
+       "caminho": "POA_SERGIO_SA"
+      }
+     ],
+     "precondicoes": []
+    },
+    {
+     "id": "POA_SERGIO_SA:29128084560+62105218512",
+     "pessoas": [
+      {
+       "chave": "29128084560",
+       "nome": "Sérgio Paiva Gomes"
+      },
+      {
+       "chave": "62105218512",
+       "nome": "Tiago Rolim Vasconcelos"
+      }
+     ],
+     "via": "procuracao",
+     "descricao": "Procuração pública de 18/02/2026 (Tabelionato Jaguaribe – Ofício Único de Notas de Aracati/CE)",
+     "cadeia": [
+      "POA_SERGIO_SA"
+     ],
+     "severidade": "ok",
+     "confianca": 0.997,
+     "achados": [
+      {
+       "codigo": "OUTORGANTE_PJ",
+       "severidade": "ok",
+       "titulo": "Outorgada pela própria empresa",
+       "detalhe": "A outorgante é a empresa, representada por Helena Castro Lins e Marcelo Augusto Feitosa.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_SERGIO_SA",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "DISTRIBUIDORA ARACATI S.A., sociedade anônima de capital fechado, inscrita no CNPJ sob o nº 74.535.813/0001-12, NIRE 23894229772, com sede nesta cidade de Aracati/CE, neste ato representada, na forma do art. 19 do seu Estatuto Social, por seus Diretores MARCELO AUGUSTO FEITOSA... e HELENA CASTRO LINS...",
+         "clausula": null,
+         "ancoragem": 94.7,
+         "pagina": 1,
+         "inicio": 557,
+         "fim": 861
+        }
+       ],
+       "caminho": "POA_SERGIO_SA"
+      },
+      {
+       "codigo": "OUTORGA_COM_PODERES",
+       "severidade": "ok",
+       "titulo": "Quem outorgou tinha poder",
+       "detalhe": "Em 18/02/2026, Helena Castro Lins e Marcelo Augusto Feitosa podia representar a empresa nesse ato.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_SERGIO_SA",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "DISTRIBUIDORA ARACATI S.A., sociedade anônima de capital fechado, inscrita no CNPJ sob o nº 74.535.813/0001-12, NIRE 23894229772, com sede nesta cidade de Aracati/CE, neste ato representada, na forma do art. 19 do seu Estatuto Social, por seus Diretores MARCELO AUGUSTO FEITOSA... e HELENA CASTRO LINS...",
+         "clausula": null,
+         "ancoragem": 94.7,
+         "pagina": 1,
+         "inicio": 557,
+         "fim": 861
+        },
+        {
+         "doc_id": "ARACATI_ESTATUTO",
+         "doc_titulo": "Estatuto Social (2024)",
+         "trecho": "a) por 2 (dois) Diretores em conjunto; b) por 1 (um) Diretor em conjunto com 1 (um) procurador; ou c) por 1 (um) ou mais procuradores, nos termos do respectivo mandato.",
+         "clausula": "Art. 18",
+         "ancoragem": 100.0,
+         "pagina": 3,
+         "inicio": 5420,
+         "fim": 5588
+        }
+       ],
+       "caminho": "POA_SERGIO_SA"
+      },
+      {
+       "codigo": "PODERES_ESPECIAIS",
+       "severidade": "ok",
+       "titulo": "Poder expresso para alienar veículos",
+       "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+       "fundamento": [
+        "CC art. 661, §1º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_SERGIO_SA",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "a quem confere poderes especiais e expressos para, sempre em conjunto com um Diretor da Companhia, vender, ceder e transferir veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionar; assinar a Autorização para Transferência de Propriedade do Veículo em meio digital (ATPV-e); receber o preço e dar quitação; requerer o que for necessário perante o DETRAN; e praticar os demais atos necessários ao fiel cumprimento deste mandato.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1924,
+         "fim": 2384
+        }
+       ],
+       "caminho": "POA_SERGIO_SA"
+      },
+      {
+       "codigo": "PROCURACAO_NO_PRAZO",
+       "severidade": "ok",
+       "titulo": "Dentro do prazo",
+       "detalhe": "Válida até 18/02/2027.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "POA_SERGIO_SA",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data, sendo vedado o substabelecimento.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 2385,
+         "fim": 2492
+        }
+       ],
+       "caminho": "POA_SERGIO_SA"
+      }
+     ],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [],
+   "caminho_escolhido": {
+    "id": "POA_SERGIO_SA:29128084560+62105218512",
+    "pessoas": [
+     {
+      "chave": "29128084560",
+      "nome": "Sérgio Paiva Gomes"
+     },
+     {
+      "chave": "62105218512",
+      "nome": "Tiago Rolim Vasconcelos"
+     }
+    ],
+    "via": "procuracao",
+    "descricao": "Procuração pública de 18/02/2026 (Tabelionato Jaguaribe – Ofício Único de Notas de Aracati/CE)",
+    "cadeia": [
+     "POA_SERGIO_SA"
+    ],
+    "severidade": "ok",
+    "confianca": 0.997,
+    "achados": [
+     {
+      "codigo": "OUTORGANTE_PJ",
+      "severidade": "ok",
+      "titulo": "Outorgada pela própria empresa",
+      "detalhe": "A outorgante é a empresa, representada por Helena Castro Lins e Marcelo Augusto Feitosa.",
+      "fundamento": [
+       "CC art. 1.018"
+      ],
+      "fontes": [
+       {
+        "doc_id": "POA_SERGIO_SA",
+        "doc_titulo": "Procuração (2026)",
+        "trecho": "DISTRIBUIDORA ARACATI S.A., sociedade anônima de capital fechado, inscrita no CNPJ sob o nº 74.535.813/0001-12, NIRE 23894229772, com sede nesta cidade de Aracati/CE, neste ato representada, na forma do art. 19 do seu Estatuto Social, por seus Diretores MARCELO AUGUSTO FEITOSA... e HELENA CASTRO LINS...",
+        "clausula": null,
+        "ancoragem": 94.7,
+        "pagina": 1,
+        "inicio": 557,
+        "fim": 861
+       }
+      ],
+      "caminho": "POA_SERGIO_SA"
+     },
+     {
+      "codigo": "OUTORGA_COM_PODERES",
+      "severidade": "ok",
+      "titulo": "Quem outorgou tinha poder",
+      "detalhe": "Em 18/02/2026, Helena Castro Lins e Marcelo Augusto Feitosa podia representar a empresa nesse ato.",
+      "fundamento": [
+       "CC art. 1.018"
+      ],
+      "fontes": [
+       {
+        "doc_id": "POA_SERGIO_SA",
+        "doc_titulo": "Procuração (2026)",
+        "trecho": "DISTRIBUIDORA ARACATI S.A., sociedade anônima de capital fechado, inscrita no CNPJ sob o nº 74.535.813/0001-12, NIRE 23894229772, com sede nesta cidade de Aracati/CE, neste ato representada, na forma do art. 19 do seu Estatuto Social, por seus Diretores MARCELO AUGUSTO FEITOSA... e HELENA CASTRO LINS...",
+        "clausula": null,
+        "ancoragem": 94.7,
+        "pagina": 1,
+        "inicio": 557,
+        "fim": 861
+       },
+       {
+        "doc_id": "ARACATI_ESTATUTO",
+        "doc_titulo": "Estatuto Social (2024)",
+        "trecho": "a) por 2 (dois) Diretores em conjunto; b) por 1 (um) Diretor em conjunto com 1 (um) procurador; ou c) por 1 (um) ou mais procuradores, nos termos do respectivo mandato.",
+        "clausula": "Art. 18",
+        "ancoragem": 100.0,
+        "pagina": 3,
+        "inicio": 5420,
+        "fim": 5588
+       }
+      ],
+      "caminho": "POA_SERGIO_SA"
+     },
+     {
+      "codigo": "PODERES_ESPECIAIS",
+      "severidade": "ok",
+      "titulo": "Poder expresso para alienar veículos",
+      "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+      "fundamento": [
+       "CC art. 661, §1º"
+      ],
+      "fontes": [
+       {
+        "doc_id": "POA_SERGIO_SA",
+        "doc_titulo": "Procuração (2026)",
+        "trecho": "a quem confere poderes especiais e expressos para, sempre em conjunto com um Diretor da Companhia, vender, ceder e transferir veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionar; assinar a Autorização para Transferência de Propriedade do Veículo em meio digital (ATPV-e); receber o preço e dar quitação; requerer o que for necessário perante o DETRAN; e praticar os demais atos necessários ao fiel cumprimento deste mandato.",
+        "clausula": null,
+        "ancoragem": 100.0,
+        "pagina": 1,
+        "inicio": 1924,
+        "fim": 2384
+       }
+      ],
+      "caminho": "POA_SERGIO_SA"
+     },
+     {
+      "codigo": "PROCURACAO_NO_PRAZO",
+      "severidade": "ok",
+      "titulo": "Dentro do prazo",
+      "detalhe": "Válida até 18/02/2027.",
+      "fundamento": [],
+      "fontes": [
+       {
+        "doc_id": "POA_SERGIO_SA",
+        "doc_titulo": "Procuração (2026)",
+        "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data, sendo vedado o substabelecimento.",
+        "clausula": null,
+        "ancoragem": 100.0,
+        "pagina": 1,
+        "inicio": 2385,
+        "fim": 2492
+       }
+      ],
+      "caminho": "POA_SERGIO_SA"
+     }
+    ],
+    "precondicoes": []
+   },
+   "faltantes": [],
+   "achados": [
+    {
+     "codigo": "CND_INSS",
+     "severidade": "info",
+     "titulo": "CND previdenciária",
+     "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+     "fundamento": [
+      "Lei 8.212/91, art. 47, I, \"c\""
+     ],
+     "fontes": [],
+     "caminho": null
+    },
+    {
+     "codigo": "TITULARIDADE_OK",
+     "severidade": "ok",
+     "titulo": "Veículo registrado no CNPJ da empresa",
+     "detalhe": "Proprietário no CRLV: DISTRIBUIDORA ARACATI S.A..",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [
+      {
+       "doc_id": "CRLV",
+       "doc_titulo": "CRLV",
+       "trecho": "DYW8T81",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 146,
+       "fim": 153
+      }
+     ],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "ARACATI_ESTATUTO#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "ARACATI_ESTATUTO",
+      "doc_titulo": "Estatuto Social (2024)",
+      "trecho": "a) por 2 (dois) Diretores em conjunto; b) por 1 (um) Diretor em conjunto com 1 (um) procurador; ou c) por 1 (um) ou mais procuradores, nos termos do respectivo mandato.",
+      "clausula": "Art. 18",
+      "ancoragem": 100.0,
+      "pagina": 3,
+      "inicio": 5420,
+      "fim": 5588
+     },
+     "modo": "misto",
+     "pessoas": [],
+     "cargo": "diretores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "misto",
+       "valor_lexico": "conjunto",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "em conjunto"
+       ]
+      }
+     ],
+     "decisiva": true
+    },
+    {
+     "regra": "ARACATI_ESTATUTO#R2",
+     "escopo": "outorgar_procuracoes",
+     "aplicavel": false,
+     "motivo": "regula a outorga de procurações (usada para validar procurações)",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "ARACATI_ESTATUTO",
+      "doc_titulo": "Estatuto Social (2024)",
+      "trecho": "As procurações serão outorgadas pela Companhia mediante a assinatura de 2 (dois) Diretores, deverão especificar os poderes conferidos e, com exceção daquelas outorgadas para fins judiciais (ad judicia), terão prazo de validade não superior a 1 (um) ano.",
+      "clausula": "Art. 19",
+      "ancoragem": 100.0,
+      "pagina": 3,
+      "inicio": 5598,
+      "fim": 5851
+     },
+     "modo": "quantidade_minima",
+     "pessoas": [],
+     "cargo": "diretores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "conjunto",
+       "valor_lexico": "conjunto",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "2 (dois) diretores"
+       ]
+      },
+      {
+       "campo": "quantidade_minima",
+       "valor_llm": "conjunto/2",
+       "valor_lexico": "quantidade_minima/2",
+       "divergiu": false,
+       "corrigido_para": "quantidade_minima/2",
+       "expressoes": []
+      }
+     ],
+     "decisiva": false
+    },
+    {
+     "regra": "ARACATI_ESTATUTO#R3",
+     "escopo": "alienacao_ativo_imobilizado",
+     "aplicavel": false,
+     "motivo": "valor R$ 230.000,00 não cruza o limite de R$ 1.000.000,00",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "ARACATI_ESTATUTO",
+      "doc_titulo": "Estatuto Social (2024)",
+      "trecho": "somente dependerá de prévia autorização do Conselho de Administração a alienação de bens do ativo não circulante de valor superior a R$ 1.000.000,00 (um milhão de reais), por operação.",
+      "clausula": "Art. 20",
+      "ancoragem": 100.0,
+      "pagina": 3,
+      "inicio": 5922,
+      "fim": 6106
+     },
+     "modo": "nao_especificado",
+     "pessoas": [],
+     "cargo": "administradores",
+     "valor_acima_de": 1000000.0,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    },
+    {
+     "regra": "ARACATI_ESTATUTO#R4",
+     "escopo": "obrigacoes_garantias",
+     "aplicavel": false,
+     "motivo": "trata de avais, fianças e garantias",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "ARACATI_ESTATUTO",
+      "doc_titulo": "Estatuto Social (2024)",
+      "trecho": "São expressamente vedados, sendo nulos e ineficazes em relação à Companhia, os atos de qualquer Diretor, procurador ou empregado que a envolverem em obrigações relativas a negócios ou operações estranhos ao objeto social, tais como fianças, avais, endossos ou quaisquer garantias em favor de terceiros.",
+      "clausula": "Art. 21",
+      "ancoragem": 100.0,
+      "pagina": 3,
+      "inicio": 6116,
+      "fim": 6418
+     },
+     "modo": "nao_especificado",
+     "pessoas": [],
+     "cargo": "diretores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-09-23",
+    "atos": [
+     {
+      "doc": "ARACATI_ESTATUTO",
+      "titulo": "Estatuto Social (2024)",
+      "efeito": "2024-04-25"
+     },
+     {
+      "doc": "ARACATI_RCA",
+      "titulo": "Ata do Conselho de Administração (2025)",
+      "efeito": "2025-05-02"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "58983194847",
+      "nome": "Marcelo Augusto Feitosa",
+      "cargo": "Diretor-Presidente",
+      "doc": "ARACATI_RCA"
+     },
+     {
+      "chave": "39494821483",
+      "nome": "Helena Castro Lins",
+      "cargo": "Diretora Financeira",
+      "doc": "ARACATI_RCA"
+     },
+     {
+      "chave": "62105218512",
+      "nome": "Tiago Rolim Vasconcelos",
+      "cargo": "Diretor Comercial",
+      "doc": "ARACATI_RCA"
+     }
+    ],
+    "encerrados": [],
+    "socios": []
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "DISTRIBUIDORA ARACATI S.A.",
+      "sub": "74.535.813/0001-12"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "TOYOTA/HILUX CD SRV 4X4 2.8",
+      "sub": "DYW8T81"
+     },
+     {
+      "id": "58983194847",
+      "tipo": "pessoa",
+      "rotulo": "Marcelo Augusto Feitosa",
+      "papeis": [
+       "Diretor-Presidente"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "39494821483",
+      "tipo": "pessoa",
+      "rotulo": "Helena Castro Lins",
+      "papeis": [
+       "Diretora Financeira"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "62105218512",
+      "tipo": "pessoa",
+      "rotulo": "Tiago Rolim Vasconcelos",
+      "papeis": [
+       "Diretor Comercial"
+      ],
+      "assinante": true
+     },
+     {
+      "id": "29128084560",
+      "tipo": "pessoa",
+      "rotulo": "Sérgio Paiva Gomes",
+      "papeis": [
+       "procurador"
+      ],
+      "assinante": true
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "valido"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "58983194847",
+      "tipo": "administracao",
+      "rotulo": "administra · em conjunto",
+      "status": "valido",
+      "doc": "ARACATI_RCA"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "39494821483",
+      "tipo": "administracao",
+      "rotulo": "administra · em conjunto",
+      "status": "valido",
+      "doc": "ARACATI_RCA"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "62105218512",
+      "tipo": "administracao",
+      "rotulo": "administra · em conjunto",
+      "status": "valido",
+      "doc": "ARACATI_RCA"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "29128084560",
+      "tipo": "procuracao",
+      "status": "valido",
+      "doc": "POA_SERGIO_SA",
+      "rotulo": "procuração 18/02/2026",
+      "motivo": null
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2024-04-25",
+     "tipo": "ato",
+     "titulo": "Estatuto Social (2024)",
+     "doc": "ARACATI_ESTATUTO",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2025-05-02",
+     "tipo": "ato",
+     "titulo": "Ata do Conselho de Administração (2025)",
+     "doc": "ARACATI_RCA",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-02-18",
+     "tipo": "procuracao",
+     "titulo": "Procuração para Sérgio Paiva Gomes",
+     "doc": "POA_SERGIO_SA",
+     "detalhe": "publica"
+    },
+    {
+     "data": "2026-09-23",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 230.000,00"
+    },
+    {
+     "data": "2027-02-18",
+     "tipo": "vencimento",
+     "titulo": "Vence a procuração de Sérgio Paiva Gomes",
+     "doc": "POA_SERGIO_SA",
+     "detalhe": ""
+    },
+    {
+     "data": "2027-05-02",
+     "tipo": "fim_mandato",
+     "titulo": "Fim do mandato de Marcelo Augusto Feitosa",
+     "doc": "ARACATI_RCA",
+     "detalhe": "com mandato de 2 (dois) anos a contar desta data, que se estenderá até a posse dos Diretores que forem eleitos na reunião do Conselho de Administração que eleger a nova Diretoria em 2027"
+    },
+    {
+     "data": "2027-05-02",
+     "tipo": "fim_mandato",
+     "titulo": "Fim do mandato de Helena Castro Lins",
+     "doc": "ARACATI_RCA",
+     "detalhe": "com mandato de 2 (dois) anos a contar desta data, que se estenderá até a posse dos Diretores que forem eleitos na reunião do Conselho de Administração que eleger a nova Diretoria em 2027"
+    },
+    {
+     "data": "2027-05-02",
+     "tipo": "fim_mandato",
+     "titulo": "Fim do mandato de Tiago Rolim Vasconcelos",
+     "doc": "ARACATI_RCA",
+     "detalhe": "com mandato de 2 (dois) anos a contar desta data, que se estenderá até a posse dos Diretores que forem eleitos na reunião do Conselho de Administração que eleger a nova Diretoria em 2027"
+    }
+   ],
+   "pessoas": {
+    "N:AFONSO HENRIQUE FEITOSA": {
+     "nome": "Afonso Henrique Feitosa",
+     "cpf": null
+    },
+    "N:CELINA MARIA LINS": {
+     "nome": "Celina Maria Lins",
+     "cpf": null
+    },
+    "N:OTAVIO ROLIM NETO": {
+     "nome": "Otávio Rolim Neto",
+     "cpf": null
+    },
+    "58983194847": {
+     "nome": "Marcelo Augusto Feitosa",
+     "cpf": "58983194847"
+    },
+    "39494821483": {
+     "nome": "Helena Castro Lins",
+     "cpf": "39494821483"
+    },
+    "62105218512": {
+     "nome": "Tiago Rolim Vasconcelos",
+     "cpf": "62105218512"
+    },
+    "29128084560": {
+     "nome": "Sérgio Paiva Gomes",
+     "cpf": "29128084560"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "comprovada",
+    "outorgante": {
+     "nome": "DISTRIBUIDORA ARACATI S.A.",
+     "cnpj": "74.535.813/0001-12",
+     "tipo": "SA",
+     "atos_vigentes": [
+      {
+       "titulo": "Estatuto Social (2024)",
+       "doc": "ARACATI_ESTATUTO",
+       "efeito": "2024-04-25"
+      },
+      {
+       "titulo": "Ata do Conselho de Administração (2025)",
+       "doc": "ARACATI_RCA",
+       "efeito": "2025-05-02"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "Tiago Rolim Vasconcelos",
+      "cpf": "621.052.185-12",
+      "identificacao": "CPF",
+      "qualidade": "Diretor Comercial"
+     },
+     {
+      "nome": "Sérgio Paiva Gomes",
+      "cpf": "291.280.845-60",
+      "identificacao": "CPF",
+      "qualidade": "procurador(a)"
+     }
+    ],
+    "poderes_conferidos": [
+     "Procuração pública de 18/02/2026 (Tabelionato Jaguaribe – Ofício Único de Notas de Aracati/CE, livro 41, folhas 090/091), outorgada por DISTRIBUIDORA ARACATI S.A. (repr. Helena Castro Lins e Marcelo Augusto Feitosa): poderes especiais e expressos para vender veículos e assinar a ATPV/ATPV-e; somente em conjunto com diretor"
+    ],
+    "prazo_validade": [
+     "Procuração pública válida até 18/02/2027"
+    ],
+    "revogacao": [
+     "Nenhuma revogação nos documentos apresentados; a revogação fica anotada na serventia de origem — confirmar com certidão atualizada do cartório."
+    ],
+    "fontes": [
+     {
+      "doc_id": "POA_SERGIO_SA",
+      "doc_titulo": "Procuração (2026)",
+      "trecho": "a quem confere poderes especiais e expressos para, sempre em conjunto com um Diretor da Companhia, vender, ceder e transferir veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionar; assinar a Autorização para Transferência de Propriedade do Veículo em meio digital (ATPV-e); receber o preço e dar quitação; requerer o que for necessário perante o DETRAN; e praticar os demais atos necessários ao fiel cumprimento deste mandato.",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 1924,
+      "fim": 2384
+     },
+     {
+      "doc_id": "POA_SERGIO_SA",
+      "doc_titulo": "Procuração (2026)",
+      "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data, sendo vedado o substabelecimento.",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 2385,
+      "fim": 2492
+     }
+    ],
+    "documentos_verificaveis": [
+     {
+      "id": "ARACATI_ESTATUTO",
+      "titulo": "Estatuto Social (2024)",
+      "arquivo": "ARACATI_ESTATUTO.pdf"
+     },
+     {
+      "id": "ARACATI_RCA",
+      "titulo": "Ata do Conselho de Administração (2025)",
+      "arquivo": "ARACATI_RCA.pdf"
+     },
+     {
+      "id": "CRLV",
+      "titulo": "CRLV",
+      "arquivo": "CRLV.pdf"
+     },
+     {
+      "id": "POA_SERGIO_SA",
+      "titulo": "Procuração (2026)",
+      "arquivo": "POA_SERGIO_SA.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "ARACATI_ESTATUTO",
+     "nome": "ARACATI_ESTATUTO.pdf",
+     "tipo": "estatuto_social",
+     "titulo": "Estatuto Social (2024)",
+     "data": "2024-04-25",
+     "paginas": [
+      "DISTRIBUIDORA ARACATI S.A.\nCNPJ nº 74.535.813/0001-12 – NIRE 23894229772\nCompanhia Fechada\nESTATUTO SOCIAL CONSOLIDADO\n(aprovado pela Assembleia Geral Extraordinária realizada em 25 de abril de 2024)\nCAPÍTULO I – DA DENOMINAÇÃO, SEDE, OBJETO E DURAÇÃO\nArt. 1º A DISTRIBUIDORA ARACATI S.A. (\"Companhia\") é uma sociedade anônima de capital\nfechado, regida pelo presente Estatuto Social e pelas disposições legais aplicáveis, em especial pela\nLei nº 6.404, de 15 de dezembro de 1976.\nArt. 2º A Companhia tem sede e foro na cidade de Aracati, Estado do Ceará, na Rodovia BR-304,\nKm 46, Galpão 2, Distrito Industrial, CEP 62800-000, podendo, por deliberação da Diretoria, abrir,\ntransferir e encerrar filiais, depósitos e escritórios em qualquer parte do território nacional.\nArt. 3º A Companhia tem por objeto o comércio atacadista e a distribuição de bebidas.\nArt. 4º O prazo de duração da Companhia é indeterminado.\nCAPÍTULO II – DO CAPITAL SOCIAL E DAS AÇÕES\nArt. 5º O capital social, totalmente subscrito e integralizado, é de R$ 5.000.000,00 (cinco milhões de\nreais), dividido em 5.000.000 (cinco milhões) de ações ordinárias nominativas, sem valor nominal.\nArt. 6º Cada ação ordinária confere a seu titular o direito a um voto nas deliberações da Assembleia\nGeral.\nArt. 7º A propriedade das ações será comprovada pela inscrição do nome do acionista no Livro de\nRegistro de Ações Nominativas, e a sua transferência operar-se-á por termo lavrado no Livro de\nTransferência de Ações Nominativas, datado e assinado pelo cedente e pelo cessionário.\nArt. 8º Os acionistas terão direito de preferência na subscrição de aumentos de capital, na proporção\nde suas participações, no prazo de 30 (trinta) dias contados da publicação da respectiva deliberação.\nCAPÍTULO III – DA ASSEMBLEIA GERAL\nArt. 9º A Assembleia Geral reunir-se-á, ordinariamente, nos 4 (quatro) primeiros meses seguintes ao\ntérmino do exercício social, para os fins previstos no art. 132 da Lei nº 6.404/1976, e,\nextraordinariamente, sempre que os interesses sociais o exigirem.\nArt. 10. A Assembleia Geral será convocada pelo Presidente do Conselho de Administração ou na\nforma da lei, e será instalada e presidida pelo Presidente do Conselho de Administração ou, na sua\nausência, por acionista escolhido pelos presentes, que convidará um dos presentes para secretariar os\ntrabalhos.\nArt. 11. Compete à Assembleia Geral, além das atribuições previstas em lei, eleger e destituir os\nmembros do Conselho de Administração, designar o seu Presidente e fixar a remuneração global dos\nadministradores.\nCAPÍTULO IV – DA ADMINISTRAÇÃO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/4",
+      "Seção I – Disposições Gerais\nArt. 12. A Companhia será administrada por um Conselho de Administração e por uma Diretoria, na\nforma da lei e deste Estatuto.\nArt. 13. Os administradores serão investidos em seus cargos mediante assinatura de termo de posse\nlavrado no livro próprio, dispensada a prestação de garantia de gestão, e o prazo de gestão estenderse-á até a investidura dos novos administradores eleitos.\nSeção II – Do Conselho de Administração\nArt. 14. O Conselho de Administração será composto por 3 (três) membros, acionistas ou não,\neleitos e destituíveis a qualquer tempo pela Assembleia Geral, com mandato unificado de 2 (dois)\nanos, permitida a reeleição.\nArt. 15. O Conselho de Administração reunir-se-á, ordinariamente, uma vez a cada trimestre e,\nextraordinariamente, sempre que convocado por seu Presidente, instalando-se com a presença da\nmaioria de seus membros e deliberando pelo voto da maioria dos presentes. Das reuniões serão\nlavradas atas no livro próprio.\nArt. 16. Compete ao Conselho de Administração:\nI – fixar a orientação geral dos negócios da Companhia;\nII – eleger e destituir os Diretores da Companhia e fixar-lhes as atribuições, observado o disposto\nneste Estatuto;\nIII – fiscalizar a gestão dos Diretores, examinar, a qualquer tempo, os livros e papéis da Companhia\ne solicitar informações sobre contratos celebrados ou em vias de celebração;\nIV – manifestar-se sobre o relatório da administração e as contas da Diretoria;\nV – escolher e destituir os auditores independentes, se houver;\nVI – deliberar sobre a matéria prevista no art. 20 deste Estatuto.\nSeção III – Da Diretoria\nArt. 17. A Diretoria será composta por 3 (três) Diretores, acionistas ou não, residentes no País, sendo\num Diretor-Presidente, um Diretor Financeiro e um Diretor Comercial, eleitos e destituíveis a\nqualquer tempo pelo Conselho de Administração, para mandato de 2 (dois) anos, permitida a\nreeleição.\n§ 1º Compete à Diretoria a administração dos negócios sociais e a prática de todos os atos\nnecessários ao funcionamento regular da Companhia, ressalvadas as matérias de competência\nprivativa da Assembleia Geral e do Conselho de Administração.\n§ 2º Compete ao Diretor-Presidente coordenar as atividades da Diretoria e convocar e presidir as\nsuas reuniões; ao Diretor Financeiro, a gestão financeira, contábil e tributária da Companhia; e ao\nDiretor Comercial, a gestão das vendas, da logística de distribuição e da frota.\n§ 3º Em caso de vacância de cargo de Diretor, o Conselho de Administração elegerá o substituto, que\ncompletará o mandato do substituído.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/4",
+      "Art. 18. A Companhia será representada, ativa e passivamente, em juízo ou fora dele, e obrigar-se-á\nperante terceiros:\na) por 2 (dois) Diretores em conjunto;\nb) por 1 (um) Diretor em conjunto com 1 (um) procurador; ou\nc) por 1 (um) ou mais procuradores, nos termos do respectivo mandato.\nArt. 19. As procurações serão outorgadas pela Companhia mediante a assinatura de 2 (dois)\nDiretores, deverão especificar os poderes conferidos e, com exceção daquelas outorgadas para fins\njudiciais (ad judicia), terão prazo de validade não superior a 1 (um) ano.\nArt. 20. Para os fins do art. 142, inciso VIII, da Lei nº 6.404/1976, somente dependerá de prévia\nautorização do Conselho de Administração a alienação de bens do ativo não circulante de valor\nsuperior a R$ 1.000.000,00 (um milhão de reais), por operação.\nArt. 21. São expressamente vedados, sendo nulos e ineficazes em relação à Companhia, os atos de\nqualquer Diretor, procurador ou empregado que a envolverem em obrigações relativas a negócios ou\noperações estranhos ao objeto social, tais como fianças, avais, endossos ou quaisquer garantias em\nfavor de terceiros.\nCAPÍTULO V – DO CONSELHO FISCAL\nArt. 22. O Conselho Fiscal, de funcionamento não permanente, será composto por 3 (três) membros\nefetivos e igual número de suplentes, acionistas ou não, e somente será instalado pela Assembleia\nGeral a pedido de acionistas, nos casos previstos em lei.\nCAPÍTULO VI – DO EXERCÍCIO SOCIAL E DA DESTINAÇÃO DOS LUCROS\nArt. 23. O exercício social terá início em 1º de janeiro e término em 31 de dezembro de cada ano,\nocasião em que serão elaboradas as demonstrações financeiras previstas em lei.\nArt. 24. Do lucro líquido do exercício, 5% (cinco por cento) serão aplicados na constituição da\nreserva legal, que não excederá 20% (vinte por cento) do capital social, e 25% (vinte e cinco por\ncento) do lucro líquido ajustado serão distribuídos aos acionistas como dividendo mínimo\nobrigatório, nos termos do art. 202 da Lei nº 6.404/1976. O saldo terá a destinação que lhe for dada\npela Assembleia Geral, observada a legislação aplicável.\nArt. 25. A Companhia poderá levantar balanços semestrais ou em períodos menores e, por\ndeliberação do Conselho de Administração, declarar dividendos intermediários à conta de lucros\napurados nesses balanços ou de reservas de lucros existentes.\nCAPÍTULO VII – DA LIQUIDAÇÃO\nArt. 26. A Companhia entrará em liquidação nos casos previstos em lei, competindo à Assembleia\nGeral determinar o modo de liquidação, eleger o liquidante e instalar o Conselho Fiscal que deverá\nfuncionar durante o período de liquidação.\nCAPÍTULO VIII – DAS DISPOSIÇÕES GERAIS\nArt. 27. Os casos omissos neste Estatuto serão regulados pela Lei nº 6.404/1976 e pela legislação\naplicável.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/4",
+      "Art. 28. Fica eleito o foro da Comarca de Aracati/CE para dirimir quaisquer questões oriundas deste\nEstatuto, com renúncia a qualquer outro, por mais privilegiado que seja.\nAracati/CE, 25 de abril de 2024.\nMesa:\nMARCELO AUGUSTO FEITOSA – Presidente da Assembleia\nHELENA CASTRO LINS – Secretária\nVisto: Paulo Roberto Mendonça – OAB/CE nº 11.208\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 08/05/2024 sob o nº 48024523274\nProtocolo: 24/155.690-7 | NIRE: 23894229772\nEmpresa: DISTRIBUIDORA ARACATI S.A. | CNPJ: 74.535.813/0001-12\nAutenticação: 9E1F6A3C08D24B75C3A9E41D\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 4/4"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "1ecc309e3c077552ee5a0ff69f0533c2641f252158822dd0563be00f23eb4467",
+     "leitura": {
+      "tarefas": {
+       "partes": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 21.9,
+        "tokens_saida": 299,
+        "modelo": "qwen3.8-27b"
+       },
+       "regras": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 59.4,
+        "tokens_saida": 1286,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "ARACATI_RCA",
+     "nome": "ARACATI_RCA.pdf",
+     "tipo": "ata_conselho",
+     "titulo": "Ata do Conselho de Administração (2025)",
+     "data": "2025-05-02",
+     "paginas": [
+      "DISTRIBUIDORA ARACATI S.A.\nCNPJ nº 74.535.813/0001-12 – NIRE 23894229772\nCompanhia Fechada\nATA DA REUNIÃO DO CONSELHO DE ADMINISTRAÇÃO REALIZADA EM 2 DE MAIO\nDE 2025\n1. DATA, HORA E LOCAL: Aos 2 (dois) dias do mês de maio de 2025, às 10h00, na sede social\nda Companhia, situada na Rodovia BR-304, Km 46, Galpão 2, Distrito Industrial, Aracati/CE, CEP\n62800-000.\n2. CONVOCAÇÃO E PRESENÇA: Dispensada a convocação, em razão da presença da totalidade\ndos membros do Conselho de Administração, a saber: Afonso Henrique Feitosa (Presidente do\nConselho), Celina Maria Lins e Otávio Rolim Neto.\n3. MESA: Presidente: Afonso Henrique Feitosa. Secretária: Celina Maria Lins.\n4. ORDEM DO DIA: Eleição dos membros da Diretoria da Companhia, nos termos do art. 16,\ninciso II, e do art. 17 do Estatuto Social.\n5. DELIBERAÇÕES: Instalada a reunião e após exame e discussão da matéria constante da ordem\ndo dia, os conselheiros, por unanimidade de votos e sem quaisquer ressalvas, deliberaram eleger,\ncom mandato de 2 (dois) anos a contar desta data, que se estenderá até a posse dos Diretores que\nforem eleitos na reunião do Conselho de Administração que eleger a nova Diretoria em 2027, os\nseguintes membros da Diretoria:\n(i) para o cargo de Diretor-Presidente, MARCELO AUGUSTO FEITOSA, brasileiro, casado,\nadministrador de empresas, portador da carteira de identidade nº 77241241 SSP/CE, inscrito no CPF\nsob o nº 589.831.948-47, residente e domiciliado na Rua Coronel Alexanzito, nº 600, bairro Centro,\nAracati/CE, CEP 62800-000;\n(ii) para o cargo de Diretora Financeira, HELENA CASTRO LINS, brasileira, casada, economista,\nportadora da carteira de identidade nº 13942714 SSP/CE, inscrita no CPF sob o nº 394.948.214-83,\nresidente e domiciliada na Avenida Beira Mar, nº 2.900, apartamento 1.502, bairro Meireles,\nFortaleza/CE, CEP 60165-121; e\n(iii) para o cargo de Diretor Comercial, TIAGO ROLIM VASCONCELOS, brasileiro, solteiro,\nadministrador de empresas, portador da carteira de identidade nº 38149597 SSP/CE, inscrito no CPF\nsob o nº 621.052.185-12, residente e domiciliado na Rua Santos Dumont, nº 77, bairro Centro,\nAracati/CE, CEP 62800-000.\n5.1. Os Diretores ora eleitos tomam posse nesta data, mediante a assinatura dos respectivos termos\nde posse lavrados no Livro de Atas das Reuniões da Diretoria, e declaram, sob as penas da lei, que\nnão estão impedidos de exercer a administração da Companhia por lei especial, ou em virtude de\ncondenação criminal, ou por se encontrarem sob os efeitos dela, a pena que vede, ainda que\ntemporariamente, o acesso a cargos públicos; ou por crime falimentar, de prevaricação, peita ou\nsuborno, concussão, peculato, contra a economia popular, a fé pública ou a propriedade, nos termos\ndo art. 147 da Lei nº 6.404/1976.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "5.2. A representação da Companhia observará o disposto no art. 18 do Estatuto Social.\n5.3. Autorizar a Diretoria a promover o arquivamento da presente ata na Junta Comercial do Estado\ndo Ceará e as demais providências decorrentes das deliberações aqui tomadas.\n6. ENCERRAMENTO: Nada mais havendo a tratar, foi encerrada a reunião, da qual se lavrou a\npresente ata, que, lida e achada conforme, foi aprovada e assinada por todos os conselheiros\npresentes e pelos Diretores eleitos, em sinal de ciência e aceite.\nAracati/CE, 2 de maio de 2025.\nConselheiros:\nAFONSO HENRIQUE FEITOSA – Presidente da Mesa e do Conselho\nCELINA MARIA LINS – Secretária\nOTÁVIO ROLIM NETO – Conselheiro\nDiretores eleitos (ciência e aceite):\nMARCELO AUGUSTO FEITOSA – Diretor-Presidente\nHELENA CASTRO LINS – Diretora Financeira\nTIAGO ROLIM VASCONCELOS – Diretor Comercial\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 15/05/2025 sob o nº 85932944380\nProtocolo: 25/170.442-8 | NIRE: 23894229772\nEmpresa: DISTRIBUIDORA ARACATI S.A. | CNPJ: 74.535.813/0001-12\nAutenticação: C7B20E5A9F14D86E2B0A73F5\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "5efa457332626f548b01000eccf30ac341a201936515cf26de5bd7c073a3943b",
+     "leitura": {
+      "tarefas": {
+       "ata": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 57.9,
+        "tokens_saida": 1162,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "CRLV",
+     "nome": "CRLV.pdf",
+     "tipo": "crlv",
+     "titulo": "CRLV",
+     "data": null,
+     "paginas": [
+      "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n09042163114\nPLACA\nDYW8T81\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2022\nANO MODELO\n2022\nNÚMERO DO CRV\n158101335516\nCÓDIGO DE SEGURANÇA DO CLA\n26431135258\nMARCA / MODELO / VERSÃO\nTOYOTA/HILUX CD SRV 4X4 2.8\nESPÉCIE / TIPO\nCARGA/CAMINHONETE\nCHASSI\n9BRGE1CJ5BV305ND3\nCOR PREDOMINANTE\nBRANCA\nCOMBUSTÍVEL\nDIESEL\nNOME\nDISTRIBUIDORA ARACATI S.A.\nCPF / CNPJ\n74.535.813/0001-12\nLOCAL\nARACATI/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "550b29c2215a895407bdc5295fda3c8e8bf788bb5b258846c18328dc98760934",
+     "leitura": {
+      "tarefas": {
+       "crlv": {
+        "metodo": "regex"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "POA_SERGIO_SA",
+     "nome": "POA_SERGIO_SA.pdf",
+     "tipo": "procuracao",
+     "titulo": "Procuração (2026)",
+     "data": "2026-02-18",
+     "paginas": [
+      "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ – COMARCA DE ARACATI\nTabelionato Jaguaribe – Ofício Único de Notas de Aracati/CE (fictício)\nOtacílio Freire Barbosa – Tabelião\nLIVRO 41 — FOLHAS 090/091\nPROCURAÇÃO QUE FAZ DISTRIBUIDORA ARACATI S.A. A SÉRGIO PAIVA GOMES\nSAIBAM quantos este público instrumento de procuração virem que, aos dezoito (18) dias do mês\nde fevereiro de dois mil e vinte e seis (2026), nesta cidade de Aracati, Estado do Ceará, neste\nTabelionato, perante mim, Aline Façanha Moreira, Escrevente Autorizada, compareceu como\nOUTORGANTE: DISTRIBUIDORA ARACATI S.A., sociedade anônima de capital fechado,\ninscrita no CNPJ sob o nº 74.535.813/0001-12, NIRE 23894229772, com sede nesta cidade de\nAracati/CE, neste ato representada, na forma do art. 19 do seu Estatuto Social, por seus Diretores\nMARCELO AUGUSTO FEITOSA, brasileiro, casado, administrador de empresas, RG nº 77241241\nSSP/CE, CPF nº 589.831.948-47, residente e domiciliado em Aracati/CE, Diretor-Presidente, e\nHELENA CASTRO LINS, brasileira, casada, economista, RG nº 13942714 SSP/CE, CPF nº\n394.948.214-83, residente e domiciliada em Fortaleza/CE, Diretora Financeira, eleitos na Reunião\ndo Conselho de Administração realizada em 02/05/2025, cuja ata foi registrada na JUCEC em\n15/05/2025 sob o nº 85932944380, para mandato de 2 (dois) anos, conforme o Estatuto Social\nconsolidado aprovado na Assembleia Geral Extraordinária de 25/04/2024 e registrado na JUCEC em\n08/05/2024 sob o nº 48024523274, documentos cujas cópias ficam arquivadas nestas notas.\nReconhecidos como os próprios por mim, à vista dos documentos apresentados, do que dou fé.\nPela outorgante, assim representada, foi dito que, por este instrumento, nomeia e constitui seu\nbastante procurador SÉRGIO PAIVA GOMES, brasileiro, casado, gerente de frota, RG nº 85960701\nSSP/CE, CPF nº 291.280.845-60, residente e domiciliado na Rua Paulino Nogueira, nº 315, Benfica,\nFortaleza/CE, a quem confere poderes especiais e expressos para, sempre em conjunto com um\nDiretor da Companhia, vender, ceder e transferir veículos automotores de propriedade da outorgante,\na quem e pelo preço que convencionar; assinar a Autorização para Transferência de Propriedade do\nVeículo em meio digital (ATPV-e); receber o preço e dar quitação; requerer o que for necessário\nperante o DETRAN; e praticar os demais atos necessários ao fiel cumprimento deste mandato.\nO presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data, sendo vedado o\nsubstabelecimento.\nAssim o disseram, do que dou fé, e me pediram que lavrasse este instrumento, que, lido em voz alta\ne achado conforme, aceitam e assinam. Eu, Aline Façanha Moreira, Escrevente Autorizada, a lavrei.\nEu, Otacílio Freire Barbosa, Tabelião, subscrevo e assino.\n(aa) MARCELO AUGUSTO FEITOSA – HELENA CASTRO LINS – pela outorgante.\nOTACÍLIO FREIRE BARBOSA, Tabelião.\nEmolumentos: R$ 219,80 · Taxa de fiscalização: R$ 10,99 · Total: R$ 230,79\nSelo Digital: JGB-0041-2026-9D5A62\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "TRASLADO — Conferido com o original, a que me reporto e dou fé.\nAracati/CE, 18 de fevereiro de 2026.\nOtacílio Freire Barbosa – Tabelião\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "4f24acb05a5b897e04cdfb94ce6ab299cd4f4e17e519255704a80f0e0d59901b",
+     "leitura": {
+      "tarefas": {
+       "procuracao": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 45.9,
+        "tokens_saida": 831,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "llamacpp",
+    "modelo": "qwen3.8-27b",
+    "politica": "Código Civil (genérica)"
+   },
+   "lado": "vendedor"
+  }
+ },
+ "geral": {
+  "veredito": "PODE",
+  "faixa": "VERDE",
+  "indice": 99.9,
+  "resumo": "Vendedor: Sérgio Paiva Gomes e Tiago Rolim Vasconcelos podem, em conjunto, assinar a ATPV-e — procuração pública de 18/02/2026 (Tabelionato Jaguaribe – Ofício Único de Notas de Aracati/CE).",
+  "motivos_faixa": [
+   "Vendedor — índice 99.9 ≥ limiar 85"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "TOYOTA/HILUX CD SRV 4X4 2.8",
+   "placa": "DYW8T81",
+   "renavam": "09042163114",
+   "chassi": "9BRGE1CJ5BV305ND3"
+  },
+  "data_venda": "2026-09-23",
+  "valor": 230000.0,
+  "vendedor": {
+   "tipo": "PJ",
+   "nome": "DISTRIBUIDORA ARACATI S.A.",
+   "documento": "74.535.813/0001-12",
+   "assinantes": [
+    {
+     "nome": "Tiago Rolim Vasconcelos",
+     "cpf": "621.052.185-12"
+    },
+    {
+     "nome": "Sérgio Paiva Gomes",
+     "cpf": "291.280.845-60"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": "Auto Center Litoral Ltda.",
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "informado"
+ },
+ "hash_entrada": "50915dac1eeb7b45610505c82e1512420d964e14ca9eb20d9ba4493fb130df7b"
+}

@@ -1,0 +1,26 @@
+{
+  "caso": "I09",
+  "titulo": "Alçada de valor para assinatura conjunta, alterada no tempo, e venda sem valor informado",
+  "categoria": "alcada / alteracao_no_tempo / dado_faltante",
+  "objetivo": "Testa se o sistema aplica a alçada vigente (R$ 150.000,00, fixada pela Quarta Alteração, e não os R$ 120.000,00 da consolidação), reconhece que a cláusula alcança veículos do ativo imobilizado e, sem o valor da operação no pedido, encaminha para revisão em vez de aprovar a assinatura isolada ou recusá-la.",
+  "validacao_cega": true,
+  "autor": "independente",
+  "esperado": {
+    "veredito": "INDETERMINADO",
+    "faixas_aceitaveis": [
+      "AMARELO"
+    ],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null,
+    "fundamentos": [
+      "CC art. 1.013, caput",
+      "CC art. 1.014",
+      "CC art. 1.053",
+      "CC art. 47",
+      "CC art. 1.154, parágrafo único",
+      "Contrato social consolidado, Cláusula Oitava, § 2º, na redação da Quarta Alteração"
+    ]
+  },
+  "esperado_ce": null,
+  "raciocinio": "Os dois sócios administram isoladamente (Cláusula Oitava, caput), mas o § 2º exige a assinatura conjunta de ambos na alienação de bens móveis do ativo imobilizado, 'neles incluídos veículos', quando o valor da operação passar do limite; a Quarta Alteração, arquivada em 14/10/2025, elevou esse limite de R$ 120.000,00 para R$ 150.000,00. O § 3º trata de imóveis e não interfere. O pedido não informa o valor da venda do FIAT/TORO, e um utilitário desse modelo pode ser vendido abaixo ou acima de R$ 150.000,00, de modo que não há como saber se EDMILSON pode assinar sozinho. Se o valor for de até R$ 150.000,00, os conjuntos são {EDMILSON} e {ROSÂNGELA}; se for maior, o único conjunto é {EDMILSON, ROSÂNGELA}. Falta um dado essencial, e o caso deve ir para revisão humana, com exigência do valor da operação."
+}

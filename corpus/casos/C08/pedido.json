@@ -1,0 +1,26 @@
+{
+  "caso": "C08",
+  "vendedor": {
+    "razao_social": "AGROPECUÁRIA CARIRI LTDA.",
+    "cnpj": "84.885.681/0001-02"
+  },
+  "veiculo": {
+    "placa": "LHR3W86",
+    "renavam": "02419689822",
+    "chassi": "9BGGBU3CM9R7YYZX7",
+    "descricao": "GM/MONTANA PREMIER 1.2 TURBO"
+  },
+  "data_venda": "2026-09-17",
+  "valor": 112000,
+  "assinantes": [
+    {
+      "nome": "Josefa Alencar Lobo",
+      "cpf": "136.270.107-60"
+    }
+  ],
+  "comprador": {
+    "nome": "Jefferson Lucas Araújo",
+    "cidade": "Caucaia/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

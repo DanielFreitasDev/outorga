@@ -1,0 +1,43 @@
+{
+  "caso": "A11",
+  "titulo": "MEI vende: o titular assina",
+  "categoria": "tipos",
+  "objetivo": "Microempreendedor individual (CCMEI): o titular responde pela empresa.",
+  "validacao_cega": false,
+  "lote": "atpv",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "vendedor": {
+      "veredito": "PODE",
+      "faixas_aceitaveis": [
+        "VERDE"
+      ],
+      "conjuntos_minimos": [
+        [
+          "ROGERIO"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "714.092.128-82"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Rogério Fernandes Lima"
+        ]
+      ]
+    }
+  }
+}

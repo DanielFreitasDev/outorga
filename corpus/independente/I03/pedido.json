@@ -1,0 +1,24 @@
+{
+  "caso": "I03",
+  "vendedor": {
+    "razao_social": "VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA",
+    "cnpj": "56.469.460/0001-18"
+  },
+  "veiculo": {
+    "placa": "XCB7V20",
+    "renavam": "05328930190",
+    "chassi": "9BDJ8ABJ9EHZ647PF",
+    "descricao": "FIAT/FIORINO"
+  },
+  "data_venda": "2026-09-03",
+  "valor": 71000.00,
+  "assinantes": [
+    {"nome": "JOSÉ AIRTON HOLANDA CHAVES", "cpf": "975.811.679-76"}
+  ],
+  "crlv_proprietario": {
+    "nome": "VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA",
+    "documento": "56.469.460/0001-18"
+  },
+  "comprador": {"nome": "ANTÔNIA REJANE MOREIRA DIÓGENES"},
+  "forma_assinatura": "ATPV-e"
+}

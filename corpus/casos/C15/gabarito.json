@@ -1,0 +1,31 @@
+{
+  "caso": "C15",
+  "titulo": "Carro integralizado, mas o CRLV ainda está no CPF do sócio",
+  "categoria": "bem_integralizado",
+  "objetivo": "Titularidade registral divergente: o ATPV sai em nome do proprietário no DETRAN.",
+  "esperado": {
+    "veredito": "INDETERMINADO",
+    "faixas_aceitaveis": [
+      "AMARELO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "MARCOS"
+      ]
+    ],
+    "fundamentos": [
+      "CTB art. 123"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "948.662.836-02"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Marcos Antônio Girão"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

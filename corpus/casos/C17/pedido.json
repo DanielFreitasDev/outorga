@@ -1,0 +1,26 @@
+{
+  "caso": "C17",
+  "vendedor": {
+    "razao_social": "LOCADORA JANGADA LTDA.",
+    "cnpj": "38.005.305/0001-69"
+  },
+  "veiculo": {
+    "placa": "LEA1N11",
+    "renavam": "02840019811",
+    "chassi": "9BDYKW7SX6S2S9X3C",
+    "descricao": "FIAT/CRONOS DRIVE 1.3"
+  },
+  "data_venda": "2026-09-18",
+  "valor": 85000,
+  "assinantes": [
+    {
+      "nome": "Rodrigo Sales Furtado",
+      "cpf": "450.604.541-69"
+    }
+  ],
+  "comprador": {
+    "nome": "Frota Fácil Locações Ltda.",
+    "cidade": "Maracanaú/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

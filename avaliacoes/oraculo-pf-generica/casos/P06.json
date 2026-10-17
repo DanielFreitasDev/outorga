@@ -1,0 +1,938 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T12:00:03",
+ "pedido": {
+  "veiculo": {
+   "descricao": "FIAT/STRADA WORKING 1.4",
+   "placa": "WPL2U01",
+   "renavam": "09290055737",
+   "chassi": "9BDJ0KZYJ5CB2AAAB"
+  },
+  "data_venda": "2026-10-16",
+  "valor": null,
+  "assinantes": [
+   {
+    "nome": "CPF 753.490.565-65",
+    "cpf": "753.490.565-65"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": null,
+  "vendedor_cnpj": "812.329.658-47",
+  "lado": "vendedor",
+  "consulta": true
+ },
+ "empresa": {
+  "razao_social": "Francisco Erivan Cavalcante",
+  "cnpj": null,
+  "tipo": "PF",
+  "objeto": "",
+  "comercializa_veiculos": false,
+  "subtipo": "PF",
+  "cpf": "812.329.658-47"
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 0.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 2,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 0 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: Francisco Erivan Cavalcante. O caminho por procuração pública de 20/07/2026 não vale: procuração é para outro veículo.",
+ "assinantes": [
+  {
+   "informado": "CPF 753.490.565-65",
+   "cpf": "753.490.565-65",
+   "chave": "75349056565",
+   "nome": "Josué Lima Ferreira",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:81232965847",
+   "pessoas": [
+    {
+     "chave": "81232965847",
+     "nome": "Francisco Erivan Cavalcante"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "Assinatura do próprio proprietário (pessoa física)",
+   "cadeia": [
+    "TITULAR"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [
+  {
+   "id": "POA_PF_ONIX:bloqueada",
+   "pessoas": [
+    {
+     "chave": "75349056565",
+     "nome": "Josué Lima Ferreira"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 20/07/2026",
+   "cadeia": [
+    "POA_PF_ONIX"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_TITULAR",
+     "severidade": "ok",
+     "titulo": "Outorgada por o proprietário do veículo",
+     "detalhe": "A outorgante é Francisco Erivan Cavalcante, o proprietário do veículo (pessoa física).",
+     "fundamento": [
+      "CC art. 653"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_ONIX",
+       "doc_titulo": "Procuração (POA_PF_ONIX)",
+       "trecho": "OUTORGANTE, em nome próprio, FRANCISCO ERIVAN CAVALCANTE, brasileiro, casado, comerciante, portador da cédula de identidade RG nº 25363612 SSP/CE, inscrito no CPF sob o nº 812",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 562,
+       "fim": 737
+      }
+     ],
+     "caminho": "POA_PF_ONIX"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_ONIX",
+       "doc_titulo": "Procuração (POA_PF_ONIX)",
+       "trecho": "302, Benfica, Fortaleza/CE, a quem confere poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar, a quem e pelo preço que convencionar, o veículo GM/ONIX 1",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1299,
+       "fim": 1490
+      }
+     ],
+     "caminho": "POA_PF_ONIX"
+    },
+    {
+     "codigo": "VEICULO_NAO_ABRANGIDO",
+     "severidade": "bloqueio",
+     "titulo": "Procuração é para outro veículo",
+     "detalhe": "A procuração só abrange GM/ONIX 1.0 LT, não o veículo da venda (WPL2U01).",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_ONIX",
+       "doc_titulo": "Procuração (POA_PF_ONIX)",
+       "trecho": "302, Benfica, Fortaleza/CE, a quem confere poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar, a quem e pelo preço que convencionar, o veículo GM/ONIX 1",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1299,
+       "fim": 1490
+      }
+     ],
+     "caminho": "POA_PF_ONIX"
+    },
+    {
+     "codigo": "PROCURACAO_NO_PRAZO",
+     "severidade": "ok",
+     "titulo": "Dentro do prazo",
+     "detalhe": "Válida até 20/07/2027.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_ONIX",
+       "doc_titulo": "Procuração (POA_PF_ONIX)",
+       "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado da data da lavratura deste instrumento",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2565,
+       "fim": 2665
+      }
+     ],
+     "caminho": "POA_PF_ONIX"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "contrato:81232965847",
+   "via": "contrato",
+   "descricao": "Assinatura do próprio proprietário (pessoa física)",
+   "pessoas": [
+    "81232965847"
+   ],
+   "faltam": [
+    "81232965847"
+   ],
+   "faltam_nomes": [
+    "Francisco Erivan Cavalcante"
+   ],
+   "pessoas_nomes": [
+    "Francisco Erivan Cavalcante"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "TITULARIDADE_BASE",
+   "severidade": "ok",
+   "titulo": "Proprietário conferido na base veicular",
+   "detalhe": "Pela placa/RENAVAM, o veículo está em nome de Francisco Erivan Cavalcante.",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "TITULAR#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "TITULAR",
+    "doc_titulo": "Base veicular (simulada)",
+    "trecho": "FRANCISCO ERIVAN CAVALCANTE — CPF 812.329.658-47",
+    "clausula": "titularidade",
+    "ancoragem": 100.0,
+    "pagina": null,
+    "inicio": null,
+    "fim": null
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Francisco Erivan Cavalcante"
+   ],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": true
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-10-16",
+  "atos": [
+   {
+    "doc": "TITULAR",
+    "titulo": "Titularidade (pessoa física)",
+    "efeito": "1900-01-01"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "81232965847",
+    "nome": "Francisco Erivan Cavalcante",
+    "cargo": "titular (pessoa física)",
+    "doc": "TITULAR"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "81232965847",
+    "nome": "Francisco Erivan Cavalcante",
+    "percentual": 100.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "Francisco Erivan Cavalcante",
+    "sub": ""
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "FIAT/STRADA WORKING 1.4",
+    "sub": "WPL2U01"
+   },
+   {
+    "id": "81232965847",
+    "tipo": "pessoa",
+    "rotulo": "Francisco Erivan Cavalcante",
+    "papeis": [
+     "sócio 100%",
+     "titular (pessoa física)",
+     "outorgante (pessoa física)"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "75349056565",
+    "tipo": "pessoa",
+    "rotulo": "Josué Lima Ferreira",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "alerta"
+   },
+   {
+    "de": "81232965847",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "100%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "81232965847",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "TITULAR"
+   },
+   {
+    "de": "81232965847",
+    "para": "75349056565",
+    "tipo": "procuracao",
+    "status": "invalido",
+    "doc": "POA_PF_ONIX",
+    "rotulo": "procuração 20/07/2026 · Procuração é para outro veículo",
+    "motivo": "Procuração é para outro veículo"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "1900-01-01",
+   "tipo": "ato",
+   "titulo": "Titularidade (pessoa física)",
+   "doc": "TITULAR",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-07-20",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Josué Lima Ferreira",
+   "doc": "POA_PF_ONIX",
+   "detalhe": "publica"
+  },
+  {
+   "data": "2026-10-16",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "valor não informado"
+  },
+  {
+   "data": "2027-07-20",
+   "tipo": "vencimento",
+   "titulo": "Vence a procuração de Josué Lima Ferreira",
+   "doc": "POA_PF_ONIX",
+   "detalhe": ""
+  }
+ ],
+ "pessoas": {
+  "81232965847": {
+   "nome": "Francisco Erivan Cavalcante",
+   "cpf": "81232965847"
+  },
+  "75349056565": {
+   "nome": "Josué Lima Ferreira",
+   "cpf": "75349056565"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "Francisco Erivan Cavalcante",
+   "cnpj": null,
+   "tipo": "PF",
+   "cpf": "81232965847",
+   "documento": "81232965847",
+   "atos_vigentes": [],
+   "titularidade": "Base veicular (simulada)"
+  },
+  "outorgado": [
+   {
+    "nome": "Josué Lima Ferreira",
+    "cpf": "753.490.565-65",
+    "identificacao": "CPF",
+    "qualidade": "procurador(a) pela procuração de 20/07/2026"
+   }
+  ],
+  "poderes_conferidos": [
+   "Procuração pública de 20/07/2026: não comprova poderes (Procuração é para outro veículo)."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [],
+  "documentos_verificaveis": [
+   {
+    "id": "POA_PF_ONIX",
+    "titulo": "Procuração (POA_PF_ONIX)",
+    "arquivo": "POA_PF_ONIX.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "POA_PF_ONIX",
+   "nome": "POA_PF_ONIX.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (POA_PF_ONIX)",
+   "data": "2026-07-20",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nHeloísa Barreira Nunes – Tabeliã\nLIVRO 876 — FOLHAS 012/013\nPROCURAÇÃO BASTANTE QUE FAZ FRANCISCO ERIVAN CAVALCANTE A FAVOR\nDE JOSUÉ LIMA FERREIRA, NA FORMA ABAIXO:\nSAIBAM quantos este público instrumento de procuração virem que, aos vinte (20) dias do mês de\njulho do ano de dois mil e vinte e seis (2026), nesta cidade de Fortaleza, Capital do Estado do Ceará,\nem cartório, perante mim, Rogério Lustosa Maia, Escrevente Notarial, compareceu como\nOUTORGANTE, em nome próprio, FRANCISCO ERIVAN CAVALCANTE, brasileiro, casado,\ncomerciante, portador da cédula de identidade RG nº 25363612 SSP/CE, inscrito no CPF sob o nº\n812.329.658-47, residente e domiciliado na Rua das Carnaúbas, nº 712, Jurema, Caucaia/CE,\nreconhecido como o próprio por mim, à vista dos documentos originais apresentados, do que dou fé.\nE, pelo outorgante, me foi dito que, por este público instrumento e nos melhores termos de direito,\nnomeia e constitui seu bastante procurador JOSUÉ LIMA FERREIRA, brasileiro, casado,\ndespachante documentalista, portador da cédula de identidade RG nº 88527416 SSP/CE, inscrito no\nCPF sob o nº 753.490.565-65, residente e domiciliado na Avenida da Universidade, nº 2.840, apto.\n302, Benfica, Fortaleza/CE, a quem confere poderes especiais e expressos para vender, ceder,\ntransferir ou de qualquer forma alienar, a quem e pelo preço que convencionar, o veículo GM/ONIX\n1.0 LT, espécie/tipo PASSAGEIRO/AUTOMÓVEL, combustível álcool/gasolina, ano/modelo\n2021/2021, cor preta, placa SNZ1K19, RENAVAM 06122812556, chassi 9BGB1S0SVA0TK03P3,\nde propriedade do outorgante, ajustando cláusulas e condições; assinar a Autorização para\nTransferência de Propriedade do Veículo (ATPV-e), inclusive em meio eletrônico, bem como o\ncontrato e o recibo de compra e venda; receber o preço e dar quitação; entregar ao adquirente o\nveículo, suas chaves e seus documentos; requerer e assinar o que for necessário perante o DETRAN\npara a transferência do referido veículo, inclusive vistoria, consulta de débitos, segunda via de\ndocumentos e comunicação de venda; pagar taxas, tributos, licenciamento e multas que recaiam\nsobre o mesmo veículo; assinar declarações, requerimentos e termos de responsabilidade; e praticar,\nenfim, todos os demais atos necessários ao fiel cumprimento deste mandato, relativamente ao\nveículo acima descrito.\nO outorgante declara, sob as penas da lei, que o veículo acima descrito encontra-se registrado em seu\nnome perante o DETRAN-CE.\nO presente mandato vigorará pelo prazo de 1 (um) ano, contado da data da lavratura deste\ninstrumento.\nAssim o disse, do que dou fé, e me pediu que lhe lavrasse este instrumento, que, lido em voz alta e\nachado conforme, aceita e assina. Eu, Rogério Lustosa Maia, Escrevente Notarial, a lavrei. Eu,\nHeloísa Barreira Nunes, Tabeliã, a subscrevo.\n(aa) FRANCISCO ERIVAN CAVALCANTE, outorgante.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "HELOÍSA BARREIRA NUNES, Tabeliã.\nEmolumentos: R$ 168,40 · Taxa de fiscalização: R$ 8,42 · Total: R$ 176,82\nSelo Digital: IRA-0876-2026-E19A4D\nTRASLADO — Confere com o original lavrado nas notas deste Tabelionato, no livro e folhas\nacima indicados, do que dou fé.\nFortaleza/CE, 20 de julho de 2026.\nHeloísa Barreira Nunes – Tabeliã\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "1abb1de75be700a6e4a9e3e79b24031d0222fabe6b295d24278b12dd404f9b97",
+   "leitura": {}
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "gabarito",
+  "politica": "Código Civil (genérica)"
+ },
+ "lado": "vendedor",
+ "pendencias": [],
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T12:00:03",
+   "pedido": {
+    "veiculo": {
+     "descricao": "FIAT/STRADA WORKING 1.4",
+     "placa": "WPL2U01",
+     "renavam": "09290055737",
+     "chassi": "9BDJ0KZYJ5CB2AAAB"
+    },
+    "data_venda": "2026-10-16",
+    "valor": null,
+    "assinantes": [
+     {
+      "nome": "CPF 753.490.565-65",
+      "cpf": "753.490.565-65"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": null,
+    "vendedor_cnpj": "812.329.658-47",
+    "lado": "vendedor",
+    "consulta": true
+   },
+   "empresa": {
+    "razao_social": "Francisco Erivan Cavalcante",
+    "cnpj": null,
+    "tipo": "PF",
+    "objeto": "",
+    "comercializa_veiculos": false,
+    "subtipo": "PF",
+    "cpf": "812.329.658-47"
+   },
+   "veredito": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 2,
+    "menor_confianca_fato": 1.0,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Francisco Erivan Cavalcante. O caminho por procuração pública de 20/07/2026 não vale: procuração é para outro veículo.",
+   "assinantes": [
+    {
+     "informado": "CPF 753.490.565-65",
+     "cpf": "753.490.565-65",
+     "chave": "75349056565",
+     "nome": "Josué Lima Ferreira",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:81232965847",
+     "pessoas": [
+      {
+       "chave": "81232965847",
+       "nome": "Francisco Erivan Cavalcante"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "Assinatura do próprio proprietário (pessoa física)",
+     "cadeia": [
+      "TITULAR"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [
+    {
+     "id": "POA_PF_ONIX:bloqueada",
+     "pessoas": [
+      {
+       "chave": "75349056565",
+       "nome": "Josué Lima Ferreira"
+      }
+     ],
+     "via": "procuracao",
+     "descricao": "Procuração pública de 20/07/2026",
+     "cadeia": [
+      "POA_PF_ONIX"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [
+      {
+       "codigo": "OUTORGANTE_TITULAR",
+       "severidade": "ok",
+       "titulo": "Outorgada por o proprietário do veículo",
+       "detalhe": "A outorgante é Francisco Erivan Cavalcante, o proprietário do veículo (pessoa física).",
+       "fundamento": [
+        "CC art. 653"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_ONIX",
+         "doc_titulo": "Procuração (POA_PF_ONIX)",
+         "trecho": "OUTORGANTE, em nome próprio, FRANCISCO ERIVAN CAVALCANTE, brasileiro, casado, comerciante, portador da cédula de identidade RG nº 25363612 SSP/CE, inscrito no CPF sob o nº 812",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 562,
+         "fim": 737
+        }
+       ],
+       "caminho": "POA_PF_ONIX"
+      },
+      {
+       "codigo": "PODERES_ESPECIAIS",
+       "severidade": "ok",
+       "titulo": "Poder expresso para alienar veículos",
+       "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+       "fundamento": [
+        "CC art. 661, §1º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_ONIX",
+         "doc_titulo": "Procuração (POA_PF_ONIX)",
+         "trecho": "302, Benfica, Fortaleza/CE, a quem confere poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar, a quem e pelo preço que convencionar, o veículo GM/ONIX 1",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1299,
+         "fim": 1490
+        }
+       ],
+       "caminho": "POA_PF_ONIX"
+      },
+      {
+       "codigo": "VEICULO_NAO_ABRANGIDO",
+       "severidade": "bloqueio",
+       "titulo": "Procuração é para outro veículo",
+       "detalhe": "A procuração só abrange GM/ONIX 1.0 LT, não o veículo da venda (WPL2U01).",
+       "fundamento": [
+        "CC art. 661, §1º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_ONIX",
+         "doc_titulo": "Procuração (POA_PF_ONIX)",
+         "trecho": "302, Benfica, Fortaleza/CE, a quem confere poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar, a quem e pelo preço que convencionar, o veículo GM/ONIX 1",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1299,
+         "fim": 1490
+        }
+       ],
+       "caminho": "POA_PF_ONIX"
+      },
+      {
+       "codigo": "PROCURACAO_NO_PRAZO",
+       "severidade": "ok",
+       "titulo": "Dentro do prazo",
+       "detalhe": "Válida até 20/07/2027.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_ONIX",
+         "doc_titulo": "Procuração (POA_PF_ONIX)",
+         "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado da data da lavratura deste instrumento",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 2565,
+         "fim": 2665
+        }
+       ],
+       "caminho": "POA_PF_ONIX"
+      }
+     ],
+     "precondicoes": []
+    }
+   ],
+   "caminho_escolhido": null,
+   "faltantes": [
+    {
+     "alternativa": "contrato:81232965847",
+     "via": "contrato",
+     "descricao": "Assinatura do próprio proprietário (pessoa física)",
+     "pessoas": [
+      "81232965847"
+     ],
+     "faltam": [
+      "81232965847"
+     ],
+     "faltam_nomes": [
+      "Francisco Erivan Cavalcante"
+     ],
+     "pessoas_nomes": [
+      "Francisco Erivan Cavalcante"
+     ]
+    }
+   ],
+   "achados": [
+    {
+     "codigo": "TITULARIDADE_BASE",
+     "severidade": "ok",
+     "titulo": "Proprietário conferido na base veicular",
+     "detalhe": "Pela placa/RENAVAM, o veículo está em nome de Francisco Erivan Cavalcante.",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "TITULAR#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "TITULAR",
+      "doc_titulo": "Base veicular (simulada)",
+      "trecho": "FRANCISCO ERIVAN CAVALCANTE — CPF 812.329.658-47",
+      "clausula": "titularidade",
+      "ancoragem": 100.0,
+      "pagina": null,
+      "inicio": null,
+      "fim": null
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Francisco Erivan Cavalcante"
+     ],
+     "cargo": null,
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": true
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-10-16",
+    "atos": [
+     {
+      "doc": "TITULAR",
+      "titulo": "Titularidade (pessoa física)",
+      "efeito": "1900-01-01"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "81232965847",
+      "nome": "Francisco Erivan Cavalcante",
+      "cargo": "titular (pessoa física)",
+      "doc": "TITULAR"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "81232965847",
+      "nome": "Francisco Erivan Cavalcante",
+      "percentual": 100.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "Francisco Erivan Cavalcante",
+      "sub": ""
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "FIAT/STRADA WORKING 1.4",
+      "sub": "WPL2U01"
+     },
+     {
+      "id": "81232965847",
+      "tipo": "pessoa",
+      "rotulo": "Francisco Erivan Cavalcante",
+      "papeis": [
+       "sócio 100%",
+       "titular (pessoa física)",
+       "outorgante (pessoa física)"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "75349056565",
+      "tipo": "pessoa",
+      "rotulo": "Josué Lima Ferreira",
+      "papeis": [
+       "procurador"
+      ],
+      "assinante": true
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "alerta"
+     },
+     {
+      "de": "81232965847",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "100%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "81232965847",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "TITULAR"
+     },
+     {
+      "de": "81232965847",
+      "para": "75349056565",
+      "tipo": "procuracao",
+      "status": "invalido",
+      "doc": "POA_PF_ONIX",
+      "rotulo": "procuração 20/07/2026 · Procuração é para outro veículo",
+      "motivo": "Procuração é para outro veículo"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "1900-01-01",
+     "tipo": "ato",
+     "titulo": "Titularidade (pessoa física)",
+     "doc": "TITULAR",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-07-20",
+     "tipo": "procuracao",
+     "titulo": "Procuração para Josué Lima Ferreira",
+     "doc": "POA_PF_ONIX",
+     "detalhe": "publica"
+    },
+    {
+     "data": "2026-10-16",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "valor não informado"
+    },
+    {
+     "data": "2027-07-20",
+     "tipo": "vencimento",
+     "titulo": "Vence a procuração de Josué Lima Ferreira",
+     "doc": "POA_PF_ONIX",
+     "detalhe": ""
+    }
+   ],
+   "pessoas": {
+    "81232965847": {
+     "nome": "Francisco Erivan Cavalcante",
+     "cpf": "81232965847"
+    },
+    "75349056565": {
+     "nome": "Josué Lima Ferreira",
+     "cpf": "75349056565"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "não comprovada",
+    "outorgante": {
+     "nome": "Francisco Erivan Cavalcante",
+     "cnpj": null,
+     "tipo": "PF",
+     "cpf": "81232965847",
+     "documento": "81232965847",
+     "atos_vigentes": [],
+     "titularidade": "Base veicular (simulada)"
+    },
+    "outorgado": [
+     {
+      "nome": "Josué Lima Ferreira",
+      "cpf": "753.490.565-65",
+      "identificacao": "CPF",
+      "qualidade": "procurador(a) pela procuração de 20/07/2026"
+     }
+    ],
+    "poderes_conferidos": [
+     "Procuração pública de 20/07/2026: não comprova poderes (Procuração é para outro veículo)."
+    ],
+    "prazo_validade": [
+     "—"
+    ],
+    "revogacao": [
+     "—"
+    ],
+    "fontes": [],
+    "documentos_verificaveis": [
+     {
+      "id": "POA_PF_ONIX",
+      "titulo": "Procuração (POA_PF_ONIX)",
+      "arquivo": "POA_PF_ONIX.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "POA_PF_ONIX",
+     "nome": "POA_PF_ONIX.pdf",
+     "tipo": "procuracao",
+     "titulo": "Procuração (POA_PF_ONIX)",
+     "data": "2026-07-20",
+     "paginas": [
+      "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nHeloísa Barreira Nunes – Tabeliã\nLIVRO 876 — FOLHAS 012/013\nPROCURAÇÃO BASTANTE QUE FAZ FRANCISCO ERIVAN CAVALCANTE A FAVOR\nDE JOSUÉ LIMA FERREIRA, NA FORMA ABAIXO:\nSAIBAM quantos este público instrumento de procuração virem que, aos vinte (20) dias do mês de\njulho do ano de dois mil e vinte e seis (2026), nesta cidade de Fortaleza, Capital do Estado do Ceará,\nem cartório, perante mim, Rogério Lustosa Maia, Escrevente Notarial, compareceu como\nOUTORGANTE, em nome próprio, FRANCISCO ERIVAN CAVALCANTE, brasileiro, casado,\ncomerciante, portador da cédula de identidade RG nº 25363612 SSP/CE, inscrito no CPF sob o nº\n812.329.658-47, residente e domiciliado na Rua das Carnaúbas, nº 712, Jurema, Caucaia/CE,\nreconhecido como o próprio por mim, à vista dos documentos originais apresentados, do que dou fé.\nE, pelo outorgante, me foi dito que, por este público instrumento e nos melhores termos de direito,\nnomeia e constitui seu bastante procurador JOSUÉ LIMA FERREIRA, brasileiro, casado,\ndespachante documentalista, portador da cédula de identidade RG nº 88527416 SSP/CE, inscrito no\nCPF sob o nº 753.490.565-65, residente e domiciliado na Avenida da Universidade, nº 2.840, apto.\n302, Benfica, Fortaleza/CE, a quem confere poderes especiais e expressos para vender, ceder,\ntransferir ou de qualquer forma alienar, a quem e pelo preço que convencionar, o veículo GM/ONIX\n1.0 LT, espécie/tipo PASSAGEIRO/AUTOMÓVEL, combustível álcool/gasolina, ano/modelo\n2021/2021, cor preta, placa SNZ1K19, RENAVAM 06122812556, chassi 9BGB1S0SVA0TK03P3,\nde propriedade do outorgante, ajustando cláusulas e condições; assinar a Autorização para\nTransferência de Propriedade do Veículo (ATPV-e), inclusive em meio eletrônico, bem como o\ncontrato e o recibo de compra e venda; receber o preço e dar quitação; entregar ao adquirente o\nveículo, suas chaves e seus documentos; requerer e assinar o que for necessário perante o DETRAN\npara a transferência do referido veículo, inclusive vistoria, consulta de débitos, segunda via de\ndocumentos e comunicação de venda; pagar taxas, tributos, licenciamento e multas que recaiam\nsobre o mesmo veículo; assinar declarações, requerimentos e termos de responsabilidade; e praticar,\nenfim, todos os demais atos necessários ao fiel cumprimento deste mandato, relativamente ao\nveículo acima descrito.\nO outorgante declara, sob as penas da lei, que o veículo acima descrito encontra-se registrado em seu\nnome perante o DETRAN-CE.\nO presente mandato vigorará pelo prazo de 1 (um) ano, contado da data da lavratura deste\ninstrumento.\nAssim o disse, do que dou fé, e me pediu que lhe lavrasse este instrumento, que, lido em voz alta e\nachado conforme, aceita e assina. Eu, Rogério Lustosa Maia, Escrevente Notarial, a lavrei. Eu,\nHeloísa Barreira Nunes, Tabeliã, a subscrevo.\n(aa) FRANCISCO ERIVAN CAVALCANTE, outorgante.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "HELOÍSA BARREIRA NUNES, Tabeliã.\nEmolumentos: R$ 168,40 · Taxa de fiscalização: R$ 8,42 · Total: R$ 176,82\nSelo Digital: IRA-0876-2026-E19A4D\nTRASLADO — Confere com o original lavrado nas notas deste Tabelionato, no livro e folhas\nacima indicados, do que dou fé.\nFortaleza/CE, 20 de julho de 2026.\nHeloísa Barreira Nunes – Tabeliã\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "1abb1de75be700a6e4a9e3e79b24031d0222fabe6b295d24278b12dd404f9b97",
+     "leitura": {}
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "gabarito",
+    "politica": "Código Civil (genérica)"
+   },
+   "lado": "vendedor",
+   "pendencias": []
+  }
+ },
+ "geral": {
+  "veredito": "NAO_PODE",
+  "faixa": "VERMELHO",
+  "indice": 0.0,
+  "resumo": "Vendedor: Os assinantes informados não bastam. Quem pode assinar: Francisco Erivan Cavalcante. O caminho por procuração pública de 20/07/2026 não vale: procuração é para outro veículo.",
+  "motivos_faixa": [
+   "Vendedor — índice 0 ≤ limiar 15"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "FIAT/STRADA WORKING 1.4",
+   "placa": "WPL2U01",
+   "renavam": "09290055737",
+   "chassi": "9BDJ0KZYJ5CB2AAAB"
+  },
+  "data_venda": "2026-10-16",
+  "valor": null,
+  "vendedor": {
+   "tipo": "PF",
+   "nome": "FRANCISCO ERIVAN CAVALCANTE",
+   "documento": "812.329.658-47",
+   "assinantes": [
+    {
+     "nome": "CPF 753.490.565-65",
+     "cpf": "753.490.565-65"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": null,
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "consulta por CPF",
+  "alvo": "vendedor",
+  "titular_fonte": "base veicular"
+ },
+ "hash_entrada": "c7ebd1a79be0cc54e9910797b2340f46f59a172c4f16fe8bd728ed8571ff21f9"
+}

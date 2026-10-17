@@ -1,0 +1,32 @@
+{
+  "caso": "C35",
+  "titulo": "Revendedora: restrição a ativo imobilizado x estoque",
+  "categoria": "deliberacao",
+  "objetivo": "Venda de veículo é a atividade-fim da revendedora; se o carro é estoque, a restrição do imobilizado não se aplica — mas é preciso confirmar.",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "AMARELO",
+      "VERDE"
+    ],
+    "conjuntos_minimos": [
+      [
+        "EDUARDO"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 1.015"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "460.013.041-30"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Eduardo Martins Leal"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

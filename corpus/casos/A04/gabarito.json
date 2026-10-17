@@ -1,0 +1,52 @@
+{
+  "caso": "A04",
+  "titulo": "Comprador PJ por procurador com poder de compra",
+  "categoria": "comprador",
+  "objetivo": "Procuração pública com poderes especiais para adquirir veículos e assinar a ATPV-e como comprador.",
+  "validacao_cega": false,
+  "lote": "atpv",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "comprador": {
+      "veredito": "PODE",
+      "faixas_aceitaveis": [
+        "VERDE"
+      ],
+      "conjuntos_minimos": [
+        [
+          "FRANCISCO"
+        ],
+        [
+          "ELIAS"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "729.405.576-91"
+        ],
+        [
+          "355.918.820-21"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Francisco Wellington Rocha"
+        ],
+        [
+          "Elias Rodrigues Maia"
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "caso": "C27",
+  "vendedor": {
+    "razao_social": "LOGÍSTICA MARACANAÚ LTDA.",
+    "cnpj": "47.865.893/0001-00"
+  },
+  "veiculo": {
+    "placa": "CLY2R80",
+    "renavam": "06113875923",
+    "chassi": "9BMHFZSK56G4JFB64",
+    "descricao": "M.BENZ/ATEGO 2426 6X2"
+  },
+  "data_venda": "2026-09-29",
+  "valor": 330000,
+  "assinantes": [
+    {
+      "nome": "Sérgio Paiva Gomes",
+      "cpf": "291.280.845-60"
+    }
+  ],
+  "comprador": {
+    "nome": "Auto Center Litoral Ltda.",
+    "cidade": "Fortaleza/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

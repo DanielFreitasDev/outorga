@@ -1,0 +1,26 @@
+{
+  "caso": "C07",
+  "vendedor": {
+    "razao_social": "CLÍNICA IRACEMA ODONTOLOGIA LTDA.",
+    "cnpj": "59.776.055/0001-30"
+  },
+  "veiculo": {
+    "placa": "JUZ4E42",
+    "renavam": "09967750036",
+    "chassi": "988HUXBP69U0FNAGK",
+    "descricao": "JEEP/COMPASS LONGITUDE T270"
+  },
+  "data_venda": "2026-09-09",
+  "valor": 165000,
+  "assinantes": [
+    {
+      "nome": "Paula Regina Saraiva",
+      "cpf": "978.753.477-18"
+    }
+  ],
+  "comprador": {
+    "nome": "Rita de Cássia Moreira",
+    "cidade": "Fortaleza/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

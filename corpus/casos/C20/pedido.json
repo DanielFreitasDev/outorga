@@ -1,0 +1,26 @@
+{
+  "caso": "C20",
+  "vendedor": {
+    "razao_social": "CONSTRUTORA MANDACARU LTDA.",
+    "cnpj": "42.014.613/0001-28"
+  },
+  "veiculo": {
+    "placa": "MZR8X04",
+    "renavam": "03704121438",
+    "chassi": "9BRAVC7TELS8DZR26",
+    "descricao": "TOYOTA/COROLLA CROSS XRE 2.0"
+  },
+  "data_venda": "2026-09-25",
+  "valor": 158000,
+  "assinantes": [
+    {
+      "nome": "Kleber Jorge Matos",
+      "cpf": "659.085.380-00"
+    }
+  ],
+  "comprador": {
+    "nome": "Jefferson Lucas Araújo",
+    "cidade": "Caucaia/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

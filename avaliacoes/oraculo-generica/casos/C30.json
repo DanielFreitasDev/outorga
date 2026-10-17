@@ -1,0 +1,879 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T10:08:06",
+ "pedido": {
+  "veiculo": {
+   "descricao": "FIAT/DUCATO CARGO 2.2",
+   "placa": "KDW3A25",
+   "renavam": "09955156690",
+   "chassi": "9BD61G045X1ZAZ1ZT"
+  },
+  "data_venda": "2026-09-16",
+  "valor": 190000.0,
+  "assinantes": [
+   {
+    "nome": "Wagner Pontes Aguiar",
+    "cpf": "877.188.413-08"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "Diego Fernandes Uchoa",
+  "vendedor_cnpj": "16.653.989/0001-72",
+  "lado": "vendedor"
+ },
+ "empresa": {
+  "razao_social": "GRÁFICA SOBRALENSE LTDA.",
+  "cnpj": "16.653.989/0001-72",
+  "tipo": "LTDA",
+  "objeto": "impressão de material para uso publicitário e serviços de acabamento gráfico",
+  "comercializa_veiculos": false,
+  "subtipo": null
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "AMARELO",
+ "indice": 0.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 1,
+  "menor_confianca_fato": 1.0,
+  "alertas": 2,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "alerta: Administrador sem mandato em vigor",
+  "alerta: Ninguém com poder de administração em vigor"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: ninguém. Regra aplicável: regra geral de representação (Contrato Social (2021)).",
+ "assinantes": [
+  {
+   "informado": "Wagner Pontes Aguiar",
+   "cpf": "877.188.413-08",
+   "chave": "87718841308",
+   "nome": "Wagner Pontes Aguiar",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": null,
+ "faltantes": [],
+ "achados": [
+  {
+   "codigo": "MANDATO_ENCERRADO",
+   "severidade": "alerta",
+   "titulo": "Administrador sem mandato em vigor",
+   "detalhe": "Wagner Pontes Aguiar: mandato encerrado em 10/02/2024, sem recondução nos documentos apresentados.",
+   "fundamento": [
+    "CC art. 1.063"
+   ],
+   "fontes": [
+    {
+     "doc_id": "SOBRAL_CS",
+     "doc_titulo": "Contrato Social (2021)",
+     "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá ao sócio WAGNER PONTES AGUIAR",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 2,
+     "inicio": 2604,
+     "fim": 2704
+    }
+   ],
+   "caminho": null
+  },
+  {
+   "codigo": "CND_INSS",
+   "severidade": "info",
+   "titulo": "CND previdenciária",
+   "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+   "fundamento": [
+    "Lei 8.212/91, art. 47, I, \"c\""
+   ],
+   "fontes": [],
+   "caminho": null
+  },
+  {
+   "codigo": "SEM_REPRESENTANTE",
+   "severidade": "alerta",
+   "titulo": "Ninguém com poder de administração em vigor",
+   "detalhe": "Nenhum administrador com mandato vigente foi encontrado. É preciso regularizar a administração (recondução/eleição) antes da venda.",
+   "fundamento": [
+    "CC art. 1.063",
+    "CC art. 1.060"
+   ],
+   "fontes": [],
+   "caminho": null
+  },
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: GRÁFICA SOBRALENSE LTDA..",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "KDW3A25",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "SOBRAL_CS#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "SOBRAL_CS",
+    "doc_titulo": "Contrato Social (2021)",
+    "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá ao sócio WAGNER PONTES AGUIAR, que a exercerá isoladamente",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2604,
+    "fim": 2733
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Wagner Pontes Aguiar"
+   ],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    }
+   ],
+   "decisiva": true
+  }
+ ],
+ "precondicoes": [
+  {
+   "codigo": "REGRA_COM_ADMINISTRADOR_QUE_SAIU",
+   "descricao": "Cláusula cita administrador que não está mais no cargo",
+   "quorum": null,
+   "satisfeita": null,
+   "detalhe": "A regra mais específica só cita quem deixou a administração; aplicada a regra seguinte.",
+   "fontes": [
+    {
+     "doc_id": "SOBRAL_CS",
+     "doc_titulo": "Contrato Social (2021)",
+     "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá ao sócio WAGNER PONTES AGUIAR, que a exercerá isoladamente",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 2,
+     "inicio": 2604,
+     "fim": 2733
+    }
+   ],
+   "pessoas": []
+  }
+ ],
+ "regime": {
+  "data": "2026-09-16",
+  "atos": [
+   {
+    "doc": "SOBRAL_CS",
+    "titulo": "Contrato Social (2021)",
+    "efeito": "2021-02-01"
+   }
+  ],
+  "administradores": [],
+  "encerrados": [
+   {
+    "nome": "Wagner Pontes Aguiar",
+    "motivo": "mandato encerrado em 10/02/2024"
+   }
+  ],
+  "socios": [
+   {
+    "chave": "87718841308",
+    "nome": "Wagner Pontes Aguiar",
+    "percentual": 60.0
+   },
+   {
+    "chave": "01756820546",
+    "nome": "Tereza Cristina Aguiar",
+    "percentual": 40.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "GRÁFICA SOBRALENSE LTDA.",
+    "sub": "16.653.989/0001-72"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "FIAT/DUCATO CARGO 2.2",
+    "sub": "KDW3A25"
+   },
+   {
+    "id": "87718841308",
+    "tipo": "pessoa",
+    "rotulo": "Wagner Pontes Aguiar",
+    "papeis": [
+     "sócio 60%",
+     "ex-sócio administrador"
+    ],
+    "assinante": true
+   },
+   {
+    "id": "01756820546",
+    "tipo": "pessoa",
+    "rotulo": "Tereza Cristina Aguiar",
+    "papeis": [
+     "sócio 40%"
+    ],
+    "assinante": false
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "87718841308",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "60%",
+    "status": "neutro"
+   },
+   {
+    "de": "01756820546",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "40%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "87718841308",
+    "tipo": "administracao",
+    "rotulo": "mandato encerrado em 10/02/2024",
+    "status": "invalido",
+    "doc": "SOBRAL_CS"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2021-02-01",
+   "tipo": "ato",
+   "titulo": "Contrato Social (2021)",
+   "doc": "SOBRAL_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2024-02-10",
+   "tipo": "fim_mandato",
+   "titulo": "Fim do mandato de Wagner Pontes Aguiar",
+   "doc": "SOBRAL_CS",
+   "detalhe": "pelo prazo de 3 (três) anos, contados do registro deste instrumento, permitida a recondução"
+  },
+  {
+   "data": "2026-09-16",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 190.000,00"
+  }
+ ],
+ "pessoas": {
+  "87718841308": {
+   "nome": "Wagner Pontes Aguiar",
+   "cpf": "87718841308"
+  },
+  "01756820546": {
+   "nome": "Tereza Cristina Aguiar",
+   "cpf": "01756820546"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "GRÁFICA SOBRALENSE LTDA.",
+   "cnpj": "16.653.989/0001-72",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Contrato Social (2021)",
+     "doc": "SOBRAL_CS",
+     "efeito": "2021-02-01"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Wagner Pontes Aguiar",
+    "cpf": "877.188.413-08",
+    "identificacao": "CPF",
+    "qualidade": "sócio administrador"
+   }
+  ],
+  "poderes_conferidos": [
+   "Contrato Social (2021): para este veículo, exige regularização da administração.",
+   "Assinantes informados (Wagner Pontes Aguiar) não atendem a essa exigência."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [
+   {
+    "doc_id": "SOBRAL_CS",
+    "doc_titulo": "Contrato Social (2021)",
+    "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá ao sócio WAGNER PONTES AGUIAR, que a exercerá isoladamente",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2604,
+    "fim": 2733
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "SOBRAL_CS",
+    "titulo": "Contrato Social (2021)",
+    "arquivo": "SOBRAL_CS.pdf"
+   },
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "SOBRAL_CS",
+   "nome": "SOBRAL_CS.pdf",
+   "tipo": "contrato_social",
+   "titulo": "Contrato Social (2021)",
+   "data": "2021-02-01",
+   "paginas": [
+    "CONTRATO SOCIAL DE CONSTITUIÇÃO\nGRÁFICA SOBRALENSE LTDA.\nPelo presente instrumento particular, os abaixo assinados:\nWAGNER PONTES AGUIAR, brasileiro, casado sob o regime de comunhão parcial de bens,\nempresário, portador da carteira de identidade nº 32049233 SSP/CE e inscrito no CPF sob o nº\n877.188.413-08, residente e domiciliado na Rua Coronel Joaquim Ribeiro, nº 88, bairro Centro,\nSobral/CE, CEP 62011-030; e\nTEREZA CRISTINA AGUIAR, brasileira, casada sob o regime de comunhão parcial de bens,\nempresária, portadora da carteira de identidade nº 22039853 SSP/CE e inscrita no CPF sob o nº\n017.568.205-46, residente e domiciliada na Rua Oriano Mendes, nº 312, bairro Junco, Sobral/CE,\nCEP 62030-150;\nresolvem constituir uma sociedade empresária limitada, que se regerá pelas cláusulas e condições\nseguintes e, nas omissões, pelas disposições do Código Civil aplicáveis às sociedades limitadas.\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL\nA sociedade girará sob o nome empresarial GRÁFICA SOBRALENSE LTDA.\nCLÁUSULA SEGUNDA – DA SEDE\nA sociedade terá sede na Avenida Dom José, nº 1.540, bairro Centro, Sobral/CE, CEP 62010-290,\npodendo abrir e encerrar filiais e outros estabelecimentos em qualquer parte do território nacional,\nmediante alteração contratual.\nCLÁUSULA TERCEIRA – DO OBJETO SOCIAL\nA sociedade tem por objeto a impressão de material para uso publicitário e os serviços de\nacabamento gráfico.\nParágrafo único. As atividades correspondem aos códigos CNAE 1813-0/01 – impressão de material\npara uso publicitário; e 1822-9/99 – serviços de acabamentos gráficos, exceto encadernação e\nplastificação.\nCLÁUSULA QUARTA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciará suas atividades na data do registro deste contrato na Junta Comercial do Estado\ndo Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUINTA – DO CAPITAL SOCIAL\nO capital social é de R$ 200.000,00 (duzentos mil reais), dividido em 200.000 (duzentas mil) quotas\nde valor nominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas neste ato, em\nmoeda corrente do País, assim distribuídas entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nWAGNER PONTES AGUIAR\n120.000\n120.000,00\n60%\nTEREZA CRISTINA AGUIAR\n80.000\n80.000,00\n40%\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "Sócio\nQuotas\nValor (R$)\nParticipação\nTotal\n200.000\n200.000,00\n100%\nCLÁUSULA SEXTA – DA RESPONSABILIDADE DOS SÓCIOS\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social, nos termos do art. 1.052 do Código Civil.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade caberá ao sócio WAGNER PONTES AGUIAR, que a exercerá\nisoladamente, pelo prazo de 3 (três) anos, contados do registro deste instrumento, permitida a\nrecondução, com poderes e atribuições de representação ativa e passiva da sociedade, em juízo ou\nfora dele, podendo praticar todos os atos necessários à consecução do objeto social, vedado, no\nentanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em\navais, fianças e endossos de favor.\nParágrafo único. A sócia TEREZA CRISTINA AGUIAR não exercerá funções de administração,\nparticipando da sociedade exclusivamente na condição de sócia quotista.\nCLÁUSULA OITAVA – DO PRÓ-LABORE\nO administrador terá direito a uma retirada mensal a título de pró-labore, em valor a ser fixado de\ncomum acordo entre os sócios, observada a legislação tributária e previdenciária.\nCLÁUSULA NONA – DO EXERCÍCIO SOCIAL E DOS RESULTADOS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, em 31 de dezembro, o\nadministrador prestará contas justificadas de sua administração, procedendo à elaboração do\ninventário, do balanço patrimonial e do balanço de resultado econômico, cabendo aos sócios, na\nproporção de suas quotas, os lucros ou as perdas apurados.\nCLÁUSULA DÉCIMA – DAS DELIBERAÇÕES SOCIAIS\nAs deliberações dos sócios serão tomadas em reunião, convocada na forma da lei, observados os\nquóruns previstos no Código Civil, ficando dispensada a reunião quando todos os sócios decidirem,\npor escrito, sobre a matéria que seria objeto dela.\nCLÁUSULA DÉCIMA PRIMEIRA – DA CESSÃO DE QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas ou transferidas a terceiros sem o consentimento\ndo outro sócio, a quem fica assegurado, em igualdade de condições e preço, o direito de preferência\npara a sua aquisição, a ser exercido no prazo de 30 (trinta) dias contados da comunicação escrita da\nintenção de venda.\nCLÁUSULA DÉCIMA SEGUNDA – DO FALECIMENTO OU DA INCAPACIDADE DE\nSÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros, sucessores ou o representante legal do incapaz. Não sendo possível ou inexistindo\ninteresse destes ou do sócio remanescente, o valor de seus haveres será apurado e liquidado com\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "base na situação patrimonial da sociedade, à data da resolução, verificada em balanço especialmente\nlevantado.\nCLÁUSULA DÉCIMA TERCEIRA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nO administrador declara, sob as penas da lei, que não está impedido de exercer a administração da\nsociedade por lei especial, ou em virtude de condenação criminal, ou por se encontrar sob os efeitos\ndela, a pena que vede, ainda que temporariamente, o acesso a cargos públicos; ou por crime\nfalimentar, de prevaricação, peita ou suborno, concussão, peculato; ou contra a economia popular,\ncontra o sistema financeiro nacional, contra as normas de defesa da concorrência, contra as relações\nde consumo, a fé pública ou a propriedade.\nCLÁUSULA DÉCIMA QUARTA – DO ENQUADRAMENTO\nOs sócios declaram que a sociedade se enquadra como empresa de pequeno porte, nos termos da Lei\nComplementar nº 123/2006, e que não se enquadra em qualquer das hipóteses de exclusão previstas\nno § 4º do art. 3º da referida lei.\nCLÁUSULA DÉCIMA QUINTA – DO FORO\nFica eleito o foro da Comarca de Sobral/CE para o exercício e o cumprimento dos direitos e das\nobrigações resultantes deste contrato.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em via única,\npara que produza seus efeitos legais após o arquivamento na Junta Comercial do Estado do Ceará.\nSobral/CE, 1º de fevereiro de 2021.\nWAGNER PONTES AGUIAR\nTEREZA CRISTINA AGUIAR\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 10/02/2021 sob o nº 46264975113\nProtocolo: 21/048.227-1 | NIRE: 23715095332\nEmpresa: GRÁFICA SOBRALENSE LTDA. | CNPJ: 16.653.989/0001-72\nAutenticação: 3D8B5E02C71A49F6B0E3D25A\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "22d91b6aa89d5d50bd599828383eaaee31f960fcb9ca57767db62574d4098311",
+   "leitura": {}
+  },
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n09955156690\nPLACA\nKDW3A25\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2022\nANO MODELO\n2022\nNÚMERO DO CRV\n470721922658\nCÓDIGO DE SEGURANÇA DO CLA\n58406497074\nMARCA / MODELO / VERSÃO\nFIAT/DUCATO CARGO 2.2\nESPÉCIE / TIPO\nCARGA/FURGÃO\nCHASSI\n9BD61G045X1ZAZ1ZT\nCOR PREDOMINANTE\nBRANCA\nCOMBUSTÍVEL\nDIESEL\nNOME\nGRÁFICA SOBRALENSE LTDA.\nCPF / CNPJ\n16.653.989/0001-72\nLOCAL\nSOBRAL/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "970d0d37c7e254eea4dd26944a4dfd80982b630344288347b2de8d2b1370e598",
+   "leitura": {}
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "gabarito",
+  "politica": "Código Civil (genérica)"
+ },
+ "lado": "vendedor",
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T10:08:06",
+   "pedido": {
+    "veiculo": {
+     "descricao": "FIAT/DUCATO CARGO 2.2",
+     "placa": "KDW3A25",
+     "renavam": "09955156690",
+     "chassi": "9BD61G045X1ZAZ1ZT"
+    },
+    "data_venda": "2026-09-16",
+    "valor": 190000.0,
+    "assinantes": [
+     {
+      "nome": "Wagner Pontes Aguiar",
+      "cpf": "877.188.413-08"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "Diego Fernandes Uchoa",
+    "vendedor_cnpj": "16.653.989/0001-72",
+    "lado": "vendedor"
+   },
+   "empresa": {
+    "razao_social": "GRÁFICA SOBRALENSE LTDA.",
+    "cnpj": "16.653.989/0001-72",
+    "tipo": "LTDA",
+    "objeto": "impressão de material para uso publicitário e serviços de acabamento gráfico",
+    "comercializa_veiculos": false,
+    "subtipo": null
+   },
+   "veredito": "NAO_PODE",
+   "faixa": "AMARELO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 1,
+    "menor_confianca_fato": 1.0,
+    "alertas": 2,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "alerta: Administrador sem mandato em vigor",
+    "alerta: Ninguém com poder de administração em vigor"
+   ],
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: ninguém. Regra aplicável: regra geral de representação (Contrato Social (2021)).",
+   "assinantes": [
+    {
+     "informado": "Wagner Pontes Aguiar",
+     "cpf": "877.188.413-08",
+     "chave": "87718841308",
+     "nome": "Wagner Pontes Aguiar",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [],
+   "caminhos_invalidos": [],
+   "caminho_escolhido": null,
+   "faltantes": [],
+   "achados": [
+    {
+     "codigo": "MANDATO_ENCERRADO",
+     "severidade": "alerta",
+     "titulo": "Administrador sem mandato em vigor",
+     "detalhe": "Wagner Pontes Aguiar: mandato encerrado em 10/02/2024, sem recondução nos documentos apresentados.",
+     "fundamento": [
+      "CC art. 1.063"
+     ],
+     "fontes": [
+      {
+       "doc_id": "SOBRAL_CS",
+       "doc_titulo": "Contrato Social (2021)",
+       "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá ao sócio WAGNER PONTES AGUIAR",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 2604,
+       "fim": 2704
+      }
+     ],
+     "caminho": null
+    },
+    {
+     "codigo": "CND_INSS",
+     "severidade": "info",
+     "titulo": "CND previdenciária",
+     "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+     "fundamento": [
+      "Lei 8.212/91, art. 47, I, \"c\""
+     ],
+     "fontes": [],
+     "caminho": null
+    },
+    {
+     "codigo": "SEM_REPRESENTANTE",
+     "severidade": "alerta",
+     "titulo": "Ninguém com poder de administração em vigor",
+     "detalhe": "Nenhum administrador com mandato vigente foi encontrado. É preciso regularizar a administração (recondução/eleição) antes da venda.",
+     "fundamento": [
+      "CC art. 1.063",
+      "CC art. 1.060"
+     ],
+     "fontes": [],
+     "caminho": null
+    },
+    {
+     "codigo": "TITULARIDADE_OK",
+     "severidade": "ok",
+     "titulo": "Veículo registrado no CNPJ da empresa",
+     "detalhe": "Proprietário no CRLV: GRÁFICA SOBRALENSE LTDA..",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [
+      {
+       "doc_id": "CRLV",
+       "doc_titulo": "CRLV",
+       "trecho": "KDW3A25",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 146,
+       "fim": 153
+      }
+     ],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "SOBRAL_CS#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "SOBRAL_CS",
+      "doc_titulo": "Contrato Social (2021)",
+      "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá ao sócio WAGNER PONTES AGUIAR, que a exercerá isoladamente",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 2604,
+      "fim": 2733
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Wagner Pontes Aguiar"
+     ],
+     "cargo": null,
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente"
+       ]
+      }
+     ],
+     "decisiva": true
+    }
+   ],
+   "precondicoes": [
+    {
+     "codigo": "REGRA_COM_ADMINISTRADOR_QUE_SAIU",
+     "descricao": "Cláusula cita administrador que não está mais no cargo",
+     "quorum": null,
+     "satisfeita": null,
+     "detalhe": "A regra mais específica só cita quem deixou a administração; aplicada a regra seguinte.",
+     "fontes": [
+      {
+       "doc_id": "SOBRAL_CS",
+       "doc_titulo": "Contrato Social (2021)",
+       "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá ao sócio WAGNER PONTES AGUIAR, que a exercerá isoladamente",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 2604,
+       "fim": 2733
+      }
+     ],
+     "pessoas": []
+    }
+   ],
+   "regime": {
+    "data": "2026-09-16",
+    "atos": [
+     {
+      "doc": "SOBRAL_CS",
+      "titulo": "Contrato Social (2021)",
+      "efeito": "2021-02-01"
+     }
+    ],
+    "administradores": [],
+    "encerrados": [
+     {
+      "nome": "Wagner Pontes Aguiar",
+      "motivo": "mandato encerrado em 10/02/2024"
+     }
+    ],
+    "socios": [
+     {
+      "chave": "87718841308",
+      "nome": "Wagner Pontes Aguiar",
+      "percentual": 60.0
+     },
+     {
+      "chave": "01756820546",
+      "nome": "Tereza Cristina Aguiar",
+      "percentual": 40.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "GRÁFICA SOBRALENSE LTDA.",
+      "sub": "16.653.989/0001-72"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "FIAT/DUCATO CARGO 2.2",
+      "sub": "KDW3A25"
+     },
+     {
+      "id": "87718841308",
+      "tipo": "pessoa",
+      "rotulo": "Wagner Pontes Aguiar",
+      "papeis": [
+       "sócio 60%",
+       "ex-sócio administrador"
+      ],
+      "assinante": true
+     },
+     {
+      "id": "01756820546",
+      "tipo": "pessoa",
+      "rotulo": "Tereza Cristina Aguiar",
+      "papeis": [
+       "sócio 40%"
+      ],
+      "assinante": false
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "valido"
+     },
+     {
+      "de": "87718841308",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "60%",
+      "status": "neutro"
+     },
+     {
+      "de": "01756820546",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "40%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "87718841308",
+      "tipo": "administracao",
+      "rotulo": "mandato encerrado em 10/02/2024",
+      "status": "invalido",
+      "doc": "SOBRAL_CS"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2021-02-01",
+     "tipo": "ato",
+     "titulo": "Contrato Social (2021)",
+     "doc": "SOBRAL_CS",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2024-02-10",
+     "tipo": "fim_mandato",
+     "titulo": "Fim do mandato de Wagner Pontes Aguiar",
+     "doc": "SOBRAL_CS",
+     "detalhe": "pelo prazo de 3 (três) anos, contados do registro deste instrumento, permitida a recondução"
+    },
+    {
+     "data": "2026-09-16",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 190.000,00"
+    }
+   ],
+   "pessoas": {
+    "87718841308": {
+     "nome": "Wagner Pontes Aguiar",
+     "cpf": "87718841308"
+    },
+    "01756820546": {
+     "nome": "Tereza Cristina Aguiar",
+     "cpf": "01756820546"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "não comprovada",
+    "outorgante": {
+     "nome": "GRÁFICA SOBRALENSE LTDA.",
+     "cnpj": "16.653.989/0001-72",
+     "tipo": "LTDA",
+     "atos_vigentes": [
+      {
+       "titulo": "Contrato Social (2021)",
+       "doc": "SOBRAL_CS",
+       "efeito": "2021-02-01"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "Wagner Pontes Aguiar",
+      "cpf": "877.188.413-08",
+      "identificacao": "CPF",
+      "qualidade": "sócio administrador"
+     }
+    ],
+    "poderes_conferidos": [
+     "Contrato Social (2021): para este veículo, exige regularização da administração.",
+     "Assinantes informados (Wagner Pontes Aguiar) não atendem a essa exigência."
+    ],
+    "prazo_validade": [
+     "—"
+    ],
+    "revogacao": [
+     "—"
+    ],
+    "fontes": [
+     {
+      "doc_id": "SOBRAL_CS",
+      "doc_titulo": "Contrato Social (2021)",
+      "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá ao sócio WAGNER PONTES AGUIAR, que a exercerá isoladamente",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 2604,
+      "fim": 2733
+     }
+    ],
+    "documentos_verificaveis": [
+     {
+      "id": "SOBRAL_CS",
+      "titulo": "Contrato Social (2021)",
+      "arquivo": "SOBRAL_CS.pdf"
+     },
+     {
+      "id": "CRLV",
+      "titulo": "CRLV",
+      "arquivo": "CRLV.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "SOBRAL_CS",
+     "nome": "SOBRAL_CS.pdf",
+     "tipo": "contrato_social",
+     "titulo": "Contrato Social (2021)",
+     "data": "2021-02-01",
+     "paginas": [
+      "CONTRATO SOCIAL DE CONSTITUIÇÃO\nGRÁFICA SOBRALENSE LTDA.\nPelo presente instrumento particular, os abaixo assinados:\nWAGNER PONTES AGUIAR, brasileiro, casado sob o regime de comunhão parcial de bens,\nempresário, portador da carteira de identidade nº 32049233 SSP/CE e inscrito no CPF sob o nº\n877.188.413-08, residente e domiciliado na Rua Coronel Joaquim Ribeiro, nº 88, bairro Centro,\nSobral/CE, CEP 62011-030; e\nTEREZA CRISTINA AGUIAR, brasileira, casada sob o regime de comunhão parcial de bens,\nempresária, portadora da carteira de identidade nº 22039853 SSP/CE e inscrita no CPF sob o nº\n017.568.205-46, residente e domiciliada na Rua Oriano Mendes, nº 312, bairro Junco, Sobral/CE,\nCEP 62030-150;\nresolvem constituir uma sociedade empresária limitada, que se regerá pelas cláusulas e condições\nseguintes e, nas omissões, pelas disposições do Código Civil aplicáveis às sociedades limitadas.\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL\nA sociedade girará sob o nome empresarial GRÁFICA SOBRALENSE LTDA.\nCLÁUSULA SEGUNDA – DA SEDE\nA sociedade terá sede na Avenida Dom José, nº 1.540, bairro Centro, Sobral/CE, CEP 62010-290,\npodendo abrir e encerrar filiais e outros estabelecimentos em qualquer parte do território nacional,\nmediante alteração contratual.\nCLÁUSULA TERCEIRA – DO OBJETO SOCIAL\nA sociedade tem por objeto a impressão de material para uso publicitário e os serviços de\nacabamento gráfico.\nParágrafo único. As atividades correspondem aos códigos CNAE 1813-0/01 – impressão de material\npara uso publicitário; e 1822-9/99 – serviços de acabamentos gráficos, exceto encadernação e\nplastificação.\nCLÁUSULA QUARTA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciará suas atividades na data do registro deste contrato na Junta Comercial do Estado\ndo Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUINTA – DO CAPITAL SOCIAL\nO capital social é de R$ 200.000,00 (duzentos mil reais), dividido em 200.000 (duzentas mil) quotas\nde valor nominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas neste ato, em\nmoeda corrente do País, assim distribuídas entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nWAGNER PONTES AGUIAR\n120.000\n120.000,00\n60%\nTEREZA CRISTINA AGUIAR\n80.000\n80.000,00\n40%\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+      "Sócio\nQuotas\nValor (R$)\nParticipação\nTotal\n200.000\n200.000,00\n100%\nCLÁUSULA SEXTA – DA RESPONSABILIDADE DOS SÓCIOS\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social, nos termos do art. 1.052 do Código Civil.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade caberá ao sócio WAGNER PONTES AGUIAR, que a exercerá\nisoladamente, pelo prazo de 3 (três) anos, contados do registro deste instrumento, permitida a\nrecondução, com poderes e atribuições de representação ativa e passiva da sociedade, em juízo ou\nfora dele, podendo praticar todos os atos necessários à consecução do objeto social, vedado, no\nentanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em\navais, fianças e endossos de favor.\nParágrafo único. A sócia TEREZA CRISTINA AGUIAR não exercerá funções de administração,\nparticipando da sociedade exclusivamente na condição de sócia quotista.\nCLÁUSULA OITAVA – DO PRÓ-LABORE\nO administrador terá direito a uma retirada mensal a título de pró-labore, em valor a ser fixado de\ncomum acordo entre os sócios, observada a legislação tributária e previdenciária.\nCLÁUSULA NONA – DO EXERCÍCIO SOCIAL E DOS RESULTADOS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, em 31 de dezembro, o\nadministrador prestará contas justificadas de sua administração, procedendo à elaboração do\ninventário, do balanço patrimonial e do balanço de resultado econômico, cabendo aos sócios, na\nproporção de suas quotas, os lucros ou as perdas apurados.\nCLÁUSULA DÉCIMA – DAS DELIBERAÇÕES SOCIAIS\nAs deliberações dos sócios serão tomadas em reunião, convocada na forma da lei, observados os\nquóruns previstos no Código Civil, ficando dispensada a reunião quando todos os sócios decidirem,\npor escrito, sobre a matéria que seria objeto dela.\nCLÁUSULA DÉCIMA PRIMEIRA – DA CESSÃO DE QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas ou transferidas a terceiros sem o consentimento\ndo outro sócio, a quem fica assegurado, em igualdade de condições e preço, o direito de preferência\npara a sua aquisição, a ser exercido no prazo de 30 (trinta) dias contados da comunicação escrita da\nintenção de venda.\nCLÁUSULA DÉCIMA SEGUNDA – DO FALECIMENTO OU DA INCAPACIDADE DE\nSÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros, sucessores ou o representante legal do incapaz. Não sendo possível ou inexistindo\ninteresse destes ou do sócio remanescente, o valor de seus haveres será apurado e liquidado com\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+      "base na situação patrimonial da sociedade, à data da resolução, verificada em balanço especialmente\nlevantado.\nCLÁUSULA DÉCIMA TERCEIRA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nO administrador declara, sob as penas da lei, que não está impedido de exercer a administração da\nsociedade por lei especial, ou em virtude de condenação criminal, ou por se encontrar sob os efeitos\ndela, a pena que vede, ainda que temporariamente, o acesso a cargos públicos; ou por crime\nfalimentar, de prevaricação, peita ou suborno, concussão, peculato; ou contra a economia popular,\ncontra o sistema financeiro nacional, contra as normas de defesa da concorrência, contra as relações\nde consumo, a fé pública ou a propriedade.\nCLÁUSULA DÉCIMA QUARTA – DO ENQUADRAMENTO\nOs sócios declaram que a sociedade se enquadra como empresa de pequeno porte, nos termos da Lei\nComplementar nº 123/2006, e que não se enquadra em qualquer das hipóteses de exclusão previstas\nno § 4º do art. 3º da referida lei.\nCLÁUSULA DÉCIMA QUINTA – DO FORO\nFica eleito o foro da Comarca de Sobral/CE para o exercício e o cumprimento dos direitos e das\nobrigações resultantes deste contrato.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em via única,\npara que produza seus efeitos legais após o arquivamento na Junta Comercial do Estado do Ceará.\nSobral/CE, 1º de fevereiro de 2021.\nWAGNER PONTES AGUIAR\nTEREZA CRISTINA AGUIAR\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 10/02/2021 sob o nº 46264975113\nProtocolo: 21/048.227-1 | NIRE: 23715095332\nEmpresa: GRÁFICA SOBRALENSE LTDA. | CNPJ: 16.653.989/0001-72\nAutenticação: 3D8B5E02C71A49F6B0E3D25A\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "22d91b6aa89d5d50bd599828383eaaee31f960fcb9ca57767db62574d4098311",
+     "leitura": {}
+    },
+    {
+     "id": "CRLV",
+     "nome": "CRLV.pdf",
+     "tipo": "crlv",
+     "titulo": "CRLV",
+     "data": null,
+     "paginas": [
+      "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n09955156690\nPLACA\nKDW3A25\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2022\nANO MODELO\n2022\nNÚMERO DO CRV\n470721922658\nCÓDIGO DE SEGURANÇA DO CLA\n58406497074\nMARCA / MODELO / VERSÃO\nFIAT/DUCATO CARGO 2.2\nESPÉCIE / TIPO\nCARGA/FURGÃO\nCHASSI\n9BD61G045X1ZAZ1ZT\nCOR PREDOMINANTE\nBRANCA\nCOMBUSTÍVEL\nDIESEL\nNOME\nGRÁFICA SOBRALENSE LTDA.\nCPF / CNPJ\n16.653.989/0001-72\nLOCAL\nSOBRAL/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "970d0d37c7e254eea4dd26944a4dfd80982b630344288347b2de8d2b1370e598",
+     "leitura": {}
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "gabarito",
+    "politica": "Código Civil (genérica)"
+   },
+   "lado": "vendedor"
+  }
+ },
+ "geral": {
+  "veredito": "NAO_PODE",
+  "faixa": "AMARELO",
+  "indice": 0.0,
+  "resumo": "Vendedor: Os assinantes informados não bastam. Quem pode assinar: ninguém. Regra aplicável: regra geral de representação (Contrato Social (2021)).",
+  "motivos_faixa": [
+   "Vendedor — alerta: Administrador sem mandato em vigor",
+   "Vendedor — alerta: Ninguém com poder de administração em vigor"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "FIAT/DUCATO CARGO 2.2",
+   "placa": "KDW3A25",
+   "renavam": "09955156690",
+   "chassi": "9BD61G045X1ZAZ1ZT"
+  },
+  "data_venda": "2026-09-16",
+  "valor": 190000.0,
+  "vendedor": {
+   "tipo": "PJ",
+   "nome": "GRÁFICA SOBRALENSE LTDA.",
+   "documento": "16.653.989/0001-72",
+   "assinantes": [
+    {
+     "nome": "Wagner Pontes Aguiar",
+     "cpf": "877.188.413-08"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": "Diego Fernandes Uchoa",
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "informado"
+ },
+ "hash_entrada": "ba2d4673978a499d398caaf2702c6eec91593f13ad0d02031fdc2c89283831d1"
+}

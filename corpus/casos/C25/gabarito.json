@@ -1,0 +1,49 @@
+{
+  "caso": "C25",
+  "titulo": "Substabelecimento sem reserva — o procurador original assina",
+  "categoria": "substabelecimento",
+  "objetivo": "Quem substabelece sem reserva perde os poderes.",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "ANTONIO"
+      ],
+      [
+        "JOSEFA"
+      ],
+      [
+        "ANAPAULA"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 667"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "847.267.147-08"
+      ],
+      [
+        "136.270.107-60"
+      ],
+      [
+        "406.925.666-00"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Antônio Cícero Lobo"
+      ],
+      [
+        "Josefa Alencar Lobo"
+      ],
+      [
+        "Ana Paula Bastos"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

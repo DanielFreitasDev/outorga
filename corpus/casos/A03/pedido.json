@@ -1,0 +1,15 @@
+{
+  "caso": "A03",
+  "forma_assinatura": "ATPV-e",
+  "vendedor": {
+    "assinantes": [
+      {
+        "nome": "Simone Batista Nunes",
+        "cpf": "714.244.916-06"
+      }
+    ]
+  },
+  "comprador": {
+    "assinantes": []
+  }
+}

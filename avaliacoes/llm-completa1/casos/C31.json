@@ -1,0 +1,434 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T01:00:15",
+ "pedido": {
+  "veiculo": {
+   "descricao": "HONDA/CIVIC EXL 2.0",
+   "placa": "ZEY5F63",
+   "renavam": "08120617698",
+   "chassi": "93HY9ZFBTSH1SWMWA"
+  },
+  "data_venda": "2026-09-12",
+  "valor": 118000.0,
+  "assinantes": [
+   {
+    "nome": "Rafael Nogueira Brito",
+    "cpf": "547.517.799-66"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "Rita de Cássia Moreira"
+ },
+ "empresa": {
+  "razao_social": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+  "cnpj": "33.437.010/0001-48",
+  "tipo": "SLU",
+  "objeto": "desenvolvimento de programas de computador sob encomenda e a consultoria em tecnologia da informação",
+  "comercializa_veiculos": false
+ },
+ "veredito": "PODE",
+ "faixa": "VERDE",
+ "indice": 100.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 2,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 100 ≥ limiar 85"
+ ],
+ "resumo": "Rafael Nogueira Brito pode assinar o ATPV — regra geral de representação — Cláusula Sétima.",
+ "assinantes": [
+  {
+   "informado": "Rafael Nogueira Brito",
+   "cpf": "547.517.799-66",
+   "chave": "54751779966",
+   "nome": "Rafael Nogueira Brito",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:54751779966",
+   "pessoas": [
+    {
+     "chave": "54751779966",
+     "nome": "Rafael Nogueira Brito"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Cláusula Sétima",
+   "cadeia": [
+    "TECH_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": {
+  "id": "contrato:54751779966",
+  "pessoas": [
+   {
+    "chave": "54751779966",
+    "nome": "Rafael Nogueira Brito"
+   }
+  ],
+  "via": "contrato",
+  "descricao": "regra geral de representação — Cláusula Sétima",
+  "cadeia": [
+   "TECH_CS"
+  ],
+  "severidade": "ok",
+  "confianca": 1.0,
+  "achados": [],
+  "precondicoes": []
+ },
+ "faltantes": [],
+ "achados": [
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: TECHNORDESTE SOLUÇÕES DIGITAIS.",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "ZEY5F63",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "TECH_CS#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "TECH_CS",
+    "doc_titulo": "Ato Constitutivo (SLU) (2022)",
+    "trecho": "A administração da sociedade caberá ao sócio único RAFAEL NOGUEIRA BRITO, que a exercerá isoladamente, por prazo indeterminado, com poderes e atribuições de representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos necessários à consecução do objeto social, vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2481,
+    "fim": 2919
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Rafael Nogueira Brito"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "TECH_CS#R2",
+   "escopo": "obrigacoes_garantias",
+   "aplicavel": false,
+   "motivo": "trata de avais, fianças e garantias",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "TECH_CS",
+    "doc_titulo": "Ato Constitutivo (SLU) (2022)",
+    "trecho": "vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2779,
+    "fim": 2919
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "TECH_CS#R3",
+   "escopo": "outorgar_procuracoes",
+   "aplicavel": false,
+   "motivo": "regula a outorga de procurações (usada para validar procurações)",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "TECH_CS",
+    "doc_titulo": "Ato Constitutivo (SLU) (2022)",
+    "trecho": "As procurações outorgadas pela sociedade deverão especificar os poderes conferidos e, salvo as outorgadas para fins judiciais, terão prazo de validade não superior a 1 (um) ano.",
+    "clausula": "Cláusula Sétima, Parágrafo único",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2937,
+    "fim": 3114
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-09-12",
+  "atos": [
+   {
+    "doc": "TECH_CS",
+    "titulo": "Ato Constitutivo (SLU) (2022)",
+    "efeito": "2022-07-11"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "54751779966",
+    "nome": "Rafael Nogueira Brito",
+    "cargo": "administrador",
+    "doc": "TECH_CS"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "54751779966",
+    "nome": "Rafael Nogueira Brito",
+    "percentual": 100.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+    "sub": "33.437.010/0001-48"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "HONDA/CIVIC EXL 2.0",
+    "sub": "ZEY5F63"
+   },
+   {
+    "id": "54751779966",
+    "tipo": "pessoa",
+    "rotulo": "Rafael Nogueira Brito",
+    "papeis": [
+     "sócio 100%",
+     "administrador"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "54751779966",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "100%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "54751779966",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "TECH_CS"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2022-07-11",
+   "tipo": "ato",
+   "titulo": "Ato Constitutivo (SLU) (2022)",
+   "doc": "TECH_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-09-12",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 118.000,00"
+  }
+ ],
+ "pessoas": {
+  "54751779966": {
+   "nome": "Rafael Nogueira Brito",
+   "cpf": "54751779966"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "comprovada",
+  "outorgante": {
+   "nome": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+   "cnpj": "33.437.010/0001-48",
+   "tipo": "SLU",
+   "atos_vigentes": [
+    {
+     "titulo": "Ato Constitutivo (SLU) (2022)",
+     "doc": "TECH_CS",
+     "efeito": "2022-07-11"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Rafael Nogueira Brito",
+    "cpf": "547.517.799-66",
+    "identificacao": "CPF",
+    "qualidade": "administrador"
+   }
+  ],
+  "poderes_conferidos": [
+   "Ato Constitutivo (SLU) (2022), Cláusula Sétima: qualquer administrador designado assina sozinho — exigida a assinatura indicada na cláusula específica"
+  ],
+  "prazo_validade": [
+   "Rafael Nogueira Brito (administrador): mandato por prazo indeterminado"
+  ],
+  "revogacao": [
+   "Poder decorre do ato constitutivo vigente na data da venda; recomenda-se certidão simplificada atualizada da Junta Comercial para afastar alteração posterior ainda não apresentada."
+  ],
+  "fontes": [
+   {
+    "doc_id": "TECH_CS",
+    "doc_titulo": "Ato Constitutivo (SLU) (2022)",
+    "trecho": "A administração da sociedade caberá ao sócio único RAFAEL NOGUEIRA BRITO, que a exercerá isoladamente, por prazo indeterminado, com poderes e atribuições de representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos necessários à consecução do objeto social, vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2481,
+    "fim": 2919
+   },
+   {
+    "doc_id": "TECH_CS",
+    "doc_titulo": "Ato Constitutivo (SLU) (2022)",
+    "trecho": "A administração da sociedade caberá ao sócio único RAFAEL NOGUEIRA BRITO, que a exercerá isoladamente, por prazo indeterminado",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2481,
+    "fim": 2607
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "TECH_CS",
+    "titulo": "Ato Constitutivo (SLU) (2022)",
+    "arquivo": "TECH_CS.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n08120617698\nPLACA\nZEY5F63\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2021\nANO MODELO\n2021\nNÚMERO DO CRV\n733819745290\nCÓDIGO DE SEGURANÇA DO CLA\n85044083114\nMARCA / MODELO / VERSÃO\nHONDA/CIVIC EXL 2.0\nESPÉCIE / TIPO\nPASSAGEIRO/\nAUTOMÓVEL\nCHASSI\n93HY9ZFBTSH1SWMWA\nCOR PREDOMINANTE\nCINZA\nCOMBUSTÍVEL\nÁLCOOL/\nGASOLINA\nNOME\nTECHNORDESTE SOLUÇÕES DIGITAIS\nLTDA.\nCPF / CNPJ\n33.437.010/0001-48\nLOCAL\nFORTALEZA/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "426c82857f75a3d4ec2913bc3d798585244e91db74835f2dfd23a56a2d186485",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "TECH_CS",
+   "nome": "TECH_CS.pdf",
+   "tipo": "ato_constitutivo_slu",
+   "titulo": "Ato Constitutivo (SLU) (2022)",
+   "data": "2022-07-11",
+   "paginas": [
+    "ATO CONSTITUTIVO DE SOCIEDADE LIMITADA UNIPESSOAL\nTECHNORDESTE SOLUÇÕES DIGITAIS LTDA.\nRAFAEL NOGUEIRA BRITO, brasileiro, solteiro, maior, analista de sistemas, portador da carteira\nde identidade nº 23915476 SSP/CE e inscrito no CPF sob o nº 547.517.799-66, residente e\ndomiciliado na Rua Dom Expedito Lopes, nº 1.245, apartamento 802, bairro Dionísio Torres,\nFortaleza/CE, CEP 60135-410, resolve, por este instrumento particular e na forma do art. 1.052, § 1º,\ndo Código Civil (Lei nº 10.406/2002), constituir uma sociedade limitada unipessoal, que se regerá\npelas cláusulas e condições seguintes e, nas omissões, pelas disposições legais aplicáveis às\nsociedades limitadas.\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL\nA sociedade girará sob o nome empresarial TECHNORDESTE SOLUÇÕES DIGITAIS LTDA. e\npoderá adotar o nome fantasia \"TechNordeste\".\nCLÁUSULA SEGUNDA – DA SEDE\nA sociedade terá sede na Avenida Santos Dumont, nº 3.131, sala 1.104, bairro Aldeota, Fortaleza/CE,\nCEP 60150-162, podendo abrir e encerrar filiais, escritórios e outras dependências em qualquer parte\ndo território nacional, por decisão do sócio único.\nCLÁUSULA TERCEIRA – DO OBJETO SOCIAL\nA sociedade tem por objeto o desenvolvimento de programas de computador sob encomenda e a\nconsultoria em tecnologia da informação.\nParágrafo único. As atividades da sociedade correspondem aos seguintes códigos da Classificação\nNacional de Atividades Econômicas: 6201-5/01 – desenvolvimento de programas de computador\nsob encomenda; e 6204-0/00 – consultoria em tecnologia da informação.\nCLÁUSULA QUARTA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciará suas atividades na data do registro deste ato constitutivo na Junta Comercial do\nEstado do Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUINTA – DO CAPITAL SOCIAL\nO capital social é de R$ 100.000,00 (cem mil reais), dividido em 100.000 (cem mil) quotas de valor\nnominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas neste ato, em moeda\ncorrente do País, pelo sócio único, conforme o quadro abaixo:\nSócio\nQuotas\nValor (R$)\nParticipação\nRAFAEL NOGUEIRA BRITO\n100.000\n100.000,00\n100%\nTotal\n100.000\n100.000,00\n100%\nCLÁUSULA SEXTA – DA RESPONSABILIDADE\nA responsabilidade do sócio único é restrita ao valor de suas quotas, respondendo, porém, pela\nintegralização do capital social, nos termos do art. 1.052 do Código Civil.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade caberá ao sócio único RAFAEL NOGUEIRA BRITO, que a exercerá\nisoladamente, por prazo indeterminado, com poderes e atribuições de representação ativa e passiva\nda sociedade, em juízo ou fora dele, podendo praticar todos os atos necessários à consecução do\nobjeto social, vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto\nsocial, especialmente em avais, fianças e endossos de favor.\nParágrafo único. As procurações outorgadas pela sociedade deverão especificar os poderes\nconferidos e, salvo as outorgadas para fins judiciais, terão prazo de validade não superior a 1 (um)\nano.\nCLÁUSULA OITAVA – DO PRÓ-LABORE\nO administrador poderá fazer jus a uma retirada mensal a título de pró-labore, em valor fixado por\ndecisão do sócio único, observadas as disposições da legislação tributária e previdenciária.\nCLÁUSULA NONA – DO EXERCÍCIO SOCIAL E DAS DEMONSTRAÇÕES\nO exercício social coincidirá com o ano civil. Ao término de cada exercício social, em 31 de\ndezembro, o administrador prestará contas justificadas de sua administração, procedendo à\nelaboração do inventário, do balanço patrimonial e do balanço de resultado econômico, cabendo ao\nsócio único os lucros ou as perdas apurados.\nCLÁUSULA DÉCIMA – DAS DECISÕES DO SÓCIO ÚNICO\nAs decisões que, na sociedade limitada pluripessoal, seriam objeto de deliberação dos sócios serão\ntomadas pelo sócio único e formalizadas por escrito, dispensadas as formalidades de convocação e\nde reunião, devendo ser arquivadas na Junta Comercial sempre que a lei assim o exigir.\nCLÁUSULA DÉCIMA PRIMEIRA – DA ADMISSÃO DE NOVOS SÓCIOS\nA sociedade poderá, a qualquer tempo, admitir novos sócios, mediante alteração deste ato\nconstitutivo, hipótese em que passará a reger-se pelas normas aplicáveis à sociedade limitada\npluripessoal.\nCLÁUSULA DÉCIMA SEGUNDA – DO FALECIMENTO OU DA INCAPACIDADE\nFalecendo ou sendo interditado o sócio único, a sociedade continuará suas atividades com os\nherdeiros, sucessores ou o representante legal do incapaz, que deverão, no prazo legal, promover a\nalteração deste ato constitutivo. Não sendo possível a continuidade, ou inexistindo interesse dos\nherdeiros e sucessores, a sociedade será dissolvida e liquidada na forma da lei.\nCLÁUSULA DÉCIMA TERCEIRA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nO administrador declara, sob as penas da lei, que não está impedido de exercer a administração da\nsociedade por lei especial, ou em virtude de condenação criminal, ou por se encontrar sob os efeitos\ndela, a pena que vede, ainda que temporariamente, o acesso a cargos públicos; ou por crime\nfalimentar, de prevaricação, peita ou suborno, concussão, peculato; ou contra a economia popular,\ncontra o sistema financeiro nacional, contra as normas de defesa da concorrência, contra as relações\nde consumo, a fé pública ou a propriedade, nos termos do art. 1.011, § 1º, do Código Civil.\nCLÁUSULA DÉCIMA QUARTA – DO ENQUADRAMENTO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "O sócio único declara que a sociedade se enquadra como microempresa, nos termos da Lei\nComplementar nº 123, de 14 de dezembro de 2006, e que não se enquadra em qualquer das hipóteses\nde exclusão previstas no § 4º do art. 3º da referida lei.\nCLÁUSULA DÉCIMA QUINTA – DO FORO\nFica eleito o foro da Comarca de Fortaleza/CE para o exercício e o cumprimento dos direitos e das\nobrigações resultantes deste ato constitutivo, com renúncia a qualquer outro, por mais privilegiado\nque seja.\nE, por estar assim constituída a sociedade, o sócio único assina o presente instrumento em via única,\ndigitalmente, para que produza seus efeitos legais após o arquivamento na Junta Comercial do\nEstado do Ceará.\nFortaleza/CE, 11 de julho de 2022.\nRAFAEL NOGUEIRA BRITO\nSócio único e administrador\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 20/07/2022 sob o nº 27382031353\nProtocolo: 22/418.763-0 | NIRE: 23894574783\nEmpresa: TECHNORDESTE SOLUÇÕES DIGITAIS LTDA. | CNPJ: 33.437.010/0001-48\nAutenticação: 7F3A9C1E44B2D08A6E15C93F\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "3cbd647a647164b4bbd765f62f21dcc3f3cb865ad2a9ef79e86c3c90ea7595b5",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 30.4,
+      "tokens_saida": 507,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 27.0,
+      "tokens_saida": 815,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "politica": "DETRAN-CE"
+ },
+ "hash_entrada": "601334e0e3be2a47164665353ac502cffe598a5487252e7c390aad4ebbb3c756"
+}

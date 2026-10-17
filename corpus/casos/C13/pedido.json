@@ -1,0 +1,26 @@
+{
+  "caso": "C13",
+  "vendedor": {
+    "razao_social": "NORDESTE PRIME SERVIÇOS ADMINISTRATIVOS LTDA.",
+    "cnpj": "76.151.413/0001-39"
+  },
+  "veiculo": {
+    "placa": "ZYW2D22",
+    "renavam": "03636082444",
+    "chassi": "9BR02A76UZ8JGKRZ6",
+    "descricao": "TOYOTA/COROLLA XEI 2.0 FLEX"
+  },
+  "data_venda": "2026-09-11",
+  "valor": 128000,
+  "assinantes": [
+    {
+      "nome": "Leonardo Sales Pinheiro",
+      "cpf": "161.055.008-07"
+    }
+  ],
+  "comprador": {
+    "nome": "Rita de Cássia Moreira",
+    "cidade": "Fortaleza/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

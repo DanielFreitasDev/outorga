@@ -1,0 +1,5 @@
+✗ A08 Cooperativa: Diretor-Presidente e Diretor Financeiro assin esp=PODE          prev=PODE          AMARELO  idx=100.0 quem=X 235.1s
+✗ A09 Cooperativa: Diretor-Presidente sozinho                    esp=NAO_PODE      prev=NAO_PODE      AMARELO  idx=  0.0 quem=X   0.1s
+✓ A13 EIRELI (hoje SLU) vende: o titular assina                  esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok 109.7s
+
+veredito 3/3 · faixa aceitável 1/3 · quem pode 1/3 · perigosos 0 · caros 0 · automático 33% · 344.9s

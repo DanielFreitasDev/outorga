@@ -1,0 +1,30 @@
+{
+  "caso": "H08",
+  "titulo": "Restrição a imóveis e participações; veículo de R$ 320 mil",
+  "categoria": "administracao",
+  "objetivo": "Armadilha: nada sobre veículos.",
+  "validacao_cega": true,
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": [
+      [
+        "HUGO"
+      ]
+    ],
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": [
+      [
+        "976.863.353-05"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Hugo Leitão Damasceno"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

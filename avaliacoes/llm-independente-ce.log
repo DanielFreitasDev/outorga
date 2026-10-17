@@ -1,0 +1,12 @@
+✓ I01 S.A. com Diretoria de mandato vencido, prorrogado por lei, esp=PODE          prev=PODE          AMARELO  idx= 86.2 quem=ok   0.1s
+✗ I02 Dois administradores assinam juntos, mas da mesma classe:  esp=NAO_PODE      prev=PODE          VERDE    idx= 91.2 quem=X   0.1s ⚠ PERIGOSO
+✓ I03 Procuração de venda revogada por nova procuração que só au esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  6.6 quem=ok   0.0s
+✓ I04 Cadeia de substabelecimentos: o primeiro 'sem reserva' e o esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  6.2 quem=ok   0.0s
+✗ I05 Procuração pública sem prazo, com mais de 1 ano, outorgada esp=NAO_PODE      prev=NAO_PODE      AMARELO  idx=  6.6 quem=X   0.0s
+✗ I06 Ata 'aprovada por unanimidade dos presentes' e pela 'maior esp=NAO_PODE      prev=PODE          VERDE    idx=100.0 quem=X  41.7s ⚠ PERIGOSO
+✗ I07 Procuração outorgada por sócio cujo poder de administração esp=INDETERMINADO prev=NAO_PODE      VERMELHO idx=  6.6 quem=— 352.9s
+✓ I08 Sócio único de SLU assina a venda, mas só foi nomeado admi esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok 320.4s
+✓ I09 Alçada de valor para assinatura conjunta, alterada no temp esp=INDETERMINADO prev=INDETERMINADO AMARELO  idx= 50.0 quem=— 243.7s
+✓ I10 Ex-EIRELI com nome alterado: CRLV no nome antigo e mesmo C esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok 357.5s
+
+veredito 7/10 · faixa aceitável 7/10 · quem pode 5/8 · perigosos 2 · caros 0 · automático 70% · 1316.5s

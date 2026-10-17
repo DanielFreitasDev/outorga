@@ -1,0 +1,53 @@
+{
+  "caso": "P14",
+  "titulo": "Dona é empresa: CPF de procurador da empresa",
+  "categoria": "pj",
+  "objetivo": "Procuração pública da empresa, no prazo.",
+  "validacao_cega": false,
+  "lote": "pf",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "vendedor": {
+      "veredito": "PODE",
+      "faixas_aceitaveis": [
+        "VERDE"
+      ],
+      "conjuntos_minimos": [
+        [
+          "FRANCISCO"
+        ],
+        [
+          "PEDRO"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "729.405.576-91"
+        ],
+        [
+          "939.761.584-02"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Francisco Wellington Rocha"
+        ],
+        [
+          "Pedro Henrique Lima"
+        ]
+      ]
+    }
+  },
+  "esperado_lados_ce": null
+}

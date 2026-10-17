@@ -1,0 +1,43 @@
+{
+  "caso": "I05",
+  "titulo": "Procuração pública sem prazo, com mais de 1 ano, outorgada por administrador que depois saiu da sociedade",
+  "categoria": "procuracao_prazo / outorgante_que_saiu / politica_detran_ce",
+  "objetivo": "Testa se o sistema reconhece que a procuração da PJ não se extingue com a saída do administrador que a assinou (o outorgante é a sociedade e não houve revogação) e que o Código Civil não fixa prazo de validade para a procuração; e, na política do DETRAN-CE, se aplica o limite de 1 ano da expedição, que a procuração de 23/06/2025 já ultrapassou na venda de 12/08/2026.",
+  "validacao_cega": true,
+  "autor": "independente",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": ["VERDE", "AMARELO"],
+    "conjuntos_minimos_cpf": [
+      ["748.840.872-16"],
+      ["373.595.916-43"]
+    ],
+    "conjuntos_minimos_nomes": [
+      ["SUELI ARAGÃO LINHARES"],
+      ["GILDÁSIO PRADO CARNEIRO"]
+    ],
+    "fundamentos": [
+      "CC art. 682",
+      "CC art. 661, § 1º",
+      "CC art. 1.018",
+      "CC art. 47",
+      "STJ, AgInt no REsp 1.997.964/SC (procuração da PJ não se extingue com a saída ou morte do sócio que a assinou)",
+      "CN-CE, art. 924 (procuração sem cláusula expressa não tem prazo de validade)"
+    ]
+  },
+  "esperado_ce": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": ["VERMELHO", "AMARELO"],
+    "conjuntos_minimos_cpf": [
+      ["748.840.872-16"]
+    ],
+    "conjuntos_minimos_nomes": [
+      ["SUELI ARAGÃO LINHARES"]
+    ],
+    "fundamentos": [
+      "DETRAN-CE: procuração pública e específica para o ato, com validade de até 1 ano da data de expedição",
+      "Quinta Alteração Contratual, Cláusula Terceira (administração isolada de SUELI)"
+    ]
+  },
+  "raciocinio": "Em 23/06/2025, OTÁVIO era o administrador isolado, com poder de constituir procuradores (Cláusula Sexta da consolidação de 2021), e outorgou a GILDÁSIO procuração pública com poder especial e expresso de vender o FIAT/CRONOS placa UFZ6V24, sem prazo. A saída de OTÁVIO em 15/01/2026 não extingue o mandato: a outorgante é a sociedade, o art. 682 não prevê essa causa de extinção, a Quinta Alteração não revogou procurações e o STJ (AgInt no REsp 1.997.964/SC) reconhece a subsistência da procuração mesmo com a morte do signatário. O Código Civil não fixa validade para procuração sem prazo; pelo direito civil, GILDÁSIO pode assinar em 12/08/2026, assim como SUELI, administradora isolada desde a Quinta Alteração (BRUNO é só sócio). A política do DETRAN-CE limita a procuração a 1 ano da expedição; como a de 23/06/2025 tem mais de 13 meses na data da venda, por essa política só SUELI pode assinar e o pedido feito por GILDÁSIO deve ser recusado ou, no mínimo, ir para revisão com pedido de nova procuração."
+}

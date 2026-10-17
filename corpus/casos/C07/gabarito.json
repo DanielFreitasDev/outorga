@@ -1,0 +1,41 @@
+{
+  "caso": "C07",
+  "titulo": "Contrato omisso sobre a forma de atuação",
+  "categoria": "administracao",
+  "objetivo": "Dois administradores sem 'isolada/conjunta': regra supletiva (art. 1.013) indica atuação separada, mas é zona cinzenta.",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "AMARELO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "PAULA"
+      ],
+      [
+        "ITALO"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 1.013",
+      "CC art. 1.014"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "978.753.477-18"
+      ],
+      [
+        "768.045.717-46"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Paula Regina Saraiva"
+      ],
+      [
+        "Ítalo Menezes Cavalcante"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

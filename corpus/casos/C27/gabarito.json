@@ -1,0 +1,43 @@
+{
+  "caso": "C27",
+  "titulo": "Procuradores que devem agir em conjunto — só um assina",
+  "categoria": "procuracao",
+  "objetivo": "A procuração exige os dois outorgados juntos.",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "GUSTAVO"
+      ],
+      [
+        "SERGIO",
+        "BRUNA"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 672"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "876.634.400-05"
+      ],
+      [
+        "291.280.845-60",
+        "850.037.038-64"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Gustavo Henrique Teles"
+      ],
+      [
+        "Sérgio Paiva Gomes",
+        "Bruna Teixeira Melo"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

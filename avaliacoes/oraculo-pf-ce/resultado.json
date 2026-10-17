@@ -1,0 +1,536 @@
+{
+ "resumo": {
+  "modo": "oraculo",
+  "conjunto": "pf",
+  "casos": 15,
+  "duracao_s": 0.2,
+  "data": "2026-10-17T12:00:02",
+  "veredito_correto": 15,
+  "faixa_aceitavel": 15,
+  "quem_pode_correto": 15,
+  "quem_pode_avaliados": 15,
+  "erros_perigosos": 0,
+  "erros_caros": 0,
+  "cobertura_automatica": 0.867,
+  "acerto_na_faixa_automatica": 1.0,
+  "politica": {
+   "nome": "DETRAN-CE",
+   "limiar_aceite": 85.0,
+   "limiar_recusa": 15.0
+  }
+ },
+ "linhas": [
+  {
+   "caso": "P01",
+   "titulo": "Pessoa física: o próprio dono vai assinar",
+   "categoria": "pf",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Raimunda Nonata Siqueira é o próprio proprietário (pessoa física): assina em nome próprio.",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P02",
+   "titulo": "Procurador com procuração pública e específica",
+   "categoria": "pf",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Josué Lima Ferreira pode assinar a ATPV-e como procurador(a) de Raimunda Nonata Siqueira — procuração pública de 12/08/2026.",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P03",
+   "titulo": "CPF diferente do dono, sem procuração",
+   "categoria": "pf",
+   "esperado": "INDETERMINADO",
+   "faixas_aceitaveis": [
+    "AMARELO"
+   ],
+   "previsto": "INDETERMINADO",
+   "faixa": "AMARELO",
+   "indice": 50.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "O CPF informado não é o do proprietário (Raimunda Nonata Siqueira). Se quem vai assinar é procurador, anexe a procuração dele para conferir se ela dá poder para este ato.",
+   "motivos_faixa": [
+    "indeterminado: falta a procuração de quem vai assinar",
+    "alerta: Precisa de procuração"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "INDETERMINADO",
+     "faixa": "AMARELO",
+     "indice": 50.0
+    }
+   },
+   "forcado": true,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P04",
+   "titulo": "Procuração só com poderes gerais (DETRAN, IPVA, multas)",
+   "categoria": "pf",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Francisco Erivan Cavalcante. O caminho por procuração pública de 15/04/2026 não vale: sem poder expresso para vender.",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P05",
+   "titulo": "Procuração de 6 meses, vencida",
+   "categoria": "pf",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Raimunda Nonata Siqueira. O caminho por procuração pública de 01/10/2025 não vale: procuração vencida.",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P06",
+   "titulo": "Procuração específica de outro veículo",
+   "categoria": "pf",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Francisco Erivan Cavalcante. O caminho por procuração pública de 20/07/2026 não vale: procuração é para outro veículo.",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P07",
+   "titulo": "Compradora pessoa física representada por procuradora",
+   "categoria": "pf",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 92.5,
+   "confianca": 0.85,
+   "segundos": 0.0,
+   "resumo": "Patrícia Moura Leal pode assinar a ATPV-e como procurador(a) de Antônia Valéria Barros — procuração pública de 10/09/2026.",
+   "motivos_faixa": [
+    "índice 92.5 ≥ limiar 85"
+   ],
+   "lados": {
+    "comprador": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 92.5
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "comprador": true
+   }
+  },
+  {
+   "caso": "P08",
+   "titulo": "Procuração revogada",
+   "categoria": "pf",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Gilmar Sousa Pontes. O caminho por procuração pública de 20/01/2026 não vale: procuração revogada.",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P09",
+   "titulo": "Substabelecida pelo procurador, com reserva",
+   "categoria": "pf",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Patrícia Moura Leal pode assinar a ATPV-e como procurador(a) de Raimunda Nonata Siqueira — substabelecimento com reserva de 30/09/2026.",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P10",
+   "titulo": "Procuração particular com firma reconhecida",
+   "categoria": "pf",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Francisco Erivan Cavalcante. O caminho por procuração particular de 05/09/2026 não vale: procuração particular com firma reconhecida.",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P11",
+   "titulo": "Procuração dada pela esposa, não pelo dono registral",
+   "categoria": "pf",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Francisco Erivan Cavalcante. O caminho por procuração pública de 28/08/2026 não vale: procuração de quem não é o proprietário do veículo.",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P12",
+   "titulo": "Dona é empresa: CPF do administrador",
+   "categoria": "pj",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Francisco Wellington Rocha pode assinar a ATPV-e — alienação de veículos — Contrato Social (2020).",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P13",
+   "titulo": "Dona é empresa: CPF de sócia sem poder, sem procuração",
+   "categoria": "pj",
+   "esperado": "INDETERMINADO",
+   "faixas_aceitaveis": [
+    "AMARELO"
+   ],
+   "previsto": "INDETERMINADO",
+   "faixa": "AMARELO",
+   "indice": 50.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Pelos atos apresentados, Ana Beatriz Holanda não tem poder para vender pela empresa (quem pode: Francisco Wellington Rocha). Se for procurador, anexe a procuração para conferir.",
+   "motivos_faixa": [
+    "indeterminado: falta a procuração de quem vai assinar",
+    "alerta: Precisa de procuração"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "INDETERMINADO",
+     "faixa": "AMARELO",
+     "indice": 50.0
+    }
+   },
+   "forcado": true,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P14",
+   "titulo": "Dona é empresa: CPF de procurador da empresa",
+   "categoria": "pj",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 97.0,
+   "confianca": 0.94,
+   "segundos": 0.0,
+   "resumo": "Pedro Henrique Lima pode assinar a ATPV-e — procuração pública de 10/02/2026.",
+   "motivos_faixa": [
+    "índice 97 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 97.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "P15",
+   "titulo": "Comprador é empresa: CPF do administrador, abaixo da alçada",
+   "categoria": "pj",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Gilberto Araújo Nunes pode assinar a ATPV-e como comprador(a) — regra geral de representação — Contrato Social (2021).",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "comprador": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "comprador": true
+   }
+  }
+ ]
+}

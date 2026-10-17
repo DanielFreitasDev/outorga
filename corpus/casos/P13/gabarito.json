@@ -1,0 +1,44 @@
+{
+  "caso": "P13",
+  "titulo": "Dona é empresa: CPF de sócia sem poder, sem procuração",
+  "categoria": "pj",
+  "objetivo": "Antes de recusar, o sistema pergunta se ela tem procuração da empresa.",
+  "validacao_cega": false,
+  "lote": "pf",
+  "esperado": {
+    "veredito": "INDETERMINADO",
+    "faixas_aceitaveis": [
+      "AMARELO"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "vendedor": {
+      "veredito": "INDETERMINADO",
+      "faixas_aceitaveis": [
+        "AMARELO"
+      ],
+      "conjuntos_minimos": [
+        [
+          "FRANCISCO"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "729.405.576-91"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Francisco Wellington Rocha"
+        ]
+      ]
+    }
+  },
+  "esperado_lados_ce": null
+}

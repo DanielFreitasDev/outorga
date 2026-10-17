@@ -1,0 +1,35 @@
+{
+  "caso": "C29",
+  "titulo": "Alteração contratual mudou de isolada para conjunta",
+  "categoria": "temporal",
+  "objetivo": "Vale a regra em vigor na data da venda (alteração de 2025), não a do contrato original.",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "HELIO",
+        "REGINA"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 1.071",
+      "Lei 8.934/94 art. 36"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "264.686.164-84",
+        "524.776.472-29"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Hélio Bandeira Forte",
+        "Regina Célia Forte"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

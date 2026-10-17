@@ -1,0 +1,25 @@
+# Serviço systemd (usuário) do modo agente do Outorga.
+# Instalar:  cp scripts/outorga-agente.service ~/.config/systemd/user/ && systemctl --user daemon-reload
+#            systemctl --user enable --now outorga-agente
+# Logs:      journalctl --user -u outorga-agente -f
+# Ajuste WorkingDirectory e as pastas abaixo. A IA local (llama.cpp) precisa estar no ar; sem ela os pedidos aguardam.
+[Unit]
+Description=Outorga — agente de verificação de poderes para ATPV-e (pasta vigiada)
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/desenvolvimento/projetos/python/outorga
+Environment=ENTRADA=%h/outorga/entrada
+Environment=SAIDA=%h/outorga/saida
+# Temperatura máxima da GPU antes de pausar a leitura (°C) e de retomar
+Environment=OUTORGA_TEMP_MAX=76
+Environment=OUTORGA_TEMP_RETOMAR=68
+ExecStart=%h/desenvolvimento/projetos/python/outorga/scripts/agente.sh
+Restart=on-failure
+RestartSec=30
+KillSignal=SIGTERM
+TimeoutStopSec=900
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,2192 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T10:07:50",
+ "pedido": {
+  "veiculo": {
+   "descricao": "FIAT/FIORINO",
+   "placa": "XCB7V20",
+   "renavam": "05328930190",
+   "chassi": "9BDJ8ABJ9EHZ647PF"
+  },
+  "data_venda": "2026-09-03",
+  "valor": 71000.0,
+  "assinantes": [
+   {
+    "nome": "JOSÉ AIRTON HOLANDA CHAVES",
+    "cpf": "975.811.679-76"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "ANTÔNIA REJANE MOREIRA DIÓGENES",
+  "vendedor_cnpj": "56.469.460/0001-18",
+  "lado": "vendedor"
+ },
+ "empresa": {
+  "razao_social": "VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA",
+  "cnpj": "56.469.460/0001-18",
+  "tipo": "LTDA",
+  "objeto": "comércio atacadista e varejista de gêneros alimentícios em geral, cereais, carnes, laticínios e frios, bem como o transporte rodoviário das mercadorias que comercializa.",
+  "comercializa_veiculos": false,
+  "subtipo": null
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 6.6,
+ "confianca": 0.867,
+ "componentes": {
+  "leitura": 0.867,
+  "juridica": 1.0,
+  "fatos_decisivos": 3,
+  "menor_confianca_fato": 0.8,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 6.6 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: Hélio Benevides Maia. O caminho por procuração pública de 14/10/2025 (cartório nogueira – 1º ofício de notas de limoeiro do norte) não vale: procuração revogada.",
+ "assinantes": [
+  {
+   "informado": "JOSÉ AIRTON HOLANDA CHAVES",
+   "cpf": "975.811.679-76",
+   "chave": "97581167976",
+   "nome": "José Airton Holanda Chaves",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:46252257958",
+   "pessoas": [
+    {
+     "chave": "46252257958",
+     "nome": "Hélio Benevides Maia"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "alienação de bens móveis — Cláusula Sexta",
+   "cadeia": [
+    "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [
+  {
+   "id": "PROCURACAO_PUBLICA_2025_10_14:bloqueada",
+   "pessoas": [
+    {
+     "chave": "97581167976",
+     "nome": "José Airton Holanda Chaves"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 14/10/2025 (CARTÓRIO NOGUEIRA – 1º OFÍCIO DE NOTAS DE LIMOEIRO DO NORTE)",
+   "cadeia": [
+    "PROCURACAO_PUBLICA_2025_10_14"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PJ",
+     "severidade": "ok",
+     "titulo": "Outorgada pela própria empresa",
+     "detalhe": "A outorgante é a empresa, representada por Hélio Benevides Maia.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2025_10_14",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº 56.469.460/0001-18",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 529,
+       "fim": 650
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2025_10_14"
+    },
+    {
+     "codigo": "OUTORGA_COM_PODERES",
+     "severidade": "ok",
+     "titulo": "Quem outorgou tinha poder",
+     "detalhe": "Em 14/10/2025, Hélio Benevides Maia podia representar a empresa nesse ato.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2025_10_14",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº 56.469.460/0001-18",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 529,
+       "fim": 650
+      },
+      {
+       "doc_id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+       "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+       "trecho": "A administração da sociedade cabe ao sócio HÉLIO BENEVIDES MAIA, que a exercerá isoladamente e por prazo indeterminado, com poderes para representar a sociedade ativa e passivamente, em juízo ou fora dele, praticar todos os atos de gestão, adquirir, alienar e onerar bens móveis, movimentar contas bancárias e constituir procuradores em nome da sociedade, especificando no instrumento os atos e operações que estes poderão praticar.",
+       "clausula": "Cláusula Sexta",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 2794,
+       "fim": 3226
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2025_10_14"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2025_10_14",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "poderes especiais e expressos para vender, ceder ou transferir, a quem convier, pelo preço e condições que ajustar, o veículo de propriedade da outorgante marca/modelo FIAT/FIORINO, placa XCB7V20, RENAVAM 05328930190, chassi 9BDJ8ABJ9EHZ647PF; assinar, na qualidade de vendedor, a Autorização para Transferência de Propriedade do Veículo, em meio físico ou digital (ATPV ou ATPV-e), recibos e contratos; receber o preço, dar quitação e entregar o veículo; representar a outorgante perante o Departamento Estadual de Trânsito do Ceará – DETRAN/CE, requerendo vistoria, comunicação de venda e o que mais for necessário; pagar taxas, tributos e multas incidentes sobre o veículo; enfim, praticar todos os atos necessários ao fiel cumprimento deste mandato.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1789,
+       "fim": 2542
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2025_10_14"
+    },
+    {
+     "codigo": "VEICULO_ABRANGIDO",
+     "severidade": "ok",
+     "titulo": "Veículo identificado na procuração",
+     "detalhe": "A procuração identifica exatamente este veículo.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2025_10_14",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "poderes especiais e expressos para vender, ceder ou transferir, a quem convier, pelo preço e condições que ajustar, o veículo de propriedade da outorgante marca/modelo FIAT/FIORINO, placa XCB7V20, RENAVAM 05328930190, chassi 9BDJ8ABJ9EHZ647PF; assinar, na qualidade de vendedor, a Autorização para Transferência de Propriedade do Veículo, em meio físico ou digital (ATPV ou ATPV-e), recibos e contratos; receber o preço, dar quitação e entregar o veículo; representar a outorgante perante o Departamento Estadual de Trânsito do Ceará – DETRAN/CE, requerendo vistoria, comunicação de venda e o que mais for necessário; pagar taxas, tributos e multas incidentes sobre o veículo; enfim, praticar todos os atos necessários ao fiel cumprimento deste mandato.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1789,
+       "fim": 2542
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2025_10_14"
+    },
+    {
+     "codigo": "PROCURACAO_NO_PRAZO",
+     "severidade": "ok",
+     "titulo": "Dentro do prazo",
+     "detalhe": "Válida até 14/10/2027.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2025_10_14",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "O presente mandato vigorará pelo prazo de 2 (dois) anos, contado desta data.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2543,
+       "fim": 2619
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2025_10_14"
+    },
+    {
+     "codigo": "PROCURACAO_REVOGADA",
+     "severidade": "bloqueio",
+     "titulo": "Procuração revogada",
+     "detalhe": "Revogada em 02/06/2026 (Revogação em Procuração (2026)) — revogação genérica que alcança esta procuração.",
+     "fundamento": [
+      "CC art. 682, I",
+      "CC art. 686"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_06_02",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "revogacao: pelo presente instrumento, a outorgante revoga, para todos os fins de direito, a procuracao por ela outorgada a jose airton holanda chaves, lavrada nestas notas em 14/10/2025, no livro 287, folhas 112/113, que deixa de produzir qualquer efeito a partir desta data, corpus sintetico outorga -- dados ficticios -- sem valor legal fl",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2973,
+       "fim": 3312
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2025_10_14"
+    }
+   ],
+   "precondicoes": []
+  },
+  {
+   "id": "PROCURACAO_PUBLICA_2026_06_02:bloqueada",
+   "pessoas": [
+    {
+     "chave": "97581167976",
+     "nome": "José Airton Holanda Chaves"
+    },
+    {
+     "chave": "69975453350",
+     "nome": "Maria Lucivânia Rebouças"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 02/06/2026 (CARTÓRIO NOGUEIRA – 1º OFÍCIO DE NOTAS DE LIMOEIRO DO NORTE)",
+   "cadeia": [
+    "PROCURACAO_PUBLICA_2026_06_02"
+   ],
+   "severidade": "ok",
+   "confianca": 0.8,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PJ",
+     "severidade": "ok",
+     "titulo": "Outorgada pela própria empresa",
+     "detalhe": "A outorgante é a empresa, representada por Hélio Benevides Maia.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_06_02",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº 56.469.460/0001-18",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 574,
+       "fim": 695
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2026_06_02"
+    },
+    {
+     "codigo": "OUTORGA_COM_PODERES",
+     "severidade": "ok",
+     "titulo": "Quem outorgou tinha poder",
+     "detalhe": "Em 02/06/2026, Hélio Benevides Maia podia representar a empresa nesse ato.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_06_02",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº 56.469.460/0001-18",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 574,
+       "fim": 695
+      },
+      {
+       "doc_id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+       "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+       "trecho": "A administração da sociedade cabe ao sócio HÉLIO BENEVIDES MAIA, que a exercerá isoladamente e por prazo indeterminado, com poderes para representar a sociedade ativa e passivamente, em juízo ou fora dele, praticar todos os atos de gestão, adquirir, alienar e onerar bens móveis, movimentar contas bancárias e constituir procuradores em nome da sociedade, especificando no instrumento os atos e operações que estes poderão praticar.",
+       "clausula": "Cláusula Sexta",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 2794,
+       "fim": 3226
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2026_06_02"
+    },
+    {
+     "codigo": "PODERES_INSUFICIENTES",
+     "severidade": "bloqueio",
+     "titulo": "Sem poder expresso para vender",
+     "detalhe": "A procuração não confere poder expresso para alienar veículos — só poderes gerais de administração. Mandato em termos gerais só confere poderes de administração; alienar exige poderes especiais e expressos.",
+     "fundamento": [
+      "CC art. 661, caput e §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_06_02",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "podendo requerer vistorias, licenciamentos, emplacamentos, segundas vias de CRV e de CRLV-e, alterações de características, inclusão e baixa de gravames, bem como requerer e acompanhar a transferência de propriedade e de jurisdição, para o nome da outorgante, dos veículos que esta vier a adquirir, assinando, na qualidade de adquirente, a Autorização para Transferência de Propriedade do Veículo (ATPV-e), requerimentos, declarações e termos; pagar taxas, tributos, seguro obrigatório e multas; apresentar defesas e recursos de autuações; retirar documentos e placas; e praticar os demais atos de mero expediente necessários a esses fins.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2259,
+       "fim": 2898
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2026_06_02"
+    },
+    {
+     "codigo": "PROCURACAO_NO_PRAZO",
+     "severidade": "ok",
+     "titulo": "Dentro do prazo",
+     "detalhe": "Válida até 02/06/2027.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_06_02",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2899,
+       "fim": 2972
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2026_06_02"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "contrato:46252257958",
+   "via": "contrato",
+   "descricao": "alienação de bens móveis — Cláusula Sexta",
+   "pessoas": [
+    "46252257958"
+   ],
+   "faltam": [
+    "46252257958"
+   ],
+   "faltam_nomes": [
+    "Hélio Benevides Maia"
+   ],
+   "pessoas_nomes": [
+    "Hélio Benevides Maia"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA.",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "XCB7V20",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023#R1",
+   "escopo": "alienacao_bens_moveis",
+   "aplicavel": true,
+   "motivo": "alienação de bens móveis",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "A administração da sociedade cabe ao sócio HÉLIO BENEVIDES MAIA, que a exercerá isoladamente e por prazo indeterminado, com poderes para representar a sociedade ativa e passivamente, em juízo ou fora dele, praticar todos os atos de gestão, adquirir, alienar e onerar bens móveis, movimentar contas bancárias e constituir procuradores em nome da sociedade, especificando no instrumento os atos e operações que estes poderão praticar.",
+    "clausula": "Cláusula Sexta",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2794,
+    "fim": 3226
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Hélio Benevides Maia"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023#R2",
+   "escopo": "alienacao_bens",
+   "aplicavel": true,
+   "motivo": "alienação de bens",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "A administração da sociedade cabe ao sócio HÉLIO BENEVIDES MAIA, que a exercerá isoladamente e por prazo indeterminado, com poderes para representar a sociedade ativa e passivamente, em juízo ou fora dele, praticar todos os atos de gestão, adquirir, alienar e onerar bens móveis, movimentar contas bancárias e constituir procuradores em nome da sociedade, especificando no instrumento os atos e operações que estes poderão praticar.",
+    "clausula": "Cláusula Sexta",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2794,
+    "fim": 3226
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Hélio Benevides Maia"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 0.8,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    },
+    {
+     "campo": "escopo",
+     "valor_llm": "onerar_bens",
+     "valor_lexico": "alienacao_bens",
+     "divergiu": true,
+     "corrigido_para": "alienacao_bens",
+     "expressoes": []
+    }
+   ],
+   "decisiva": false
+  },
+  {
+   "regra": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023#R3",
+   "escopo": "outorgar_procuracoes",
+   "aplicavel": false,
+   "motivo": "regula a outorga de procurações (usada para validar procurações)",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "A administração da sociedade cabe ao sócio HÉLIO BENEVIDES MAIA, que a exercerá isoladamente e por prazo indeterminado, com poderes para representar a sociedade ativa e passivamente, em juízo ou fora dele, praticar todos os atos de gestão, adquirir, alienar e onerar bens móveis, movimentar contas bancárias e constituir procuradores em nome da sociedade, especificando no instrumento os atos e operações que estes poderão praticar.",
+    "clausula": "Cláusula Sexta",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2794,
+    "fim": 3226
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Hélio Benevides Maia"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    },
+    {
+     "campo": "ato",
+     "valor_llm": "alienar",
+     "valor_lexico": "alienar+adquirir",
+     "divergiu": false,
+     "corrigido_para": "alienar+adquirir",
+     "expressoes": []
+    }
+   ],
+   "decisiva": false
+  },
+  {
+   "regra": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023#R4",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "A administração da sociedade cabe ao sócio HÉLIO BENEVIDES MAIA, que a exercerá isoladamente e por prazo indeterminado, com poderes para representar a sociedade ativa e passivamente, em juízo ou fora dele, praticar todos os atos de gestão, adquirir, alienar e onerar bens móveis, movimentar contas bancárias e constituir procuradores em nome da sociedade, especificando no instrumento os atos e operações que estes poderão praticar.",
+    "clausula": "Cláusula Sexta",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2794,
+    "fim": 3226
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Hélio Benevides Maia"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    }
+   ],
+   "decisiva": false
+  },
+  {
+   "regra": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023#R5",
+   "escopo": "outorgar_procuracoes",
+   "aplicavel": false,
+   "motivo": "regra de compra (não se aplica à venda)",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "A administração da sociedade cabe ao sócio HÉLIO BENEVIDES MAIA, que a exercerá isoladamente e por prazo indeterminado, com poderes para representar a sociedade ativa e passivamente, em juízo ou fora dele, praticar todos os atos de gestão, adquirir, alienar e onerar bens móveis, movimentar contas bancárias e constituir procuradores em nome da sociedade, especificando no instrumento os atos e operações que estes poderão praticar.",
+    "clausula": "Cláusula Sexta",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2794,
+    "fim": 3226
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Hélio Benevides Maia"
+   ],
+   "cargo": "procuradores",
+   "valor_acima_de": null,
+   "confianca": 0.8,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "nao_especificado",
+     "valor_lexico": "isolado",
+     "divergiu": true,
+     "corrigido_para": "isolado",
+     "expressoes": [
+      "isoladamente"
+     ]
+    }
+   ],
+   "decisiva": false
+  },
+  {
+   "regra": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023#R6",
+   "escopo": "alienacao_bens_imoveis",
+   "aplicavel": false,
+   "motivo": "trata de bens imóveis; veículo é bem móvel",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "§ 1º A alienação ou a oneração de bens imóveis da sociedade dependerá da anuência expressa da sócia CRISTIANE FREITAS MAIA, manifestada no próprio instrumento ou em documento apartado.",
+    "clausula": "Cláusula Sexta, Parágrafo 1º",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3227,
+    "fim": 3411
+   },
+   "modo": "nao_especificado",
+   "pessoas": [
+    "Cristiane Freitas Maia"
+   ],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023#R7",
+   "escopo": "alienacao_bens_imoveis",
+   "aplicavel": false,
+   "motivo": "trata de bens imóveis; veículo é bem móvel",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "§ 1º A alienação ou a oneração de bens imóveis da sociedade dependerá da anuência expressa da sócia CRISTIANE FREITAS MAIA, manifestada no próprio instrumento ou em documento apartado.",
+    "clausula": "Cláusula Sexta, Parágrafo 1º",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3227,
+    "fim": 3411
+   },
+   "modo": "nao_especificado",
+   "pessoas": [
+    "Cristiane Freitas Maia"
+   ],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 0.8,
+   "verificacoes": [
+    {
+     "campo": "escopo",
+     "valor_llm": "onerar_bens",
+     "valor_lexico": "alienacao_bens_imoveis",
+     "divergiu": true,
+     "corrigido_para": "alienacao_bens_imoveis",
+     "expressoes": []
+    }
+   ],
+   "decisiva": false
+  },
+  {
+   "regra": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023#R8",
+   "escopo": "obrigacoes_garantias",
+   "aplicavel": false,
+   "motivo": "trata de avais, fianças e garantias",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "§ 2º É vedado ao administrador empregar a denominação social em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+    "clausula": "Cláusula Sexta, Parágrafo 2º",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3412,
+    "fim": 3567
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-09-03",
+  "atos": [
+   {
+    "doc": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+    "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "efeito": "2023-08-09"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "46252257958",
+    "nome": "Hélio Benevides Maia",
+    "cargo": "Sócio-Administrador",
+    "doc": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "46252257958",
+    "nome": "Hélio Benevides Maia",
+    "percentual": 70.0
+   },
+   {
+    "chave": "39242232629",
+    "nome": "Cristiane Freitas Maia",
+    "percentual": 30.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA",
+    "sub": "56.469.460/0001-18"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "FIAT/FIORINO",
+    "sub": "XCB7V20"
+   },
+   {
+    "id": "46252257958",
+    "tipo": "pessoa",
+    "rotulo": "Hélio Benevides Maia",
+    "papeis": [
+     "sócio 70%",
+     "Sócio-Administrador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "39242232629",
+    "tipo": "pessoa",
+    "rotulo": "Cristiane Freitas Maia",
+    "papeis": [
+     "sócio 30%"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "97581167976",
+    "tipo": "pessoa",
+    "rotulo": "José Airton Holanda Chaves",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": true
+   },
+   {
+    "id": "69975453350",
+    "tipo": "pessoa",
+    "rotulo": "Maria Lucivânia Rebouças",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": false
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "46252257958",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "70%",
+    "status": "neutro"
+   },
+   {
+    "de": "39242232629",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "30%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "46252257958",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "97581167976",
+    "tipo": "procuracao",
+    "status": "invalido",
+    "doc": "PROCURACAO_PUBLICA_2025_10_14",
+    "rotulo": "procuração 14/10/2025 · Procuração revogada",
+    "motivo": "Procuração revogada"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "97581167976",
+    "tipo": "procuracao",
+    "status": "invalido",
+    "doc": "PROCURACAO_PUBLICA_2026_06_02",
+    "rotulo": "procuração 02/06/2026 · Sem poder expresso para vender",
+    "motivo": "Sem poder expresso para vender"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "69975453350",
+    "tipo": "procuracao",
+    "status": "invalido",
+    "doc": "PROCURACAO_PUBLICA_2026_06_02",
+    "rotulo": "procuração 02/06/2026 · Sem poder expresso para vender",
+    "motivo": "Sem poder expresso para vender"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2023-08-09",
+   "tipo": "ato",
+   "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+   "doc": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2025-10-14",
+   "tipo": "procuracao",
+   "titulo": "Procuração para José Airton Holanda Chaves",
+   "doc": "PROCURACAO_PUBLICA_2025_10_14",
+   "detalhe": "publica"
+  },
+  {
+   "data": "2026-06-02",
+   "tipo": "procuracao",
+   "titulo": "Procuração para José Airton Holanda Chaves e Maria Lucivânia Rebouças",
+   "doc": "PROCURACAO_PUBLICA_2026_06_02",
+   "detalhe": "publica"
+  },
+  {
+   "data": "2026-06-02",
+   "tipo": "revogacao",
+   "titulo": "Revogação de procuração",
+   "doc": "PROCURACAO_PUBLICA_2026_06_02#rev",
+   "detalhe": ""
+  },
+  {
+   "data": "2026-09-03",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 71.000,00"
+  },
+  {
+   "data": "2027-06-02",
+   "tipo": "vencimento",
+   "titulo": "Vence a procuração de José Airton Holanda Chaves e Maria Lucivânia Rebouças",
+   "doc": "PROCURACAO_PUBLICA_2026_06_02",
+   "detalhe": ""
+  },
+  {
+   "data": "2027-10-14",
+   "tipo": "vencimento",
+   "titulo": "Vence a procuração de José Airton Holanda Chaves",
+   "doc": "PROCURACAO_PUBLICA_2025_10_14",
+   "detalhe": ""
+  }
+ ],
+ "pessoas": {
+  "46252257958": {
+   "nome": "Hélio Benevides Maia",
+   "cpf": "46252257958"
+  },
+  "97581167976": {
+   "nome": "José Airton Holanda Chaves",
+   "cpf": "97581167976"
+  },
+  "69975453350": {
+   "nome": "Maria Lucivânia Rebouças",
+   "cpf": "69975453350"
+  },
+  "39242232629": {
+   "nome": "Cristiane Freitas Maia",
+   "cpf": "39242232629"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA",
+   "cnpj": "56.469.460/0001-18",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+     "doc": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+     "efeito": "2023-08-09"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "José Airton Holanda Chaves",
+    "cpf": "975.811.679-76",
+    "identificacao": "CPF",
+    "qualidade": "procurador(a) pela procuração de 14/10/2025"
+   }
+  ],
+  "poderes_conferidos": [
+   "Procuração pública de 14/10/2025 (CARTÓRIO NOGUEIRA – 1º OFÍCIO DE NOTAS DE LIMOEIRO DO NORTE): não comprova poderes (Procuração revogada).",
+   "Procuração pública de 02/06/2026 (CARTÓRIO NOGUEIRA – 1º OFÍCIO DE NOTAS DE LIMOEIRO DO NORTE): não comprova poderes (Sem poder expresso para vender)."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [],
+  "documentos_verificaveis": [
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "PROCURACAO_PUBLICA_2025_10_14",
+    "titulo": "Procuração (2025)",
+    "arquivo": "PROCURACAO_PUBLICA_2025_10_14.pdf"
+   },
+   {
+    "id": "PROCURACAO_PUBLICA_2026_06_02",
+    "titulo": "Procuração (2026)",
+    "arquivo": "PROCURACAO_PUBLICA_2026_06_02.pdf"
+   },
+   {
+    "id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+    "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "arquivo": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n05328930190\nPLACA\nXCB7V20\nEXERCÍCIO\n2026\nMARCA / MODELO / VERSÃO\nFIAT/FIORINO\nCHASSI\n9BDJ8ABJ9EHZ647PF\nNOME\nVALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA\nCPF / CNPJ\n56.469.460/0001-18\nDATA\n15/01/2026\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "3a6e382f96c82388477085d563f3914926aa24a80ae268a21eff46aed3ab4648",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "PROCURACAO_PUBLICA_2025_10_14",
+   "nome": "PROCURACAO_PUBLICA_2025_10_14.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (2025)",
+   "data": "2025-10-14",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCARTÓRIO NOGUEIRA – 1º OFÍCIO DE NOTAS DE LIMOEIRO DO NORTE (fictício)\nLivro nº 287 – Folhas 112/113\nPROCURAÇÃO BASTANTE QUE FAZ VALE DO JAGUARIBE COMÉRCIO DE\nALIMENTOS LTDA A FAVOR DE JOSÉ AIRTON HOLANDA CHAVES\nSAIBAM quantos este público instrumento de procuração virem que, aos 14 (quatorze) dias do mês\nde outubro do ano de 2025 (dois mil e vinte e cinco), nesta cidade de Limoeiro do Norte, Estado do\nCeará, neste Cartório, perante mim, Escrevente, compareceu como OUTORGANTE: VALE DO\nJAGUARIBE COMÉRCIO DE ALIMENTOS LTDA, sociedade empresária limitada, inscrita no\nCNPJ sob o nº 56.469.460/0001-18, NIRE 23201543219, com sede na Rua Cândido Olímpio de\nFreitas, nº 655, Centro, Limoeiro do Norte/CE, neste ato representada por seu sócio administrador\nHÉLIO BENEVIDES MAIA, brasileiro, casado, comerciante, portador da cédula de identidade RG\nnº 2002345678904 SSP/CE, inscrito no CPF sob o nº 462.522.579-58, residente e domiciliado na\nRua Coronel Malveira, nº 288, Centro, Limoeiro do Norte/CE, com poderes conferidos pela\nCláusula Sexta do contrato social consolidado na Terceira Alteração Contratual, registrada na\nJUCEC em 24/08/2023 sob o nº 6251973, cuja cópia, acompanhada de certidão simplificada\nexpedida em 10/10/2025, fica arquivada nestas Notas; reconhecido como o próprio por mim, do que\ndou fé.\nE, pela outorgante, na forma em que vem representada, me foi dito que nomeia e constitui seu\nbastante procurador JOSÉ AIRTON HOLANDA CHAVES, brasileiro, casado, administrador,\nportador da cédula de identidade RG nº 99023456789 SSP/CE, inscrito no CPF sob o nº\n975.811.679-76, residente e domiciliado na Rua Padre Joaquim de Menezes, nº 940, Centro, Russas/\nCE, CEP 62900-000, gerente administrativo da outorgante, a quem confere poderes especiais e\nexpressos para vender, ceder ou transferir, a quem convier, pelo preço e condições que ajustar, o\nveículo de propriedade da outorgante marca/modelo FIAT/FIORINO, placa XCB7V20, RENAVAM\n05328930190, chassi 9BDJ8ABJ9EHZ647PF; assinar, na qualidade de vendedor, a Autorização para\nTransferência de Propriedade do Veículo, em meio físico ou digital (ATPV ou ATPV-e), recibos e\ncontratos; receber o preço, dar quitação e entregar o veículo; representar a outorgante perante o\nDepartamento Estadual de Trânsito do Ceará – DETRAN/CE, requerendo vistoria, comunicação de\nvenda e o que mais for necessário; pagar taxas, tributos e multas incidentes sobre o veículo; enfim,\npraticar todos os atos necessários ao fiel cumprimento deste mandato.\nO presente mandato vigorará pelo prazo de 2 (dois) anos, contado desta data.\nAssim o disse, do que dou fé, e me pediu que lavrasse este instrumento, que, lido e achado\nconforme, aceita e assina, dispensadas as testemunhas. Emolumentos: R$ 205,30. FERMOJU: R$\n10,27. Selo: R$ 4,11. Total: R$ 219,68. Selo Digital de Fiscalização nº TN-CE-2025-0981133-\nD2A6. Eu, JOSIANE MAIA FREITAS, Escrevente, a lavrei. Eu, FRANCISCO DAS CHAGAS\nNOGUEIRA, Tabelião, a subscrevo.\n(a.a.) HÉLIO BENEVIDES MAIA. FRANCISCO DAS CHAGAS NOGUEIRA – Tabelião.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "TRASLADO – Nada mais. Trasladada em seguida, confere com o original, ao qual me reporto e\ndou fé.\nLimoeiro do Norte/CE, 14 de outubro de 2025.\nFRANCISCO DAS CHAGAS NOGUEIRA – Tabelião\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "e7c75317a9cd60d2ea8955e0da1e66aca1540441229b55fddcfe7ebf4c4e8c14",
+   "leitura": {
+    "tarefas": {
+     "procuracao": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 44.3,
+      "tokens_saida": 897,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "PROCURACAO_PUBLICA_2026_06_02",
+   "nome": "PROCURACAO_PUBLICA_2026_06_02.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (2026)",
+   "data": "2026-06-02",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCARTÓRIO NOGUEIRA – 1º OFÍCIO DE NOTAS DE LIMOEIRO DO NORTE (fictício)\nLivro nº 301 – Folhas 045/046\nPROCURAÇÃO QUE FAZ VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA A\nFAVOR DE JOSÉ AIRTON HOLANDA CHAVES E MARIA LUCIVÂNIA REBOUÇAS,\nCOM REVOGAÇÃO DE MANDATO ANTERIOR\nSAIBAM quantos este público instrumento de procuração virem que, aos 2 (dois) dias do mês de\njunho do ano de 2026 (dois mil e vinte e seis), nesta cidade de Limoeiro do Norte, Estado do Ceará,\nneste Cartório, perante mim, Escrevente, compareceu como OUTORGANTE: VALE DO\nJAGUARIBE COMÉRCIO DE ALIMENTOS LTDA, sociedade empresária limitada, inscrita no\nCNPJ sob o nº 56.469.460/0001-18, NIRE 23201543219, com sede na Rua Cândido Olímpio de\nFreitas, nº 655, Centro, Limoeiro do Norte/CE, neste ato representada por seu sócio administrador\nHÉLIO BENEVIDES MAIA, brasileiro, casado, comerciante, portador da cédula de identidade RG\nnº 2002345678904 SSP/CE, inscrito no CPF sob o nº 462.522.579-58, residente e domiciliado na\nRua Coronel Malveira, nº 288, Centro, Limoeiro do Norte/CE, com poderes conferidos pela\nCláusula Sexta do contrato social consolidado registrado na JUCEC em 24/08/2023 sob o nº\n6251973, conforme cópia e certidão simplificada arquivadas nestas Notas; reconhecido como o\npróprio por mim, do que dou fé.\nE, pela outorgante, na forma representada, me foi dito que nomeia e constitui seus procuradores\nJOSÉ AIRTON HOLANDA CHAVES, brasileiro, casado, administrador, portador da cédula de\nidentidade RG nº 99023456789 SSP/CE, inscrito no CPF sob o nº 975.811.679-76, residente e\ndomiciliado na Rua Padre Joaquim de Menezes, nº 940, Centro, Russas/CE, CEP 62900-000; e\nMARIA LUCIVÂNIA REBOUÇAS, brasileira, solteira, auxiliar administrativa, portadora da cédula\nde identidade RG nº 2009876543216 SSP/CE, inscrita no CPF sob o nº 699.754.533-50, residente e\ndomiciliada na Rua Joaquim Nogueira Lopes, nº 51, Bairro Antônio Holanda de Oliveira, Limoeiro\ndo Norte/CE, CEP 62930-000; aos quais, agindo em conjunto ou separadamente, confere poderes\npara representar a outorgante perante o Departamento Estadual de Trânsito do Ceará – DETRAN/\nCE, suas Circunscrições Regionais de Trânsito e demais órgãos e entidades executivos de trânsito,\npodendo requerer vistorias, licenciamentos, emplacamentos, segundas vias de CRV e de CRLV-e,\nalterações de características, inclusão e baixa de gravames, bem como requerer e acompanhar a\ntransferência de propriedade e de jurisdição, para o nome da outorgante, dos veículos que esta vier a\nadquirir, assinando, na qualidade de adquirente, a Autorização para Transferência de Propriedade do\nVeículo (ATPV-e), requerimentos, declarações e termos; pagar taxas, tributos, seguro obrigatório e\nmultas; apresentar defesas e recursos de autuações; retirar documentos e placas; e praticar os demais\natos de mero expediente necessários a esses fins.\nO presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data.\nREVOGAÇÃO: pelo presente instrumento, a outorgante revoga, para todos os fins de direito, a\nprocuração por ela outorgada a JOSÉ AIRTON HOLANDA CHAVES, lavrada nestas Notas em\n14/10/2025, no Livro 287, Folhas 112/113, que deixa de produzir qualquer efeito a partir desta data,\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "cabendo a esta serventia proceder à anotação à margem do ato revogado. O outorgado JOSÉ\nAIRTON HOLANDA CHAVES, presente a este ato, declarou-se ciente da revogação.\nAssim o disse, do que dou fé, e me pediu que lavrasse este instrumento, que, lido e achado\nconforme, aceita e assina, assinando também o procurador presente, dispensadas as testemunhas.\nEmolumentos: R$ 214,60. FERMOJU: R$ 10,73. Selo: R$ 4,29. Total: R$ 229,62. Selo Digital de\nFiscalização nº TN-CE-2026-0533871-E8B2. Eu, JOSIANE MAIA FREITAS, Escrevente, a lavrei.\nEu, FRANCISCO DAS CHAGAS NOGUEIRA, Tabelião, a subscrevo.\n(a.a.) HÉLIO BENEVIDES MAIA. JOSÉ AIRTON HOLANDA CHAVES. FRANCISCO DAS\nCHAGAS NOGUEIRA – Tabelião.\nAnotação: averbada a revogação à margem do ato lavrado no Livro 287, Folhas 112/113, em\n02/06/2026.\nTRASLADO – Nada mais. Trasladada em seguida, confere com o original, ao qual me reporto e\ndou fé.\nLimoeiro do Norte/CE, 2 de junho de 2026.\nFRANCISCO DAS CHAGAS NOGUEIRA – Tabelião\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "7850ad705c3e7e26bb584e0bc05824d2636f7ab0ef34931912d86dde5718c333",
+   "leitura": {
+    "tarefas": {
+     "procuracao": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 31.5,
+      "tokens_saida": 808,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+   "nome": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023.pdf",
+   "tipo": "contrato_consolidado",
+   "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+   "data": "2023-08-09",
+   "paginas": [
+    "TERCEIRA ALTERAÇÃO E CONSOLIDAÇÃO DO CONTRATO SOCIAL DA VALE DO\nJAGUARIBE COMÉRCIO DE ALIMENTOS LTDA\nCNPJ nº 56.469.460/0001-18 – NIRE 23201543219\nHÉLIO BENEVIDES MAIA, brasileiro, casado sob o regime da comunhão parcial de bens,\ncomerciante, portador da cédula de identidade RG nº 2002345678904 SSP/CE, inscrito no CPF sob\no nº 462.522.579-58, residente e domiciliado na Rua Coronel Malveira, nº 288, Centro, Limoeiro do\nNorte/CE, CEP 62930-000; e\nCRISTIANE FREITAS MAIA, brasileira, casada sob o regime da comunhão parcial de bens,\nnutricionista, portadora da cédula de identidade RG nº 2003456789015 SSP/CE, inscrita no CPF sob\no nº 392.422.326-29, residente e domiciliada na Rua Coronel Malveira, nº 288, Centro, Limoeiro do\nNorte/CE, CEP 62930-000;\núnicos sócios da sociedade empresária limitada VALE DO JAGUARIBE COMÉRCIO DE\nALIMENTOS LTDA, com sede na Rua Cândido Olímpio de Freitas, nº 655, Centro, Limoeiro do\nNorte/CE, CEP 62930-000, inscrita no CNPJ sob o nº 56.469.460/0001-18, com atos constitutivos\narquivados na JUCEC sob o NIRE 23201543219, resolvem, de comum acordo, alterar e consolidar o\ncontrato social nos termos seguintes.\nI – DA ALTERAÇÃO\nCLÁUSULA PRIMEIRA – DO OBJETO SOCIAL\nO objeto social passa a compreender também o comércio atacadista de laticínios e frios, além das\natividades já exercidas.\nCLÁUSULA SEGUNDA – DA CONSOLIDAÇÃO\nÀ vista da alteração acima, os sócios consolidam o contrato social, que passa a ter a redação\nseguinte, ficando sem efeito as cláusulas anteriores.\nII – CONTRATO SOCIAL CONSOLIDADO\nCLÁUSULA PRIMEIRA – DA DENOMINAÇÃO E SEDE\nA sociedade gira sob a denominação VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS\nLTDA, com sede na Rua Cândido Olímpio de Freitas, nº 655, Centro, Limoeiro do Norte/CE, CEP\n62930-000.\nCLÁUSULA SEGUNDA – DO OBJETO\nA sociedade tem por objeto o comércio atacadista e varejista de gêneros alimentícios em geral,\ncereais, carnes, laticínios e frios, bem como o transporte rodoviário das mercadorias que\ncomercializa.\nCLÁUSULA TERCEIRA – DO PRAZO\nA sociedade iniciou suas atividades em 2 de fevereiro de 2014 e vigorará por prazo indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "O capital social é de R$ 500.000,00 (quinhentos mil reais), totalmente integralizado em moeda\ncorrente, dividido em 500.000 (quinhentas mil) quotas de R$ 1,00 (um real) cada, assim distribuídas:\nSócio\nQuotas\nValor (R$)\nParticipação\nHÉLIO BENEVIDES MAIA\n350.000\n350.000,00\n70%\nCRISTIANE FREITAS MAIA\n150.000\n150.000,00\n30%\nTotal\n500.000\n500.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, respondendo todos\nsolidariamente pela integralização do capital social.\nCLÁUSULA SEXTA – DA ADMINISTRAÇÃO\nA administração da sociedade cabe ao sócio HÉLIO BENEVIDES MAIA, que a exercerá\nisoladamente e por prazo indeterminado, com poderes para representar a sociedade ativa e\npassivamente, em juízo ou fora dele, praticar todos os atos de gestão, adquirir, alienar e onerar bens\nmóveis, movimentar contas bancárias e constituir procuradores em nome da sociedade,\nespecificando no instrumento os atos e operações que estes poderão praticar.\n§ 1º A alienação ou a oneração de bens imóveis da sociedade dependerá da anuência expressa da\nsócia CRISTIANE FREITAS MAIA, manifestada no próprio instrumento ou em documento\napartado.\n§ 2º É vedado ao administrador empregar a denominação social em atividades estranhas ao objeto\nsocial, especialmente em avais, fianças e endossos de favor.\nCLÁUSULA SÉTIMA – DO PRÓ-LABORE\nO administrador fará jus a retirada mensal a título de pró-labore, em valor fixado pelos sócios.\nCLÁUSULA OITAVA – DO EXERCÍCIO SOCIAL\nO exercício social encerra-se em 31 de dezembro de cada ano, quando serão levantados o balanço\npatrimonial e o de resultado econômico, cabendo aos sócios os lucros ou perdas na proporção de\nsuas quotas.\nCLÁUSULA NONA – DA CESSÃO DE QUOTAS\nNenhum sócio poderá ceder suas quotas a terceiros sem antes oferecê-las ao outro sócio, que terá\npreferência na aquisição em igualdade de condições.\nCLÁUSULA DÉCIMA – DO FALECIMENTO DE SÓCIO\nFalecendo qualquer dos sócios, a sociedade prosseguirá com os herdeiros do sócio falecido; não\nhavendo interesse destes, os haveres serão apurados em balanço especial e pagos na forma acordada.\nCLÁUSULA DÉCIMA PRIMEIRA – DO DESIMPEDIMENTO\nO administrador declara, sob as penas da lei, não estar impedido de exercer a administração da\nsociedade por lei especial ou em virtude de condenação criminal.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "CLÁUSULA DÉCIMA SEGUNDA – DO FORO\nFica eleito o foro da Comarca de Limoeiro do Norte/CE para dirimir as questões oriundas deste\ncontrato.\nE, por estarem justos e contratados, assinam o presente instrumento.\nLimoeiro do Norte/CE, 9 de agosto de 2023.\nHÉLIO BENEVIDES MAIA\nCRISTIANE FREITAS MAIA\nVisto: DANIEL FREITAS GUERREIRO – OAB/CE nº 26.318\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 24/08/2023 sob o nº 6251973\nProtocolo: 23/084412-6 | NIRE: 23201543219\nEmpresa: VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA\nAutenticação: 5B7E2D90C4A1F368\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "2b100d5251ee920517d896873bf6e7d2d6a0b516575465d4c5015c62b315deb3",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 33.1,
+      "tokens_saida": 570,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 31.1,
+      "tokens_saida": 2225,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "llamacpp",
+  "modelo": "qwen3.8-27b",
+  "politica": "DETRAN-CE"
+ },
+ "lado": "vendedor",
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T10:07:50",
+   "pedido": {
+    "veiculo": {
+     "descricao": "FIAT/FIORINO",
+     "placa": "XCB7V20",
+     "renavam": "05328930190",
+     "chassi": "9BDJ8ABJ9EHZ647PF"
+    },
+    "data_venda": "2026-09-03",
+    "valor": 71000.0,
+    "assinantes": [
+     {
+      "nome": "JOSÉ AIRTON HOLANDA CHAVES",
+      "cpf": "975.811.679-76"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "ANTÔNIA REJANE MOREIRA DIÓGENES",
+    "vendedor_cnpj": "56.469.460/0001-18",
+    "lado": "vendedor"
+   },
+   "empresa": {
+    "razao_social": "VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA",
+    "cnpj": "56.469.460/0001-18",
+    "tipo": "LTDA",
+    "objeto": "comércio atacadista e varejista de gêneros alimentícios em geral, cereais, carnes, laticínios e frios, bem como o transporte rodoviário das mercadorias que comercializa.",
+    "comercializa_veiculos": false,
+    "subtipo": null
+   },
+   "veredito": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 6.6,
+   "confianca": 0.867,
+   "componentes": {
+    "leitura": 0.867,
+    "juridica": 1.0,
+    "fatos_decisivos": 3,
+    "menor_confianca_fato": 0.8,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 6.6 ≤ limiar 15"
+   ],
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Hélio Benevides Maia. O caminho por procuração pública de 14/10/2025 (cartório nogueira – 1º ofício de notas de limoeiro do norte) não vale: procuração revogada.",
+   "assinantes": [
+    {
+     "informado": "JOSÉ AIRTON HOLANDA CHAVES",
+     "cpf": "975.811.679-76",
+     "chave": "97581167976",
+     "nome": "José Airton Holanda Chaves",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:46252257958",
+     "pessoas": [
+      {
+       "chave": "46252257958",
+       "nome": "Hélio Benevides Maia"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "alienação de bens móveis — Cláusula Sexta",
+     "cadeia": [
+      "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [
+    {
+     "id": "PROCURACAO_PUBLICA_2025_10_14:bloqueada",
+     "pessoas": [
+      {
+       "chave": "97581167976",
+       "nome": "José Airton Holanda Chaves"
+      }
+     ],
+     "via": "procuracao",
+     "descricao": "Procuração pública de 14/10/2025 (CARTÓRIO NOGUEIRA – 1º OFÍCIO DE NOTAS DE LIMOEIRO DO NORTE)",
+     "cadeia": [
+      "PROCURACAO_PUBLICA_2025_10_14"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [
+      {
+       "codigo": "OUTORGANTE_PJ",
+       "severidade": "ok",
+       "titulo": "Outorgada pela própria empresa",
+       "detalhe": "A outorgante é a empresa, representada por Hélio Benevides Maia.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2025_10_14",
+         "doc_titulo": "Procuração (2025)",
+         "trecho": "VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº 56.469.460/0001-18",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 529,
+         "fim": 650
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2025_10_14"
+      },
+      {
+       "codigo": "OUTORGA_COM_PODERES",
+       "severidade": "ok",
+       "titulo": "Quem outorgou tinha poder",
+       "detalhe": "Em 14/10/2025, Hélio Benevides Maia podia representar a empresa nesse ato.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2025_10_14",
+         "doc_titulo": "Procuração (2025)",
+         "trecho": "VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº 56.469.460/0001-18",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 529,
+         "fim": 650
+        },
+        {
+         "doc_id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+         "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+         "trecho": "A administração da sociedade cabe ao sócio HÉLIO BENEVIDES MAIA, que a exercerá isoladamente e por prazo indeterminado, com poderes para representar a sociedade ativa e passivamente, em juízo ou fora dele, praticar todos os atos de gestão, adquirir, alienar e onerar bens móveis, movimentar contas bancárias e constituir procuradores em nome da sociedade, especificando no instrumento os atos e operações que estes poderão praticar.",
+         "clausula": "Cláusula Sexta",
+         "ancoragem": 100.0,
+         "pagina": 2,
+         "inicio": 2794,
+         "fim": 3226
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2025_10_14"
+      },
+      {
+       "codigo": "PODERES_ESPECIAIS",
+       "severidade": "ok",
+       "titulo": "Poder expresso para alienar veículos",
+       "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+       "fundamento": [
+        "CC art. 661, §1º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2025_10_14",
+         "doc_titulo": "Procuração (2025)",
+         "trecho": "poderes especiais e expressos para vender, ceder ou transferir, a quem convier, pelo preço e condições que ajustar, o veículo de propriedade da outorgante marca/modelo FIAT/FIORINO, placa XCB7V20, RENAVAM 05328930190, chassi 9BDJ8ABJ9EHZ647PF; assinar, na qualidade de vendedor, a Autorização para Transferência de Propriedade do Veículo, em meio físico ou digital (ATPV ou ATPV-e), recibos e contratos; receber o preço, dar quitação e entregar o veículo; representar a outorgante perante o Departamento Estadual de Trânsito do Ceará – DETRAN/CE, requerendo vistoria, comunicação de venda e o que mais for necessário; pagar taxas, tributos e multas incidentes sobre o veículo; enfim, praticar todos os atos necessários ao fiel cumprimento deste mandato.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1789,
+         "fim": 2542
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2025_10_14"
+      },
+      {
+       "codigo": "VEICULO_ABRANGIDO",
+       "severidade": "ok",
+       "titulo": "Veículo identificado na procuração",
+       "detalhe": "A procuração identifica exatamente este veículo.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2025_10_14",
+         "doc_titulo": "Procuração (2025)",
+         "trecho": "poderes especiais e expressos para vender, ceder ou transferir, a quem convier, pelo preço e condições que ajustar, o veículo de propriedade da outorgante marca/modelo FIAT/FIORINO, placa XCB7V20, RENAVAM 05328930190, chassi 9BDJ8ABJ9EHZ647PF; assinar, na qualidade de vendedor, a Autorização para Transferência de Propriedade do Veículo, em meio físico ou digital (ATPV ou ATPV-e), recibos e contratos; receber o preço, dar quitação e entregar o veículo; representar a outorgante perante o Departamento Estadual de Trânsito do Ceará – DETRAN/CE, requerendo vistoria, comunicação de venda e o que mais for necessário; pagar taxas, tributos e multas incidentes sobre o veículo; enfim, praticar todos os atos necessários ao fiel cumprimento deste mandato.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1789,
+         "fim": 2542
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2025_10_14"
+      },
+      {
+       "codigo": "PROCURACAO_NO_PRAZO",
+       "severidade": "ok",
+       "titulo": "Dentro do prazo",
+       "detalhe": "Válida até 14/10/2027.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2025_10_14",
+         "doc_titulo": "Procuração (2025)",
+         "trecho": "O presente mandato vigorará pelo prazo de 2 (dois) anos, contado desta data.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 2543,
+         "fim": 2619
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2025_10_14"
+      },
+      {
+       "codigo": "PROCURACAO_REVOGADA",
+       "severidade": "bloqueio",
+       "titulo": "Procuração revogada",
+       "detalhe": "Revogada em 02/06/2026 (Revogação em Procuração (2026)) — revogação genérica que alcança esta procuração.",
+       "fundamento": [
+        "CC art. 682, I",
+        "CC art. 686"
+       ],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2026_06_02",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "revogacao: pelo presente instrumento, a outorgante revoga, para todos os fins de direito, a procuracao por ela outorgada a jose airton holanda chaves, lavrada nestas notas em 14/10/2025, no livro 287, folhas 112/113, que deixa de produzir qualquer efeito a partir desta data, corpus sintetico outorga -- dados ficticios -- sem valor legal fl",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 2973,
+         "fim": 3312
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2025_10_14"
+      }
+     ],
+     "precondicoes": []
+    },
+    {
+     "id": "PROCURACAO_PUBLICA_2026_06_02:bloqueada",
+     "pessoas": [
+      {
+       "chave": "97581167976",
+       "nome": "José Airton Holanda Chaves"
+      },
+      {
+       "chave": "69975453350",
+       "nome": "Maria Lucivânia Rebouças"
+      }
+     ],
+     "via": "procuracao",
+     "descricao": "Procuração pública de 02/06/2026 (CARTÓRIO NOGUEIRA – 1º OFÍCIO DE NOTAS DE LIMOEIRO DO NORTE)",
+     "cadeia": [
+      "PROCURACAO_PUBLICA_2026_06_02"
+     ],
+     "severidade": "ok",
+     "confianca": 0.8,
+     "achados": [
+      {
+       "codigo": "OUTORGANTE_PJ",
+       "severidade": "ok",
+       "titulo": "Outorgada pela própria empresa",
+       "detalhe": "A outorgante é a empresa, representada por Hélio Benevides Maia.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2026_06_02",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº 56.469.460/0001-18",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 574,
+         "fim": 695
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2026_06_02"
+      },
+      {
+       "codigo": "OUTORGA_COM_PODERES",
+       "severidade": "ok",
+       "titulo": "Quem outorgou tinha poder",
+       "detalhe": "Em 02/06/2026, Hélio Benevides Maia podia representar a empresa nesse ato.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2026_06_02",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº 56.469.460/0001-18",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 574,
+         "fim": 695
+        },
+        {
+         "doc_id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+         "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+         "trecho": "A administração da sociedade cabe ao sócio HÉLIO BENEVIDES MAIA, que a exercerá isoladamente e por prazo indeterminado, com poderes para representar a sociedade ativa e passivamente, em juízo ou fora dele, praticar todos os atos de gestão, adquirir, alienar e onerar bens móveis, movimentar contas bancárias e constituir procuradores em nome da sociedade, especificando no instrumento os atos e operações que estes poderão praticar.",
+         "clausula": "Cláusula Sexta",
+         "ancoragem": 100.0,
+         "pagina": 2,
+         "inicio": 2794,
+         "fim": 3226
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2026_06_02"
+      },
+      {
+       "codigo": "PODERES_INSUFICIENTES",
+       "severidade": "bloqueio",
+       "titulo": "Sem poder expresso para vender",
+       "detalhe": "A procuração não confere poder expresso para alienar veículos — só poderes gerais de administração. Mandato em termos gerais só confere poderes de administração; alienar exige poderes especiais e expressos.",
+       "fundamento": [
+        "CC art. 661, caput e §1º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2026_06_02",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "podendo requerer vistorias, licenciamentos, emplacamentos, segundas vias de CRV e de CRLV-e, alterações de características, inclusão e baixa de gravames, bem como requerer e acompanhar a transferência de propriedade e de jurisdição, para o nome da outorgante, dos veículos que esta vier a adquirir, assinando, na qualidade de adquirente, a Autorização para Transferência de Propriedade do Veículo (ATPV-e), requerimentos, declarações e termos; pagar taxas, tributos, seguro obrigatório e multas; apresentar defesas e recursos de autuações; retirar documentos e placas; e praticar os demais atos de mero expediente necessários a esses fins.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 2259,
+         "fim": 2898
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2026_06_02"
+      },
+      {
+       "codigo": "PROCURACAO_NO_PRAZO",
+       "severidade": "ok",
+       "titulo": "Dentro do prazo",
+       "detalhe": "Válida até 02/06/2027.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2026_06_02",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 2899,
+         "fim": 2972
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2026_06_02"
+      }
+     ],
+     "precondicoes": []
+    }
+   ],
+   "caminho_escolhido": null,
+   "faltantes": [
+    {
+     "alternativa": "contrato:46252257958",
+     "via": "contrato",
+     "descricao": "alienação de bens móveis — Cláusula Sexta",
+     "pessoas": [
+      "46252257958"
+     ],
+     "faltam": [
+      "46252257958"
+     ],
+     "faltam_nomes": [
+      "Hélio Benevides Maia"
+     ],
+     "pessoas_nomes": [
+      "Hélio Benevides Maia"
+     ]
+    }
+   ],
+   "achados": [
+    {
+     "codigo": "TITULARIDADE_OK",
+     "severidade": "ok",
+     "titulo": "Veículo registrado no CNPJ da empresa",
+     "detalhe": "Proprietário no CRLV: VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA.",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [
+      {
+       "doc_id": "CRLV",
+       "doc_titulo": "CRLV",
+       "trecho": "XCB7V20",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 146,
+       "fim": 153
+      }
+     ],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023#R1",
+     "escopo": "alienacao_bens_moveis",
+     "aplicavel": true,
+     "motivo": "alienação de bens móveis",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+      "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+      "trecho": "A administração da sociedade cabe ao sócio HÉLIO BENEVIDES MAIA, que a exercerá isoladamente e por prazo indeterminado, com poderes para representar a sociedade ativa e passivamente, em juízo ou fora dele, praticar todos os atos de gestão, adquirir, alienar e onerar bens móveis, movimentar contas bancárias e constituir procuradores em nome da sociedade, especificando no instrumento os atos e operações que estes poderão praticar.",
+      "clausula": "Cláusula Sexta",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 2794,
+      "fim": 3226
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Hélio Benevides Maia"
+     ],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente"
+       ]
+      }
+     ],
+     "decisiva": true
+    },
+    {
+     "regra": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023#R2",
+     "escopo": "alienacao_bens",
+     "aplicavel": true,
+     "motivo": "alienação de bens",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+      "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+      "trecho": "A administração da sociedade cabe ao sócio HÉLIO BENEVIDES MAIA, que a exercerá isoladamente e por prazo indeterminado, com poderes para representar a sociedade ativa e passivamente, em juízo ou fora dele, praticar todos os atos de gestão, adquirir, alienar e onerar bens móveis, movimentar contas bancárias e constituir procuradores em nome da sociedade, especificando no instrumento os atos e operações que estes poderão praticar.",
+      "clausula": "Cláusula Sexta",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 2794,
+      "fim": 3226
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Hélio Benevides Maia"
+     ],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 0.8,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente"
+       ]
+      },
+      {
+       "campo": "escopo",
+       "valor_llm": "onerar_bens",
+       "valor_lexico": "alienacao_bens",
+       "divergiu": true,
+       "corrigido_para": "alienacao_bens",
+       "expressoes": []
+      }
+     ],
+     "decisiva": false
+    },
+    {
+     "regra": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023#R3",
+     "escopo": "outorgar_procuracoes",
+     "aplicavel": false,
+     "motivo": "regula a outorga de procurações (usada para validar procurações)",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+      "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+      "trecho": "A administração da sociedade cabe ao sócio HÉLIO BENEVIDES MAIA, que a exercerá isoladamente e por prazo indeterminado, com poderes para representar a sociedade ativa e passivamente, em juízo ou fora dele, praticar todos os atos de gestão, adquirir, alienar e onerar bens móveis, movimentar contas bancárias e constituir procuradores em nome da sociedade, especificando no instrumento os atos e operações que estes poderão praticar.",
+      "clausula": "Cláusula Sexta",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 2794,
+      "fim": 3226
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Hélio Benevides Maia"
+     ],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente"
+       ]
+      },
+      {
+       "campo": "ato",
+       "valor_llm": "alienar",
+       "valor_lexico": "alienar+adquirir",
+       "divergiu": false,
+       "corrigido_para": "alienar+adquirir",
+       "expressoes": []
+      }
+     ],
+     "decisiva": false
+    },
+    {
+     "regra": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023#R4",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+      "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+      "trecho": "A administração da sociedade cabe ao sócio HÉLIO BENEVIDES MAIA, que a exercerá isoladamente e por prazo indeterminado, com poderes para representar a sociedade ativa e passivamente, em juízo ou fora dele, praticar todos os atos de gestão, adquirir, alienar e onerar bens móveis, movimentar contas bancárias e constituir procuradores em nome da sociedade, especificando no instrumento os atos e operações que estes poderão praticar.",
+      "clausula": "Cláusula Sexta",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 2794,
+      "fim": 3226
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Hélio Benevides Maia"
+     ],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente"
+       ]
+      }
+     ],
+     "decisiva": false
+    },
+    {
+     "regra": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023#R5",
+     "escopo": "outorgar_procuracoes",
+     "aplicavel": false,
+     "motivo": "regra de compra (não se aplica à venda)",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+      "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+      "trecho": "A administração da sociedade cabe ao sócio HÉLIO BENEVIDES MAIA, que a exercerá isoladamente e por prazo indeterminado, com poderes para representar a sociedade ativa e passivamente, em juízo ou fora dele, praticar todos os atos de gestão, adquirir, alienar e onerar bens móveis, movimentar contas bancárias e constituir procuradores em nome da sociedade, especificando no instrumento os atos e operações que estes poderão praticar.",
+      "clausula": "Cláusula Sexta",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 2794,
+      "fim": 3226
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Hélio Benevides Maia"
+     ],
+     "cargo": "procuradores",
+     "valor_acima_de": null,
+     "confianca": 0.8,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "nao_especificado",
+       "valor_lexico": "isolado",
+       "divergiu": true,
+       "corrigido_para": "isolado",
+       "expressoes": [
+        "isoladamente"
+       ]
+      }
+     ],
+     "decisiva": false
+    },
+    {
+     "regra": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023#R6",
+     "escopo": "alienacao_bens_imoveis",
+     "aplicavel": false,
+     "motivo": "trata de bens imóveis; veículo é bem móvel",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+      "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+      "trecho": "§ 1º A alienação ou a oneração de bens imóveis da sociedade dependerá da anuência expressa da sócia CRISTIANE FREITAS MAIA, manifestada no próprio instrumento ou em documento apartado.",
+      "clausula": "Cláusula Sexta, Parágrafo 1º",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3227,
+      "fim": 3411
+     },
+     "modo": "nao_especificado",
+     "pessoas": [
+      "Cristiane Freitas Maia"
+     ],
+     "cargo": "socios",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    },
+    {
+     "regra": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023#R7",
+     "escopo": "alienacao_bens_imoveis",
+     "aplicavel": false,
+     "motivo": "trata de bens imóveis; veículo é bem móvel",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+      "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+      "trecho": "§ 1º A alienação ou a oneração de bens imóveis da sociedade dependerá da anuência expressa da sócia CRISTIANE FREITAS MAIA, manifestada no próprio instrumento ou em documento apartado.",
+      "clausula": "Cláusula Sexta, Parágrafo 1º",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3227,
+      "fim": 3411
+     },
+     "modo": "nao_especificado",
+     "pessoas": [
+      "Cristiane Freitas Maia"
+     ],
+     "cargo": "socios",
+     "valor_acima_de": null,
+     "confianca": 0.8,
+     "verificacoes": [
+      {
+       "campo": "escopo",
+       "valor_llm": "onerar_bens",
+       "valor_lexico": "alienacao_bens_imoveis",
+       "divergiu": true,
+       "corrigido_para": "alienacao_bens_imoveis",
+       "expressoes": []
+      }
+     ],
+     "decisiva": false
+    },
+    {
+     "regra": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023#R8",
+     "escopo": "obrigacoes_garantias",
+     "aplicavel": false,
+     "motivo": "trata de avais, fianças e garantias",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+      "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+      "trecho": "§ 2º É vedado ao administrador empregar a denominação social em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+      "clausula": "Cláusula Sexta, Parágrafo 2º",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3412,
+      "fim": 3567
+     },
+     "modo": "nao_especificado",
+     "pessoas": [],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-09-03",
+    "atos": [
+     {
+      "doc": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+      "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+      "efeito": "2023-08-09"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "46252257958",
+      "nome": "Hélio Benevides Maia",
+      "cargo": "Sócio-Administrador",
+      "doc": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "46252257958",
+      "nome": "Hélio Benevides Maia",
+      "percentual": 70.0
+     },
+     {
+      "chave": "39242232629",
+      "nome": "Cristiane Freitas Maia",
+      "percentual": 30.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA",
+      "sub": "56.469.460/0001-18"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "FIAT/FIORINO",
+      "sub": "XCB7V20"
+     },
+     {
+      "id": "46252257958",
+      "tipo": "pessoa",
+      "rotulo": "Hélio Benevides Maia",
+      "papeis": [
+       "sócio 70%",
+       "Sócio-Administrador"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "39242232629",
+      "tipo": "pessoa",
+      "rotulo": "Cristiane Freitas Maia",
+      "papeis": [
+       "sócio 30%"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "97581167976",
+      "tipo": "pessoa",
+      "rotulo": "José Airton Holanda Chaves",
+      "papeis": [
+       "procurador"
+      ],
+      "assinante": true
+     },
+     {
+      "id": "69975453350",
+      "tipo": "pessoa",
+      "rotulo": "Maria Lucivânia Rebouças",
+      "papeis": [
+       "procurador"
+      ],
+      "assinante": false
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "valido"
+     },
+     {
+      "de": "46252257958",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "70%",
+      "status": "neutro"
+     },
+     {
+      "de": "39242232629",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "30%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "46252257958",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "97581167976",
+      "tipo": "procuracao",
+      "status": "invalido",
+      "doc": "PROCURACAO_PUBLICA_2025_10_14",
+      "rotulo": "procuração 14/10/2025 · Procuração revogada",
+      "motivo": "Procuração revogada"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "97581167976",
+      "tipo": "procuracao",
+      "status": "invalido",
+      "doc": "PROCURACAO_PUBLICA_2026_06_02",
+      "rotulo": "procuração 02/06/2026 · Sem poder expresso para vender",
+      "motivo": "Sem poder expresso para vender"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "69975453350",
+      "tipo": "procuracao",
+      "status": "invalido",
+      "doc": "PROCURACAO_PUBLICA_2026_06_02",
+      "rotulo": "procuração 02/06/2026 · Sem poder expresso para vender",
+      "motivo": "Sem poder expresso para vender"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2023-08-09",
+     "tipo": "ato",
+     "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+     "doc": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2025-10-14",
+     "tipo": "procuracao",
+     "titulo": "Procuração para José Airton Holanda Chaves",
+     "doc": "PROCURACAO_PUBLICA_2025_10_14",
+     "detalhe": "publica"
+    },
+    {
+     "data": "2026-06-02",
+     "tipo": "procuracao",
+     "titulo": "Procuração para José Airton Holanda Chaves e Maria Lucivânia Rebouças",
+     "doc": "PROCURACAO_PUBLICA_2026_06_02",
+     "detalhe": "publica"
+    },
+    {
+     "data": "2026-06-02",
+     "tipo": "revogacao",
+     "titulo": "Revogação de procuração",
+     "doc": "PROCURACAO_PUBLICA_2026_06_02#rev",
+     "detalhe": ""
+    },
+    {
+     "data": "2026-09-03",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 71.000,00"
+    },
+    {
+     "data": "2027-06-02",
+     "tipo": "vencimento",
+     "titulo": "Vence a procuração de José Airton Holanda Chaves e Maria Lucivânia Rebouças",
+     "doc": "PROCURACAO_PUBLICA_2026_06_02",
+     "detalhe": ""
+    },
+    {
+     "data": "2027-10-14",
+     "tipo": "vencimento",
+     "titulo": "Vence a procuração de José Airton Holanda Chaves",
+     "doc": "PROCURACAO_PUBLICA_2025_10_14",
+     "detalhe": ""
+    }
+   ],
+   "pessoas": {
+    "46252257958": {
+     "nome": "Hélio Benevides Maia",
+     "cpf": "46252257958"
+    },
+    "97581167976": {
+     "nome": "José Airton Holanda Chaves",
+     "cpf": "97581167976"
+    },
+    "69975453350": {
+     "nome": "Maria Lucivânia Rebouças",
+     "cpf": "69975453350"
+    },
+    "39242232629": {
+     "nome": "Cristiane Freitas Maia",
+     "cpf": "39242232629"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "não comprovada",
+    "outorgante": {
+     "nome": "VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA",
+     "cnpj": "56.469.460/0001-18",
+     "tipo": "LTDA",
+     "atos_vigentes": [
+      {
+       "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+       "doc": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+       "efeito": "2023-08-09"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "José Airton Holanda Chaves",
+      "cpf": "975.811.679-76",
+      "identificacao": "CPF",
+      "qualidade": "procurador(a) pela procuração de 14/10/2025"
+     }
+    ],
+    "poderes_conferidos": [
+     "Procuração pública de 14/10/2025 (CARTÓRIO NOGUEIRA – 1º OFÍCIO DE NOTAS DE LIMOEIRO DO NORTE): não comprova poderes (Procuração revogada).",
+     "Procuração pública de 02/06/2026 (CARTÓRIO NOGUEIRA – 1º OFÍCIO DE NOTAS DE LIMOEIRO DO NORTE): não comprova poderes (Sem poder expresso para vender)."
+    ],
+    "prazo_validade": [
+     "—"
+    ],
+    "revogacao": [
+     "—"
+    ],
+    "fontes": [],
+    "documentos_verificaveis": [
+     {
+      "id": "CRLV",
+      "titulo": "CRLV",
+      "arquivo": "CRLV.pdf"
+     },
+     {
+      "id": "PROCURACAO_PUBLICA_2025_10_14",
+      "titulo": "Procuração (2025)",
+      "arquivo": "PROCURACAO_PUBLICA_2025_10_14.pdf"
+     },
+     {
+      "id": "PROCURACAO_PUBLICA_2026_06_02",
+      "titulo": "Procuração (2026)",
+      "arquivo": "PROCURACAO_PUBLICA_2026_06_02.pdf"
+     },
+     {
+      "id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+      "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+      "arquivo": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "CRLV",
+     "nome": "CRLV.pdf",
+     "tipo": "crlv",
+     "titulo": "CRLV",
+     "data": null,
+     "paginas": [
+      "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n05328930190\nPLACA\nXCB7V20\nEXERCÍCIO\n2026\nMARCA / MODELO / VERSÃO\nFIAT/FIORINO\nCHASSI\n9BDJ8ABJ9EHZ647PF\nNOME\nVALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA\nCPF / CNPJ\n56.469.460/0001-18\nDATA\n15/01/2026\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "3a6e382f96c82388477085d563f3914926aa24a80ae268a21eff46aed3ab4648",
+     "leitura": {
+      "tarefas": {
+       "crlv": {
+        "metodo": "regex"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "PROCURACAO_PUBLICA_2025_10_14",
+     "nome": "PROCURACAO_PUBLICA_2025_10_14.pdf",
+     "tipo": "procuracao",
+     "titulo": "Procuração (2025)",
+     "data": "2025-10-14",
+     "paginas": [
+      "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCARTÓRIO NOGUEIRA – 1º OFÍCIO DE NOTAS DE LIMOEIRO DO NORTE (fictício)\nLivro nº 287 – Folhas 112/113\nPROCURAÇÃO BASTANTE QUE FAZ VALE DO JAGUARIBE COMÉRCIO DE\nALIMENTOS LTDA A FAVOR DE JOSÉ AIRTON HOLANDA CHAVES\nSAIBAM quantos este público instrumento de procuração virem que, aos 14 (quatorze) dias do mês\nde outubro do ano de 2025 (dois mil e vinte e cinco), nesta cidade de Limoeiro do Norte, Estado do\nCeará, neste Cartório, perante mim, Escrevente, compareceu como OUTORGANTE: VALE DO\nJAGUARIBE COMÉRCIO DE ALIMENTOS LTDA, sociedade empresária limitada, inscrita no\nCNPJ sob o nº 56.469.460/0001-18, NIRE 23201543219, com sede na Rua Cândido Olímpio de\nFreitas, nº 655, Centro, Limoeiro do Norte/CE, neste ato representada por seu sócio administrador\nHÉLIO BENEVIDES MAIA, brasileiro, casado, comerciante, portador da cédula de identidade RG\nnº 2002345678904 SSP/CE, inscrito no CPF sob o nº 462.522.579-58, residente e domiciliado na\nRua Coronel Malveira, nº 288, Centro, Limoeiro do Norte/CE, com poderes conferidos pela\nCláusula Sexta do contrato social consolidado na Terceira Alteração Contratual, registrada na\nJUCEC em 24/08/2023 sob o nº 6251973, cuja cópia, acompanhada de certidão simplificada\nexpedida em 10/10/2025, fica arquivada nestas Notas; reconhecido como o próprio por mim, do que\ndou fé.\nE, pela outorgante, na forma em que vem representada, me foi dito que nomeia e constitui seu\nbastante procurador JOSÉ AIRTON HOLANDA CHAVES, brasileiro, casado, administrador,\nportador da cédula de identidade RG nº 99023456789 SSP/CE, inscrito no CPF sob o nº\n975.811.679-76, residente e domiciliado na Rua Padre Joaquim de Menezes, nº 940, Centro, Russas/\nCE, CEP 62900-000, gerente administrativo da outorgante, a quem confere poderes especiais e\nexpressos para vender, ceder ou transferir, a quem convier, pelo preço e condições que ajustar, o\nveículo de propriedade da outorgante marca/modelo FIAT/FIORINO, placa XCB7V20, RENAVAM\n05328930190, chassi 9BDJ8ABJ9EHZ647PF; assinar, na qualidade de vendedor, a Autorização para\nTransferência de Propriedade do Veículo, em meio físico ou digital (ATPV ou ATPV-e), recibos e\ncontratos; receber o preço, dar quitação e entregar o veículo; representar a outorgante perante o\nDepartamento Estadual de Trânsito do Ceará – DETRAN/CE, requerendo vistoria, comunicação de\nvenda e o que mais for necessário; pagar taxas, tributos e multas incidentes sobre o veículo; enfim,\npraticar todos os atos necessários ao fiel cumprimento deste mandato.\nO presente mandato vigorará pelo prazo de 2 (dois) anos, contado desta data.\nAssim o disse, do que dou fé, e me pediu que lavrasse este instrumento, que, lido e achado\nconforme, aceita e assina, dispensadas as testemunhas. Emolumentos: R$ 205,30. FERMOJU: R$\n10,27. Selo: R$ 4,11. Total: R$ 219,68. Selo Digital de Fiscalização nº TN-CE-2025-0981133-\nD2A6. Eu, JOSIANE MAIA FREITAS, Escrevente, a lavrei. Eu, FRANCISCO DAS CHAGAS\nNOGUEIRA, Tabelião, a subscrevo.\n(a.a.) HÉLIO BENEVIDES MAIA. FRANCISCO DAS CHAGAS NOGUEIRA – Tabelião.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "TRASLADO – Nada mais. Trasladada em seguida, confere com o original, ao qual me reporto e\ndou fé.\nLimoeiro do Norte/CE, 14 de outubro de 2025.\nFRANCISCO DAS CHAGAS NOGUEIRA – Tabelião\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "e7c75317a9cd60d2ea8955e0da1e66aca1540441229b55fddcfe7ebf4c4e8c14",
+     "leitura": {
+      "tarefas": {
+       "procuracao": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 44.3,
+        "tokens_saida": 897,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "PROCURACAO_PUBLICA_2026_06_02",
+     "nome": "PROCURACAO_PUBLICA_2026_06_02.pdf",
+     "tipo": "procuracao",
+     "titulo": "Procuração (2026)",
+     "data": "2026-06-02",
+     "paginas": [
+      "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCARTÓRIO NOGUEIRA – 1º OFÍCIO DE NOTAS DE LIMOEIRO DO NORTE (fictício)\nLivro nº 301 – Folhas 045/046\nPROCURAÇÃO QUE FAZ VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA A\nFAVOR DE JOSÉ AIRTON HOLANDA CHAVES E MARIA LUCIVÂNIA REBOUÇAS,\nCOM REVOGAÇÃO DE MANDATO ANTERIOR\nSAIBAM quantos este público instrumento de procuração virem que, aos 2 (dois) dias do mês de\njunho do ano de 2026 (dois mil e vinte e seis), nesta cidade de Limoeiro do Norte, Estado do Ceará,\nneste Cartório, perante mim, Escrevente, compareceu como OUTORGANTE: VALE DO\nJAGUARIBE COMÉRCIO DE ALIMENTOS LTDA, sociedade empresária limitada, inscrita no\nCNPJ sob o nº 56.469.460/0001-18, NIRE 23201543219, com sede na Rua Cândido Olímpio de\nFreitas, nº 655, Centro, Limoeiro do Norte/CE, neste ato representada por seu sócio administrador\nHÉLIO BENEVIDES MAIA, brasileiro, casado, comerciante, portador da cédula de identidade RG\nnº 2002345678904 SSP/CE, inscrito no CPF sob o nº 462.522.579-58, residente e domiciliado na\nRua Coronel Malveira, nº 288, Centro, Limoeiro do Norte/CE, com poderes conferidos pela\nCláusula Sexta do contrato social consolidado registrado na JUCEC em 24/08/2023 sob o nº\n6251973, conforme cópia e certidão simplificada arquivadas nestas Notas; reconhecido como o\npróprio por mim, do que dou fé.\nE, pela outorgante, na forma representada, me foi dito que nomeia e constitui seus procuradores\nJOSÉ AIRTON HOLANDA CHAVES, brasileiro, casado, administrador, portador da cédula de\nidentidade RG nº 99023456789 SSP/CE, inscrito no CPF sob o nº 975.811.679-76, residente e\ndomiciliado na Rua Padre Joaquim de Menezes, nº 940, Centro, Russas/CE, CEP 62900-000; e\nMARIA LUCIVÂNIA REBOUÇAS, brasileira, solteira, auxiliar administrativa, portadora da cédula\nde identidade RG nº 2009876543216 SSP/CE, inscrita no CPF sob o nº 699.754.533-50, residente e\ndomiciliada na Rua Joaquim Nogueira Lopes, nº 51, Bairro Antônio Holanda de Oliveira, Limoeiro\ndo Norte/CE, CEP 62930-000; aos quais, agindo em conjunto ou separadamente, confere poderes\npara representar a outorgante perante o Departamento Estadual de Trânsito do Ceará – DETRAN/\nCE, suas Circunscrições Regionais de Trânsito e demais órgãos e entidades executivos de trânsito,\npodendo requerer vistorias, licenciamentos, emplacamentos, segundas vias de CRV e de CRLV-e,\nalterações de características, inclusão e baixa de gravames, bem como requerer e acompanhar a\ntransferência de propriedade e de jurisdição, para o nome da outorgante, dos veículos que esta vier a\nadquirir, assinando, na qualidade de adquirente, a Autorização para Transferência de Propriedade do\nVeículo (ATPV-e), requerimentos, declarações e termos; pagar taxas, tributos, seguro obrigatório e\nmultas; apresentar defesas e recursos de autuações; retirar documentos e placas; e praticar os demais\natos de mero expediente necessários a esses fins.\nO presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data.\nREVOGAÇÃO: pelo presente instrumento, a outorgante revoga, para todos os fins de direito, a\nprocuração por ela outorgada a JOSÉ AIRTON HOLANDA CHAVES, lavrada nestas Notas em\n14/10/2025, no Livro 287, Folhas 112/113, que deixa de produzir qualquer efeito a partir desta data,\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "cabendo a esta serventia proceder à anotação à margem do ato revogado. O outorgado JOSÉ\nAIRTON HOLANDA CHAVES, presente a este ato, declarou-se ciente da revogação.\nAssim o disse, do que dou fé, e me pediu que lavrasse este instrumento, que, lido e achado\nconforme, aceita e assina, assinando também o procurador presente, dispensadas as testemunhas.\nEmolumentos: R$ 214,60. FERMOJU: R$ 10,73. Selo: R$ 4,29. Total: R$ 229,62. Selo Digital de\nFiscalização nº TN-CE-2026-0533871-E8B2. Eu, JOSIANE MAIA FREITAS, Escrevente, a lavrei.\nEu, FRANCISCO DAS CHAGAS NOGUEIRA, Tabelião, a subscrevo.\n(a.a.) HÉLIO BENEVIDES MAIA. JOSÉ AIRTON HOLANDA CHAVES. FRANCISCO DAS\nCHAGAS NOGUEIRA – Tabelião.\nAnotação: averbada a revogação à margem do ato lavrado no Livro 287, Folhas 112/113, em\n02/06/2026.\nTRASLADO – Nada mais. Trasladada em seguida, confere com o original, ao qual me reporto e\ndou fé.\nLimoeiro do Norte/CE, 2 de junho de 2026.\nFRANCISCO DAS CHAGAS NOGUEIRA – Tabelião\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "7850ad705c3e7e26bb584e0bc05824d2636f7ab0ef34931912d86dde5718c333",
+     "leitura": {
+      "tarefas": {
+       "procuracao": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 31.5,
+        "tokens_saida": 808,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023",
+     "nome": "TERCEIRA_ALTERACAO_CONSOLIDACAO_2023.pdf",
+     "tipo": "contrato_consolidado",
+     "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+     "data": "2023-08-09",
+     "paginas": [
+      "TERCEIRA ALTERAÇÃO E CONSOLIDAÇÃO DO CONTRATO SOCIAL DA VALE DO\nJAGUARIBE COMÉRCIO DE ALIMENTOS LTDA\nCNPJ nº 56.469.460/0001-18 – NIRE 23201543219\nHÉLIO BENEVIDES MAIA, brasileiro, casado sob o regime da comunhão parcial de bens,\ncomerciante, portador da cédula de identidade RG nº 2002345678904 SSP/CE, inscrito no CPF sob\no nº 462.522.579-58, residente e domiciliado na Rua Coronel Malveira, nº 288, Centro, Limoeiro do\nNorte/CE, CEP 62930-000; e\nCRISTIANE FREITAS MAIA, brasileira, casada sob o regime da comunhão parcial de bens,\nnutricionista, portadora da cédula de identidade RG nº 2003456789015 SSP/CE, inscrita no CPF sob\no nº 392.422.326-29, residente e domiciliada na Rua Coronel Malveira, nº 288, Centro, Limoeiro do\nNorte/CE, CEP 62930-000;\núnicos sócios da sociedade empresária limitada VALE DO JAGUARIBE COMÉRCIO DE\nALIMENTOS LTDA, com sede na Rua Cândido Olímpio de Freitas, nº 655, Centro, Limoeiro do\nNorte/CE, CEP 62930-000, inscrita no CNPJ sob o nº 56.469.460/0001-18, com atos constitutivos\narquivados na JUCEC sob o NIRE 23201543219, resolvem, de comum acordo, alterar e consolidar o\ncontrato social nos termos seguintes.\nI – DA ALTERAÇÃO\nCLÁUSULA PRIMEIRA – DO OBJETO SOCIAL\nO objeto social passa a compreender também o comércio atacadista de laticínios e frios, além das\natividades já exercidas.\nCLÁUSULA SEGUNDA – DA CONSOLIDAÇÃO\nÀ vista da alteração acima, os sócios consolidam o contrato social, que passa a ter a redação\nseguinte, ficando sem efeito as cláusulas anteriores.\nII – CONTRATO SOCIAL CONSOLIDADO\nCLÁUSULA PRIMEIRA – DA DENOMINAÇÃO E SEDE\nA sociedade gira sob a denominação VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS\nLTDA, com sede na Rua Cândido Olímpio de Freitas, nº 655, Centro, Limoeiro do Norte/CE, CEP\n62930-000.\nCLÁUSULA SEGUNDA – DO OBJETO\nA sociedade tem por objeto o comércio atacadista e varejista de gêneros alimentícios em geral,\ncereais, carnes, laticínios e frios, bem como o transporte rodoviário das mercadorias que\ncomercializa.\nCLÁUSULA TERCEIRA – DO PRAZO\nA sociedade iniciou suas atividades em 2 de fevereiro de 2014 e vigorará por prazo indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+      "O capital social é de R$ 500.000,00 (quinhentos mil reais), totalmente integralizado em moeda\ncorrente, dividido em 500.000 (quinhentas mil) quotas de R$ 1,00 (um real) cada, assim distribuídas:\nSócio\nQuotas\nValor (R$)\nParticipação\nHÉLIO BENEVIDES MAIA\n350.000\n350.000,00\n70%\nCRISTIANE FREITAS MAIA\n150.000\n150.000,00\n30%\nTotal\n500.000\n500.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, respondendo todos\nsolidariamente pela integralização do capital social.\nCLÁUSULA SEXTA – DA ADMINISTRAÇÃO\nA administração da sociedade cabe ao sócio HÉLIO BENEVIDES MAIA, que a exercerá\nisoladamente e por prazo indeterminado, com poderes para representar a sociedade ativa e\npassivamente, em juízo ou fora dele, praticar todos os atos de gestão, adquirir, alienar e onerar bens\nmóveis, movimentar contas bancárias e constituir procuradores em nome da sociedade,\nespecificando no instrumento os atos e operações que estes poderão praticar.\n§ 1º A alienação ou a oneração de bens imóveis da sociedade dependerá da anuência expressa da\nsócia CRISTIANE FREITAS MAIA, manifestada no próprio instrumento ou em documento\napartado.\n§ 2º É vedado ao administrador empregar a denominação social em atividades estranhas ao objeto\nsocial, especialmente em avais, fianças e endossos de favor.\nCLÁUSULA SÉTIMA – DO PRÓ-LABORE\nO administrador fará jus a retirada mensal a título de pró-labore, em valor fixado pelos sócios.\nCLÁUSULA OITAVA – DO EXERCÍCIO SOCIAL\nO exercício social encerra-se em 31 de dezembro de cada ano, quando serão levantados o balanço\npatrimonial e o de resultado econômico, cabendo aos sócios os lucros ou perdas na proporção de\nsuas quotas.\nCLÁUSULA NONA – DA CESSÃO DE QUOTAS\nNenhum sócio poderá ceder suas quotas a terceiros sem antes oferecê-las ao outro sócio, que terá\npreferência na aquisição em igualdade de condições.\nCLÁUSULA DÉCIMA – DO FALECIMENTO DE SÓCIO\nFalecendo qualquer dos sócios, a sociedade prosseguirá com os herdeiros do sócio falecido; não\nhavendo interesse destes, os haveres serão apurados em balanço especial e pagos na forma acordada.\nCLÁUSULA DÉCIMA PRIMEIRA – DO DESIMPEDIMENTO\nO administrador declara, sob as penas da lei, não estar impedido de exercer a administração da\nsociedade por lei especial ou em virtude de condenação criminal.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+      "CLÁUSULA DÉCIMA SEGUNDA – DO FORO\nFica eleito o foro da Comarca de Limoeiro do Norte/CE para dirimir as questões oriundas deste\ncontrato.\nE, por estarem justos e contratados, assinam o presente instrumento.\nLimoeiro do Norte/CE, 9 de agosto de 2023.\nHÉLIO BENEVIDES MAIA\nCRISTIANE FREITAS MAIA\nVisto: DANIEL FREITAS GUERREIRO – OAB/CE nº 26.318\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 24/08/2023 sob o nº 6251973\nProtocolo: 23/084412-6 | NIRE: 23201543219\nEmpresa: VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA\nAutenticação: 5B7E2D90C4A1F368\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "2b100d5251ee920517d896873bf6e7d2d6a0b516575465d4c5015c62b315deb3",
+     "leitura": {
+      "tarefas": {
+       "partes": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 33.1,
+        "tokens_saida": 570,
+        "modelo": "qwen3.8-27b"
+       },
+       "regras": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 31.1,
+        "tokens_saida": 2225,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "llamacpp",
+    "modelo": "qwen3.8-27b",
+    "politica": "DETRAN-CE"
+   },
+   "lado": "vendedor"
+  }
+ },
+ "geral": {
+  "veredito": "NAO_PODE",
+  "faixa": "VERMELHO",
+  "indice": 6.6,
+  "resumo": "Vendedor: Os assinantes informados não bastam. Quem pode assinar: Hélio Benevides Maia. O caminho por procuração pública de 14/10/2025 (cartório nogueira – 1º ofício de notas de limoeiro do norte) não vale: procuração revogada.",
+  "motivos_faixa": [
+   "Vendedor — índice 6.6 ≤ limiar 15"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "FIAT/FIORINO",
+   "placa": "XCB7V20",
+   "renavam": "05328930190",
+   "chassi": "9BDJ8ABJ9EHZ647PF"
+  },
+  "data_venda": "2026-09-03",
+  "valor": 71000.0,
+  "vendedor": {
+   "tipo": "PJ",
+   "nome": "VALE DO JAGUARIBE COMÉRCIO DE ALIMENTOS LTDA",
+   "documento": "56.469.460/0001-18",
+   "assinantes": [
+    {
+     "nome": "JOSÉ AIRTON HOLANDA CHAVES",
+     "cpf": "975.811.679-76"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": "ANTÔNIA REJANE MOREIRA DIÓGENES",
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "informado"
+ },
+ "hash_entrada": "dbc50d8ee77f486dba0ba5b3c8184fe05ae917c542d9914d4dd39a6bb04db782"
+}

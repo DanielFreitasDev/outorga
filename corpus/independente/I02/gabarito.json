@@ -1,0 +1,31 @@
+{
+  "caso": "I02",
+  "titulo": "Dois administradores assinam juntos, mas da mesma classe: a cláusula exige um Administrador A e um Administrador B",
+  "categoria": "forma_de_atuacao_incomum / leitura_semantica / alteracao_no_tempo",
+  "objetivo": "Testa se o sistema distingue 'dois administradores em conjunto' de 'um Administrador A em conjunto com um Administrador B', reconhece que o veículo (van de entrega) integra o ativo imobilizado alcançado pela cláusula, aplica a renúncia de uma Administradora B formalizada em alteração arquivada antes da venda e descarta a procuração restrita a outro veículo.",
+  "validacao_cega": true,
+  "autor": "independente",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": ["VERMELHO"],
+    "conjuntos_minimos_cpf": [
+      ["212.536.260-06", "421.445.976-85"],
+      ["335.672.125-91", "421.445.976-85"]
+    ],
+    "conjuntos_minimos_nomes": [
+      ["RAIMUNDO NONATO CASTRO FILHO", "EXPEDITO MOTA SOBRINHO"],
+      ["GERMANA CASTRO LEITE", "EXPEDITO MOTA SOBRINHO"]
+    ],
+    "fundamentos": [
+      "CC art. 47",
+      "CC art. 1.060",
+      "CC art. 1.064",
+      "CC art. 1.063, § 3º",
+      "CC art. 1.154, parágrafo único",
+      "CC art. 661, § 1º",
+      "Contrato social consolidado, Cláusula Oitava, § 2º, I e IV"
+    ]
+  },
+  "esperado_ce": null,
+  "raciocinio": "A Cláusula Oitava, § 2º, I, exige, para alienar bens do ativo imobilizado 'compreendidos os veículos automotores', a assinatura conjunta de um Administrador A e de um Administrador B; a isolada do § 1º cobre só a gestão ordinária, como a venda do estoque de bebidas, e não a venda da van de entrega. RAIMUNDO e GERMANA são ambos Administradores A, de modo que a dupla pedida não satisfaz a combinação exigida, por mais que sejam dois administradores. Na data da venda (19/08/2026) o único Administrador B era EXPEDITO, porque FRANCISCA VALDENIA renunciou e a Sexta Alteração, arquivada em 14/07/2026, a retirou da administração. A procuração de 03/03/2026 a ANTÔNIO WAGNER foi bem outorgada (A + B), mas confere poder especial apenas para o FIAT/STRADA placa FML8E58, e não para a FIAT/DUCATO placa MLS9L81 (CC art. 661, § 1º). Restam como conjuntos válidos RAIMUNDO + EXPEDITO e GERMANA + EXPEDITO."
+}

@@ -1,0 +1,41 @@
+{
+  "caso": "C36",
+  "titulo": "Procuração válida — documentos ESCANEADOS (OCR)",
+  "categoria": "ocr",
+  "objetivo": "Mesmo caso C16, mas a partir de imagens digitalizadas.",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE",
+      "AMARELO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "FRANCISCO"
+      ],
+      [
+        "PEDRO"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 661, §1º"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "729.405.576-91"
+      ],
+      [
+        "939.761.584-02"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Francisco Wellington Rocha"
+      ],
+      [
+        "Pedro Henrique Lima"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

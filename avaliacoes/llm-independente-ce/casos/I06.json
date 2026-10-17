@@ -1,0 +1,664 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T06:56:58",
+ "pedido": {
+  "veiculo": {
+   "descricao": "FIAT/TITANO",
+   "placa": "PWB4B97",
+   "renavam": "03137499137",
+   "chassi": "9BD6HAXYX8JGWK40A"
+  },
+  "data_venda": "2026-08-21",
+  "valor": 186000.0,
+  "assinantes": [
+   {
+    "nome": "IVANILDA BEZERRA CORREIA",
+    "cpf": "129.702.188-60"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "MINERAÇÃO SERRA DAS MATAS LTDA",
+  "vendedor_cnpj": "42.301.286/0001-95"
+ },
+ "empresa": {
+  "razao_social": "GRANITOS SANTA QUITÉRIA LTDA",
+  "cnpj": "42.301.286/0001-95",
+  "tipo": "LTDA",
+  "objeto": "extração, o desdobramento, o beneficiamento e o comércio de granitos, mármores e demais rochas ornamentais, e o transporte rodoviário de cargas próprias",
+  "comercializa_veiculos": false
+ },
+ "veredito": "PODE",
+ "faixa": "VERDE",
+ "indice": 100.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 2,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 100 ≥ limiar 85"
+ ],
+ "resumo": "Ivanilda Bezerra Correia pode assinar o ATPV — regra geral de representação — Cláusula Sétima.",
+ "assinantes": [
+  {
+   "informado": "IVANILDA BEZERRA CORREIA",
+   "cpf": "129.702.188-60",
+   "chave": "12970218860",
+   "nome": "Ivanilda Bezerra Correia",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:12970218860",
+   "pessoas": [
+    {
+     "chave": "12970218860",
+     "nome": "Ivanilda Bezerra Correia"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Cláusula Sétima",
+   "cadeia": [
+    "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": [
+    {
+     "codigo": "DELIBERACAO_SOCIOS",
+     "descricao": "Aprovação prévia de sócios com 66.67% do capital",
+     "quorum": 66.67,
+     "satisfeita": true,
+     "detalhe": "Aprovada em 07/08/2026 por sócios com 110% do capital.",
+     "fontes": [
+      {
+       "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022",
+       "doc_titulo": "Alteração e Consolidação do Contrato Social (2022)",
+       "trecho": "Dependerão de prévia aprovação de sócios titulares de quotas representativas de, no mínimo, 2/3 (dois terços) do capital social, tomada em reunião de sócios e lavrada em ata que será arquivada na Junta Comercial: I – a alienação, a oneração, a locação ou o arrendamento de máquinas, equipamentos, veículos e quaisquer outros bens integrantes do ativo imobilizado;",
+       "clausula": "Cláusula Nona, inciso I",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 4165,
+       "fim": 4528
+      },
+      {
+       "doc_id": "ATA_REUNIAO_SOCIOS_2026_08_07",
+       "doc_titulo": "Ata de Reunião de Sócios (2026)",
+       "trecho": "ficando a administradora IVANILDA BEZERRA CORREIA autorizada a alienar o referido veículo por valor não inferior a R$ 180.000,00 (cento e oitenta mil reais), podendo assinar a Autorização para Transferência de Propriedade do Veículo (ATPV-e) e os demais documentos necessários à venda.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1862,
+       "fim": 2147
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": {
+  "id": "contrato:12970218860",
+  "pessoas": [
+   {
+    "chave": "12970218860",
+    "nome": "Ivanilda Bezerra Correia"
+   }
+  ],
+  "via": "contrato",
+  "descricao": "regra geral de representação — Cláusula Sétima",
+  "cadeia": [
+   "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022"
+  ],
+  "severidade": "ok",
+  "confianca": 1.0,
+  "achados": [],
+  "precondicoes": [
+   {
+    "codigo": "DELIBERACAO_SOCIOS",
+    "descricao": "Aprovação prévia de sócios com 66.67% do capital",
+    "quorum": 66.67,
+    "satisfeita": true,
+    "detalhe": "Aprovada em 07/08/2026 por sócios com 110% do capital.",
+    "fontes": [
+     {
+      "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022",
+      "doc_titulo": "Alteração e Consolidação do Contrato Social (2022)",
+      "trecho": "Dependerão de prévia aprovação de sócios titulares de quotas representativas de, no mínimo, 2/3 (dois terços) do capital social, tomada em reunião de sócios e lavrada em ata que será arquivada na Junta Comercial: I – a alienação, a oneração, a locação ou o arrendamento de máquinas, equipamentos, veículos e quaisquer outros bens integrantes do ativo imobilizado;",
+      "clausula": "Cláusula Nona, inciso I",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 4165,
+      "fim": 4528
+     },
+     {
+      "doc_id": "ATA_REUNIAO_SOCIOS_2026_08_07",
+      "doc_titulo": "Ata de Reunião de Sócios (2026)",
+      "trecho": "ficando a administradora IVANILDA BEZERRA CORREIA autorizada a alienar o referido veículo por valor não inferior a R$ 180.000,00 (cento e oitenta mil reais), podendo assinar a Autorização para Transferência de Propriedade do Veículo (ATPV-e) e os demais documentos necessários à venda.",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 1862,
+      "fim": 2147
+     }
+    ]
+   }
+  ]
+ },
+ "faltantes": [],
+ "achados": [
+  {
+   "codigo": "CND_INSS",
+   "severidade": "info",
+   "titulo": "CND previdenciária",
+   "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+   "fundamento": [
+    "Lei 8.212/91, art. 47, I, \"c\""
+   ],
+   "fontes": [],
+   "caminho": null
+  },
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: GRANITOS SANTA QUITÉRIA LTDA.",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "PWB4B97",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2022)",
+    "trecho": "A administração da sociedade cabe à sócia IVANILDA BEZERRA CORREIA, que a exercerá isoladamente e por prazo indeterminado, competindo-lhe representar a sociedade em juízo e fora dele e praticar os atos de gestão, observado o disposto na Cláusula Nona.",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3602,
+    "fim": 3853
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Ivanilda Bezerra Correia"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022#R2",
+   "escopo": "obrigacoes_garantias",
+   "aplicavel": false,
+   "motivo": "trata de avais, fianças e garantias",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2022)",
+    "trecho": "É vedado o uso da denominação social em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+    "clausula": "Cláusula Sétima, Parágrafo único",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3871,
+    "fim": 4002
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022#R3",
+   "escopo": "alienacao_ativo_imobilizado",
+   "aplicavel": true,
+   "motivo": "alienação de ativo imobilizado/não circulante",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2022)",
+    "trecho": "Dependerão de prévia aprovação de sócios titulares de quotas representativas de, no mínimo, 2/3 (dois terços) do capital social, tomada em reunião de sócios e lavrada em ata que será arquivada na Junta Comercial: I – a alienação, a oneração, a locação ou o arrendamento de máquinas, equipamentos, veículos e quaisquer outros bens integrantes do ativo imobilizado;",
+    "clausula": "Cláusula Nona, inciso I",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 4165,
+    "fim": 4528
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022#R4",
+   "escopo": "outro",
+   "aplicavel": false,
+   "motivo": "não trata de alienação de veículo",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2022)",
+    "trecho": "Dependerão de prévia aprovação de sócios titulares de quotas representativas de, no mínimo, 2/3 (dois terços) do capital social, tomada em reunião de sócios e lavrada em ata que será arquivada na Junta Comercial: IV – a contratação de empréstimos ou financiamentos de valor superior a R$ 300.000,00 (trezentos mil reais).",
+    "clausula": "Cláusula Nona, inciso IV",
+    "ancoragem": 82.9,
+    "pagina": 2,
+    "inicio": 4161,
+    "fim": 4482
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": "socios",
+   "valor_acima_de": 300000.0,
+   "confianca": 0.879,
+   "verificacoes": [],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [
+  {
+   "codigo": "DELIBERACAO_SOCIOS",
+   "descricao": "Aprovação prévia de sócios com 66.67% do capital",
+   "quorum": 66.67,
+   "satisfeita": null,
+   "detalhe": "",
+   "fontes": [
+    {
+     "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022",
+     "doc_titulo": "Alteração e Consolidação do Contrato Social (2022)",
+     "trecho": "Dependerão de prévia aprovação de sócios titulares de quotas representativas de, no mínimo, 2/3 (dois terços) do capital social, tomada em reunião de sócios e lavrada em ata que será arquivada na Junta Comercial: I – a alienação, a oneração, a locação ou o arrendamento de máquinas, equipamentos, veículos e quaisquer outros bens integrantes do ativo imobilizado;",
+     "clausula": "Cláusula Nona, inciso I",
+     "ancoragem": 100.0,
+     "pagina": 2,
+     "inicio": 4165,
+     "fim": 4528
+    }
+   ]
+  }
+ ],
+ "regime": {
+  "data": "2026-08-21",
+  "atos": [
+   {
+    "doc": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022",
+    "titulo": "Alteração e Consolidação do Contrato Social (2022)",
+    "efeito": "2022-11-21"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "12970218860",
+    "nome": "Ivanilda Bezerra Correia",
+    "cargo": "administradora",
+    "doc": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "19806885163",
+    "nome": "Valdemar Pinto Bezerra",
+    "percentual": 45.0
+   },
+   {
+    "chave": "12970218860",
+    "nome": "Ivanilda Bezerra Correia",
+    "percentual": 20.0
+   },
+   {
+    "chave": "17029823192",
+    "nome": "Haroldo Correia Bezerra",
+    "percentual": 20.0
+   },
+   {
+    "chave": "46859780991",
+    "nome": "Natália Bezerra Correia",
+    "percentual": 15.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "GRANITOS SANTA QUITÉRIA LTDA",
+    "sub": "42.301.286/0001-95"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "FIAT/TITANO",
+    "sub": "PWB4B97"
+   },
+   {
+    "id": "19806885163",
+    "tipo": "pessoa",
+    "rotulo": "Valdemar Pinto Bezerra",
+    "papeis": [
+     "sócio 45%"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "12970218860",
+    "tipo": "pessoa",
+    "rotulo": "Ivanilda Bezerra Correia",
+    "papeis": [
+     "sócio 20%",
+     "administradora"
+    ],
+    "assinante": true
+   },
+   {
+    "id": "17029823192",
+    "tipo": "pessoa",
+    "rotulo": "Haroldo Correia Bezerra",
+    "papeis": [
+     "sócio 20%"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "46859780991",
+    "tipo": "pessoa",
+    "rotulo": "Natália Bezerra Correia",
+    "papeis": [
+     "sócio 15%"
+    ],
+    "assinante": false
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "19806885163",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "45%",
+    "status": "neutro"
+   },
+   {
+    "de": "12970218860",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "20%",
+    "status": "neutro"
+   },
+   {
+    "de": "17029823192",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "20%",
+    "status": "neutro"
+   },
+   {
+    "de": "46859780991",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "15%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "12970218860",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2022-11-21",
+   "tipo": "ato",
+   "titulo": "Alteração e Consolidação do Contrato Social (2022)",
+   "doc": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-08-07",
+   "tipo": "deliberacao",
+   "titulo": "Deliberação de sócios",
+   "doc": "ATA_REUNIAO_SOCIOS_2026_08_07#D1",
+   "detalhe": "110% do capital"
+  },
+  {
+   "data": "2026-08-21",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 186.000,00"
+  }
+ ],
+ "pessoas": {
+  "19806885163": {
+   "nome": "Valdemar Pinto Bezerra",
+   "cpf": "19806885163"
+  },
+  "12970218860": {
+   "nome": "Ivanilda Bezerra Correia",
+   "cpf": "12970218860"
+  },
+  "17029823192": {
+   "nome": "Haroldo Correia Bezerra",
+   "cpf": "17029823192"
+  },
+  "46859780991": {
+   "nome": "Natália Bezerra Correia",
+   "cpf": "46859780991"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "comprovada",
+  "outorgante": {
+   "nome": "GRANITOS SANTA QUITÉRIA LTDA",
+   "cnpj": "42.301.286/0001-95",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Alteração e Consolidação do Contrato Social (2022)",
+     "doc": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022",
+     "efeito": "2022-11-21"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Ivanilda Bezerra Correia",
+    "cpf": "129.702.188-60",
+    "identificacao": "CPF",
+    "qualidade": "administradora"
+   }
+  ],
+  "poderes_conferidos": [
+   "Alteração e Consolidação do Contrato Social (2022), Cláusula Sétima: qualquer administrador designado assina sozinho — exigida a assinatura indicada na cláusula específica"
+  ],
+  "prazo_validade": [
+   "Ivanilda Bezerra Correia (administradora): mandato por prazo indeterminado"
+  ],
+  "revogacao": [
+   "Poder decorre do ato constitutivo vigente na data da venda; recomenda-se certidão simplificada atualizada da Junta Comercial para afastar alteração posterior ainda não apresentada."
+  ],
+  "fontes": [
+   {
+    "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2022)",
+    "trecho": "A administração da sociedade cabe à sócia IVANILDA BEZERRA CORREIA, que a exercerá isoladamente e por prazo indeterminado, competindo-lhe representar a sociedade em juízo e fora dele e praticar os atos de gestão, observado o disposto na Cláusula Nona.",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3602,
+    "fim": 3853
+   },
+   {
+    "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2022)",
+    "trecho": "A administração da sociedade cabe à sócia IVANILDA BEZERRA CORREIA, que a exercerá isoladamente e por prazo indeterminado",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3602,
+    "fim": 3723
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "ATA_REUNIAO_SOCIOS_2026_08_07",
+    "titulo": "Ata de Reunião de Sócios (2026)",
+    "arquivo": "ATA_REUNIAO_SOCIOS_2026_08_07.pdf"
+   },
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022",
+    "titulo": "Alteração e Consolidação do Contrato Social (2022)",
+    "arquivo": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "ATA_REUNIAO_SOCIOS_2026_08_07",
+   "nome": "ATA_REUNIAO_SOCIOS_2026_08_07.pdf",
+   "tipo": "ata_reuniao_socios",
+   "titulo": "Ata de Reunião de Sócios (2026)",
+   "data": "2026-08-07",
+   "paginas": [
+    "GRANITOS SANTA QUITÉRIA LTDA\nCNPJ nº 42.301.286/0001-95 – NIRE 23201254698\nATA DE REUNIÃO DE SÓCIOS REALIZADA EM 7 DE AGOSTO DE 2026\nDATA, HORA E LOCAL: aos 7 (sete) dias do mês de agosto de 2026, às 15h00, em segunda\nconvocação, na sede da sociedade, situada na Estrada Vicinal Santa Quitéria–Macaraú, km 6, s/n,\nZona Rural, Santa Quitéria/CE.\nCONVOCAÇÃO: realizada pela administradora por carta com aviso de recebimento e por\nmensagem eletrônica, expedidas em 27 de julho de 2026 a todos os sócios, com indicação da ordem\ndo dia e dos horários de 14h00, para a primeira convocação, e de 15h00, para a segunda, nos termos\nda Cláusula Décima do contrato social. Às 14h00 não se verificou o quórum de instalação exigido\npara a primeira convocação.\nPRESENÇA: compareceram os sócios IVANILDA BEZERRA CORREIA, titular de 400.000\nquotas; HAROLDO CORREIA BEZERRA, titular de 400.000 quotas; e NATÁLIA BEZERRA\nCORREIA, titular de 300.000 quotas, conforme assinaturas lançadas no livro de presença. Ausente o\nsócio VALDEMAR PINTO BEZERRA, titular de 900.000 quotas, regularmente convocado, cujo\naviso de recebimento foi assinado em 29 de julho de 2026.\nMESA: Presidente: IVANILDA BEZERRA CORREIA; Secretária: NATÁLIA BEZERRA\nCORREIA.\nORDEM DO DIA: deliberar sobre a alienação do veículo FIAT/TITANO, placa PWB4B97,\nRENAVAM 03137499137, chassi 9BD6HAXYX8JGWK40A, integrante do ativo imobilizado da\nsociedade, nos termos da Cláusula Nona, inciso I, do contrato social.\nDELIBERAÇÃO: instalada a reunião em segunda convocação, a Presidente expôs que o veículo,\nutilizado no transporte de pessoal entre a pedreira e a unidade de beneficiamento, será substituído\npor modelo de maior capacidade, sendo conveniente sua venda imediata. Após debate, a matéria foi\naprovada por unanimidade dos presentes, que representam a maioria dos sócios da sociedade (três\ndos quatro sócios), ficando a administradora IVANILDA BEZERRA CORREIA autorizada a alienar\no referido veículo por valor não inferior a R$ 180.000,00 (cento e oitenta mil reais), podendo assinar\na Autorização para Transferência de Propriedade do Veículo (ATPV-e) e os demais documentos\nnecessários à venda.\nENCERRAMENTO: nada mais havendo a tratar, foi lavrada a presente ata, que, lida e aprovada,\nvai assinada pelos membros da mesa e pelos sócios presentes, devendo ser levada a arquivamento na\nJunta Comercial.\nSanta Quitéria/CE, 7 de agosto de 2026.\nIVANILDA BEZERRA CORREIA – Presidente\nNATÁLIA BEZERRA CORREIA – Secretária\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "Sócios presentes:\nIVANILDA BEZERRA CORREIA\nHAROLDO CORREIA BEZERRA\nNATÁLIA BEZERRA CORREIA\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 18/08/2026 sob o nº 6668430\nProtocolo: 26/084512-3 | NIRE: 23201254698\nEmpresa: GRANITOS SANTA QUITÉRIA LTDA\nAutenticação: 1F7C9E3B05A2D864\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "0744e1e5d6673a58207a733b98cf2d974e9f343f243faef4d8163ed96e5318a3",
+   "leitura": {
+    "tarefas": {
+     "ata": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 24.5,
+      "tokens_saida": 437,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n03137499137\nPLACA\nPWB4B97\nEXERCÍCIO\n2026\nMARCA / MODELO / VERSÃO\nFIAT/TITANO\nCHASSI\n9BD6HAXYX8JGWK40A\nNOME\nGRANITOS SANTA QUITÉRIA LTDA\nCPF / CNPJ\n42.301.286/0001-95\nDATA\n15/01/2026\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "6e256f91f00ba2ed97cb9c64d32c71a26ed18434ae7972c65ea4f79679cb3b63",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022",
+   "nome": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2022.pdf",
+   "tipo": "contrato_consolidado",
+   "titulo": "Alteração e Consolidação do Contrato Social (2022)",
+   "data": "2022-11-21",
+   "paginas": [
+    "SEGUNDA ALTERAÇÃO E CONSOLIDAÇÃO DO CONTRATO SOCIAL DA GRANITOS\nSANTA QUITÉRIA LTDA\nCNPJ nº 42.301.286/0001-95 – NIRE 23201254698\nVALDEMAR PINTO BEZERRA, brasileiro, casado sob o regime da comunhão universal de bens,\nempresário, portador da cédula de identidade RG nº 88001122334 SSP/CE, inscrito no CPF sob o nº\n198.068.851-63, residente e domiciliado na Rua Vicente Leite, nº 1.950, apartamento 1.401, Aldeota,\nFortaleza/CE, CEP 60170-151;\nIVANILDA BEZERRA CORREIA, brasileira, casada sob o regime da comunhão parcial de bens,\ngeóloga, portadora da cédula de identidade RG nº 2000987654321 SSP/CE, inscrita no CPF sob o nº\n129.702.188-60, residente e domiciliada na Rua Francisco Lopes Martins, nº 145, Centro, Santa\nQuitéria/CE, CEP 62280-000;\nHAROLDO CORREIA BEZERRA, brasileiro, solteiro, maior, engenheiro de minas, portador da\ncédula de identidade RG nº 2006543210987 SSP/CE, inscrito no CPF sob o nº 170.298.231-92,\nresidente e domiciliado na Rua Menino Deus, nº 300, Centro, Sobral/CE, CEP 62011-030; e\nNATÁLIA BEZERRA CORREIA, brasileira, solteira, maior, advogada, portadora da cédula de\nidentidade RG nº 2011234567890 SSP/CE, inscrita no CPF sob o nº 468.597.809-91, residente e\ndomiciliada na Rua Ana Bilhar, nº 1.000, apartamento 302, Meireles, Fortaleza/CE, CEP 60160-110;\núnicos sócios da sociedade empresária limitada GRANITOS SANTA QUITÉRIA LTDA, com sede\nna Estrada Vicinal Santa Quitéria–Macaraú, km 6, s/n, Zona Rural, Santa Quitéria/CE, CEP\n62280-000, inscrita no CNPJ sob o nº 42.301.286/0001-95, com contrato social arquivado na\nJUCEC sob o NIRE 23201254698, resolvem alterar e consolidar o contrato social, conforme segue.\nI – DA ALTERAÇÃO\nCLÁUSULA PRIMEIRA – DAS MATÉRIAS RESERVADAS E DAS REUNIÕES DE\nSÓCIOS\nOs sócios resolvem disciplinar as matérias que dependem de sua aprovação prévia e o\nfuncionamento das reuniões de sócios, o que fazem nas Cláusulas Nona e Décima do contrato\nconsolidado abaixo.\nCLÁUSULA SEGUNDA – DA CONSOLIDAÇÃO\nO contrato social passa a vigorar com a seguinte redação consolidada.\nII – CONTRATO SOCIAL CONSOLIDADO\nCLÁUSULA PRIMEIRA – DA DENOMINAÇÃO E SEDE\nA sociedade gira sob a denominação GRANITOS SANTA QUITÉRIA LTDA e tem sede na Estrada\nVicinal Santa Quitéria–Macaraú, km 6, s/n, Zona Rural, Santa Quitéria/CE, CEP 62280-000.\nCLÁUSULA SEGUNDA – DO OBJETO\nA sociedade tem por objeto a extração, o desdobramento, o beneficiamento e o comércio de granitos,\nmármores e demais rochas ornamentais, e o transporte rodoviário de cargas próprias.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/4",
+    "CLÁUSULA TERCEIRA – DO PRAZO\nA sociedade iniciou suas atividades em 20 de janeiro de 2012 e seu prazo é indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 2.000.000,00 (dois milhões de reais), totalmente integralizado, dividido em\n2.000.000 (dois milhões) de quotas de R$ 1,00 (um real) cada, assim distribuídas:\nSócio\nQuotas\nValor (R$)\nParticipação\nVALDEMAR PINTO BEZERRA\n900.000\n900.000,00\n45%\nIVANILDA BEZERRA CORREIA\n400.000\n400.000,00\n20%\nHAROLDO CORREIA BEZERRA\n400.000\n400.000,00\n20%\nNATÁLIA BEZERRA CORREIA\n300.000\n300.000,00\n15%\nTotal\n2.000.000\n2.000.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social.\nCLÁUSULA SEXTA – DA CESSÃO DE QUOTAS\nAs quotas não poderão ser cedidas a terceiros sem prévia oferta aos demais sócios, que terão\npreferência na aquisição, na proporção de suas participações, pelo prazo de 30 (trinta) dias.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade cabe à sócia IVANILDA BEZERRA CORREIA, que a exercerá\nisoladamente e por prazo indeterminado, competindo-lhe representar a sociedade em juízo e fora\ndele e praticar os atos de gestão, observado o disposto na Cláusula Nona.\nParágrafo único. É vedado o uso da denominação social em atividades estranhas ao objeto social,\nespecialmente em avais, fianças e endossos de favor.\nCLÁUSULA OITAVA – DO PRÓ-LABORE\nA administradora fará jus a pró-labore mensal, fixado pelos sócios em reunião.\nCLÁUSULA NONA – DAS MATÉRIAS RESERVADAS AOS SÓCIOS\nDependerão de prévia aprovação de sócios titulares de quotas representativas de, no mínimo, 2/3\n(dois terços) do capital social, tomada em reunião de sócios e lavrada em ata que será arquivada na\nJunta Comercial:\nI – a alienação, a oneração, a locação ou o arrendamento de máquinas, equipamentos, veículos e\nquaisquer outros bens integrantes do ativo imobilizado;\nII – a aquisição, a cessão ou a oneração de direitos minerários;\nIII – a prestação de garantias, reais ou fidejussórias, em favor da própria sociedade;\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/4",
+    "IV – a contratação de empréstimos ou financiamentos de valor superior a R$ 300.000,00 (trezentos\nmil reais).\nCLÁUSULA DÉCIMA – DAS REUNIÕES DE SÓCIOS\nAs reuniões de sócios serão convocadas pela administradora, ou por sócios na forma da lei, mediante\ncarta com aviso de recebimento ou mensagem eletrônica com confirmação de leitura, com\nantecedência mínima de 8 (oito) dias, devendo o aviso indicar a ordem do dia e os horários da\nprimeira e da segunda convocação, com intervalo mínimo de 1 (uma) hora entre elas.\n§ 1º A reunião instalar-se-á, em primeira convocação, com a presença de titulares de, no mínimo, 3/4\n(três quartos) do capital social e, em segunda convocação, com qualquer número.\n§ 2º As deliberações serão tomadas por votos correspondentes ao valor das quotas de cada sócio,\nobservados os quóruns previstos neste contrato e na lei.\n§ 3º Da reunião lavrar-se-á ata, assinada pelos membros da mesa e pelos sócios presentes.\nCLÁUSULA DÉCIMA PRIMEIRA – DO EXERCÍCIO SOCIAL\nO exercício social coincide com o ano civil, ao término do qual serão levantados o balanço\npatrimonial e o de resultado econômico.\nCLÁUSULA DÉCIMA SEGUNDA – DO FALECIMENTO DE SÓCIO\nO falecimento de sócio não dissolve a sociedade, cujos haveres serão apurados e pagos aos herdeiros\nque não desejarem ingressar no quadro social.\nCLÁUSULA DÉCIMA TERCEIRA – DO DESIMPEDIMENTO\nA administradora declara, sob as penas da lei, não estar impedida de exercer a administração da\nsociedade.\nCLÁUSULA DÉCIMA QUARTA – DO FORO\nFica eleito o foro da Comarca de Santa Quitéria/CE para as questões oriundas deste contrato.\nE, por estarem assim justos e contratados, assinam o presente instrumento.\nSanta Quitéria/CE, 21 de novembro de 2022.\nVALDEMAR PINTO BEZERRA\nIVANILDA BEZERRA CORREIA\nHAROLDO CORREIA BEZERRA\nNATÁLIA BEZERRA CORREIA\nVisto: RODRIGO CORREIA LIMA BARROSO – OAB/CE nº 19.630\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/4",
+    "JUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 06/12/2022 sob o nº 6142295\nProtocolo: 22/127745-0 | NIRE: 23201254698\nEmpresa: GRANITOS SANTA QUITÉRIA LTDA\nAutenticação: E6B3F8A21C09D457\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 4/4"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "04873f14ab44064d3aa1e4768186feca5cede166be1ed35d4d1a16f6b2bb02e4",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 39.3,
+      "tokens_saida": 686,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 41.6,
+      "tokens_saida": 1068,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "politica": "DETRAN-CE"
+ },
+ "hash_entrada": "8a2be526938be2ecb30136caffff9e177e2c67d05d07519d7520ebd20706ee12"
+}

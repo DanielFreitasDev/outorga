@@ -1,0 +1,32 @@
+{
+  "caso": "C06",
+  "titulo": "Sócio majoritário (70%) que não é administrador",
+  "categoria": "administracao",
+  "objetivo": "Maioria do capital não substitui poder de administração.",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "GUSTAVO"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 1.060",
+      "CC art. 1.064"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "876.634.400-05"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Gustavo Henrique Teles"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

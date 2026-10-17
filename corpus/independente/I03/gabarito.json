@@ -1,0 +1,28 @@
+{
+  "caso": "I03",
+  "titulo": "Procuração de venda revogada por nova procuração que só autoriza assinar a ATPV-e 'na qualidade de adquirente'",
+  "categoria": "procuracao_poderes / revogacao_expressa / leitura_semantica",
+  "objetivo": "Testa se o sistema percebe que a procuração de 2025, que tinha poder especial de venda do veículo, foi expressamente revogada pela de 2026, e que a nova procuração, embora fale em 'transferência de propriedade' e em 'assinar a ATPV-e', só cobre veículos adquiridos pela outorgante e a assinatura como adquirente, sem poder de alienar.",
+  "validacao_cega": true,
+  "autor": "independente",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": ["VERMELHO"],
+    "conjuntos_minimos_cpf": [
+      ["462.522.579-58"]
+    ],
+    "conjuntos_minimos_nomes": [
+      ["HÉLIO BENEVIDES MAIA"]
+    ],
+    "fundamentos": [
+      "CC art. 661, § 1º",
+      "CC art. 682, I",
+      "CC art. 686",
+      "CC art. 1.018",
+      "CC art. 47",
+      "Contrato social consolidado, Cláusula Sexta"
+    ]
+  },
+  "esperado_ce": null,
+  "raciocinio": "A procuração de 14/10/2025 (Livro 287, fls. 112/113) dava a JOSÉ AIRTON poder especial para vender o FIAT/FIORINO placa XCB7V20, mas foi expressamente revogada pela escritura de 02/06/2026, que a identifica por data, livro e folhas, com o outorgado presente e ciente e com anotação à margem do ato revogado (CC arts. 682, I, e 686). A procuração de 2026 trata apenas da transferência 'para o nome da outorgante' de veículos 'que esta vier a adquirir' e autoriza assinar a ATPV-e 'na qualidade de adquirente'; não há poder especial e expresso de vender ou alienar, que o art. 661, § 1º, exige. Por isso nem JOSÉ AIRTON nem MARIA LUCIVÂNIA podem assinar como vendedores. Pela Cláusula Sexta, a sociedade é representada isoladamente pelo administrador HÉLIO, sem restrição para bens móveis (o § 1º trata só de imóveis), e ele é o único conjunto válido em 03/09/2026."
+}

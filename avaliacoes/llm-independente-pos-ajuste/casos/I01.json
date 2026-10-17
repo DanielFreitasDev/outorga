@@ -1,0 +1,2372 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T10:07:50",
+ "pedido": {
+  "veiculo": {
+   "descricao": "FIAT/FASTBACK",
+   "placa": "RCD7A80",
+   "renavam": "04486347756",
+   "chassi": "9BDVLE8LCK8CM30B5"
+  },
+  "data_venda": "2026-09-10",
+  "valor": 118500.0,
+  "assinantes": [
+   {
+    "nome": "ROGÉRIO ALENCAR FEITOSA",
+    "cpf": "405.235.809-08"
+   },
+   {
+    "nome": "LÚCIA HELENA BRÍGIDO SAMPAIO",
+    "cpf": "156.792.801-32"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "CÍCERO DAMASCENO ROLIM",
+  "vendedor_cnpj": "40.253.280/0001-64",
+  "lado": "vendedor"
+ },
+ "empresa": {
+  "razao_social": "SERTÃO VERDE AGROINDUSTRIAL S.A.",
+  "cnpj": "40.253.280/0001-64",
+  "tipo": "SA",
+  "objeto": "a industrialização, o beneficiamento e o comércio de frutas tropicais, polpas, sucos, néctares, doces e concentrados; a importação e a exportação desses produtos e de insumos destinados à sua fabricação; a armazenagem frigorificada de produtos próprios; e a participação no capital de outras sociedades.",
+  "comercializa_veiculos": false,
+  "subtipo": null
+ },
+ "veredito": "PODE",
+ "faixa": "AMARELO",
+ "indice": 86.2,
+ "confianca": 0.725,
+ "componentes": {
+  "leitura": 0.884,
+  "juridica": 0.82,
+  "fatos_decisivos": 4,
+  "menor_confianca_fato": 0.814,
+  "alertas": 0,
+  "atencoes": 3,
+  "fatos_pouco_ancorados": 1
+ },
+ "motivos_faixa": [
+  "1 fato(s) decisivo(s) com citação pouco ancorada no texto"
+ ],
+ "resumo": "Lúcia Helena Brígido Sampaio e Rogério Alencar Feitosa podem, em conjunto, assinar a ATPV-e — regra geral de representação — Art. 18, incisos (a) e (b); regra geral de representação — Art. 18, § 1º.",
+ "assinantes": [
+  {
+   "informado": "ROGÉRIO ALENCAR FEITOSA",
+   "cpf": "405.235.809-08",
+   "chave": "40523580908",
+   "nome": "Rogério Alencar Feitosa",
+   "criterio": "CPF"
+  },
+  {
+   "informado": "LÚCIA HELENA BRÍGIDO SAMPAIO",
+   "cpf": "156.792.801-32",
+   "chave": "15679280132",
+   "nome": "Lúcia Helena Brígido Sampaio",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:15679280132+21754994059",
+   "pessoas": [
+    {
+     "chave": "15679280132",
+     "nome": "Lúcia Helena Brígido Sampaio"
+    },
+    {
+     "chave": "21754994059",
+     "nome": "Marcos Tadeu Oliveira Pinheiro"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Art. 18, incisos (a) e (b); regra geral de representação — Art. 18, § 1º",
+   "cadeia": [
+    "ESTATUTO_SOCIAL_CONSOLIDADO_2022"
+   ],
+   "severidade": "ok",
+   "confianca": 0.814,
+   "achados": [],
+   "precondicoes": []
+  },
+  {
+   "id": "contrato:15679280132+40523580908",
+   "pessoas": [
+    {
+     "chave": "15679280132",
+     "nome": "Lúcia Helena Brígido Sampaio"
+    },
+    {
+     "chave": "40523580908",
+     "nome": "Rogério Alencar Feitosa"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Art. 18, incisos (a) e (b); regra geral de representação — Art. 18, § 1º",
+   "cadeia": [
+    "ESTATUTO_SOCIAL_CONSOLIDADO_2022"
+   ],
+   "severidade": "ok",
+   "confianca": 0.814,
+   "achados": [],
+   "precondicoes": []
+  },
+  {
+   "id": "contrato:21754994059+40523580908",
+   "pessoas": [
+    {
+     "chave": "21754994059",
+     "nome": "Marcos Tadeu Oliveira Pinheiro"
+    },
+    {
+     "chave": "40523580908",
+     "nome": "Rogério Alencar Feitosa"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Art. 18, incisos (a) e (b); regra geral de representação — Art. 18, § 1º",
+   "cadeia": [
+    "ESTATUTO_SOCIAL_CONSOLIDADO_2022"
+   ],
+   "severidade": "ok",
+   "confianca": 0.814,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [
+  {
+   "id": "PROCURACAO_PUBLICA_2026_02_10:bloqueada",
+   "pessoas": [
+    {
+     "chave": "92779376880",
+     "nome": "Francisco Wellington Lima Bastos"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 10/02/2026 (CARTÓRIO DO 4º OFÍCIO DE NOTAS DE MARACANAÚ)",
+   "cadeia": [
+    "PROCURACAO_PUBLICA_2026_02_10"
+   ],
+   "severidade": "atencao",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PJ",
+     "severidade": "ok",
+     "titulo": "Outorgada pela própria empresa",
+     "detalhe": "A outorgante é a empresa, representada por Rogério Alencar Feitosa.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_02_10",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "compareceu como OUTORGANTE: SERTÃO VERDE AGROINDUSTRIAL S.A., sociedade anônima de capital fechado, inscrita no CNPJ sob o nº 40.253.280/0001-64",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 518,
+       "fim": 662
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2026_02_10"
+    },
+    {
+     "codigo": "OUTORGA_SEM_PODERES",
+     "severidade": "bloqueio",
+     "titulo": "Quem outorgou não tinha poder sozinho",
+     "detalhe": "Na data da outorga (10/02/2026), alienar este veículo exigia Lúcia Helena Brígido Sampaio e Marcos Tadeu Oliveira Pinheiro ou Lúcia Helena Brígido Sampaio e Rogério Alencar Feitosa ou Marcos Tadeu Oliveira Pinheiro e Rogério Alencar Feitosa; a procuração foi assinada por Rogério Alencar Feitosa. Ninguém delega mais poder do que tem.",
+     "fundamento": [
+      "CC art. 47",
+      "CC art. 1.014"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_02_10",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "compareceu como OUTORGANTE: SERTÃO VERDE AGROINDUSTRIAL S.A., sociedade anônima de capital fechado, inscrita no CNPJ sob o nº 40.253.280/0001-64",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 518,
+       "fim": 662
+      },
+      {
+       "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+       "doc_titulo": "Estatuto Social (2022)",
+       "trecho": "A Companhia será representada, ativa e passivamente, em juízo ou fora dele, e somente se obrigará perante terceiros: (a) pela assinatura conjunta de 2 (dois) Diretores; ou (b) pela assinatura de 1 (um) Diretor em conjunto com 1 (um) procurador, nos limites dos poderes constantes do respectivo instrumento de mandato.",
+       "clausula": "Art. 18, incisos (a) e (b)",
+       "ancoragem": 77.6,
+       "pagina": 2,
+       "inicio": 5201,
+       "fim": 5517
+      },
+      {
+       "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+       "doc_titulo": "Estatuto Social (2022)",
+       "trecho": "Qualquer dos Diretores poderá, isoladamente, representar a Companhia em atos de mero expediente, tais como o endosso de cheques para depósito em contas da própria Companhia, a assinatura de correspondências e a representação perante repartições públicas federais, estaduais e municipais, autarquias e concessionárias de serviços públicos, desde que tais atos não importem assunção de obrigações, renúncia de direitos ou alienação de bens.",
+       "clausula": "Art. 18, § 1º",
+       "ancoragem": 100.0,
+       "pagina": 3,
+       "inicio": 5573,
+       "fim": 6011
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2026_02_10"
+    },
+    {
+     "codigo": "OUTORGA_EM_DESACORDO",
+     "severidade": "bloqueio",
+     "titulo": "Outorga em desacordo com o estatuto/contrato",
+     "detalhe": "Procurações exigem Lúcia Helena Brígido Sampaio e Marcos Tadeu Oliveira Pinheiro ou Lúcia Helena Brígido Sampaio e Rogério Alencar Feitosa ou Marcos Tadeu Oliveira Pinheiro e Rogério Alencar Feitosa.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+       "doc_titulo": "Estatuto Social (2022)",
+       "trecho": "As procurações serão outorgadas em nome da Companhia por 2 (dois) Diretores em conjunto e especificarão os atos e operações que os mandatários poderão praticar e o prazo do mandato, que não excederá 1 (um) ano, salvo as procurações para fins judiciais, que poderão ser outorgadas por prazo indeterminado.",
+       "clausula": "Art. 18, § 2º",
+       "ancoragem": 100.0,
+       "pagina": 3,
+       "inicio": 6017,
+       "fim": 6321
+      },
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_02_10",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "compareceu como OUTORGANTE: SERTÃO VERDE AGROINDUSTRIAL S.A., sociedade anônima de capital fechado, inscrita no CNPJ sob o nº 40.253.280/0001-64",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 518,
+       "fim": 662
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2026_02_10"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_02_10",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "a quem confere poderes para, sempre em conjunto com qualquer dos Diretores da outorgante, vender, permutar ou por qualquer outra forma alienar veículos automotores integrantes da frota da outorgante, pelos preços e condições que ajustar; assinar contratos, recibos, termos de entrega e a Autorização para Transferência de Propriedade do Veículo, em meio físico ou digital (ATPV ou ATPV-e); receber valores e dar quitação; representar a outorgante perante o Departamento Estadual de Trânsito do Ceará – DETRAN/CE, suas Circunscrições Regionais e demais órgãos de trânsito, podendo requerer, assinar requerimentos e declarações, pagar taxas, tributos e multas, e praticar todos os demais atos necessários ao fiel cumprimento deste mandato.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2084,
+       "fim": 2821
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2026_02_10"
+    },
+    {
+     "codigo": "PROCURACAO_NO_PRAZO",
+     "severidade": "ok",
+     "titulo": "Dentro do prazo",
+     "detalhe": "Válida até 10/02/2027.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_02_10",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2822,
+       "fim": 2894
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2026_02_10"
+    },
+    {
+     "codigo": "PROCURACAO_SEM_VEICULO",
+     "severidade": "atencao",
+     "titulo": "Procuração não identifica o veículo",
+     "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+     "fundamento": [
+      "CJF, Enunciado 183"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_02_10",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "a quem confere poderes para, sempre em conjunto com qualquer dos Diretores da outorgante, vender, permutar ou por qualquer outra forma alienar veículos automotores integrantes da frota da outorgante, pelos preços e condições que ajustar; assinar contratos, recibos, termos de entrega e a Autorização para Transferência de Propriedade do Veículo, em meio físico ou digital (ATPV ou ATPV-e); receber valores e dar quitação; representar a outorgante perante o Departamento Estadual de Trânsito do Ceará – DETRAN/CE, suas Circunscrições Regionais e demais órgãos de trânsito, podendo requerer, assinar requerimentos e declarações, pagar taxas, tributos e multas, e praticar todos os demais atos necessários ao fiel cumprimento deste mandato.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2084,
+       "fim": 2821
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2026_02_10"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminho_escolhido": {
+  "id": "contrato:15679280132+40523580908",
+  "pessoas": [
+   {
+    "chave": "15679280132",
+    "nome": "Lúcia Helena Brígido Sampaio"
+   },
+   {
+    "chave": "40523580908",
+    "nome": "Rogério Alencar Feitosa"
+   }
+  ],
+  "via": "contrato",
+  "descricao": "regra geral de representação — Art. 18, incisos (a) e (b); regra geral de representação — Art. 18, § 1º",
+  "cadeia": [
+   "ESTATUTO_SOCIAL_CONSOLIDADO_2022"
+  ],
+  "severidade": "ok",
+  "confianca": 0.814,
+  "achados": [],
+  "precondicoes": []
+ },
+ "faltantes": [],
+ "achados": [
+  {
+   "codigo": "MANDATO_PRORROGADO",
+   "severidade": "atencao",
+   "titulo": "Prazo de gestão vencido (S.A.)",
+   "detalhe": "Rogério Alencar Feitosa: prazo de gestão terminou em 27/04/2026; na S.A. o prazo se estende até a investidura dos sucessores. Confirme se houve nova eleição.",
+   "fundamento": [
+    "Lei 6.404/76, art. 150, §4º"
+   ],
+   "fontes": [
+    {
+     "doc_id": "ATA_RCA_2023_04_27",
+     "doc_titulo": "Ata do Conselho de Administração (2023)",
+     "trecho": "Eleger, para compor a Diretoria da Companhia, com mandato de 3 (três) anos contados desta data, permitida a reeleição, nos termos do art. 16 do Estatuto Social: (a) para o cargo de Diretor-Presidente, ROGÉRIO ALENCAR FEITOSA, brasileiro, casado sob o regime da comunhão parcial de bens, engenheiro de alimentos, portador da cédula de identidade RG nº 2001009876543 SSP/CE, inscrito no CPF sob o nº 405.235.809-08, residente e domiciliado na Rua Tibúrcio Cavalcante, nº 2.315, apartamento 1.102, Aldeota, Fortaleza/CE, CEP 60125-101; (b) para o cargo de Diretora Administrativo-Financeira, LÚCIA HELENA BRÍGIDO SAMPAIO, brasileira, divorciada, contadora, portadora da cédula de identidade RG nº 95002345678 SSP/CE, inscrita no CPF sob o nº 156.792.801-32, residente e domiciliada na Rua Pereira Valente, nº 870, apartamento 402, Meireles, Fortaleza/CE, CEP 60160-250; (c) para o cargo de Diretor Industrial, MARCOS TADEU OLIVEIRA PINHEIRO, brasileiro, casado sob o regime da comunhão parcial de bens, engenheiro químico, portador da cédula de identidade RG nº 2005012345678 SSP/CE, inscrito no CPF sob o nº 217.549.940-59, residente e domiciliado na Rua Luiz Gonzaga Honório de Abreu, nº 145, Pajuçara, Maracanaú/CE, CEP 61932-120.",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 1136,
+     "fim": 2366
+    }
+   ],
+   "caminho": null
+  },
+  {
+   "codigo": "MANDATO_PRORROGADO",
+   "severidade": "atencao",
+   "titulo": "Prazo de gestão vencido (S.A.)",
+   "detalhe": "Lúcia Helena Brígido Sampaio: prazo de gestão terminou em 27/04/2026; na S.A. o prazo se estende até a investidura dos sucessores. Confirme se houve nova eleição.",
+   "fundamento": [
+    "Lei 6.404/76, art. 150, §4º"
+   ],
+   "fontes": [
+    {
+     "doc_id": "ATA_RCA_2023_04_27",
+     "doc_titulo": "Ata do Conselho de Administração (2023)",
+     "trecho": "Eleger, para compor a Diretoria da Companhia, com mandato de 3 (três) anos contados desta data, permitida a reeleição, nos termos do art. 16 do Estatuto Social: (a) para o cargo de Diretor-Presidente, ROGÉRIO ALENCAR FEITOSA, brasileiro, casado sob o regime da comunhão parcial de bens, engenheiro de alimentos, portador da cédula de identidade RG nº 2001009876543 SSP/CE, inscrito no CPF sob o nº 405.235.809-08, residente e domiciliado na Rua Tibúrcio Cavalcante, nº 2.315, apartamento 1.102, Aldeota, Fortaleza/CE, CEP 60125-101; (b) para o cargo de Diretora Administrativo-Financeira, LÚCIA HELENA BRÍGIDO SAMPAIO, brasileira, divorciada, contadora, portadora da cédula de identidade RG nº 95002345678 SSP/CE, inscrita no CPF sob o nº 156.792.801-32, residente e domiciliada na Rua Pereira Valente, nº 870, apartamento 402, Meireles, Fortaleza/CE, CEP 60160-250; (c) para o cargo de Diretor Industrial, MARCOS TADEU OLIVEIRA PINHEIRO, brasileiro, casado sob o regime da comunhão parcial de bens, engenheiro químico, portador da cédula de identidade RG nº 2005012345678 SSP/CE, inscrito no CPF sob o nº 217.549.940-59, residente e domiciliado na Rua Luiz Gonzaga Honório de Abreu, nº 145, Pajuçara, Maracanaú/CE, CEP 61932-120.",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 1136,
+     "fim": 2366
+    }
+   ],
+   "caminho": null
+  },
+  {
+   "codigo": "MANDATO_PRORROGADO",
+   "severidade": "atencao",
+   "titulo": "Prazo de gestão vencido (S.A.)",
+   "detalhe": "Marcos Tadeu Oliveira Pinheiro: prazo de gestão terminou em 27/04/2026; na S.A. o prazo se estende até a investidura dos sucessores. Confirme se houve nova eleição.",
+   "fundamento": [
+    "Lei 6.404/76, art. 150, §4º"
+   ],
+   "fontes": [
+    {
+     "doc_id": "ATA_RCA_2023_04_27",
+     "doc_titulo": "Ata do Conselho de Administração (2023)",
+     "trecho": "Eleger, para compor a Diretoria da Companhia, com mandato de 3 (três) anos contados desta data, permitida a reeleição, nos termos do art. 16 do Estatuto Social: (a) para o cargo de Diretor-Presidente, ROGÉRIO ALENCAR FEITOSA, brasileiro, casado sob o regime da comunhão parcial de bens, engenheiro de alimentos, portador da cédula de identidade RG nº 2001009876543 SSP/CE, inscrito no CPF sob o nº 405.235.809-08, residente e domiciliado na Rua Tibúrcio Cavalcante, nº 2.315, apartamento 1.102, Aldeota, Fortaleza/CE, CEP 60125-101; (b) para o cargo de Diretora Administrativo-Financeira, LÚCIA HELENA BRÍGIDO SAMPAIO, brasileira, divorciada, contadora, portadora da cédula de identidade RG nº 95002345678 SSP/CE, inscrita no CPF sob o nº 156.792.801-32, residente e domiciliada na Rua Pereira Valente, nº 870, apartamento 402, Meireles, Fortaleza/CE, CEP 60160-250; (c) para o cargo de Diretor Industrial, MARCOS TADEU OLIVEIRA PINHEIRO, brasileiro, casado sob o regime da comunhão parcial de bens, engenheiro químico, portador da cédula de identidade RG nº 2005012345678 SSP/CE, inscrito no CPF sob o nº 217.549.940-59, residente e domiciliado na Rua Luiz Gonzaga Honório de Abreu, nº 145, Pajuçara, Maracanaú/CE, CEP 61932-120.",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 1136,
+     "fim": 2366
+    }
+   ],
+   "caminho": null
+  },
+  {
+   "codigo": "CND_INSS",
+   "severidade": "info",
+   "titulo": "CND previdenciária",
+   "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+   "fundamento": [
+    "Lei 8.212/91, art. 47, I, \"c\""
+   ],
+   "fontes": [],
+   "caminho": null
+  },
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: SERTÃO VERDE AGROINDUSTRIAL S.A..",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "RCD7A80",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "ESTATUTO_SOCIAL_CONSOLIDADO_2022#R1",
+   "escopo": "alienacao_ativo_imobilizado",
+   "aplicavel": false,
+   "motivo": "valor R$ 118.500,00 não cruza o limite de R$ 500.000,00",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+    "doc_titulo": "Estatuto Social (2022)",
+    "trecho": "VII – autorizar a alienação ou a oneração de bens do ativo não circulante cujo valor, por operação, seja superior a R$ 500.000,00 (quinhentos mil reais);",
+    "clausula": "Art. 15, inciso VII",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 4126,
+    "fim": 4279
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": "administradores",
+   "valor_acima_de": 500000.0,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "ESTATUTO_SOCIAL_CONSOLIDADO_2022#R2",
+   "escopo": "alienacao_ativo_imobilizado",
+   "aplicavel": true,
+   "motivo": "valor R$ 118.500,00 cruza o limite de R$ 500.000,00",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+    "doc_titulo": "Estatuto Social (2022)",
+    "trecho": "Compete à Diretoria a gestão dos negócios sociais e a prática de todos os atos necessários ao funcionamento regular da Companhia, inclusive alienar ou onerar bens do ativo não circulante cujo valor, por operação, não ultrapasse o limite fixado no inciso VII do art. 15, hipótese em que fica dispensada a autorização do Conselho de Administração.",
+    "clausula": "Art. 17",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 4825,
+    "fim": 5170
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": "diretores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "ESTATUTO_SOCIAL_CONSOLIDADO_2022#R3",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+    "doc_titulo": "Estatuto Social (2022)",
+    "trecho": "A Companhia será representada, ativa e passivamente, em juízo ou fora dele, e somente se obrigará perante terceiros: (a) pela assinatura conjunta de 2 (dois) Diretores; ou (b) pela assinatura de 1 (um) Diretor em conjunto com 1 (um) procurador, nos limites dos poderes constantes do respectivo instrumento de mandato.",
+    "clausula": "Art. 18, incisos (a) e (b)",
+    "ancoragem": 77.6,
+    "pagina": 2,
+    "inicio": 5201,
+    "fim": 5517
+   },
+   "modo": "misto",
+   "pessoas": [],
+   "cargo": "diretores",
+   "valor_acima_de": null,
+   "confianca": 0.814,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "misto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "assinatura conjunta"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "ESTATUTO_SOCIAL_CONSOLIDADO_2022#R4",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+    "doc_titulo": "Estatuto Social (2022)",
+    "trecho": "Qualquer dos Diretores poderá, isoladamente, representar a Companhia em atos de mero expediente, tais como o endosso de cheques para depósito em contas da própria Companhia, a assinatura de correspondências e a representação perante repartições públicas federais, estaduais e municipais, autarquias e concessionárias de serviços públicos, desde que tais atos não importem assunção de obrigações, renúncia de direitos ou alienação de bens.",
+    "clausula": "Art. 18, § 1º",
+    "ancoragem": 100.0,
+    "pagina": 3,
+    "inicio": 5573,
+    "fim": 6011
+   },
+   "modo": "isolado",
+   "pessoas": [],
+   "cargo": "diretores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "ESTATUTO_SOCIAL_CONSOLIDADO_2022#R5",
+   "escopo": "outorgar_procuracoes",
+   "aplicavel": false,
+   "motivo": "regula a outorga de procurações (usada para validar procurações)",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+    "doc_titulo": "Estatuto Social (2022)",
+    "trecho": "As procurações serão outorgadas em nome da Companhia por 2 (dois) Diretores em conjunto e especificarão os atos e operações que os mandatários poderão praticar e o prazo do mandato, que não excederá 1 (um) ano, salvo as procurações para fins judiciais, que poderão ser outorgadas por prazo indeterminado.",
+    "clausula": "Art. 18, § 2º",
+    "ancoragem": 100.0,
+    "pagina": 3,
+    "inicio": 6017,
+    "fim": 6321
+   },
+   "modo": "quantidade_minima",
+   "pessoas": [],
+   "cargo": "diretores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "conjunto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "em conjunto"
+     ]
+    },
+    {
+     "campo": "quantidade_minima",
+     "valor_llm": "conjunto/2",
+     "valor_lexico": "quantidade_minima/2",
+     "divergiu": false,
+     "corrigido_para": "quantidade_minima/2",
+     "expressoes": []
+    }
+   ],
+   "decisiva": false
+  },
+  {
+   "regra": "ESTATUTO_SOCIAL_CONSOLIDADO_2022#R6",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+    "doc_titulo": "Estatuto Social (2022)",
+    "trecho": "São ineficazes em relação à Companhia os atos praticados em desacordo com o disposto neste artigo.",
+    "clausula": "Art. 18, § 3º",
+    "ancoragem": 100.0,
+    "pagina": 3,
+    "inicio": 6327,
+    "fim": 6425
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "ESTATUTO_SOCIAL_CONSOLIDADO_2022#R7",
+   "escopo": "obrigacoes_garantias",
+   "aplicavel": false,
+   "motivo": "trata de avais, fianças e garantias",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+    "doc_titulo": "Estatuto Social (2022)",
+    "trecho": "É vedado aos administradores o uso da denominação social em negócios estranhos ao objeto social, especialmente em avais, fianças e endossos de favor.",
+    "clausula": "Art. 19",
+    "ancoragem": 100.0,
+    "pagina": 3,
+    "inicio": 6435,
+    "fim": 6584
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-09-10",
+  "atos": [
+   {
+    "doc": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+    "titulo": "Estatuto Social (2022)",
+    "efeito": "2022-03-18"
+   },
+   {
+    "doc": "ATA_RCA_2023_04_27",
+    "titulo": "Ata do Conselho de Administração (2023)",
+    "efeito": "2023-04-27"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "40523580908",
+    "nome": "Rogério Alencar Feitosa",
+    "cargo": "Diretor-Presidente",
+    "doc": "ATA_RCA_2023_04_27"
+   },
+   {
+    "chave": "15679280132",
+    "nome": "Lúcia Helena Brígido Sampaio",
+    "cargo": "Diretora Administrativo-Financeira",
+    "doc": "ATA_RCA_2023_04_27"
+   },
+   {
+    "chave": "21754994059",
+    "nome": "Marcos Tadeu Oliveira Pinheiro",
+    "cargo": "Diretor Industrial",
+    "doc": "ATA_RCA_2023_04_27"
+   }
+  ],
+  "encerrados": [],
+  "socios": []
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "SERTÃO VERDE AGROINDUSTRIAL S.A.",
+    "sub": "40.253.280/0001-64"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "FIAT/FASTBACK",
+    "sub": "RCD7A80"
+   },
+   {
+    "id": "40523580908",
+    "tipo": "pessoa",
+    "rotulo": "Rogério Alencar Feitosa",
+    "papeis": [
+     "Diretor-Presidente"
+    ],
+    "assinante": true
+   },
+   {
+    "id": "15679280132",
+    "tipo": "pessoa",
+    "rotulo": "Lúcia Helena Brígido Sampaio",
+    "papeis": [
+     "Diretora Administrativo-Financeira"
+    ],
+    "assinante": true
+   },
+   {
+    "id": "21754994059",
+    "tipo": "pessoa",
+    "rotulo": "Marcos Tadeu Oliveira Pinheiro",
+    "papeis": [
+     "Diretor Industrial"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "92779376880",
+    "tipo": "pessoa",
+    "rotulo": "Francisco Wellington Lima Bastos",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": false
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "40523580908",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "ATA_RCA_2023_04_27"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "15679280132",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "ATA_RCA_2023_04_27"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "21754994059",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "ATA_RCA_2023_04_27"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "92779376880",
+    "tipo": "procuracao",
+    "status": "invalido",
+    "doc": "PROCURACAO_PUBLICA_2026_02_10",
+    "rotulo": "procuração 10/02/2026 · Quem outorgou não tinha poder sozinho",
+    "motivo": "Quem outorgou não tinha poder sozinho"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2022-03-18",
+   "tipo": "ato",
+   "titulo": "Estatuto Social (2022)",
+   "doc": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2023-04-27",
+   "tipo": "ato",
+   "titulo": "Ata do Conselho de Administração (2023)",
+   "doc": "ATA_RCA_2023_04_27",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-02-10",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Francisco Wellington Lima Bastos",
+   "doc": "PROCURACAO_PUBLICA_2026_02_10",
+   "detalhe": "publica"
+  },
+  {
+   "data": "2026-04-27",
+   "tipo": "fim_mandato",
+   "titulo": "Fim do mandato de Rogério Alencar Feitosa",
+   "doc": "ATA_RCA_2023_04_27",
+   "detalhe": "3 (três) anos contados desta data"
+  },
+  {
+   "data": "2026-04-27",
+   "tipo": "fim_mandato",
+   "titulo": "Fim do mandato de Lúcia Helena Brígido Sampaio",
+   "doc": "ATA_RCA_2023_04_27",
+   "detalhe": "3 (três) anos contados desta data"
+  },
+  {
+   "data": "2026-04-27",
+   "tipo": "fim_mandato",
+   "titulo": "Fim do mandato de Marcos Tadeu Oliveira Pinheiro",
+   "doc": "ATA_RCA_2023_04_27",
+   "detalhe": "3 (três) anos contados desta data"
+  },
+  {
+   "data": "2026-09-10",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 118.500,00"
+  },
+  {
+   "data": "2026-09-22",
+   "tipo": "ato",
+   "titulo": "Ata do Conselho de Administração (2026)",
+   "doc": "ATA_RCA_2026_09_22",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2027-02-10",
+   "tipo": "vencimento",
+   "titulo": "Vence a procuração de Francisco Wellington Lima Bastos",
+   "doc": "PROCURACAO_PUBLICA_2026_02_10",
+   "detalhe": ""
+  },
+  {
+   "data": "2029-09-22",
+   "tipo": "fim_mandato",
+   "titulo": "Fim do mandato de Rogério Alencar Feitosa",
+   "doc": "ATA_RCA_2026_09_22",
+   "detalhe": "3 (três) anos contados desta data, permitida a reeleição"
+  },
+  {
+   "data": "2029-09-22",
+   "tipo": "fim_mandato",
+   "titulo": "Fim do mandato de Patrícia Gondim Arrais",
+   "doc": "ATA_RCA_2026_09_22",
+   "detalhe": "3 (três) anos contados desta data, permitida a reeleição"
+  },
+  {
+   "data": "2029-09-22",
+   "tipo": "fim_mandato",
+   "titulo": "Fim do mandato de Marcos Tadeu Oliveira Pinheiro",
+   "doc": "ATA_RCA_2026_09_22",
+   "detalhe": "3 (três) anos contados desta data, permitida a reeleição"
+  }
+ ],
+ "pessoas": {
+  "N:ANTONIO CARLOS FEITOSA NETO": {
+   "nome": "Antônio Carlos Feitosa Neto",
+   "cpf": null
+  },
+  "40523580908": {
+   "nome": "Rogério Alencar Feitosa",
+   "cpf": "40523580908"
+  },
+  "N:BEATRIZ MOREIRA FEITOSA": {
+   "nome": "Beatriz Moreira Feitosa",
+   "cpf": null
+  },
+  "15679280132": {
+   "nome": "Lúcia Helena Brígido Sampaio",
+   "cpf": "15679280132"
+  },
+  "21754994059": {
+   "nome": "Marcos Tadeu Oliveira Pinheiro",
+   "cpf": "21754994059"
+  },
+  "32615513486": {
+   "nome": "Patrícia Gondim Arrais",
+   "cpf": "32615513486"
+  },
+  "92779376880": {
+   "nome": "Francisco Wellington Lima Bastos",
+   "cpf": "92779376880"
+  },
+  "N:CONSELHO DE ADMINISTRACAO": {
+   "nome": "Conselho de Administração",
+   "cpf": null
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "comprovada",
+  "outorgante": {
+   "nome": "SERTÃO VERDE AGROINDUSTRIAL S.A.",
+   "cnpj": "40.253.280/0001-64",
+   "tipo": "SA",
+   "atos_vigentes": [
+    {
+     "titulo": "Estatuto Social (2022)",
+     "doc": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+     "efeito": "2022-03-18"
+    },
+    {
+     "titulo": "Ata do Conselho de Administração (2023)",
+     "doc": "ATA_RCA_2023_04_27",
+     "efeito": "2023-04-27"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Rogério Alencar Feitosa",
+    "cpf": "405.235.809-08",
+    "identificacao": "CPF",
+    "qualidade": "Diretor-Presidente"
+   },
+   {
+    "nome": "Lúcia Helena Brígido Sampaio",
+    "cpf": "156.792.801-32",
+    "identificacao": "CPF",
+    "qualidade": "Diretora Administrativo-Financeira"
+   }
+  ],
+  "poderes_conferidos": [
+   "Estatuto Social (2022), Art. 18, incisos (a) e (b): combinações alternativas de assinatura",
+   "Estatuto Social (2022), Art. 18, § 1º: qualquer administrador designado assina sozinho"
+  ],
+  "prazo_validade": [
+   "Rogério Alencar Feitosa (Diretor-Presidente): mandato até 27/04/2026",
+   "Lúcia Helena Brígido Sampaio (Diretora Administrativo-Financeira): mandato até 27/04/2026"
+  ],
+  "revogacao": [
+   "Poder decorre do ato constitutivo vigente na data da venda; recomenda-se certidão simplificada atualizada da Junta Comercial para afastar alteração posterior ainda não apresentada."
+  ],
+  "fontes": [
+   {
+    "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+    "doc_titulo": "Estatuto Social (2022)",
+    "trecho": "A Companhia será representada, ativa e passivamente, em juízo ou fora dele, e somente se obrigará perante terceiros: (a) pela assinatura conjunta de 2 (dois) Diretores; ou (b) pela assinatura de 1 (um) Diretor em conjunto com 1 (um) procurador, nos limites dos poderes constantes do respectivo instrumento de mandato.",
+    "clausula": "Art. 18, incisos (a) e (b)",
+    "ancoragem": 77.6,
+    "pagina": 2,
+    "inicio": 5201,
+    "fim": 5517
+   },
+   {
+    "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+    "doc_titulo": "Estatuto Social (2022)",
+    "trecho": "Qualquer dos Diretores poderá, isoladamente, representar a Companhia em atos de mero expediente, tais como o endosso de cheques para depósito em contas da própria Companhia, a assinatura de correspondências e a representação perante repartições públicas federais, estaduais e municipais, autarquias e concessionárias de serviços públicos, desde que tais atos não importem assunção de obrigações, renúncia de direitos ou alienação de bens.",
+    "clausula": "Art. 18, § 1º",
+    "ancoragem": 100.0,
+    "pagina": 3,
+    "inicio": 5573,
+    "fim": 6011
+   },
+   {
+    "doc_id": "ATA_RCA_2023_04_27",
+    "doc_titulo": "Ata do Conselho de Administração (2023)",
+    "trecho": "Eleger, para compor a Diretoria da Companhia, com mandato de 3 (três) anos contados desta data, permitida a reeleição, nos termos do art. 16 do Estatuto Social: (a) para o cargo de Diretor-Presidente, ROGÉRIO ALENCAR FEITOSA, brasileiro, casado sob o regime da comunhão parcial de bens, engenheiro de alimentos, portador da cédula de identidade RG nº 2001009876543 SSP/CE, inscrito no CPF sob o nº 405.235.809-08, residente e domiciliado na Rua Tibúrcio Cavalcante, nº 2.315, apartamento 1.102, Aldeota, Fortaleza/CE, CEP 60125-101; (b) para o cargo de Diretora Administrativo-Financeira, LÚCIA HELENA BRÍGIDO SAMPAIO, brasileira, divorciada, contadora, portadora da cédula de identidade RG nº 95002345678 SSP/CE, inscrita no CPF sob o nº 156.792.801-32, residente e domiciliada na Rua Pereira Valente, nº 870, apartamento 402, Meireles, Fortaleza/CE, CEP 60160-250; (c) para o cargo de Diretor Industrial, MARCOS TADEU OLIVEIRA PINHEIRO, brasileiro, casado sob o regime da comunhão parcial de bens, engenheiro químico, portador da cédula de identidade RG nº 2005012345678 SSP/CE, inscrito no CPF sob o nº 217.549.940-59, residente e domiciliado na Rua Luiz Gonzaga Honório de Abreu, nº 145, Pajuçara, Maracanaú/CE, CEP 61932-120.",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 1136,
+    "fim": 2366
+   },
+   {
+    "doc_id": "ATA_RCA_2023_04_27",
+    "doc_titulo": "Ata do Conselho de Administração (2023)",
+    "trecho": "Eleger, para compor a Diretoria da Companhia, com mandato de 3 (três) anos contados desta data, permitida a reeleição, nos termos do art. 16 do Estatuto Social: (a) para o cargo de Diretor-Presidente, ROGÉRIO ALENCAR FEITOSA, brasileiro, casado sob o regime da comunhão parcial de bens, engenheiro de alimentos, portador da cédula de identidade RG nº 2001009876543 SSP/CE, inscrito no CPF sob o nº 405.235.809-08, residente e domiciliado na Rua Tibúrcio Cavalcante, nº 2.315, apartamento 1.102, Aldeota, Fortaleza/CE, CEP 60125-101; (b) para o cargo de Diretora Administrativo-Financeira, LÚCIA HELENA BRÍGIDO SAMPAIO, brasileira, divorciada, contadora, portadora da cédula de identidade RG nº 95002345678 SSP/CE, inscrita no CPF sob o nº 156.792.801-32, residente e domiciliada na Rua Pereira Valente, nº 870, apartamento 402, Meireles, Fortaleza/CE, CEP 60160-250; (c) para o cargo de Diretor Industrial, MARCOS TADEU OLIVEIRA PINHEIRO, brasileiro, casado sob o regime da comunhão parcial de bens, engenheiro químico, portador da cédula de identidade RG nº 2005012345678 SSP/CE, inscrito no CPF sob o nº 217.549.940-59, residente e domiciliado na Rua Luiz Gonzaga Honório de Abreu, nº 145, Pajuçara, Maracanaú/CE, CEP 61932-120.",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 1136,
+    "fim": 2366
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "ATA_RCA_2023_04_27",
+    "titulo": "Ata do Conselho de Administração (2023)",
+    "arquivo": "ATA_RCA_2023_04_27.pdf"
+   },
+   {
+    "id": "ATA_RCA_2026_09_22",
+    "titulo": "Ata do Conselho de Administração (2026)",
+    "arquivo": "ATA_RCA_2026_09_22.pdf"
+   },
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+    "titulo": "Estatuto Social (2022)",
+    "arquivo": "ESTATUTO_SOCIAL_CONSOLIDADO_2022.pdf"
+   },
+   {
+    "id": "PROCURACAO_PUBLICA_2026_02_10",
+    "titulo": "Procuração (2026)",
+    "arquivo": "PROCURACAO_PUBLICA_2026_02_10.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "ATA_RCA_2023_04_27",
+   "nome": "ATA_RCA_2023_04_27.pdf",
+   "tipo": "ata_conselho",
+   "titulo": "Ata do Conselho de Administração (2023)",
+   "data": "2023-04-27",
+   "paginas": [
+    "SERTÃO VERDE AGROINDUSTRIAL S.A.\nCNPJ nº 40.253.280/0001-64 – NIRE 23300045178\nATA DA REUNIÃO DO CONSELHO DE ADMINISTRAÇÃO REALIZADA EM 27 DE\nABRIL DE 2023\n1. DATA, HORA E LOCAL: aos 27 (vinte e sete) dias do mês de abril de 2023, às 10h00, na sede\nsocial, situada na Rodovia CE-060, km 14, s/n, Distrito Industrial, Maracanaú/CE, CEP 61939-000.\n2. CONVOCAÇÃO E PRESENÇA: dispensada a convocação, em razão do comparecimento da\ntotalidade dos membros do Conselho de Administração, a saber: ANTÔNIO CARLOS FEITOSA\nNETO (Presidente do Conselho), ROGÉRIO ALENCAR FEITOSA e BEATRIZ MOREIRA\nFEITOSA, eleitos pela Assembleia Geral Ordinária realizada em 25 de abril de 2023.\n3. MESA: Presidente: ANTÔNIO CARLOS FEITOSA NETO; Secretária: BEATRIZ MOREIRA\nFEITOSA.\n4. ORDEM DO DIA: (i) eleição dos membros da Diretoria da Companhia; (ii) fixação da\nremuneração individual dos Diretores, dentro do montante global aprovado pela Assembleia Geral\nOrdinária de 25 de abril de 2023.\n5. DELIBERAÇÕES: instalada a reunião, e após exame das matérias constantes da ordem do dia,\nos conselheiros deliberaram, por unanimidade de votos e sem ressalvas:\n5.1. Eleger, para compor a Diretoria da Companhia, com mandato de 3 (três) anos contados desta\ndata, permitida a reeleição, nos termos do art. 16 do Estatuto Social:\n(a) para o cargo de Diretor-Presidente, ROGÉRIO ALENCAR FEITOSA, brasileiro, casado sob o\nregime da comunhão parcial de bens, engenheiro de alimentos, portador da cédula de identidade RG\nnº 2001009876543 SSP/CE, inscrito no CPF sob o nº 405.235.809-08, residente e domiciliado na\nRua Tibúrcio Cavalcante, nº 2.315, apartamento 1.102, Aldeota, Fortaleza/CE, CEP 60125-101;\n(b) para o cargo de Diretora Administrativo-Financeira, LÚCIA HELENA BRÍGIDO SAMPAIO,\nbrasileira, divorciada, contadora, portadora da cédula de identidade RG nº 95002345678 SSP/CE,\ninscrita no CPF sob o nº 156.792.801-32, residente e domiciliada na Rua Pereira Valente, nº 870,\napartamento 402, Meireles, Fortaleza/CE, CEP 60160-250;\n(c) para o cargo de Diretor Industrial, MARCOS TADEU OLIVEIRA PINHEIRO, brasileiro, casado\nsob o regime da comunhão parcial de bens, engenheiro químico, portador da cédula de identidade\nRG nº 2005012345678 SSP/CE, inscrito no CPF sob o nº 217.549.940-59, residente e domiciliado\nna Rua Luiz Gonzaga Honório de Abreu, nº 145, Pajuçara, Maracanaú/CE, CEP 61932-120.\n5.2. Consignar que os Diretores ora eleitos declararam, sob as penas da lei, que não estão impedidos\nde exercer a administração de sociedade mercantil em virtude de condenação criminal, e que\ntomaram posse nesta data, mediante assinatura dos respectivos termos lavrados no Livro de Atas das\nReuniões da Diretoria.\n5.3. Fixar a remuneração individual mensal dos Diretores nos valores constantes de planilha\nrubricada pelos conselheiros, que fica arquivada na sede da Companhia.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "6. ENCERRAMENTO: nada mais havendo a tratar, foram os trabalhos suspensos pelo tempo\nnecessário à lavratura desta ata, que, lida e achada conforme, foi assinada por todos os presentes.\nMaracanaú/CE, 27 de abril de 2023.\nANTÔNIO CARLOS FEITOSA NETO – Presidente da Mesa\nBEATRIZ MOREIRA FEITOSA – Secretária\nConselheiros presentes:\nANTÔNIO CARLOS FEITOSA NETO\nROGÉRIO ALENCAR FEITOSA\nBEATRIZ MOREIRA FEITOSA\nDiretores eleitos, em aceitação:\nROGÉRIO ALENCAR FEITOSA\nLÚCIA HELENA BRÍGIDO SAMPAIO\nMARCOS TADEU OLIVEIRA PINHEIRO\nConfere com o original lavrado no livro próprio.\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 16/05/2023 sob o nº 6214587\nProtocolo: 23/052211-0 | NIRE: 23300045178\nEmpresa: SERTÃO VERDE AGROINDUSTRIAL S.A.\nAutenticação: B91E0D47C2A3F615\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "04166c674b75bf013303b08a7148d0f812c8c076c4d07fa048a24b920cd3cdf0",
+   "leitura": {
+    "tarefas": {
+     "ata": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 55.0,
+      "tokens_saida": 1102,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "ATA_RCA_2026_09_22",
+   "nome": "ATA_RCA_2026_09_22.pdf",
+   "tipo": "ata_conselho",
+   "titulo": "Ata do Conselho de Administração (2026)",
+   "data": "2026-09-22",
+   "paginas": [
+    "SERTÃO VERDE AGROINDUSTRIAL S.A.\nCNPJ nº 40.253.280/0001-64 – NIRE 23300045178\nATA DA REUNIÃO DO CONSELHO DE ADMINISTRAÇÃO REALIZADA EM 22 DE\nSETEMBRO DE 2026\n1. DATA, HORA E LOCAL: aos 22 (vinte e dois) dias do mês de setembro de 2026, às 9h30, na\nsede social, situada na Rodovia CE-060, km 14, s/n, Distrito Industrial, Maracanaú/CE, CEP\n61939-000.\n2. CONVOCAÇÃO E PRESENÇA: convocação realizada por correio eletrônico expedido pelo\nPresidente do Conselho em 15 de setembro de 2026, verificada a presença da totalidade dos\nmembros do Conselho de Administração eleitos pela Assembleia Geral Ordinária de 29 de abril de\n2026: ANTÔNIO CARLOS FEITOSA NETO (Presidente do Conselho), ROGÉRIO ALENCAR\nFEITOSA e BEATRIZ MOREIRA FEITOSA.\n3. MESA: Presidente: ANTÔNIO CARLOS FEITOSA NETO; Secretária: BEATRIZ MOREIRA\nFEITOSA.\n4. ORDEM DO DIA: (i) eleição dos membros da Diretoria da Companhia; (ii) fixação da\nremuneração individual dos Diretores.\n5. DELIBERAÇÕES: instalada a reunião, os conselheiros, por unanimidade de votos e sem\nressalvas, deliberaram:\n5.1. Eleger, para compor a Diretoria da Companhia, com mandato de 3 (três) anos contados desta\ndata, permitida a reeleição:\n(a) para o cargo de Diretor-Presidente, reconduzido, ROGÉRIO ALENCAR FEITOSA, brasileiro,\ncasado sob o regime da comunhão parcial de bens, engenheiro de alimentos, portador da cédula de\nidentidade RG nº 2001009876543 SSP/CE, inscrito no CPF sob o nº 405.235.809-08, residente e\ndomiciliado na Rua Tibúrcio Cavalcante, nº 2.315, apartamento 1.102, Aldeota, Fortaleza/CE;\n(b) para o cargo de Diretora Administrativo-Financeira, PATRÍCIA GONDIM ARRAIS, brasileira,\ncasada sob o regime da separação total de bens, economista, portadora da cédula de identidade RG\nnº 2002034567812 SSP/CE, inscrita no CPF sob o nº 326.155.134-86, residente e domiciliada na\nRua Coronel Jucá, nº 1.580, apartamento 701, Meireles, Fortaleza/CE, CEP 60170-320;\n(c) para o cargo de Diretor Industrial, reconduzido, MARCOS TADEU OLIVEIRA PINHEIRO,\nbrasileiro, casado sob o regime da comunhão parcial de bens, engenheiro químico, portador da\ncédula de identidade RG nº 2005012345678 SSP/CE, inscrito no CPF sob o nº 217.549.940-59,\nresidente e domiciliado na Rua Luiz Gonzaga Honório de Abreu, nº 145, Pajuçara, Maracanaú/CE.\n5.2. Registrar que os Diretores eleitos declararam não estar incursos em nenhum dos crimes\nprevistos em lei que os impeça de exercer atividade mercantil, e que tomaram posse nesta data,\nmediante assinatura dos termos lavrados no Livro de Atas das Reuniões da Diretoria.\n5.3. Consignar voto de agradecimento à Sra. LÚCIA HELENA BRÍGIDO SAMPAIO, cuja gestão\ncomo Diretora Administrativo-Financeira se encerra com a posse da Diretora ora eleita, pela\ndedicação demonstrada no exercício do cargo.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "5.4. Manter a remuneração individual mensal dos Diretores nos valores vigentes, corrigidos pelo\nIPCA acumulado nos últimos 12 (doze) meses, dentro do montante global aprovado pela Assembleia\nGeral Ordinária de 29 de abril de 2026.\n6. ENCERRAMENTO: nada mais havendo a tratar, lavrou-se a presente ata, que, lida e aprovada,\nfoi assinada por todos os presentes.\nMaracanaú/CE, 22 de setembro de 2026.\nANTÔNIO CARLOS FEITOSA NETO – Presidente da Mesa\nBEATRIZ MOREIRA FEITOSA – Secretária\nConselheiros presentes:\nANTÔNIO CARLOS FEITOSA NETO\nROGÉRIO ALENCAR FEITOSA\nBEATRIZ MOREIRA FEITOSA\nDiretores eleitos, em aceitação:\nROGÉRIO ALENCAR FEITOSA\nPATRÍCIA GONDIM ARRAIS\nMARCOS TADEU OLIVEIRA PINHEIRO\nConfere com o original lavrado no livro próprio.\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 06/10/2026 sob o nº 6702915\nProtocolo: 26/098734-2 | NIRE: 23300045178\nEmpresa: SERTÃO VERDE AGROINDUSTRIAL S.A.\nAutenticação: 4C8D2E7F91A0B356\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "146f6931e8f3efc97ad4da40afdacdc06d5d2262c7f050b5c0ae621a0eb7efdd",
+   "leitura": {
+    "tarefas": {
+     "ata": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 35.3,
+      "tokens_saida": 1156,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n04486347756\nPLACA\nRCD7A80\nEXERCÍCIO\n2026\nMARCA / MODELO / VERSÃO\nFIAT/FASTBACK\nCHASSI\n9BDVLE8LCK8CM30B5\nNOME\nSERTÃO VERDE AGROINDUSTRIAL S.A.\nCPF / CNPJ\n40.253.280/0001-64\nDATA\n15/01/2026\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "233c3b37b333f10f09ebc8eb24450ba7168787ebf24c8bc410107048c415ded7",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+   "nome": "ESTATUTO_SOCIAL_CONSOLIDADO_2022.pdf",
+   "tipo": "estatuto_social",
+   "titulo": "Estatuto Social (2022)",
+   "data": "2022-03-18",
+   "paginas": [
+    "ESTATUTO SOCIAL DA SERTÃO VERDE AGROINDUSTRIAL S.A.\nCNPJ nº 40.253.280/0001-64 – NIRE 23300045178\nTexto consolidado aprovado pela Assembleia Geral Extraordinária realizada em 18 de março de\n2022.\nCAPÍTULO I – DA DENOMINAÇÃO, SEDE, OBJETO E DURAÇÃO\nArt. 1º A SERTÃO VERDE AGROINDUSTRIAL S.A. é uma sociedade anônima de capital\nfechado, que se rege por este Estatuto e pela Lei nº 6.404, de 15 de dezembro de 1976, com suas\nalterações posteriores.\nArt. 2º A Companhia tem sede e foro no Município de Maracanaú, Estado do Ceará, na Rodovia\nCE-060, km 14, s/n, Distrito Industrial, CEP 61939-000, podendo abrir, transferir e encerrar filiais,\ndepósitos e escritórios em qualquer ponto do território nacional, por deliberação da Diretoria.\nArt. 3º A Companhia tem por objeto: (a) a industrialização, o beneficiamento e o comércio de frutas\ntropicais, polpas, sucos, néctares, doces e concentrados; (b) a importação e a exportação desses\nprodutos e de insumos destinados à sua fabricação; (c) a armazenagem frigorificada de produtos\npróprios; e (d) a participação no capital de outras sociedades.\nArt. 4º O prazo de duração da Companhia é indeterminado.\nCAPÍTULO II – DO CAPITAL SOCIAL E DAS AÇÕES\nArt. 5º O capital social, totalmente subscrito e integralizado em moeda corrente nacional, é de R$\n12.000.000,00 (doze milhões de reais), dividido em 12.000.000 (doze milhões) de ações ordinárias,\nnominativas e sem valor nominal.\nArt. 6º Cada ação ordinária dá direito a um voto nas deliberações da Assembleia Geral.\nArt. 7º As ações são indivisíveis em relação à Companhia. A transferência das ações opera-se por\ntermo lavrado no Livro de Transferência de Ações Nominativas, assegurado aos demais acionistas o\ndireito de preferência na aquisição das ações que qualquer deles pretenda alienar, na proporção das\nrespectivas participações.\nCAPÍTULO III – DA ASSEMBLEIA GERAL\nArt. 8º A Assembleia Geral reunir-se-á ordinariamente nos 4 (quatro) primeiros meses seguintes ao\ntérmino do exercício social e, extraordinariamente, sempre que os interesses sociais o exigirem.\nArt. 9º A Assembleia Geral será convocada pelo Presidente do Conselho de Administração, ou na\nforma prevista em lei, e será presidida por acionista escolhido pelos presentes, a quem caberá indicar\no secretário dos trabalhos.\nArt. 10. Compete à Assembleia Geral, além das matérias que lhe são atribuídas por lei, eleger e\ndestituir os membros do Conselho de Administração, designar o seu Presidente e fixar a\nremuneração global dos administradores.\nCAPÍTULO IV – DA ADMINISTRAÇÃO\nSeção I – Disposições Gerais\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/4",
+    "Art. 11. A Companhia será administrada por um Conselho de Administração e por uma Diretoria,\ncom as atribuições conferidas pela lei e por este Estatuto.\nArt. 12. Os administradores serão investidos em seus cargos mediante assinatura de termo de posse\nno livro próprio, dentro dos 30 (trinta) dias que se seguirem à respectiva eleição, e prestarão as\ndeclarações exigidas pela legislação aplicável.\nSeção II – Do Conselho de Administração\nArt. 13. O Conselho de Administração será composto por 3 (três) membros, acionistas ou não,\neleitos pela Assembleia Geral para mandato de 3 (três) anos, permitida a reeleição.\nArt. 14. O Conselho de Administração reunir-se-á sempre que convocado por seu Presidente ou por\ndois de seus membros, instalando-se com a presença da maioria de seus integrantes e deliberando\npelo voto da maioria dos presentes. As deliberações constarão de atas lavradas no livro próprio.\nArt. 15. Compete ao Conselho de Administração:\nI – fixar a orientação geral dos negócios da Companhia;\nII – eleger e destituir os Diretores e fixar-lhes as atribuições, observado o disposto neste Estatuto;\nIII – fiscalizar a gestão dos Diretores, examinar a qualquer tempo os livros e papéis da Companhia e\nsolicitar informações sobre contratos celebrados ou em via de celebração;\nIV – convocar a Assembleia Geral quando julgar conveniente;\nV – manifestar-se sobre o relatório da administração e as contas da Diretoria;\nVI – escolher e destituir os auditores independentes, se houver;\nVII – autorizar a alienação ou a oneração de bens do ativo não circulante cujo valor, por operação,\nseja superior a R$ 500.000,00 (quinhentos mil reais);\nVIII – autorizar a prestação de garantias, de qualquer valor, a obrigações de terceiros.\nSeção III – Da Diretoria\nArt. 16. A Diretoria será composta por 3 (três) membros, acionistas ou não, residentes no País,\neleitos pelo Conselho de Administração, com as designações de Diretor-Presidente, Diretor\nAdministrativo-Financeiro e Diretor Industrial, para mandato de 3 (três) anos, permitida a reeleição.\nParágrafo único. Vagando cargo de Diretor, o Conselho de Administração elegerá o substituto, que\ncompletará o mandato do substituído.\nArt. 17. Compete à Diretoria a gestão dos negócios sociais e a prática de todos os atos necessários ao\nfuncionamento regular da Companhia, inclusive alienar ou onerar bens do ativo não circulante cujo\nvalor, por operação, não ultrapasse o limite fixado no inciso VII do art. 15, hipótese em que fica\ndispensada a autorização do Conselho de Administração.\nArt. 18. A Companhia será representada, ativa e passivamente, em juízo ou fora dele, e somente se\nobrigará perante terceiros:\n(a) pela assinatura conjunta de 2 (dois) Diretores; ou\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/4",
+    "(b) pela assinatura de 1 (um) Diretor em conjunto com 1 (um) procurador, nos limites dos poderes\nconstantes do respectivo instrumento de mandato.\n§ 1º Qualquer dos Diretores poderá, isoladamente, representar a Companhia em atos de mero\nexpediente, tais como o endosso de cheques para depósito em contas da própria Companhia, a\nassinatura de correspondências e a representação perante repartições públicas federais, estaduais e\nmunicipais, autarquias e concessionárias de serviços públicos, desde que tais atos não importem\nassunção de obrigações, renúncia de direitos ou alienação de bens.\n§ 2º As procurações serão outorgadas em nome da Companhia por 2 (dois) Diretores em conjunto e\nespecificarão os atos e operações que os mandatários poderão praticar e o prazo do mandato, que\nnão excederá 1 (um) ano, salvo as procurações para fins judiciais, que poderão ser outorgadas por\nprazo indeterminado.\n§ 3º São ineficazes em relação à Companhia os atos praticados em desacordo com o disposto neste\nartigo.\nArt. 19. É vedado aos administradores o uso da denominação social em negócios estranhos ao objeto\nsocial, especialmente em avais, fianças e endossos de favor.\nCAPÍTULO V – DO CONSELHO FISCAL\nArt. 20. A Companhia terá um Conselho Fiscal de funcionamento não permanente, composto por 3\n(três) membros efetivos e igual número de suplentes, que somente será instalado a pedido de\nacionistas, nas hipóteses previstas em lei.\nCAPÍTULO VI – DO EXERCÍCIO SOCIAL E DA DESTINAÇÃO DOS LUCROS\nArt. 21. O exercício social coincide com o ano civil. Ao término de cada exercício, a Diretoria fará\nelaborar as demonstrações financeiras exigidas por lei.\nArt. 22. Do lucro líquido do exercício, 5% (cinco por cento) serão aplicados na constituição da\nreserva legal, até que esta atinja 20% (vinte por cento) do capital social; do saldo ajustado na forma\nda lei, 25% (vinte e cinco por cento) serão distribuídos aos acionistas como dividendo mínimo\nobrigatório, e o remanescente terá a destinação que a Assembleia Geral determinar.\nCAPÍTULO VII – DA LIQUIDAÇÃO E DAS DISPOSIÇÕES GERAIS\nArt. 23. A Companhia entrará em liquidação nos casos previstos em lei, competindo à Assembleia\nGeral determinar o modo de liquidação e eleger o liquidante.\nArt. 24. Os casos omissos neste Estatuto serão resolvidos pela Assembleia Geral, observadas as\ndisposições da Lei nº 6.404/1976.\nMaracanaú/CE, 18 de março de 2022.\nMesa da Assembleia Geral Extraordinária:\nANTÔNIO CARLOS FEITOSA NETO – Presidente\nLÚCIA HELENA BRÍGIDO SAMPAIO – Secretária\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/4",
+    "Visto: HENRIQUE SABOIA ROLIM – OAB/CE nº 18.442\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 05/04/2022 sob o nº 6087312\nProtocolo: 22/041873-5 | NIRE: 23300045178\nEmpresa: SERTÃO VERDE AGROINDUSTRIAL S.A.\nAutenticação: 7A3F9C21E04B5D88\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 4/4"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "dd617b91c18df66bcedf5406f13dc99885c1118880b54e0cf669e0e47c13bf9e",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 26.5,
+      "tokens_saida": 402,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 85.1,
+      "tokens_saida": 1951,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "PROCURACAO_PUBLICA_2026_02_10",
+   "nome": "PROCURACAO_PUBLICA_2026_02_10.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (2026)",
+   "data": "2026-02-10",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCARTÓRIO DO 4º OFÍCIO DE NOTAS DE MARACANAÚ (fictício)\nLivro nº 196 – Folhas 077/078\nPROCURAÇÃO BASTANTE QUE FAZ SERTÃO VERDE AGROINDUSTRIAL S.A. A\nFAVOR DE FRANCISCO WELLINGTON LIMA BASTOS, NA FORMA ABAIXO:\nSAIBAM quantos este público instrumento de procuração virem que, aos 10 (dez) dias do mês de\nfevereiro do ano de 2026 (dois mil e vinte e seis), nesta cidade de Maracanaú, Estado do Ceará,\nneste Cartório do 4º Ofício de Notas, perante mim, Escrevente Autorizado, compareceu como\nOUTORGANTE: SERTÃO VERDE AGROINDUSTRIAL S.A., sociedade anônima de capital\nfechado, inscrita no CNPJ sob o nº 40.253.280/0001-64, NIRE 23300045178, com sede na Rodovia\nCE-060, km 14, s/n, Distrito Industrial, Maracanaú/CE, CEP 61939-000, neste ato representada por\nseu Diretor-Presidente, ROGÉRIO ALENCAR FEITOSA, brasileiro, casado, engenheiro de\nalimentos, portador da cédula de identidade RG nº 2001009876543 SSP/CE, inscrito no CPF sob o\nnº 405.235.809-08, residente e domiciliado na Rua Tibúrcio Cavalcante, nº 2.315, apartamento\n1.102, Aldeota, Fortaleza/CE, eleito na Reunião do Conselho de Administração de 27/04/2023,\nregistrada na Junta Comercial do Estado do Ceará – JUCEC em 16/05/2023 sob o nº 6214587, e\ninvestido dos poderes previstos no Estatuto Social consolidado, registrado na JUCEC em 05/04/2022\nsob o nº 6087312, documentos cujas cópias ficam arquivadas nestas Notas na pasta de documentos\nde pessoas jurídicas; reconhecido como o próprio por mim, à vista dos documentos de identificação\napresentados, do que dou fé.\nE, pela outorgante, na forma em que vem representada, me foi dito que, por este público instrumento\ne nos melhores termos de direito, nomeia e constitui seu bastante procurador: FRANCISCO\nWELLINGTON LIMA BASTOS, brasileiro, solteiro, tecnólogo em logística, portador da cédula de\nidentidade RG nº 2008045678901 SSP/CE, inscrito no CPF sob o nº 927.793.768-80, residente e\ndomiciliado na Rua Major Agostinho, nº 312, Centro, Maranguape/CE, CEP 61940-000, empregado\nda outorgante no cargo de Gerente de Logística, a quem confere poderes para, sempre em conjunto\ncom qualquer dos Diretores da outorgante, vender, permutar ou por qualquer outra forma alienar\nveículos automotores integrantes da frota da outorgante, pelos preços e condições que ajustar;\nassinar contratos, recibos, termos de entrega e a Autorização para Transferência de Propriedade do\nVeículo, em meio físico ou digital (ATPV ou ATPV-e); receber valores e dar quitação; representar a\noutorgante perante o Departamento Estadual de Trânsito do Ceará – DETRAN/CE, suas\nCircunscrições Regionais e demais órgãos de trânsito, podendo requerer, assinar requerimentos e\ndeclarações, pagar taxas, tributos e multas, e praticar todos os demais atos necessários ao fiel\ncumprimento deste mandato.\nO presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data, sendo vedado o\nsubstabelecimento.\nAssim o disse, do que dou fé, e me pediu que lhe lavrasse este instrumento, o qual, feito e lido em\nvoz alta, foi achado conforme, aceito e assinado pelo representante da outorgante, dispensada a\npresença de testemunhas, nos termos do Código de Normas do Serviço Notarial e Registral do\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "Estado do Ceará. Emolumentos: R$ 214,60. FERMOJU: R$ 10,73. Selo: R$ 4,29. Total: R$ 229,62.\nSelo Digital de Fiscalização nº TN-CE-2026-0072215-B3E1. Eu, CARLOS EDUARDO LEMOS\nFARIAS, Escrevente Autorizado, a lavrei. Eu, MARIA AUXILIADORA PINHEIRO RAMOS,\nTabeliã, a subscrevo e assino.\n(a.a.) ROGÉRIO ALENCAR FEITOSA. MARIA AUXILIADORA PINHEIRO RAMOS – Tabeliã.\nTRASLADO – Nada mais. Trasladada em seguida, confere em tudo com o original, ao qual me\nreporto e dou fé.\nMaracanaú/CE, 10 de fevereiro de 2026.\nMARIA AUXILIADORA PINHEIRO RAMOS – Tabeliã\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "6abb86c5df34df4af02ed20d3f6360c716358ef76f2141f92a5062404af009be",
+   "leitura": {
+    "tarefas": {
+     "procuracao": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 43.7,
+      "tokens_saida": 784,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "llamacpp",
+  "modelo": "qwen3.8-27b",
+  "politica": "DETRAN-CE"
+ },
+ "lado": "vendedor",
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T10:07:50",
+   "pedido": {
+    "veiculo": {
+     "descricao": "FIAT/FASTBACK",
+     "placa": "RCD7A80",
+     "renavam": "04486347756",
+     "chassi": "9BDVLE8LCK8CM30B5"
+    },
+    "data_venda": "2026-09-10",
+    "valor": 118500.0,
+    "assinantes": [
+     {
+      "nome": "ROGÉRIO ALENCAR FEITOSA",
+      "cpf": "405.235.809-08"
+     },
+     {
+      "nome": "LÚCIA HELENA BRÍGIDO SAMPAIO",
+      "cpf": "156.792.801-32"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "CÍCERO DAMASCENO ROLIM",
+    "vendedor_cnpj": "40.253.280/0001-64",
+    "lado": "vendedor"
+   },
+   "empresa": {
+    "razao_social": "SERTÃO VERDE AGROINDUSTRIAL S.A.",
+    "cnpj": "40.253.280/0001-64",
+    "tipo": "SA",
+    "objeto": "a industrialização, o beneficiamento e o comércio de frutas tropicais, polpas, sucos, néctares, doces e concentrados; a importação e a exportação desses produtos e de insumos destinados à sua fabricação; a armazenagem frigorificada de produtos próprios; e a participação no capital de outras sociedades.",
+    "comercializa_veiculos": false,
+    "subtipo": null
+   },
+   "veredito": "PODE",
+   "faixa": "AMARELO",
+   "indice": 86.2,
+   "confianca": 0.725,
+   "componentes": {
+    "leitura": 0.884,
+    "juridica": 0.82,
+    "fatos_decisivos": 4,
+    "menor_confianca_fato": 0.814,
+    "alertas": 0,
+    "atencoes": 3,
+    "fatos_pouco_ancorados": 1
+   },
+   "motivos_faixa": [
+    "1 fato(s) decisivo(s) com citação pouco ancorada no texto"
+   ],
+   "resumo": "Lúcia Helena Brígido Sampaio e Rogério Alencar Feitosa podem, em conjunto, assinar a ATPV-e — regra geral de representação — Art. 18, incisos (a) e (b); regra geral de representação — Art. 18, § 1º.",
+   "assinantes": [
+    {
+     "informado": "ROGÉRIO ALENCAR FEITOSA",
+     "cpf": "405.235.809-08",
+     "chave": "40523580908",
+     "nome": "Rogério Alencar Feitosa",
+     "criterio": "CPF"
+    },
+    {
+     "informado": "LÚCIA HELENA BRÍGIDO SAMPAIO",
+     "cpf": "156.792.801-32",
+     "chave": "15679280132",
+     "nome": "Lúcia Helena Brígido Sampaio",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:15679280132+21754994059",
+     "pessoas": [
+      {
+       "chave": "15679280132",
+       "nome": "Lúcia Helena Brígido Sampaio"
+      },
+      {
+       "chave": "21754994059",
+       "nome": "Marcos Tadeu Oliveira Pinheiro"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "regra geral de representação — Art. 18, incisos (a) e (b); regra geral de representação — Art. 18, § 1º",
+     "cadeia": [
+      "ESTATUTO_SOCIAL_CONSOLIDADO_2022"
+     ],
+     "severidade": "ok",
+     "confianca": 0.814,
+     "achados": [],
+     "precondicoes": []
+    },
+    {
+     "id": "contrato:15679280132+40523580908",
+     "pessoas": [
+      {
+       "chave": "15679280132",
+       "nome": "Lúcia Helena Brígido Sampaio"
+      },
+      {
+       "chave": "40523580908",
+       "nome": "Rogério Alencar Feitosa"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "regra geral de representação — Art. 18, incisos (a) e (b); regra geral de representação — Art. 18, § 1º",
+     "cadeia": [
+      "ESTATUTO_SOCIAL_CONSOLIDADO_2022"
+     ],
+     "severidade": "ok",
+     "confianca": 0.814,
+     "achados": [],
+     "precondicoes": []
+    },
+    {
+     "id": "contrato:21754994059+40523580908",
+     "pessoas": [
+      {
+       "chave": "21754994059",
+       "nome": "Marcos Tadeu Oliveira Pinheiro"
+      },
+      {
+       "chave": "40523580908",
+       "nome": "Rogério Alencar Feitosa"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "regra geral de representação — Art. 18, incisos (a) e (b); regra geral de representação — Art. 18, § 1º",
+     "cadeia": [
+      "ESTATUTO_SOCIAL_CONSOLIDADO_2022"
+     ],
+     "severidade": "ok",
+     "confianca": 0.814,
+     "achados": [],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [
+    {
+     "id": "PROCURACAO_PUBLICA_2026_02_10:bloqueada",
+     "pessoas": [
+      {
+       "chave": "92779376880",
+       "nome": "Francisco Wellington Lima Bastos"
+      }
+     ],
+     "via": "procuracao",
+     "descricao": "Procuração pública de 10/02/2026 (CARTÓRIO DO 4º OFÍCIO DE NOTAS DE MARACANAÚ)",
+     "cadeia": [
+      "PROCURACAO_PUBLICA_2026_02_10"
+     ],
+     "severidade": "atencao",
+     "confianca": 1.0,
+     "achados": [
+      {
+       "codigo": "OUTORGANTE_PJ",
+       "severidade": "ok",
+       "titulo": "Outorgada pela própria empresa",
+       "detalhe": "A outorgante é a empresa, representada por Rogério Alencar Feitosa.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2026_02_10",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "compareceu como OUTORGANTE: SERTÃO VERDE AGROINDUSTRIAL S.A., sociedade anônima de capital fechado, inscrita no CNPJ sob o nº 40.253.280/0001-64",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 518,
+         "fim": 662
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2026_02_10"
+      },
+      {
+       "codigo": "OUTORGA_SEM_PODERES",
+       "severidade": "bloqueio",
+       "titulo": "Quem outorgou não tinha poder sozinho",
+       "detalhe": "Na data da outorga (10/02/2026), alienar este veículo exigia Lúcia Helena Brígido Sampaio e Marcos Tadeu Oliveira Pinheiro ou Lúcia Helena Brígido Sampaio e Rogério Alencar Feitosa ou Marcos Tadeu Oliveira Pinheiro e Rogério Alencar Feitosa; a procuração foi assinada por Rogério Alencar Feitosa. Ninguém delega mais poder do que tem.",
+       "fundamento": [
+        "CC art. 47",
+        "CC art. 1.014"
+       ],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2026_02_10",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "compareceu como OUTORGANTE: SERTÃO VERDE AGROINDUSTRIAL S.A., sociedade anônima de capital fechado, inscrita no CNPJ sob o nº 40.253.280/0001-64",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 518,
+         "fim": 662
+        },
+        {
+         "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+         "doc_titulo": "Estatuto Social (2022)",
+         "trecho": "A Companhia será representada, ativa e passivamente, em juízo ou fora dele, e somente se obrigará perante terceiros: (a) pela assinatura conjunta de 2 (dois) Diretores; ou (b) pela assinatura de 1 (um) Diretor em conjunto com 1 (um) procurador, nos limites dos poderes constantes do respectivo instrumento de mandato.",
+         "clausula": "Art. 18, incisos (a) e (b)",
+         "ancoragem": 77.6,
+         "pagina": 2,
+         "inicio": 5201,
+         "fim": 5517
+        },
+        {
+         "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+         "doc_titulo": "Estatuto Social (2022)",
+         "trecho": "Qualquer dos Diretores poderá, isoladamente, representar a Companhia em atos de mero expediente, tais como o endosso de cheques para depósito em contas da própria Companhia, a assinatura de correspondências e a representação perante repartições públicas federais, estaduais e municipais, autarquias e concessionárias de serviços públicos, desde que tais atos não importem assunção de obrigações, renúncia de direitos ou alienação de bens.",
+         "clausula": "Art. 18, § 1º",
+         "ancoragem": 100.0,
+         "pagina": 3,
+         "inicio": 5573,
+         "fim": 6011
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2026_02_10"
+      },
+      {
+       "codigo": "OUTORGA_EM_DESACORDO",
+       "severidade": "bloqueio",
+       "titulo": "Outorga em desacordo com o estatuto/contrato",
+       "detalhe": "Procurações exigem Lúcia Helena Brígido Sampaio e Marcos Tadeu Oliveira Pinheiro ou Lúcia Helena Brígido Sampaio e Rogério Alencar Feitosa ou Marcos Tadeu Oliveira Pinheiro e Rogério Alencar Feitosa.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+         "doc_titulo": "Estatuto Social (2022)",
+         "trecho": "As procurações serão outorgadas em nome da Companhia por 2 (dois) Diretores em conjunto e especificarão os atos e operações que os mandatários poderão praticar e o prazo do mandato, que não excederá 1 (um) ano, salvo as procurações para fins judiciais, que poderão ser outorgadas por prazo indeterminado.",
+         "clausula": "Art. 18, § 2º",
+         "ancoragem": 100.0,
+         "pagina": 3,
+         "inicio": 6017,
+         "fim": 6321
+        },
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2026_02_10",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "compareceu como OUTORGANTE: SERTÃO VERDE AGROINDUSTRIAL S.A., sociedade anônima de capital fechado, inscrita no CNPJ sob o nº 40.253.280/0001-64",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 518,
+         "fim": 662
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2026_02_10"
+      },
+      {
+       "codigo": "PODERES_ESPECIAIS",
+       "severidade": "ok",
+       "titulo": "Poder expresso para alienar veículos",
+       "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+       "fundamento": [
+        "CC art. 661, §1º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2026_02_10",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "a quem confere poderes para, sempre em conjunto com qualquer dos Diretores da outorgante, vender, permutar ou por qualquer outra forma alienar veículos automotores integrantes da frota da outorgante, pelos preços e condições que ajustar; assinar contratos, recibos, termos de entrega e a Autorização para Transferência de Propriedade do Veículo, em meio físico ou digital (ATPV ou ATPV-e); receber valores e dar quitação; representar a outorgante perante o Departamento Estadual de Trânsito do Ceará – DETRAN/CE, suas Circunscrições Regionais e demais órgãos de trânsito, podendo requerer, assinar requerimentos e declarações, pagar taxas, tributos e multas, e praticar todos os demais atos necessários ao fiel cumprimento deste mandato.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 2084,
+         "fim": 2821
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2026_02_10"
+      },
+      {
+       "codigo": "PROCURACAO_NO_PRAZO",
+       "severidade": "ok",
+       "titulo": "Dentro do prazo",
+       "detalhe": "Válida até 10/02/2027.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2026_02_10",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 2822,
+         "fim": 2894
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2026_02_10"
+      },
+      {
+       "codigo": "PROCURACAO_SEM_VEICULO",
+       "severidade": "atencao",
+       "titulo": "Procuração não identifica o veículo",
+       "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+       "fundamento": [
+        "CJF, Enunciado 183"
+       ],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2026_02_10",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "a quem confere poderes para, sempre em conjunto com qualquer dos Diretores da outorgante, vender, permutar ou por qualquer outra forma alienar veículos automotores integrantes da frota da outorgante, pelos preços e condições que ajustar; assinar contratos, recibos, termos de entrega e a Autorização para Transferência de Propriedade do Veículo, em meio físico ou digital (ATPV ou ATPV-e); receber valores e dar quitação; representar a outorgante perante o Departamento Estadual de Trânsito do Ceará – DETRAN/CE, suas Circunscrições Regionais e demais órgãos de trânsito, podendo requerer, assinar requerimentos e declarações, pagar taxas, tributos e multas, e praticar todos os demais atos necessários ao fiel cumprimento deste mandato.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 2084,
+         "fim": 2821
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2026_02_10"
+      }
+     ],
+     "precondicoes": []
+    }
+   ],
+   "caminho_escolhido": {
+    "id": "contrato:15679280132+40523580908",
+    "pessoas": [
+     {
+      "chave": "15679280132",
+      "nome": "Lúcia Helena Brígido Sampaio"
+     },
+     {
+      "chave": "40523580908",
+      "nome": "Rogério Alencar Feitosa"
+     }
+    ],
+    "via": "contrato",
+    "descricao": "regra geral de representação — Art. 18, incisos (a) e (b); regra geral de representação — Art. 18, § 1º",
+    "cadeia": [
+     "ESTATUTO_SOCIAL_CONSOLIDADO_2022"
+    ],
+    "severidade": "ok",
+    "confianca": 0.814,
+    "achados": [],
+    "precondicoes": []
+   },
+   "faltantes": [],
+   "achados": [
+    {
+     "codigo": "MANDATO_PRORROGADO",
+     "severidade": "atencao",
+     "titulo": "Prazo de gestão vencido (S.A.)",
+     "detalhe": "Rogério Alencar Feitosa: prazo de gestão terminou em 27/04/2026; na S.A. o prazo se estende até a investidura dos sucessores. Confirme se houve nova eleição.",
+     "fundamento": [
+      "Lei 6.404/76, art. 150, §4º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "ATA_RCA_2023_04_27",
+       "doc_titulo": "Ata do Conselho de Administração (2023)",
+       "trecho": "Eleger, para compor a Diretoria da Companhia, com mandato de 3 (três) anos contados desta data, permitida a reeleição, nos termos do art. 16 do Estatuto Social: (a) para o cargo de Diretor-Presidente, ROGÉRIO ALENCAR FEITOSA, brasileiro, casado sob o regime da comunhão parcial de bens, engenheiro de alimentos, portador da cédula de identidade RG nº 2001009876543 SSP/CE, inscrito no CPF sob o nº 405.235.809-08, residente e domiciliado na Rua Tibúrcio Cavalcante, nº 2.315, apartamento 1.102, Aldeota, Fortaleza/CE, CEP 60125-101; (b) para o cargo de Diretora Administrativo-Financeira, LÚCIA HELENA BRÍGIDO SAMPAIO, brasileira, divorciada, contadora, portadora da cédula de identidade RG nº 95002345678 SSP/CE, inscrita no CPF sob o nº 156.792.801-32, residente e domiciliada na Rua Pereira Valente, nº 870, apartamento 402, Meireles, Fortaleza/CE, CEP 60160-250; (c) para o cargo de Diretor Industrial, MARCOS TADEU OLIVEIRA PINHEIRO, brasileiro, casado sob o regime da comunhão parcial de bens, engenheiro químico, portador da cédula de identidade RG nº 2005012345678 SSP/CE, inscrito no CPF sob o nº 217.549.940-59, residente e domiciliado na Rua Luiz Gonzaga Honório de Abreu, nº 145, Pajuçara, Maracanaú/CE, CEP 61932-120.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1136,
+       "fim": 2366
+      }
+     ],
+     "caminho": null
+    },
+    {
+     "codigo": "MANDATO_PRORROGADO",
+     "severidade": "atencao",
+     "titulo": "Prazo de gestão vencido (S.A.)",
+     "detalhe": "Lúcia Helena Brígido Sampaio: prazo de gestão terminou em 27/04/2026; na S.A. o prazo se estende até a investidura dos sucessores. Confirme se houve nova eleição.",
+     "fundamento": [
+      "Lei 6.404/76, art. 150, §4º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "ATA_RCA_2023_04_27",
+       "doc_titulo": "Ata do Conselho de Administração (2023)",
+       "trecho": "Eleger, para compor a Diretoria da Companhia, com mandato de 3 (três) anos contados desta data, permitida a reeleição, nos termos do art. 16 do Estatuto Social: (a) para o cargo de Diretor-Presidente, ROGÉRIO ALENCAR FEITOSA, brasileiro, casado sob o regime da comunhão parcial de bens, engenheiro de alimentos, portador da cédula de identidade RG nº 2001009876543 SSP/CE, inscrito no CPF sob o nº 405.235.809-08, residente e domiciliado na Rua Tibúrcio Cavalcante, nº 2.315, apartamento 1.102, Aldeota, Fortaleza/CE, CEP 60125-101; (b) para o cargo de Diretora Administrativo-Financeira, LÚCIA HELENA BRÍGIDO SAMPAIO, brasileira, divorciada, contadora, portadora da cédula de identidade RG nº 95002345678 SSP/CE, inscrita no CPF sob o nº 156.792.801-32, residente e domiciliada na Rua Pereira Valente, nº 870, apartamento 402, Meireles, Fortaleza/CE, CEP 60160-250; (c) para o cargo de Diretor Industrial, MARCOS TADEU OLIVEIRA PINHEIRO, brasileiro, casado sob o regime da comunhão parcial de bens, engenheiro químico, portador da cédula de identidade RG nº 2005012345678 SSP/CE, inscrito no CPF sob o nº 217.549.940-59, residente e domiciliado na Rua Luiz Gonzaga Honório de Abreu, nº 145, Pajuçara, Maracanaú/CE, CEP 61932-120.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1136,
+       "fim": 2366
+      }
+     ],
+     "caminho": null
+    },
+    {
+     "codigo": "MANDATO_PRORROGADO",
+     "severidade": "atencao",
+     "titulo": "Prazo de gestão vencido (S.A.)",
+     "detalhe": "Marcos Tadeu Oliveira Pinheiro: prazo de gestão terminou em 27/04/2026; na S.A. o prazo se estende até a investidura dos sucessores. Confirme se houve nova eleição.",
+     "fundamento": [
+      "Lei 6.404/76, art. 150, §4º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "ATA_RCA_2023_04_27",
+       "doc_titulo": "Ata do Conselho de Administração (2023)",
+       "trecho": "Eleger, para compor a Diretoria da Companhia, com mandato de 3 (três) anos contados desta data, permitida a reeleição, nos termos do art. 16 do Estatuto Social: (a) para o cargo de Diretor-Presidente, ROGÉRIO ALENCAR FEITOSA, brasileiro, casado sob o regime da comunhão parcial de bens, engenheiro de alimentos, portador da cédula de identidade RG nº 2001009876543 SSP/CE, inscrito no CPF sob o nº 405.235.809-08, residente e domiciliado na Rua Tibúrcio Cavalcante, nº 2.315, apartamento 1.102, Aldeota, Fortaleza/CE, CEP 60125-101; (b) para o cargo de Diretora Administrativo-Financeira, LÚCIA HELENA BRÍGIDO SAMPAIO, brasileira, divorciada, contadora, portadora da cédula de identidade RG nº 95002345678 SSP/CE, inscrita no CPF sob o nº 156.792.801-32, residente e domiciliada na Rua Pereira Valente, nº 870, apartamento 402, Meireles, Fortaleza/CE, CEP 60160-250; (c) para o cargo de Diretor Industrial, MARCOS TADEU OLIVEIRA PINHEIRO, brasileiro, casado sob o regime da comunhão parcial de bens, engenheiro químico, portador da cédula de identidade RG nº 2005012345678 SSP/CE, inscrito no CPF sob o nº 217.549.940-59, residente e domiciliado na Rua Luiz Gonzaga Honório de Abreu, nº 145, Pajuçara, Maracanaú/CE, CEP 61932-120.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1136,
+       "fim": 2366
+      }
+     ],
+     "caminho": null
+    },
+    {
+     "codigo": "CND_INSS",
+     "severidade": "info",
+     "titulo": "CND previdenciária",
+     "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+     "fundamento": [
+      "Lei 8.212/91, art. 47, I, \"c\""
+     ],
+     "fontes": [],
+     "caminho": null
+    },
+    {
+     "codigo": "TITULARIDADE_OK",
+     "severidade": "ok",
+     "titulo": "Veículo registrado no CNPJ da empresa",
+     "detalhe": "Proprietário no CRLV: SERTÃO VERDE AGROINDUSTRIAL S.A..",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [
+      {
+       "doc_id": "CRLV",
+       "doc_titulo": "CRLV",
+       "trecho": "RCD7A80",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 146,
+       "fim": 153
+      }
+     ],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "ESTATUTO_SOCIAL_CONSOLIDADO_2022#R1",
+     "escopo": "alienacao_ativo_imobilizado",
+     "aplicavel": false,
+     "motivo": "valor R$ 118.500,00 não cruza o limite de R$ 500.000,00",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+      "doc_titulo": "Estatuto Social (2022)",
+      "trecho": "VII – autorizar a alienação ou a oneração de bens do ativo não circulante cujo valor, por operação, seja superior a R$ 500.000,00 (quinhentos mil reais);",
+      "clausula": "Art. 15, inciso VII",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 4126,
+      "fim": 4279
+     },
+     "modo": "nao_especificado",
+     "pessoas": [],
+     "cargo": "administradores",
+     "valor_acima_de": 500000.0,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    },
+    {
+     "regra": "ESTATUTO_SOCIAL_CONSOLIDADO_2022#R2",
+     "escopo": "alienacao_ativo_imobilizado",
+     "aplicavel": true,
+     "motivo": "valor R$ 118.500,00 cruza o limite de R$ 500.000,00",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+      "doc_titulo": "Estatuto Social (2022)",
+      "trecho": "Compete à Diretoria a gestão dos negócios sociais e a prática de todos os atos necessários ao funcionamento regular da Companhia, inclusive alienar ou onerar bens do ativo não circulante cujo valor, por operação, não ultrapasse o limite fixado no inciso VII do art. 15, hipótese em que fica dispensada a autorização do Conselho de Administração.",
+      "clausula": "Art. 17",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 4825,
+      "fim": 5170
+     },
+     "modo": "nao_especificado",
+     "pessoas": [],
+     "cargo": "diretores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    },
+    {
+     "regra": "ESTATUTO_SOCIAL_CONSOLIDADO_2022#R3",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+      "doc_titulo": "Estatuto Social (2022)",
+      "trecho": "A Companhia será representada, ativa e passivamente, em juízo ou fora dele, e somente se obrigará perante terceiros: (a) pela assinatura conjunta de 2 (dois) Diretores; ou (b) pela assinatura de 1 (um) Diretor em conjunto com 1 (um) procurador, nos limites dos poderes constantes do respectivo instrumento de mandato.",
+      "clausula": "Art. 18, incisos (a) e (b)",
+      "ancoragem": 77.6,
+      "pagina": 2,
+      "inicio": 5201,
+      "fim": 5517
+     },
+     "modo": "misto",
+     "pessoas": [],
+     "cargo": "diretores",
+     "valor_acima_de": null,
+     "confianca": 0.814,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "misto",
+       "valor_lexico": "conjunto",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "assinatura conjunta"
+       ]
+      }
+     ],
+     "decisiva": true
+    },
+    {
+     "regra": "ESTATUTO_SOCIAL_CONSOLIDADO_2022#R4",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+      "doc_titulo": "Estatuto Social (2022)",
+      "trecho": "Qualquer dos Diretores poderá, isoladamente, representar a Companhia em atos de mero expediente, tais como o endosso de cheques para depósito em contas da própria Companhia, a assinatura de correspondências e a representação perante repartições públicas federais, estaduais e municipais, autarquias e concessionárias de serviços públicos, desde que tais atos não importem assunção de obrigações, renúncia de direitos ou alienação de bens.",
+      "clausula": "Art. 18, § 1º",
+      "ancoragem": 100.0,
+      "pagina": 3,
+      "inicio": 5573,
+      "fim": 6011
+     },
+     "modo": "isolado",
+     "pessoas": [],
+     "cargo": "diretores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente"
+       ]
+      }
+     ],
+     "decisiva": true
+    },
+    {
+     "regra": "ESTATUTO_SOCIAL_CONSOLIDADO_2022#R5",
+     "escopo": "outorgar_procuracoes",
+     "aplicavel": false,
+     "motivo": "regula a outorga de procurações (usada para validar procurações)",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+      "doc_titulo": "Estatuto Social (2022)",
+      "trecho": "As procurações serão outorgadas em nome da Companhia por 2 (dois) Diretores em conjunto e especificarão os atos e operações que os mandatários poderão praticar e o prazo do mandato, que não excederá 1 (um) ano, salvo as procurações para fins judiciais, que poderão ser outorgadas por prazo indeterminado.",
+      "clausula": "Art. 18, § 2º",
+      "ancoragem": 100.0,
+      "pagina": 3,
+      "inicio": 6017,
+      "fim": 6321
+     },
+     "modo": "quantidade_minima",
+     "pessoas": [],
+     "cargo": "diretores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "conjunto",
+       "valor_lexico": "conjunto",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "em conjunto"
+       ]
+      },
+      {
+       "campo": "quantidade_minima",
+       "valor_llm": "conjunto/2",
+       "valor_lexico": "quantidade_minima/2",
+       "divergiu": false,
+       "corrigido_para": "quantidade_minima/2",
+       "expressoes": []
+      }
+     ],
+     "decisiva": false
+    },
+    {
+     "regra": "ESTATUTO_SOCIAL_CONSOLIDADO_2022#R6",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+      "doc_titulo": "Estatuto Social (2022)",
+      "trecho": "São ineficazes em relação à Companhia os atos praticados em desacordo com o disposto neste artigo.",
+      "clausula": "Art. 18, § 3º",
+      "ancoragem": 100.0,
+      "pagina": 3,
+      "inicio": 6327,
+      "fim": 6425
+     },
+     "modo": "nao_especificado",
+     "pessoas": [],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    },
+    {
+     "regra": "ESTATUTO_SOCIAL_CONSOLIDADO_2022#R7",
+     "escopo": "obrigacoes_garantias",
+     "aplicavel": false,
+     "motivo": "trata de avais, fianças e garantias",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+      "doc_titulo": "Estatuto Social (2022)",
+      "trecho": "É vedado aos administradores o uso da denominação social em negócios estranhos ao objeto social, especialmente em avais, fianças e endossos de favor.",
+      "clausula": "Art. 19",
+      "ancoragem": 100.0,
+      "pagina": 3,
+      "inicio": 6435,
+      "fim": 6584
+     },
+     "modo": "nao_especificado",
+     "pessoas": [],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-09-10",
+    "atos": [
+     {
+      "doc": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+      "titulo": "Estatuto Social (2022)",
+      "efeito": "2022-03-18"
+     },
+     {
+      "doc": "ATA_RCA_2023_04_27",
+      "titulo": "Ata do Conselho de Administração (2023)",
+      "efeito": "2023-04-27"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "40523580908",
+      "nome": "Rogério Alencar Feitosa",
+      "cargo": "Diretor-Presidente",
+      "doc": "ATA_RCA_2023_04_27"
+     },
+     {
+      "chave": "15679280132",
+      "nome": "Lúcia Helena Brígido Sampaio",
+      "cargo": "Diretora Administrativo-Financeira",
+      "doc": "ATA_RCA_2023_04_27"
+     },
+     {
+      "chave": "21754994059",
+      "nome": "Marcos Tadeu Oliveira Pinheiro",
+      "cargo": "Diretor Industrial",
+      "doc": "ATA_RCA_2023_04_27"
+     }
+    ],
+    "encerrados": [],
+    "socios": []
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "SERTÃO VERDE AGROINDUSTRIAL S.A.",
+      "sub": "40.253.280/0001-64"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "FIAT/FASTBACK",
+      "sub": "RCD7A80"
+     },
+     {
+      "id": "40523580908",
+      "tipo": "pessoa",
+      "rotulo": "Rogério Alencar Feitosa",
+      "papeis": [
+       "Diretor-Presidente"
+      ],
+      "assinante": true
+     },
+     {
+      "id": "15679280132",
+      "tipo": "pessoa",
+      "rotulo": "Lúcia Helena Brígido Sampaio",
+      "papeis": [
+       "Diretora Administrativo-Financeira"
+      ],
+      "assinante": true
+     },
+     {
+      "id": "21754994059",
+      "tipo": "pessoa",
+      "rotulo": "Marcos Tadeu Oliveira Pinheiro",
+      "papeis": [
+       "Diretor Industrial"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "92779376880",
+      "tipo": "pessoa",
+      "rotulo": "Francisco Wellington Lima Bastos",
+      "papeis": [
+       "procurador"
+      ],
+      "assinante": false
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "valido"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "40523580908",
+      "tipo": "administracao",
+      "rotulo": "administra · em conjunto",
+      "status": "valido",
+      "doc": "ATA_RCA_2023_04_27"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "15679280132",
+      "tipo": "administracao",
+      "rotulo": "administra · em conjunto",
+      "status": "valido",
+      "doc": "ATA_RCA_2023_04_27"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "21754994059",
+      "tipo": "administracao",
+      "rotulo": "administra · em conjunto",
+      "status": "valido",
+      "doc": "ATA_RCA_2023_04_27"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "92779376880",
+      "tipo": "procuracao",
+      "status": "invalido",
+      "doc": "PROCURACAO_PUBLICA_2026_02_10",
+      "rotulo": "procuração 10/02/2026 · Quem outorgou não tinha poder sozinho",
+      "motivo": "Quem outorgou não tinha poder sozinho"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2022-03-18",
+     "tipo": "ato",
+     "titulo": "Estatuto Social (2022)",
+     "doc": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2023-04-27",
+     "tipo": "ato",
+     "titulo": "Ata do Conselho de Administração (2023)",
+     "doc": "ATA_RCA_2023_04_27",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-02-10",
+     "tipo": "procuracao",
+     "titulo": "Procuração para Francisco Wellington Lima Bastos",
+     "doc": "PROCURACAO_PUBLICA_2026_02_10",
+     "detalhe": "publica"
+    },
+    {
+     "data": "2026-04-27",
+     "tipo": "fim_mandato",
+     "titulo": "Fim do mandato de Rogério Alencar Feitosa",
+     "doc": "ATA_RCA_2023_04_27",
+     "detalhe": "3 (três) anos contados desta data"
+    },
+    {
+     "data": "2026-04-27",
+     "tipo": "fim_mandato",
+     "titulo": "Fim do mandato de Lúcia Helena Brígido Sampaio",
+     "doc": "ATA_RCA_2023_04_27",
+     "detalhe": "3 (três) anos contados desta data"
+    },
+    {
+     "data": "2026-04-27",
+     "tipo": "fim_mandato",
+     "titulo": "Fim do mandato de Marcos Tadeu Oliveira Pinheiro",
+     "doc": "ATA_RCA_2023_04_27",
+     "detalhe": "3 (três) anos contados desta data"
+    },
+    {
+     "data": "2026-09-10",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 118.500,00"
+    },
+    {
+     "data": "2026-09-22",
+     "tipo": "ato",
+     "titulo": "Ata do Conselho de Administração (2026)",
+     "doc": "ATA_RCA_2026_09_22",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2027-02-10",
+     "tipo": "vencimento",
+     "titulo": "Vence a procuração de Francisco Wellington Lima Bastos",
+     "doc": "PROCURACAO_PUBLICA_2026_02_10",
+     "detalhe": ""
+    },
+    {
+     "data": "2029-09-22",
+     "tipo": "fim_mandato",
+     "titulo": "Fim do mandato de Rogério Alencar Feitosa",
+     "doc": "ATA_RCA_2026_09_22",
+     "detalhe": "3 (três) anos contados desta data, permitida a reeleição"
+    },
+    {
+     "data": "2029-09-22",
+     "tipo": "fim_mandato",
+     "titulo": "Fim do mandato de Patrícia Gondim Arrais",
+     "doc": "ATA_RCA_2026_09_22",
+     "detalhe": "3 (três) anos contados desta data, permitida a reeleição"
+    },
+    {
+     "data": "2029-09-22",
+     "tipo": "fim_mandato",
+     "titulo": "Fim do mandato de Marcos Tadeu Oliveira Pinheiro",
+     "doc": "ATA_RCA_2026_09_22",
+     "detalhe": "3 (três) anos contados desta data, permitida a reeleição"
+    }
+   ],
+   "pessoas": {
+    "N:ANTONIO CARLOS FEITOSA NETO": {
+     "nome": "Antônio Carlos Feitosa Neto",
+     "cpf": null
+    },
+    "40523580908": {
+     "nome": "Rogério Alencar Feitosa",
+     "cpf": "40523580908"
+    },
+    "N:BEATRIZ MOREIRA FEITOSA": {
+     "nome": "Beatriz Moreira Feitosa",
+     "cpf": null
+    },
+    "15679280132": {
+     "nome": "Lúcia Helena Brígido Sampaio",
+     "cpf": "15679280132"
+    },
+    "21754994059": {
+     "nome": "Marcos Tadeu Oliveira Pinheiro",
+     "cpf": "21754994059"
+    },
+    "32615513486": {
+     "nome": "Patrícia Gondim Arrais",
+     "cpf": "32615513486"
+    },
+    "92779376880": {
+     "nome": "Francisco Wellington Lima Bastos",
+     "cpf": "92779376880"
+    },
+    "N:CONSELHO DE ADMINISTRACAO": {
+     "nome": "Conselho de Administração",
+     "cpf": null
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "comprovada",
+    "outorgante": {
+     "nome": "SERTÃO VERDE AGROINDUSTRIAL S.A.",
+     "cnpj": "40.253.280/0001-64",
+     "tipo": "SA",
+     "atos_vigentes": [
+      {
+       "titulo": "Estatuto Social (2022)",
+       "doc": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+       "efeito": "2022-03-18"
+      },
+      {
+       "titulo": "Ata do Conselho de Administração (2023)",
+       "doc": "ATA_RCA_2023_04_27",
+       "efeito": "2023-04-27"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "Rogério Alencar Feitosa",
+      "cpf": "405.235.809-08",
+      "identificacao": "CPF",
+      "qualidade": "Diretor-Presidente"
+     },
+     {
+      "nome": "Lúcia Helena Brígido Sampaio",
+      "cpf": "156.792.801-32",
+      "identificacao": "CPF",
+      "qualidade": "Diretora Administrativo-Financeira"
+     }
+    ],
+    "poderes_conferidos": [
+     "Estatuto Social (2022), Art. 18, incisos (a) e (b): combinações alternativas de assinatura",
+     "Estatuto Social (2022), Art. 18, § 1º: qualquer administrador designado assina sozinho"
+    ],
+    "prazo_validade": [
+     "Rogério Alencar Feitosa (Diretor-Presidente): mandato até 27/04/2026",
+     "Lúcia Helena Brígido Sampaio (Diretora Administrativo-Financeira): mandato até 27/04/2026"
+    ],
+    "revogacao": [
+     "Poder decorre do ato constitutivo vigente na data da venda; recomenda-se certidão simplificada atualizada da Junta Comercial para afastar alteração posterior ainda não apresentada."
+    ],
+    "fontes": [
+     {
+      "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+      "doc_titulo": "Estatuto Social (2022)",
+      "trecho": "A Companhia será representada, ativa e passivamente, em juízo ou fora dele, e somente se obrigará perante terceiros: (a) pela assinatura conjunta de 2 (dois) Diretores; ou (b) pela assinatura de 1 (um) Diretor em conjunto com 1 (um) procurador, nos limites dos poderes constantes do respectivo instrumento de mandato.",
+      "clausula": "Art. 18, incisos (a) e (b)",
+      "ancoragem": 77.6,
+      "pagina": 2,
+      "inicio": 5201,
+      "fim": 5517
+     },
+     {
+      "doc_id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+      "doc_titulo": "Estatuto Social (2022)",
+      "trecho": "Qualquer dos Diretores poderá, isoladamente, representar a Companhia em atos de mero expediente, tais como o endosso de cheques para depósito em contas da própria Companhia, a assinatura de correspondências e a representação perante repartições públicas federais, estaduais e municipais, autarquias e concessionárias de serviços públicos, desde que tais atos não importem assunção de obrigações, renúncia de direitos ou alienação de bens.",
+      "clausula": "Art. 18, § 1º",
+      "ancoragem": 100.0,
+      "pagina": 3,
+      "inicio": 5573,
+      "fim": 6011
+     },
+     {
+      "doc_id": "ATA_RCA_2023_04_27",
+      "doc_titulo": "Ata do Conselho de Administração (2023)",
+      "trecho": "Eleger, para compor a Diretoria da Companhia, com mandato de 3 (três) anos contados desta data, permitida a reeleição, nos termos do art. 16 do Estatuto Social: (a) para o cargo de Diretor-Presidente, ROGÉRIO ALENCAR FEITOSA, brasileiro, casado sob o regime da comunhão parcial de bens, engenheiro de alimentos, portador da cédula de identidade RG nº 2001009876543 SSP/CE, inscrito no CPF sob o nº 405.235.809-08, residente e domiciliado na Rua Tibúrcio Cavalcante, nº 2.315, apartamento 1.102, Aldeota, Fortaleza/CE, CEP 60125-101; (b) para o cargo de Diretora Administrativo-Financeira, LÚCIA HELENA BRÍGIDO SAMPAIO, brasileira, divorciada, contadora, portadora da cédula de identidade RG nº 95002345678 SSP/CE, inscrita no CPF sob o nº 156.792.801-32, residente e domiciliada na Rua Pereira Valente, nº 870, apartamento 402, Meireles, Fortaleza/CE, CEP 60160-250; (c) para o cargo de Diretor Industrial, MARCOS TADEU OLIVEIRA PINHEIRO, brasileiro, casado sob o regime da comunhão parcial de bens, engenheiro químico, portador da cédula de identidade RG nº 2005012345678 SSP/CE, inscrito no CPF sob o nº 217.549.940-59, residente e domiciliado na Rua Luiz Gonzaga Honório de Abreu, nº 145, Pajuçara, Maracanaú/CE, CEP 61932-120.",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 1136,
+      "fim": 2366
+     },
+     {
+      "doc_id": "ATA_RCA_2023_04_27",
+      "doc_titulo": "Ata do Conselho de Administração (2023)",
+      "trecho": "Eleger, para compor a Diretoria da Companhia, com mandato de 3 (três) anos contados desta data, permitida a reeleição, nos termos do art. 16 do Estatuto Social: (a) para o cargo de Diretor-Presidente, ROGÉRIO ALENCAR FEITOSA, brasileiro, casado sob o regime da comunhão parcial de bens, engenheiro de alimentos, portador da cédula de identidade RG nº 2001009876543 SSP/CE, inscrito no CPF sob o nº 405.235.809-08, residente e domiciliado na Rua Tibúrcio Cavalcante, nº 2.315, apartamento 1.102, Aldeota, Fortaleza/CE, CEP 60125-101; (b) para o cargo de Diretora Administrativo-Financeira, LÚCIA HELENA BRÍGIDO SAMPAIO, brasileira, divorciada, contadora, portadora da cédula de identidade RG nº 95002345678 SSP/CE, inscrita no CPF sob o nº 156.792.801-32, residente e domiciliada na Rua Pereira Valente, nº 870, apartamento 402, Meireles, Fortaleza/CE, CEP 60160-250; (c) para o cargo de Diretor Industrial, MARCOS TADEU OLIVEIRA PINHEIRO, brasileiro, casado sob o regime da comunhão parcial de bens, engenheiro químico, portador da cédula de identidade RG nº 2005012345678 SSP/CE, inscrito no CPF sob o nº 217.549.940-59, residente e domiciliado na Rua Luiz Gonzaga Honório de Abreu, nº 145, Pajuçara, Maracanaú/CE, CEP 61932-120.",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 1136,
+      "fim": 2366
+     }
+    ],
+    "documentos_verificaveis": [
+     {
+      "id": "ATA_RCA_2023_04_27",
+      "titulo": "Ata do Conselho de Administração (2023)",
+      "arquivo": "ATA_RCA_2023_04_27.pdf"
+     },
+     {
+      "id": "ATA_RCA_2026_09_22",
+      "titulo": "Ata do Conselho de Administração (2026)",
+      "arquivo": "ATA_RCA_2026_09_22.pdf"
+     },
+     {
+      "id": "CRLV",
+      "titulo": "CRLV",
+      "arquivo": "CRLV.pdf"
+     },
+     {
+      "id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+      "titulo": "Estatuto Social (2022)",
+      "arquivo": "ESTATUTO_SOCIAL_CONSOLIDADO_2022.pdf"
+     },
+     {
+      "id": "PROCURACAO_PUBLICA_2026_02_10",
+      "titulo": "Procuração (2026)",
+      "arquivo": "PROCURACAO_PUBLICA_2026_02_10.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "ATA_RCA_2023_04_27",
+     "nome": "ATA_RCA_2023_04_27.pdf",
+     "tipo": "ata_conselho",
+     "titulo": "Ata do Conselho de Administração (2023)",
+     "data": "2023-04-27",
+     "paginas": [
+      "SERTÃO VERDE AGROINDUSTRIAL S.A.\nCNPJ nº 40.253.280/0001-64 – NIRE 23300045178\nATA DA REUNIÃO DO CONSELHO DE ADMINISTRAÇÃO REALIZADA EM 27 DE\nABRIL DE 2023\n1. DATA, HORA E LOCAL: aos 27 (vinte e sete) dias do mês de abril de 2023, às 10h00, na sede\nsocial, situada na Rodovia CE-060, km 14, s/n, Distrito Industrial, Maracanaú/CE, CEP 61939-000.\n2. CONVOCAÇÃO E PRESENÇA: dispensada a convocação, em razão do comparecimento da\ntotalidade dos membros do Conselho de Administração, a saber: ANTÔNIO CARLOS FEITOSA\nNETO (Presidente do Conselho), ROGÉRIO ALENCAR FEITOSA e BEATRIZ MOREIRA\nFEITOSA, eleitos pela Assembleia Geral Ordinária realizada em 25 de abril de 2023.\n3. MESA: Presidente: ANTÔNIO CARLOS FEITOSA NETO; Secretária: BEATRIZ MOREIRA\nFEITOSA.\n4. ORDEM DO DIA: (i) eleição dos membros da Diretoria da Companhia; (ii) fixação da\nremuneração individual dos Diretores, dentro do montante global aprovado pela Assembleia Geral\nOrdinária de 25 de abril de 2023.\n5. DELIBERAÇÕES: instalada a reunião, e após exame das matérias constantes da ordem do dia,\nos conselheiros deliberaram, por unanimidade de votos e sem ressalvas:\n5.1. Eleger, para compor a Diretoria da Companhia, com mandato de 3 (três) anos contados desta\ndata, permitida a reeleição, nos termos do art. 16 do Estatuto Social:\n(a) para o cargo de Diretor-Presidente, ROGÉRIO ALENCAR FEITOSA, brasileiro, casado sob o\nregime da comunhão parcial de bens, engenheiro de alimentos, portador da cédula de identidade RG\nnº 2001009876543 SSP/CE, inscrito no CPF sob o nº 405.235.809-08, residente e domiciliado na\nRua Tibúrcio Cavalcante, nº 2.315, apartamento 1.102, Aldeota, Fortaleza/CE, CEP 60125-101;\n(b) para o cargo de Diretora Administrativo-Financeira, LÚCIA HELENA BRÍGIDO SAMPAIO,\nbrasileira, divorciada, contadora, portadora da cédula de identidade RG nº 95002345678 SSP/CE,\ninscrita no CPF sob o nº 156.792.801-32, residente e domiciliada na Rua Pereira Valente, nº 870,\napartamento 402, Meireles, Fortaleza/CE, CEP 60160-250;\n(c) para o cargo de Diretor Industrial, MARCOS TADEU OLIVEIRA PINHEIRO, brasileiro, casado\nsob o regime da comunhão parcial de bens, engenheiro químico, portador da cédula de identidade\nRG nº 2005012345678 SSP/CE, inscrito no CPF sob o nº 217.549.940-59, residente e domiciliado\nna Rua Luiz Gonzaga Honório de Abreu, nº 145, Pajuçara, Maracanaú/CE, CEP 61932-120.\n5.2. Consignar que os Diretores ora eleitos declararam, sob as penas da lei, que não estão impedidos\nde exercer a administração de sociedade mercantil em virtude de condenação criminal, e que\ntomaram posse nesta data, mediante assinatura dos respectivos termos lavrados no Livro de Atas das\nReuniões da Diretoria.\n5.3. Fixar a remuneração individual mensal dos Diretores nos valores constantes de planilha\nrubricada pelos conselheiros, que fica arquivada na sede da Companhia.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "6. ENCERRAMENTO: nada mais havendo a tratar, foram os trabalhos suspensos pelo tempo\nnecessário à lavratura desta ata, que, lida e achada conforme, foi assinada por todos os presentes.\nMaracanaú/CE, 27 de abril de 2023.\nANTÔNIO CARLOS FEITOSA NETO – Presidente da Mesa\nBEATRIZ MOREIRA FEITOSA – Secretária\nConselheiros presentes:\nANTÔNIO CARLOS FEITOSA NETO\nROGÉRIO ALENCAR FEITOSA\nBEATRIZ MOREIRA FEITOSA\nDiretores eleitos, em aceitação:\nROGÉRIO ALENCAR FEITOSA\nLÚCIA HELENA BRÍGIDO SAMPAIO\nMARCOS TADEU OLIVEIRA PINHEIRO\nConfere com o original lavrado no livro próprio.\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 16/05/2023 sob o nº 6214587\nProtocolo: 23/052211-0 | NIRE: 23300045178\nEmpresa: SERTÃO VERDE AGROINDUSTRIAL S.A.\nAutenticação: B91E0D47C2A3F615\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "04166c674b75bf013303b08a7148d0f812c8c076c4d07fa048a24b920cd3cdf0",
+     "leitura": {
+      "tarefas": {
+       "ata": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 55.0,
+        "tokens_saida": 1102,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "ATA_RCA_2026_09_22",
+     "nome": "ATA_RCA_2026_09_22.pdf",
+     "tipo": "ata_conselho",
+     "titulo": "Ata do Conselho de Administração (2026)",
+     "data": "2026-09-22",
+     "paginas": [
+      "SERTÃO VERDE AGROINDUSTRIAL S.A.\nCNPJ nº 40.253.280/0001-64 – NIRE 23300045178\nATA DA REUNIÃO DO CONSELHO DE ADMINISTRAÇÃO REALIZADA EM 22 DE\nSETEMBRO DE 2026\n1. DATA, HORA E LOCAL: aos 22 (vinte e dois) dias do mês de setembro de 2026, às 9h30, na\nsede social, situada na Rodovia CE-060, km 14, s/n, Distrito Industrial, Maracanaú/CE, CEP\n61939-000.\n2. CONVOCAÇÃO E PRESENÇA: convocação realizada por correio eletrônico expedido pelo\nPresidente do Conselho em 15 de setembro de 2026, verificada a presença da totalidade dos\nmembros do Conselho de Administração eleitos pela Assembleia Geral Ordinária de 29 de abril de\n2026: ANTÔNIO CARLOS FEITOSA NETO (Presidente do Conselho), ROGÉRIO ALENCAR\nFEITOSA e BEATRIZ MOREIRA FEITOSA.\n3. MESA: Presidente: ANTÔNIO CARLOS FEITOSA NETO; Secretária: BEATRIZ MOREIRA\nFEITOSA.\n4. ORDEM DO DIA: (i) eleição dos membros da Diretoria da Companhia; (ii) fixação da\nremuneração individual dos Diretores.\n5. DELIBERAÇÕES: instalada a reunião, os conselheiros, por unanimidade de votos e sem\nressalvas, deliberaram:\n5.1. Eleger, para compor a Diretoria da Companhia, com mandato de 3 (três) anos contados desta\ndata, permitida a reeleição:\n(a) para o cargo de Diretor-Presidente, reconduzido, ROGÉRIO ALENCAR FEITOSA, brasileiro,\ncasado sob o regime da comunhão parcial de bens, engenheiro de alimentos, portador da cédula de\nidentidade RG nº 2001009876543 SSP/CE, inscrito no CPF sob o nº 405.235.809-08, residente e\ndomiciliado na Rua Tibúrcio Cavalcante, nº 2.315, apartamento 1.102, Aldeota, Fortaleza/CE;\n(b) para o cargo de Diretora Administrativo-Financeira, PATRÍCIA GONDIM ARRAIS, brasileira,\ncasada sob o regime da separação total de bens, economista, portadora da cédula de identidade RG\nnº 2002034567812 SSP/CE, inscrita no CPF sob o nº 326.155.134-86, residente e domiciliada na\nRua Coronel Jucá, nº 1.580, apartamento 701, Meireles, Fortaleza/CE, CEP 60170-320;\n(c) para o cargo de Diretor Industrial, reconduzido, MARCOS TADEU OLIVEIRA PINHEIRO,\nbrasileiro, casado sob o regime da comunhão parcial de bens, engenheiro químico, portador da\ncédula de identidade RG nº 2005012345678 SSP/CE, inscrito no CPF sob o nº 217.549.940-59,\nresidente e domiciliado na Rua Luiz Gonzaga Honório de Abreu, nº 145, Pajuçara, Maracanaú/CE.\n5.2. Registrar que os Diretores eleitos declararam não estar incursos em nenhum dos crimes\nprevistos em lei que os impeça de exercer atividade mercantil, e que tomaram posse nesta data,\nmediante assinatura dos termos lavrados no Livro de Atas das Reuniões da Diretoria.\n5.3. Consignar voto de agradecimento à Sra. LÚCIA HELENA BRÍGIDO SAMPAIO, cuja gestão\ncomo Diretora Administrativo-Financeira se encerra com a posse da Diretora ora eleita, pela\ndedicação demonstrada no exercício do cargo.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "5.4. Manter a remuneração individual mensal dos Diretores nos valores vigentes, corrigidos pelo\nIPCA acumulado nos últimos 12 (doze) meses, dentro do montante global aprovado pela Assembleia\nGeral Ordinária de 29 de abril de 2026.\n6. ENCERRAMENTO: nada mais havendo a tratar, lavrou-se a presente ata, que, lida e aprovada,\nfoi assinada por todos os presentes.\nMaracanaú/CE, 22 de setembro de 2026.\nANTÔNIO CARLOS FEITOSA NETO – Presidente da Mesa\nBEATRIZ MOREIRA FEITOSA – Secretária\nConselheiros presentes:\nANTÔNIO CARLOS FEITOSA NETO\nROGÉRIO ALENCAR FEITOSA\nBEATRIZ MOREIRA FEITOSA\nDiretores eleitos, em aceitação:\nROGÉRIO ALENCAR FEITOSA\nPATRÍCIA GONDIM ARRAIS\nMARCOS TADEU OLIVEIRA PINHEIRO\nConfere com o original lavrado no livro próprio.\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 06/10/2026 sob o nº 6702915\nProtocolo: 26/098734-2 | NIRE: 23300045178\nEmpresa: SERTÃO VERDE AGROINDUSTRIAL S.A.\nAutenticação: 4C8D2E7F91A0B356\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "146f6931e8f3efc97ad4da40afdacdc06d5d2262c7f050b5c0ae621a0eb7efdd",
+     "leitura": {
+      "tarefas": {
+       "ata": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 35.3,
+        "tokens_saida": 1156,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "CRLV",
+     "nome": "CRLV.pdf",
+     "tipo": "crlv",
+     "titulo": "CRLV",
+     "data": null,
+     "paginas": [
+      "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n04486347756\nPLACA\nRCD7A80\nEXERCÍCIO\n2026\nMARCA / MODELO / VERSÃO\nFIAT/FASTBACK\nCHASSI\n9BDVLE8LCK8CM30B5\nNOME\nSERTÃO VERDE AGROINDUSTRIAL S.A.\nCPF / CNPJ\n40.253.280/0001-64\nDATA\n15/01/2026\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "233c3b37b333f10f09ebc8eb24450ba7168787ebf24c8bc410107048c415ded7",
+     "leitura": {
+      "tarefas": {
+       "crlv": {
+        "metodo": "regex"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "ESTATUTO_SOCIAL_CONSOLIDADO_2022",
+     "nome": "ESTATUTO_SOCIAL_CONSOLIDADO_2022.pdf",
+     "tipo": "estatuto_social",
+     "titulo": "Estatuto Social (2022)",
+     "data": "2022-03-18",
+     "paginas": [
+      "ESTATUTO SOCIAL DA SERTÃO VERDE AGROINDUSTRIAL S.A.\nCNPJ nº 40.253.280/0001-64 – NIRE 23300045178\nTexto consolidado aprovado pela Assembleia Geral Extraordinária realizada em 18 de março de\n2022.\nCAPÍTULO I – DA DENOMINAÇÃO, SEDE, OBJETO E DURAÇÃO\nArt. 1º A SERTÃO VERDE AGROINDUSTRIAL S.A. é uma sociedade anônima de capital\nfechado, que se rege por este Estatuto e pela Lei nº 6.404, de 15 de dezembro de 1976, com suas\nalterações posteriores.\nArt. 2º A Companhia tem sede e foro no Município de Maracanaú, Estado do Ceará, na Rodovia\nCE-060, km 14, s/n, Distrito Industrial, CEP 61939-000, podendo abrir, transferir e encerrar filiais,\ndepósitos e escritórios em qualquer ponto do território nacional, por deliberação da Diretoria.\nArt. 3º A Companhia tem por objeto: (a) a industrialização, o beneficiamento e o comércio de frutas\ntropicais, polpas, sucos, néctares, doces e concentrados; (b) a importação e a exportação desses\nprodutos e de insumos destinados à sua fabricação; (c) a armazenagem frigorificada de produtos\npróprios; e (d) a participação no capital de outras sociedades.\nArt. 4º O prazo de duração da Companhia é indeterminado.\nCAPÍTULO II – DO CAPITAL SOCIAL E DAS AÇÕES\nArt. 5º O capital social, totalmente subscrito e integralizado em moeda corrente nacional, é de R$\n12.000.000,00 (doze milhões de reais), dividido em 12.000.000 (doze milhões) de ações ordinárias,\nnominativas e sem valor nominal.\nArt. 6º Cada ação ordinária dá direito a um voto nas deliberações da Assembleia Geral.\nArt. 7º As ações são indivisíveis em relação à Companhia. A transferência das ações opera-se por\ntermo lavrado no Livro de Transferência de Ações Nominativas, assegurado aos demais acionistas o\ndireito de preferência na aquisição das ações que qualquer deles pretenda alienar, na proporção das\nrespectivas participações.\nCAPÍTULO III – DA ASSEMBLEIA GERAL\nArt. 8º A Assembleia Geral reunir-se-á ordinariamente nos 4 (quatro) primeiros meses seguintes ao\ntérmino do exercício social e, extraordinariamente, sempre que os interesses sociais o exigirem.\nArt. 9º A Assembleia Geral será convocada pelo Presidente do Conselho de Administração, ou na\nforma prevista em lei, e será presidida por acionista escolhido pelos presentes, a quem caberá indicar\no secretário dos trabalhos.\nArt. 10. Compete à Assembleia Geral, além das matérias que lhe são atribuídas por lei, eleger e\ndestituir os membros do Conselho de Administração, designar o seu Presidente e fixar a\nremuneração global dos administradores.\nCAPÍTULO IV – DA ADMINISTRAÇÃO\nSeção I – Disposições Gerais\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/4",
+      "Art. 11. A Companhia será administrada por um Conselho de Administração e por uma Diretoria,\ncom as atribuições conferidas pela lei e por este Estatuto.\nArt. 12. Os administradores serão investidos em seus cargos mediante assinatura de termo de posse\nno livro próprio, dentro dos 30 (trinta) dias que se seguirem à respectiva eleição, e prestarão as\ndeclarações exigidas pela legislação aplicável.\nSeção II – Do Conselho de Administração\nArt. 13. O Conselho de Administração será composto por 3 (três) membros, acionistas ou não,\neleitos pela Assembleia Geral para mandato de 3 (três) anos, permitida a reeleição.\nArt. 14. O Conselho de Administração reunir-se-á sempre que convocado por seu Presidente ou por\ndois de seus membros, instalando-se com a presença da maioria de seus integrantes e deliberando\npelo voto da maioria dos presentes. As deliberações constarão de atas lavradas no livro próprio.\nArt. 15. Compete ao Conselho de Administração:\nI – fixar a orientação geral dos negócios da Companhia;\nII – eleger e destituir os Diretores e fixar-lhes as atribuições, observado o disposto neste Estatuto;\nIII – fiscalizar a gestão dos Diretores, examinar a qualquer tempo os livros e papéis da Companhia e\nsolicitar informações sobre contratos celebrados ou em via de celebração;\nIV – convocar a Assembleia Geral quando julgar conveniente;\nV – manifestar-se sobre o relatório da administração e as contas da Diretoria;\nVI – escolher e destituir os auditores independentes, se houver;\nVII – autorizar a alienação ou a oneração de bens do ativo não circulante cujo valor, por operação,\nseja superior a R$ 500.000,00 (quinhentos mil reais);\nVIII – autorizar a prestação de garantias, de qualquer valor, a obrigações de terceiros.\nSeção III – Da Diretoria\nArt. 16. A Diretoria será composta por 3 (três) membros, acionistas ou não, residentes no País,\neleitos pelo Conselho de Administração, com as designações de Diretor-Presidente, Diretor\nAdministrativo-Financeiro e Diretor Industrial, para mandato de 3 (três) anos, permitida a reeleição.\nParágrafo único. Vagando cargo de Diretor, o Conselho de Administração elegerá o substituto, que\ncompletará o mandato do substituído.\nArt. 17. Compete à Diretoria a gestão dos negócios sociais e a prática de todos os atos necessários ao\nfuncionamento regular da Companhia, inclusive alienar ou onerar bens do ativo não circulante cujo\nvalor, por operação, não ultrapasse o limite fixado no inciso VII do art. 15, hipótese em que fica\ndispensada a autorização do Conselho de Administração.\nArt. 18. A Companhia será representada, ativa e passivamente, em juízo ou fora dele, e somente se\nobrigará perante terceiros:\n(a) pela assinatura conjunta de 2 (dois) Diretores; ou\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/4",
+      "(b) pela assinatura de 1 (um) Diretor em conjunto com 1 (um) procurador, nos limites dos poderes\nconstantes do respectivo instrumento de mandato.\n§ 1º Qualquer dos Diretores poderá, isoladamente, representar a Companhia em atos de mero\nexpediente, tais como o endosso de cheques para depósito em contas da própria Companhia, a\nassinatura de correspondências e a representação perante repartições públicas federais, estaduais e\nmunicipais, autarquias e concessionárias de serviços públicos, desde que tais atos não importem\nassunção de obrigações, renúncia de direitos ou alienação de bens.\n§ 2º As procurações serão outorgadas em nome da Companhia por 2 (dois) Diretores em conjunto e\nespecificarão os atos e operações que os mandatários poderão praticar e o prazo do mandato, que\nnão excederá 1 (um) ano, salvo as procurações para fins judiciais, que poderão ser outorgadas por\nprazo indeterminado.\n§ 3º São ineficazes em relação à Companhia os atos praticados em desacordo com o disposto neste\nartigo.\nArt. 19. É vedado aos administradores o uso da denominação social em negócios estranhos ao objeto\nsocial, especialmente em avais, fianças e endossos de favor.\nCAPÍTULO V – DO CONSELHO FISCAL\nArt. 20. A Companhia terá um Conselho Fiscal de funcionamento não permanente, composto por 3\n(três) membros efetivos e igual número de suplentes, que somente será instalado a pedido de\nacionistas, nas hipóteses previstas em lei.\nCAPÍTULO VI – DO EXERCÍCIO SOCIAL E DA DESTINAÇÃO DOS LUCROS\nArt. 21. O exercício social coincide com o ano civil. Ao término de cada exercício, a Diretoria fará\nelaborar as demonstrações financeiras exigidas por lei.\nArt. 22. Do lucro líquido do exercício, 5% (cinco por cento) serão aplicados na constituição da\nreserva legal, até que esta atinja 20% (vinte por cento) do capital social; do saldo ajustado na forma\nda lei, 25% (vinte e cinco por cento) serão distribuídos aos acionistas como dividendo mínimo\nobrigatório, e o remanescente terá a destinação que a Assembleia Geral determinar.\nCAPÍTULO VII – DA LIQUIDAÇÃO E DAS DISPOSIÇÕES GERAIS\nArt. 23. A Companhia entrará em liquidação nos casos previstos em lei, competindo à Assembleia\nGeral determinar o modo de liquidação e eleger o liquidante.\nArt. 24. Os casos omissos neste Estatuto serão resolvidos pela Assembleia Geral, observadas as\ndisposições da Lei nº 6.404/1976.\nMaracanaú/CE, 18 de março de 2022.\nMesa da Assembleia Geral Extraordinária:\nANTÔNIO CARLOS FEITOSA NETO – Presidente\nLÚCIA HELENA BRÍGIDO SAMPAIO – Secretária\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/4",
+      "Visto: HENRIQUE SABOIA ROLIM – OAB/CE nº 18.442\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 05/04/2022 sob o nº 6087312\nProtocolo: 22/041873-5 | NIRE: 23300045178\nEmpresa: SERTÃO VERDE AGROINDUSTRIAL S.A.\nAutenticação: 7A3F9C21E04B5D88\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 4/4"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "dd617b91c18df66bcedf5406f13dc99885c1118880b54e0cf669e0e47c13bf9e",
+     "leitura": {
+      "tarefas": {
+       "partes": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 26.5,
+        "tokens_saida": 402,
+        "modelo": "qwen3.8-27b"
+       },
+       "regras": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 85.1,
+        "tokens_saida": 1951,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "PROCURACAO_PUBLICA_2026_02_10",
+     "nome": "PROCURACAO_PUBLICA_2026_02_10.pdf",
+     "tipo": "procuracao",
+     "titulo": "Procuração (2026)",
+     "data": "2026-02-10",
+     "paginas": [
+      "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCARTÓRIO DO 4º OFÍCIO DE NOTAS DE MARACANAÚ (fictício)\nLivro nº 196 – Folhas 077/078\nPROCURAÇÃO BASTANTE QUE FAZ SERTÃO VERDE AGROINDUSTRIAL S.A. A\nFAVOR DE FRANCISCO WELLINGTON LIMA BASTOS, NA FORMA ABAIXO:\nSAIBAM quantos este público instrumento de procuração virem que, aos 10 (dez) dias do mês de\nfevereiro do ano de 2026 (dois mil e vinte e seis), nesta cidade de Maracanaú, Estado do Ceará,\nneste Cartório do 4º Ofício de Notas, perante mim, Escrevente Autorizado, compareceu como\nOUTORGANTE: SERTÃO VERDE AGROINDUSTRIAL S.A., sociedade anônima de capital\nfechado, inscrita no CNPJ sob o nº 40.253.280/0001-64, NIRE 23300045178, com sede na Rodovia\nCE-060, km 14, s/n, Distrito Industrial, Maracanaú/CE, CEP 61939-000, neste ato representada por\nseu Diretor-Presidente, ROGÉRIO ALENCAR FEITOSA, brasileiro, casado, engenheiro de\nalimentos, portador da cédula de identidade RG nº 2001009876543 SSP/CE, inscrito no CPF sob o\nnº 405.235.809-08, residente e domiciliado na Rua Tibúrcio Cavalcante, nº 2.315, apartamento\n1.102, Aldeota, Fortaleza/CE, eleito na Reunião do Conselho de Administração de 27/04/2023,\nregistrada na Junta Comercial do Estado do Ceará – JUCEC em 16/05/2023 sob o nº 6214587, e\ninvestido dos poderes previstos no Estatuto Social consolidado, registrado na JUCEC em 05/04/2022\nsob o nº 6087312, documentos cujas cópias ficam arquivadas nestas Notas na pasta de documentos\nde pessoas jurídicas; reconhecido como o próprio por mim, à vista dos documentos de identificação\napresentados, do que dou fé.\nE, pela outorgante, na forma em que vem representada, me foi dito que, por este público instrumento\ne nos melhores termos de direito, nomeia e constitui seu bastante procurador: FRANCISCO\nWELLINGTON LIMA BASTOS, brasileiro, solteiro, tecnólogo em logística, portador da cédula de\nidentidade RG nº 2008045678901 SSP/CE, inscrito no CPF sob o nº 927.793.768-80, residente e\ndomiciliado na Rua Major Agostinho, nº 312, Centro, Maranguape/CE, CEP 61940-000, empregado\nda outorgante no cargo de Gerente de Logística, a quem confere poderes para, sempre em conjunto\ncom qualquer dos Diretores da outorgante, vender, permutar ou por qualquer outra forma alienar\nveículos automotores integrantes da frota da outorgante, pelos preços e condições que ajustar;\nassinar contratos, recibos, termos de entrega e a Autorização para Transferência de Propriedade do\nVeículo, em meio físico ou digital (ATPV ou ATPV-e); receber valores e dar quitação; representar a\noutorgante perante o Departamento Estadual de Trânsito do Ceará – DETRAN/CE, suas\nCircunscrições Regionais e demais órgãos de trânsito, podendo requerer, assinar requerimentos e\ndeclarações, pagar taxas, tributos e multas, e praticar todos os demais atos necessários ao fiel\ncumprimento deste mandato.\nO presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data, sendo vedado o\nsubstabelecimento.\nAssim o disse, do que dou fé, e me pediu que lhe lavrasse este instrumento, o qual, feito e lido em\nvoz alta, foi achado conforme, aceito e assinado pelo representante da outorgante, dispensada a\npresença de testemunhas, nos termos do Código de Normas do Serviço Notarial e Registral do\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "Estado do Ceará. Emolumentos: R$ 214,60. FERMOJU: R$ 10,73. Selo: R$ 4,29. Total: R$ 229,62.\nSelo Digital de Fiscalização nº TN-CE-2026-0072215-B3E1. Eu, CARLOS EDUARDO LEMOS\nFARIAS, Escrevente Autorizado, a lavrei. Eu, MARIA AUXILIADORA PINHEIRO RAMOS,\nTabeliã, a subscrevo e assino.\n(a.a.) ROGÉRIO ALENCAR FEITOSA. MARIA AUXILIADORA PINHEIRO RAMOS – Tabeliã.\nTRASLADO – Nada mais. Trasladada em seguida, confere em tudo com o original, ao qual me\nreporto e dou fé.\nMaracanaú/CE, 10 de fevereiro de 2026.\nMARIA AUXILIADORA PINHEIRO RAMOS – Tabeliã\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "6abb86c5df34df4af02ed20d3f6360c716358ef76f2141f92a5062404af009be",
+     "leitura": {
+      "tarefas": {
+       "procuracao": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 43.7,
+        "tokens_saida": 784,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "llamacpp",
+    "modelo": "qwen3.8-27b",
+    "politica": "DETRAN-CE"
+   },
+   "lado": "vendedor"
+  }
+ },
+ "geral": {
+  "veredito": "PODE",
+  "faixa": "AMARELO",
+  "indice": 86.2,
+  "resumo": "Vendedor: Lúcia Helena Brígido Sampaio e Rogério Alencar Feitosa podem, em conjunto, assinar a ATPV-e — regra geral de representação — Art. 18, incisos (a) e (b); regra geral de representação — Art. 18, § 1º.",
+  "motivos_faixa": [
+   "Vendedor — 1 fato(s) decisivo(s) com citação pouco ancorada no texto"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "FIAT/FASTBACK",
+   "placa": "RCD7A80",
+   "renavam": "04486347756",
+   "chassi": "9BDVLE8LCK8CM30B5"
+  },
+  "data_venda": "2026-09-10",
+  "valor": 118500.0,
+  "vendedor": {
+   "tipo": "PJ",
+   "nome": "SERTÃO VERDE AGROINDUSTRIAL S.A.",
+   "documento": "40.253.280/0001-64",
+   "assinantes": [
+    {
+     "nome": "ROGÉRIO ALENCAR FEITOSA",
+     "cpf": "405.235.809-08"
+    },
+    {
+     "nome": "LÚCIA HELENA BRÍGIDO SAMPAIO",
+     "cpf": "156.792.801-32"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": "CÍCERO DAMASCENO ROLIM",
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "informado"
+ },
+ "hash_entrada": "657e3c2f1bc603908eaaaa952593a7143c97e7db762289765829c52cb5562396"
+}

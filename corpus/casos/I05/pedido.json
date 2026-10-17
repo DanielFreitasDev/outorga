@@ -1,0 +1,29 @@
+{
+  "caso": "I05",
+  "vendedor": {
+    "razao_social": "SOBRAL ENGENHARIA E SANEAMENTO LTDA",
+    "cnpj": "66.331.219/0001-81"
+  },
+  "veiculo": {
+    "placa": "UFZ6V24",
+    "renavam": "02657921218",
+    "chassi": "9BDVAPHTEEH2W26XN",
+    "descricao": "FIAT/CRONOS"
+  },
+  "data_venda": "2026-08-12",
+  "valor": 84000.0,
+  "assinantes": [
+    {
+      "nome": "GILDÁSIO PRADO CARNEIRO",
+      "cpf": "373.595.916-43"
+    }
+  ],
+  "crlv_proprietario": {
+    "nome": "SOBRAL ENGENHARIA E SANEAMENTO LTDA",
+    "documento": "66.331.219/0001-81"
+  },
+  "comprador": {
+    "nome": "EDILSON BATISTA FROTA"
+  },
+  "forma_assinatura": "ATPV-e"
+}

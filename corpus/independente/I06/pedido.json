@@ -1,0 +1,24 @@
+{
+  "caso": "I06",
+  "vendedor": {
+    "razao_social": "GRANITOS SANTA QUITÉRIA LTDA",
+    "cnpj": "42.301.286/0001-95"
+  },
+  "veiculo": {
+    "placa": "PWB4B97",
+    "renavam": "03137499137",
+    "chassi": "9BD6HAXYX8JGWK40A",
+    "descricao": "FIAT/TITANO"
+  },
+  "data_venda": "2026-08-21",
+  "valor": 186000.00,
+  "assinantes": [
+    {"nome": "IVANILDA BEZERRA CORREIA", "cpf": "129.702.188-60"}
+  ],
+  "crlv_proprietario": {
+    "nome": "GRANITOS SANTA QUITÉRIA LTDA",
+    "documento": "42.301.286/0001-95"
+  },
+  "comprador": {"nome": "MINERAÇÃO SERRA DAS MATAS LTDA"},
+  "forma_assinatura": "ATPV-e"
+}

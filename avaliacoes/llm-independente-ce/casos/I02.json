@@ -1,0 +1,1132 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T06:56:16",
+ "pedido": {
+  "veiculo": {
+   "descricao": "FIAT/DUCATO",
+   "placa": "MLS9L81",
+   "renavam": "09106363909",
+   "chassi": "9BDUV1SG5JPC74ECJ"
+  },
+  "data_venda": "2026-08-19",
+  "valor": 167000.0,
+  "assinantes": [
+   {
+    "nome": "RAIMUNDO NONATO CASTRO FILHO",
+    "cpf": "212.536.260-06"
+   },
+   {
+    "nome": "GERMANA CASTRO LEITE",
+    "cpf": "335.672.125-91"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "TRANSPORTADORA CARIRI EXPRESS LTDA",
+  "vendedor_cnpj": "69.893.229/0001-07"
+ },
+ "empresa": {
+  "razao_social": "CASTRO MOTA DISTRIBUIÇÃO DE BEBIDAS LTDA",
+  "cnpj": "69.893.229/0001-07",
+  "tipo": "LTDA",
+  "objeto": "Distribuição de bebidas",
+  "comercializa_veiculos": false
+ },
+ "veredito": "PODE",
+ "faixa": "VERDE",
+ "indice": 91.2,
+ "confianca": 0.823,
+ "componentes": {
+  "leitura": 0.875,
+  "juridica": 0.94,
+  "fatos_decisivos": 4,
+  "menor_confianca_fato": 0.8,
+  "alertas": 0,
+  "atencoes": 1,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 91.2 ≥ limiar 85"
+ ],
+ "resumo": "Germana Castro Leite e Raimundo Nonato Castro Filho podem, em conjunto, assinar o ATPV — alienação de veículos — Cláusula Oitava, § 2º, I; alienação de veículos — Cláusula Oitava, § 2º, I.",
+ "assinantes": [
+  {
+   "informado": "RAIMUNDO NONATO CASTRO FILHO",
+   "cpf": "212.536.260-06",
+   "chave": "21253626006",
+   "nome": "Raimundo Nonato Castro Filho",
+   "criterio": "CPF"
+  },
+  {
+   "informado": "GERMANA CASTRO LEITE",
+   "cpf": "335.672.125-91",
+   "chave": "33567212591",
+   "nome": "Germana Castro Leite",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:21253626006+33567212591",
+   "pessoas": [
+    {
+     "chave": "33567212591",
+     "nome": "Germana Castro Leite"
+    },
+    {
+     "chave": "21253626006",
+     "nome": "Raimundo Nonato Castro Filho"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "alienação de veículos — Cláusula Oitava, § 2º, I; alienação de veículos — Cláusula Oitava, § 2º, I",
+   "cadeia": [
+    "QUINTA_ALTERACAO_CONSOLIDACAO_2023"
+   ],
+   "severidade": "atencao",
+   "confianca": 0.8,
+   "achados": [
+    {
+     "codigo": "CONFERENCIA_LEXICA",
+     "severidade": "atencao",
+     "titulo": "Leitura da IA corrigida pela conferência léxica",
+     "detalhe": "Campo 'escopo': a IA leu 'onerar_bens', mas as expressões  indicam 'alienacao_veiculos'.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "QUINTA_ALTERACAO_CONSOLIDACAO_2023",
+       "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+       "trecho": "Os atos a seguir relacionados somente obrigarão a sociedade se praticados em conjunto por um Administrador A e um Administrador B: I – a alienação, a oneração, o arrendamento ou a cessão, a qualquer título, de bens do ativo imobilizado, compreendidos os veículos automotores, as máquinas e os equipamentos;",
+       "clausula": "Cláusula Oitava, § 2º, I",
+       "ancoragem": 100.0,
+       "pagina": 3,
+       "inicio": 6221,
+       "fim": 6527
+      }
+     ],
+     "caminho": "contrato"
+    }
+   ],
+   "precondicoes": []
+  },
+  {
+   "id": "contrato:21253626006+42144597685",
+   "pessoas": [
+    {
+     "chave": "42144597685",
+     "nome": "Expedito Mota Sobrinho"
+    },
+    {
+     "chave": "21253626006",
+     "nome": "Raimundo Nonato Castro Filho"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "alienação de veículos — Cláusula Oitava, § 2º, I; alienação de veículos — Cláusula Oitava, § 2º, I",
+   "cadeia": [
+    "QUINTA_ALTERACAO_CONSOLIDACAO_2023"
+   ],
+   "severidade": "atencao",
+   "confianca": 0.8,
+   "achados": [
+    {
+     "codigo": "CONFERENCIA_LEXICA",
+     "severidade": "atencao",
+     "titulo": "Leitura da IA corrigida pela conferência léxica",
+     "detalhe": "Campo 'escopo': a IA leu 'onerar_bens', mas as expressões  indicam 'alienacao_veiculos'.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "QUINTA_ALTERACAO_CONSOLIDACAO_2023",
+       "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+       "trecho": "Os atos a seguir relacionados somente obrigarão a sociedade se praticados em conjunto por um Administrador A e um Administrador B: I – a alienação, a oneração, o arrendamento ou a cessão, a qualquer título, de bens do ativo imobilizado, compreendidos os veículos automotores, as máquinas e os equipamentos;",
+       "clausula": "Cláusula Oitava, § 2º, I",
+       "ancoragem": 100.0,
+       "pagina": 3,
+       "inicio": 6221,
+       "fim": 6527
+      }
+     ],
+     "caminho": "contrato"
+    }
+   ],
+   "precondicoes": []
+  },
+  {
+   "id": "contrato:33567212591+42144597685",
+   "pessoas": [
+    {
+     "chave": "42144597685",
+     "nome": "Expedito Mota Sobrinho"
+    },
+    {
+     "chave": "33567212591",
+     "nome": "Germana Castro Leite"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "alienação de veículos — Cláusula Oitava, § 2º, I; alienação de veículos — Cláusula Oitava, § 2º, I",
+   "cadeia": [
+    "QUINTA_ALTERACAO_CONSOLIDACAO_2023"
+   ],
+   "severidade": "atencao",
+   "confianca": 0.8,
+   "achados": [
+    {
+     "codigo": "CONFERENCIA_LEXICA",
+     "severidade": "atencao",
+     "titulo": "Leitura da IA corrigida pela conferência léxica",
+     "detalhe": "Campo 'escopo': a IA leu 'onerar_bens', mas as expressões  indicam 'alienacao_veiculos'.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "QUINTA_ALTERACAO_CONSOLIDACAO_2023",
+       "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+       "trecho": "Os atos a seguir relacionados somente obrigarão a sociedade se praticados em conjunto por um Administrador A e um Administrador B: I – a alienação, a oneração, o arrendamento ou a cessão, a qualquer título, de bens do ativo imobilizado, compreendidos os veículos automotores, as máquinas e os equipamentos;",
+       "clausula": "Cláusula Oitava, § 2º, I",
+       "ancoragem": 100.0,
+       "pagina": 3,
+       "inicio": 6221,
+       "fim": 6527
+      }
+     ],
+     "caminho": "contrato"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [
+  {
+   "id": "PROCURACAO_PUBLICA_2026_03_03:bloqueada",
+   "pessoas": [
+    {
+     "chave": "39847500568",
+     "nome": "Antônio Wagner Saraiva Brito"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 03/03/2026 (CARTÓRIO TELES LEITE – 2º OFÍCIO DE NOTAS DE JUAZEIRO DO NORTE)",
+   "cadeia": [
+    "PROCURACAO_PUBLICA_2026_03_03"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PJ",
+     "severidade": "ok",
+     "titulo": "Outorgada pela própria empresa",
+     "detalhe": "A outorgante é a empresa, representada por Expedito Mota Sobrinho e Raimundo Nonato Castro Filho.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_03_03",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "compareceu como OUTORGANTE: CASTRO MOTA DISTRIBUIÇÃO DE BEBIDAS LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº 69.893.229/0001-07",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 482,
+       "fim": 627
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2026_03_03"
+    },
+    {
+     "codigo": "OUTORGA_COM_PODERES",
+     "severidade": "ok",
+     "titulo": "Quem outorgou tinha poder",
+     "detalhe": "Em 03/03/2026, Expedito Mota Sobrinho e Raimundo Nonato Castro Filho podia representar a empresa nesse ato.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_03_03",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "compareceu como OUTORGANTE: CASTRO MOTA DISTRIBUIÇÃO DE BEBIDAS LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº 69.893.229/0001-07",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 482,
+       "fim": 627
+      },
+      {
+       "doc_id": "QUINTA_ALTERACAO_CONSOLIDACAO_2023",
+       "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+       "trecho": "Os atos a seguir relacionados somente obrigarão a sociedade se praticados em conjunto por um Administrador A e um Administrador B: I – a alienação, a oneração, o arrendamento ou a cessão, a qualquer título, de bens do ativo imobilizado, compreendidos os veículos automotores, as máquinas e os equipamentos;",
+       "clausula": "Cláusula Oitava, § 2º, I",
+       "ancoragem": 100.0,
+       "pagina": 3,
+       "inicio": 6221,
+       "fim": 6527
+      },
+      {
+       "doc_id": "QUINTA_ALTERACAO_CONSOLIDACAO_2023",
+       "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+       "trecho": "Os atos a seguir relacionados somente obrigarão a sociedade se praticados em conjunto por um Administrador A e um Administrador B: I – a alienação, a oneração, o arrendamento ou a cessão, a qualquer título, de bens do ativo imobilizado, compreendidos os veículos automotores, as máquinas e os equipamentos;",
+       "clausula": "Cláusula Oitava, § 2º, I",
+       "ancoragem": 100.0,
+       "pagina": 3,
+       "inicio": 6221,
+       "fim": 6527
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2026_03_03"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar o ATPV.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_03_03",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "ao qual confere poderes especiais e expressos para vender, a quem convier e pelo preço e condições que ajustar, o veículo de propriedade da outorgante marca/modelo FIAT/STRADA, placa FML8E58, RENAVAM 05292418451, chassi 9BDKR9B3V8DCNHU7U, podendo, para tanto, assinar a Autorização para Transferência de Propriedade do Veículo (ATPV-e) e os demais documentos necessários, receber o preço e dar quitação, representar a outorgante perante o DETRAN/CE e suas unidades, requerer vistoria, pagar taxas e débitos incidentes sobre o veículo e praticar os demais atos indispensáveis à conclusão da venda do referido veículo.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2076,
+       "fim": 2692
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2026_03_03"
+    },
+    {
+     "codigo": "VEICULO_NAO_ABRANGIDO",
+     "severidade": "bloqueio",
+     "titulo": "Procuração é para outro veículo",
+     "detalhe": "A procuração só abrange FIAT/STRADA, não o veículo da venda (MLS9L81).",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_03_03",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "ao qual confere poderes especiais e expressos para vender, a quem convier e pelo preço e condições que ajustar, o veículo de propriedade da outorgante marca/modelo FIAT/STRADA, placa FML8E58, RENAVAM 05292418451, chassi 9BDKR9B3V8DCNHU7U, podendo, para tanto, assinar a Autorização para Transferência de Propriedade do Veículo (ATPV-e) e os demais documentos necessários, receber o preço e dar quitação, representar a outorgante perante o DETRAN/CE e suas unidades, requerer vistoria, pagar taxas e débitos incidentes sobre o veículo e praticar os demais atos indispensáveis à conclusão da venda do referido veículo.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2076,
+       "fim": 2692
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2026_03_03"
+    },
+    {
+     "codigo": "PROCURACAO_NO_PRAZO",
+     "severidade": "ok",
+     "titulo": "Dentro do prazo",
+     "detalhe": "Válida até 03/03/2027.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_03_03",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "O presente mandato é outorgado pelo prazo de 1 (um) ano, contado desta data, vedado o substabelecimento.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2693,
+       "fim": 2797
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2026_03_03"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminho_escolhido": {
+  "id": "contrato:21253626006+33567212591",
+  "pessoas": [
+   {
+    "chave": "33567212591",
+    "nome": "Germana Castro Leite"
+   },
+   {
+    "chave": "21253626006",
+    "nome": "Raimundo Nonato Castro Filho"
+   }
+  ],
+  "via": "contrato",
+  "descricao": "alienação de veículos — Cláusula Oitava, § 2º, I; alienação de veículos — Cláusula Oitava, § 2º, I",
+  "cadeia": [
+   "QUINTA_ALTERACAO_CONSOLIDACAO_2023"
+  ],
+  "severidade": "atencao",
+  "confianca": 0.8,
+  "achados": [
+   {
+    "codigo": "CONFERENCIA_LEXICA",
+    "severidade": "atencao",
+    "titulo": "Leitura da IA corrigida pela conferência léxica",
+    "detalhe": "Campo 'escopo': a IA leu 'onerar_bens', mas as expressões  indicam 'alienacao_veiculos'.",
+    "fundamento": [],
+    "fontes": [
+     {
+      "doc_id": "QUINTA_ALTERACAO_CONSOLIDACAO_2023",
+      "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+      "trecho": "Os atos a seguir relacionados somente obrigarão a sociedade se praticados em conjunto por um Administrador A e um Administrador B: I – a alienação, a oneração, o arrendamento ou a cessão, a qualquer título, de bens do ativo imobilizado, compreendidos os veículos automotores, as máquinas e os equipamentos;",
+      "clausula": "Cláusula Oitava, § 2º, I",
+      "ancoragem": 100.0,
+      "pagina": 3,
+      "inicio": 6221,
+      "fim": 6527
+     }
+    ],
+    "caminho": "contrato"
+   }
+  ],
+  "precondicoes": []
+ },
+ "faltantes": [],
+ "achados": [
+  {
+   "codigo": "CND_INSS",
+   "severidade": "info",
+   "titulo": "CND previdenciária",
+   "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+   "fundamento": [
+    "Lei 8.212/91, art. 47, I, \"c\""
+   ],
+   "fontes": [],
+   "caminho": null
+  },
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: CASTRO MOTA DISTRIBUIÇÃO DE BEBIDAS LTDA.",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "MLS9L81",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "QUINTA_ALTERACAO_CONSOLIDACAO_2023#R2",
+   "escopo": "alienacao_ativo_imobilizado",
+   "aplicavel": true,
+   "motivo": "alienação de ativo imobilizado/não circulante",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "QUINTA_ALTERACAO_CONSOLIDACAO_2023",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "Os atos a seguir relacionados somente obrigarão a sociedade se praticados em conjunto por um Administrador A e um Administrador B: I – a alienação, a oneração, o arrendamento ou a cessão, a qualquer título, de bens do ativo imobilizado, compreendidos os veículos automotores, as máquinas e os equipamentos;",
+    "clausula": "Cláusula Oitava, § 2º, I",
+    "ancoragem": 100.0,
+    "pagina": 3,
+    "inicio": 6221,
+    "fim": 6527
+   },
+   "modo": "conjunto",
+   "pessoas": [
+    "Raimundo Nonato Castro Filho",
+    "Germana Castro Leite",
+    "Expedito Mota Sobrinho",
+    "Francisca Valdenia Mota Tavares"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "conjunto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "em conjunto"
+     ]
+    }
+   ],
+   "decisiva": false
+  },
+  {
+   "regra": "QUINTA_ALTERACAO_CONSOLIDACAO_2023#R3",
+   "escopo": "alienacao_veiculos",
+   "aplicavel": true,
+   "motivo": "alienação de veículos",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "QUINTA_ALTERACAO_CONSOLIDACAO_2023",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "Os atos a seguir relacionados somente obrigarão a sociedade se praticados em conjunto por um Administrador A e um Administrador B: I – a alienação, a oneração, o arrendamento ou a cessão, a qualquer título, de bens do ativo imobilizado, compreendidos os veículos automotores, as máquinas e os equipamentos;",
+    "clausula": "Cláusula Oitava, § 2º, I",
+    "ancoragem": 100.0,
+    "pagina": 3,
+    "inicio": 6221,
+    "fim": 6527
+   },
+   "modo": "conjunto",
+   "pessoas": [
+    "Raimundo Nonato Castro Filho",
+    "Germana Castro Leite",
+    "Expedito Mota Sobrinho",
+    "Francisca Valdenia Mota Tavares"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "conjunto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "em conjunto"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "QUINTA_ALTERACAO_CONSOLIDACAO_2023#R4",
+   "escopo": "alienacao_veiculos",
+   "aplicavel": true,
+   "motivo": "alienação de veículos",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "QUINTA_ALTERACAO_CONSOLIDACAO_2023",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "Os atos a seguir relacionados somente obrigarão a sociedade se praticados em conjunto por um Administrador A e um Administrador B: I – a alienação, a oneração, o arrendamento ou a cessão, a qualquer título, de bens do ativo imobilizado, compreendidos os veículos automotores, as máquinas e os equipamentos;",
+    "clausula": "Cláusula Oitava, § 2º, I",
+    "ancoragem": 100.0,
+    "pagina": 3,
+    "inicio": 6221,
+    "fim": 6527
+   },
+   "modo": "conjunto",
+   "pessoas": [
+    "Raimundo Nonato Castro Filho",
+    "Germana Castro Leite",
+    "Expedito Mota Sobrinho",
+    "Francisca Valdenia Mota Tavares"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 0.8,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "conjunto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "em conjunto"
+     ]
+    },
+    {
+     "campo": "escopo",
+     "valor_llm": "onerar_bens",
+     "valor_lexico": "alienacao_veiculos",
+     "divergiu": true,
+     "corrigido_para": "alienacao_veiculos",
+     "expressoes": []
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "QUINTA_ALTERACAO_CONSOLIDACAO_2023#R5",
+   "escopo": "outorgar_procuracoes",
+   "aplicavel": false,
+   "motivo": "regula a outorga de procurações (usada para validar procurações)",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "QUINTA_ALTERACAO_CONSOLIDACAO_2023",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "Os atos a seguir relacionados somente obrigarão a sociedade se praticados em conjunto por um Administrador A e um Administrador B: IV – a constituição de procuradores para quaisquer dos atos deste parágrafo, devendo o instrumento especificar os atos autorizados e o prazo do mandato, não superior a 1 (um) ano.",
+    "clausula": "Cláusula Oitava, § 2º, IV",
+    "ancoragem": 77.4,
+    "pagina": 3,
+    "inicio": 6559,
+    "fim": 6869
+   },
+   "modo": "conjunto",
+   "pessoas": [
+    "Raimundo Nonato Castro Filho",
+    "Germana Castro Leite",
+    "Expedito Mota Sobrinho",
+    "Francisca Valdenia Mota Tavares"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 0.811,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "conjunto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "em conjunto"
+     ]
+    }
+   ],
+   "decisiva": false
+  },
+  {
+   "regra": "QUINTA_ALTERACAO_CONSOLIDACAO_2023#R6",
+   "escopo": "obrigacoes_garantias",
+   "aplicavel": false,
+   "motivo": "trata de avais, fianças e garantias",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "QUINTA_ALTERACAO_CONSOLIDACAO_2023",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "É vedado o uso da denominação social em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+    "clausula": "Cláusula Oitava, § 4º",
+    "ancoragem": 100.0,
+    "pagina": 3,
+    "inicio": 7056,
+    "fim": 7187
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "SEXTA_ALTERACAO_2026_06_30#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "SEXTA_ALTERACAO_2026_06_30",
+    "doc_titulo": "Alteração Contratual (2026)",
+    "trecho": "A sociedade será administrada por até 4 (quatro) administradores, sócios ou não, sendo até 2 (dois) indicados pelos titulares das quotas classe A ('Administradores A') e até 2 (dois) indicados pelos titulares das quotas classe B ('Administradores B'), encontrando-se designados, por prazo indeterminado: como Administradores A, RAIMUNDO NONATO CASTRO FILHO e GERMANA CASTRO LEITE; e como Administrador B, EXPEDITO MOTA SOBRINHO.",
+    "clausula": "Cláusula Oitava, Caput",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2745,
+    "fim": 3173
+   },
+   "modo": "nao_especificado",
+   "pessoas": [
+    "Raimundo Nonato Castro Filho",
+    "Germana Castro Leite",
+    "Expedito Mota Sobrinho"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-08-19",
+  "atos": [
+   {
+    "doc": "QUINTA_ALTERACAO_CONSOLIDACAO_2023",
+    "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "efeito": "2023-03-14"
+   },
+   {
+    "doc": "SEXTA_ALTERACAO_2026_06_30",
+    "titulo": "Alteração Contratual (2026)",
+    "efeito": "2026-06-30"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "21253626006",
+    "nome": "Raimundo Nonato Castro Filho",
+    "cargo": "Administrador A",
+    "doc": "SEXTA_ALTERACAO_2026_06_30"
+   },
+   {
+    "chave": "33567212591",
+    "nome": "Germana Castro Leite",
+    "cargo": "Administradora A",
+    "doc": "SEXTA_ALTERACAO_2026_06_30"
+   },
+   {
+    "chave": "42144597685",
+    "nome": "Expedito Mota Sobrinho",
+    "cargo": "Administrador B",
+    "doc": "SEXTA_ALTERACAO_2026_06_30"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "21253626006",
+    "nome": "Raimundo Nonato Castro Filho",
+    "percentual": 25.0
+   },
+   {
+    "chave": "33567212591",
+    "nome": "Germana Castro Leite",
+    "percentual": 25.0
+   },
+   {
+    "chave": "42144597685",
+    "nome": "Expedito Mota Sobrinho",
+    "percentual": 25.0
+   },
+   {
+    "chave": "86830740720",
+    "nome": "Francisca Valdenia Mota Tavares",
+    "percentual": 25.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "CASTRO MOTA DISTRIBUIÇÃO DE BEBIDAS LTDA",
+    "sub": "69.893.229/0001-07"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "FIAT/DUCATO",
+    "sub": "MLS9L81"
+   },
+   {
+    "id": "21253626006",
+    "tipo": "pessoa",
+    "rotulo": "Raimundo Nonato Castro Filho",
+    "papeis": [
+     "sócio 25%",
+     "Administrador A"
+    ],
+    "assinante": true
+   },
+   {
+    "id": "33567212591",
+    "tipo": "pessoa",
+    "rotulo": "Germana Castro Leite",
+    "papeis": [
+     "sócio 25%",
+     "Administradora A"
+    ],
+    "assinante": true
+   },
+   {
+    "id": "42144597685",
+    "tipo": "pessoa",
+    "rotulo": "Expedito Mota Sobrinho",
+    "papeis": [
+     "sócio 25%",
+     "Administrador B"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "86830740720",
+    "tipo": "pessoa",
+    "rotulo": "Francisca Valdenia Mota Tavares",
+    "papeis": [
+     "sócio 25%"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "39847500568",
+    "tipo": "pessoa",
+    "rotulo": "Antônio Wagner Saraiva Brito",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": false
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "21253626006",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "25%",
+    "status": "neutro"
+   },
+   {
+    "de": "33567212591",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "25%",
+    "status": "neutro"
+   },
+   {
+    "de": "42144597685",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "25%",
+    "status": "neutro"
+   },
+   {
+    "de": "86830740720",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "25%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "21253626006",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "SEXTA_ALTERACAO_2026_06_30"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "33567212591",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "SEXTA_ALTERACAO_2026_06_30"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "42144597685",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "SEXTA_ALTERACAO_2026_06_30"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "39847500568",
+    "tipo": "procuracao",
+    "status": "invalido",
+    "doc": "PROCURACAO_PUBLICA_2026_03_03",
+    "rotulo": "procuração 03/03/2026 · Procuração é para outro veículo",
+    "motivo": "Procuração é para outro veículo"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2023-03-14",
+   "tipo": "ato",
+   "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+   "doc": "QUINTA_ALTERACAO_CONSOLIDACAO_2023",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-03-03",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Antônio Wagner Saraiva Brito",
+   "doc": "PROCURACAO_PUBLICA_2026_03_03",
+   "detalhe": "publica"
+  },
+  {
+   "data": "2026-06-30",
+   "tipo": "ato",
+   "titulo": "Alteração Contratual (2026)",
+   "doc": "SEXTA_ALTERACAO_2026_06_30",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-08-19",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 167.000,00"
+  },
+  {
+   "data": "2027-03-03",
+   "tipo": "vencimento",
+   "titulo": "Vence a procuração de Antônio Wagner Saraiva Brito",
+   "doc": "PROCURACAO_PUBLICA_2026_03_03",
+   "detalhe": ""
+  }
+ ],
+ "pessoas": {
+  "21253626006": {
+   "nome": "Raimundo Nonato Castro Filho",
+   "cpf": "21253626006"
+  },
+  "42144597685": {
+   "nome": "Expedito Mota Sobrinho",
+   "cpf": "42144597685"
+  },
+  "39847500568": {
+   "nome": "Antônio Wagner Saraiva Brito",
+   "cpf": "39847500568"
+  },
+  "33567212591": {
+   "nome": "Germana Castro Leite",
+   "cpf": "33567212591"
+  },
+  "86830740720": {
+   "nome": "Francisca Valdenia Mota Tavares",
+   "cpf": "86830740720"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "comprovada",
+  "outorgante": {
+   "nome": "CASTRO MOTA DISTRIBUIÇÃO DE BEBIDAS LTDA",
+   "cnpj": "69.893.229/0001-07",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+     "doc": "QUINTA_ALTERACAO_CONSOLIDACAO_2023",
+     "efeito": "2023-03-14"
+    },
+    {
+     "titulo": "Alteração Contratual (2026)",
+     "doc": "SEXTA_ALTERACAO_2026_06_30",
+     "efeito": "2026-06-30"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Raimundo Nonato Castro Filho",
+    "cpf": "212.536.260-06",
+    "identificacao": "CPF",
+    "qualidade": "Administrador A"
+   },
+   {
+    "nome": "Germana Castro Leite",
+    "cpf": "335.672.125-91",
+    "identificacao": "CPF",
+    "qualidade": "Administradora A"
+   }
+  ],
+  "poderes_conferidos": [
+   "Alteração e Consolidação do Contrato Social (2023), Cláusula Oitava, § 2º, I: assinatura conjunta exigida",
+   "Alteração e Consolidação do Contrato Social (2023), Cláusula Oitava, § 2º, I: assinatura conjunta exigida"
+  ],
+  "prazo_validade": [
+   "Raimundo Nonato Castro Filho (Administrador A): mandato por prazo indeterminado",
+   "Germana Castro Leite (Administradora A): mandato por prazo indeterminado"
+  ],
+  "revogacao": [
+   "Poder decorre do ato constitutivo vigente na data da venda; recomenda-se certidão simplificada atualizada da Junta Comercial para afastar alteração posterior ainda não apresentada."
+  ],
+  "fontes": [
+   {
+    "doc_id": "QUINTA_ALTERACAO_CONSOLIDACAO_2023",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "Os atos a seguir relacionados somente obrigarão a sociedade se praticados em conjunto por um Administrador A e um Administrador B: I – a alienação, a oneração, o arrendamento ou a cessão, a qualquer título, de bens do ativo imobilizado, compreendidos os veículos automotores, as máquinas e os equipamentos;",
+    "clausula": "Cláusula Oitava, § 2º, I",
+    "ancoragem": 100.0,
+    "pagina": 3,
+    "inicio": 6221,
+    "fim": 6527
+   },
+   {
+    "doc_id": "QUINTA_ALTERACAO_CONSOLIDACAO_2023",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "Os atos a seguir relacionados somente obrigarão a sociedade se praticados em conjunto por um Administrador A e um Administrador B: I – a alienação, a oneração, o arrendamento ou a cessão, a qualquer título, de bens do ativo imobilizado, compreendidos os veículos automotores, as máquinas e os equipamentos;",
+    "clausula": "Cláusula Oitava, § 2º, I",
+    "ancoragem": 100.0,
+    "pagina": 3,
+    "inicio": 6221,
+    "fim": 6527
+   },
+   {
+    "doc_id": "SEXTA_ALTERACAO_2026_06_30",
+    "doc_titulo": "Alteração Contratual (2026)",
+    "trecho": "encontrando-se designados, por prazo indeterminado: como Administradores A, RAIMUNDO NONATO CASTRO FILHO e GERMANA CASTRO LEITE; e como Administrador B, EXPEDITO MOTA SOBRINHO.",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2997,
+    "fim": 3173
+   },
+   {
+    "doc_id": "SEXTA_ALTERACAO_2026_06_30",
+    "doc_titulo": "Alteração Contratual (2026)",
+    "trecho": "encontrando-se designados, por prazo indeterminado: como Administradores A, RAIMUNDO NONATO CASTRO FILHO e GERMANA CASTRO LEITE; e como Administrador B, EXPEDITO MOTA SOBRINHO.",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2997,
+    "fim": 3173
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "PROCURACAO_PUBLICA_2026_03_03",
+    "titulo": "Procuração (2026)",
+    "arquivo": "PROCURACAO_PUBLICA_2026_03_03.pdf"
+   },
+   {
+    "id": "QUINTA_ALTERACAO_CONSOLIDACAO_2023",
+    "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "arquivo": "QUINTA_ALTERACAO_CONSOLIDACAO_2023.pdf"
+   },
+   {
+    "id": "SEXTA_ALTERACAO_2026_06_30",
+    "titulo": "Alteração Contratual (2026)",
+    "arquivo": "SEXTA_ALTERACAO_2026_06_30.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n09106363909\nPLACA\nMLS9L81\nEXERCÍCIO\n2026\nMARCA / MODELO / VERSÃO\nFIAT/DUCATO\nCHASSI\n9BDUV1SG5JPC74ECJ\nNOME\nCASTRO MOTA DISTRIBUIÇÃO DE BEBIDAS LTDA\nCPF / CNPJ\n69.893.229/0001-07\nDATA\n15/01/2026\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "d1e43ef3068ffd9dc9b97085a680c6c3753203fc92faf9dbee4617308c58e529",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "PROCURACAO_PUBLICA_2026_03_03",
+   "nome": "PROCURACAO_PUBLICA_2026_03_03.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (2026)",
+   "data": "2026-03-03",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCARTÓRIO TELES LEITE – 2º OFÍCIO DE NOTAS DE JUAZEIRO DO NORTE (fictício)\nLivro nº 412 – Folhas 156/157\nPROCURAÇÃO QUE FAZ CASTRO MOTA DISTRIBUIÇÃO DE BEBIDAS LTDA A\nFAVOR DE ANTÔNIO WAGNER SARAIVA BRITO\nSAIBAM quantos este público instrumento de procuração virem que, aos 3 (três) dias do mês de\nmarço do ano de 2026 (dois mil e vinte e seis), nesta cidade de Juazeiro do Norte, Estado do Ceará,\nem cartório, perante mim, Escrevente, compareceu como OUTORGANTE: CASTRO MOTA\nDISTRIBUIÇÃO DE BEBIDAS LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº\n69.893.229/0001-07, NIRE 23201187452, com sede na Avenida Padre Cícero, nº 4.120, São José,\nJuazeiro do Norte/CE, neste ato representada, na forma da Cláusula Oitava, § 2º, inciso IV, do\ncontrato social consolidado na Quinta Alteração Contratual, registrada na Junta Comercial do Estado\ndo Ceará – JUCEC em 29/03/2023 sob o nº 6188340, por seu Administrador A, RAIMUNDO\nNONATO CASTRO FILHO, brasileiro, casado, empresário, portador da cédula de identidade RG nº\n2000123456781 SSP/CE, inscrito no CPF sob o nº 212.536.260-06, residente na Rua São Pedro, nº\n1.345, Centro, Juazeiro do Norte/CE, e por seu Administrador B, EXPEDITO MOTA SOBRINHO,\nbrasileiro, viúvo, empresário, portador da cédula de identidade RG nº 89002233445 SSP/CE,\ninscrito no CPF sob o nº 421.445.976-85, residente na Rua Teófilo Siqueira, nº 77, Centro, Crato/\nCE; os presentes reconhecidos como os próprios por mim, à vista dos documentos apresentados,\ninclusive certidão simplificada expedida pela JUCEC em 26/02/2026, que fica arquivada nestas\nNotas, do que dou fé.\nE, pela outorgante, na forma representada, me foi dito que, por este instrumento, nomeia e constitui\nseu procurador ANTÔNIO WAGNER SARAIVA BRITO, brasileiro, casado, técnico em logística,\nportador da cédula de identidade RG nº 2006778899001 SSP/CE, inscrito no CPF sob o nº\n398.475.005-68, residente e domiciliado na Rua Delmiro Gouveia, nº 233, Lagoa Seca, Juazeiro do\nNorte/CE, CEP 63040-210, gerente de frota da outorgante, ao qual confere poderes especiais e\nexpressos para vender, a quem convier e pelo preço e condições que ajustar, o veículo de\npropriedade da outorgante marca/modelo FIAT/STRADA, placa FML8E58, RENAVAM\n05292418451, chassi 9BDKR9B3V8DCNHU7U, podendo, para tanto, assinar a Autorização para\nTransferência de Propriedade do Veículo (ATPV-e) e os demais documentos necessários, receber o\npreço e dar quitação, representar a outorgante perante o DETRAN/CE e suas unidades, requerer\nvistoria, pagar taxas e débitos incidentes sobre o veículo e praticar os demais atos indispensáveis à\nconclusão da venda do referido veículo.\nO presente mandato é outorgado pelo prazo de 1 (um) ano, contado desta data, vedado o\nsubstabelecimento.\nAssim o disseram, do que dou fé, e me pediram que lavrasse este instrumento, que, lido e achado\nconforme, aceitam e assinam, dispensadas as testemunhas. Emolumentos: R$ 214,60. FERMOJU:\nR$ 10,73. Selo: R$ 4,29. Total: R$ 229,62. Selo Digital de Fiscalização nº TN-CE-2026-0115402-\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "C7D9. Eu, ANA PAULA GONÇALVES BATISTA, Escrevente, a lavrei. Eu, ROBERTO TELES\nLEITE, Tabelião, a subscrevo.\n(a.a.) RAIMUNDO NONATO CASTRO FILHO. EXPEDITO MOTA SOBRINHO. ROBERTO\nTELES LEITE – Tabelião.\nTRASLADO – Nada mais. Trasladada em seguida, confere com o original, ao qual me reporto e\ndou fé.\nJuazeiro do Norte/CE, 3 de março de 2026.\nROBERTO TELES LEITE – Tabelião\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "a7da7583d940e88a41f9eb7bafbe5777f648e3182f06adb4ec07560969509303",
+   "leitura": {
+    "tarefas": {
+     "procuracao": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 47.3,
+      "tokens_saida": 921,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "QUINTA_ALTERACAO_CONSOLIDACAO_2023",
+   "nome": "QUINTA_ALTERACAO_CONSOLIDACAO_2023.pdf",
+   "tipo": "contrato_consolidado",
+   "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+   "data": "2023-03-14",
+   "paginas": [
+    "QUINTA ALTERAÇÃO E CONSOLIDAÇÃO DO CONTRATO SOCIAL DA CASTRO\nMOTA DISTRIBUIÇÃO DE BEBIDAS LTDA\nCNPJ nº 69.893.229/0001-07 – NIRE 23201187452\nPelo presente instrumento particular, os abaixo qualificados:\nRAIMUNDO NONATO CASTRO FILHO, brasileiro, casado sob o regime da comunhão parcial de\nbens, empresário, portador da cédula de identidade RG nº 2000123456781 SSP/CE, inscrito no CPF\nsob o nº 212.536.260-06, residente e domiciliado na Rua São Pedro, nº 1.345, Centro, Juazeiro do\nNorte/CE, CEP 63010-010;\nGERMANA CASTRO LEITE, brasileira, casada sob o regime da separação convencional de bens,\nadministradora de empresas, portadora da cédula de identidade RG nº 98007654321 SSP/CE,\ninscrita no CPF sob o nº 335.672.125-91, residente e domiciliada na Rua Santa Luzia, nº 402,\nSalesianos, Juazeiro do Norte/CE, CEP 63050-120;\nEXPEDITO MOTA SOBRINHO, brasileiro, viúvo, empresário, portador da cédula de identidade\nRG nº 89002233445 SSP/CE, inscrito no CPF sob o nº 421.445.976-85, residente e domiciliado na\nRua Teófilo Siqueira, nº 77, Centro, Crato/CE, CEP 63100-140; e\nFRANCISCA VALDENIA MOTA TAVARES, brasileira, casada sob o regime da comunhão parcial\nde bens, farmacêutica, portadora da cédula de identidade RG nº 2004556677889 SSP/CE, inscrita no\nCPF sob o nº 868.307.407-20, residente e domiciliada na Rua Major Sampaio, nº 1.018, Centro,\nBarbalha/CE, CEP 63180-000;\núnicos sócios da sociedade empresária limitada CASTRO MOTA DISTRIBUIÇÃO DE BEBIDAS\nLTDA, com sede na Avenida Padre Cícero, nº 4.120, São José, Juazeiro do Norte/CE, CEP\n63024-015, inscrita no CNPJ sob o nº 69.893.229/0001-07, com contrato social arquivado na Junta\nComercial do Estado do Ceará – JUCEC sob o NIRE 23201187452 e alterações posteriores,\nresolvem alterar e consolidar o contrato social, mediante as cláusulas e condições seguintes.\nI – DAS ALTERAÇÕES\nCLÁUSULA PRIMEIRA – DO AUMENTO DO CAPITAL SOCIAL\nO capital social, atualmente de R$ 1.600.000,00 (um milhão e seiscentos mil reais), é elevado para\nR$ 2.400.000,00 (dois milhões e quatrocentos mil reais), mediante a capitalização de R$ 800.000,00\n(oitocentos mil reais) registrados na conta de reservas de lucros, com a emissão de 800.000\n(oitocentas mil) novas quotas, atribuídas aos sócios na proporção de suas participações.\nCLÁUSULA SEGUNDA – DAS CLASSES DE QUOTAS\nAs quotas passam a dividir-se em duas classes, denominadas classe A e classe B, de igual valor\nnominal e com os mesmos direitos patrimoniais, cabendo as quotas classe A aos sócios\nRAIMUNDO NONATO CASTRO FILHO e GERMANA CASTRO LEITE, e as quotas classe B aos\nsócios EXPEDITO MOTA SOBRINHO e FRANCISCA VALDENIA MOTA TAVARES, com os\ndireitos de indicação de administradores previstos na Cláusula Oitava do contrato consolidado.\nCLÁUSULA TERCEIRA – DA ADMINISTRAÇÃO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/4",
+    "A administração da sociedade fica reorganizada na forma da Cláusula Oitava do contrato\nconsolidado abaixo transcrito, revogadas as disposições anteriores sobre a matéria.\nCLÁUSULA QUARTA – DA CONSOLIDAÇÃO\nEm razão das alterações acima, os sócios resolvem consolidar o contrato social, que passa a vigorar\ncom a redação seguinte.\nII – CONTRATO SOCIAL CONSOLIDADO\nCLÁUSULA PRIMEIRA – DA DENOMINAÇÃO E SEDE\nA sociedade gira sob a denominação CASTRO MOTA DISTRIBUIÇÃO DE BEBIDAS LTDA e\ntem sede na Avenida Padre Cícero, nº 4.120, São José, Juazeiro do Norte/CE, CEP 63024-015,\npodendo abrir filiais e depósitos em qualquer localidade, por deliberação dos sócios.\nCLÁUSULA SEGUNDA – DO OBJETO\nA sociedade tem por objeto o comércio atacadista de bebidas em geral, águas minerais, refrigerantes,\nsucos e bebidas alcoólicas, a distribuição desses produtos a varejistas e o transporte rodoviário de\ncargas próprias.\nCLÁUSULA TERCEIRA – DO INÍCIO E DO PRAZO\nA sociedade iniciou suas atividades em 4 de maio de 2009 e seu prazo de duração é indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social, totalmente subscrito e integralizado, é de R$ 2.400.000,00 (dois milhões e\nquatrocentos mil reais), dividido em 2.400.000 (dois milhões e quatrocentas mil) quotas de R$ 1,00\n(um real) cada uma, assim distribuídas:\nSócio\nClasse\nQuotas\nValor (R$)\nParticipação\nRAIMUNDO NONATO CASTRO FILHO\nA\n600.000\n600.000,00\n25%\nGERMANA CASTRO LEITE\nA\n600.000\n600.000,00\n25%\nEXPEDITO MOTA SOBRINHO\nB\n600.000\n600.000,00\n25%\nFRANCISCA VALDENIA MOTA TAVARES\nB\n600.000\n600.000,00\n25%\nTotal\n—\n2.400.000\n2.400.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social.\nCLÁUSULA SEXTA – DA CESSÃO DE QUOTAS\nAs quotas não poderão ser cedidas a terceiros sem prévia oferta aos demais sócios, que terão\npreferência na aquisição, primeiro os titulares de quotas da mesma classe e, não exercido o direito\npor estes no prazo de 30 (trinta) dias, os da outra classe, em igualdade de condições.\nCLÁUSULA SÉTIMA – DAS DELIBERAÇÕES DOS SÓCIOS\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/4",
+    "As deliberações dos sócios serão tomadas em reunião, convocada por qualquer administrador com\nantecedência mínima de 8 (oito) dias, observados os quóruns previstos em lei, dispensada a reunião\nquando todos os sócios decidirem por escrito sobre a matéria.\nCLÁUSULA OITAVA – DA ADMINISTRAÇÃO\nA sociedade será administrada por até 4 (quatro) administradores, sócios ou não, sendo até 2 (dois)\nindicados pelos titulares das quotas classe A (\"Administradores A\") e até 2 (dois) indicados pelos\ntitulares das quotas classe B (\"Administradores B\"), ficando desde já designados, por prazo\nindeterminado: como Administradores A, RAIMUNDO NONATO CASTRO FILHO e GERMANA\nCASTRO LEITE; e como Administradores B, EXPEDITO MOTA SOBRINHO e FRANCISCA\nVALDENIA MOTA TAVARES, todos acima qualificados.\n§ 1º Compete a qualquer dos administradores, isoladamente, a prática dos atos de gestão ordinária,\ncomo a compra de mercadorias destinadas à revenda, a venda dos produtos em estoque, a admissão e\na dispensa de empregados, a movimentação de contas bancárias e a representação da sociedade\nperante repartições públicas, instituições financeiras e concessionárias de serviços públicos.\n§ 2º Os atos a seguir relacionados somente obrigarão a sociedade se praticados em conjunto por um\nAdministrador A e um Administrador B: I – a alienação, a oneração, o arrendamento ou a cessão, a\nqualquer título, de bens do ativo imobilizado, compreendidos os veículos automotores, as máquinas\ne os equipamentos; II – a contratação de empréstimos, financiamentos e arrendamentos mercantis;\nIII – a prestação de garantias reais ou fidejussórias em favor da própria sociedade; IV – a\nconstituição de procuradores para quaisquer dos atos deste parágrafo, devendo o instrumento\nespecificar os atos autorizados e o prazo do mandato, não superior a 1 (um) ano.\n§ 3º Vagando a função de administrador de determinada classe, os titulares das quotas dessa classe\nindicarão o substituto, cuja designação será formalizada em alteração contratual.\n§ 4º É vedado o uso da denominação social em atividades estranhas ao objeto social, especialmente\nem avais, fianças e endossos de favor.\nCLÁUSULA NONA – DO PRÓ-LABORE\nOs administradores terão direito a retirada mensal a título de pró-labore, fixada de comum acordo\npelos sócios, observada a legislação previdenciária e tributária.\nCLÁUSULA DÉCIMA – DO EXERCÍCIO SOCIAL\nO exercício social coincide com o ano civil. Ao seu término serão levantados o inventário, o balanço\npatrimonial e o balanço de resultado econômico, cabendo aos sócios, na proporção de suas quotas,\nos lucros ou as perdas apurados.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FALECIMENTO OU INCAPACIDADE DE SÓCIO\nFalecendo ou sendo interditado qualquer sócio, a sociedade continuará com os herdeiros ou\nsucessores, salvo se estes manifestarem desinteresse, hipótese em que os haveres serão apurados\ncom base em balanço especialmente levantado e pagos em 12 (doze) parcelas mensais.\nCLÁUSULA DÉCIMA SEGUNDA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/4",
+    "Os administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade por lei especial ou em virtude de condenação criminal, nem se\nencontram sob os efeitos dela.\nCLÁUSULA DÉCIMA TERCEIRA – DO FORO\nFica eleito o foro da Comarca de Juazeiro do Norte/CE para o exercício e o cumprimento dos\ndireitos e obrigações resultantes deste contrato.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em via única,\npara arquivamento na Junta Comercial.\nJuazeiro do Norte/CE, 14 de março de 2023.\nRAIMUNDO NONATO CASTRO FILHO\nGERMANA CASTRO LEITE\nEXPEDITO MOTA SOBRINHO\nFRANCISCA VALDENIA MOTA TAVARES\nVisto: LORENA BEZERRA CALLOU – OAB/CE nº 21.907\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 29/03/2023 sob o nº 6188340\nProtocolo: 23/030455-1 | NIRE: 23201187452\nEmpresa: CASTRO MOTA DISTRIBUIÇÃO DE BEBIDAS LTDA\nAutenticação: 2E5A9B0C7D13F842\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 4/4"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "193af71c0d914e928bcbe7107aa71abd14d1ca337cb9ec50d75c93b05136396d",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 55.1,
+      "tokens_saida": 1268,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 47.2,
+      "tokens_saida": 1857,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "SEXTA_ALTERACAO_2026_06_30",
+   "nome": "SEXTA_ALTERACAO_2026_06_30.pdf",
+   "tipo": "alteracao_contratual",
+   "titulo": "Alteração Contratual (2026)",
+   "data": "2026-06-30",
+   "paginas": [
+    "SEXTA ALTERAÇÃO DO CONTRATO SOCIAL DA CASTRO MOTA DISTRIBUIÇÃO DE\nBEBIDAS LTDA\nCNPJ nº 69.893.229/0001-07 – NIRE 23201187452\nPelo presente instrumento particular, os abaixo qualificados:\nRAIMUNDO NONATO CASTRO FILHO, brasileiro, casado sob o regime da comunhão parcial de\nbens, empresário, portador da cédula de identidade RG nº 2000123456781 SSP/CE, inscrito no CPF\nsob o nº 212.536.260-06, residente e domiciliado na Rua São Pedro, nº 1.345, Centro, Juazeiro do\nNorte/CE, CEP 63010-010;\nGERMANA CASTRO LEITE, brasileira, casada sob o regime da separação convencional de bens,\nadministradora de empresas, portadora da cédula de identidade RG nº 98007654321 SSP/CE,\ninscrita no CPF sob o nº 335.672.125-91, residente e domiciliada na Rua Santa Luzia, nº 402,\nSalesianos, Juazeiro do Norte/CE, CEP 63050-120;\nEXPEDITO MOTA SOBRINHO, brasileiro, viúvo, empresário, portador da cédula de identidade\nRG nº 89002233445 SSP/CE, inscrito no CPF sob o nº 421.445.976-85, residente e domiciliado na\nRua Teófilo Siqueira, nº 77, Centro, Crato/CE, CEP 63100-140; e\nFRANCISCA VALDENIA MOTA TAVARES, brasileira, casada sob o regime da comunhão parcial\nde bens, farmacêutica, portadora da cédula de identidade RG nº 2004556677889 SSP/CE, inscrita no\nCPF sob o nº 868.307.407-20, residente e domiciliada na Rua Major Sampaio, nº 1.018, Centro,\nBarbalha/CE, CEP 63180-000;\núnicos sócios da CASTRO MOTA DISTRIBUIÇÃO DE BEBIDAS LTDA, com sede na Avenida\nPadre Cícero, nº 4.120, São José, Juazeiro do Norte/CE, CEP 63024-015, inscrita no CNPJ sob o nº\n69.893.229/0001-07, cujo contrato social, consolidado na Quinta Alteração Contratual, se encontra\narquivado na JUCEC sob o nº 6188340, em 29/03/2023, resolvem alterar o contrato social mediante\nas cláusulas seguintes.\nCLÁUSULA PRIMEIRA – DA RENÚNCIA DE ADMINISTRADORA\nFica consignado que a sócia FRANCISCA VALDENIA MOTA TAVARES, mediante comunicação\nescrita entregue à sociedade em 11 de maio de 2026, renunciou à função de Administradora B,\ndeixando a administração da sociedade a partir daquela data, sem prejuízo de sua condição de sócia\ntitular de quotas classe B, e que os demais sócios dão por recebida a comunicação, nada tendo a\nopor.\nCLÁUSULA SEGUNDA – DA FUNÇÃO VAGA\nOs titulares das quotas classe B declaram que a indicação de novo Administrador B será feita\noportunamente, permanecendo vaga a função até a celebração da alteração contratual\ncorrespondente, nos termos do § 3º da Cláusula Oitava.\nCLÁUSULA TERCEIRA – DA NOVA REDAÇÃO DO CAPUT DA CLÁUSULA OITAVA\nEm razão do disposto nas cláusulas anteriores, o caput da Cláusula Oitava do contrato social passa a\nvigorar com a seguinte redação:\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "\"CLÁUSULA OITAVA – DA ADMINISTRAÇÃO. A sociedade será administrada por até 4 (quatro)\nadministradores, sócios ou não, sendo até 2 (dois) indicados pelos titulares das quotas classe A\n('Administradores A') e até 2 (dois) indicados pelos titulares das quotas classe B ('Administradores\nB'), encontrando-se designados, por prazo indeterminado: como Administradores A, RAIMUNDO\nNONATO CASTRO FILHO e GERMANA CASTRO LEITE; e como Administrador B, EXPEDITO\nMOTA SOBRINHO.\"\nParágrafo único. Permanecem inalterados os §§ 1º a 4º da Cláusula Oitava.\nCLÁUSULA QUARTA – DA RATIFICAÇÃO\nPermanecem inalteradas e são ratificadas todas as demais cláusulas do contrato social consolidado\nque não tenham sido expressamente modificadas por este instrumento.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em via única,\npara arquivamento na Junta Comercial.\nJuazeiro do Norte/CE, 30 de junho de 2026.\nRAIMUNDO NONATO CASTRO FILHO\nGERMANA CASTRO LEITE\nEXPEDITO MOTA SOBRINHO\nFRANCISCA VALDENIA MOTA TAVARES\nVisto: LORENA BEZERRA CALLOU – OAB/CE nº 21.907\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 14/07/2026 sob o nº 6634108\nProtocolo: 26/071209-8 | NIRE: 23201187452\nEmpresa: CASTRO MOTA DISTRIBUIÇÃO DE BEBIDAS LTDA\nAutenticação: 9D04C6B2A1E7F35C\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "120ef92df0b7e2ed13fdb15fa4686181543fa2ac6319fd23602c70ad7f2a7f39",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 34.4,
+      "tokens_saida": 1000,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 16.1,
+      "tokens_saida": 401,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "politica": "DETRAN-CE"
+ },
+ "hash_entrada": "169e6a64dbd1cd43ea8fccc44a98f4a4ceae27d50228650ce6fa6fe3e80ca67e"
+}

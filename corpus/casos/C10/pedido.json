@@ -1,0 +1,26 @@
+{
+  "caso": "C10",
+  "vendedor": {
+    "razao_social": "AGROPECUÁRIA CARIRI LTDA.",
+    "cnpj": "84.885.681/0001-02"
+  },
+  "veiculo": {
+    "placa": "SLY5M23",
+    "renavam": "01824886192",
+    "chassi": "9BRPB6SP49J9PU8JX",
+    "descricao": "TOYOTA/SW4 SRX 4X4 2.8"
+  },
+  "data_venda": "2026-09-17",
+  "valor": null,
+  "assinantes": [
+    {
+      "nome": "Antônio Cícero Lobo",
+      "cpf": "847.267.147-08"
+    }
+  ],
+  "comprador": {
+    "nome": "Patrícia Lemos Barroso",
+    "cidade": "Sobral/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

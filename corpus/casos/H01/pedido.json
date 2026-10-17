@@ -1,0 +1,26 @@
+{
+  "caso": "H01",
+  "vendedor": {
+    "razao_social": "LATICÍNIOS SERRA DA IBIAPABA LTDA.",
+    "cnpj": "19.140.486/0001-91"
+  },
+  "veiculo": {
+    "placa": "VMD0R23",
+    "renavam": "04638238970",
+    "chassi": "93Y2J7GHST92DW14M",
+    "descricao": "RENAULT/MASTER MINIBUS L3H2"
+  },
+  "data_venda": "2026-09-15",
+  "valor": 285000,
+  "assinantes": [
+    {
+      "nome": "Otávio Bastos Neto",
+      "cpf": "707.229.710-36"
+    }
+  ],
+  "comprador": {
+    "nome": "Auto Center Litoral Ltda.",
+    "cidade": "Fortaleza/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

@@ -1,0 +1,40 @@
+{
+  "caso": "C12",
+  "titulo": "Ativo não circulante com ata aprovando a venda",
+  "categoria": "deliberacao",
+  "objetivo": "Ata com 65% do capital aprova a venda por no mínimo R$ 300 mil; venda por R$ 310 mil.",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": [
+      [
+        "VALDIR"
+      ],
+      [
+        "MARCIA"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 1.072"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "819.331.908-76"
+      ],
+      [
+        "520.599.728-17"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Valdir Cunha Teixeira"
+      ],
+      [
+        "Márcia Regina Sá"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

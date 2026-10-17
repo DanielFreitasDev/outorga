@@ -1,0 +1,1144 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T10:08:06",
+ "pedido": {
+  "veiculo": {
+   "descricao": "HONDA/HR-V EXL 1.5",
+   "placa": "ALF7V12",
+   "renavam": "03729871120",
+   "chassi": "93HAWK3TB5VK1A5HG"
+  },
+  "data_venda": "2026-09-12",
+  "valor": 155000.0,
+  "assinantes": [
+   {
+    "nome": "Ana Paula Bastos",
+    "cpf": "406.925.666-00"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "Patrícia Lemos Barroso",
+  "vendedor_cnpj": "33.437.010/0001-48",
+  "lado": "vendedor"
+ },
+ "empresa": {
+  "razao_social": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+  "cnpj": "33.437.010/0001-48",
+  "tipo": "SLU",
+  "objeto": "desenvolvimento de programas de computador sob encomenda e consultoria em tecnologia da informação",
+  "comercializa_veiculos": false,
+  "subtipo": null
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 0.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 2,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 0 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: Rafael Nogueira Brito. O caminho por procuração pública de 01/07/2026 não vale: procuração é para outro veículo.",
+ "assinantes": [
+  {
+   "informado": "Ana Paula Bastos",
+   "cpf": "406.925.666-00",
+   "chave": "40692566600",
+   "nome": "Ana Paula Bastos",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:54751779966",
+   "pessoas": [
+    {
+     "chave": "54751779966",
+     "nome": "Rafael Nogueira Brito"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Ato Constitutivo (SLU) (2022)",
+   "cadeia": [
+    "TECH_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [
+  {
+   "id": "POA_ANAPAULA_CIVIC:bloqueada",
+   "pessoas": [
+    {
+     "chave": "40692566600",
+     "nome": "Ana Paula Bastos"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 01/07/2026",
+   "cadeia": [
+    "POA_ANAPAULA_CIVIC"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PJ",
+     "severidade": "ok",
+     "titulo": "Outorgada pela própria empresa",
+     "detalhe": "A outorgante é a empresa, representada por Rafael Nogueira Brito.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_ANAPAULA_CIVIC",
+       "doc_titulo": "Procuração (POA_ANAPAULA_CIVIC)",
+       "trecho": "OUTORGANTE: TECHNORDESTE SOLUÇÕES DIGITAIS LTDA",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 523,
+       "fim": 570
+      }
+     ],
+     "caminho": "POA_ANAPAULA_CIVIC"
+    },
+    {
+     "codigo": "OUTORGA_COM_PODERES",
+     "severidade": "ok",
+     "titulo": "Quem outorgou tinha poder",
+     "detalhe": "Em 01/07/2026, Rafael Nogueira Brito podia representar a empresa nesse ato.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_ANAPAULA_CIVIC",
+       "doc_titulo": "Procuração (POA_ANAPAULA_CIVIC)",
+       "trecho": "OUTORGANTE: TECHNORDESTE SOLUÇÕES DIGITAIS LTDA",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 523,
+       "fim": 570
+      },
+      {
+       "doc_id": "TECH_CS",
+       "doc_titulo": "Ato Constitutivo (SLU) (2022)",
+       "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá ao sócio único RAFAEL NOGUEIRA BRITO, que a exercerá isoladamente, por prazo indeterminado, com poderes e atribuições de representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos necessários à consecução do objeto social, vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 2446,
+       "fim": 2918
+      }
+     ],
+     "caminho": "POA_ANAPAULA_CIVIC"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_ANAPAULA_CIVIC",
+       "doc_titulo": "Procuração (POA_ANAPAULA_CIVIC)",
+       "trecho": "Pela outorgante, por seu representante, me foi dito que, por este instrumento, nomeia e constitui sua bastante procuradora ANA PAULA BASTOS, brasileira, solteira, despachante documentalista, RG nº 33119104 SSP/CE, CPF nº 406.925.666-00, com escritório na Avenida Aguanambi, nº 1.505, sala 12, Fátima, Fortaleza/CE, a quem confere poderes especiais e expressos para vender e transferir, exclusivamente, o veículo HONDA/CIVIC EXL 2",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1215,
+       "fim": 1644
+      }
+     ],
+     "caminho": "POA_ANAPAULA_CIVIC"
+    },
+    {
+     "codigo": "VEICULO_NAO_ABRANGIDO",
+     "severidade": "bloqueio",
+     "titulo": "Procuração é para outro veículo",
+     "detalhe": "A procuração só abrange HONDA/CIVIC EXL 2.0, não o veículo da venda (ALF7V12).",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_ANAPAULA_CIVIC",
+       "doc_titulo": "Procuração (POA_ANAPAULA_CIVIC)",
+       "trecho": "Pela outorgante, por seu representante, me foi dito que, por este instrumento, nomeia e constitui sua bastante procuradora ANA PAULA BASTOS, brasileira, solteira, despachante documentalista, RG nº 33119104 SSP/CE, CPF nº 406.925.666-00, com escritório na Avenida Aguanambi, nº 1.505, sala 12, Fátima, Fortaleza/CE, a quem confere poderes especiais e expressos para vender e transferir, exclusivamente, o veículo HONDA/CIVIC EXL 2",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1215,
+       "fim": 1644
+      }
+     ],
+     "caminho": "POA_ANAPAULA_CIVIC"
+    },
+    {
+     "codigo": "PROCURACAO_NO_PRAZO",
+     "severidade": "ok",
+     "titulo": "Dentro do prazo",
+     "detalhe": "Válida até 29/09/2026.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "POA_ANAPAULA_CIVIC",
+       "doc_titulo": "Procuração (POA_ANAPAULA_CIVIC)",
+       "trecho": "O presente mandato vigorará pelo prazo de 90 (noventa) dias, contados desta data",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2246,
+       "fim": 2326
+      }
+     ],
+     "caminho": "POA_ANAPAULA_CIVIC"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "contrato:54751779966",
+   "via": "contrato",
+   "descricao": "regra geral de representação — Ato Constitutivo (SLU) (2022)",
+   "pessoas": [
+    "54751779966"
+   ],
+   "faltam": [
+    "54751779966"
+   ],
+   "faltam_nomes": [
+    "Rafael Nogueira Brito"
+   ],
+   "pessoas_nomes": [
+    "Rafael Nogueira Brito"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "CND_INSS",
+   "severidade": "info",
+   "titulo": "CND previdenciária",
+   "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+   "fundamento": [
+    "Lei 8.212/91, art. 47, I, \"c\""
+   ],
+   "fontes": [],
+   "caminho": null
+  },
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: TECHNORDESTE SOLUÇÕES DIGITAIS LTDA..",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "ALF7V12",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "TECH_CS#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "TECH_CS",
+    "doc_titulo": "Ato Constitutivo (SLU) (2022)",
+    "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá ao sócio único RAFAEL NOGUEIRA BRITO, que a exercerá isoladamente, por prazo indeterminado, com poderes e atribuições de representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos necessários à consecução do objeto social, vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2446,
+    "fim": 2918
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Rafael Nogueira Brito"
+   ],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    }
+   ],
+   "decisiva": true
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-09-12",
+  "atos": [
+   {
+    "doc": "TECH_CS",
+    "titulo": "Ato Constitutivo (SLU) (2022)",
+    "efeito": "2022-07-11"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "54751779966",
+    "nome": "Rafael Nogueira Brito",
+    "cargo": "sócio único administrador",
+    "doc": "TECH_CS"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "54751779966",
+    "nome": "Rafael Nogueira Brito",
+    "percentual": 100.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+    "sub": "33.437.010/0001-48"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "HONDA/HR-V EXL 1.5",
+    "sub": "ALF7V12"
+   },
+   {
+    "id": "54751779966",
+    "tipo": "pessoa",
+    "rotulo": "Rafael Nogueira Brito",
+    "papeis": [
+     "sócio 100%",
+     "sócio único administrador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "40692566600",
+    "tipo": "pessoa",
+    "rotulo": "Ana Paula Bastos",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "54751779966",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "100%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "54751779966",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "TECH_CS"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "40692566600",
+    "tipo": "procuracao",
+    "status": "invalido",
+    "doc": "POA_ANAPAULA_CIVIC",
+    "rotulo": "procuração 01/07/2026 · Procuração é para outro veículo",
+    "motivo": "Procuração é para outro veículo"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2022-07-11",
+   "tipo": "ato",
+   "titulo": "Ato Constitutivo (SLU) (2022)",
+   "doc": "TECH_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-07-01",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Ana Paula Bastos",
+   "doc": "POA_ANAPAULA_CIVIC",
+   "detalhe": "publica"
+  },
+  {
+   "data": "2026-09-12",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 155.000,00"
+  },
+  {
+   "data": "2026-09-29",
+   "tipo": "vencimento",
+   "titulo": "Vence a procuração de Ana Paula Bastos",
+   "doc": "POA_ANAPAULA_CIVIC",
+   "detalhe": ""
+  }
+ ],
+ "pessoas": {
+  "54751779966": {
+   "nome": "Rafael Nogueira Brito",
+   "cpf": "54751779966"
+  },
+  "40692566600": {
+   "nome": "Ana Paula Bastos",
+   "cpf": "40692566600"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+   "cnpj": "33.437.010/0001-48",
+   "tipo": "SLU",
+   "atos_vigentes": [
+    {
+     "titulo": "Ato Constitutivo (SLU) (2022)",
+     "doc": "TECH_CS",
+     "efeito": "2022-07-11"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Ana Paula Bastos",
+    "cpf": "406.925.666-00",
+    "identificacao": "CPF",
+    "qualidade": "procurador(a) pela procuração de 01/07/2026"
+   }
+  ],
+  "poderes_conferidos": [
+   "Procuração pública de 01/07/2026: não comprova poderes (Procuração é para outro veículo)."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [],
+  "documentos_verificaveis": [
+   {
+    "id": "TECH_CS",
+    "titulo": "Ato Constitutivo (SLU) (2022)",
+    "arquivo": "TECH_CS.pdf"
+   },
+   {
+    "id": "POA_ANAPAULA_CIVIC",
+    "titulo": "Procuração (POA_ANAPAULA_CIVIC)",
+    "arquivo": "POA_ANAPAULA_CIVIC.pdf"
+   },
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "TECH_CS",
+   "nome": "TECH_CS.pdf",
+   "tipo": "ato_constitutivo_slu",
+   "titulo": "Ato Constitutivo (SLU) (2022)",
+   "data": "2022-07-11",
+   "paginas": [
+    "ATO CONSTITUTIVO DE SOCIEDADE LIMITADA UNIPESSOAL\nTECHNORDESTE SOLUÇÕES DIGITAIS LTDA.\nRAFAEL NOGUEIRA BRITO, brasileiro, solteiro, maior, analista de sistemas, portador da carteira\nde identidade nº 23915476 SSP/CE e inscrito no CPF sob o nº 547.517.799-66, residente e\ndomiciliado na Rua Dom Expedito Lopes, nº 1.245, apartamento 802, bairro Dionísio Torres,\nFortaleza/CE, CEP 60135-410, resolve, por este instrumento particular e na forma do art. 1.052, § 1º,\ndo Código Civil (Lei nº 10.406/2002), constituir uma sociedade limitada unipessoal, que se regerá\npelas cláusulas e condições seguintes e, nas omissões, pelas disposições legais aplicáveis às\nsociedades limitadas.\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL\nA sociedade girará sob o nome empresarial TECHNORDESTE SOLUÇÕES DIGITAIS LTDA. e\npoderá adotar o nome fantasia \"TechNordeste\".\nCLÁUSULA SEGUNDA – DA SEDE\nA sociedade terá sede na Avenida Santos Dumont, nº 3.131, sala 1.104, bairro Aldeota, Fortaleza/CE,\nCEP 60150-162, podendo abrir e encerrar filiais, escritórios e outras dependências em qualquer parte\ndo território nacional, por decisão do sócio único.\nCLÁUSULA TERCEIRA – DO OBJETO SOCIAL\nA sociedade tem por objeto o desenvolvimento de programas de computador sob encomenda e a\nconsultoria em tecnologia da informação.\nParágrafo único. As atividades da sociedade correspondem aos seguintes códigos da Classificação\nNacional de Atividades Econômicas: 6201-5/01 – desenvolvimento de programas de computador\nsob encomenda; e 6204-0/00 – consultoria em tecnologia da informação.\nCLÁUSULA QUARTA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciará suas atividades na data do registro deste ato constitutivo na Junta Comercial do\nEstado do Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUINTA – DO CAPITAL SOCIAL\nO capital social é de R$ 100.000,00 (cem mil reais), dividido em 100.000 (cem mil) quotas de valor\nnominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas neste ato, em moeda\ncorrente do País, pelo sócio único, conforme o quadro abaixo:\nSócio\nQuotas\nValor (R$)\nParticipação\nRAFAEL NOGUEIRA BRITO\n100.000\n100.000,00\n100%\nTotal\n100.000\n100.000,00\n100%\nCLÁUSULA SEXTA – DA RESPONSABILIDADE\nA responsabilidade do sócio único é restrita ao valor de suas quotas, respondendo, porém, pela\nintegralização do capital social, nos termos do art. 1.052 do Código Civil.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade caberá ao sócio único RAFAEL NOGUEIRA BRITO, que a exercerá\nisoladamente, por prazo indeterminado, com poderes e atribuições de representação ativa e passiva\nda sociedade, em juízo ou fora dele, podendo praticar todos os atos necessários à consecução do\nobjeto social, vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto\nsocial, especialmente em avais, fianças e endossos de favor.\nParágrafo único. As procurações outorgadas pela sociedade deverão especificar os poderes\nconferidos e, salvo as outorgadas para fins judiciais, terão prazo de validade não superior a 1 (um)\nano.\nCLÁUSULA OITAVA – DO PRÓ-LABORE\nO administrador poderá fazer jus a uma retirada mensal a título de pró-labore, em valor fixado por\ndecisão do sócio único, observadas as disposições da legislação tributária e previdenciária.\nCLÁUSULA NONA – DO EXERCÍCIO SOCIAL E DAS DEMONSTRAÇÕES\nO exercício social coincidirá com o ano civil. Ao término de cada exercício social, em 31 de\ndezembro, o administrador prestará contas justificadas de sua administração, procedendo à\nelaboração do inventário, do balanço patrimonial e do balanço de resultado econômico, cabendo ao\nsócio único os lucros ou as perdas apurados.\nCLÁUSULA DÉCIMA – DAS DECISÕES DO SÓCIO ÚNICO\nAs decisões que, na sociedade limitada pluripessoal, seriam objeto de deliberação dos sócios serão\ntomadas pelo sócio único e formalizadas por escrito, dispensadas as formalidades de convocação e\nde reunião, devendo ser arquivadas na Junta Comercial sempre que a lei assim o exigir.\nCLÁUSULA DÉCIMA PRIMEIRA – DA ADMISSÃO DE NOVOS SÓCIOS\nA sociedade poderá, a qualquer tempo, admitir novos sócios, mediante alteração deste ato\nconstitutivo, hipótese em que passará a reger-se pelas normas aplicáveis à sociedade limitada\npluripessoal.\nCLÁUSULA DÉCIMA SEGUNDA – DO FALECIMENTO OU DA INCAPACIDADE\nFalecendo ou sendo interditado o sócio único, a sociedade continuará suas atividades com os\nherdeiros, sucessores ou o representante legal do incapaz, que deverão, no prazo legal, promover a\nalteração deste ato constitutivo. Não sendo possível a continuidade, ou inexistindo interesse dos\nherdeiros e sucessores, a sociedade será dissolvida e liquidada na forma da lei.\nCLÁUSULA DÉCIMA TERCEIRA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nO administrador declara, sob as penas da lei, que não está impedido de exercer a administração da\nsociedade por lei especial, ou em virtude de condenação criminal, ou por se encontrar sob os efeitos\ndela, a pena que vede, ainda que temporariamente, o acesso a cargos públicos; ou por crime\nfalimentar, de prevaricação, peita ou suborno, concussão, peculato; ou contra a economia popular,\ncontra o sistema financeiro nacional, contra as normas de defesa da concorrência, contra as relações\nde consumo, a fé pública ou a propriedade, nos termos do art. 1.011, § 1º, do Código Civil.\nCLÁUSULA DÉCIMA QUARTA – DO ENQUADRAMENTO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "O sócio único declara que a sociedade se enquadra como microempresa, nos termos da Lei\nComplementar nº 123, de 14 de dezembro de 2006, e que não se enquadra em qualquer das hipóteses\nde exclusão previstas no § 4º do art. 3º da referida lei.\nCLÁUSULA DÉCIMA QUINTA – DO FORO\nFica eleito o foro da Comarca de Fortaleza/CE para o exercício e o cumprimento dos direitos e das\nobrigações resultantes deste ato constitutivo, com renúncia a qualquer outro, por mais privilegiado\nque seja.\nE, por estar assim constituída a sociedade, o sócio único assina o presente instrumento em via única,\ndigitalmente, para que produza seus efeitos legais após o arquivamento na Junta Comercial do\nEstado do Ceará.\nFortaleza/CE, 11 de julho de 2022.\nRAFAEL NOGUEIRA BRITO\nSócio único e administrador\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 20/07/2022 sob o nº 27382031353\nProtocolo: 22/418.763-0 | NIRE: 23894574783\nEmpresa: TECHNORDESTE SOLUÇÕES DIGITAIS LTDA. | CNPJ: 33.437.010/0001-48\nAutenticação: 7F3A9C1E44B2D08A6E15C93F\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "3cbd647a647164b4bbd765f62f21dcc3f3cb865ad2a9ef79e86c3c90ea7595b5",
+   "leitura": {}
+  },
+  {
+   "id": "POA_ANAPAULA_CIVIC",
+   "nome": "POA_ANAPAULA_CIVIC.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (POA_ANAPAULA_CIVIC)",
+   "data": "2026-07-01",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nHeloísa Barreira Nunes – Tabeliã\nLIVRO 872 — FOLHAS 064/065\nPROCURAÇÃO COM PODERES ESPECÍFICOS PARA VENDA DE VEÍCULO\nDETERMINADO\nSAIBAM quantos este público instrumento de procuração virem que, ao primeiro (1º) dia do mês de\njulho de dois mil e vinte e seis (2026), nesta cidade de Fortaleza, Capital do Estado do Ceará, neste\nCartório, perante mim, Rogério Lustosa Maia, Escrevente Notarial, compareceu como\nOUTORGANTE: TECHNORDESTE SOLUÇÕES DIGITAIS LTDA., sociedade limitada\nunipessoal, inscrita no CNPJ sob o nº 33.437.010/0001-48, NIRE 23894574783, com sede nesta\nCapital, neste ato representada por seu sócio único e administrador RAFAEL NOGUEIRA BRITO,\nbrasileiro, solteiro, analista de sistemas, RG nº 23915476 SSP/CE, CPF nº 547.517.799-66, residente\ne domiciliado em Fortaleza/CE, na forma do Ato Constitutivo de Sociedade Limitada Unipessoal\nregistrado na JUCEC em 20/07/2022 sob o nº 27382031353, cuja cópia, com a certidão simplificada\nexpedida pela JUCEC em 25/06/2026, fica arquivada nestas notas. Reconhecido como o próprio por\nmim, à vista dos documentos apresentados, do que dou fé.\nPela outorgante, por seu representante, me foi dito que, por este instrumento, nomeia e constitui sua\nbastante procuradora ANA PAULA BASTOS, brasileira, solteira, despachante documentalista, RG\nnº 33119104 SSP/CE, CPF nº 406.925.666-00, com escritório na Avenida Aguanambi, nº 1.505, sala\n12, Fátima, Fortaleza/CE, a quem confere poderes especiais e expressos para vender e transferir,\nexclusivamente, o veículo HONDA/CIVIC EXL 2.0, ano/modelo 2021/2021, cor cinza, placa\nZEY5F63, RENAVAM 08120617698, chassi 93HY9ZFBTSH1SWMWA, de propriedade da\noutorgante, a quem e pelo preço e condições que ajustar; assinar a respectiva Autorização para\nTransferência de Propriedade do Veículo em meio digital (ATPV-e); receber o preço e dar quitação; e\nrequerer perante o DETRAN o que for necessário à transferência do referido veículo, inclusive\nvistoria e comunicação de venda, recolhendo as taxas devidas.\nOs poderes ora conferidos restringem-se exclusivamente ao veículo acima descrito, não se\nestendendo a nenhum outro bem da outorgante.\nO presente mandato vigorará pelo prazo de 90 (noventa) dias, contados desta data.\nAssim o disse, do que dou fé, e me pediu que lavrasse este instrumento, que, lido em voz alta e\nachado conforme, aceita e assina. Eu, Rogério Lustosa Maia, Escrevente Notarial, a lavrei. Eu,\nHeloísa Barreira Nunes, Tabeliã, a subscrevo.\n(aa) RAFAEL NOGUEIRA BRITO, pela outorgante.\nHELOÍSA BARREIRA NUNES, Tabeliã.\nEmolumentos: R$ 214,37 · Taxa de fiscalização: R$ 10,72 · Total: R$ 225,09\nSelo Digital: IRA-0872-2026-5F19E3\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "TRASLADO — Trasladada na mesma data, conforme o original, do que dou fé.\nFortaleza/CE, 1º de julho de 2026.\nHeloísa Barreira Nunes – Tabeliã\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "0d3362c92206d855178233b1d898d07fe9a3f955ee2d220bf7a340a0ec61cae9",
+   "leitura": {}
+  },
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n03729871120\nPLACA\nALF7V12\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2023\nANO MODELO\n2023\nNÚMERO DO CRV\n987442384500\nCÓDIGO DE SEGURANÇA DO CLA\n82891387680\nMARCA / MODELO / VERSÃO\nHONDA/HR-V EXL 1.5\nESPÉCIE / TIPO\nPASSAGEIRO/\nAUTOMÓVEL\nCHASSI\n93HAWK3TB5VK1A5HG\nCOR PREDOMINANTE\nBRANCA\nCOMBUSTÍVEL\nÁLCOOL/\nGASOLINA\nNOME\nTECHNORDESTE SOLUÇÕES DIGITAIS\nLTDA.\nCPF / CNPJ\n33.437.010/0001-48\nLOCAL\nFORTALEZA/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "1d4f37c1241d2e08722659ec94e66401eee687c6c2d2a12392bf8989d211003e",
+   "leitura": {}
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "gabarito",
+  "politica": "Código Civil (genérica)"
+ },
+ "lado": "vendedor",
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T10:08:06",
+   "pedido": {
+    "veiculo": {
+     "descricao": "HONDA/HR-V EXL 1.5",
+     "placa": "ALF7V12",
+     "renavam": "03729871120",
+     "chassi": "93HAWK3TB5VK1A5HG"
+    },
+    "data_venda": "2026-09-12",
+    "valor": 155000.0,
+    "assinantes": [
+     {
+      "nome": "Ana Paula Bastos",
+      "cpf": "406.925.666-00"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "Patrícia Lemos Barroso",
+    "vendedor_cnpj": "33.437.010/0001-48",
+    "lado": "vendedor"
+   },
+   "empresa": {
+    "razao_social": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+    "cnpj": "33.437.010/0001-48",
+    "tipo": "SLU",
+    "objeto": "desenvolvimento de programas de computador sob encomenda e consultoria em tecnologia da informação",
+    "comercializa_veiculos": false,
+    "subtipo": null
+   },
+   "veredito": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 2,
+    "menor_confianca_fato": 1.0,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Rafael Nogueira Brito. O caminho por procuração pública de 01/07/2026 não vale: procuração é para outro veículo.",
+   "assinantes": [
+    {
+     "informado": "Ana Paula Bastos",
+     "cpf": "406.925.666-00",
+     "chave": "40692566600",
+     "nome": "Ana Paula Bastos",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:54751779966",
+     "pessoas": [
+      {
+       "chave": "54751779966",
+       "nome": "Rafael Nogueira Brito"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "regra geral de representação — Ato Constitutivo (SLU) (2022)",
+     "cadeia": [
+      "TECH_CS"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [
+    {
+     "id": "POA_ANAPAULA_CIVIC:bloqueada",
+     "pessoas": [
+      {
+       "chave": "40692566600",
+       "nome": "Ana Paula Bastos"
+      }
+     ],
+     "via": "procuracao",
+     "descricao": "Procuração pública de 01/07/2026",
+     "cadeia": [
+      "POA_ANAPAULA_CIVIC"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [
+      {
+       "codigo": "OUTORGANTE_PJ",
+       "severidade": "ok",
+       "titulo": "Outorgada pela própria empresa",
+       "detalhe": "A outorgante é a empresa, representada por Rafael Nogueira Brito.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_ANAPAULA_CIVIC",
+         "doc_titulo": "Procuração (POA_ANAPAULA_CIVIC)",
+         "trecho": "OUTORGANTE: TECHNORDESTE SOLUÇÕES DIGITAIS LTDA",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 523,
+         "fim": 570
+        }
+       ],
+       "caminho": "POA_ANAPAULA_CIVIC"
+      },
+      {
+       "codigo": "OUTORGA_COM_PODERES",
+       "severidade": "ok",
+       "titulo": "Quem outorgou tinha poder",
+       "detalhe": "Em 01/07/2026, Rafael Nogueira Brito podia representar a empresa nesse ato.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_ANAPAULA_CIVIC",
+         "doc_titulo": "Procuração (POA_ANAPAULA_CIVIC)",
+         "trecho": "OUTORGANTE: TECHNORDESTE SOLUÇÕES DIGITAIS LTDA",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 523,
+         "fim": 570
+        },
+        {
+         "doc_id": "TECH_CS",
+         "doc_titulo": "Ato Constitutivo (SLU) (2022)",
+         "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá ao sócio único RAFAEL NOGUEIRA BRITO, que a exercerá isoladamente, por prazo indeterminado, com poderes e atribuições de representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos necessários à consecução do objeto social, vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 2,
+         "inicio": 2446,
+         "fim": 2918
+        }
+       ],
+       "caminho": "POA_ANAPAULA_CIVIC"
+      },
+      {
+       "codigo": "PODERES_ESPECIAIS",
+       "severidade": "ok",
+       "titulo": "Poder expresso para alienar veículos",
+       "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+       "fundamento": [
+        "CC art. 661, §1º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_ANAPAULA_CIVIC",
+         "doc_titulo": "Procuração (POA_ANAPAULA_CIVIC)",
+         "trecho": "Pela outorgante, por seu representante, me foi dito que, por este instrumento, nomeia e constitui sua bastante procuradora ANA PAULA BASTOS, brasileira, solteira, despachante documentalista, RG nº 33119104 SSP/CE, CPF nº 406.925.666-00, com escritório na Avenida Aguanambi, nº 1.505, sala 12, Fátima, Fortaleza/CE, a quem confere poderes especiais e expressos para vender e transferir, exclusivamente, o veículo HONDA/CIVIC EXL 2",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1215,
+         "fim": 1644
+        }
+       ],
+       "caminho": "POA_ANAPAULA_CIVIC"
+      },
+      {
+       "codigo": "VEICULO_NAO_ABRANGIDO",
+       "severidade": "bloqueio",
+       "titulo": "Procuração é para outro veículo",
+       "detalhe": "A procuração só abrange HONDA/CIVIC EXL 2.0, não o veículo da venda (ALF7V12).",
+       "fundamento": [
+        "CC art. 661, §1º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_ANAPAULA_CIVIC",
+         "doc_titulo": "Procuração (POA_ANAPAULA_CIVIC)",
+         "trecho": "Pela outorgante, por seu representante, me foi dito que, por este instrumento, nomeia e constitui sua bastante procuradora ANA PAULA BASTOS, brasileira, solteira, despachante documentalista, RG nº 33119104 SSP/CE, CPF nº 406.925.666-00, com escritório na Avenida Aguanambi, nº 1.505, sala 12, Fátima, Fortaleza/CE, a quem confere poderes especiais e expressos para vender e transferir, exclusivamente, o veículo HONDA/CIVIC EXL 2",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1215,
+         "fim": 1644
+        }
+       ],
+       "caminho": "POA_ANAPAULA_CIVIC"
+      },
+      {
+       "codigo": "PROCURACAO_NO_PRAZO",
+       "severidade": "ok",
+       "titulo": "Dentro do prazo",
+       "detalhe": "Válida até 29/09/2026.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "POA_ANAPAULA_CIVIC",
+         "doc_titulo": "Procuração (POA_ANAPAULA_CIVIC)",
+         "trecho": "O presente mandato vigorará pelo prazo de 90 (noventa) dias, contados desta data",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 2246,
+         "fim": 2326
+        }
+       ],
+       "caminho": "POA_ANAPAULA_CIVIC"
+      }
+     ],
+     "precondicoes": []
+    }
+   ],
+   "caminho_escolhido": null,
+   "faltantes": [
+    {
+     "alternativa": "contrato:54751779966",
+     "via": "contrato",
+     "descricao": "regra geral de representação — Ato Constitutivo (SLU) (2022)",
+     "pessoas": [
+      "54751779966"
+     ],
+     "faltam": [
+      "54751779966"
+     ],
+     "faltam_nomes": [
+      "Rafael Nogueira Brito"
+     ],
+     "pessoas_nomes": [
+      "Rafael Nogueira Brito"
+     ]
+    }
+   ],
+   "achados": [
+    {
+     "codigo": "CND_INSS",
+     "severidade": "info",
+     "titulo": "CND previdenciária",
+     "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+     "fundamento": [
+      "Lei 8.212/91, art. 47, I, \"c\""
+     ],
+     "fontes": [],
+     "caminho": null
+    },
+    {
+     "codigo": "TITULARIDADE_OK",
+     "severidade": "ok",
+     "titulo": "Veículo registrado no CNPJ da empresa",
+     "detalhe": "Proprietário no CRLV: TECHNORDESTE SOLUÇÕES DIGITAIS LTDA..",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [
+      {
+       "doc_id": "CRLV",
+       "doc_titulo": "CRLV",
+       "trecho": "ALF7V12",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 146,
+       "fim": 153
+      }
+     ],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "TECH_CS#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "TECH_CS",
+      "doc_titulo": "Ato Constitutivo (SLU) (2022)",
+      "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá ao sócio único RAFAEL NOGUEIRA BRITO, que a exercerá isoladamente, por prazo indeterminado, com poderes e atribuições de representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos necessários à consecução do objeto social, vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 2446,
+      "fim": 2918
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Rafael Nogueira Brito"
+     ],
+     "cargo": null,
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente"
+       ]
+      }
+     ],
+     "decisiva": true
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-09-12",
+    "atos": [
+     {
+      "doc": "TECH_CS",
+      "titulo": "Ato Constitutivo (SLU) (2022)",
+      "efeito": "2022-07-11"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "54751779966",
+      "nome": "Rafael Nogueira Brito",
+      "cargo": "sócio único administrador",
+      "doc": "TECH_CS"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "54751779966",
+      "nome": "Rafael Nogueira Brito",
+      "percentual": 100.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+      "sub": "33.437.010/0001-48"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "HONDA/HR-V EXL 1.5",
+      "sub": "ALF7V12"
+     },
+     {
+      "id": "54751779966",
+      "tipo": "pessoa",
+      "rotulo": "Rafael Nogueira Brito",
+      "papeis": [
+       "sócio 100%",
+       "sócio único administrador"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "40692566600",
+      "tipo": "pessoa",
+      "rotulo": "Ana Paula Bastos",
+      "papeis": [
+       "procurador"
+      ],
+      "assinante": true
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "valido"
+     },
+     {
+      "de": "54751779966",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "100%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "54751779966",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "TECH_CS"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "40692566600",
+      "tipo": "procuracao",
+      "status": "invalido",
+      "doc": "POA_ANAPAULA_CIVIC",
+      "rotulo": "procuração 01/07/2026 · Procuração é para outro veículo",
+      "motivo": "Procuração é para outro veículo"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2022-07-11",
+     "tipo": "ato",
+     "titulo": "Ato Constitutivo (SLU) (2022)",
+     "doc": "TECH_CS",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-07-01",
+     "tipo": "procuracao",
+     "titulo": "Procuração para Ana Paula Bastos",
+     "doc": "POA_ANAPAULA_CIVIC",
+     "detalhe": "publica"
+    },
+    {
+     "data": "2026-09-12",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 155.000,00"
+    },
+    {
+     "data": "2026-09-29",
+     "tipo": "vencimento",
+     "titulo": "Vence a procuração de Ana Paula Bastos",
+     "doc": "POA_ANAPAULA_CIVIC",
+     "detalhe": ""
+    }
+   ],
+   "pessoas": {
+    "54751779966": {
+     "nome": "Rafael Nogueira Brito",
+     "cpf": "54751779966"
+    },
+    "40692566600": {
+     "nome": "Ana Paula Bastos",
+     "cpf": "40692566600"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "não comprovada",
+    "outorgante": {
+     "nome": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+     "cnpj": "33.437.010/0001-48",
+     "tipo": "SLU",
+     "atos_vigentes": [
+      {
+       "titulo": "Ato Constitutivo (SLU) (2022)",
+       "doc": "TECH_CS",
+       "efeito": "2022-07-11"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "Ana Paula Bastos",
+      "cpf": "406.925.666-00",
+      "identificacao": "CPF",
+      "qualidade": "procurador(a) pela procuração de 01/07/2026"
+     }
+    ],
+    "poderes_conferidos": [
+     "Procuração pública de 01/07/2026: não comprova poderes (Procuração é para outro veículo)."
+    ],
+    "prazo_validade": [
+     "—"
+    ],
+    "revogacao": [
+     "—"
+    ],
+    "fontes": [],
+    "documentos_verificaveis": [
+     {
+      "id": "TECH_CS",
+      "titulo": "Ato Constitutivo (SLU) (2022)",
+      "arquivo": "TECH_CS.pdf"
+     },
+     {
+      "id": "POA_ANAPAULA_CIVIC",
+      "titulo": "Procuração (POA_ANAPAULA_CIVIC)",
+      "arquivo": "POA_ANAPAULA_CIVIC.pdf"
+     },
+     {
+      "id": "CRLV",
+      "titulo": "CRLV",
+      "arquivo": "CRLV.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "TECH_CS",
+     "nome": "TECH_CS.pdf",
+     "tipo": "ato_constitutivo_slu",
+     "titulo": "Ato Constitutivo (SLU) (2022)",
+     "data": "2022-07-11",
+     "paginas": [
+      "ATO CONSTITUTIVO DE SOCIEDADE LIMITADA UNIPESSOAL\nTECHNORDESTE SOLUÇÕES DIGITAIS LTDA.\nRAFAEL NOGUEIRA BRITO, brasileiro, solteiro, maior, analista de sistemas, portador da carteira\nde identidade nº 23915476 SSP/CE e inscrito no CPF sob o nº 547.517.799-66, residente e\ndomiciliado na Rua Dom Expedito Lopes, nº 1.245, apartamento 802, bairro Dionísio Torres,\nFortaleza/CE, CEP 60135-410, resolve, por este instrumento particular e na forma do art. 1.052, § 1º,\ndo Código Civil (Lei nº 10.406/2002), constituir uma sociedade limitada unipessoal, que se regerá\npelas cláusulas e condições seguintes e, nas omissões, pelas disposições legais aplicáveis às\nsociedades limitadas.\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL\nA sociedade girará sob o nome empresarial TECHNORDESTE SOLUÇÕES DIGITAIS LTDA. e\npoderá adotar o nome fantasia \"TechNordeste\".\nCLÁUSULA SEGUNDA – DA SEDE\nA sociedade terá sede na Avenida Santos Dumont, nº 3.131, sala 1.104, bairro Aldeota, Fortaleza/CE,\nCEP 60150-162, podendo abrir e encerrar filiais, escritórios e outras dependências em qualquer parte\ndo território nacional, por decisão do sócio único.\nCLÁUSULA TERCEIRA – DO OBJETO SOCIAL\nA sociedade tem por objeto o desenvolvimento de programas de computador sob encomenda e a\nconsultoria em tecnologia da informação.\nParágrafo único. As atividades da sociedade correspondem aos seguintes códigos da Classificação\nNacional de Atividades Econômicas: 6201-5/01 – desenvolvimento de programas de computador\nsob encomenda; e 6204-0/00 – consultoria em tecnologia da informação.\nCLÁUSULA QUARTA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciará suas atividades na data do registro deste ato constitutivo na Junta Comercial do\nEstado do Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUINTA – DO CAPITAL SOCIAL\nO capital social é de R$ 100.000,00 (cem mil reais), dividido em 100.000 (cem mil) quotas de valor\nnominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas neste ato, em moeda\ncorrente do País, pelo sócio único, conforme o quadro abaixo:\nSócio\nQuotas\nValor (R$)\nParticipação\nRAFAEL NOGUEIRA BRITO\n100.000\n100.000,00\n100%\nTotal\n100.000\n100.000,00\n100%\nCLÁUSULA SEXTA – DA RESPONSABILIDADE\nA responsabilidade do sócio único é restrita ao valor de suas quotas, respondendo, porém, pela\nintegralização do capital social, nos termos do art. 1.052 do Código Civil.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+      "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade caberá ao sócio único RAFAEL NOGUEIRA BRITO, que a exercerá\nisoladamente, por prazo indeterminado, com poderes e atribuições de representação ativa e passiva\nda sociedade, em juízo ou fora dele, podendo praticar todos os atos necessários à consecução do\nobjeto social, vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto\nsocial, especialmente em avais, fianças e endossos de favor.\nParágrafo único. As procurações outorgadas pela sociedade deverão especificar os poderes\nconferidos e, salvo as outorgadas para fins judiciais, terão prazo de validade não superior a 1 (um)\nano.\nCLÁUSULA OITAVA – DO PRÓ-LABORE\nO administrador poderá fazer jus a uma retirada mensal a título de pró-labore, em valor fixado por\ndecisão do sócio único, observadas as disposições da legislação tributária e previdenciária.\nCLÁUSULA NONA – DO EXERCÍCIO SOCIAL E DAS DEMONSTRAÇÕES\nO exercício social coincidirá com o ano civil. Ao término de cada exercício social, em 31 de\ndezembro, o administrador prestará contas justificadas de sua administração, procedendo à\nelaboração do inventário, do balanço patrimonial e do balanço de resultado econômico, cabendo ao\nsócio único os lucros ou as perdas apurados.\nCLÁUSULA DÉCIMA – DAS DECISÕES DO SÓCIO ÚNICO\nAs decisões que, na sociedade limitada pluripessoal, seriam objeto de deliberação dos sócios serão\ntomadas pelo sócio único e formalizadas por escrito, dispensadas as formalidades de convocação e\nde reunião, devendo ser arquivadas na Junta Comercial sempre que a lei assim o exigir.\nCLÁUSULA DÉCIMA PRIMEIRA – DA ADMISSÃO DE NOVOS SÓCIOS\nA sociedade poderá, a qualquer tempo, admitir novos sócios, mediante alteração deste ato\nconstitutivo, hipótese em que passará a reger-se pelas normas aplicáveis à sociedade limitada\npluripessoal.\nCLÁUSULA DÉCIMA SEGUNDA – DO FALECIMENTO OU DA INCAPACIDADE\nFalecendo ou sendo interditado o sócio único, a sociedade continuará suas atividades com os\nherdeiros, sucessores ou o representante legal do incapaz, que deverão, no prazo legal, promover a\nalteração deste ato constitutivo. Não sendo possível a continuidade, ou inexistindo interesse dos\nherdeiros e sucessores, a sociedade será dissolvida e liquidada na forma da lei.\nCLÁUSULA DÉCIMA TERCEIRA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nO administrador declara, sob as penas da lei, que não está impedido de exercer a administração da\nsociedade por lei especial, ou em virtude de condenação criminal, ou por se encontrar sob os efeitos\ndela, a pena que vede, ainda que temporariamente, o acesso a cargos públicos; ou por crime\nfalimentar, de prevaricação, peita ou suborno, concussão, peculato; ou contra a economia popular,\ncontra o sistema financeiro nacional, contra as normas de defesa da concorrência, contra as relações\nde consumo, a fé pública ou a propriedade, nos termos do art. 1.011, § 1º, do Código Civil.\nCLÁUSULA DÉCIMA QUARTA – DO ENQUADRAMENTO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+      "O sócio único declara que a sociedade se enquadra como microempresa, nos termos da Lei\nComplementar nº 123, de 14 de dezembro de 2006, e que não se enquadra em qualquer das hipóteses\nde exclusão previstas no § 4º do art. 3º da referida lei.\nCLÁUSULA DÉCIMA QUINTA – DO FORO\nFica eleito o foro da Comarca de Fortaleza/CE para o exercício e o cumprimento dos direitos e das\nobrigações resultantes deste ato constitutivo, com renúncia a qualquer outro, por mais privilegiado\nque seja.\nE, por estar assim constituída a sociedade, o sócio único assina o presente instrumento em via única,\ndigitalmente, para que produza seus efeitos legais após o arquivamento na Junta Comercial do\nEstado do Ceará.\nFortaleza/CE, 11 de julho de 2022.\nRAFAEL NOGUEIRA BRITO\nSócio único e administrador\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 20/07/2022 sob o nº 27382031353\nProtocolo: 22/418.763-0 | NIRE: 23894574783\nEmpresa: TECHNORDESTE SOLUÇÕES DIGITAIS LTDA. | CNPJ: 33.437.010/0001-48\nAutenticação: 7F3A9C1E44B2D08A6E15C93F\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "3cbd647a647164b4bbd765f62f21dcc3f3cb865ad2a9ef79e86c3c90ea7595b5",
+     "leitura": {}
+    },
+    {
+     "id": "POA_ANAPAULA_CIVIC",
+     "nome": "POA_ANAPAULA_CIVIC.pdf",
+     "tipo": "procuracao",
+     "titulo": "Procuração (POA_ANAPAULA_CIVIC)",
+     "data": "2026-07-01",
+     "paginas": [
+      "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nHeloísa Barreira Nunes – Tabeliã\nLIVRO 872 — FOLHAS 064/065\nPROCURAÇÃO COM PODERES ESPECÍFICOS PARA VENDA DE VEÍCULO\nDETERMINADO\nSAIBAM quantos este público instrumento de procuração virem que, ao primeiro (1º) dia do mês de\njulho de dois mil e vinte e seis (2026), nesta cidade de Fortaleza, Capital do Estado do Ceará, neste\nCartório, perante mim, Rogério Lustosa Maia, Escrevente Notarial, compareceu como\nOUTORGANTE: TECHNORDESTE SOLUÇÕES DIGITAIS LTDA., sociedade limitada\nunipessoal, inscrita no CNPJ sob o nº 33.437.010/0001-48, NIRE 23894574783, com sede nesta\nCapital, neste ato representada por seu sócio único e administrador RAFAEL NOGUEIRA BRITO,\nbrasileiro, solteiro, analista de sistemas, RG nº 23915476 SSP/CE, CPF nº 547.517.799-66, residente\ne domiciliado em Fortaleza/CE, na forma do Ato Constitutivo de Sociedade Limitada Unipessoal\nregistrado na JUCEC em 20/07/2022 sob o nº 27382031353, cuja cópia, com a certidão simplificada\nexpedida pela JUCEC em 25/06/2026, fica arquivada nestas notas. Reconhecido como o próprio por\nmim, à vista dos documentos apresentados, do que dou fé.\nPela outorgante, por seu representante, me foi dito que, por este instrumento, nomeia e constitui sua\nbastante procuradora ANA PAULA BASTOS, brasileira, solteira, despachante documentalista, RG\nnº 33119104 SSP/CE, CPF nº 406.925.666-00, com escritório na Avenida Aguanambi, nº 1.505, sala\n12, Fátima, Fortaleza/CE, a quem confere poderes especiais e expressos para vender e transferir,\nexclusivamente, o veículo HONDA/CIVIC EXL 2.0, ano/modelo 2021/2021, cor cinza, placa\nZEY5F63, RENAVAM 08120617698, chassi 93HY9ZFBTSH1SWMWA, de propriedade da\noutorgante, a quem e pelo preço e condições que ajustar; assinar a respectiva Autorização para\nTransferência de Propriedade do Veículo em meio digital (ATPV-e); receber o preço e dar quitação; e\nrequerer perante o DETRAN o que for necessário à transferência do referido veículo, inclusive\nvistoria e comunicação de venda, recolhendo as taxas devidas.\nOs poderes ora conferidos restringem-se exclusivamente ao veículo acima descrito, não se\nestendendo a nenhum outro bem da outorgante.\nO presente mandato vigorará pelo prazo de 90 (noventa) dias, contados desta data.\nAssim o disse, do que dou fé, e me pediu que lavrasse este instrumento, que, lido em voz alta e\nachado conforme, aceita e assina. Eu, Rogério Lustosa Maia, Escrevente Notarial, a lavrei. Eu,\nHeloísa Barreira Nunes, Tabeliã, a subscrevo.\n(aa) RAFAEL NOGUEIRA BRITO, pela outorgante.\nHELOÍSA BARREIRA NUNES, Tabeliã.\nEmolumentos: R$ 214,37 · Taxa de fiscalização: R$ 10,72 · Total: R$ 225,09\nSelo Digital: IRA-0872-2026-5F19E3\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "TRASLADO — Trasladada na mesma data, conforme o original, do que dou fé.\nFortaleza/CE, 1º de julho de 2026.\nHeloísa Barreira Nunes – Tabeliã\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "0d3362c92206d855178233b1d898d07fe9a3f955ee2d220bf7a340a0ec61cae9",
+     "leitura": {}
+    },
+    {
+     "id": "CRLV",
+     "nome": "CRLV.pdf",
+     "tipo": "crlv",
+     "titulo": "CRLV",
+     "data": null,
+     "paginas": [
+      "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n03729871120\nPLACA\nALF7V12\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2023\nANO MODELO\n2023\nNÚMERO DO CRV\n987442384500\nCÓDIGO DE SEGURANÇA DO CLA\n82891387680\nMARCA / MODELO / VERSÃO\nHONDA/HR-V EXL 1.5\nESPÉCIE / TIPO\nPASSAGEIRO/\nAUTOMÓVEL\nCHASSI\n93HAWK3TB5VK1A5HG\nCOR PREDOMINANTE\nBRANCA\nCOMBUSTÍVEL\nÁLCOOL/\nGASOLINA\nNOME\nTECHNORDESTE SOLUÇÕES DIGITAIS\nLTDA.\nCPF / CNPJ\n33.437.010/0001-48\nLOCAL\nFORTALEZA/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "1d4f37c1241d2e08722659ec94e66401eee687c6c2d2a12392bf8989d211003e",
+     "leitura": {}
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "gabarito",
+    "politica": "Código Civil (genérica)"
+   },
+   "lado": "vendedor"
+  }
+ },
+ "geral": {
+  "veredito": "NAO_PODE",
+  "faixa": "VERMELHO",
+  "indice": 0.0,
+  "resumo": "Vendedor: Os assinantes informados não bastam. Quem pode assinar: Rafael Nogueira Brito. O caminho por procuração pública de 01/07/2026 não vale: procuração é para outro veículo.",
+  "motivos_faixa": [
+   "Vendedor — índice 0 ≤ limiar 15"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "HONDA/HR-V EXL 1.5",
+   "placa": "ALF7V12",
+   "renavam": "03729871120",
+   "chassi": "93HAWK3TB5VK1A5HG"
+  },
+  "data_venda": "2026-09-12",
+  "valor": 155000.0,
+  "vendedor": {
+   "tipo": "PJ",
+   "nome": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+   "documento": "33.437.010/0001-48",
+   "assinantes": [
+    {
+     "nome": "Ana Paula Bastos",
+     "cpf": "406.925.666-00"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": "Patrícia Lemos Barroso",
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "informado"
+ },
+ "hash_entrada": "f1d126140a3ef108a8eb467eab54bd2e40c5fff82d88b7ea0904e2e7e0f91247"
+}

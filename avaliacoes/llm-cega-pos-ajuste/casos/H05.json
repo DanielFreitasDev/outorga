@@ -1,0 +1,1732 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T10:07:49",
+ "pedido": {
+  "veiculo": {
+   "descricao": "RENAULT/DUSTER INTENSE 1.6",
+   "placa": "MSL2F85",
+   "renavam": "01494700490",
+   "chassi": "93YE1HMUJLFHMUVAF"
+  },
+  "data_venda": "2026-09-22",
+  "valor": 96000.0,
+  "assinantes": [
+   {
+    "nome": "Nilton Arruda Coelho",
+    "cpf": "869.934.673-56"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "Rita de Cássia Moreira",
+  "vendedor_cnpj": "35.326.130/0001-01",
+  "lado": "vendedor"
+ },
+ "empresa": {
+  "razao_social": "DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA.",
+  "cnpj": "35.326.130/0001-01",
+  "tipo": "LTDA",
+  "objeto": "a gestão de ativos próprios e a prestação de serviços de apoio administrativo, incluindo a administração de bens e direitos de titularidade da sociedade, a participação em outras sociedades como sócia ou acionista, e serviços de suporte administrativo, financeiro e de escritório a empresas.",
+  "comercializa_veiculos": false,
+  "subtipo": null
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 0.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 3,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 0 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: Hugo Leitão Damasceno ou Priscila Damasceno Rios (procurador). O caminho por substabelecimento com reserva de 25/08/2026 não vale: substabelecimento proibido.",
+ "assinantes": [
+  {
+   "informado": "Nilton Arruda Coelho",
+   "cpf": "869.934.673-56",
+   "chave": "86993467356",
+   "nome": "Nilton Arruda Coelho",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:97686335305",
+   "pessoas": [
+    {
+     "chave": "97686335305",
+     "nome": "Hugo Leitão Damasceno"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Cláusula III, Parágrafo 1",
+   "cadeia": [
+    "DAMASCENO_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  },
+  {
+   "id": "POA_H_PRISCILA_SEMSUB:61408316013",
+   "pessoas": [
+    {
+     "chave": "61408316013",
+     "nome": "Priscila Damasceno Rios"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 10/04/2026 (Cartório Iracema – 4º Tabelionato de Notas de Fortaleza)",
+   "cadeia": [
+    "POA_H_PRISCILA_SEMSUB"
+   ],
+   "severidade": "atencao",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PJ",
+     "severidade": "ok",
+     "titulo": "Outorgada pela própria empresa",
+     "detalhe": "A outorgante é a empresa, representada por Hugo Leitão Damasceno.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_H_PRISCILA_SEMSUB",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA., sociedade limitada com sede nesta Capital, inscrita no CNPJ sob o nº 35.326.130/0001-01",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 574,
+       "fim": 703
+      }
+     ],
+     "caminho": "POA_H_PRISCILA_SEMSUB"
+    },
+    {
+     "codigo": "OUTORGA_COM_PODERES",
+     "severidade": "ok",
+     "titulo": "Quem outorgou tinha poder",
+     "detalhe": "Em 10/04/2026, Hugo Leitão Damasceno podia representar a empresa nesse ato.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_H_PRISCILA_SEMSUB",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA., sociedade limitada com sede nesta Capital, inscrita no CNPJ sob o nº 35.326.130/0001-01",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 574,
+       "fim": 703
+      },
+      {
+       "doc_id": "DAMASCENO_CS",
+       "doc_titulo": "Contrato Social (2022)",
+       "trecho": "A administração da sociedade será exercida pelo sócio HUGO LEITÃO DAMASCENO, a quem caberá, sozinho e com plenos poderes de gestão, a representação ativa e passiva da sociedade, judicial e extrajudicialmente, podendo praticar todos os atos relacionados ao objeto social, abrir e movimentar contas bancárias, firmar contratos e assinar documentos em nome da sociedade.",
+       "clausula": "Cláusula III, Parágrafo 1",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 2582,
+       "fim": 2949
+      }
+     ],
+     "caminho": "POA_H_PRISCILA_SEMSUB"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_H_PRISCILA_SEMSUB",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "poderes especiais e expressos para alienar, vender, ceder ou transferir, a quem entender e pelo preço que ajustar, quaisquer veículos automotores de propriedade da outorgante; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e) e os recibos correspondentes",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1454,
+       "fim": 1739
+      }
+     ],
+     "caminho": "POA_H_PRISCILA_SEMSUB"
+    },
+    {
+     "codigo": "PROCURACAO_NO_PRAZO",
+     "severidade": "ok",
+     "titulo": "Dentro do prazo",
+     "detalhe": "Válida até 10/04/2027.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "POA_H_PRISCILA_SEMSUB",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "O presente instrumento é válido por 1 (um) ano a partir desta data.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1980,
+       "fim": 2047
+      }
+     ],
+     "caminho": "POA_H_PRISCILA_SEMSUB"
+    },
+    {
+     "codigo": "PROCURACAO_SEM_VEICULO",
+     "severidade": "atencao",
+     "titulo": "Procuração não identifica o veículo",
+     "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+     "fundamento": [
+      "CJF, Enunciado 183"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_H_PRISCILA_SEMSUB",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "poderes especiais e expressos para alienar, vender, ceder ou transferir, a quem entender e pelo preço que ajustar, quaisquer veículos automotores de propriedade da outorgante; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e) e os recibos correspondentes",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1454,
+       "fim": 1739
+      }
+     ],
+     "caminho": "POA_H_PRISCILA_SEMSUB"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [
+  {
+   "id": "SUB_H_PRISCILA_NILTON:bloqueada",
+   "pessoas": [
+    {
+     "chave": "86993467356",
+     "nome": "Nilton Arruda Coelho"
+    }
+   ],
+   "via": "substabelecimento",
+   "descricao": "Substabelecimento com reserva de 25/08/2026",
+   "cadeia": [
+    "POA_H_PRISCILA_SEMSUB",
+    "SUB_H_PRISCILA_NILTON"
+   ],
+   "severidade": "atencao",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "ORIGEM_VALIDA",
+     "severidade": "ok",
+     "titulo": "Procuração de origem válida",
+     "detalhe": "Origem: procuração de 10/04/2026.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "SUB_H_PRISCILA_NILTON",
+       "doc_titulo": "Substabelecimento (2026)",
+       "trecho": "Declarou a comparecente que, pelo presente, substabelece, com reserva de iguais poderes para si, na pessoa de NILTON ARRUDA COELHO, brasileiro, casado, despachante documentalista, RG nº 57736408 SSP/CE, CPF nº 869.934.673-56, com escritório nesta Capital, os poderes que lhe foram conferidos naquele instrumento, notadamente os de vender e transferir veículos de propriedade da mandante, assinar a respectiva ATPV/ATPV-e, receber o preço, dar quitação e representá-la perante o DETRAN.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 791,
+       "fim": 1276
+      }
+     ],
+     "caminho": "SUB_H_PRISCILA_NILTON"
+    },
+    {
+     "codigo": "PROCURACAO_SEM_VEICULO",
+     "severidade": "atencao",
+     "titulo": "Procuração não identifica o veículo (procuração de origem)",
+     "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+     "fundamento": [
+      "CJF, Enunciado 183"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_H_PRISCILA_SEMSUB",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "poderes especiais e expressos para alienar, vender, ceder ou transferir, a quem entender e pelo preço que ajustar, quaisquer veículos automotores de propriedade da outorgante; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e) e os recibos correspondentes",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1454,
+       "fim": 1739
+      }
+     ],
+     "caminho": "SUB_H_PRISCILA_NILTON"
+    },
+    {
+     "codigo": "SUBSTABELECIMENTO_VEDADO",
+     "severidade": "bloqueio",
+     "titulo": "Substabelecimento proibido",
+     "detalhe": "A procuração original proíbe substabelecer: os atos do substabelecido não obrigam a empresa, salvo ratificação expressa.",
+     "fundamento": [
+      "CC art. 667, §3º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_H_PRISCILA_SEMSUB",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "O mandato é outorgado em caráter estritamente pessoal, sem direito de substabelecer.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2048,
+       "fim": 2132
+      },
+      {
+       "doc_id": "SUB_H_PRISCILA_NILTON",
+       "doc_titulo": "Substabelecimento (2026)",
+       "trecho": "Declarou a comparecente que, pelo presente, substabelece, com reserva de iguais poderes para si, na pessoa de NILTON ARRUDA COELHO, brasileiro, casado, despachante documentalista, RG nº 57736408 SSP/CE, CPF nº 869.934.673-56, com escritório nesta Capital, os poderes que lhe foram conferidos naquele instrumento, notadamente os de vender e transferir veículos de propriedade da mandante, assinar a respectiva ATPV/ATPV-e, receber o preço, dar quitação e representá-la perante o DETRAN.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 791,
+       "fim": 1276
+      }
+     ],
+     "caminho": "SUB_H_PRISCILA_NILTON"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "contrato:97686335305",
+   "via": "contrato",
+   "descricao": "regra geral de representação — Cláusula III, Parágrafo 1",
+   "pessoas": [
+    "97686335305"
+   ],
+   "faltam": [
+    "97686335305"
+   ],
+   "faltam_nomes": [
+    "Hugo Leitão Damasceno"
+   ],
+   "pessoas_nomes": [
+    "Hugo Leitão Damasceno"
+   ]
+  },
+  {
+   "alternativa": "POA_H_PRISCILA_SEMSUB:61408316013",
+   "via": "procuracao",
+   "descricao": "Procuração pública de 10/04/2026 (Cartório Iracema – 4º Tabelionato de Notas de Fortaleza)",
+   "pessoas": [
+    "61408316013"
+   ],
+   "faltam": [
+    "61408316013"
+   ],
+   "faltam_nomes": [
+    "Priscila Damasceno Rios"
+   ],
+   "pessoas_nomes": [
+    "Priscila Damasceno Rios"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "CND_INSS",
+   "severidade": "info",
+   "titulo": "CND previdenciária",
+   "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+   "fundamento": [
+    "Lei 8.212/91, art. 47, I, \"c\""
+   ],
+   "fontes": [],
+   "caminho": null
+  },
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: DAMASCENO PARTICIPAÇÕES E.",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "MSL2F85",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "DAMASCENO_CS#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "DAMASCENO_CS",
+    "doc_titulo": "Contrato Social (2022)",
+    "trecho": "A administração da sociedade será exercida pelo sócio HUGO LEITÃO DAMASCENO, a quem caberá, sozinho e com plenos poderes de gestão, a representação ativa e passiva da sociedade, judicial e extrajudicialmente, podendo praticar todos os atos relacionados ao objeto social, abrir e movimentar contas bancárias, firmar contratos e assinar documentos em nome da sociedade.",
+    "clausula": "Cláusula III, Parágrafo 1",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2582,
+    "fim": 2949
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Hugo Leitão Damasceno"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "sozinho"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "DAMASCENO_CS#R2",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "DAMASCENO_CS",
+    "doc_titulo": "Contrato Social (2022)",
+    "trecho": "A sócia PRISCILA DAMASCENO RIOS participará da sociedade na qualidade de quotista, sem atribuições de administração.",
+    "clausula": "Cláusula III, Parágrafo 2",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2950,
+    "fim": 3066
+   },
+   "modo": "nao_especificado",
+   "pessoas": [
+    "Priscila Damasceno Rios"
+   ],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "DAMASCENO_CS#R3",
+   "escopo": "alienacao_bens_imoveis",
+   "aplicavel": false,
+   "motivo": "trata de bens imóveis; veículo é bem móvel",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "DAMASCENO_CS",
+    "doc_titulo": "Contrato Social (2022)",
+    "trecho": "Não obstante os poderes conferidos ao administrador, a alienação de bens imóveis e de participações societárias detidas pela sociedade dependerá de deliberação de sócios representando três quartos do capital social.",
+    "clausula": "Cláusula III, Parágrafo 3",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3067,
+    "fim": 3282
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "DAMASCENO_CS#R4",
+   "escopo": "obrigacoes_garantias",
+   "aplicavel": false,
+   "motivo": "trata de avais, fianças e garantias",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "DAMASCENO_CS",
+    "doc_titulo": "Contrato Social (2022)",
+    "trecho": "É vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+    "clausula": "Cláusula III, Parágrafo 4",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3283,
+    "fim": 3412
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-09-22",
+  "atos": [
+   {
+    "doc": "DAMASCENO_CS",
+    "titulo": "Contrato Social (2022)",
+    "efeito": "2022-03-21"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "97686335305",
+    "nome": "Hugo Leitão Damasceno",
+    "cargo": "sócio-administrador",
+    "doc": "DAMASCENO_CS"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "97686335305",
+    "nome": "Hugo Leitão Damasceno",
+    "percentual": 70.0
+   },
+   {
+    "chave": "61408316013",
+    "nome": "Priscila Damasceno Rios",
+    "percentual": 30.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA.",
+    "sub": "35.326.130/0001-01"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "RENAULT/DUSTER INTENSE 1.6",
+    "sub": "MSL2F85"
+   },
+   {
+    "id": "97686335305",
+    "tipo": "pessoa",
+    "rotulo": "Hugo Leitão Damasceno",
+    "papeis": [
+     "sócio 70%",
+     "sócio-administrador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "61408316013",
+    "tipo": "pessoa",
+    "rotulo": "Priscila Damasceno Rios",
+    "papeis": [
+     "sócio 30%",
+     "procurador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "86993467356",
+    "tipo": "pessoa",
+    "rotulo": "Nilton Arruda Coelho",
+    "papeis": [
+     "substabelecido"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "97686335305",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "70%",
+    "status": "neutro"
+   },
+   {
+    "de": "61408316013",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "30%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "97686335305",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "DAMASCENO_CS"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "61408316013",
+    "tipo": "procuracao",
+    "status": "valido",
+    "doc": "POA_H_PRISCILA_SEMSUB",
+    "rotulo": "procuração 10/04/2026",
+    "motivo": null
+   },
+   {
+    "de": "61408316013",
+    "para": "86993467356",
+    "tipo": "substabelecimento",
+    "status": "invalido",
+    "doc": "SUB_H_PRISCILA_NILTON",
+    "rotulo": "substabelece com reserva · Substabelecimento proibido",
+    "motivo": "Substabelecimento proibido"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2022-03-21",
+   "tipo": "ato",
+   "titulo": "Contrato Social (2022)",
+   "doc": "DAMASCENO_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-04-10",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Priscila Damasceno Rios",
+   "doc": "POA_H_PRISCILA_SEMSUB",
+   "detalhe": "publica"
+  },
+  {
+   "data": "2026-08-25",
+   "tipo": "substabelecimento",
+   "titulo": "Priscila Damasceno Rios substabelece a Nilton Arruda Coelho",
+   "doc": "SUB_H_PRISCILA_NILTON",
+   "detalhe": "com_reserva"
+  },
+  {
+   "data": "2026-09-22",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 96.000,00"
+  },
+  {
+   "data": "2027-04-10",
+   "tipo": "vencimento",
+   "titulo": "Vence a procuração de Priscila Damasceno Rios",
+   "doc": "POA_H_PRISCILA_SEMSUB",
+   "detalhe": ""
+  }
+ ],
+ "pessoas": {
+  "97686335305": {
+   "nome": "Hugo Leitão Damasceno",
+   "cpf": "97686335305"
+  },
+  "61408316013": {
+   "nome": "Priscila Damasceno Rios",
+   "cpf": "61408316013"
+  },
+  "86993467356": {
+   "nome": "Nilton Arruda Coelho",
+   "cpf": "86993467356"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA.",
+   "cnpj": "35.326.130/0001-01",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Contrato Social (2022)",
+     "doc": "DAMASCENO_CS",
+     "efeito": "2022-03-21"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Nilton Arruda Coelho",
+    "cpf": "869.934.673-56",
+    "identificacao": "CPF",
+    "qualidade": "substabelecido(a) em 25/08/2026"
+   }
+  ],
+  "poderes_conferidos": [
+   "Substabelecimento com reserva de 25/08/2026: não comprova poderes (Substabelecimento proibido)."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [],
+  "documentos_verificaveis": [
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "DAMASCENO_CS",
+    "titulo": "Contrato Social (2022)",
+    "arquivo": "DAMASCENO_CS.pdf"
+   },
+   {
+    "id": "POA_H_PRISCILA_SEMSUB",
+    "titulo": "Procuração (2026)",
+    "arquivo": "POA_H_PRISCILA_SEMSUB.pdf"
+   },
+   {
+    "id": "SUB_H_PRISCILA_NILTON",
+    "titulo": "Substabelecimento (2026)",
+    "arquivo": "SUB_H_PRISCILA_NILTON.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n01494700490\nPLACA\nMSL2F85\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2022\nANO MODELO\n2023\nNÚMERO DO CRV\n738486907472\nCÓDIGO DE SEGURANÇA DO CLA\n87795486678\nMARCA / MODELO / VERSÃO\nRENAULT/DUSTER INTENSE 1.6\nESPÉCIE / TIPO\nPASSAGEIRO/\nAUTOMÓVEL\nCHASSI\n93YE1HMUJLFHMUVAF\nCOR PREDOMINANTE\nVERMELHA\nCOMBUSTÍVEL\nÁLCOOL/\nGASOLINA\nNOME\nDAMASCENO PARTICIPAÇÕES E\nSERVIÇOS LTDA.\nCPF / CNPJ\n35.326.130/0001-01\nLOCAL\nFORTALEZA/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "8010f1969b32976ab54b60ece9812739b998fd4be80a83ef3775e08d95b58048",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "DAMASCENO_CS",
+   "nome": "DAMASCENO_CS.pdf",
+   "tipo": "contrato_social",
+   "titulo": "Contrato Social (2022)",
+   "data": "2022-03-21",
+   "paginas": [
+    "DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA.\nCNPJ: 35.326.130/0001-01 | NIRE: 23275965330\nCONTRATO SOCIAL DE CONSTITUIÇÃO\nHUGO LEITÃO DAMASCENO, brasileiro, divorciado, empresário, natural de Fortaleza/CE,\nportador da carteira de identidade nº 71966135 SSP/CE, inscrito no CPF sob o nº 976.863.353-05,\nresidente e domiciliado na Avenida Beira-Mar, nº 3.980, apartamento 1.502, bairro Mucuripe,\nFortaleza/CE, CEP 60165-121; e\nPRISCILA DAMASCENO RIOS, brasileira, solteira, maior, gestora financeira, natural de Fortaleza/\nCE, portadora da carteira de identidade nº 4150937 SSP/CE, inscrita no CPF sob o nº\n614.083.160-13, residente e domiciliada na Rua Tibúrcio Cavalcante, nº 2.275, apartamento 803,\nbairro Dionísio Torres, Fortaleza/CE, CEP 60125-101;\ntêm, entre si, justo e acordado constituir uma sociedade empresária do tipo limitada, que se regerá\npelas disposições deste instrumento e, nas omissões, pelo Código Civil e pela legislação\ncomplementar.\nI – DA SOCIEDADE\nA sociedade terá o nome empresarial DAMASCENO PARTICIPAÇÕES E SERVIÇOS\nLTDA. e sede na Avenida Dom Luís, nº 1.200, sala 1.708, Torre Empresarial, bairro Meireles,\nFortaleza/CE, CEP 60160-230.\nO objeto social compreende a gestão de ativos próprios e a prestação de serviços de apoio\nadministrativo, incluindo a administração de bens e direitos de titularidade da sociedade, a\nparticipação em outras sociedades como sócia ou acionista, e serviços de suporte\nadministrativo, financeiro e de escritório a empresas.\nO prazo de duração da sociedade é indeterminado, com início de atividades na data do\narquivamento deste contrato na Junta Comercial.\nII – DO CAPITAL\nO capital social é de R$ 1.200.000,00 (um milhão e duzentos mil reais), dividido em\n1.200.000 (um milhão e duzentas mil) quotas, no valor de R$ 1,00 (um real) cada, totalmente\nsubscrito e integralizado em moeda corrente nacional neste ato, assim repartido:\nSócio\nQuotas\nValor (R$)\nParticipação\nHUGO LEITÃO DAMASCENO\n840.000\n840.000,00\n70%\nPRISCILA DAMASCENO RIOS\n360.000\n360.000,00\n30%\nTotal\n1.200.000\n1.200.000,00\n100%\nA responsabilidade dos sócios é restrita ao valor de suas quotas, respondendo todos,\nsolidariamente, pela integralização do capital social, nos termos do art. 1.052 do Código\nCivil.\n1.\n2.\n3.\n1.\n1.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "As quotas são indivisíveis e não poderão ser alienadas a terceiros sem que sejam previamente\noferecidas ao outro sócio, a quem é assegurado o direito de preferência, em iguais condições,\npelo prazo de 30 (trinta) dias contados da notificação.\nIII – DA ADMINISTRAÇÃO\nA administração da sociedade será exercida pelo sócio HUGO LEITÃO DAMASCENO, a\nquem caberá, sozinho e com plenos poderes de gestão, a representação ativa e passiva da\nsociedade, judicial e extrajudicialmente, podendo praticar todos os atos relacionados ao objeto\nsocial, abrir e movimentar contas bancárias, firmar contratos e assinar documentos em nome\nda sociedade.\nA sócia PRISCILA DAMASCENO RIOS participará da sociedade na qualidade de quotista,\nsem atribuições de administração.\nNão obstante os poderes conferidos ao administrador, a alienação de bens imóveis e de\nparticipações societárias detidas pela sociedade dependerá de deliberação de sócios\nrepresentando três quartos do capital social.\nÉ vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente\nem avais, fianças e endossos de favor.\nO administrador declara, sob as penas da lei, não estar impedido de exercer a administração\nde sociedade empresária, por lei especial ou em virtude de condenação criminal, ou por se\nencontrar sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\npúblicos, ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato, ou\ncontra a economia popular, contra o sistema financeiro nacional, contra normas de defesa da\nconcorrência, contra as relações de consumo, a fé pública ou a propriedade.\nO administrador terá direito a uma retirada mensal a título de pró-labore, fixada de comum\nacordo pelos sócios.\nIV – DO EXERCÍCIO SOCIAL\nO exercício social coincidirá com o ano civil. Ao seu término serão levantados o inventário, o\nbalanço patrimonial e o balanço de resultado econômico, distribuindo-se os lucros ou\nsuportando-se as perdas na proporção das quotas de cada sócio.\nNos quatro meses subsequentes ao término do exercício, os sócios reunir-se-ão para tomar as\ncontas do administrador e deliberar sobre o balanço patrimonial e o de resultado econômico.\nV – DAS DISPOSIÇÕES FINAIS\nO falecimento, a interdição ou a retirada de qualquer dos sócios não dissolve a sociedade. Os\nhaveres do sócio que se desligar, ou de seus sucessores, serão apurados com base em balanço\nespecialmente levantado na data do evento e pagos em até 12 (doze) parcelas mensais e\nsucessivas, corrigidas pelo IPCA.\nOs casos omissos serão resolvidos pelos sócios, observadas as disposições legais aplicáveis.\n2.\n1.\n2.\n3.\n4.\n5.\n6.\n1.\n2.\n1.\n2.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "Fica eleito o foro da Comarca de Fortaleza/CE para dirimir quaisquer questões oriundas deste\ncontrato.\nPor estarem assim de acordo, os sócios assinam o presente contrato em 3 (três) vias de igual teor.\nFortaleza/CE, 21 de março de 2022.\n____________________________________ HUGO LEITÃO DAMASCENO\n____________________________________ PRISCILA DAMASCENO RIOS\nVisto: Sérvulo Mendes Barbalho – OAB/CE nº 36.144\n3.\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 04/04/2022 sob o nº 58295387285\nProtocolo: 22/093.418-2 | NIRE: 23275965330\nEmpresa: DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA.\nAutenticação: E06B2F81C9A43D75B2E1F0C86A9D3B47\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "28af1bba290a352591d18d6d8465c13b7eda740e2a12adf02a578e59f7e8bbde",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 76.4,
+      "tokens_saida": 647,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 52.6,
+      "tokens_saida": 979,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "POA_H_PRISCILA_SEMSUB",
+   "nome": "POA_H_PRISCILA_SEMSUB.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (2026)",
+   "data": "2026-04-10",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nHeloísa Barreira Nunes – Tabeliã\nLIVRO 853 · FOLHAS 019/020\nPROCURAÇÃO PÚBLICA – DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA. EM\nFAVOR DE PRISCILA DAMASCENO RIOS\nSAIBAM quantos este público instrumento de procuração virem que, aos dez (10) dias do mês de\nabril de dois mil e vinte e seis (2026), nesta cidade de Fortaleza, Estado do Ceará, nas dependências\ndeste Tabelionato, perante mim, Patrícia Viana Duarte, Escrevente Autorizada, compareceu, como\nOUTORGANTE, DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA., sociedade limitada com\nsede nesta Capital, inscrita no CNPJ sob o nº 35.326.130/0001-01, NIRE 23275965330, aqui\nrepresentada por seu sócio administrador HUGO LEITÃO DAMASCENO, brasileiro, divorciado,\nempresário, portador do RG nº 71966135 SSP/CE e do CPF nº 976.863.353-05, residente em\nFortaleza/CE, com poderes que lhe atribui o contrato social de constituição, registrado na Junta\nComercial do Estado do Ceará em 04/04/2022, cuja certidão simplificada foi examinada e arquivada\nnesta serventia. O representante foi identificado por mim à vista dos documentos apresentados, do\nque dou fé.\nE, por seu representante, declarou a outorgante que constitui sua procuradora PRISCILA\nDAMASCENO RIOS, brasileira, solteira, gestora financeira, portadora do RG nº 4150937 SSP/CE e\ndo CPF nº 614.083.160-13, residente nesta Capital, a quem confere poderes especiais e expressos\npara alienar, vender, ceder ou transferir, a quem entender e pelo preço que ajustar, quaisquer veículos\nautomotores de propriedade da outorgante; assinar a Autorização para Transferência de Propriedade\ndo Veículo (ATPV/ATPV-e) e os recibos correspondentes; receber o preço, total ou parceladamente,\ne dar plena quitação; apresentar requerimentos e firmar declarações perante o DETRAN e os demais\nórgãos executivos de trânsito, praticando os atos necessários ao completo desempenho deste\nencargo.\nO presente instrumento é válido por 1 (um) ano a partir desta data. O mandato é outorgado em\ncaráter estritamente pessoal, sem direito de substabelecer.\nAssim disse, do que dou fé, e me pediu que lhe lavrasse este instrumento, o qual, depois de lido e\nachado conforme, aceita e assina. Eu, Patrícia Viana Duarte, Escrevente Autorizada, o lavrei. Eu,\nHeloísa Barreira Nunes, Tabeliã, o subscrevo e assino.\n(aa) HUGO LEITÃO DAMASCENO, pela outorgante.\nHELOÍSA BARREIRA NUNES, Tabeliã.\nEmolumentos: R$ 216,85 · FERMOJU: R$ 10,84 · Total: R$ 227,69\nSelo Digital: IRA-0853-2026-C9D402\nTRASLADO — Extraído fielmente do livro e folhas acima indicados, do que dou fé.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "Fortaleza/CE, 10 de abril de 2026.\nHeloísa Barreira Nunes – Tabeliã\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "3323265c519c55b8a3b949a0802fbf4024b0469abb2a05ed0a8ac5ed93724626",
+   "leitura": {
+    "tarefas": {
+     "procuracao": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 70.5,
+      "tokens_saida": 678,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "SUB_H_PRISCILA_NILTON",
+   "nome": "SUB_H_PRISCILA_NILTON.pdf",
+   "tipo": "substabelecimento",
+   "titulo": "Substabelecimento (2026)",
+   "data": "2026-08-25",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL – ESTADO DO CEARÁ\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nLIVRO 879 — FOLHAS 058/059\nSUBSTABELECIMENTO DE PROCURAÇÃO\nSAIBAM os que este público instrumento virem que, aos vinte e cinco (25) dias de agosto de dois\nmil e vinte e seis (2026), em Fortaleza/CE, perante mim, Rômulo Teixeira Bandeira, Escrevente\nSubstituto, compareceu PRISCILA DAMASCENO RIOS, brasileira, solteira, gestora financeira, RG\nnº 4150937 SSP/CE, CPF nº 614.083.160-13, residente nesta Capital, na qualidade de procuradora\nde DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA., inscrita no CNPJ sob o nº\n35.326.130/0001-01, conforme procuração pública lavrada neste Tabelionato em 10 de abril de\n2026, no Livro 853, folhas 019/020, cujo traslado foi exibido e conferido.\nDeclarou a comparecente que, pelo presente, substabelece, com reserva de iguais poderes para si, na\npessoa de NILTON ARRUDA COELHO, brasileiro, casado, despachante documentalista, RG nº\n57736408 SSP/CE, CPF nº 869.934.673-56, com escritório nesta Capital, os poderes que lhe foram\nconferidos naquele instrumento, notadamente os de vender e transferir veículos de propriedade da\nmandante, assinar a respectiva ATPV/ATPV-e, receber o preço, dar quitação e representá-la perante\no DETRAN.\nLido e achado conforme, assina. Eu, Rômulo Teixeira Bandeira, Escrevente Substituto, o lavrei. Eu,\nHeloísa Barreira Nunes, Tabeliã, o subscrevo.\n(a) PRISCILA DAMASCENO RIOS.\nHELOÍSA BARREIRA NUNES, Tabeliã.\nSelo Digital: IRA-0879-2026-04B7E2 · Emolumentos: R$ 118,30\nTRASLADO — Conferido com o original.\nFortaleza/CE, 25 de agosto de 2026.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/1"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "1c268d688ac3bf66d06128cdcc2cd415cf0a2fefd55796be59578c1dc0a05fd9",
+   "leitura": {
+    "tarefas": {
+     "substabelecimento": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 59.4,
+      "tokens_saida": 437,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "llamacpp",
+  "modelo": "qwen3.8-27b",
+  "politica": "DETRAN-CE"
+ },
+ "lado": "vendedor",
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T10:07:49",
+   "pedido": {
+    "veiculo": {
+     "descricao": "RENAULT/DUSTER INTENSE 1.6",
+     "placa": "MSL2F85",
+     "renavam": "01494700490",
+     "chassi": "93YE1HMUJLFHMUVAF"
+    },
+    "data_venda": "2026-09-22",
+    "valor": 96000.0,
+    "assinantes": [
+     {
+      "nome": "Nilton Arruda Coelho",
+      "cpf": "869.934.673-56"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "Rita de Cássia Moreira",
+    "vendedor_cnpj": "35.326.130/0001-01",
+    "lado": "vendedor"
+   },
+   "empresa": {
+    "razao_social": "DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA.",
+    "cnpj": "35.326.130/0001-01",
+    "tipo": "LTDA",
+    "objeto": "a gestão de ativos próprios e a prestação de serviços de apoio administrativo, incluindo a administração de bens e direitos de titularidade da sociedade, a participação em outras sociedades como sócia ou acionista, e serviços de suporte administrativo, financeiro e de escritório a empresas.",
+    "comercializa_veiculos": false,
+    "subtipo": null
+   },
+   "veredito": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 3,
+    "menor_confianca_fato": 1.0,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Hugo Leitão Damasceno ou Priscila Damasceno Rios (procurador). O caminho por substabelecimento com reserva de 25/08/2026 não vale: substabelecimento proibido.",
+   "assinantes": [
+    {
+     "informado": "Nilton Arruda Coelho",
+     "cpf": "869.934.673-56",
+     "chave": "86993467356",
+     "nome": "Nilton Arruda Coelho",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:97686335305",
+     "pessoas": [
+      {
+       "chave": "97686335305",
+       "nome": "Hugo Leitão Damasceno"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "regra geral de representação — Cláusula III, Parágrafo 1",
+     "cadeia": [
+      "DAMASCENO_CS"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    },
+    {
+     "id": "POA_H_PRISCILA_SEMSUB:61408316013",
+     "pessoas": [
+      {
+       "chave": "61408316013",
+       "nome": "Priscila Damasceno Rios"
+      }
+     ],
+     "via": "procuracao",
+     "descricao": "Procuração pública de 10/04/2026 (Cartório Iracema – 4º Tabelionato de Notas de Fortaleza)",
+     "cadeia": [
+      "POA_H_PRISCILA_SEMSUB"
+     ],
+     "severidade": "atencao",
+     "confianca": 1.0,
+     "achados": [
+      {
+       "codigo": "OUTORGANTE_PJ",
+       "severidade": "ok",
+       "titulo": "Outorgada pela própria empresa",
+       "detalhe": "A outorgante é a empresa, representada por Hugo Leitão Damasceno.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_H_PRISCILA_SEMSUB",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA., sociedade limitada com sede nesta Capital, inscrita no CNPJ sob o nº 35.326.130/0001-01",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 574,
+         "fim": 703
+        }
+       ],
+       "caminho": "POA_H_PRISCILA_SEMSUB"
+      },
+      {
+       "codigo": "OUTORGA_COM_PODERES",
+       "severidade": "ok",
+       "titulo": "Quem outorgou tinha poder",
+       "detalhe": "Em 10/04/2026, Hugo Leitão Damasceno podia representar a empresa nesse ato.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_H_PRISCILA_SEMSUB",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA., sociedade limitada com sede nesta Capital, inscrita no CNPJ sob o nº 35.326.130/0001-01",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 574,
+         "fim": 703
+        },
+        {
+         "doc_id": "DAMASCENO_CS",
+         "doc_titulo": "Contrato Social (2022)",
+         "trecho": "A administração da sociedade será exercida pelo sócio HUGO LEITÃO DAMASCENO, a quem caberá, sozinho e com plenos poderes de gestão, a representação ativa e passiva da sociedade, judicial e extrajudicialmente, podendo praticar todos os atos relacionados ao objeto social, abrir e movimentar contas bancárias, firmar contratos e assinar documentos em nome da sociedade.",
+         "clausula": "Cláusula III, Parágrafo 1",
+         "ancoragem": 100.0,
+         "pagina": 2,
+         "inicio": 2582,
+         "fim": 2949
+        }
+       ],
+       "caminho": "POA_H_PRISCILA_SEMSUB"
+      },
+      {
+       "codigo": "PODERES_ESPECIAIS",
+       "severidade": "ok",
+       "titulo": "Poder expresso para alienar veículos",
+       "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+       "fundamento": [
+        "CC art. 661, §1º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_H_PRISCILA_SEMSUB",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "poderes especiais e expressos para alienar, vender, ceder ou transferir, a quem entender e pelo preço que ajustar, quaisquer veículos automotores de propriedade da outorgante; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e) e os recibos correspondentes",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1454,
+         "fim": 1739
+        }
+       ],
+       "caminho": "POA_H_PRISCILA_SEMSUB"
+      },
+      {
+       "codigo": "PROCURACAO_NO_PRAZO",
+       "severidade": "ok",
+       "titulo": "Dentro do prazo",
+       "detalhe": "Válida até 10/04/2027.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "POA_H_PRISCILA_SEMSUB",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "O presente instrumento é válido por 1 (um) ano a partir desta data.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1980,
+         "fim": 2047
+        }
+       ],
+       "caminho": "POA_H_PRISCILA_SEMSUB"
+      },
+      {
+       "codigo": "PROCURACAO_SEM_VEICULO",
+       "severidade": "atencao",
+       "titulo": "Procuração não identifica o veículo",
+       "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+       "fundamento": [
+        "CJF, Enunciado 183"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_H_PRISCILA_SEMSUB",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "poderes especiais e expressos para alienar, vender, ceder ou transferir, a quem entender e pelo preço que ajustar, quaisquer veículos automotores de propriedade da outorgante; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e) e os recibos correspondentes",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1454,
+         "fim": 1739
+        }
+       ],
+       "caminho": "POA_H_PRISCILA_SEMSUB"
+      }
+     ],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [
+    {
+     "id": "SUB_H_PRISCILA_NILTON:bloqueada",
+     "pessoas": [
+      {
+       "chave": "86993467356",
+       "nome": "Nilton Arruda Coelho"
+      }
+     ],
+     "via": "substabelecimento",
+     "descricao": "Substabelecimento com reserva de 25/08/2026",
+     "cadeia": [
+      "POA_H_PRISCILA_SEMSUB",
+      "SUB_H_PRISCILA_NILTON"
+     ],
+     "severidade": "atencao",
+     "confianca": 1.0,
+     "achados": [
+      {
+       "codigo": "ORIGEM_VALIDA",
+       "severidade": "ok",
+       "titulo": "Procuração de origem válida",
+       "detalhe": "Origem: procuração de 10/04/2026.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "SUB_H_PRISCILA_NILTON",
+         "doc_titulo": "Substabelecimento (2026)",
+         "trecho": "Declarou a comparecente que, pelo presente, substabelece, com reserva de iguais poderes para si, na pessoa de NILTON ARRUDA COELHO, brasileiro, casado, despachante documentalista, RG nº 57736408 SSP/CE, CPF nº 869.934.673-56, com escritório nesta Capital, os poderes que lhe foram conferidos naquele instrumento, notadamente os de vender e transferir veículos de propriedade da mandante, assinar a respectiva ATPV/ATPV-e, receber o preço, dar quitação e representá-la perante o DETRAN.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 791,
+         "fim": 1276
+        }
+       ],
+       "caminho": "SUB_H_PRISCILA_NILTON"
+      },
+      {
+       "codigo": "PROCURACAO_SEM_VEICULO",
+       "severidade": "atencao",
+       "titulo": "Procuração não identifica o veículo (procuração de origem)",
+       "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+       "fundamento": [
+        "CJF, Enunciado 183"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_H_PRISCILA_SEMSUB",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "poderes especiais e expressos para alienar, vender, ceder ou transferir, a quem entender e pelo preço que ajustar, quaisquer veículos automotores de propriedade da outorgante; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e) e os recibos correspondentes",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1454,
+         "fim": 1739
+        }
+       ],
+       "caminho": "SUB_H_PRISCILA_NILTON"
+      },
+      {
+       "codigo": "SUBSTABELECIMENTO_VEDADO",
+       "severidade": "bloqueio",
+       "titulo": "Substabelecimento proibido",
+       "detalhe": "A procuração original proíbe substabelecer: os atos do substabelecido não obrigam a empresa, salvo ratificação expressa.",
+       "fundamento": [
+        "CC art. 667, §3º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_H_PRISCILA_SEMSUB",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "O mandato é outorgado em caráter estritamente pessoal, sem direito de substabelecer.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 2048,
+         "fim": 2132
+        },
+        {
+         "doc_id": "SUB_H_PRISCILA_NILTON",
+         "doc_titulo": "Substabelecimento (2026)",
+         "trecho": "Declarou a comparecente que, pelo presente, substabelece, com reserva de iguais poderes para si, na pessoa de NILTON ARRUDA COELHO, brasileiro, casado, despachante documentalista, RG nº 57736408 SSP/CE, CPF nº 869.934.673-56, com escritório nesta Capital, os poderes que lhe foram conferidos naquele instrumento, notadamente os de vender e transferir veículos de propriedade da mandante, assinar a respectiva ATPV/ATPV-e, receber o preço, dar quitação e representá-la perante o DETRAN.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 791,
+         "fim": 1276
+        }
+       ],
+       "caminho": "SUB_H_PRISCILA_NILTON"
+      }
+     ],
+     "precondicoes": []
+    }
+   ],
+   "caminho_escolhido": null,
+   "faltantes": [
+    {
+     "alternativa": "contrato:97686335305",
+     "via": "contrato",
+     "descricao": "regra geral de representação — Cláusula III, Parágrafo 1",
+     "pessoas": [
+      "97686335305"
+     ],
+     "faltam": [
+      "97686335305"
+     ],
+     "faltam_nomes": [
+      "Hugo Leitão Damasceno"
+     ],
+     "pessoas_nomes": [
+      "Hugo Leitão Damasceno"
+     ]
+    },
+    {
+     "alternativa": "POA_H_PRISCILA_SEMSUB:61408316013",
+     "via": "procuracao",
+     "descricao": "Procuração pública de 10/04/2026 (Cartório Iracema – 4º Tabelionato de Notas de Fortaleza)",
+     "pessoas": [
+      "61408316013"
+     ],
+     "faltam": [
+      "61408316013"
+     ],
+     "faltam_nomes": [
+      "Priscila Damasceno Rios"
+     ],
+     "pessoas_nomes": [
+      "Priscila Damasceno Rios"
+     ]
+    }
+   ],
+   "achados": [
+    {
+     "codigo": "CND_INSS",
+     "severidade": "info",
+     "titulo": "CND previdenciária",
+     "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+     "fundamento": [
+      "Lei 8.212/91, art. 47, I, \"c\""
+     ],
+     "fontes": [],
+     "caminho": null
+    },
+    {
+     "codigo": "TITULARIDADE_OK",
+     "severidade": "ok",
+     "titulo": "Veículo registrado no CNPJ da empresa",
+     "detalhe": "Proprietário no CRLV: DAMASCENO PARTICIPAÇÕES E.",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [
+      {
+       "doc_id": "CRLV",
+       "doc_titulo": "CRLV",
+       "trecho": "MSL2F85",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 146,
+       "fim": 153
+      }
+     ],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "DAMASCENO_CS#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "DAMASCENO_CS",
+      "doc_titulo": "Contrato Social (2022)",
+      "trecho": "A administração da sociedade será exercida pelo sócio HUGO LEITÃO DAMASCENO, a quem caberá, sozinho e com plenos poderes de gestão, a representação ativa e passiva da sociedade, judicial e extrajudicialmente, podendo praticar todos os atos relacionados ao objeto social, abrir e movimentar contas bancárias, firmar contratos e assinar documentos em nome da sociedade.",
+      "clausula": "Cláusula III, Parágrafo 1",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 2582,
+      "fim": 2949
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Hugo Leitão Damasceno"
+     ],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "sozinho"
+       ]
+      }
+     ],
+     "decisiva": true
+    },
+    {
+     "regra": "DAMASCENO_CS#R2",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "DAMASCENO_CS",
+      "doc_titulo": "Contrato Social (2022)",
+      "trecho": "A sócia PRISCILA DAMASCENO RIOS participará da sociedade na qualidade de quotista, sem atribuições de administração.",
+      "clausula": "Cláusula III, Parágrafo 2",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 2950,
+      "fim": 3066
+     },
+     "modo": "nao_especificado",
+     "pessoas": [
+      "Priscila Damasceno Rios"
+     ],
+     "cargo": "socios",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    },
+    {
+     "regra": "DAMASCENO_CS#R3",
+     "escopo": "alienacao_bens_imoveis",
+     "aplicavel": false,
+     "motivo": "trata de bens imóveis; veículo é bem móvel",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "DAMASCENO_CS",
+      "doc_titulo": "Contrato Social (2022)",
+      "trecho": "Não obstante os poderes conferidos ao administrador, a alienação de bens imóveis e de participações societárias detidas pela sociedade dependerá de deliberação de sócios representando três quartos do capital social.",
+      "clausula": "Cláusula III, Parágrafo 3",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3067,
+      "fim": 3282
+     },
+     "modo": "nao_especificado",
+     "pessoas": [],
+     "cargo": "socios",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    },
+    {
+     "regra": "DAMASCENO_CS#R4",
+     "escopo": "obrigacoes_garantias",
+     "aplicavel": false,
+     "motivo": "trata de avais, fianças e garantias",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "DAMASCENO_CS",
+      "doc_titulo": "Contrato Social (2022)",
+      "trecho": "É vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+      "clausula": "Cláusula III, Parágrafo 4",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3283,
+      "fim": 3412
+     },
+     "modo": "nao_especificado",
+     "pessoas": [],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-09-22",
+    "atos": [
+     {
+      "doc": "DAMASCENO_CS",
+      "titulo": "Contrato Social (2022)",
+      "efeito": "2022-03-21"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "97686335305",
+      "nome": "Hugo Leitão Damasceno",
+      "cargo": "sócio-administrador",
+      "doc": "DAMASCENO_CS"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "97686335305",
+      "nome": "Hugo Leitão Damasceno",
+      "percentual": 70.0
+     },
+     {
+      "chave": "61408316013",
+      "nome": "Priscila Damasceno Rios",
+      "percentual": 30.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA.",
+      "sub": "35.326.130/0001-01"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "RENAULT/DUSTER INTENSE 1.6",
+      "sub": "MSL2F85"
+     },
+     {
+      "id": "97686335305",
+      "tipo": "pessoa",
+      "rotulo": "Hugo Leitão Damasceno",
+      "papeis": [
+       "sócio 70%",
+       "sócio-administrador"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "61408316013",
+      "tipo": "pessoa",
+      "rotulo": "Priscila Damasceno Rios",
+      "papeis": [
+       "sócio 30%",
+       "procurador"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "86993467356",
+      "tipo": "pessoa",
+      "rotulo": "Nilton Arruda Coelho",
+      "papeis": [
+       "substabelecido"
+      ],
+      "assinante": true
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "valido"
+     },
+     {
+      "de": "97686335305",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "70%",
+      "status": "neutro"
+     },
+     {
+      "de": "61408316013",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "30%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "97686335305",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "DAMASCENO_CS"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "61408316013",
+      "tipo": "procuracao",
+      "status": "valido",
+      "doc": "POA_H_PRISCILA_SEMSUB",
+      "rotulo": "procuração 10/04/2026",
+      "motivo": null
+     },
+     {
+      "de": "61408316013",
+      "para": "86993467356",
+      "tipo": "substabelecimento",
+      "status": "invalido",
+      "doc": "SUB_H_PRISCILA_NILTON",
+      "rotulo": "substabelece com reserva · Substabelecimento proibido",
+      "motivo": "Substabelecimento proibido"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2022-03-21",
+     "tipo": "ato",
+     "titulo": "Contrato Social (2022)",
+     "doc": "DAMASCENO_CS",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-04-10",
+     "tipo": "procuracao",
+     "titulo": "Procuração para Priscila Damasceno Rios",
+     "doc": "POA_H_PRISCILA_SEMSUB",
+     "detalhe": "publica"
+    },
+    {
+     "data": "2026-08-25",
+     "tipo": "substabelecimento",
+     "titulo": "Priscila Damasceno Rios substabelece a Nilton Arruda Coelho",
+     "doc": "SUB_H_PRISCILA_NILTON",
+     "detalhe": "com_reserva"
+    },
+    {
+     "data": "2026-09-22",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 96.000,00"
+    },
+    {
+     "data": "2027-04-10",
+     "tipo": "vencimento",
+     "titulo": "Vence a procuração de Priscila Damasceno Rios",
+     "doc": "POA_H_PRISCILA_SEMSUB",
+     "detalhe": ""
+    }
+   ],
+   "pessoas": {
+    "97686335305": {
+     "nome": "Hugo Leitão Damasceno",
+     "cpf": "97686335305"
+    },
+    "61408316013": {
+     "nome": "Priscila Damasceno Rios",
+     "cpf": "61408316013"
+    },
+    "86993467356": {
+     "nome": "Nilton Arruda Coelho",
+     "cpf": "86993467356"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "não comprovada",
+    "outorgante": {
+     "nome": "DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA.",
+     "cnpj": "35.326.130/0001-01",
+     "tipo": "LTDA",
+     "atos_vigentes": [
+      {
+       "titulo": "Contrato Social (2022)",
+       "doc": "DAMASCENO_CS",
+       "efeito": "2022-03-21"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "Nilton Arruda Coelho",
+      "cpf": "869.934.673-56",
+      "identificacao": "CPF",
+      "qualidade": "substabelecido(a) em 25/08/2026"
+     }
+    ],
+    "poderes_conferidos": [
+     "Substabelecimento com reserva de 25/08/2026: não comprova poderes (Substabelecimento proibido)."
+    ],
+    "prazo_validade": [
+     "—"
+    ],
+    "revogacao": [
+     "—"
+    ],
+    "fontes": [],
+    "documentos_verificaveis": [
+     {
+      "id": "CRLV",
+      "titulo": "CRLV",
+      "arquivo": "CRLV.pdf"
+     },
+     {
+      "id": "DAMASCENO_CS",
+      "titulo": "Contrato Social (2022)",
+      "arquivo": "DAMASCENO_CS.pdf"
+     },
+     {
+      "id": "POA_H_PRISCILA_SEMSUB",
+      "titulo": "Procuração (2026)",
+      "arquivo": "POA_H_PRISCILA_SEMSUB.pdf"
+     },
+     {
+      "id": "SUB_H_PRISCILA_NILTON",
+      "titulo": "Substabelecimento (2026)",
+      "arquivo": "SUB_H_PRISCILA_NILTON.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "CRLV",
+     "nome": "CRLV.pdf",
+     "tipo": "crlv",
+     "titulo": "CRLV",
+     "data": null,
+     "paginas": [
+      "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n01494700490\nPLACA\nMSL2F85\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2022\nANO MODELO\n2023\nNÚMERO DO CRV\n738486907472\nCÓDIGO DE SEGURANÇA DO CLA\n87795486678\nMARCA / MODELO / VERSÃO\nRENAULT/DUSTER INTENSE 1.6\nESPÉCIE / TIPO\nPASSAGEIRO/\nAUTOMÓVEL\nCHASSI\n93YE1HMUJLFHMUVAF\nCOR PREDOMINANTE\nVERMELHA\nCOMBUSTÍVEL\nÁLCOOL/\nGASOLINA\nNOME\nDAMASCENO PARTICIPAÇÕES E\nSERVIÇOS LTDA.\nCPF / CNPJ\n35.326.130/0001-01\nLOCAL\nFORTALEZA/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "8010f1969b32976ab54b60ece9812739b998fd4be80a83ef3775e08d95b58048",
+     "leitura": {
+      "tarefas": {
+       "crlv": {
+        "metodo": "regex"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "DAMASCENO_CS",
+     "nome": "DAMASCENO_CS.pdf",
+     "tipo": "contrato_social",
+     "titulo": "Contrato Social (2022)",
+     "data": "2022-03-21",
+     "paginas": [
+      "DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA.\nCNPJ: 35.326.130/0001-01 | NIRE: 23275965330\nCONTRATO SOCIAL DE CONSTITUIÇÃO\nHUGO LEITÃO DAMASCENO, brasileiro, divorciado, empresário, natural de Fortaleza/CE,\nportador da carteira de identidade nº 71966135 SSP/CE, inscrito no CPF sob o nº 976.863.353-05,\nresidente e domiciliado na Avenida Beira-Mar, nº 3.980, apartamento 1.502, bairro Mucuripe,\nFortaleza/CE, CEP 60165-121; e\nPRISCILA DAMASCENO RIOS, brasileira, solteira, maior, gestora financeira, natural de Fortaleza/\nCE, portadora da carteira de identidade nº 4150937 SSP/CE, inscrita no CPF sob o nº\n614.083.160-13, residente e domiciliada na Rua Tibúrcio Cavalcante, nº 2.275, apartamento 803,\nbairro Dionísio Torres, Fortaleza/CE, CEP 60125-101;\ntêm, entre si, justo e acordado constituir uma sociedade empresária do tipo limitada, que se regerá\npelas disposições deste instrumento e, nas omissões, pelo Código Civil e pela legislação\ncomplementar.\nI – DA SOCIEDADE\nA sociedade terá o nome empresarial DAMASCENO PARTICIPAÇÕES E SERVIÇOS\nLTDA. e sede na Avenida Dom Luís, nº 1.200, sala 1.708, Torre Empresarial, bairro Meireles,\nFortaleza/CE, CEP 60160-230.\nO objeto social compreende a gestão de ativos próprios e a prestação de serviços de apoio\nadministrativo, incluindo a administração de bens e direitos de titularidade da sociedade, a\nparticipação em outras sociedades como sócia ou acionista, e serviços de suporte\nadministrativo, financeiro e de escritório a empresas.\nO prazo de duração da sociedade é indeterminado, com início de atividades na data do\narquivamento deste contrato na Junta Comercial.\nII – DO CAPITAL\nO capital social é de R$ 1.200.000,00 (um milhão e duzentos mil reais), dividido em\n1.200.000 (um milhão e duzentas mil) quotas, no valor de R$ 1,00 (um real) cada, totalmente\nsubscrito e integralizado em moeda corrente nacional neste ato, assim repartido:\nSócio\nQuotas\nValor (R$)\nParticipação\nHUGO LEITÃO DAMASCENO\n840.000\n840.000,00\n70%\nPRISCILA DAMASCENO RIOS\n360.000\n360.000,00\n30%\nTotal\n1.200.000\n1.200.000,00\n100%\nA responsabilidade dos sócios é restrita ao valor de suas quotas, respondendo todos,\nsolidariamente, pela integralização do capital social, nos termos do art. 1.052 do Código\nCivil.\n1.\n2.\n3.\n1.\n1.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+      "As quotas são indivisíveis e não poderão ser alienadas a terceiros sem que sejam previamente\noferecidas ao outro sócio, a quem é assegurado o direito de preferência, em iguais condições,\npelo prazo de 30 (trinta) dias contados da notificação.\nIII – DA ADMINISTRAÇÃO\nA administração da sociedade será exercida pelo sócio HUGO LEITÃO DAMASCENO, a\nquem caberá, sozinho e com plenos poderes de gestão, a representação ativa e passiva da\nsociedade, judicial e extrajudicialmente, podendo praticar todos os atos relacionados ao objeto\nsocial, abrir e movimentar contas bancárias, firmar contratos e assinar documentos em nome\nda sociedade.\nA sócia PRISCILA DAMASCENO RIOS participará da sociedade na qualidade de quotista,\nsem atribuições de administração.\nNão obstante os poderes conferidos ao administrador, a alienação de bens imóveis e de\nparticipações societárias detidas pela sociedade dependerá de deliberação de sócios\nrepresentando três quartos do capital social.\nÉ vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente\nem avais, fianças e endossos de favor.\nO administrador declara, sob as penas da lei, não estar impedido de exercer a administração\nde sociedade empresária, por lei especial ou em virtude de condenação criminal, ou por se\nencontrar sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\npúblicos, ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato, ou\ncontra a economia popular, contra o sistema financeiro nacional, contra normas de defesa da\nconcorrência, contra as relações de consumo, a fé pública ou a propriedade.\nO administrador terá direito a uma retirada mensal a título de pró-labore, fixada de comum\nacordo pelos sócios.\nIV – DO EXERCÍCIO SOCIAL\nO exercício social coincidirá com o ano civil. Ao seu término serão levantados o inventário, o\nbalanço patrimonial e o balanço de resultado econômico, distribuindo-se os lucros ou\nsuportando-se as perdas na proporção das quotas de cada sócio.\nNos quatro meses subsequentes ao término do exercício, os sócios reunir-se-ão para tomar as\ncontas do administrador e deliberar sobre o balanço patrimonial e o de resultado econômico.\nV – DAS DISPOSIÇÕES FINAIS\nO falecimento, a interdição ou a retirada de qualquer dos sócios não dissolve a sociedade. Os\nhaveres do sócio que se desligar, ou de seus sucessores, serão apurados com base em balanço\nespecialmente levantado na data do evento e pagos em até 12 (doze) parcelas mensais e\nsucessivas, corrigidas pelo IPCA.\nOs casos omissos serão resolvidos pelos sócios, observadas as disposições legais aplicáveis.\n2.\n1.\n2.\n3.\n4.\n5.\n6.\n1.\n2.\n1.\n2.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+      "Fica eleito o foro da Comarca de Fortaleza/CE para dirimir quaisquer questões oriundas deste\ncontrato.\nPor estarem assim de acordo, os sócios assinam o presente contrato em 3 (três) vias de igual teor.\nFortaleza/CE, 21 de março de 2022.\n____________________________________ HUGO LEITÃO DAMASCENO\n____________________________________ PRISCILA DAMASCENO RIOS\nVisto: Sérvulo Mendes Barbalho – OAB/CE nº 36.144\n3.\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 04/04/2022 sob o nº 58295387285\nProtocolo: 22/093.418-2 | NIRE: 23275965330\nEmpresa: DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA.\nAutenticação: E06B2F81C9A43D75B2E1F0C86A9D3B47\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "28af1bba290a352591d18d6d8465c13b7eda740e2a12adf02a578e59f7e8bbde",
+     "leitura": {
+      "tarefas": {
+       "partes": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 76.4,
+        "tokens_saida": 647,
+        "modelo": "qwen3.8-27b"
+       },
+       "regras": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 52.6,
+        "tokens_saida": 979,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "POA_H_PRISCILA_SEMSUB",
+     "nome": "POA_H_PRISCILA_SEMSUB.pdf",
+     "tipo": "procuracao",
+     "titulo": "Procuração (2026)",
+     "data": "2026-04-10",
+     "paginas": [
+      "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nHeloísa Barreira Nunes – Tabeliã\nLIVRO 853 · FOLHAS 019/020\nPROCURAÇÃO PÚBLICA – DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA. EM\nFAVOR DE PRISCILA DAMASCENO RIOS\nSAIBAM quantos este público instrumento de procuração virem que, aos dez (10) dias do mês de\nabril de dois mil e vinte e seis (2026), nesta cidade de Fortaleza, Estado do Ceará, nas dependências\ndeste Tabelionato, perante mim, Patrícia Viana Duarte, Escrevente Autorizada, compareceu, como\nOUTORGANTE, DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA., sociedade limitada com\nsede nesta Capital, inscrita no CNPJ sob o nº 35.326.130/0001-01, NIRE 23275965330, aqui\nrepresentada por seu sócio administrador HUGO LEITÃO DAMASCENO, brasileiro, divorciado,\nempresário, portador do RG nº 71966135 SSP/CE e do CPF nº 976.863.353-05, residente em\nFortaleza/CE, com poderes que lhe atribui o contrato social de constituição, registrado na Junta\nComercial do Estado do Ceará em 04/04/2022, cuja certidão simplificada foi examinada e arquivada\nnesta serventia. O representante foi identificado por mim à vista dos documentos apresentados, do\nque dou fé.\nE, por seu representante, declarou a outorgante que constitui sua procuradora PRISCILA\nDAMASCENO RIOS, brasileira, solteira, gestora financeira, portadora do RG nº 4150937 SSP/CE e\ndo CPF nº 614.083.160-13, residente nesta Capital, a quem confere poderes especiais e expressos\npara alienar, vender, ceder ou transferir, a quem entender e pelo preço que ajustar, quaisquer veículos\nautomotores de propriedade da outorgante; assinar a Autorização para Transferência de Propriedade\ndo Veículo (ATPV/ATPV-e) e os recibos correspondentes; receber o preço, total ou parceladamente,\ne dar plena quitação; apresentar requerimentos e firmar declarações perante o DETRAN e os demais\nórgãos executivos de trânsito, praticando os atos necessários ao completo desempenho deste\nencargo.\nO presente instrumento é válido por 1 (um) ano a partir desta data. O mandato é outorgado em\ncaráter estritamente pessoal, sem direito de substabelecer.\nAssim disse, do que dou fé, e me pediu que lhe lavrasse este instrumento, o qual, depois de lido e\nachado conforme, aceita e assina. Eu, Patrícia Viana Duarte, Escrevente Autorizada, o lavrei. Eu,\nHeloísa Barreira Nunes, Tabeliã, o subscrevo e assino.\n(aa) HUGO LEITÃO DAMASCENO, pela outorgante.\nHELOÍSA BARREIRA NUNES, Tabeliã.\nEmolumentos: R$ 216,85 · FERMOJU: R$ 10,84 · Total: R$ 227,69\nSelo Digital: IRA-0853-2026-C9D402\nTRASLADO — Extraído fielmente do livro e folhas acima indicados, do que dou fé.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "Fortaleza/CE, 10 de abril de 2026.\nHeloísa Barreira Nunes – Tabeliã\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "3323265c519c55b8a3b949a0802fbf4024b0469abb2a05ed0a8ac5ed93724626",
+     "leitura": {
+      "tarefas": {
+       "procuracao": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 70.5,
+        "tokens_saida": 678,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "SUB_H_PRISCILA_NILTON",
+     "nome": "SUB_H_PRISCILA_NILTON.pdf",
+     "tipo": "substabelecimento",
+     "titulo": "Substabelecimento (2026)",
+     "data": "2026-08-25",
+     "paginas": [
+      "REPÚBLICA FEDERATIVA DO BRASIL – ESTADO DO CEARÁ\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nLIVRO 879 — FOLHAS 058/059\nSUBSTABELECIMENTO DE PROCURAÇÃO\nSAIBAM os que este público instrumento virem que, aos vinte e cinco (25) dias de agosto de dois\nmil e vinte e seis (2026), em Fortaleza/CE, perante mim, Rômulo Teixeira Bandeira, Escrevente\nSubstituto, compareceu PRISCILA DAMASCENO RIOS, brasileira, solteira, gestora financeira, RG\nnº 4150937 SSP/CE, CPF nº 614.083.160-13, residente nesta Capital, na qualidade de procuradora\nde DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA., inscrita no CNPJ sob o nº\n35.326.130/0001-01, conforme procuração pública lavrada neste Tabelionato em 10 de abril de\n2026, no Livro 853, folhas 019/020, cujo traslado foi exibido e conferido.\nDeclarou a comparecente que, pelo presente, substabelece, com reserva de iguais poderes para si, na\npessoa de NILTON ARRUDA COELHO, brasileiro, casado, despachante documentalista, RG nº\n57736408 SSP/CE, CPF nº 869.934.673-56, com escritório nesta Capital, os poderes que lhe foram\nconferidos naquele instrumento, notadamente os de vender e transferir veículos de propriedade da\nmandante, assinar a respectiva ATPV/ATPV-e, receber o preço, dar quitação e representá-la perante\no DETRAN.\nLido e achado conforme, assina. Eu, Rômulo Teixeira Bandeira, Escrevente Substituto, o lavrei. Eu,\nHeloísa Barreira Nunes, Tabeliã, o subscrevo.\n(a) PRISCILA DAMASCENO RIOS.\nHELOÍSA BARREIRA NUNES, Tabeliã.\nSelo Digital: IRA-0879-2026-04B7E2 · Emolumentos: R$ 118,30\nTRASLADO — Conferido com o original.\nFortaleza/CE, 25 de agosto de 2026.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/1"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "1c268d688ac3bf66d06128cdcc2cd415cf0a2fefd55796be59578c1dc0a05fd9",
+     "leitura": {
+      "tarefas": {
+       "substabelecimento": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 59.4,
+        "tokens_saida": 437,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "llamacpp",
+    "modelo": "qwen3.8-27b",
+    "politica": "DETRAN-CE"
+   },
+   "lado": "vendedor"
+  }
+ },
+ "geral": {
+  "veredito": "NAO_PODE",
+  "faixa": "VERMELHO",
+  "indice": 0.0,
+  "resumo": "Vendedor: Os assinantes informados não bastam. Quem pode assinar: Hugo Leitão Damasceno ou Priscila Damasceno Rios (procurador). O caminho por substabelecimento com reserva de 25/08/2026 não vale: substabelecimento proibido.",
+  "motivos_faixa": [
+   "Vendedor — índice 0 ≤ limiar 15"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "RENAULT/DUSTER INTENSE 1.6",
+   "placa": "MSL2F85",
+   "renavam": "01494700490",
+   "chassi": "93YE1HMUJLFHMUVAF"
+  },
+  "data_venda": "2026-09-22",
+  "valor": 96000.0,
+  "vendedor": {
+   "tipo": "PJ",
+   "nome": "DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA.",
+   "documento": "35.326.130/0001-01",
+   "assinantes": [
+    {
+     "nome": "Nilton Arruda Coelho",
+     "cpf": "869.934.673-56"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": "Rita de Cássia Moreira",
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "informado"
+ },
+ "hash_entrada": "9ea20057138b4f033fdd0d87144a6d93ac45ffe587ee73b7b4e74c1428e57bd9"
+}

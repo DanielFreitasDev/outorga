@@ -1,0 +1,39 @@
+{
+  "caso": "H01",
+  "titulo": "‘De per si’ — um administrador assina",
+  "categoria": "administracao",
+  "objetivo": "Sinônimo novo de atuação isolada.",
+  "validacao_cega": true,
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": [
+      [
+        "RAQUEL"
+      ],
+      [
+        "OTAVIO"
+      ]
+    ],
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": [
+      [
+        "620.966.542-03"
+      ],
+      [
+        "707.229.710-36"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Raquel Mendes Bastos"
+      ],
+      [
+        "Otávio Bastos Neto"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

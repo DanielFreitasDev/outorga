@@ -1,0 +1,31 @@
+{
+  "caso": "C17",
+  "titulo": "Procuração só com poderes gerais de administração",
+  "categoria": "procuracao",
+  "objetivo": "'Amplos e gerais poderes', 'perante o DETRAN' — mas sem poder de alienar (art. 661).",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "FRANCISCO"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 661, caput e §1º"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "729.405.576-91"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Francisco Wellington Rocha"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

@@ -1,0 +1,26 @@
+{
+  "caso": "C18",
+  "vendedor": {
+    "razao_social": "CONSTRUTORA MANDACARU LTDA.",
+    "cnpj": "42.014.613/0001-28"
+  },
+  "veiculo": {
+    "placa": "SHW2R24",
+    "renavam": "01979678070",
+    "chassi": "9BMP1C6JVSXU4BZLH",
+    "descricao": "M.BENZ/SPRINTER 416 CDI FURGÃO"
+  },
+  "data_venda": "2026-09-15",
+  "valor": 230000,
+  "assinantes": [
+    {
+      "nome": "Kleber Jorge Matos",
+      "cpf": "659.085.380-00"
+    }
+  ],
+  "comprador": {
+    "nome": "Diego Fernandes Uchoa",
+    "cidade": "Juazeiro do Norte/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

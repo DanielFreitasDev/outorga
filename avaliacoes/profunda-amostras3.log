@@ -1,0 +1,6 @@
+✓ C13 Carro integralizado pelo sócio — o OUTRO sócio vende sozin esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  8.4 quem=ok 137.8s
+✓ C20 Procuração outorgada por quem não tinha poder sozinho      esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  8.4 quem=ok 294.9s
+✓ C21 Procuração do sócio em nome próprio (PF), não da empresa   esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx= 12.5 quem=ok 424.4s
+✗ C33 S.A. — diretor + procurador com procuração válida          esp=PODE          prev=PODE          AMARELO  idx= 83.3 quem=ok 575.4s
+
+veredito 4/4 · faixa aceitável 3/4 · quem pode 4/4 · perigosos 0 · caros 0 · automático 75% · 1432.5s

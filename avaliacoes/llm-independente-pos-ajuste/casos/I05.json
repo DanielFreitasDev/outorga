@@ -1,0 +1,1478 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T10:07:50",
+ "pedido": {
+  "veiculo": {
+   "descricao": "FIAT/CRONOS",
+   "placa": "UFZ6V24",
+   "renavam": "02657921218",
+   "chassi": "9BDVAPHTEEH2W26XN"
+  },
+  "data_venda": "2026-08-12",
+  "valor": 84000.0,
+  "assinantes": [
+   {
+    "nome": "GILDÁSIO PRADO CARNEIRO",
+    "cpf": "373.595.916-43"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "EDILSON BATISTA FROTA",
+  "vendedor_cnpj": "66.331.219/0001-81",
+  "lado": "vendedor"
+ },
+ "empresa": {
+  "razao_social": "SOBRAL ENGENHARIA E SANEAMENTO LTDA",
+  "cnpj": "66.331.219/0001-81",
+  "tipo": "LTDA",
+  "objeto": "nao_informado",
+  "comercializa_veiculos": false,
+  "subtipo": null
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 4.8,
+ "confianca": 0.905,
+ "componentes": {
+  "leitura": 0.905,
+  "juridica": 1.0,
+  "fatos_decisivos": 2,
+  "menor_confianca_fato": 0.873,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 4.8 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: Sueli Aragão Linhares. O caminho por procuração pública de 23/06/2025 (tabelionato ponte ferreira – 2º ofício de notas de sobral) não vale: procuração com mais de 1 ano.",
+ "assinantes": [
+  {
+   "informado": "GILDÁSIO PRADO CARNEIRO",
+   "cpf": "373.595.916-43",
+   "chave": "37359591643",
+   "nome": "Gildásio Prado Carneiro",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:74884087216",
+   "pessoas": [
+    {
+     "chave": "74884087216",
+     "nome": "Sueli Aragão Linhares"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "alienação de bens móveis — Cláusula Terceira",
+   "cadeia": [
+    "QUINTA_ALTERACAO_2026_01_15"
+   ],
+   "severidade": "ok",
+   "confianca": 0.873,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [
+  {
+   "id": "PROCURACAO_PUBLICA_2025_06_23:bloqueada",
+   "pessoas": [
+    {
+     "chave": "37359591643",
+     "nome": "Gildásio Prado Carneiro"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 23/06/2025 (TABELIONATO PONTE FERREIRA – 2º OFÍCIO DE NOTAS DE SOBRAL)",
+   "cadeia": [
+    "PROCURACAO_PUBLICA_2025_06_23"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PJ",
+     "severidade": "ok",
+     "titulo": "Outorgada pela própria empresa",
+     "detalhe": "A outorgante é a empresa, representada por Otávio Augusto Parente Linhares.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2025_06_23",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "SOBRAL ENGENHARIA E SANEAMENTO LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº 66.331.219/0001-81",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 512,
+       "fim": 624
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2025_06_23"
+    },
+    {
+     "codigo": "OUTORGA_COM_PODERES",
+     "severidade": "ok",
+     "titulo": "Quem outorgou tinha poder",
+     "detalhe": "Em 23/06/2025, Otávio Augusto Parente Linhares podia representar a empresa nesse ato.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2025_06_23",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "SOBRAL ENGENHARIA E SANEAMENTO LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº 66.331.219/0001-81",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 512,
+       "fim": 624
+      },
+      {
+       "doc_id": "QUARTA_ALTERACAO_CONSOLIDACAO_2021",
+       "doc_titulo": "Alteração e Consolidação do Contrato Social (2021)",
+       "trecho": "A administração da sociedade cabe ao sócio OTÁVIO AUGUSTO PARENTE LINHARES, isoladamente e por prazo indeterminado, a quem compete representar a sociedade ativa e passivamente, judicial e extrajudicialmente, praticar todos os atos de gestão, alienar e onerar bens móveis, inclusive veículos, máquinas e equipamentos, firmar contratos e participar de licitações, e constituir procuradores com poderes específicos.",
+       "clausula": "Cláusula Sexta",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 2740,
+       "fim": 3152
+      },
+      {
+       "doc_id": "QUARTA_ALTERACAO_CONSOLIDACAO_2021",
+       "doc_titulo": "Alteração e Consolidação do Contrato Social (2021)",
+       "trecho": "A administração da sociedade cabe ao sócio OTÁVIO AUGUSTO PARENTE LINHARES, isoladamente e por prazo indeterminado, a quem compete representar a sociedade ativa e passivamente, judicial e extrajudicialmente, praticar todos os atos de gestão, alienar e onerar bens móveis, inclusive veículos, máquinas e equipamentos, firmar contratos e participar de licitações, e constituir procuradores com poderes específicos.",
+       "clausula": "Cláusula Sexta",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 2740,
+       "fim": 3152
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2025_06_23"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2025_06_23",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "confere poderes especiais e expressos para vender, pelo preço e condições que ajustar, o veículo de propriedade da outorgante marca/modelo FIAT/CRONOS, placa UFZ6V24, RENAVAM 02657921218, chassi 9BDVAPHTEEH2W26XN; assinar, como representante da vendedora, a Autorização para Transferência de Propriedade do Veículo, em papel ou em meio digital (ATPV ou ATPV-e), o contrato de compra e venda e os recibos correspondentes; receber o preço e dar quitação; entregar o veículo e sua documentação; representar a outorgante perante o Departamento Estadual de Trânsito do Ceará – DETRAN/CE, requerer vistoria e comunicação de venda, pagar taxas, tributos e multas incidentes sobre o veículo, e praticar todos os atos necessários ao bom desempenho deste mandato.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1636,
+       "fim": 2389
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2025_06_23"
+    },
+    {
+     "codigo": "VEICULO_ABRANGIDO",
+     "severidade": "ok",
+     "titulo": "Veículo identificado na procuração",
+     "detalhe": "A procuração identifica exatamente este veículo.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2025_06_23",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "confere poderes especiais e expressos para vender, pelo preço e condições que ajustar, o veículo de propriedade da outorgante marca/modelo FIAT/CRONOS, placa UFZ6V24, RENAVAM 02657921218, chassi 9BDVAPHTEEH2W26XN; assinar, como representante da vendedora, a Autorização para Transferência de Propriedade do Veículo, em papel ou em meio digital (ATPV ou ATPV-e), o contrato de compra e venda e os recibos correspondentes; receber o preço e dar quitação; entregar o veículo e sua documentação; representar a outorgante perante o Departamento Estadual de Trânsito do Ceará – DETRAN/CE, requerer vistoria e comunicação de venda, pagar taxas, tributos e multas incidentes sobre o veículo, e praticar todos os atos necessários ao bom desempenho deste mandato.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1636,
+       "fim": 2389
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2025_06_23"
+    },
+    {
+     "codigo": "PROCURACAO_ANTIGA",
+     "severidade": "bloqueio",
+     "titulo": "Procuração com mais de 1 ano",
+     "detalhe": "Expedida há 13 meses. O DETRAN-CE aceita procuração pública e específica com validade de até 1 ano da data de expedição.",
+     "fundamento": [
+      "DETRAN-CE (serviço de transferência)"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2025_06_23",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "omisso",
+       "clausula": null,
+       "ancoragem": 66.7,
+       "pagina": 1,
+       "inicio": 2396,
+       "fim": 2402
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2025_06_23"
+    },
+    {
+     "codigo": "MANDATO_SUBSISTE",
+     "severidade": "info",
+     "titulo": "Quem outorgou não é mais administrador",
+     "detalhe": "Otávio Augusto Parente Linhares deixou a administração depois da outorga, mas o mandato foi dado pela empresa e não se extingue com a troca do administrador (as causas de extinção estão no art. 682).",
+     "fundamento": [
+      "CC art. 682"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2025_06_23",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "SOBRAL ENGENHARIA E SANEAMENTO LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº 66.331.219/0001-81",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 512,
+       "fim": 624
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2025_06_23"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "contrato:74884087216",
+   "via": "contrato",
+   "descricao": "alienação de bens móveis — Cláusula Terceira",
+   "pessoas": [
+    "74884087216"
+   ],
+   "faltam": [
+    "74884087216"
+   ],
+   "faltam_nomes": [
+    "Sueli Aragão Linhares"
+   ],
+   "pessoas_nomes": [
+    "Sueli Aragão Linhares"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: SOBRAL ENGENHARIA E SANEAMENTO LTDA.",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "UFZ6V24",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "QUINTA_ALTERACAO_2026_01_15#R1",
+   "escopo": "alienacao_bens_moveis",
+   "aplicavel": true,
+   "motivo": "alienação de bens móveis",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "QUINTA_ALTERACAO_2026_01_15",
+    "doc_titulo": "Alteração Contratual (2026)",
+    "trecho": "A administração da sociedade cabe à sócia SUELI ARAGÃO LINHARES, isoladamente e por prazo indeterminado, a quem compete representar a sociedade ativa e passivamente, judicial e extrajudicialmente, praticar todos os atos de gestão, alienar e onerar bens móveis, inclusive veículos, máquinas e equipamentos, firmar contratos e participar de licitações, e constituir procuradores com poderes específicos.",
+    "clausula": "Cláusula Terceira",
+    "ancoragem": 82.3,
+    "pagina": 1,
+    "inicio": 2543,
+    "fim": 2943
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Sueli Aragão Linhares"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 0.873,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    },
+    {
+     "campo": "ato",
+     "valor_llm": "alienar",
+     "valor_lexico": "alienar+adquirir",
+     "divergiu": false,
+     "corrigido_para": "alienar+adquirir",
+     "expressoes": []
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "QUINTA_ALTERACAO_2026_01_15#R2",
+   "escopo": "alienacao_bens_imoveis",
+   "aplicavel": false,
+   "motivo": "trata de bens imóveis; veículo é bem móvel",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "QUINTA_ALTERACAO_2026_01_15",
+    "doc_titulo": "Alteração Contratual (2026)",
+    "trecho": "Dependerá da concordância de sócios titulares de mais da metade do capital social a alienação ou a oneração de bens imóveis.",
+    "clausula": "Cláusula Terceira, Parágrafo único",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3010,
+    "fim": 3134
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-08-12",
+  "atos": [
+   {
+    "doc": "QUARTA_ALTERACAO_CONSOLIDACAO_2021",
+    "titulo": "Alteração e Consolidação do Contrato Social (2021)",
+    "efeito": "2021-10-05"
+   },
+   {
+    "doc": "QUINTA_ALTERACAO_2026_01_15",
+    "titulo": "Alteração Contratual (2026)",
+    "efeito": "2026-01-15"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "74884087216",
+    "nome": "Sueli Aragão Linhares",
+    "cargo": "sócia administradora",
+    "doc": "QUINTA_ALTERACAO_2026_01_15"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "74884087216",
+    "nome": "Sueli Aragão Linhares",
+    "percentual": 70.0
+   },
+   {
+    "chave": "05811637373",
+    "nome": "Bruno Linhares Aragão",
+    "percentual": 30.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "SOBRAL ENGENHARIA E SANEAMENTO LTDA",
+    "sub": "66.331.219/0001-81"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "FIAT/CRONOS",
+    "sub": "UFZ6V24"
+   },
+   {
+    "id": "74884087216",
+    "tipo": "pessoa",
+    "rotulo": "Sueli Aragão Linhares",
+    "papeis": [
+     "sócio 70%",
+     "sócia administradora"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "05811637373",
+    "tipo": "pessoa",
+    "rotulo": "Bruno Linhares Aragão",
+    "papeis": [
+     "sócio 30%"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "37359591643",
+    "tipo": "pessoa",
+    "rotulo": "Gildásio Prado Carneiro",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "74884087216",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "70%",
+    "status": "neutro"
+   },
+   {
+    "de": "05811637373",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "30%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "74884087216",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "QUINTA_ALTERACAO_2026_01_15"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "37359591643",
+    "tipo": "procuracao",
+    "status": "invalido",
+    "doc": "PROCURACAO_PUBLICA_2025_06_23",
+    "rotulo": "procuração 23/06/2025 · Procuração com mais de 1 ano",
+    "motivo": "Procuração com mais de 1 ano"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2021-10-05",
+   "tipo": "ato",
+   "titulo": "Alteração e Consolidação do Contrato Social (2021)",
+   "doc": "QUARTA_ALTERACAO_CONSOLIDACAO_2021",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2025-06-23",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Gildásio Prado Carneiro",
+   "doc": "PROCURACAO_PUBLICA_2025_06_23",
+   "detalhe": "publica"
+  },
+  {
+   "data": "2026-01-15",
+   "tipo": "ato",
+   "titulo": "Alteração Contratual (2026)",
+   "doc": "QUINTA_ALTERACAO_2026_01_15",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-08-12",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 84.000,00"
+  }
+ ],
+ "pessoas": {
+  "60814453058": {
+   "nome": "Otávio Augusto Parente Linhares",
+   "cpf": "60814453058"
+  },
+  "37359591643": {
+   "nome": "Gildásio Prado Carneiro",
+   "cpf": "37359591643"
+  },
+  "74884087216": {
+   "nome": "Sueli Aragão Linhares",
+   "cpf": "74884087216"
+  },
+  "05811637373": {
+   "nome": "Bruno Linhares Aragão",
+   "cpf": "05811637373"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "SOBRAL ENGENHARIA E SANEAMENTO LTDA",
+   "cnpj": "66.331.219/0001-81",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Alteração e Consolidação do Contrato Social (2021)",
+     "doc": "QUARTA_ALTERACAO_CONSOLIDACAO_2021",
+     "efeito": "2021-10-05"
+    },
+    {
+     "titulo": "Alteração Contratual (2026)",
+     "doc": "QUINTA_ALTERACAO_2026_01_15",
+     "efeito": "2026-01-15"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Gildásio Prado Carneiro",
+    "cpf": "373.595.916-43",
+    "identificacao": "CPF",
+    "qualidade": "procurador(a) pela procuração de 23/06/2025"
+   }
+  ],
+  "poderes_conferidos": [
+   "Procuração pública de 23/06/2025 (TABELIONATO PONTE FERREIRA – 2º OFÍCIO DE NOTAS DE SOBRAL): não comprova poderes (Procuração com mais de 1 ano)."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [],
+  "documentos_verificaveis": [
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "PROCURACAO_PUBLICA_2025_06_23",
+    "titulo": "Procuração (2025)",
+    "arquivo": "PROCURACAO_PUBLICA_2025_06_23.pdf"
+   },
+   {
+    "id": "QUARTA_ALTERACAO_CONSOLIDACAO_2021",
+    "titulo": "Alteração e Consolidação do Contrato Social (2021)",
+    "arquivo": "QUARTA_ALTERACAO_CONSOLIDACAO_2021.pdf"
+   },
+   {
+    "id": "QUINTA_ALTERACAO_2026_01_15",
+    "titulo": "Alteração Contratual (2026)",
+    "arquivo": "QUINTA_ALTERACAO_2026_01_15.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n02657921218\nPLACA\nUFZ6V24\nEXERCÍCIO\n2026\nMARCA / MODELO / VERSÃO\nFIAT/CRONOS\nCHASSI\n9BDVAPHTEEH2W26XN\nNOME\nSOBRAL ENGENHARIA E SANEAMENTO LTDA\nCPF / CNPJ\n66.331.219/0001-81\nDATA\n15/01/2026\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "b96a61d3edbc1a4c07e981e4cee6f9cae0b2ff598f7180fba199fabadde53537",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "PROCURACAO_PUBLICA_2025_06_23",
+   "nome": "PROCURACAO_PUBLICA_2025_06_23.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (2025)",
+   "data": "2025-06-23",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nTABELIONATO PONTE FERREIRA – 2º OFÍCIO DE NOTAS DE SOBRAL (fictício)\nLivro nº 154 – Folhas 018/019\nPROCURAÇÃO QUE FAZ SOBRAL ENGENHARIA E SANEAMENTO LTDA A FAVOR\nDE GILDÁSIO PRADO CARNEIRO\nSAIBAM quantos este público instrumento de procuração virem que, aos 23 (vinte e três) dias do\nmês de junho do ano de 2025 (dois mil e vinte e cinco), nesta cidade de Sobral, Estado do Ceará, no\nTabelionato Ponte Ferreira, perante mim, Escrevente, compareceu como OUTORGANTE: SOBRAL\nENGENHARIA E SANEAMENTO LTDA, sociedade empresária limitada, inscrita no CNPJ sob o\nnº 66.331.219/0001-81, NIRE 23201377890, com sede na Rua das Carnaúbas, nº 1.140, Junco,\nSobral/CE, neste ato representada por seu sócio administrador OTÁVIO AUGUSTO PARENTE\nLINHARES, brasileiro, casado, engenheiro civil, portador da cédula de identidade RG nº\n96001234567 SSP/CE, inscrito no CPF sob o nº 608.144.530-58, residente e domiciliado na Rua dos\nIpês, nº 520, Derby Clube, Sobral/CE, nos termos da Cláusula Sexta do contrato social consolidado\nna Quarta Alteração Contratual, registrada na JUCEC em 20/10/2021 sob o nº 5987634, conforme\ncópia e certidão simplificada expedida em 18/06/2025, arquivadas nestas Notas; reconhecido como o\npróprio por mim, do que dou fé.\nE, pela outorgante, na forma representada, me foi dito que nomeia e constitui seu procurador\nGILDÁSIO PRADO CARNEIRO, brasileiro, casado, administrador, portador da cédula de\nidentidade RG nº 2004321098765 SSP/CE, inscrito no CPF sob o nº 373.595.916-43, residente e\ndomiciliado na Rua Alfredo Cunha, nº 230, Expectativa, Sobral/CE, CEP 62040-110, a quem\nconfere poderes especiais e expressos para vender, pelo preço e condições que ajustar, o veículo de\npropriedade da outorgante marca/modelo FIAT/CRONOS, placa UFZ6V24, RENAVAM\n02657921218, chassi 9BDVAPHTEEH2W26XN; assinar, como representante da vendedora, a\nAutorização para Transferência de Propriedade do Veículo, em papel ou em meio digital (ATPV ou\nATPV-e), o contrato de compra e venda e os recibos correspondentes; receber o preço e dar quitação;\nentregar o veículo e sua documentação; representar a outorgante perante o Departamento Estadual de\nTrânsito do Ceará – DETRAN/CE, requerer vistoria e comunicação de venda, pagar taxas, tributos e\nmultas incidentes sobre o veículo, e praticar todos os atos necessários ao bom desempenho deste\nmandato.\nAssim o disse, do que dou fé, e me pediu que lavrasse este instrumento, que, lido e achado\nconforme, aceita e assina, dispensadas as testemunhas. Emolumentos: R$ 205,30. FERMOJU: R$\n10,27. Selo: R$ 4,11. Total: R$ 219,68. Selo Digital de Fiscalização nº TN-CE-2025-0566318-7C2F.\nEu, LUCIANA ARRUDA MESQUITA, Escrevente, a lavrei. Eu, ANTÔNIO PONTE FERREIRA,\nTabelião, a subscrevo.\n(a.a.) OTÁVIO AUGUSTO PARENTE LINHARES. ANTÔNIO PONTE FERREIRA – Tabelião.\nTRASLADO – Nada mais. Trasladada em seguida, confere com o original, ao qual me reporto e\ndou fé.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "Sobral/CE, 23 de junho de 2025.\nANTÔNIO PONTE FERREIRA – Tabelião\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "c4bdaa88d30b7a2ad6f5a6372a8cedf6864678b525039c1d87e5091dfe0125db",
+   "leitura": {
+    "tarefas": {
+     "procuracao": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 47.4,
+      "tokens_saida": 894,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "QUARTA_ALTERACAO_CONSOLIDACAO_2021",
+   "nome": "QUARTA_ALTERACAO_CONSOLIDACAO_2021.pdf",
+   "tipo": "contrato_consolidado",
+   "titulo": "Alteração e Consolidação do Contrato Social (2021)",
+   "data": "2021-10-05",
+   "paginas": [
+    "QUARTA ALTERAÇÃO E CONSOLIDAÇÃO DO CONTRATO SOCIAL DA SOBRAL\nENGENHARIA E SANEAMENTO LTDA\nCNPJ nº 66.331.219/0001-81 – NIRE 23201377890\nOTÁVIO AUGUSTO PARENTE LINHARES, brasileiro, casado sob o regime da comunhão parcial\nde bens, engenheiro civil, portador da cédula de identidade RG nº 96001234567 SSP/CE, inscrito no\nCPF sob o nº 608.144.530-58, residente e domiciliado na Rua dos Ipês, nº 520, Derby Clube, Sobral/\nCE, CEP 62042-280; e\nSUELI ARAGÃO LINHARES, brasileira, casada sob o regime da comunhão parcial de bens,\narquiteta, portadora da cédula de identidade RG nº 97002345678 SSP/CE, inscrita no CPF sob o nº\n748.840.872-16, residente e domiciliada na Rua das Acácias, nº 77, Derby Clube, Sobral/CE, CEP\n62042-300;\núnicos sócios da sociedade empresária limitada SOBRAL ENGENHARIA E SANEAMENTO\nLTDA, com sede na Rua das Carnaúbas, nº 1.140, Junco, Sobral/CE, CEP 62030-000, inscrita no\nCNPJ sob o nº 66.331.219/0001-81, com contrato social arquivado na JUCEC sob o NIRE\n23201377890, resolvem alterar e consolidar o contrato social, conforme as cláusulas seguintes.\nI – DA ALTERAÇÃO\nCLÁUSULA PRIMEIRA – DO OBJETO\nInclui-se no objeto social a execução de obras de sistemas de abastecimento de água e de\nesgotamento sanitário e a operação de estações de tratamento.\nCLÁUSULA SEGUNDA – DA CONSOLIDAÇÃO\nEm razão da alteração ora aprovada, o contrato social passa a vigorar com a redação consolidada\nabaixo.\nII – CONTRATO SOCIAL CONSOLIDADO\nCLÁUSULA PRIMEIRA – DA DENOMINAÇÃO E SEDE\nA sociedade gira sob a denominação SOBRAL ENGENHARIA E SANEAMENTO LTDA e tem\nsede na Rua das Carnaúbas, nº 1.140, Junco, Sobral/CE, CEP 62030-000.\nCLÁUSULA SEGUNDA – DO OBJETO\nA sociedade tem por objeto a construção de edifícios e de obras de infraestrutura, a execução de\nobras de sistemas de abastecimento de água e de esgotamento sanitário, a operação de estações de\ntratamento, a elaboração de projetos de engenharia e a locação de máquinas e equipamentos\npróprios.\nCLÁUSULA TERCEIRA – DO PRAZO\nA sociedade iniciou suas atividades em 11 de julho de 2011 e vigorará por prazo indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social, inteiramente integralizado, é de R$ 1.000.000,00 (um milhão de reais), dividido em\n1.000.000 (um milhão) de quotas de R$ 1,00 (um real) cada, assim distribuídas:\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "Sócio\nQuotas\nValor (R$)\nParticipação\nOTÁVIO AUGUSTO PARENTE LINHARES\n600.000\n600.000,00\n60%\nSUELI ARAGÃO LINHARES\n400.000\n400.000,00\n40%\nTotal\n1.000.000\n1.000.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE\nA responsabilidade dos sócios é limitada ao valor de suas quotas, respondendo todos solidariamente\npela integralização do capital.\nCLÁUSULA SEXTA – DA ADMINISTRAÇÃO\nA administração da sociedade cabe ao sócio OTÁVIO AUGUSTO PARENTE LINHARES,\nisoladamente e por prazo indeterminado, a quem compete representar a sociedade ativa e\npassivamente, judicial e extrajudicialmente, praticar todos os atos de gestão, alienar e onerar bens\nmóveis, inclusive veículos, máquinas e equipamentos, firmar contratos e participar de licitações, e\nconstituir procuradores com poderes específicos.\nParágrafo único. Dependerá da concordância de sócios titulares de mais da metade do capital social\na alienação ou a oneração de bens imóveis.\nCLÁUSULA SÉTIMA – DO PRÓ-LABORE\nO administrador perceberá pró-labore mensal em valor fixado pelos sócios.\nCLÁUSULA OITAVA – DO EXERCÍCIO SOCIAL\nO exercício social coincide com o ano civil, levantando-se ao seu término o balanço patrimonial e o\nde resultado econômico, com distribuição de lucros ou perdas na proporção das quotas.\nCLÁUSULA NONA – DA CESSÃO E TRANSFERÊNCIA DE QUOTAS\nAs quotas não poderão ser cedidas ou transferidas a terceiros sem o consentimento do outro sócio, a\nquem é assegurado o direito de preferência em igualdade de condições.\nCLÁUSULA DÉCIMA – DO FALECIMENTO DE SÓCIO\nEm caso de falecimento de sócio, a sociedade continuará com os herdeiros, que poderão optar pela\napuração de haveres, a serem pagos em 24 (vinte e quatro) parcelas mensais.\nCLÁUSULA DÉCIMA PRIMEIRA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nO administrador declara, sob as penas da lei, que não está impedido de exercer a administração da\nsociedade.\nCLÁUSULA DÉCIMA SEGUNDA – DO FORO\nFica eleito o foro da Comarca de Sobral/CE para dirimir as questões oriundas deste contrato.\nE, por estarem assim ajustados, assinam o presente instrumento.\nSobral/CE, 5 de outubro de 2021.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "OTÁVIO AUGUSTO PARENTE LINHARES\nSUELI ARAGÃO LINHARES\nVisto: CAMILA PARENTE ALBUQUERQUE – OAB/CE nº 24.773\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 20/10/2021 sob o nº 5987634\nProtocolo: 21/108823-7 | NIRE: 23201377890\nEmpresa: SOBRAL ENGENHARIA E SANEAMENTO LTDA\nAutenticação: 3A9E5C1D07B2F684\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "aad063d4faa07a390719137a3e892469b3c5598579af9e43383b7d2dcfc9e678",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 31.5,
+      "tokens_saida": 602,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 36.7,
+      "tokens_saida": 1588,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "QUINTA_ALTERACAO_2026_01_15",
+   "nome": "QUINTA_ALTERACAO_2026_01_15.pdf",
+   "tipo": "alteracao_contratual",
+   "titulo": "Alteração Contratual (2026)",
+   "data": "2026-01-15",
+   "paginas": [
+    "QUINTA ALTERAÇÃO DO CONTRATO SOCIAL DA SOBRAL ENGENHARIA E\nSANEAMENTO LTDA\nCNPJ nº 66.331.219/0001-81 – NIRE 23201377890\nOTÁVIO AUGUSTO PARENTE LINHARES, brasileiro, casado sob o regime da comunhão parcial\nde bens, engenheiro civil, portador da cédula de identidade RG nº 96001234567 SSP/CE, inscrito no\nCPF sob o nº 608.144.530-58, residente e domiciliado na Rua dos Ipês, nº 520, Derby Clube, Sobral/\nCE, CEP 62042-280; e\nSUELI ARAGÃO LINHARES, brasileira, casada sob o regime da comunhão parcial de bens,\narquiteta, portadora da cédula de identidade RG nº 97002345678 SSP/CE, inscrita no CPF sob o nº\n748.840.872-16, residente e domiciliada na Rua das Acácias, nº 77, Derby Clube, Sobral/CE, CEP\n62042-300;\núnicos sócios da SOBRAL ENGENHARIA E SANEAMENTO LTDA, com sede na Rua das\nCarnaúbas, nº 1.140, Junco, Sobral/CE, CEP 62030-000, inscrita no CNPJ sob o nº\n66.331.219/0001-81, cujo contrato social consolidado se encontra arquivado na JUCEC sob o nº\n5987634, em 20/10/2021; e, como ingressante,\nBRUNO LINHARES ARAGÃO, brasileiro, solteiro, maior, engenheiro ambiental, portador da\ncédula de identidade RG nº 2010123456789 SSP/CE, inscrito no CPF sob o nº 058.116.373-73,\nresidente e domiciliado na Rua das Acácias, nº 77, Derby Clube, Sobral/CE, CEP 62042-300;\nresolvem alterar o contrato social mediante as cláusulas seguintes.\nCLÁUSULA PRIMEIRA – DA RETIRADA DE SÓCIO E DA CESSÃO DE QUOTAS\nO sócio OTÁVIO AUGUSTO PARENTE LINHARES retira-se da sociedade e cede e transfere, com\no consentimento da sócia remanescente, a totalidade de suas 600.000 (seiscentas mil) quotas, da\nseguinte forma: 300.000 (trezentas mil) quotas à sócia SUELI ARAGÃO LINHARES e 300.000\n(trezentas mil) quotas ao ingressante BRUNO LINHARES ARAGÃO, pelo valor nominal, já\nrecebido, outorgando à sociedade e aos cessionários plena, geral e irrevogável quitação.\nCLÁUSULA SEGUNDA – DO CAPITAL SOCIAL\nEm decorrência da cessão, a Cláusula Quarta do contrato social passa a vigorar com a seguinte\nredação: \"O capital social, inteiramente integralizado, é de R$ 1.000.000,00 (um milhão de reais),\ndividido em 1.000.000 (um milhão) de quotas de R$ 1,00 (um real) cada, assim distribuídas:\"\nSócio\nQuotas\nValor (R$)\nParticipação\nSUELI ARAGÃO LINHARES\n700.000\n700.000,00\n70%\nBRUNO LINHARES ARAGÃO\n300.000\n300.000,00\n30%\nTotal\n1.000.000\n1.000.000,00\n100%\nCLÁUSULA TERCEIRA – DA ADMINISTRAÇÃO\nO sócio retirante deixa a administração da sociedade na data deste instrumento, e a Cláusula Sexta\ndo contrato social passa a vigorar com a seguinte redação: \"A administração da sociedade cabe à\nsócia SUELI ARAGÃO LINHARES, isoladamente e por prazo indeterminado, a quem compete\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "representar a sociedade ativa e passivamente, judicial e extrajudicialmente, praticar todos os atos de\ngestão, alienar e onerar bens móveis, inclusive veículos, máquinas e equipamentos, firmar contratos\ne participar de licitações, e constituir procuradores com poderes específicos. Parágrafo único.\nDependerá da concordância de sócios titulares de mais da metade do capital social a alienação ou a\noneração de bens imóveis.\"\nCLÁUSULA QUARTA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nA administradora declara, sob as penas da lei, que não está impedida de exercer a administração da\nsociedade por lei especial ou em virtude de condenação criminal.\nCLÁUSULA QUINTA – DAS DEMAIS CLÁUSULAS\nPermanecem inalteradas as demais cláusulas do contrato social consolidado que não colidirem com\no presente instrumento.\nE, por estarem assim ajustados, assinam o presente instrumento.\nSobral/CE, 15 de janeiro de 2026.\nOTÁVIO AUGUSTO PARENTE LINHARES\nSUELI ARAGÃO LINHARES\nBRUNO LINHARES ARAGÃO\nVisto: CAMILA PARENTE ALBUQUERQUE – OAB/CE nº 24.773\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 28/01/2026 sob o nº 6541287\nProtocolo: 26/010334-9 | NIRE: 23201377890\nEmpresa: SOBRAL ENGENHARIA E SANEAMENTO LTDA\nAutenticação: C2D7A04E9B15F380\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "3b1cd9c7d3500162e70f04f958b99a866307b5ba2a30c263c246f2e1c114370c",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 23.8,
+      "tokens_saida": 527,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 12.0,
+      "tokens_saida": 568,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "llamacpp",
+  "modelo": "qwen3.8-27b",
+  "politica": "DETRAN-CE"
+ },
+ "lado": "vendedor",
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T10:07:50",
+   "pedido": {
+    "veiculo": {
+     "descricao": "FIAT/CRONOS",
+     "placa": "UFZ6V24",
+     "renavam": "02657921218",
+     "chassi": "9BDVAPHTEEH2W26XN"
+    },
+    "data_venda": "2026-08-12",
+    "valor": 84000.0,
+    "assinantes": [
+     {
+      "nome": "GILDÁSIO PRADO CARNEIRO",
+      "cpf": "373.595.916-43"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "EDILSON BATISTA FROTA",
+    "vendedor_cnpj": "66.331.219/0001-81",
+    "lado": "vendedor"
+   },
+   "empresa": {
+    "razao_social": "SOBRAL ENGENHARIA E SANEAMENTO LTDA",
+    "cnpj": "66.331.219/0001-81",
+    "tipo": "LTDA",
+    "objeto": "nao_informado",
+    "comercializa_veiculos": false,
+    "subtipo": null
+   },
+   "veredito": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 4.8,
+   "confianca": 0.905,
+   "componentes": {
+    "leitura": 0.905,
+    "juridica": 1.0,
+    "fatos_decisivos": 2,
+    "menor_confianca_fato": 0.873,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 4.8 ≤ limiar 15"
+   ],
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Sueli Aragão Linhares. O caminho por procuração pública de 23/06/2025 (tabelionato ponte ferreira – 2º ofício de notas de sobral) não vale: procuração com mais de 1 ano.",
+   "assinantes": [
+    {
+     "informado": "GILDÁSIO PRADO CARNEIRO",
+     "cpf": "373.595.916-43",
+     "chave": "37359591643",
+     "nome": "Gildásio Prado Carneiro",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:74884087216",
+     "pessoas": [
+      {
+       "chave": "74884087216",
+       "nome": "Sueli Aragão Linhares"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "alienação de bens móveis — Cláusula Terceira",
+     "cadeia": [
+      "QUINTA_ALTERACAO_2026_01_15"
+     ],
+     "severidade": "ok",
+     "confianca": 0.873,
+     "achados": [],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [
+    {
+     "id": "PROCURACAO_PUBLICA_2025_06_23:bloqueada",
+     "pessoas": [
+      {
+       "chave": "37359591643",
+       "nome": "Gildásio Prado Carneiro"
+      }
+     ],
+     "via": "procuracao",
+     "descricao": "Procuração pública de 23/06/2025 (TABELIONATO PONTE FERREIRA – 2º OFÍCIO DE NOTAS DE SOBRAL)",
+     "cadeia": [
+      "PROCURACAO_PUBLICA_2025_06_23"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [
+      {
+       "codigo": "OUTORGANTE_PJ",
+       "severidade": "ok",
+       "titulo": "Outorgada pela própria empresa",
+       "detalhe": "A outorgante é a empresa, representada por Otávio Augusto Parente Linhares.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2025_06_23",
+         "doc_titulo": "Procuração (2025)",
+         "trecho": "SOBRAL ENGENHARIA E SANEAMENTO LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº 66.331.219/0001-81",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 512,
+         "fim": 624
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2025_06_23"
+      },
+      {
+       "codigo": "OUTORGA_COM_PODERES",
+       "severidade": "ok",
+       "titulo": "Quem outorgou tinha poder",
+       "detalhe": "Em 23/06/2025, Otávio Augusto Parente Linhares podia representar a empresa nesse ato.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2025_06_23",
+         "doc_titulo": "Procuração (2025)",
+         "trecho": "SOBRAL ENGENHARIA E SANEAMENTO LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº 66.331.219/0001-81",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 512,
+         "fim": 624
+        },
+        {
+         "doc_id": "QUARTA_ALTERACAO_CONSOLIDACAO_2021",
+         "doc_titulo": "Alteração e Consolidação do Contrato Social (2021)",
+         "trecho": "A administração da sociedade cabe ao sócio OTÁVIO AUGUSTO PARENTE LINHARES, isoladamente e por prazo indeterminado, a quem compete representar a sociedade ativa e passivamente, judicial e extrajudicialmente, praticar todos os atos de gestão, alienar e onerar bens móveis, inclusive veículos, máquinas e equipamentos, firmar contratos e participar de licitações, e constituir procuradores com poderes específicos.",
+         "clausula": "Cláusula Sexta",
+         "ancoragem": 100.0,
+         "pagina": 2,
+         "inicio": 2740,
+         "fim": 3152
+        },
+        {
+         "doc_id": "QUARTA_ALTERACAO_CONSOLIDACAO_2021",
+         "doc_titulo": "Alteração e Consolidação do Contrato Social (2021)",
+         "trecho": "A administração da sociedade cabe ao sócio OTÁVIO AUGUSTO PARENTE LINHARES, isoladamente e por prazo indeterminado, a quem compete representar a sociedade ativa e passivamente, judicial e extrajudicialmente, praticar todos os atos de gestão, alienar e onerar bens móveis, inclusive veículos, máquinas e equipamentos, firmar contratos e participar de licitações, e constituir procuradores com poderes específicos.",
+         "clausula": "Cláusula Sexta",
+         "ancoragem": 100.0,
+         "pagina": 2,
+         "inicio": 2740,
+         "fim": 3152
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2025_06_23"
+      },
+      {
+       "codigo": "PODERES_ESPECIAIS",
+       "severidade": "ok",
+       "titulo": "Poder expresso para alienar veículos",
+       "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+       "fundamento": [
+        "CC art. 661, §1º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2025_06_23",
+         "doc_titulo": "Procuração (2025)",
+         "trecho": "confere poderes especiais e expressos para vender, pelo preço e condições que ajustar, o veículo de propriedade da outorgante marca/modelo FIAT/CRONOS, placa UFZ6V24, RENAVAM 02657921218, chassi 9BDVAPHTEEH2W26XN; assinar, como representante da vendedora, a Autorização para Transferência de Propriedade do Veículo, em papel ou em meio digital (ATPV ou ATPV-e), o contrato de compra e venda e os recibos correspondentes; receber o preço e dar quitação; entregar o veículo e sua documentação; representar a outorgante perante o Departamento Estadual de Trânsito do Ceará – DETRAN/CE, requerer vistoria e comunicação de venda, pagar taxas, tributos e multas incidentes sobre o veículo, e praticar todos os atos necessários ao bom desempenho deste mandato.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1636,
+         "fim": 2389
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2025_06_23"
+      },
+      {
+       "codigo": "VEICULO_ABRANGIDO",
+       "severidade": "ok",
+       "titulo": "Veículo identificado na procuração",
+       "detalhe": "A procuração identifica exatamente este veículo.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2025_06_23",
+         "doc_titulo": "Procuração (2025)",
+         "trecho": "confere poderes especiais e expressos para vender, pelo preço e condições que ajustar, o veículo de propriedade da outorgante marca/modelo FIAT/CRONOS, placa UFZ6V24, RENAVAM 02657921218, chassi 9BDVAPHTEEH2W26XN; assinar, como representante da vendedora, a Autorização para Transferência de Propriedade do Veículo, em papel ou em meio digital (ATPV ou ATPV-e), o contrato de compra e venda e os recibos correspondentes; receber o preço e dar quitação; entregar o veículo e sua documentação; representar a outorgante perante o Departamento Estadual de Trânsito do Ceará – DETRAN/CE, requerer vistoria e comunicação de venda, pagar taxas, tributos e multas incidentes sobre o veículo, e praticar todos os atos necessários ao bom desempenho deste mandato.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1636,
+         "fim": 2389
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2025_06_23"
+      },
+      {
+       "codigo": "PROCURACAO_ANTIGA",
+       "severidade": "bloqueio",
+       "titulo": "Procuração com mais de 1 ano",
+       "detalhe": "Expedida há 13 meses. O DETRAN-CE aceita procuração pública e específica com validade de até 1 ano da data de expedição.",
+       "fundamento": [
+        "DETRAN-CE (serviço de transferência)"
+       ],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2025_06_23",
+         "doc_titulo": "Procuração (2025)",
+         "trecho": "omisso",
+         "clausula": null,
+         "ancoragem": 66.7,
+         "pagina": 1,
+         "inicio": 2396,
+         "fim": 2402
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2025_06_23"
+      },
+      {
+       "codigo": "MANDATO_SUBSISTE",
+       "severidade": "info",
+       "titulo": "Quem outorgou não é mais administrador",
+       "detalhe": "Otávio Augusto Parente Linhares deixou a administração depois da outorga, mas o mandato foi dado pela empresa e não se extingue com a troca do administrador (as causas de extinção estão no art. 682).",
+       "fundamento": [
+        "CC art. 682"
+       ],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2025_06_23",
+         "doc_titulo": "Procuração (2025)",
+         "trecho": "SOBRAL ENGENHARIA E SANEAMENTO LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº 66.331.219/0001-81",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 512,
+         "fim": 624
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2025_06_23"
+      }
+     ],
+     "precondicoes": []
+    }
+   ],
+   "caminho_escolhido": null,
+   "faltantes": [
+    {
+     "alternativa": "contrato:74884087216",
+     "via": "contrato",
+     "descricao": "alienação de bens móveis — Cláusula Terceira",
+     "pessoas": [
+      "74884087216"
+     ],
+     "faltam": [
+      "74884087216"
+     ],
+     "faltam_nomes": [
+      "Sueli Aragão Linhares"
+     ],
+     "pessoas_nomes": [
+      "Sueli Aragão Linhares"
+     ]
+    }
+   ],
+   "achados": [
+    {
+     "codigo": "TITULARIDADE_OK",
+     "severidade": "ok",
+     "titulo": "Veículo registrado no CNPJ da empresa",
+     "detalhe": "Proprietário no CRLV: SOBRAL ENGENHARIA E SANEAMENTO LTDA.",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [
+      {
+       "doc_id": "CRLV",
+       "doc_titulo": "CRLV",
+       "trecho": "UFZ6V24",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 146,
+       "fim": 153
+      }
+     ],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "QUINTA_ALTERACAO_2026_01_15#R1",
+     "escopo": "alienacao_bens_moveis",
+     "aplicavel": true,
+     "motivo": "alienação de bens móveis",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "QUINTA_ALTERACAO_2026_01_15",
+      "doc_titulo": "Alteração Contratual (2026)",
+      "trecho": "A administração da sociedade cabe à sócia SUELI ARAGÃO LINHARES, isoladamente e por prazo indeterminado, a quem compete representar a sociedade ativa e passivamente, judicial e extrajudicialmente, praticar todos os atos de gestão, alienar e onerar bens móveis, inclusive veículos, máquinas e equipamentos, firmar contratos e participar de licitações, e constituir procuradores com poderes específicos.",
+      "clausula": "Cláusula Terceira",
+      "ancoragem": 82.3,
+      "pagina": 1,
+      "inicio": 2543,
+      "fim": 2943
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Sueli Aragão Linhares"
+     ],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 0.873,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente"
+       ]
+      },
+      {
+       "campo": "ato",
+       "valor_llm": "alienar",
+       "valor_lexico": "alienar+adquirir",
+       "divergiu": false,
+       "corrigido_para": "alienar+adquirir",
+       "expressoes": []
+      }
+     ],
+     "decisiva": true
+    },
+    {
+     "regra": "QUINTA_ALTERACAO_2026_01_15#R2",
+     "escopo": "alienacao_bens_imoveis",
+     "aplicavel": false,
+     "motivo": "trata de bens imóveis; veículo é bem móvel",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "QUINTA_ALTERACAO_2026_01_15",
+      "doc_titulo": "Alteração Contratual (2026)",
+      "trecho": "Dependerá da concordância de sócios titulares de mais da metade do capital social a alienação ou a oneração de bens imóveis.",
+      "clausula": "Cláusula Terceira, Parágrafo único",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3010,
+      "fim": 3134
+     },
+     "modo": "nao_especificado",
+     "pessoas": [],
+     "cargo": "socios",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-08-12",
+    "atos": [
+     {
+      "doc": "QUARTA_ALTERACAO_CONSOLIDACAO_2021",
+      "titulo": "Alteração e Consolidação do Contrato Social (2021)",
+      "efeito": "2021-10-05"
+     },
+     {
+      "doc": "QUINTA_ALTERACAO_2026_01_15",
+      "titulo": "Alteração Contratual (2026)",
+      "efeito": "2026-01-15"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "74884087216",
+      "nome": "Sueli Aragão Linhares",
+      "cargo": "sócia administradora",
+      "doc": "QUINTA_ALTERACAO_2026_01_15"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "74884087216",
+      "nome": "Sueli Aragão Linhares",
+      "percentual": 70.0
+     },
+     {
+      "chave": "05811637373",
+      "nome": "Bruno Linhares Aragão",
+      "percentual": 30.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "SOBRAL ENGENHARIA E SANEAMENTO LTDA",
+      "sub": "66.331.219/0001-81"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "FIAT/CRONOS",
+      "sub": "UFZ6V24"
+     },
+     {
+      "id": "74884087216",
+      "tipo": "pessoa",
+      "rotulo": "Sueli Aragão Linhares",
+      "papeis": [
+       "sócio 70%",
+       "sócia administradora"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "05811637373",
+      "tipo": "pessoa",
+      "rotulo": "Bruno Linhares Aragão",
+      "papeis": [
+       "sócio 30%"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "37359591643",
+      "tipo": "pessoa",
+      "rotulo": "Gildásio Prado Carneiro",
+      "papeis": [
+       "procurador"
+      ],
+      "assinante": true
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "valido"
+     },
+     {
+      "de": "74884087216",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "70%",
+      "status": "neutro"
+     },
+     {
+      "de": "05811637373",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "30%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "74884087216",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "QUINTA_ALTERACAO_2026_01_15"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "37359591643",
+      "tipo": "procuracao",
+      "status": "invalido",
+      "doc": "PROCURACAO_PUBLICA_2025_06_23",
+      "rotulo": "procuração 23/06/2025 · Procuração com mais de 1 ano",
+      "motivo": "Procuração com mais de 1 ano"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2021-10-05",
+     "tipo": "ato",
+     "titulo": "Alteração e Consolidação do Contrato Social (2021)",
+     "doc": "QUARTA_ALTERACAO_CONSOLIDACAO_2021",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2025-06-23",
+     "tipo": "procuracao",
+     "titulo": "Procuração para Gildásio Prado Carneiro",
+     "doc": "PROCURACAO_PUBLICA_2025_06_23",
+     "detalhe": "publica"
+    },
+    {
+     "data": "2026-01-15",
+     "tipo": "ato",
+     "titulo": "Alteração Contratual (2026)",
+     "doc": "QUINTA_ALTERACAO_2026_01_15",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-08-12",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 84.000,00"
+    }
+   ],
+   "pessoas": {
+    "60814453058": {
+     "nome": "Otávio Augusto Parente Linhares",
+     "cpf": "60814453058"
+    },
+    "37359591643": {
+     "nome": "Gildásio Prado Carneiro",
+     "cpf": "37359591643"
+    },
+    "74884087216": {
+     "nome": "Sueli Aragão Linhares",
+     "cpf": "74884087216"
+    },
+    "05811637373": {
+     "nome": "Bruno Linhares Aragão",
+     "cpf": "05811637373"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "não comprovada",
+    "outorgante": {
+     "nome": "SOBRAL ENGENHARIA E SANEAMENTO LTDA",
+     "cnpj": "66.331.219/0001-81",
+     "tipo": "LTDA",
+     "atos_vigentes": [
+      {
+       "titulo": "Alteração e Consolidação do Contrato Social (2021)",
+       "doc": "QUARTA_ALTERACAO_CONSOLIDACAO_2021",
+       "efeito": "2021-10-05"
+      },
+      {
+       "titulo": "Alteração Contratual (2026)",
+       "doc": "QUINTA_ALTERACAO_2026_01_15",
+       "efeito": "2026-01-15"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "Gildásio Prado Carneiro",
+      "cpf": "373.595.916-43",
+      "identificacao": "CPF",
+      "qualidade": "procurador(a) pela procuração de 23/06/2025"
+     }
+    ],
+    "poderes_conferidos": [
+     "Procuração pública de 23/06/2025 (TABELIONATO PONTE FERREIRA – 2º OFÍCIO DE NOTAS DE SOBRAL): não comprova poderes (Procuração com mais de 1 ano)."
+    ],
+    "prazo_validade": [
+     "—"
+    ],
+    "revogacao": [
+     "—"
+    ],
+    "fontes": [],
+    "documentos_verificaveis": [
+     {
+      "id": "CRLV",
+      "titulo": "CRLV",
+      "arquivo": "CRLV.pdf"
+     },
+     {
+      "id": "PROCURACAO_PUBLICA_2025_06_23",
+      "titulo": "Procuração (2025)",
+      "arquivo": "PROCURACAO_PUBLICA_2025_06_23.pdf"
+     },
+     {
+      "id": "QUARTA_ALTERACAO_CONSOLIDACAO_2021",
+      "titulo": "Alteração e Consolidação do Contrato Social (2021)",
+      "arquivo": "QUARTA_ALTERACAO_CONSOLIDACAO_2021.pdf"
+     },
+     {
+      "id": "QUINTA_ALTERACAO_2026_01_15",
+      "titulo": "Alteração Contratual (2026)",
+      "arquivo": "QUINTA_ALTERACAO_2026_01_15.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "CRLV",
+     "nome": "CRLV.pdf",
+     "tipo": "crlv",
+     "titulo": "CRLV",
+     "data": null,
+     "paginas": [
+      "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n02657921218\nPLACA\nUFZ6V24\nEXERCÍCIO\n2026\nMARCA / MODELO / VERSÃO\nFIAT/CRONOS\nCHASSI\n9BDVAPHTEEH2W26XN\nNOME\nSOBRAL ENGENHARIA E SANEAMENTO LTDA\nCPF / CNPJ\n66.331.219/0001-81\nDATA\n15/01/2026\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "b96a61d3edbc1a4c07e981e4cee6f9cae0b2ff598f7180fba199fabadde53537",
+     "leitura": {
+      "tarefas": {
+       "crlv": {
+        "metodo": "regex"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "PROCURACAO_PUBLICA_2025_06_23",
+     "nome": "PROCURACAO_PUBLICA_2025_06_23.pdf",
+     "tipo": "procuracao",
+     "titulo": "Procuração (2025)",
+     "data": "2025-06-23",
+     "paginas": [
+      "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nTABELIONATO PONTE FERREIRA – 2º OFÍCIO DE NOTAS DE SOBRAL (fictício)\nLivro nº 154 – Folhas 018/019\nPROCURAÇÃO QUE FAZ SOBRAL ENGENHARIA E SANEAMENTO LTDA A FAVOR\nDE GILDÁSIO PRADO CARNEIRO\nSAIBAM quantos este público instrumento de procuração virem que, aos 23 (vinte e três) dias do\nmês de junho do ano de 2025 (dois mil e vinte e cinco), nesta cidade de Sobral, Estado do Ceará, no\nTabelionato Ponte Ferreira, perante mim, Escrevente, compareceu como OUTORGANTE: SOBRAL\nENGENHARIA E SANEAMENTO LTDA, sociedade empresária limitada, inscrita no CNPJ sob o\nnº 66.331.219/0001-81, NIRE 23201377890, com sede na Rua das Carnaúbas, nº 1.140, Junco,\nSobral/CE, neste ato representada por seu sócio administrador OTÁVIO AUGUSTO PARENTE\nLINHARES, brasileiro, casado, engenheiro civil, portador da cédula de identidade RG nº\n96001234567 SSP/CE, inscrito no CPF sob o nº 608.144.530-58, residente e domiciliado na Rua dos\nIpês, nº 520, Derby Clube, Sobral/CE, nos termos da Cláusula Sexta do contrato social consolidado\nna Quarta Alteração Contratual, registrada na JUCEC em 20/10/2021 sob o nº 5987634, conforme\ncópia e certidão simplificada expedida em 18/06/2025, arquivadas nestas Notas; reconhecido como o\npróprio por mim, do que dou fé.\nE, pela outorgante, na forma representada, me foi dito que nomeia e constitui seu procurador\nGILDÁSIO PRADO CARNEIRO, brasileiro, casado, administrador, portador da cédula de\nidentidade RG nº 2004321098765 SSP/CE, inscrito no CPF sob o nº 373.595.916-43, residente e\ndomiciliado na Rua Alfredo Cunha, nº 230, Expectativa, Sobral/CE, CEP 62040-110, a quem\nconfere poderes especiais e expressos para vender, pelo preço e condições que ajustar, o veículo de\npropriedade da outorgante marca/modelo FIAT/CRONOS, placa UFZ6V24, RENAVAM\n02657921218, chassi 9BDVAPHTEEH2W26XN; assinar, como representante da vendedora, a\nAutorização para Transferência de Propriedade do Veículo, em papel ou em meio digital (ATPV ou\nATPV-e), o contrato de compra e venda e os recibos correspondentes; receber o preço e dar quitação;\nentregar o veículo e sua documentação; representar a outorgante perante o Departamento Estadual de\nTrânsito do Ceará – DETRAN/CE, requerer vistoria e comunicação de venda, pagar taxas, tributos e\nmultas incidentes sobre o veículo, e praticar todos os atos necessários ao bom desempenho deste\nmandato.\nAssim o disse, do que dou fé, e me pediu que lavrasse este instrumento, que, lido e achado\nconforme, aceita e assina, dispensadas as testemunhas. Emolumentos: R$ 205,30. FERMOJU: R$\n10,27. Selo: R$ 4,11. Total: R$ 219,68. Selo Digital de Fiscalização nº TN-CE-2025-0566318-7C2F.\nEu, LUCIANA ARRUDA MESQUITA, Escrevente, a lavrei. Eu, ANTÔNIO PONTE FERREIRA,\nTabelião, a subscrevo.\n(a.a.) OTÁVIO AUGUSTO PARENTE LINHARES. ANTÔNIO PONTE FERREIRA – Tabelião.\nTRASLADO – Nada mais. Trasladada em seguida, confere com o original, ao qual me reporto e\ndou fé.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "Sobral/CE, 23 de junho de 2025.\nANTÔNIO PONTE FERREIRA – Tabelião\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "c4bdaa88d30b7a2ad6f5a6372a8cedf6864678b525039c1d87e5091dfe0125db",
+     "leitura": {
+      "tarefas": {
+       "procuracao": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 47.4,
+        "tokens_saida": 894,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "QUARTA_ALTERACAO_CONSOLIDACAO_2021",
+     "nome": "QUARTA_ALTERACAO_CONSOLIDACAO_2021.pdf",
+     "tipo": "contrato_consolidado",
+     "titulo": "Alteração e Consolidação do Contrato Social (2021)",
+     "data": "2021-10-05",
+     "paginas": [
+      "QUARTA ALTERAÇÃO E CONSOLIDAÇÃO DO CONTRATO SOCIAL DA SOBRAL\nENGENHARIA E SANEAMENTO LTDA\nCNPJ nº 66.331.219/0001-81 – NIRE 23201377890\nOTÁVIO AUGUSTO PARENTE LINHARES, brasileiro, casado sob o regime da comunhão parcial\nde bens, engenheiro civil, portador da cédula de identidade RG nº 96001234567 SSP/CE, inscrito no\nCPF sob o nº 608.144.530-58, residente e domiciliado na Rua dos Ipês, nº 520, Derby Clube, Sobral/\nCE, CEP 62042-280; e\nSUELI ARAGÃO LINHARES, brasileira, casada sob o regime da comunhão parcial de bens,\narquiteta, portadora da cédula de identidade RG nº 97002345678 SSP/CE, inscrita no CPF sob o nº\n748.840.872-16, residente e domiciliada na Rua das Acácias, nº 77, Derby Clube, Sobral/CE, CEP\n62042-300;\núnicos sócios da sociedade empresária limitada SOBRAL ENGENHARIA E SANEAMENTO\nLTDA, com sede na Rua das Carnaúbas, nº 1.140, Junco, Sobral/CE, CEP 62030-000, inscrita no\nCNPJ sob o nº 66.331.219/0001-81, com contrato social arquivado na JUCEC sob o NIRE\n23201377890, resolvem alterar e consolidar o contrato social, conforme as cláusulas seguintes.\nI – DA ALTERAÇÃO\nCLÁUSULA PRIMEIRA – DO OBJETO\nInclui-se no objeto social a execução de obras de sistemas de abastecimento de água e de\nesgotamento sanitário e a operação de estações de tratamento.\nCLÁUSULA SEGUNDA – DA CONSOLIDAÇÃO\nEm razão da alteração ora aprovada, o contrato social passa a vigorar com a redação consolidada\nabaixo.\nII – CONTRATO SOCIAL CONSOLIDADO\nCLÁUSULA PRIMEIRA – DA DENOMINAÇÃO E SEDE\nA sociedade gira sob a denominação SOBRAL ENGENHARIA E SANEAMENTO LTDA e tem\nsede na Rua das Carnaúbas, nº 1.140, Junco, Sobral/CE, CEP 62030-000.\nCLÁUSULA SEGUNDA – DO OBJETO\nA sociedade tem por objeto a construção de edifícios e de obras de infraestrutura, a execução de\nobras de sistemas de abastecimento de água e de esgotamento sanitário, a operação de estações de\ntratamento, a elaboração de projetos de engenharia e a locação de máquinas e equipamentos\npróprios.\nCLÁUSULA TERCEIRA – DO PRAZO\nA sociedade iniciou suas atividades em 11 de julho de 2011 e vigorará por prazo indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social, inteiramente integralizado, é de R$ 1.000.000,00 (um milhão de reais), dividido em\n1.000.000 (um milhão) de quotas de R$ 1,00 (um real) cada, assim distribuídas:\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+      "Sócio\nQuotas\nValor (R$)\nParticipação\nOTÁVIO AUGUSTO PARENTE LINHARES\n600.000\n600.000,00\n60%\nSUELI ARAGÃO LINHARES\n400.000\n400.000,00\n40%\nTotal\n1.000.000\n1.000.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE\nA responsabilidade dos sócios é limitada ao valor de suas quotas, respondendo todos solidariamente\npela integralização do capital.\nCLÁUSULA SEXTA – DA ADMINISTRAÇÃO\nA administração da sociedade cabe ao sócio OTÁVIO AUGUSTO PARENTE LINHARES,\nisoladamente e por prazo indeterminado, a quem compete representar a sociedade ativa e\npassivamente, judicial e extrajudicialmente, praticar todos os atos de gestão, alienar e onerar bens\nmóveis, inclusive veículos, máquinas e equipamentos, firmar contratos e participar de licitações, e\nconstituir procuradores com poderes específicos.\nParágrafo único. Dependerá da concordância de sócios titulares de mais da metade do capital social\na alienação ou a oneração de bens imóveis.\nCLÁUSULA SÉTIMA – DO PRÓ-LABORE\nO administrador perceberá pró-labore mensal em valor fixado pelos sócios.\nCLÁUSULA OITAVA – DO EXERCÍCIO SOCIAL\nO exercício social coincide com o ano civil, levantando-se ao seu término o balanço patrimonial e o\nde resultado econômico, com distribuição de lucros ou perdas na proporção das quotas.\nCLÁUSULA NONA – DA CESSÃO E TRANSFERÊNCIA DE QUOTAS\nAs quotas não poderão ser cedidas ou transferidas a terceiros sem o consentimento do outro sócio, a\nquem é assegurado o direito de preferência em igualdade de condições.\nCLÁUSULA DÉCIMA – DO FALECIMENTO DE SÓCIO\nEm caso de falecimento de sócio, a sociedade continuará com os herdeiros, que poderão optar pela\napuração de haveres, a serem pagos em 24 (vinte e quatro) parcelas mensais.\nCLÁUSULA DÉCIMA PRIMEIRA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nO administrador declara, sob as penas da lei, que não está impedido de exercer a administração da\nsociedade.\nCLÁUSULA DÉCIMA SEGUNDA – DO FORO\nFica eleito o foro da Comarca de Sobral/CE para dirimir as questões oriundas deste contrato.\nE, por estarem assim ajustados, assinam o presente instrumento.\nSobral/CE, 5 de outubro de 2021.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+      "OTÁVIO AUGUSTO PARENTE LINHARES\nSUELI ARAGÃO LINHARES\nVisto: CAMILA PARENTE ALBUQUERQUE – OAB/CE nº 24.773\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 20/10/2021 sob o nº 5987634\nProtocolo: 21/108823-7 | NIRE: 23201377890\nEmpresa: SOBRAL ENGENHARIA E SANEAMENTO LTDA\nAutenticação: 3A9E5C1D07B2F684\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "aad063d4faa07a390719137a3e892469b3c5598579af9e43383b7d2dcfc9e678",
+     "leitura": {
+      "tarefas": {
+       "partes": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 31.5,
+        "tokens_saida": 602,
+        "modelo": "qwen3.8-27b"
+       },
+       "regras": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 36.7,
+        "tokens_saida": 1588,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "QUINTA_ALTERACAO_2026_01_15",
+     "nome": "QUINTA_ALTERACAO_2026_01_15.pdf",
+     "tipo": "alteracao_contratual",
+     "titulo": "Alteração Contratual (2026)",
+     "data": "2026-01-15",
+     "paginas": [
+      "QUINTA ALTERAÇÃO DO CONTRATO SOCIAL DA SOBRAL ENGENHARIA E\nSANEAMENTO LTDA\nCNPJ nº 66.331.219/0001-81 – NIRE 23201377890\nOTÁVIO AUGUSTO PARENTE LINHARES, brasileiro, casado sob o regime da comunhão parcial\nde bens, engenheiro civil, portador da cédula de identidade RG nº 96001234567 SSP/CE, inscrito no\nCPF sob o nº 608.144.530-58, residente e domiciliado na Rua dos Ipês, nº 520, Derby Clube, Sobral/\nCE, CEP 62042-280; e\nSUELI ARAGÃO LINHARES, brasileira, casada sob o regime da comunhão parcial de bens,\narquiteta, portadora da cédula de identidade RG nº 97002345678 SSP/CE, inscrita no CPF sob o nº\n748.840.872-16, residente e domiciliada na Rua das Acácias, nº 77, Derby Clube, Sobral/CE, CEP\n62042-300;\núnicos sócios da SOBRAL ENGENHARIA E SANEAMENTO LTDA, com sede na Rua das\nCarnaúbas, nº 1.140, Junco, Sobral/CE, CEP 62030-000, inscrita no CNPJ sob o nº\n66.331.219/0001-81, cujo contrato social consolidado se encontra arquivado na JUCEC sob o nº\n5987634, em 20/10/2021; e, como ingressante,\nBRUNO LINHARES ARAGÃO, brasileiro, solteiro, maior, engenheiro ambiental, portador da\ncédula de identidade RG nº 2010123456789 SSP/CE, inscrito no CPF sob o nº 058.116.373-73,\nresidente e domiciliado na Rua das Acácias, nº 77, Derby Clube, Sobral/CE, CEP 62042-300;\nresolvem alterar o contrato social mediante as cláusulas seguintes.\nCLÁUSULA PRIMEIRA – DA RETIRADA DE SÓCIO E DA CESSÃO DE QUOTAS\nO sócio OTÁVIO AUGUSTO PARENTE LINHARES retira-se da sociedade e cede e transfere, com\no consentimento da sócia remanescente, a totalidade de suas 600.000 (seiscentas mil) quotas, da\nseguinte forma: 300.000 (trezentas mil) quotas à sócia SUELI ARAGÃO LINHARES e 300.000\n(trezentas mil) quotas ao ingressante BRUNO LINHARES ARAGÃO, pelo valor nominal, já\nrecebido, outorgando à sociedade e aos cessionários plena, geral e irrevogável quitação.\nCLÁUSULA SEGUNDA – DO CAPITAL SOCIAL\nEm decorrência da cessão, a Cláusula Quarta do contrato social passa a vigorar com a seguinte\nredação: \"O capital social, inteiramente integralizado, é de R$ 1.000.000,00 (um milhão de reais),\ndividido em 1.000.000 (um milhão) de quotas de R$ 1,00 (um real) cada, assim distribuídas:\"\nSócio\nQuotas\nValor (R$)\nParticipação\nSUELI ARAGÃO LINHARES\n700.000\n700.000,00\n70%\nBRUNO LINHARES ARAGÃO\n300.000\n300.000,00\n30%\nTotal\n1.000.000\n1.000.000,00\n100%\nCLÁUSULA TERCEIRA – DA ADMINISTRAÇÃO\nO sócio retirante deixa a administração da sociedade na data deste instrumento, e a Cláusula Sexta\ndo contrato social passa a vigorar com a seguinte redação: \"A administração da sociedade cabe à\nsócia SUELI ARAGÃO LINHARES, isoladamente e por prazo indeterminado, a quem compete\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "representar a sociedade ativa e passivamente, judicial e extrajudicialmente, praticar todos os atos de\ngestão, alienar e onerar bens móveis, inclusive veículos, máquinas e equipamentos, firmar contratos\ne participar de licitações, e constituir procuradores com poderes específicos. Parágrafo único.\nDependerá da concordância de sócios titulares de mais da metade do capital social a alienação ou a\noneração de bens imóveis.\"\nCLÁUSULA QUARTA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nA administradora declara, sob as penas da lei, que não está impedida de exercer a administração da\nsociedade por lei especial ou em virtude de condenação criminal.\nCLÁUSULA QUINTA – DAS DEMAIS CLÁUSULAS\nPermanecem inalteradas as demais cláusulas do contrato social consolidado que não colidirem com\no presente instrumento.\nE, por estarem assim ajustados, assinam o presente instrumento.\nSobral/CE, 15 de janeiro de 2026.\nOTÁVIO AUGUSTO PARENTE LINHARES\nSUELI ARAGÃO LINHARES\nBRUNO LINHARES ARAGÃO\nVisto: CAMILA PARENTE ALBUQUERQUE – OAB/CE nº 24.773\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 28/01/2026 sob o nº 6541287\nProtocolo: 26/010334-9 | NIRE: 23201377890\nEmpresa: SOBRAL ENGENHARIA E SANEAMENTO LTDA\nAutenticação: C2D7A04E9B15F380\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "3b1cd9c7d3500162e70f04f958b99a866307b5ba2a30c263c246f2e1c114370c",
+     "leitura": {
+      "tarefas": {
+       "partes": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 23.8,
+        "tokens_saida": 527,
+        "modelo": "qwen3.8-27b"
+       },
+       "regras": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 12.0,
+        "tokens_saida": 568,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "llamacpp",
+    "modelo": "qwen3.8-27b",
+    "politica": "DETRAN-CE"
+   },
+   "lado": "vendedor"
+  }
+ },
+ "geral": {
+  "veredito": "NAO_PODE",
+  "faixa": "VERMELHO",
+  "indice": 4.8,
+  "resumo": "Vendedor: Os assinantes informados não bastam. Quem pode assinar: Sueli Aragão Linhares. O caminho por procuração pública de 23/06/2025 (tabelionato ponte ferreira – 2º ofício de notas de sobral) não vale: procuração com mais de 1 ano.",
+  "motivos_faixa": [
+   "Vendedor — índice 4.8 ≤ limiar 15"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "FIAT/CRONOS",
+   "placa": "UFZ6V24",
+   "renavam": "02657921218",
+   "chassi": "9BDVAPHTEEH2W26XN"
+  },
+  "data_venda": "2026-08-12",
+  "valor": 84000.0,
+  "vendedor": {
+   "tipo": "PJ",
+   "nome": "SOBRAL ENGENHARIA E SANEAMENTO LTDA",
+   "documento": "66.331.219/0001-81",
+   "assinantes": [
+    {
+     "nome": "GILDÁSIO PRADO CARNEIRO",
+     "cpf": "373.595.916-43"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": "EDILSON BATISTA FROTA",
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "informado"
+ },
+ "hash_entrada": "42c04cc236d329eaaf72d39b1aa95c85cc8d1b59fa6142a6b56131073dffd484"
+}

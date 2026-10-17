@@ -1,0 +1,1006 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T10:08:21",
+ "pedido": {
+  "veiculo": {
+   "descricao": "GM/SPIN PREMIER 1.8",
+   "placa": "MDF9F54",
+   "renavam": "05624179290",
+   "chassi": "9BGG6CDYYESP50D18"
+  },
+  "data_venda": "2026-10-09",
+  "valor": 98000.0,
+  "assinantes": [
+   {
+    "nome": "Maria do Socorro Viana",
+    "cpf": "477.653.427-46"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "ASSOCIAÇÃO COMUNITÁRIA AMIGOS DO SERTÃO CENTRAL",
+  "vendedor_cnpj": "92.004.472/0001-30",
+  "lado": "comprador"
+ },
+ "empresa": {
+  "razao_social": "ASSOCIAÇÃO COMUNITÁRIA AMIGOS DO SERTÃO CENTRAL",
+  "cnpj": "92.004.472/0001-30",
+  "tipo": "ASSOCIACAO",
+  "objeto": "assistência social e promoção de atividades educativas, culturais e de saúde comunitária, sem fins lucrativos",
+  "comercializa_veiculos": false,
+  "subtipo": "ASSOCIACAO"
+ },
+ "veredito": "PODE",
+ "faixa": "VERDE",
+ "indice": 100.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 2,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 100 ≥ limiar 85"
+ ],
+ "resumo": "Maria do Socorro Viana pode assinar a ATPV-e como comprador(a) — regra geral de representação — Estatuto Social (2017).",
+ "assinantes": [
+  {
+   "informado": "Maria do Socorro Viana",
+   "cpf": "477.653.427-46",
+   "chave": "47765342746",
+   "nome": "Maria do Socorro Viana",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:47765342746",
+   "pessoas": [
+    {
+     "chave": "47765342746",
+     "nome": "Maria do Socorro Viana"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Estatuto Social (2017)",
+   "cadeia": [
+    "ASSOC_ESTATUTO"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": {
+  "id": "contrato:47765342746",
+  "pessoas": [
+   {
+    "chave": "47765342746",
+    "nome": "Maria do Socorro Viana"
+   }
+  ],
+  "via": "contrato",
+  "descricao": "regra geral de representação — Estatuto Social (2017)",
+  "cadeia": [
+   "ASSOC_ESTATUTO"
+  ],
+  "severidade": "ok",
+  "confianca": 1.0,
+  "achados": [],
+  "precondicoes": []
+ },
+ "faltantes": [],
+ "achados": [],
+ "regras": [
+  {
+   "regra": "ASSOC_ESTATUTO#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "ASSOC_ESTATUTO",
+    "doc_titulo": "Estatuto Social (2017)",
+    "trecho": "Compete ao Presidente representar a Associação ativa e passivamente, judicial e extrajudicialmente, sozinho",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 4,
+    "inicio": 7500,
+    "fim": 7607
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "@cargo:Presidente"
+   ],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "sozinho"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "ASSOC_ESTATUTO#R2",
+   "escopo": "alienacao_bens_imoveis",
+   "aplicavel": false,
+   "motivo": "regra de venda/alienação (não se aplica à compra)",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "ASSOC_ESTATUTO",
+    "doc_titulo": "Estatuto Social (2017)",
+    "trecho": "A alienação ou oneração de bens imóveis da Associação dependerá de aprovação da Assembleia Geral",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 4,
+    "inicio": 9557,
+    "fim": 9653
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-10-09",
+  "atos": [
+   {
+    "doc": "ASSOC_ESTATUTO",
+    "titulo": "Estatuto Social (2017)",
+    "efeito": "2017-08-05"
+   },
+   {
+    "doc": "ASSOC_ATA_ELEICAO",
+    "titulo": "Ata Da Assembleia Geral De Eleição",
+    "efeito": "2024-02-17"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "47765342746",
+    "nome": "Maria do Socorro Viana",
+    "cargo": "Presidente",
+    "doc": "ASSOC_ATA_ELEICAO"
+   },
+   {
+    "chave": "75755768196",
+    "nome": "Francisca Lúcia Matos",
+    "cargo": "Vice-Presidente",
+    "doc": "ASSOC_ATA_ELEICAO"
+   },
+   {
+    "chave": "38102227559",
+    "nome": "Paulo Sérgio Viana",
+    "cargo": "Tesoureiro",
+    "doc": "ASSOC_ATA_ELEICAO"
+   },
+   {
+    "chave": "88373821970",
+    "nome": "Rita de Cássia Albano",
+    "cargo": "Secretária",
+    "doc": "ASSOC_ATA_ELEICAO"
+   }
+  ],
+  "encerrados": [],
+  "socios": []
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "ASSOCIAÇÃO COMUNITÁRIA AMIGOS DO SERTÃO CENTRAL",
+    "sub": "92.004.472/0001-30"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "GM/SPIN PREMIER 1.8",
+    "sub": "MDF9F54"
+   },
+   {
+    "id": "47765342746",
+    "tipo": "pessoa",
+    "rotulo": "Maria do Socorro Viana",
+    "papeis": [
+     "Presidente"
+    ],
+    "assinante": true
+   },
+   {
+    "id": "75755768196",
+    "tipo": "pessoa",
+    "rotulo": "Francisca Lúcia Matos",
+    "papeis": [
+     "Vice-Presidente"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "38102227559",
+    "tipo": "pessoa",
+    "rotulo": "Paulo Sérgio Viana",
+    "papeis": [
+     "Tesoureiro"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "88373821970",
+    "tipo": "pessoa",
+    "rotulo": "Rita de Cássia Albano",
+    "papeis": [
+     "Secretária"
+    ],
+    "assinante": false
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "alerta"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "47765342746",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "ASSOC_ATA_ELEICAO"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "75755768196",
+    "tipo": "administracao",
+    "rotulo": "administra · sem poder para este ato",
+    "status": "invalido",
+    "doc": "ASSOC_ATA_ELEICAO"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "38102227559",
+    "tipo": "administracao",
+    "rotulo": "administra · sem poder para este ato",
+    "status": "invalido",
+    "doc": "ASSOC_ATA_ELEICAO"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "88373821970",
+    "tipo": "administracao",
+    "rotulo": "administra · sem poder para este ato",
+    "status": "invalido",
+    "doc": "ASSOC_ATA_ELEICAO"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2017-08-05",
+   "tipo": "ato",
+   "titulo": "Estatuto Social (2017)",
+   "doc": "ASSOC_ESTATUTO",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2024-02-17",
+   "tipo": "ato",
+   "titulo": "Ata Da Assembleia Geral De Eleição",
+   "doc": "ASSOC_ATA_ELEICAO",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-10-09",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 98.000,00"
+  },
+  {
+   "data": "2027-02-16",
+   "tipo": "fim_mandato",
+   "titulo": "Fim do mandato de Maria do Socorro Viana",
+   "doc": "ASSOC_ATA_ELEICAO",
+   "detalhe": "triênio 2024/2027"
+  },
+  {
+   "data": "2027-02-16",
+   "tipo": "fim_mandato",
+   "titulo": "Fim do mandato de Francisca Lúcia Matos",
+   "doc": "ASSOC_ATA_ELEICAO",
+   "detalhe": "triênio 2024/2027"
+  },
+  {
+   "data": "2027-02-16",
+   "tipo": "fim_mandato",
+   "titulo": "Fim do mandato de Paulo Sérgio Viana",
+   "doc": "ASSOC_ATA_ELEICAO",
+   "detalhe": "triênio 2024/2027"
+  },
+  {
+   "data": "2027-02-16",
+   "tipo": "fim_mandato",
+   "titulo": "Fim do mandato de Rita de Cássia Albano",
+   "doc": "ASSOC_ATA_ELEICAO",
+   "detalhe": "triênio 2024/2027"
+  }
+ ],
+ "pessoas": {
+  "47765342746": {
+   "nome": "Maria do Socorro Viana",
+   "cpf": "47765342746"
+  },
+  "75755768196": {
+   "nome": "Francisca Lúcia Matos",
+   "cpf": "75755768196"
+  },
+  "38102227559": {
+   "nome": "Paulo Sérgio Viana",
+   "cpf": "38102227559"
+  },
+  "88373821970": {
+   "nome": "Rita de Cássia Albano",
+   "cpf": "88373821970"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "comprovada",
+  "outorgante": {
+   "nome": "ASSOCIAÇÃO COMUNITÁRIA AMIGOS DO SERTÃO CENTRAL",
+   "cnpj": "92.004.472/0001-30",
+   "tipo": "ASSOCIACAO",
+   "atos_vigentes": [
+    {
+     "titulo": "Estatuto Social (2017)",
+     "doc": "ASSOC_ESTATUTO",
+     "efeito": "2017-08-05"
+    },
+    {
+     "titulo": "Ata Da Assembleia Geral De Eleição",
+     "doc": "ASSOC_ATA_ELEICAO",
+     "efeito": "2024-02-17"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Maria do Socorro Viana",
+    "cpf": "477.653.427-46",
+    "identificacao": "CPF",
+    "qualidade": "Presidente"
+   }
+  ],
+  "poderes_conferidos": [
+   "Estatuto Social (2017), cláusula de administração: assina: Presidente (sozinho)"
+  ],
+  "prazo_validade": [
+   "Maria do Socorro Viana (Presidente): mandato até 16/02/2027"
+  ],
+  "revogacao": [
+   "Poder decorre do ato constitutivo vigente na data da venda; recomenda-se certidão atualizada do Registro Civil das Pessoas Jurídicas para afastar alteração posterior ainda não apresentada."
+  ],
+  "fontes": [
+   {
+    "doc_id": "ASSOC_ESTATUTO",
+    "doc_titulo": "Estatuto Social (2017)",
+    "trecho": "Compete ao Presidente representar a Associação ativa e passivamente, judicial e extrajudicialmente, sozinho",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 4,
+    "inicio": 7500,
+    "fim": 7607
+   },
+   {
+    "doc_id": "ASSOC_ATA_ELEICAO",
+    "doc_titulo": "Ata Da Assembleia Geral De Eleição",
+    "trecho": "A Assembleia, por aclamação e sem nenhuma manifestação contrária, elegeu a chapa única para o triênio 2024/2027, ficando a Diretoria assim composta: Presidente: MARIA DO SOCORRO VIANA, brasileira, casada, assistente social, portadora do RG nº 16132205 SSP/CE, inscrita no CPF sob o nº 477",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 1266,
+    "fim": 1554
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "ASSOC_ESTATUTO",
+    "titulo": "Estatuto Social (2017)",
+    "arquivo": "ASSOC_ESTATUTO.pdf"
+   },
+   {
+    "id": "ASSOC_ATA_ELEICAO",
+    "titulo": "Ata Da Assembleia Geral De Eleição",
+    "arquivo": "ASSOC_ATA_ELEICAO.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "ASSOC_ESTATUTO",
+   "nome": "ASSOC_ESTATUTO.pdf",
+   "tipo": "estatuto_social",
+   "titulo": "Estatuto Social (2017)",
+   "data": "2017-08-05",
+   "paginas": [
+    "ASSOCIAÇÃO COMUNITÁRIA AMIGOS DO SERTÃO CENTRAL\nCNPJ nº 92.004.472/0001-30\nESTATUTO SOCIAL\n(reforma integral aprovada pela Assembleia Geral Extraordinária realizada em 5 de agosto de 2017)\nCAPÍTULO I – DA DENOMINAÇÃO, NATUREZA, SEDE E DURAÇÃO\nArt. 1º A ASSOCIAÇÃO COMUNITÁRIA AMIGOS DO SERTÃO CENTRAL, doravante\ndenominada \"Associação\", inscrita no CNPJ sob o nº 92.004.472/0001-30, é pessoa jurídica de\ndireito privado, constituída sob a forma de associação civil sem fins lucrativos e sem finalidade\neconômica, regida por este Estatuto, pelos arts. 53 a 61 da Lei nº 10.406, de 10 de janeiro de 2002\n(Código Civil), e pelas demais disposições legais aplicáveis.\nArt. 2º A Associação tem sede e foro no Município de Quixeramobim, Estado do Ceará, na Rua\nSanto Antônio, nº 1.215, bairro Centro, CEP 63800-000.\nArt. 3º O prazo de duração da Associação é indeterminado.\nArt. 4º A Associação não tem caráter político-partidário nem religioso e não fará qualquer\ndiscriminação de raça, cor, sexo, origem, crença ou condição social.\nCAPÍTULO II – DAS FINALIDADES\nArt. 5º A Associação tem por finalidade a assistência social e a promoção de atividades educativas,\nculturais e de saúde comunitária, sem fins lucrativos, competindo-lhe, para tanto:\nI – desenvolver programas de apoio a famílias, crianças, adolescentes e idosos em situação de\nvulnerabilidade social;\nII – promover cursos, oficinas, palestras e atividades de reforço escolar e de alfabetização de jovens\ne adultos;\nIII – incentivar, preservar e difundir as manifestações culturais e artísticas da região;\nIV – realizar campanhas e ações de prevenção de doenças e de educação em saúde comunitária;\nV – celebrar convênios, acordos e parcerias com órgãos públicos e entidades privadas para a\nconsecução de suas finalidades.\nParágrafo único. A Associação não distribui entre os seus associados, dirigentes, conselheiros ou\nempregados eventuais excedentes operacionais, dividendos, bonificações, participações ou parcelas\ndo seu patrimônio, aplicando-os integralmente na consecução de suas finalidades.\nCAPÍTULO III – DOS ASSOCIADOS\nArt. 6º Poderão ser associados as pessoas físicas maiores de 18 (dezoito) anos que se identifiquem\ncom as finalidades da Associação e tenham sua proposta de admissão, subscrita pelo interessado,\naprovada pela Diretoria, com a inscrição de seu nome no livro de registro de associados.\nParágrafo único. Os associados têm iguais direitos, e a qualidade de associado é intransmissível.\nArt. 7º São direitos dos associados:\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/5",
+    "I – participar das Assembleias Gerais, com direito a voz e voto;\nII – votar e ser votado para os cargos eletivos, desde que em dia com suas obrigações sociais;\nIII – participar das atividades e utilizar os serviços oferecidos pela Associação;\nIV – promover a convocação da Assembleia Geral, na forma do art. 15;\nV – desligar-se do quadro social a qualquer tempo, mediante comunicação escrita à Diretoria.\nArt. 8º São deveres dos associados:\nI – cumprir este Estatuto e as deliberações da Assembleia Geral e da Diretoria;\nII – pagar pontualmente as contribuições fixadas pela Assembleia Geral;\nIII – zelar pelo bom nome e pelo patrimônio da Associação;\nIV – comparecer às Assembleias Gerais e colaborar com as atividades sociais.\nArt. 9º A exclusão de associado só é admissível havendo justa causa, assim reconhecida pela\nDiretoria em procedimento que assegure direito de defesa, cabendo recurso à Assembleia Geral no\nprazo de 15 (quinze) dias contados da ciência da decisão.\nParágrafo único. Considera-se justa causa, entre outras hipóteses, a violação grave deste Estatuto, a\nprática de atos que desabonem o nome da Associação e o atraso injustificado no pagamento das\ncontribuições por mais de 6 (seis) meses.\nArt. 10. Os associados não respondem, nem subsidiariamente, pelas obrigações da Associação.\nCAPÍTULO IV – DAS FONTES DE RECURSOS\nArt. 11. Constituem fontes de recursos da Associação:\nI – as contribuições dos associados;\nII – as doações, os legados e os auxílios de pessoas físicas ou jurídicas, de direito público ou\nprivado;\nIII – as subvenções e os recursos decorrentes de convênios, termos de colaboração ou de fomento;\nIV – as receitas de eventos, campanhas e promoções;\nV – os rendimentos de aplicações financeiras.\nParágrafo único. Os recursos da Associação serão aplicados integralmente no País, na manutenção e\nno desenvolvimento de suas finalidades.\nCAPÍTULO V – DOS ÓRGÃOS DA ASSOCIAÇÃO\nArt. 12. São órgãos da Associação a Assembleia Geral, a Diretoria e o Conselho Fiscal.\nParágrafo único. Os membros da Diretoria e do Conselho Fiscal não serão remunerados, a qualquer\ntítulo, pelo exercício de seus cargos.\nSeção I – Da Assembleia Geral\nArt. 13. A Assembleia Geral, órgão soberano da Associação, é constituída pelos associados em pleno\ngozo de seus direitos estatutários.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/5",
+    "Art. 14. A Assembleia Geral instalar-se-á, em primeira convocação, com a presença da maioria\nabsoluta dos associados e, em segunda convocação, 30 (trinta) minutos depois, com qualquer\nnúmero, e deliberará pela maioria dos votos dos presentes, ressalvados os quóruns especiais\nprevistos neste Estatuto.\nArt. 15. A Assembleia Geral será convocada pelo Presidente, mediante edital afixado na sede da\nAssociação e divulgado com antecedência mínima de 8 (oito) dias, garantido a 1/5 (um quinto) dos\nassociados o direito de promovê-la.\nArt. 16. Compete à Assembleia Geral:\nI – eleger e destituir os membros da Diretoria e do Conselho Fiscal;\nII – alterar o Estatuto;\nIII – apreciar o relatório anual de atividades e aprovar as contas da Diretoria, após parecer do\nConselho Fiscal;\nIV – julgar os recursos contra a exclusão de associados;\nV – fixar as contribuições dos associados;\nVI – deliberar sobre a dissolução da Associação.\nParágrafo único. Para a destituição dos administradores e a alteração do Estatuto, é exigida\ndeliberação da Assembleia Geral especialmente convocada para esse fim, com o voto concorde de\n2/3 (dois terços) dos presentes.\nArt. 17. A Assembleia Geral reunir-se-á ordinariamente uma vez por ano, até o dia 30 de abril, para\napreciar o relatório de atividades e as contas do exercício anterior, e extraordinariamente sempre que\nnecessário.\n§ 1º A eleição da Diretoria e do Conselho Fiscal será realizada a cada 3 (três) anos, em Assembleia\nGeral convocada para esse fim.\n§ 2º A eleição far-se-á por chapas completas, em votação secreta, admitida a votação por aclamação\nquando houver chapa única.\nSeção II – Da Diretoria\nArt. 18. A Diretoria, órgão de administração da Associação, é composta por Presidente, Vice-\nPresidente, Secretário e Tesoureiro, eleitos pela Assembleia Geral para mandato de 3 (três) anos,\npermitida a reeleição.\n§ 1º Os membros da Diretoria serão empossados imediatamente após a eleição, lavrando-se o termo\nde posse na própria ata da Assembleia Geral.\n§ 2º Em caso de vacância de cargo da Diretoria, a Assembleia Geral elegerá o substituto, que\ncompletará o mandato do substituído.\nArt. 19. Compete à Diretoria:\nI – administrar a Associação e executar as deliberações da Assembleia Geral;\nII – elaborar o plano anual de atividades e a proposta orçamentária;\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/5",
+    "III – deliberar sobre a admissão de associados e instaurar o procedimento de exclusão;\nIV – apresentar à Assembleia Geral o relatório anual de atividades e a prestação de contas.\nArt. 20. Compete ao Presidente representar a Associação ativa e passivamente, judicial e\nextrajudicialmente, sozinho, perante quaisquer pessoas físicas ou jurídicas, de direito público ou\nprivado, cabendo-lhe ainda:\nI – convocar e presidir as Assembleias Gerais e as reuniões da Diretoria;\nII – cumprir e fazer cumprir este Estatuto e as deliberações dos órgãos da Associação;\nIII – coordenar e supervisionar as atividades da Associação e de seus colaboradores;\nIV – apresentar à Assembleia Geral Ordinária o relatório anual de atividades.\nArt. 21. Compete ao Vice-Presidente auxiliar o Presidente no desempenho de suas atribuições e\ncoordenar os programas, projetos e atividades sociais da Associação.\nArt. 22. Compete ao Secretário:\nI – lavrar as atas das Assembleias Gerais e das reuniões da Diretoria;\nII – manter em ordem o livro de registro de associados, os arquivos e a correspondência da\nAssociação;\nIII – dar publicidade aos editais e comunicados da Associação.\nArt. 23. Compete ao Tesoureiro:\nI – arrecadar as contribuições, doações e demais receitas da Associação;\nII – manter sob sua guarda os valores e documentos financeiros da Associação;\nIII – manter em dia a escrituração contábil, com o auxílio de contabilista habilitado;\nIV – apresentar balancetes à Diretoria e ao Conselho Fiscal e elaborar a prestação de contas anual.\nSeção III – Do Conselho Fiscal\nArt. 24. O Conselho Fiscal é composto por 3 (três) membros, eleitos pela Assembleia Geral\njuntamente com a Diretoria, para mandato de 3 (três) anos, coincidente com o desta.\nArt. 25. Compete ao Conselho Fiscal:\nI – examinar, a qualquer tempo, os livros, documentos e registros contábeis da Associação;\nII – emitir parecer sobre os balancetes, o balanço anual e a prestação de contas da Diretoria,\nencaminhando-o à Assembleia Geral;\nIII – comunicar à Assembleia Geral as irregularidades que verificar.\nCAPÍTULO VI – DO PATRIMÔNIO E DA PRESTAÇÃO DE CONTAS\nArt. 26. O patrimônio da Associação é constituído pelos bens móveis e imóveis, direitos e valores\nque possua ou venha a adquirir.\nArt. 27. A alienação ou oneração de bens imóveis da Associação dependerá de aprovação da\nAssembleia Geral.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 4/5",
+    "Art. 28. A prestação de contas da Associação observará:\nI – os princípios fundamentais de contabilidade e as Normas Brasileiras de Contabilidade;\nII – a publicidade, por qualquer meio eficaz, no encerramento do exercício social, do relatório de\natividades e das demonstrações financeiras da Associação, que ficarão à disposição de qualquer\nassociado;\nIII – a prestação de contas de todos os recursos de origem pública recebidos, na forma da legislação\naplicável.\nArt. 29. O exercício social coincide com o ano civil, encerrando-se em 31 de dezembro de cada ano,\nquando serão levantados o balanço patrimonial e as demais demonstrações financeiras.\nCAPÍTULO VII – DA DISSOLUÇÃO\nArt. 30. A Associação será dissolvida por deliberação da Assembleia Geral especialmente convocada\npara esse fim, com o voto de 2/3 (dois terços) dos associados presentes, ou nos casos previstos em\nlei.\nArt. 31. Dissolvida a Associação, o patrimônio líquido remanescente, depois de satisfeitas as\nobrigações, será destinado a entidade congênere, sem fins lucrativos, com finalidades idênticas ou\nsemelhantes e sede no Estado do Ceará, indicada pela Assembleia Geral, nos termos do art. 61 do\nCódigo Civil.\nCAPÍTULO VIII – DAS DISPOSIÇÕES GERAIS\nArt. 32. Os casos omissos neste Estatuto serão regulados pelo Código Civil e pela legislação\naplicável.\nArt. 33. Fica eleito o foro da Comarca de Quixeramobim/CE para dirimir quaisquer questões\noriundas deste Estatuto.\nQuixeramobim/CE, 5 de agosto de 2017.\nPresidente da Assembleia Geral Extraordinária\nSecretário da Assembleia Geral Extraordinária\nVisto: Liduína Carvalho Studart – OAB/CE nº 19.462\nREGISTRO CIVIL DAS PESSOAS JURÍDICAS\nCartório Dom Bosco – Registro Civil das Pessoas Jurídicas de Quixeramobim/CE\n(fictício)\nProtocolado e registrado sob o nº 79335, no Livro A, em 21/08/2017\nGeraldo Magela Saboia – Oficial Registrador\nSelo Digital: DBQ-0821-2017-7F3A2C\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 5/5"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "786a2dede448e83a3c4fdb2ef5c011fba417f11eb5bc16036859917a69e84782",
+   "leitura": {}
+  },
+  {
+   "id": "ASSOC_ATA_ELEICAO",
+   "nome": "ASSOC_ATA_ELEICAO.pdf",
+   "tipo": "ata_assembleia",
+   "titulo": "Ata Da Assembleia Geral De Eleição",
+   "data": "2024-02-17",
+   "paginas": [
+    "ASSOCIAÇÃO COMUNITÁRIA AMIGOS DO SERTÃO CENTRAL\nCNPJ nº 92.004.472/0001-30\nATA DA ASSEMBLEIA GERAL DE ELEIÇÃO\nREALIZADA EM 17 DE FEVEREIRO DE 2024\n1. DATA, HORA E LOCAL: Aos 17 (dezessete) dias do mês de fevereiro de 2024, na sede da\nAssociação, situada na Rua Santo Antônio, nº 1.215, bairro Centro, Quixeramobim/CE, CEP\n63800-000.\n2. CONVOCAÇÃO: Por edital expedido pelo Presidente da Associação, afixado na sede social e\ndivulgado em 02/02/2024, nos termos do art. 15 do Estatuto Social.\n3. INSTALAÇÃO E PRESENÇA: Não havendo quórum às 8h, em primeira convocação, a\nAssembleia foi instalada às 8h30, em segunda convocação, na forma do art. 14 do Estatuto Social,\ncom a presença de 58 (cinquenta e oito) associados em pleno gozo de seus direitos estatutários,\nconforme assinaturas lançadas no Livro de Presença.\n4. MESA: Aclamado para presidir os trabalhos o associado JOSÉ AIRTON BENEVIDES, que\nconvidou a mim, ANTÔNIA ROSILENE CARNEIRO, para secretariá-los.\n5. ORDEM DO DIA: Eleição e posse dos membros da Diretoria e do Conselho Fiscal.\n6. DELIBERAÇÕES: O Presidente da mesa informou que, no prazo fixado no edital, foi inscrita\numa única chapa, denominada \"Sertão Unido\", e, nos termos do art. 17, § 2º, do Estatuto Social,\nsubmeteu-a à votação por aclamação. A Assembleia, por aclamação e sem nenhuma manifestação\ncontrária, elegeu a chapa única para o triênio 2024/2027, ficando a Diretoria assim composta:\nPresidente: MARIA DO SOCORRO VIANA, brasileira, casada, assistente social, portadora do RG\nnº 16132205 SSP/CE, inscrita no CPF sob o nº 477.653.427-46, residente e domiciliada na Rua\nCônego Aureliano Duarte, nº 233, bairro Centro, Quixeramobim/CE;\nVice-Presidente: FRANCISCA LÚCIA MATOS, brasileira, solteira, professora, portadora do RG nº\n84929810 SSP/CE, inscrita no CPF sob o nº 757.557.681-96, residente e domiciliada na Rua José\nBonifácio, nº 1.047, bairro Maravilha, Quixeramobim/CE;\nSecretária: RITA DE CÁSSIA ALBANO, brasileira, divorciada, agente comunitária de saúde,\nportadora do RG nº 20736591 SSP/CE, inscrita no CPF sob o nº 883.738.219-70, residente e\ndomiciliada na Travessa São Miguel, nº 58, bairro Esplanada, Quixeramobim/CE;\nTesoureiro: PAULO SÉRGIO VIANA, brasileiro, casado, comerciante, portador do RG nº 30509632\nSSP/CE, inscrito no CPF sob o nº 381.022.275-59, residente e domiciliado na Rua Coronel Jaime\nLustosa, nº 512, bairro Centro, Quixeramobim/CE.\nPara o Conselho Fiscal, integrante da mesma chapa, foram eleitos BENEDITO ALVES MOURATO,\nbrasileiro, casado, agricultor, inscrito no CPF sob o nº 325.297.942-00; LUZIA MARQUES\nCASTELO, brasileira, viúva, aposentada, inscrita no CPF sob o nº 351.498.093-49; e EDMILSON\nRABELO CHAVES, brasileiro, casado, servidor público municipal, inscrito no CPF sob o nº\n846.943.466-79, todos residentes em Quixeramobim/CE.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "O mandato dos eleitos tem início nesta data e término em 16/02/2027.\n7. POSSE: Em seguida, os eleitos foram imediatamente empossados em seus cargos, nos termos do\nart. 18, § 1º, do Estatuto Social, valendo esta ata como termo de posse. Os empossados declararam,\nsob as penas da lei, não estar impedidos de exercer os respectivos cargos. Com a palavra, a\nPresidente eleita, MARIA DO SOCORRO VIANA, agradeceu a confiança dos associados e\nreafirmou o compromisso da nova Diretoria com as finalidades da Associação.\n8. ENCERRAMENTO: Nada mais havendo a tratar, o Presidente da mesa encerrou os trabalhos, e\neu, ANTÔNIA ROSILENE CARNEIRO, secretária da mesa, lavrei a presente ata em livro próprio, a\nqual, lida e achada conforme, vai assinada por mim, pelo Presidente da mesa e pelos membros\neleitos da Diretoria, permanecendo a lista de presença arquivada na sede da Associação.\nQuixeramobim/CE, 17 de fevereiro de 2024.\nJOSÉ AIRTON BENEVIDES – Presidente da mesa\nANTÔNIA ROSILENE CARNEIRO – Secretária da mesa\nMARIA DO SOCORRO VIANA – Presidente eleita\nFRANCISCA LÚCIA MATOS – Vice-Presidente eleita\nRITA DE CÁSSIA ALBANO – Secretária eleita\nPAULO SÉRGIO VIANA – Tesoureiro eleito\nREGISTRO CIVIL DAS PESSOAS JURÍDICAS\nCartório Dom Bosco – Registro Civil das Pessoas Jurídicas de Quixeramobim/CE\n(fictício)\nProtocolado e registrado sob o nº 98910, no Livro A, em 01/03/2024\nGeraldo Magela Saboia – Oficial Registrador\nSelo Digital: DBQ-0301-2024-C5E81B\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "47f4a094a8716325edf64550d5d2903328effec237691b4ff4e118216e6d89df",
+   "leitura": {}
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "gabarito",
+  "politica": "Código Civil (genérica)"
+ },
+ "lado": "comprador",
+ "lados": {
+  "comprador": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T10:08:21",
+   "pedido": {
+    "veiculo": {
+     "descricao": "GM/SPIN PREMIER 1.8",
+     "placa": "MDF9F54",
+     "renavam": "05624179290",
+     "chassi": "9BGG6CDYYESP50D18"
+    },
+    "data_venda": "2026-10-09",
+    "valor": 98000.0,
+    "assinantes": [
+     {
+      "nome": "Maria do Socorro Viana",
+      "cpf": "477.653.427-46"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "ASSOCIAÇÃO COMUNITÁRIA AMIGOS DO SERTÃO CENTRAL",
+    "vendedor_cnpj": "92.004.472/0001-30",
+    "lado": "comprador"
+   },
+   "empresa": {
+    "razao_social": "ASSOCIAÇÃO COMUNITÁRIA AMIGOS DO SERTÃO CENTRAL",
+    "cnpj": "92.004.472/0001-30",
+    "tipo": "ASSOCIACAO",
+    "objeto": "assistência social e promoção de atividades educativas, culturais e de saúde comunitária, sem fins lucrativos",
+    "comercializa_veiculos": false,
+    "subtipo": "ASSOCIACAO"
+   },
+   "veredito": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 2,
+    "menor_confianca_fato": 1.0,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "resumo": "Maria do Socorro Viana pode assinar a ATPV-e como comprador(a) — regra geral de representação — Estatuto Social (2017).",
+   "assinantes": [
+    {
+     "informado": "Maria do Socorro Viana",
+     "cpf": "477.653.427-46",
+     "chave": "47765342746",
+     "nome": "Maria do Socorro Viana",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:47765342746",
+     "pessoas": [
+      {
+       "chave": "47765342746",
+       "nome": "Maria do Socorro Viana"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "regra geral de representação — Estatuto Social (2017)",
+     "cadeia": [
+      "ASSOC_ESTATUTO"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [],
+   "caminho_escolhido": {
+    "id": "contrato:47765342746",
+    "pessoas": [
+     {
+      "chave": "47765342746",
+      "nome": "Maria do Socorro Viana"
+     }
+    ],
+    "via": "contrato",
+    "descricao": "regra geral de representação — Estatuto Social (2017)",
+    "cadeia": [
+     "ASSOC_ESTATUTO"
+    ],
+    "severidade": "ok",
+    "confianca": 1.0,
+    "achados": [],
+    "precondicoes": []
+   },
+   "faltantes": [],
+   "achados": [],
+   "regras": [
+    {
+     "regra": "ASSOC_ESTATUTO#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "ASSOC_ESTATUTO",
+      "doc_titulo": "Estatuto Social (2017)",
+      "trecho": "Compete ao Presidente representar a Associação ativa e passivamente, judicial e extrajudicialmente, sozinho",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 4,
+      "inicio": 7500,
+      "fim": 7607
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "@cargo:Presidente"
+     ],
+     "cargo": null,
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "sozinho"
+       ]
+      }
+     ],
+     "decisiva": true
+    },
+    {
+     "regra": "ASSOC_ESTATUTO#R2",
+     "escopo": "alienacao_bens_imoveis",
+     "aplicavel": false,
+     "motivo": "regra de venda/alienação (não se aplica à compra)",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "ASSOC_ESTATUTO",
+      "doc_titulo": "Estatuto Social (2017)",
+      "trecho": "A alienação ou oneração de bens imóveis da Associação dependerá de aprovação da Assembleia Geral",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 4,
+      "inicio": 9557,
+      "fim": 9653
+     },
+     "modo": "nao_especificado",
+     "pessoas": [],
+     "cargo": null,
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-10-09",
+    "atos": [
+     {
+      "doc": "ASSOC_ESTATUTO",
+      "titulo": "Estatuto Social (2017)",
+      "efeito": "2017-08-05"
+     },
+     {
+      "doc": "ASSOC_ATA_ELEICAO",
+      "titulo": "Ata Da Assembleia Geral De Eleição",
+      "efeito": "2024-02-17"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "47765342746",
+      "nome": "Maria do Socorro Viana",
+      "cargo": "Presidente",
+      "doc": "ASSOC_ATA_ELEICAO"
+     },
+     {
+      "chave": "75755768196",
+      "nome": "Francisca Lúcia Matos",
+      "cargo": "Vice-Presidente",
+      "doc": "ASSOC_ATA_ELEICAO"
+     },
+     {
+      "chave": "38102227559",
+      "nome": "Paulo Sérgio Viana",
+      "cargo": "Tesoureiro",
+      "doc": "ASSOC_ATA_ELEICAO"
+     },
+     {
+      "chave": "88373821970",
+      "nome": "Rita de Cássia Albano",
+      "cargo": "Secretária",
+      "doc": "ASSOC_ATA_ELEICAO"
+     }
+    ],
+    "encerrados": [],
+    "socios": []
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "ASSOCIAÇÃO COMUNITÁRIA AMIGOS DO SERTÃO CENTRAL",
+      "sub": "92.004.472/0001-30"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "GM/SPIN PREMIER 1.8",
+      "sub": "MDF9F54"
+     },
+     {
+      "id": "47765342746",
+      "tipo": "pessoa",
+      "rotulo": "Maria do Socorro Viana",
+      "papeis": [
+       "Presidente"
+      ],
+      "assinante": true
+     },
+     {
+      "id": "75755768196",
+      "tipo": "pessoa",
+      "rotulo": "Francisca Lúcia Matos",
+      "papeis": [
+       "Vice-Presidente"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "38102227559",
+      "tipo": "pessoa",
+      "rotulo": "Paulo Sérgio Viana",
+      "papeis": [
+       "Tesoureiro"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "88373821970",
+      "tipo": "pessoa",
+      "rotulo": "Rita de Cássia Albano",
+      "papeis": [
+       "Secretária"
+      ],
+      "assinante": false
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "alerta"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "47765342746",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "ASSOC_ATA_ELEICAO"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "75755768196",
+      "tipo": "administracao",
+      "rotulo": "administra · sem poder para este ato",
+      "status": "invalido",
+      "doc": "ASSOC_ATA_ELEICAO"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "38102227559",
+      "tipo": "administracao",
+      "rotulo": "administra · sem poder para este ato",
+      "status": "invalido",
+      "doc": "ASSOC_ATA_ELEICAO"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "88373821970",
+      "tipo": "administracao",
+      "rotulo": "administra · sem poder para este ato",
+      "status": "invalido",
+      "doc": "ASSOC_ATA_ELEICAO"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2017-08-05",
+     "tipo": "ato",
+     "titulo": "Estatuto Social (2017)",
+     "doc": "ASSOC_ESTATUTO",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2024-02-17",
+     "tipo": "ato",
+     "titulo": "Ata Da Assembleia Geral De Eleição",
+     "doc": "ASSOC_ATA_ELEICAO",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-10-09",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 98.000,00"
+    },
+    {
+     "data": "2027-02-16",
+     "tipo": "fim_mandato",
+     "titulo": "Fim do mandato de Maria do Socorro Viana",
+     "doc": "ASSOC_ATA_ELEICAO",
+     "detalhe": "triênio 2024/2027"
+    },
+    {
+     "data": "2027-02-16",
+     "tipo": "fim_mandato",
+     "titulo": "Fim do mandato de Francisca Lúcia Matos",
+     "doc": "ASSOC_ATA_ELEICAO",
+     "detalhe": "triênio 2024/2027"
+    },
+    {
+     "data": "2027-02-16",
+     "tipo": "fim_mandato",
+     "titulo": "Fim do mandato de Paulo Sérgio Viana",
+     "doc": "ASSOC_ATA_ELEICAO",
+     "detalhe": "triênio 2024/2027"
+    },
+    {
+     "data": "2027-02-16",
+     "tipo": "fim_mandato",
+     "titulo": "Fim do mandato de Rita de Cássia Albano",
+     "doc": "ASSOC_ATA_ELEICAO",
+     "detalhe": "triênio 2024/2027"
+    }
+   ],
+   "pessoas": {
+    "47765342746": {
+     "nome": "Maria do Socorro Viana",
+     "cpf": "47765342746"
+    },
+    "75755768196": {
+     "nome": "Francisca Lúcia Matos",
+     "cpf": "75755768196"
+    },
+    "38102227559": {
+     "nome": "Paulo Sérgio Viana",
+     "cpf": "38102227559"
+    },
+    "88373821970": {
+     "nome": "Rita de Cássia Albano",
+     "cpf": "88373821970"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "comprovada",
+    "outorgante": {
+     "nome": "ASSOCIAÇÃO COMUNITÁRIA AMIGOS DO SERTÃO CENTRAL",
+     "cnpj": "92.004.472/0001-30",
+     "tipo": "ASSOCIACAO",
+     "atos_vigentes": [
+      {
+       "titulo": "Estatuto Social (2017)",
+       "doc": "ASSOC_ESTATUTO",
+       "efeito": "2017-08-05"
+      },
+      {
+       "titulo": "Ata Da Assembleia Geral De Eleição",
+       "doc": "ASSOC_ATA_ELEICAO",
+       "efeito": "2024-02-17"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "Maria do Socorro Viana",
+      "cpf": "477.653.427-46",
+      "identificacao": "CPF",
+      "qualidade": "Presidente"
+     }
+    ],
+    "poderes_conferidos": [
+     "Estatuto Social (2017), cláusula de administração: assina: Presidente (sozinho)"
+    ],
+    "prazo_validade": [
+     "Maria do Socorro Viana (Presidente): mandato até 16/02/2027"
+    ],
+    "revogacao": [
+     "Poder decorre do ato constitutivo vigente na data da venda; recomenda-se certidão atualizada do Registro Civil das Pessoas Jurídicas para afastar alteração posterior ainda não apresentada."
+    ],
+    "fontes": [
+     {
+      "doc_id": "ASSOC_ESTATUTO",
+      "doc_titulo": "Estatuto Social (2017)",
+      "trecho": "Compete ao Presidente representar a Associação ativa e passivamente, judicial e extrajudicialmente, sozinho",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 4,
+      "inicio": 7500,
+      "fim": 7607
+     },
+     {
+      "doc_id": "ASSOC_ATA_ELEICAO",
+      "doc_titulo": "Ata Da Assembleia Geral De Eleição",
+      "trecho": "A Assembleia, por aclamação e sem nenhuma manifestação contrária, elegeu a chapa única para o triênio 2024/2027, ficando a Diretoria assim composta: Presidente: MARIA DO SOCORRO VIANA, brasileira, casada, assistente social, portadora do RG nº 16132205 SSP/CE, inscrita no CPF sob o nº 477",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 1266,
+      "fim": 1554
+     }
+    ],
+    "documentos_verificaveis": [
+     {
+      "id": "ASSOC_ESTATUTO",
+      "titulo": "Estatuto Social (2017)",
+      "arquivo": "ASSOC_ESTATUTO.pdf"
+     },
+     {
+      "id": "ASSOC_ATA_ELEICAO",
+      "titulo": "Ata Da Assembleia Geral De Eleição",
+      "arquivo": "ASSOC_ATA_ELEICAO.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "ASSOC_ESTATUTO",
+     "nome": "ASSOC_ESTATUTO.pdf",
+     "tipo": "estatuto_social",
+     "titulo": "Estatuto Social (2017)",
+     "data": "2017-08-05",
+     "paginas": [
+      "ASSOCIAÇÃO COMUNITÁRIA AMIGOS DO SERTÃO CENTRAL\nCNPJ nº 92.004.472/0001-30\nESTATUTO SOCIAL\n(reforma integral aprovada pela Assembleia Geral Extraordinária realizada em 5 de agosto de 2017)\nCAPÍTULO I – DA DENOMINAÇÃO, NATUREZA, SEDE E DURAÇÃO\nArt. 1º A ASSOCIAÇÃO COMUNITÁRIA AMIGOS DO SERTÃO CENTRAL, doravante\ndenominada \"Associação\", inscrita no CNPJ sob o nº 92.004.472/0001-30, é pessoa jurídica de\ndireito privado, constituída sob a forma de associação civil sem fins lucrativos e sem finalidade\neconômica, regida por este Estatuto, pelos arts. 53 a 61 da Lei nº 10.406, de 10 de janeiro de 2002\n(Código Civil), e pelas demais disposições legais aplicáveis.\nArt. 2º A Associação tem sede e foro no Município de Quixeramobim, Estado do Ceará, na Rua\nSanto Antônio, nº 1.215, bairro Centro, CEP 63800-000.\nArt. 3º O prazo de duração da Associação é indeterminado.\nArt. 4º A Associação não tem caráter político-partidário nem religioso e não fará qualquer\ndiscriminação de raça, cor, sexo, origem, crença ou condição social.\nCAPÍTULO II – DAS FINALIDADES\nArt. 5º A Associação tem por finalidade a assistência social e a promoção de atividades educativas,\nculturais e de saúde comunitária, sem fins lucrativos, competindo-lhe, para tanto:\nI – desenvolver programas de apoio a famílias, crianças, adolescentes e idosos em situação de\nvulnerabilidade social;\nII – promover cursos, oficinas, palestras e atividades de reforço escolar e de alfabetização de jovens\ne adultos;\nIII – incentivar, preservar e difundir as manifestações culturais e artísticas da região;\nIV – realizar campanhas e ações de prevenção de doenças e de educação em saúde comunitária;\nV – celebrar convênios, acordos e parcerias com órgãos públicos e entidades privadas para a\nconsecução de suas finalidades.\nParágrafo único. A Associação não distribui entre os seus associados, dirigentes, conselheiros ou\nempregados eventuais excedentes operacionais, dividendos, bonificações, participações ou parcelas\ndo seu patrimônio, aplicando-os integralmente na consecução de suas finalidades.\nCAPÍTULO III – DOS ASSOCIADOS\nArt. 6º Poderão ser associados as pessoas físicas maiores de 18 (dezoito) anos que se identifiquem\ncom as finalidades da Associação e tenham sua proposta de admissão, subscrita pelo interessado,\naprovada pela Diretoria, com a inscrição de seu nome no livro de registro de associados.\nParágrafo único. Os associados têm iguais direitos, e a qualidade de associado é intransmissível.\nArt. 7º São direitos dos associados:\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/5",
+      "I – participar das Assembleias Gerais, com direito a voz e voto;\nII – votar e ser votado para os cargos eletivos, desde que em dia com suas obrigações sociais;\nIII – participar das atividades e utilizar os serviços oferecidos pela Associação;\nIV – promover a convocação da Assembleia Geral, na forma do art. 15;\nV – desligar-se do quadro social a qualquer tempo, mediante comunicação escrita à Diretoria.\nArt. 8º São deveres dos associados:\nI – cumprir este Estatuto e as deliberações da Assembleia Geral e da Diretoria;\nII – pagar pontualmente as contribuições fixadas pela Assembleia Geral;\nIII – zelar pelo bom nome e pelo patrimônio da Associação;\nIV – comparecer às Assembleias Gerais e colaborar com as atividades sociais.\nArt. 9º A exclusão de associado só é admissível havendo justa causa, assim reconhecida pela\nDiretoria em procedimento que assegure direito de defesa, cabendo recurso à Assembleia Geral no\nprazo de 15 (quinze) dias contados da ciência da decisão.\nParágrafo único. Considera-se justa causa, entre outras hipóteses, a violação grave deste Estatuto, a\nprática de atos que desabonem o nome da Associação e o atraso injustificado no pagamento das\ncontribuições por mais de 6 (seis) meses.\nArt. 10. Os associados não respondem, nem subsidiariamente, pelas obrigações da Associação.\nCAPÍTULO IV – DAS FONTES DE RECURSOS\nArt. 11. Constituem fontes de recursos da Associação:\nI – as contribuições dos associados;\nII – as doações, os legados e os auxílios de pessoas físicas ou jurídicas, de direito público ou\nprivado;\nIII – as subvenções e os recursos decorrentes de convênios, termos de colaboração ou de fomento;\nIV – as receitas de eventos, campanhas e promoções;\nV – os rendimentos de aplicações financeiras.\nParágrafo único. Os recursos da Associação serão aplicados integralmente no País, na manutenção e\nno desenvolvimento de suas finalidades.\nCAPÍTULO V – DOS ÓRGÃOS DA ASSOCIAÇÃO\nArt. 12. São órgãos da Associação a Assembleia Geral, a Diretoria e o Conselho Fiscal.\nParágrafo único. Os membros da Diretoria e do Conselho Fiscal não serão remunerados, a qualquer\ntítulo, pelo exercício de seus cargos.\nSeção I – Da Assembleia Geral\nArt. 13. A Assembleia Geral, órgão soberano da Associação, é constituída pelos associados em pleno\ngozo de seus direitos estatutários.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/5",
+      "Art. 14. A Assembleia Geral instalar-se-á, em primeira convocação, com a presença da maioria\nabsoluta dos associados e, em segunda convocação, 30 (trinta) minutos depois, com qualquer\nnúmero, e deliberará pela maioria dos votos dos presentes, ressalvados os quóruns especiais\nprevistos neste Estatuto.\nArt. 15. A Assembleia Geral será convocada pelo Presidente, mediante edital afixado na sede da\nAssociação e divulgado com antecedência mínima de 8 (oito) dias, garantido a 1/5 (um quinto) dos\nassociados o direito de promovê-la.\nArt. 16. Compete à Assembleia Geral:\nI – eleger e destituir os membros da Diretoria e do Conselho Fiscal;\nII – alterar o Estatuto;\nIII – apreciar o relatório anual de atividades e aprovar as contas da Diretoria, após parecer do\nConselho Fiscal;\nIV – julgar os recursos contra a exclusão de associados;\nV – fixar as contribuições dos associados;\nVI – deliberar sobre a dissolução da Associação.\nParágrafo único. Para a destituição dos administradores e a alteração do Estatuto, é exigida\ndeliberação da Assembleia Geral especialmente convocada para esse fim, com o voto concorde de\n2/3 (dois terços) dos presentes.\nArt. 17. A Assembleia Geral reunir-se-á ordinariamente uma vez por ano, até o dia 30 de abril, para\napreciar o relatório de atividades e as contas do exercício anterior, e extraordinariamente sempre que\nnecessário.\n§ 1º A eleição da Diretoria e do Conselho Fiscal será realizada a cada 3 (três) anos, em Assembleia\nGeral convocada para esse fim.\n§ 2º A eleição far-se-á por chapas completas, em votação secreta, admitida a votação por aclamação\nquando houver chapa única.\nSeção II – Da Diretoria\nArt. 18. A Diretoria, órgão de administração da Associação, é composta por Presidente, Vice-\nPresidente, Secretário e Tesoureiro, eleitos pela Assembleia Geral para mandato de 3 (três) anos,\npermitida a reeleição.\n§ 1º Os membros da Diretoria serão empossados imediatamente após a eleição, lavrando-se o termo\nde posse na própria ata da Assembleia Geral.\n§ 2º Em caso de vacância de cargo da Diretoria, a Assembleia Geral elegerá o substituto, que\ncompletará o mandato do substituído.\nArt. 19. Compete à Diretoria:\nI – administrar a Associação e executar as deliberações da Assembleia Geral;\nII – elaborar o plano anual de atividades e a proposta orçamentária;\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/5",
+      "III – deliberar sobre a admissão de associados e instaurar o procedimento de exclusão;\nIV – apresentar à Assembleia Geral o relatório anual de atividades e a prestação de contas.\nArt. 20. Compete ao Presidente representar a Associação ativa e passivamente, judicial e\nextrajudicialmente, sozinho, perante quaisquer pessoas físicas ou jurídicas, de direito público ou\nprivado, cabendo-lhe ainda:\nI – convocar e presidir as Assembleias Gerais e as reuniões da Diretoria;\nII – cumprir e fazer cumprir este Estatuto e as deliberações dos órgãos da Associação;\nIII – coordenar e supervisionar as atividades da Associação e de seus colaboradores;\nIV – apresentar à Assembleia Geral Ordinária o relatório anual de atividades.\nArt. 21. Compete ao Vice-Presidente auxiliar o Presidente no desempenho de suas atribuições e\ncoordenar os programas, projetos e atividades sociais da Associação.\nArt. 22. Compete ao Secretário:\nI – lavrar as atas das Assembleias Gerais e das reuniões da Diretoria;\nII – manter em ordem o livro de registro de associados, os arquivos e a correspondência da\nAssociação;\nIII – dar publicidade aos editais e comunicados da Associação.\nArt. 23. Compete ao Tesoureiro:\nI – arrecadar as contribuições, doações e demais receitas da Associação;\nII – manter sob sua guarda os valores e documentos financeiros da Associação;\nIII – manter em dia a escrituração contábil, com o auxílio de contabilista habilitado;\nIV – apresentar balancetes à Diretoria e ao Conselho Fiscal e elaborar a prestação de contas anual.\nSeção III – Do Conselho Fiscal\nArt. 24. O Conselho Fiscal é composto por 3 (três) membros, eleitos pela Assembleia Geral\njuntamente com a Diretoria, para mandato de 3 (três) anos, coincidente com o desta.\nArt. 25. Compete ao Conselho Fiscal:\nI – examinar, a qualquer tempo, os livros, documentos e registros contábeis da Associação;\nII – emitir parecer sobre os balancetes, o balanço anual e a prestação de contas da Diretoria,\nencaminhando-o à Assembleia Geral;\nIII – comunicar à Assembleia Geral as irregularidades que verificar.\nCAPÍTULO VI – DO PATRIMÔNIO E DA PRESTAÇÃO DE CONTAS\nArt. 26. O patrimônio da Associação é constituído pelos bens móveis e imóveis, direitos e valores\nque possua ou venha a adquirir.\nArt. 27. A alienação ou oneração de bens imóveis da Associação dependerá de aprovação da\nAssembleia Geral.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 4/5",
+      "Art. 28. A prestação de contas da Associação observará:\nI – os princípios fundamentais de contabilidade e as Normas Brasileiras de Contabilidade;\nII – a publicidade, por qualquer meio eficaz, no encerramento do exercício social, do relatório de\natividades e das demonstrações financeiras da Associação, que ficarão à disposição de qualquer\nassociado;\nIII – a prestação de contas de todos os recursos de origem pública recebidos, na forma da legislação\naplicável.\nArt. 29. O exercício social coincide com o ano civil, encerrando-se em 31 de dezembro de cada ano,\nquando serão levantados o balanço patrimonial e as demais demonstrações financeiras.\nCAPÍTULO VII – DA DISSOLUÇÃO\nArt. 30. A Associação será dissolvida por deliberação da Assembleia Geral especialmente convocada\npara esse fim, com o voto de 2/3 (dois terços) dos associados presentes, ou nos casos previstos em\nlei.\nArt. 31. Dissolvida a Associação, o patrimônio líquido remanescente, depois de satisfeitas as\nobrigações, será destinado a entidade congênere, sem fins lucrativos, com finalidades idênticas ou\nsemelhantes e sede no Estado do Ceará, indicada pela Assembleia Geral, nos termos do art. 61 do\nCódigo Civil.\nCAPÍTULO VIII – DAS DISPOSIÇÕES GERAIS\nArt. 32. Os casos omissos neste Estatuto serão regulados pelo Código Civil e pela legislação\naplicável.\nArt. 33. Fica eleito o foro da Comarca de Quixeramobim/CE para dirimir quaisquer questões\noriundas deste Estatuto.\nQuixeramobim/CE, 5 de agosto de 2017.\nPresidente da Assembleia Geral Extraordinária\nSecretário da Assembleia Geral Extraordinária\nVisto: Liduína Carvalho Studart – OAB/CE nº 19.462\nREGISTRO CIVIL DAS PESSOAS JURÍDICAS\nCartório Dom Bosco – Registro Civil das Pessoas Jurídicas de Quixeramobim/CE\n(fictício)\nProtocolado e registrado sob o nº 79335, no Livro A, em 21/08/2017\nGeraldo Magela Saboia – Oficial Registrador\nSelo Digital: DBQ-0821-2017-7F3A2C\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 5/5"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "786a2dede448e83a3c4fdb2ef5c011fba417f11eb5bc16036859917a69e84782",
+     "leitura": {}
+    },
+    {
+     "id": "ASSOC_ATA_ELEICAO",
+     "nome": "ASSOC_ATA_ELEICAO.pdf",
+     "tipo": "ata_assembleia",
+     "titulo": "Ata Da Assembleia Geral De Eleição",
+     "data": "2024-02-17",
+     "paginas": [
+      "ASSOCIAÇÃO COMUNITÁRIA AMIGOS DO SERTÃO CENTRAL\nCNPJ nº 92.004.472/0001-30\nATA DA ASSEMBLEIA GERAL DE ELEIÇÃO\nREALIZADA EM 17 DE FEVEREIRO DE 2024\n1. DATA, HORA E LOCAL: Aos 17 (dezessete) dias do mês de fevereiro de 2024, na sede da\nAssociação, situada na Rua Santo Antônio, nº 1.215, bairro Centro, Quixeramobim/CE, CEP\n63800-000.\n2. CONVOCAÇÃO: Por edital expedido pelo Presidente da Associação, afixado na sede social e\ndivulgado em 02/02/2024, nos termos do art. 15 do Estatuto Social.\n3. INSTALAÇÃO E PRESENÇA: Não havendo quórum às 8h, em primeira convocação, a\nAssembleia foi instalada às 8h30, em segunda convocação, na forma do art. 14 do Estatuto Social,\ncom a presença de 58 (cinquenta e oito) associados em pleno gozo de seus direitos estatutários,\nconforme assinaturas lançadas no Livro de Presença.\n4. MESA: Aclamado para presidir os trabalhos o associado JOSÉ AIRTON BENEVIDES, que\nconvidou a mim, ANTÔNIA ROSILENE CARNEIRO, para secretariá-los.\n5. ORDEM DO DIA: Eleição e posse dos membros da Diretoria e do Conselho Fiscal.\n6. DELIBERAÇÕES: O Presidente da mesa informou que, no prazo fixado no edital, foi inscrita\numa única chapa, denominada \"Sertão Unido\", e, nos termos do art. 17, § 2º, do Estatuto Social,\nsubmeteu-a à votação por aclamação. A Assembleia, por aclamação e sem nenhuma manifestação\ncontrária, elegeu a chapa única para o triênio 2024/2027, ficando a Diretoria assim composta:\nPresidente: MARIA DO SOCORRO VIANA, brasileira, casada, assistente social, portadora do RG\nnº 16132205 SSP/CE, inscrita no CPF sob o nº 477.653.427-46, residente e domiciliada na Rua\nCônego Aureliano Duarte, nº 233, bairro Centro, Quixeramobim/CE;\nVice-Presidente: FRANCISCA LÚCIA MATOS, brasileira, solteira, professora, portadora do RG nº\n84929810 SSP/CE, inscrita no CPF sob o nº 757.557.681-96, residente e domiciliada na Rua José\nBonifácio, nº 1.047, bairro Maravilha, Quixeramobim/CE;\nSecretária: RITA DE CÁSSIA ALBANO, brasileira, divorciada, agente comunitária de saúde,\nportadora do RG nº 20736591 SSP/CE, inscrita no CPF sob o nº 883.738.219-70, residente e\ndomiciliada na Travessa São Miguel, nº 58, bairro Esplanada, Quixeramobim/CE;\nTesoureiro: PAULO SÉRGIO VIANA, brasileiro, casado, comerciante, portador do RG nº 30509632\nSSP/CE, inscrito no CPF sob o nº 381.022.275-59, residente e domiciliado na Rua Coronel Jaime\nLustosa, nº 512, bairro Centro, Quixeramobim/CE.\nPara o Conselho Fiscal, integrante da mesma chapa, foram eleitos BENEDITO ALVES MOURATO,\nbrasileiro, casado, agricultor, inscrito no CPF sob o nº 325.297.942-00; LUZIA MARQUES\nCASTELO, brasileira, viúva, aposentada, inscrita no CPF sob o nº 351.498.093-49; e EDMILSON\nRABELO CHAVES, brasileiro, casado, servidor público municipal, inscrito no CPF sob o nº\n846.943.466-79, todos residentes em Quixeramobim/CE.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "O mandato dos eleitos tem início nesta data e término em 16/02/2027.\n7. POSSE: Em seguida, os eleitos foram imediatamente empossados em seus cargos, nos termos do\nart. 18, § 1º, do Estatuto Social, valendo esta ata como termo de posse. Os empossados declararam,\nsob as penas da lei, não estar impedidos de exercer os respectivos cargos. Com a palavra, a\nPresidente eleita, MARIA DO SOCORRO VIANA, agradeceu a confiança dos associados e\nreafirmou o compromisso da nova Diretoria com as finalidades da Associação.\n8. ENCERRAMENTO: Nada mais havendo a tratar, o Presidente da mesa encerrou os trabalhos, e\neu, ANTÔNIA ROSILENE CARNEIRO, secretária da mesa, lavrei a presente ata em livro próprio, a\nqual, lida e achada conforme, vai assinada por mim, pelo Presidente da mesa e pelos membros\neleitos da Diretoria, permanecendo a lista de presença arquivada na sede da Associação.\nQuixeramobim/CE, 17 de fevereiro de 2024.\nJOSÉ AIRTON BENEVIDES – Presidente da mesa\nANTÔNIA ROSILENE CARNEIRO – Secretária da mesa\nMARIA DO SOCORRO VIANA – Presidente eleita\nFRANCISCA LÚCIA MATOS – Vice-Presidente eleita\nRITA DE CÁSSIA ALBANO – Secretária eleita\nPAULO SÉRGIO VIANA – Tesoureiro eleito\nREGISTRO CIVIL DAS PESSOAS JURÍDICAS\nCartório Dom Bosco – Registro Civil das Pessoas Jurídicas de Quixeramobim/CE\n(fictício)\nProtocolado e registrado sob o nº 98910, no Livro A, em 01/03/2024\nGeraldo Magela Saboia – Oficial Registrador\nSelo Digital: DBQ-0301-2024-C5E81B\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "47f4a094a8716325edf64550d5d2903328effec237691b4ff4e118216e6d89df",
+     "leitura": {}
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "gabarito",
+    "politica": "Código Civil (genérica)"
+   },
+   "lado": "comprador"
+  }
+ },
+ "geral": {
+  "veredito": "PODE",
+  "faixa": "VERDE",
+  "indice": 100.0,
+  "resumo": "Comprador: Maria do Socorro Viana pode assinar a ATPV-e como comprador(a) — regra geral de representação — Estatuto Social (2017).",
+  "motivos_faixa": [
+   "Comprador — índice 100 ≥ limiar 85"
+  ],
+  "lados": [
+   "comprador"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "GM/SPIN PREMIER 1.8",
+   "placa": "MDF9F54",
+   "renavam": "05624179290",
+   "chassi": "9BGG6CDYYESP50D18"
+  },
+  "data_venda": "2026-10-09",
+  "valor": 98000.0,
+  "vendedor": {
+   "tipo": "PF",
+   "nome": "NÁDIA ROCHA BESSA",
+   "documento": "404.863.203-59",
+   "assinantes": []
+  },
+  "comprador": {
+   "tipo": "PJ",
+   "nome": "ASSOCIAÇÃO COMUNITÁRIA AMIGOS DO SERTÃO CENTRAL",
+   "documento": "92.004.472/0001-30",
+   "assinantes": [
+    {
+     "nome": "Maria do Socorro Viana",
+     "cpf": "477.653.427-46"
+    }
+   ]
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "ATPV-e"
+ },
+ "hash_entrada": "f096960d4444a1c08ef30d361e495a08b9579cf0c3107d2262247f6a86b3699b"
+}

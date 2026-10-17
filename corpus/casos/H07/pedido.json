@@ -1,0 +1,26 @@
+{
+  "caso": "H07",
+  "vendedor": {
+    "razao_social": "AGRÍCOLA SERTANEJA DE QUIXADÁ LTDA.",
+    "cnpj": "56.485.814/0001-18"
+  },
+  "veiculo": {
+    "placa": "TSS1Z68",
+    "renavam": "00337387460",
+    "chassi": "93XWENGS6NKZP0YAT",
+    "descricao": "MITSUBISHI/L200 TRITON SPORT HPE"
+  },
+  "data_venda": "2026-09-18",
+  "valor": 245000,
+  "assinantes": [
+    {
+      "nome": "Vera Lúcia Holanda",
+      "cpf": "532.680.861-79"
+    }
+  ],
+  "comprador": {
+    "nome": "Auto Center Litoral Ltda.",
+    "cidade": "Fortaleza/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

@@ -1,0 +1,692 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T00:47:23",
+ "pedido": {
+  "veiculo": {
+   "descricao": "M.BENZ/SPRINTER 416 CDI FURGÃO",
+   "placa": "SHW2R24",
+   "renavam": "01979678070",
+   "chassi": "9BMP1C6JVSXU4BZLH"
+  },
+  "data_venda": "2026-09-15",
+  "valor": 230000.0,
+  "assinantes": [
+   {
+    "nome": "Kleber Jorge Matos",
+    "cpf": "659.085.380-00"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "Diego Fernandes Uchoa"
+ },
+ "empresa": {
+  "razao_social": "CONSTRUTORA MANDACARU LTDA.",
+  "cnpj": "42.014.613/0001-28",
+  "tipo": "LTDA",
+  "objeto": "construção de edifícios, obras de urbanização e incorporação de empreendimentos imobiliários",
+  "comercializa_veiculos": false
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 0.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 2,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 0 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: Carlos Eduardo Bezerra e Luciana Moura Sampaio. O caminho por procuração pública de 20/01/2025 (cartório iracema – 4º tabelionato de notas de fortaleza) não vale: procuração vencida.",
+ "assinantes": [
+  {
+   "informado": "Kleber Jorge Matos",
+   "cpf": "659.085.380-00",
+   "chave": "65908538000",
+   "nome": "Kleber Jorge Matos",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:41707536406+56815188418",
+   "pessoas": [
+    {
+     "chave": "41707536406",
+     "nome": "Carlos Eduardo Bezerra"
+    },
+    {
+     "chave": "56815188418",
+     "nome": "Luciana Moura Sampaio"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "alienação de bens — Cláusula Sexta",
+   "cadeia": [
+    "MANDACARU_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [
+  {
+   "id": "POA_KLEBER_VENCIDA:bloqueada",
+   "pessoas": [
+    {
+     "chave": "65908538000",
+     "nome": "Kleber Jorge Matos"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 20/01/2025 (Cartório Iracema – 4º Tabelionato de Notas de Fortaleza)",
+   "cadeia": [
+    "POA_KLEBER_VENCIDA"
+   ],
+   "severidade": "atencao",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PJ",
+     "severidade": "ok",
+     "titulo": "Outorgada pela própria empresa",
+     "detalhe": "A outorgante é a empresa, representada por Carlos Eduardo Bezerra e Luciana Moura Sampaio.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_KLEBER_VENCIDA",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "CONSTRUTORA MANDACARU LTDA., pessoa jurídica de direito privado, inscrita no CNPJ sob o nº 42.014.613/0001-28",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 531,
+       "fim": 640
+      }
+     ],
+     "caminho": "POA_KLEBER_VENCIDA"
+    },
+    {
+     "codigo": "OUTORGA_COM_PODERES",
+     "severidade": "ok",
+     "titulo": "Quem outorgou tinha poder",
+     "detalhe": "Em 20/01/2025, Carlos Eduardo Bezerra e Luciana Moura Sampaio podia representar a empresa nesse ato.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_KLEBER_VENCIDA",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "CONSTRUTORA MANDACARU LTDA., pessoa jurídica de direito privado, inscrita no CNPJ sob o nº 42.014.613/0001-28",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 531,
+       "fim": 640
+      },
+      {
+       "doc_id": "MANDACARU_CS",
+       "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+       "trecho": "sendo vedada a prática isolada de qualquer ato de alienação ou oneração de bens da sociedade",
+       "clausula": "Cláusula Sexta",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 3736,
+       "fim": 3828
+      }
+     ],
+     "caminho": "POA_KLEBER_VENCIDA"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar o ATPV.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_KLEBER_VENCIDA",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionar; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e); receber o preço e dar quitação; requerer e assinar o que for necessário perante o DETRAN, inclusive a comunicação de venda; recolher taxas e emolumentos; e praticar todos os atos indispensáveis ao bom e fiel cumprimento deste mandato.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1690,
+       "fim": 2185
+      }
+     ],
+     "caminho": "POA_KLEBER_VENCIDA"
+    },
+    {
+     "codigo": "PROCURACAO_VENCIDA",
+     "severidade": "bloqueio",
+     "titulo": "Procuração vencida",
+     "detalhe": "Válida até 20/07/2025; a venda é em 15/09/2026.",
+     "fundamento": [
+      "CC art. 682, IV"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_KLEBER_VENCIDA",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "A presente procuração é outorgada pelo prazo de 6 (seis) meses, a contar desta data",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2186,
+       "fim": 2269
+      }
+     ],
+     "caminho": "POA_KLEBER_VENCIDA"
+    },
+    {
+     "codigo": "PROCURACAO_SEM_VEICULO",
+     "severidade": "atencao",
+     "titulo": "Procuração não identifica o veículo",
+     "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+     "fundamento": [
+      "CJF, Enunciado 183"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_KLEBER_VENCIDA",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionar; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e); receber o preço e dar quitação; requerer e assinar o que for necessário perante o DETRAN, inclusive a comunicação de venda; recolher taxas e emolumentos; e praticar todos os atos indispensáveis ao bom e fiel cumprimento deste mandato.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1690,
+       "fim": 2185
+      }
+     ],
+     "caminho": "POA_KLEBER_VENCIDA"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "contrato:41707536406+56815188418",
+   "via": "contrato",
+   "descricao": "alienação de bens — Cláusula Sexta",
+   "pessoas": [
+    "41707536406",
+    "56815188418"
+   ],
+   "faltam": [
+    "41707536406",
+    "56815188418"
+   ],
+   "faltam_nomes": [
+    "Carlos Eduardo Bezerra",
+    "Luciana Moura Sampaio"
+   ],
+   "pessoas_nomes": [
+    "Carlos Eduardo Bezerra",
+    "Luciana Moura Sampaio"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: CONSTRUTORA MANDACARU LTDA..",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "SHW2R24",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "MANDACARU_CS#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "MANDACARU_CS",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "A administração da sociedade será exercida conjuntamente pelos sócios CARLOS EDUARDO BEZERRA e LUCIANA MOURA SAMPAIO, aos quais compete, sempre em conjunto, a representação ativa e passiva da sociedade, em juízo ou fora dele, e a prática de todos os atos de gestão compreendidos no objeto social",
+    "clausula": "Cláusula Sexta",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3439,
+    "fim": 3734
+   },
+   "modo": "conjunto",
+   "pessoas": [
+    "Carlos Eduardo Bezerra",
+    "Luciana Moura Sampaio"
+   ],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "conjunto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "em conjunto"
+     ]
+    }
+   ],
+   "decisiva": false
+  },
+  {
+   "regra": "MANDACARU_CS#R2",
+   "escopo": "alienacao_bens",
+   "aplicavel": true,
+   "motivo": "alienação de bens",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "MANDACARU_CS",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "sendo vedada a prática isolada de qualquer ato de alienação ou oneração de bens da sociedade",
+    "clausula": "Cláusula Sexta",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3736,
+    "fim": 3828
+   },
+   "modo": "conjunto",
+   "pessoas": [
+    "Carlos Eduardo Bezerra",
+    "Luciana Moura Sampaio"
+   ],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "conjunto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "vedada a pratica isolad"
+     ]
+    },
+    {
+     "campo": "efeito",
+     "valor_llm": "veda",
+     "valor_lexico": "restringe",
+     "divergiu": false,
+     "corrigido_para": "restringe",
+     "expressoes": []
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "MANDACARU_CS#R3",
+   "escopo": "obrigacoes_garantias",
+   "aplicavel": false,
+   "motivo": "trata de avais, fianças e garantias",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "MANDACARU_CS",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "É vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+    "clausula": "Cláusula Sexta, Parágrafo primeiro",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3850,
+    "fim": 3979
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-09-15",
+  "atos": [
+   {
+    "doc": "MANDACARU_CS",
+    "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "efeito": "2023-03-02"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "41707536406",
+    "nome": "Carlos Eduardo Bezerra",
+    "cargo": "Sócio-Administrador",
+    "doc": "MANDACARU_CS"
+   },
+   {
+    "chave": "56815188418",
+    "nome": "Luciana Moura Sampaio",
+    "cargo": "Sócia-Administradora",
+    "doc": "MANDACARU_CS"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "41707536406",
+    "nome": "Carlos Eduardo Bezerra",
+    "percentual": 60.0
+   },
+   {
+    "chave": "56815188418",
+    "nome": "Luciana Moura Sampaio",
+    "percentual": 40.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "CONSTRUTORA MANDACARU LTDA.",
+    "sub": "42.014.613/0001-28"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "M.BENZ/SPRINTER 416 CDI FURGÃO",
+    "sub": "SHW2R24"
+   },
+   {
+    "id": "41707536406",
+    "tipo": "pessoa",
+    "rotulo": "Carlos Eduardo Bezerra",
+    "papeis": [
+     "sócio 60%",
+     "Sócio-Administrador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "56815188418",
+    "tipo": "pessoa",
+    "rotulo": "Luciana Moura Sampaio",
+    "papeis": [
+     "sócio 40%",
+     "Sócia-Administradora"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "65908538000",
+    "tipo": "pessoa",
+    "rotulo": "Kleber Jorge Matos",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "41707536406",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "60%",
+    "status": "neutro"
+   },
+   {
+    "de": "56815188418",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "40%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "41707536406",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "MANDACARU_CS"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "56815188418",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "MANDACARU_CS"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "65908538000",
+    "tipo": "procuracao",
+    "status": "invalido",
+    "doc": "POA_KLEBER_VENCIDA",
+    "rotulo": "procuração 20/01/2025 · Procuração vencida",
+    "motivo": "Procuração vencida"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2023-03-02",
+   "tipo": "ato",
+   "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+   "doc": "MANDACARU_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2025-01-20",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Kleber Jorge Matos",
+   "doc": "POA_KLEBER_VENCIDA",
+   "detalhe": "publica"
+  },
+  {
+   "data": "2025-07-20",
+   "tipo": "vencimento",
+   "titulo": "Vence a procuração de Kleber Jorge Matos",
+   "doc": "POA_KLEBER_VENCIDA",
+   "detalhe": ""
+  },
+  {
+   "data": "2026-09-15",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 230.000,00"
+  }
+ ],
+ "pessoas": {
+  "41707536406": {
+   "nome": "Carlos Eduardo Bezerra",
+   "cpf": "41707536406"
+  },
+  "56815188418": {
+   "nome": "Luciana Moura Sampaio",
+   "cpf": "56815188418"
+  },
+  "65908538000": {
+   "nome": "Kleber Jorge Matos",
+   "cpf": "65908538000"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "CONSTRUTORA MANDACARU LTDA.",
+   "cnpj": "42.014.613/0001-28",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+     "doc": "MANDACARU_CS",
+     "efeito": "2023-03-02"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Kleber Jorge Matos",
+    "cpf": "659.085.380-00",
+    "identificacao": "CPF",
+    "qualidade": "procurador(a) pela procuração de 20/01/2025"
+   }
+  ],
+  "poderes_conferidos": [
+   "Procuração pública de 20/01/2025 (Cartório Iracema – 4º Tabelionato de Notas de Fortaleza): não comprova poderes (Procuração vencida)."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [],
+  "documentos_verificaveis": [
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "MANDACARU_CS",
+    "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "arquivo": "MANDACARU_CS.pdf"
+   },
+   {
+    "id": "POA_KLEBER_VENCIDA",
+    "titulo": "Procuração (2025)",
+    "arquivo": "POA_KLEBER_VENCIDA.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n01979678070\nPLACA\nSHW2R24\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2021\nANO MODELO\n2021\nNÚMERO DO CRV\n513666975798\nCÓDIGO DE SEGURANÇA DO CLA\n65368863928\nMARCA / MODELO / VERSÃO\nM.BENZ/SPRINTER 416 CDI FURGÃO\nESPÉCIE / TIPO\nCARGA/FURGÃO\nCHASSI\n9BMP1C6JVSXU4BZLH\nCOR PREDOMINANTE\nBRANCA\nCOMBUSTÍVEL\nDIESEL\nNOME\nCONSTRUTORA MANDACARU LTDA.\nCPF / CNPJ\n42.014.613/0001-28\nLOCAL\nFORTALEZA/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "5e4f80c0d31e8ab37247fbf5bb72ff5382e5a9cbd3699331ef9322d95725b67c",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "MANDACARU_CS",
+   "nome": "MANDACARU_CS.pdf",
+   "tipo": "contrato_consolidado",
+   "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+   "data": "2023-03-02",
+   "paginas": [
+    "CONSTRUTORA MANDACARU LTDA. CNPJ nº 42.014.613/0001-28 – NIRE 23802404048\nQUARTA ALTERAÇÃO E CONSOLIDAÇÃO DO CONTRATO SOCIAL\nPelo presente instrumento particular, os abaixo qualificados:\nCARLOS EDUARDO BEZERRA, brasileiro, casado sob o regime de comunhão parcial de bens,\nengenheiro civil, portador da Cédula de Identidade RG nº 47661846 SSP/CE, inscrito no CPF sob o\nnº 417.075.364-06, residente e domiciliado na Rua das Jangadas, nº 315, apartamento 1.201, bairro\nMeireles, Fortaleza/CE, CEP 60165-090; e\nLUCIANA MOURA SAMPAIO, brasileira, solteira, arquiteta, portadora da Cédula de Identidade\nRG nº 39601278 SSP/CE, inscrita no CPF sob o nº 568.151.884-18, residente e domiciliada na\nTravessa dos Coqueiros, nº 88, casa 4, bairro Cocó, Fortaleza/CE, CEP 60192-120;\núnicos sócios da sociedade empresária limitada CONSTRUTORA MANDACARU LTDA., com\nsede na Rua Sertão Alto, nº 1.040, sala 210, bairro Fátima, Fortaleza/CE, CEP 60040-410, inscrita\nno CNPJ sob o nº 42.014.613/0001-28, com seu ato constitutivo arquivado na Junta Comercial do\nEstado do Ceará sob o NIRE 23802404048, em sessão de 26/09/2017, e alterações posteriores, a\núltima delas (Terceira Alteração) arquivada sob o nº 21876540319, em 14/06/2021, resolvem alterar\ne consolidar o contrato social, mediante as cláusulas e condições seguintes:\nCLÁUSULA PRIMEIRA – DA ALTERAÇÃO DO ENDEREÇO DA SEDE\nA sede da sociedade, atualmente situada na Rua Sertão Alto, nº 1.040, sala 210, bairro Fátima,\nFortaleza/CE, CEP 60040-410, fica transferida para a Avenida Jardim das Dunas, nº 2.977, sala 805,\nbairro Papicu, Fortaleza/CE, CEP 60175-650.\nCLÁUSULA SEGUNDA – DA CONSOLIDAÇÃO\nEm razão da alteração ora deliberada, os sócios resolvem consolidar o contrato social, que passa a\nvigorar com a redação abaixo, a qual substitui integralmente as disposições anteriores.\nCONTRATO SOCIAL CONSOLIDADO\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL E DA SEDE\nA sociedade gira sob o nome empresarial CONSTRUTORA MANDACARU LTDA. e tem sede na\nAvenida Jardim das Dunas, nº 2.977, sala 805, bairro Papicu, Fortaleza/CE, CEP 60175-650,\npodendo abrir e encerrar filiais em qualquer parte do território nacional, mediante alteração\ncontratual.\nCLÁUSULA SEGUNDA – DO OBJETO SOCIAL\nA sociedade tem por objeto a construção de edifícios, obras de urbanização e incorporação de\nempreendimentos imobiliários, compreendendo as atividades classificadas nos códigos CNAE\n4120-4/00 (construção de edifícios), 4213-8/00 (obras de urbanização – ruas, praças e calçadas) e\n4110-7/00 (incorporação de empreendimentos imobiliários).\nCLÁUSULA TERCEIRA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciou suas atividades em 26 de setembro de 2017, e seu prazo de duração é\nindeterminado.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "CLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 500.000,00 (quinhentos mil reais), dividido em 500.000 (quinhentas mil)\nquotas de valor nominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas em\nmoeda corrente do País, assim distribuídas:\nSócio\nQuotas\nValor (R$)\nParticipação\nCARLOS EDUARDO BEZERRA\n300.000\n300.000,00\n60%\nLUCIANA MOURA SAMPAIO\n200.000\n200.000,00\n40%\nTOTAL\n500.000\n500.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social.\nCLÁUSULA SEXTA – DA ADMINISTRAÇÃO\nA administração da sociedade será exercida conjuntamente pelos sócios CARLOS EDUARDO\nBEZERRA e LUCIANA MOURA SAMPAIO, aos quais compete, sempre em conjunto, a\nrepresentação ativa e passiva da sociedade, em juízo ou fora dele, e a prática de todos os atos de\ngestão compreendidos no objeto social, sendo vedada a prática isolada de qualquer ato de alienação\nou oneração de bens da sociedade.\nParágrafo primeiro. É vedado o uso do nome empresarial em atividades estranhas ao objeto social,\nespecialmente em avais, fianças e endossos de favor.\nParágrafo segundo. Os administradores farão jus a uma retirada mensal, a título de pró-labore, fixada\nde comum acordo entre os sócios.\nCLÁUSULA SÉTIMA – DO EXERCÍCIO SOCIAL E DOS RESULTADOS\nO exercício social coincide com o ano civil. Ao término de cada exercício, os administradores\nprestarão contas justificadas de sua administração, procedendo à elaboração do inventário, do\nbalanço patrimonial e do balanço de resultado econômico, cabendo aos sócios, na proporção de suas\nquotas, os lucros ou as perdas apurados.\nParágrafo único. Nos quatro meses seguintes ao término do exercício social, os sócios deliberarão\nsobre as contas e a destinação dos resultados.\nCLÁUSULA OITAVA – DA CESSÃO DE QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas ou transferidas a terceiros sem o consentimento\ndo outro sócio, a quem fica assegurado, em igualdade de condições e preço, o direito de preferência\npara a sua aquisição.\nCLÁUSULA NONA – DO FALECIMENTO OU DA INTERDIÇÃO DE SÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros ou sucessores. Não sendo possível ou inexistindo interesse destes ou do sócio\nremanescente, os haveres do sócio falecido ou interditado serão apurados com base em balanço\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "especialmente levantado na data do evento e pagos aos herdeiros em 12 (doze) parcelas mensais e\nsucessivas.\nCLÁUSULA DÉCIMA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nOs administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade, por lei especial, ou em virtude de condenação criminal, ou por se\nencontrarem sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\npúblicos; ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato, ou contra\na economia popular, contra o sistema financeiro nacional, contra normas de defesa da concorrência,\ncontra as relações de consumo, a fé pública ou a propriedade.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FORO\nFica eleito o foro da Comarca de Fortaleza, Estado do Ceará, para dirimir quaisquer controvérsias\ndecorrentes deste contrato, com renúncia a qualquer outro, por mais privilegiado que seja.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento, que será levado\na arquivamento na Junta Comercial do Estado do Ceará.\nFortaleza/CE, 2 de março de 2023.\n__________________________________ CARLOS EDUARDO BEZERRA\n__________________________________ LUCIANA MOURA SAMPAIO\nVisto: Débora Maciel Nogueira – OAB/CE nº 27.912\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 10/03/2023 sob o nº 19033757879\nProtocolo: 23/061.448-0 | NIRE: 23802404048\nEmpresa: CONSTRUTORA MANDACARU LTDA.\nAutenticação: B41E07D93C2A6F58E0D17A94C3B8F265\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "a9557f1831eee9bf2b445609f638c1b142abcf9ed8880b9955931402654791c8",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 36.5,
+      "tokens_saida": 803,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 26.9,
+      "tokens_saida": 831,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "POA_KLEBER_VENCIDA",
+   "nome": "POA_KLEBER_VENCIDA.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (2025)",
+   "data": "2025-01-20",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nHeloísa Barreira Nunes – Tabeliã\nLIVRO 790 — FOLHAS 155/156\nPROCURAÇÃO BASTANTE QUE FAZ CONSTRUTORA MANDACARU LTDA.\nSAIBAM quantos este público instrumento de procuração virem que, aos vinte (20) dias do mês de\njaneiro do ano de dois mil e vinte e cinco (2025), nesta cidade de Fortaleza, Capital do Estado do\nCeará, neste Cartório, perante mim, Rogério Lustosa Maia, Escrevente Notarial, compareceu como\nOUTORGANTE: CONSTRUTORA MANDACARU LTDA., pessoa jurídica de direito privado,\ninscrita no CNPJ sob o nº 42.014.613/0001-28, NIRE 23802404048, com sede nesta Capital, neste\nato representada conjuntamente por seus sócios administradores CARLOS EDUARDO BEZERRA,\nbrasileiro, casado, engenheiro civil, RG nº 47661846 SSP/CE, CPF nº 417.075.364-06, e LUCIANA\nMOURA SAMPAIO, brasileira, solteira, arquiteta, RG nº 39601278 SSP/CE, CPF nº\n568.151.884-18, ambos residentes e domiciliados em Fortaleza/CE, na forma da Quarta Alteração e\nConsolidação do Contrato Social, registrada na JUCEC em 10/03/2023 sob o nº 19033757879, cuja\ncópia, acompanhada de certidão simplificada expedida pela JUCEC em 13/01/2025, fica arquivada\nnestas notas. Os presentes foram reconhecidos como os próprios por mim, à vista dos documentos\napresentados, do que dou fé.\nEntão, pela outorgante, assim representada, me foi dito que, por este instrumento, nomeia e constitui\nseu bastante procurador KLEBER JORGE MATOS, brasileiro, casado, despachante documentalista,\nRG nº 97862011 SSP/CE, CPF nº 659.085.380-00, com escritório na Rua Senador Pompeu, nº\n2.310, sala 4, Centro, Fortaleza/CE, a quem confere poderes especiais e expressos para vender,\nceder, transferir ou de qualquer forma alienar veículos automotores de propriedade da outorgante, a\nquem e pelo preço que convencionar; assinar a Autorização para Transferência de Propriedade do\nVeículo (ATPV/ATPV-e); receber o preço e dar quitação; requerer e assinar o que for necessário\nperante o DETRAN, inclusive a comunicação de venda; recolher taxas e emolumentos; e praticar\ntodos os atos indispensáveis ao bom e fiel cumprimento deste mandato.\nA presente procuração é outorgada pelo prazo de 6 (seis) meses, a contar desta data, findo o qual\ncessarão de pleno direito os poderes ora conferidos, sendo vedado o substabelecimento.\nAssim o disseram, do que dou fé, e me pediram que lhes lavrasse o presente instrumento, o qual,\nfeito e lido em voz alta, acharam conforme, aceitaram e assinam. Eu, Rogério Lustosa Maia,\nEscrevente Notarial, a lavrei. Eu, Heloísa Barreira Nunes, Tabeliã, a subscrevo.\n(aa) CARLOS EDUARDO BEZERRA – LUCIANA MOURA SAMPAIO – pela outorgante.\nHELOÍSA BARREIRA NUNES – Tabeliã.\nEmolumentos: R$ 198,40 · Taxa de fiscalização: R$ 9,92 · Total: R$ 208,32\nSelo Digital: IRA-0790-2025-3D81F5\nTRASLADO — Trasladada no mesmo dia, conferida e achada conforme.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "Fortaleza/CE, 20 de janeiro de 2025.\nHeloísa Barreira Nunes – Tabeliã\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "e1686731684989820d71366900d49cca3124811f46e258ce2144c0764fe3a453",
+   "leitura": {
+    "tarefas": {
+     "procuracao": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 36.3,
+      "tokens_saida": 766,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "politica": "DETRAN-CE"
+ },
+ "hash_entrada": "94a39b4f4491062cebe0d01bfbf661802db00a889d33a202d715a449fde04b9e"
+}

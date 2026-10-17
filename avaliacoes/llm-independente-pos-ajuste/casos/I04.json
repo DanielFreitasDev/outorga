@@ -1,0 +1,2530 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T10:07:50",
+ "pedido": {
+  "veiculo": {
+   "descricao": "FIAT/STRADA",
+   "placa": "KGJ4N36",
+   "renavam": "08633315538",
+   "chassi": "9BDAJCLTERKHUS4RD"
+  },
+  "data_venda": "2026-08-26",
+  "valor": 89900.0,
+  "assinantes": [
+   {
+    "nome": "DIEGO MATOS SABINO",
+    "cpf": "656.742.959-30"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "POUSADA VENTOS DE CAMOCIM LTDA",
+  "vendedor_cnpj": "65.651.550/0001-16",
+  "lado": "vendedor"
+ },
+ "empresa": {
+  "razao_social": "MARÉ ALTA PESCADOS LTDA",
+  "cnpj": "65.651.550/0001-16",
+  "tipo": "LTDA",
+  "objeto": "comércio atacadista de pescados, crustáceos e frutos do mar, frescos ou congelados, no seu beneficiamento e acondicionamento, e no transporte rodoviário de cargas próprias",
+  "comercializa_veiculos": false,
+  "subtipo": null
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 6.2,
+ "confianca": 0.875,
+ "componentes": {
+  "leitura": 0.875,
+  "juridica": 1.0,
+  "fatos_decisivos": 4,
+  "menor_confianca_fato": 0.8,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 6.2 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: Jefferson Araújo Veras ou Kátia Regina Veras Aguiar ou Rafaela Cunha Fontenele (procurador). O caminho por substabelecimento com reserva de 20/07/2026 não vale: quem substabeleceu não é o procurador.",
+ "assinantes": [
+  {
+   "informado": "DIEGO MATOS SABINO",
+   "cpf": "656.742.959-30",
+   "chave": "65674295930",
+   "nome": "Diego Matos Sabino",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:29336048333",
+   "pessoas": [
+    {
+     "chave": "29336048333",
+     "nome": "Jefferson Araújo Veras"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "alienação de veículos — Cláusula Sexta",
+   "cadeia": [
+    "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024"
+   ],
+   "severidade": "atencao",
+   "confianca": 0.8,
+   "achados": [
+    {
+     "codigo": "CONFERENCIA_LEXICA",
+     "severidade": "atencao",
+     "titulo": "Leitura da IA corrigida pela conferência léxica",
+     "detalhe": "Campo 'escopo': a IA leu 'onerar_bens', mas as expressões  indicam 'alienacao_veiculos'.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+       "doc_titulo": "Alteração e Consolidação do Contrato Social (2024)",
+       "trecho": "A administração da sociedade será exercida pelos sócios JEFFERSON ARAÚJO VERAS e KÁTIA REGINA VERAS AGUIAR, por prazo indeterminado, que poderão agir isoladamente, competindo a cada um deles representar a sociedade em juízo ou fora dele, praticar os atos de gestão, adquirir, alienar e onerar bens móveis, inclusive embarcações e veículos, e constituir procuradores, mediante instrumento que especifique os atos autorizados e o respectivo prazo.",
+       "clausula": "Cláusula Sexta",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 2944,
+       "fim": 3389
+      }
+     ],
+     "caminho": "contrato"
+    }
+   ],
+   "precondicoes": []
+  },
+  {
+   "id": "contrato:97148918090",
+   "pessoas": [
+    {
+     "chave": "97148918090",
+     "nome": "Kátia Regina Veras Aguiar"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "alienação de veículos — Cláusula Sexta",
+   "cadeia": [
+    "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024"
+   ],
+   "severidade": "atencao",
+   "confianca": 0.8,
+   "achados": [
+    {
+     "codigo": "CONFERENCIA_LEXICA",
+     "severidade": "atencao",
+     "titulo": "Leitura da IA corrigida pela conferência léxica",
+     "detalhe": "Campo 'escopo': a IA leu 'onerar_bens', mas as expressões  indicam 'alienacao_veiculos'.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+       "doc_titulo": "Alteração e Consolidação do Contrato Social (2024)",
+       "trecho": "A administração da sociedade será exercida pelos sócios JEFFERSON ARAÚJO VERAS e KÁTIA REGINA VERAS AGUIAR, por prazo indeterminado, que poderão agir isoladamente, competindo a cada um deles representar a sociedade em juízo ou fora dele, praticar os atos de gestão, adquirir, alienar e onerar bens móveis, inclusive embarcações e veículos, e constituir procuradores, mediante instrumento que especifique os atos autorizados e o respectivo prazo.",
+       "clausula": "Cláusula Sexta",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 2944,
+       "fim": 3389
+      }
+     ],
+     "caminho": "contrato"
+    }
+   ],
+   "precondicoes": []
+  },
+  {
+   "id": "SUBSTABELECIMENTO_PUBLICO_2026_05_04:23349270077",
+   "pessoas": [
+    {
+     "chave": "23349270077",
+     "nome": "Rafaela Cunha Fontenele"
+    }
+   ],
+   "via": "substabelecimento",
+   "descricao": "Substabelecimento sem reserva de 04/05/2026",
+   "cadeia": [
+    "PROCURACAO_PUBLICA_2026_03_10",
+    "SUBSTABELECIMENTO_PUBLICO_2026_05_04"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "ORIGEM_VALIDA",
+     "severidade": "ok",
+     "titulo": "Procuração de origem válida",
+     "detalhe": "Origem: procuração de 10/03/2026.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "SUBSTABELECIMENTO_PUBLICO_2026_05_04",
+       "doc_titulo": "Substabelecimento (2026)",
+       "trecho": "substabelece, sem reserva de iguais poderes, na pessoa de RAFAELA CUNHA FONTENELE",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1338,
+       "fim": 1419
+      }
+     ],
+     "caminho": "SUBSTABELECIMENTO_PUBLICO_2026_05_04"
+    },
+    {
+     "codigo": "SUBSTABELECIMENTO_PERMITIDO",
+     "severidade": "ok",
+     "titulo": "Substabelecimento permitido",
+     "detalhe": "A procuração permite substabelecer.",
+     "fundamento": [
+      "CC art. 667"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_03_10",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "podendo substabelecer, no todo ou em parte, com ou sem reserva de iguais poderes",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2191,
+       "fim": 2271
+      }
+     ],
+     "caminho": "SUBSTABELECIMENTO_PUBLICO_2026_05_04"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [
+  {
+   "id": "PROCURACAO_PUBLICA_2026_03_10:20063466104:sem_reserva",
+   "pessoas": [
+    {
+     "chave": "20063466104",
+     "nome": "Luiz Fernando Rocha Lustosa"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 10/03/2026 (CARTÓRIO VASCONCELOS – 1º OFÍCIO DE NOTAS DE CAMOCIM)",
+   "cadeia": [
+    "PROCURACAO_PUBLICA_2026_03_10"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PJ",
+     "severidade": "ok",
+     "titulo": "Outorgada pela própria empresa",
+     "detalhe": "A outorgante é a empresa, representada por Jefferson Araújo Veras.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_03_10",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "MARÉ ALTA PESCADOS LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº 65.651.550/0001-16",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 492,
+       "fim": 592
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2026_03_10"
+    },
+    {
+     "codigo": "OUTORGA_COM_PODERES",
+     "severidade": "ok",
+     "titulo": "Quem outorgou tinha poder",
+     "detalhe": "Em 10/03/2026, Jefferson Araújo Veras podia representar a empresa nesse ato.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_03_10",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "MARÉ ALTA PESCADOS LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº 65.651.550/0001-16",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 492,
+       "fim": 592
+      },
+      {
+       "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+       "doc_titulo": "Alteração e Consolidação do Contrato Social (2024)",
+       "trecho": "A administração da sociedade será exercida pelos sócios JEFFERSON ARAÚJO VERAS e KÁTIA REGINA VERAS AGUIAR, por prazo indeterminado, que poderão agir isoladamente, competindo a cada um deles representar a sociedade em juízo ou fora dele, praticar os atos de gestão, adquirir, alienar e onerar bens móveis, inclusive embarcações e veículos, e constituir procuradores, mediante instrumento que especifique os atos autorizados e o respectivo prazo.",
+       "clausula": "Cláusula Sexta",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 2944,
+       "fim": 3389
+      },
+      {
+       "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+       "doc_titulo": "Alteração e Consolidação do Contrato Social (2024)",
+       "trecho": "A administração da sociedade será exercida pelos sócios JEFFERSON ARAÚJO VERAS e KÁTIA REGINA VERAS AGUIAR, por prazo indeterminado, que poderão agir isoladamente, competindo a cada um deles representar a sociedade em juízo ou fora dele, praticar os atos de gestão, adquirir, alienar e onerar bens móveis, inclusive embarcações e veículos, e constituir procuradores, mediante instrumento que especifique os atos autorizados e o respectivo prazo.",
+       "clausula": "Cláusula Sexta",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 2944,
+       "fim": 3389
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2026_03_10"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_03_10",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "poderes especiais e expressos para vender, a quem convier e pelo preço e condições que ajustar, o veículo de propriedade da outorgante marca/modelo FIAT/STRADA, placa KGJ4N36, RENAVAM 08633315538, chassi 9BDAJCLTERKHUS4RD; assinar como vendedor a Autorização para Transferência de Propriedade do Veículo (ATPV-e), recibos e demais documentos; receber o preço e dar quitação; representar a outorgante perante o DETRAN/CE e demais órgãos de trânsito, requerendo vistorias, comunicação de venda e certidões; pagar taxas e débitos do veículo",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1652,
+       "fim": 2189
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2026_03_10"
+    },
+    {
+     "codigo": "VEICULO_ABRANGIDO",
+     "severidade": "ok",
+     "titulo": "Veículo identificado na procuração",
+     "detalhe": "A procuração identifica exatamente este veículo.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_03_10",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "poderes especiais e expressos para vender, a quem convier e pelo preço e condições que ajustar, o veículo de propriedade da outorgante marca/modelo FIAT/STRADA, placa KGJ4N36, RENAVAM 08633315538, chassi 9BDAJCLTERKHUS4RD; assinar como vendedor a Autorização para Transferência de Propriedade do Veículo (ATPV-e), recibos e demais documentos; receber o preço e dar quitação; representar a outorgante perante o DETRAN/CE e demais órgãos de trânsito, requerendo vistorias, comunicação de venda e certidões; pagar taxas e débitos do veículo",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1652,
+       "fim": 2189
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2026_03_10"
+    },
+    {
+     "codigo": "PROCURACAO_NO_PRAZO",
+     "severidade": "ok",
+     "titulo": "Dentro do prazo",
+     "detalhe": "Válida até 10/03/2027.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_03_10",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, a contar desta data.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2273,
+       "fim": 2347
+      }
+     ],
+     "caminho": "PROCURACAO_PUBLICA_2026_03_10"
+    },
+    {
+     "codigo": "SUBSTABELECEU_SEM_RESERVA",
+     "severidade": "bloqueio",
+     "titulo": "Substabeleceu sem reserva",
+     "detalhe": "Luiz Fernando Rocha Lustosa substabeleceu sem reserva em 04/05/2026 e deixou de ter os poderes.",
+     "fundamento": [
+      "CC art. 667"
+     ],
+     "fontes": [],
+     "caminho": "PROCURACAO_PUBLICA_2026_03_10:20063466104"
+    }
+   ],
+   "precondicoes": []
+  },
+  {
+   "id": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20:bloqueada",
+   "pessoas": [
+    {
+     "chave": "65674295930",
+     "nome": "Diego Matos Sabino"
+    }
+   ],
+   "via": "substabelecimento",
+   "descricao": "Substabelecimento com reserva de 20/07/2026",
+   "cadeia": [
+    "PROCURACAO_PUBLICA_2026_03_10",
+    "SUBSTABELECIMENTO_PARTICULAR_2026_07_20"
+   ],
+   "severidade": "alerta",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "ORIGEM_VALIDA",
+     "severidade": "ok",
+     "titulo": "Procuração de origem válida",
+     "detalhe": "Origem: procuração de 10/03/2026.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20",
+       "doc_titulo": "Substabelecimento (2026)",
+       "trecho": "pelo presente instrumento particular, a substabelecente substabelece, com reserva de iguais poderes, na pessoa do substabelecido, os poderes que detém para vender, em nome de MARÉ ALTA PESCADOS LTDA, a quem convier e pelo preço e condições que ajustar, o veículo FIAT/STRADA, placa KGJ4N36, RENAVAM 08633315538, chassi 9BDAJCLTERKHUS4RD, podendo assinar como vendedor a Autorização para Transferência de Propriedade do Veículo (ATPV-e), receber o preço e dar quitação, e representar a outorgante perante o DETRAN/CE para todos os atos relacionados a essa venda.",
+       "clausula": null,
+       "ancoragem": 99.8,
+       "pagina": 1,
+       "inicio": 1084,
+       "fim": 1645
+      }
+     ],
+     "caminho": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20"
+    },
+    {
+     "codigo": "SUBSTABELECENTE_NAO_E_PROCURADOR",
+     "severidade": "bloqueio",
+     "titulo": "Quem substabeleceu não é o procurador",
+     "detalhe": "Rafaela Cunha Fontenele não consta como outorgado da procuração de origem.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20",
+       "doc_titulo": "Substabelecimento (2026)",
+       "trecho": "pelo presente instrumento particular, a substabelecente substabelece, com reserva de iguais poderes, na pessoa do substabelecido, os poderes que detém para vender, em nome de MARÉ ALTA PESCADOS LTDA, a quem convier e pelo preço e condições que ajustar, o veículo FIAT/STRADA, placa KGJ4N36, RENAVAM 08633315538, chassi 9BDAJCLTERKHUS4RD, podendo assinar como vendedor a Autorização para Transferência de Propriedade do Veículo (ATPV-e), receber o preço e dar quitação, e representar a outorgante perante o DETRAN/CE para todos os atos relacionados a essa venda.",
+       "clausula": null,
+       "ancoragem": 99.8,
+       "pagina": 1,
+       "inicio": 1084,
+       "fim": 1645
+      }
+     ],
+     "caminho": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20"
+    },
+    {
+     "codigo": "SUBSTABELECIMENTO_PERMITIDO",
+     "severidade": "ok",
+     "titulo": "Substabelecimento permitido",
+     "detalhe": "A procuração permite substabelecer.",
+     "fundamento": [
+      "CC art. 667"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PUBLICA_2026_03_10",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "podendo substabelecer, no todo ou em parte, com ou sem reserva de iguais poderes",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2191,
+       "fim": 2271
+      }
+     ],
+     "caminho": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20"
+    },
+    {
+     "codigo": "SUBSTABELECIMENTO_PARTICULAR",
+     "severidade": "alerta",
+     "titulo": "Substabelecimento por instrumento particular",
+     "detalhe": "O Código Civil admite substabelecer por instrumento particular mesmo procuração pública (art. 655), mas DETRAN e cartórios podem exigir a mesma forma do original.",
+     "fundamento": [
+      "CC art. 655"
+     ],
+     "fontes": [
+      {
+       "doc_id": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20",
+       "doc_titulo": "Substabelecimento (2026)",
+       "trecho": "pelo presente instrumento particular, a substabelecente substabelece, com reserva de iguais poderes, na pessoa do substabelecido, os poderes que detém para vender, em nome de MARÉ ALTA PESCADOS LTDA, a quem convier e pelo preço e condições que ajustar, o veículo FIAT/STRADA, placa KGJ4N36, RENAVAM 08633315538, chassi 9BDAJCLTERKHUS4RD, podendo assinar como vendedor a Autorização para Transferência de Propriedade do Veículo (ATPV-e), receber o preço e dar quitação, e representar a outorgante perante o DETRAN/CE para todos os atos relacionados a essa venda.",
+       "clausula": null,
+       "ancoragem": 99.8,
+       "pagina": 1,
+       "inicio": 1084,
+       "fim": 1645
+      }
+     ],
+     "caminho": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "SUBSTABELECIMENTO_PUBLICO_2026_05_04:23349270077",
+   "via": "substabelecimento",
+   "descricao": "Substabelecimento sem reserva de 04/05/2026",
+   "pessoas": [
+    "23349270077"
+   ],
+   "faltam": [
+    "23349270077"
+   ],
+   "faltam_nomes": [
+    "Rafaela Cunha Fontenele"
+   ],
+   "pessoas_nomes": [
+    "Rafaela Cunha Fontenele"
+   ]
+  },
+  {
+   "alternativa": "contrato:29336048333",
+   "via": "contrato",
+   "descricao": "alienação de veículos — Cláusula Sexta",
+   "pessoas": [
+    "29336048333"
+   ],
+   "faltam": [
+    "29336048333"
+   ],
+   "faltam_nomes": [
+    "Jefferson Araújo Veras"
+   ],
+   "pessoas_nomes": [
+    "Jefferson Araújo Veras"
+   ]
+  },
+  {
+   "alternativa": "contrato:97148918090",
+   "via": "contrato",
+   "descricao": "alienação de veículos — Cláusula Sexta",
+   "pessoas": [
+    "97148918090"
+   ],
+   "faltam": [
+    "97148918090"
+   ],
+   "faltam_nomes": [
+    "Kátia Regina Veras Aguiar"
+   ],
+   "pessoas_nomes": [
+    "Kátia Regina Veras Aguiar"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "CND_INSS",
+   "severidade": "info",
+   "titulo": "CND previdenciária",
+   "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+   "fundamento": [
+    "Lei 8.212/91, art. 47, I, \"c\""
+   ],
+   "fontes": [],
+   "caminho": null
+  },
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: MARÉ ALTA PESCADOS LTDA.",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "KGJ4N36",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024#R1",
+   "escopo": "alienacao_bens_moveis",
+   "aplicavel": true,
+   "motivo": "alienação de bens móveis",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2024)",
+    "trecho": "A administração da sociedade será exercida pelos sócios JEFFERSON ARAÚJO VERAS e KÁTIA REGINA VERAS AGUIAR, por prazo indeterminado, que poderão agir isoladamente, competindo a cada um deles representar a sociedade em juízo ou fora dele, praticar os atos de gestão, adquirir, alienar e onerar bens móveis, inclusive embarcações e veículos, e constituir procuradores, mediante instrumento que especifique os atos autorizados e o respectivo prazo.",
+    "clausula": "Cláusula Sexta",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2944,
+    "fim": 3389
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Jefferson Araújo Veras",
+    "Kátia Regina Veras Aguiar"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    }
+   ],
+   "decisiva": false
+  },
+  {
+   "regra": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024#R2",
+   "escopo": "alienacao_veiculos",
+   "aplicavel": true,
+   "motivo": "alienação de veículos",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2024)",
+    "trecho": "A administração da sociedade será exercida pelos sócios JEFFERSON ARAÚJO VERAS e KÁTIA REGINA VERAS AGUIAR, por prazo indeterminado, que poderão agir isoladamente, competindo a cada um deles representar a sociedade em juízo ou fora dele, praticar os atos de gestão, adquirir, alienar e onerar bens móveis, inclusive embarcações e veículos, e constituir procuradores, mediante instrumento que especifique os atos autorizados e o respectivo prazo.",
+    "clausula": "Cláusula Sexta",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2944,
+    "fim": 3389
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Jefferson Araújo Veras",
+    "Kátia Regina Veras Aguiar"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024#R3",
+   "escopo": "alienacao_veiculos",
+   "aplicavel": true,
+   "motivo": "alienação de veículos",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2024)",
+    "trecho": "A administração da sociedade será exercida pelos sócios JEFFERSON ARAÚJO VERAS e KÁTIA REGINA VERAS AGUIAR, por prazo indeterminado, que poderão agir isoladamente, competindo a cada um deles representar a sociedade em juízo ou fora dele, praticar os atos de gestão, adquirir, alienar e onerar bens móveis, inclusive embarcações e veículos, e constituir procuradores, mediante instrumento que especifique os atos autorizados e o respectivo prazo.",
+    "clausula": "Cláusula Sexta",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2944,
+    "fim": 3389
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Jefferson Araújo Veras",
+    "Kátia Regina Veras Aguiar"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 0.8,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    },
+    {
+     "campo": "escopo",
+     "valor_llm": "onerar_bens",
+     "valor_lexico": "alienacao_veiculos",
+     "divergiu": true,
+     "corrigido_para": "alienacao_veiculos",
+     "expressoes": []
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024#R4",
+   "escopo": "outorgar_procuracoes",
+   "aplicavel": false,
+   "motivo": "regula a outorga de procurações (usada para validar procurações)",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2024)",
+    "trecho": "A administração da sociedade será exercida pelos sócios JEFFERSON ARAÚJO VERAS e KÁTIA REGINA VERAS AGUIAR, por prazo indeterminado, que poderão agir isoladamente, competindo a cada um deles representar a sociedade em juízo ou fora dele, praticar os atos de gestão, adquirir, alienar e onerar bens móveis, inclusive embarcações e veículos, e constituir procuradores, mediante instrumento que especifique os atos autorizados e o respectivo prazo.",
+    "clausula": "Cláusula Sexta",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2944,
+    "fim": 3389
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Jefferson Araújo Veras",
+    "Kátia Regina Veras Aguiar"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    },
+    {
+     "campo": "ato",
+     "valor_llm": "alienar",
+     "valor_lexico": "alienar+adquirir",
+     "divergiu": false,
+     "corrigido_para": "alienar+adquirir",
+     "expressoes": []
+    }
+   ],
+   "decisiva": false
+  },
+  {
+   "regra": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024#R5",
+   "escopo": "alienacao_bens_imoveis",
+   "aplicavel": false,
+   "motivo": "trata de bens imóveis; veículo é bem móvel",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2024)",
+    "trecho": "Parágrafo único. A alienação ou a oneração de bens imóveis dependerá da assinatura de ambos os administradores.",
+    "clausula": "Cláusula Sexta, Parágrafo único",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3390,
+    "fim": 3501
+   },
+   "modo": "conjunto",
+   "pessoas": [
+    "Jefferson Araújo Veras",
+    "Kátia Regina Veras Aguiar"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "conjunto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "assinatura de ambos",
+      "ambos os administradores"
+     ]
+    }
+   ],
+   "decisiva": false
+  },
+  {
+   "regra": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024#R6",
+   "escopo": "alienacao_bens_imoveis",
+   "aplicavel": false,
+   "motivo": "trata de bens imóveis; veículo é bem móvel",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2024)",
+    "trecho": "Parágrafo único. A alienação ou a oneração de bens imóveis dependerá da assinatura de ambos os administradores.",
+    "clausula": "Cláusula Sexta, Parágrafo único",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3390,
+    "fim": 3501
+   },
+   "modo": "conjunto",
+   "pessoas": [
+    "Jefferson Araújo Veras",
+    "Kátia Regina Veras Aguiar"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 0.8,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "conjunto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "assinatura de ambos",
+      "ambos os administradores"
+     ]
+    },
+    {
+     "campo": "escopo",
+     "valor_llm": "onerar_bens",
+     "valor_lexico": "alienacao_bens_imoveis",
+     "divergiu": true,
+     "corrigido_para": "alienacao_bens_imoveis",
+     "expressoes": []
+    }
+   ],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-08-26",
+  "atos": [
+   {
+    "doc": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+    "titulo": "Alteração e Consolidação do Contrato Social (2024)",
+    "efeito": "2024-04-22"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "29336048333",
+    "nome": "Jefferson Araújo Veras",
+    "cargo": "Sócio-Administrador",
+    "doc": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024"
+   },
+   {
+    "chave": "97148918090",
+    "nome": "Kátia Regina Veras Aguiar",
+    "cargo": "Sócia-Administradora",
+    "doc": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "29336048333",
+    "nome": "Jefferson Araújo Veras",
+    "percentual": 50.0
+   },
+   {
+    "chave": "97148918090",
+    "nome": "Kátia Regina Veras Aguiar",
+    "percentual": 50.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "MARÉ ALTA PESCADOS LTDA",
+    "sub": "65.651.550/0001-16"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "FIAT/STRADA",
+    "sub": "KGJ4N36"
+   },
+   {
+    "id": "29336048333",
+    "tipo": "pessoa",
+    "rotulo": "Jefferson Araújo Veras",
+    "papeis": [
+     "sócio 50%",
+     "Sócio-Administrador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "97148918090",
+    "tipo": "pessoa",
+    "rotulo": "Kátia Regina Veras Aguiar",
+    "papeis": [
+     "sócio 50%",
+     "Sócia-Administradora"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "20063466104",
+    "tipo": "pessoa",
+    "rotulo": "Luiz Fernando Rocha Lustosa",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "23349270077",
+    "tipo": "pessoa",
+    "rotulo": "Rafaela Cunha Fontenele",
+    "papeis": [
+     "substabelecido",
+     "procurador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "65674295930",
+    "tipo": "pessoa",
+    "rotulo": "Diego Matos Sabino",
+    "papeis": [
+     "substabelecido"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "29336048333",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "50%",
+    "status": "neutro"
+   },
+   {
+    "de": "97148918090",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "50%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "29336048333",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "97148918090",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024"
+   },
+   {
+    "de": "20063466104",
+    "para": "23349270077",
+    "tipo": "substabelecimento",
+    "status": "valido",
+    "doc": "SUBSTABELECIMENTO_PUBLICO_2026_05_04",
+    "rotulo": "substabelece sem reserva",
+    "motivo": null
+   },
+   {
+    "de": "EMPRESA",
+    "para": "20063466104",
+    "tipo": "procuracao",
+    "status": "invalido",
+    "doc": "PROCURACAO_PUBLICA_2026_03_10",
+    "rotulo": "procuração 10/03/2026 · Substabeleceu sem reserva",
+    "motivo": "Substabeleceu sem reserva"
+   },
+   {
+    "de": "23349270077",
+    "para": "65674295930",
+    "tipo": "substabelecimento",
+    "status": "invalido",
+    "doc": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20",
+    "rotulo": "substabelece com reserva · Quem substabeleceu não é o procurador",
+    "motivo": "Quem substabeleceu não é o procurador"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2024-04-22",
+   "tipo": "ato",
+   "titulo": "Alteração e Consolidação do Contrato Social (2024)",
+   "doc": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-03-10",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Luiz Fernando Rocha Lustosa",
+   "doc": "PROCURACAO_PUBLICA_2026_03_10",
+   "detalhe": "publica"
+  },
+  {
+   "data": "2026-05-04",
+   "tipo": "substabelecimento",
+   "titulo": "Luiz Fernando Rocha Lustosa substabelece a Rafaela Cunha Fontenele",
+   "doc": "SUBSTABELECIMENTO_PUBLICO_2026_05_04",
+   "detalhe": "sem_reserva"
+  },
+  {
+   "data": "2026-07-20",
+   "tipo": "substabelecimento",
+   "titulo": "Rafaela Cunha Fontenele substabelece a Diego Matos Sabino",
+   "doc": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20",
+   "detalhe": "com_reserva"
+  },
+  {
+   "data": "2026-08-26",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 89.900,00"
+  },
+  {
+   "data": "2027-03-10",
+   "tipo": "vencimento",
+   "titulo": "Vence a procuração de Luiz Fernando Rocha Lustosa",
+   "doc": "PROCURACAO_PUBLICA_2026_03_10",
+   "detalhe": ""
+  }
+ ],
+ "pessoas": {
+  "29336048333": {
+   "nome": "Jefferson Araújo Veras",
+   "cpf": "29336048333"
+  },
+  "20063466104": {
+   "nome": "Luiz Fernando Rocha Lustosa",
+   "cpf": "20063466104"
+  },
+  "97148918090": {
+   "nome": "Kátia Regina Veras Aguiar",
+   "cpf": "97148918090"
+  },
+  "23349270077": {
+   "nome": "Rafaela Cunha Fontenele",
+   "cpf": "23349270077"
+  },
+  "65674295930": {
+   "nome": "Diego Matos Sabino",
+   "cpf": "65674295930"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "MARÉ ALTA PESCADOS LTDA",
+   "cnpj": "65.651.550/0001-16",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Alteração e Consolidação do Contrato Social (2024)",
+     "doc": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+     "efeito": "2024-04-22"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Diego Matos Sabino",
+    "cpf": "656.742.959-30",
+    "identificacao": "CPF",
+    "qualidade": "substabelecido(a) em 20/07/2026"
+   }
+  ],
+  "poderes_conferidos": [
+   "Substabelecimento com reserva de 20/07/2026: não comprova poderes (Quem substabeleceu não é o procurador)."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [],
+  "documentos_verificaveis": [
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "PROCURACAO_PUBLICA_2026_03_10",
+    "titulo": "Procuração (2026)",
+    "arquivo": "PROCURACAO_PUBLICA_2026_03_10.pdf"
+   },
+   {
+    "id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+    "titulo": "Alteração e Consolidação do Contrato Social (2024)",
+    "arquivo": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024.pdf"
+   },
+   {
+    "id": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20",
+    "titulo": "Substabelecimento (2026)",
+    "arquivo": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20.pdf"
+   },
+   {
+    "id": "SUBSTABELECIMENTO_PUBLICO_2026_05_04",
+    "titulo": "Substabelecimento (2026)",
+    "arquivo": "SUBSTABELECIMENTO_PUBLICO_2026_05_04.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n08633315538\nPLACA\nKGJ4N36\nEXERCÍCIO\n2026\nMARCA / MODELO / VERSÃO\nFIAT/STRADA\nCHASSI\n9BDAJCLTERKHUS4RD\nNOME\nMARÉ ALTA PESCADOS LTDA\nCPF / CNPJ\n65.651.550/0001-16\nDATA\n15/01/2026\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "9045adc249eabf5a7f2b7d3faaa282aeb206f90e070c3fe690853a010dc53bc1",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "PROCURACAO_PUBLICA_2026_03_10",
+   "nome": "PROCURACAO_PUBLICA_2026_03_10.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (2026)",
+   "data": "2026-03-10",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCARTÓRIO VASCONCELOS – 1º OFÍCIO DE NOTAS DE CAMOCIM (fictício)\nLivro nº 88 – Folhas 141/142\nPROCURAÇÃO BASTANTE QUE FAZ MARÉ ALTA PESCADOS LTDA A FAVOR DE\nLUIZ FERNANDO ROCHA LUSTOSA\nSAIBAM quantos este público instrumento de procuração virem que, aos 10 (dez) dias do mês de\nmarço do ano de 2026 (dois mil e vinte e seis), nesta cidade de Camocim, Estado do Ceará, no\nCartório Vasconcelos, perante mim, Escrevente, compareceu como OUTORGANTE: MARÉ ALTA\nPESCADOS LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº 65.651.550/0001-16,\nNIRE 23201698745, com sede na Rua Engenheiro Privat, nº 210, Centro, Camocim/CE, neste ato\nrepresentada por seu sócio administrador JEFFERSON ARAÚJO VERAS, brasileiro, casado,\nempresário, portador da cédula de identidade RG nº 2001567890123 SSP/CE, inscrito no CPF sob o\nnº 293.360.483-33, residente e domiciliado na Rua Santos Dumont, nº 1.204, Centro, Camocim/CE,\nque age isoladamente com fundamento na Cláusula Sexta do contrato social consolidado na Segunda\nAlteração Contratual, registrada na JUCEC em 08/05/2024 sob o nº 6390457, cuja cópia fica\narquivada nestas Notas; reconhecido como o próprio por mim, do que dou fé.\nE, pela outorgante, na forma representada, me foi dito que nomeia e constitui seu bastante\nprocurador LUIZ FERNANDO ROCHA LUSTOSA, brasileiro, casado, contador, inscrito no CRC-\nCE sob o nº 018442/O, portador da cédula de identidade RG nº 2000876543210 SSP/CE, inscrito no\nCPF sob o nº 200.634.661-04, residente e domiciliado na Rua Barão de Aracati, nº 2.050,\napartamento 803, Aldeota, Fortaleza/CE, CEP 60115-081, a quem confere poderes especiais e\nexpressos para vender, a quem convier e pelo preço e condições que ajustar, o veículo de\npropriedade da outorgante marca/modelo FIAT/STRADA, placa KGJ4N36, RENAVAM\n08633315538, chassi 9BDAJCLTERKHUS4RD; assinar como vendedor a Autorização para\nTransferência de Propriedade do Veículo (ATPV-e), recibos e demais documentos; receber o preço e\ndar quitação; representar a outorgante perante o DETRAN/CE e demais órgãos de trânsito,\nrequerendo vistorias, comunicação de venda e certidões; pagar taxas e débitos do veículo; podendo\nsubstabelecer, no todo ou em parte, com ou sem reserva de iguais poderes.\nO presente mandato vigorará pelo prazo de 1 (um) ano, a contar desta data.\nAssim o disse, do que dou fé, e me pediu que lavrasse este instrumento, que, lido e achado\nconforme, aceita e assina, dispensadas as testemunhas. Emolumentos: R$ 214,60. FERMOJU: R$\n10,73. Selo: R$ 4,29. Total: R$ 229,62. Selo Digital de Fiscalização nº TN-CE-2026-0204577-\nA9C4. Eu, MARCOS ANTÔNIO CARNEIRO, Escrevente, a lavrei. Eu, ELIANE VASCONCELOS\nPRADO, Tabeliã, a subscrevo.\n(a.a.) JEFFERSON ARAÚJO VERAS. ELIANE VASCONCELOS PRADO – Tabeliã.\nTRASLADO – Nada mais. Trasladada em seguida, confere com o original, ao qual me reporto e\ndou fé.\nCamocim/CE, 10 de março de 2026.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "ELIANE VASCONCELOS PRADO – Tabeliã\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "c23413b0a5eafc77a36c444529b112dd6452bbe9b9cf596f09a56753374cea04",
+   "leitura": {
+    "tarefas": {
+     "procuracao": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 47.1,
+      "tokens_saida": 886,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+   "nome": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024.pdf",
+   "tipo": "contrato_consolidado",
+   "titulo": "Alteração e Consolidação do Contrato Social (2024)",
+   "data": "2024-04-22",
+   "paginas": [
+    "SEGUNDA ALTERAÇÃO E CONSOLIDAÇÃO DO CONTRATO SOCIAL DA MARÉ ALTA\nPESCADOS LTDA\nCNPJ nº 65.651.550/0001-16 – NIRE 23201698745\nJEFFERSON ARAÚJO VERAS, brasileiro, casado sob o regime da comunhão parcial de bens,\nempresário, portador da cédula de identidade RG nº 2001567890123 SSP/CE, inscrito no CPF sob o\nnº 293.360.483-33, residente e domiciliado na Rua Santos Dumont, nº 1.204, Centro, Camocim/CE,\nCEP 62400-000; e\nKÁTIA REGINA VERAS AGUIAR, brasileira, divorciada, engenheira de pesca, portadora da\ncédula de identidade RG nº 97004567890 SSP/CE, inscrita no CPF sob o nº 971.489.180-90,\nresidente e domiciliada na Rua Pinto Martins, nº 377, Centro, Camocim/CE, CEP 62400-000;\núnicos sócios da sociedade empresária limitada MARÉ ALTA PESCADOS LTDA, com sede na Rua\nEngenheiro Privat, nº 210, Centro, Camocim/CE, CEP 62400-000, inscrita no CNPJ sob o nº\n65.651.550/0001-16, com contrato social arquivado na JUCEC sob o NIRE 23201698745, resolvem\nalterar e consolidar o contrato social, mediante as cláusulas a seguir.\nI – DA ALTERAÇÃO\nCLÁUSULA PRIMEIRA – DO AUMENTO DE CAPITAL\nO capital social, de R$ 120.000,00 (cento e vinte mil reais), é aumentado para R$ 300.000,00\n(trezentos mil reais), com a criação de 180.000 (cento e oitenta mil) novas quotas de R$ 1,00 (um\nreal), subscritas em partes iguais pelos sócios e integralizadas neste ato, em moeda corrente.\nCLÁUSULA SEGUNDA – DA ADMINISTRAÇÃO\nA sócia KÁTIA REGINA VERAS AGUIAR passa a integrar a administração da sociedade, ao lado\ndo sócio JEFFERSON ARAÚJO VERAS, na forma da Cláusula Sexta do contrato consolidado.\nCLÁUSULA TERCEIRA – DA CONSOLIDAÇÃO\nOs sócios resolvem consolidar o contrato social, que passa a vigorar com a seguinte redação.\nII – CONTRATO SOCIAL CONSOLIDADO\nCLÁUSULA PRIMEIRA – DA DENOMINAÇÃO E SEDE\nA sociedade gira sob a denominação MARÉ ALTA PESCADOS LTDA e tem sede e foro na Rua\nEngenheiro Privat, nº 210, Centro, Camocim/CE, CEP 62400-000.\nCLÁUSULA SEGUNDA – DO OBJETO\nO objeto social consiste no comércio atacadista de pescados, crustáceos e frutos do mar, frescos ou\ncongelados, no seu beneficiamento e acondicionamento, e no transporte rodoviário de cargas\npróprias.\nCLÁUSULA TERCEIRA – DO PRAZO\nA sociedade iniciou suas atividades em 3 de setembro de 2018 e seu prazo de duração é\nindeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "O capital social é de R$ 300.000,00 (trezentos mil reais), dividido em 300.000 (trezentas mil) quotas\nde R$ 1,00 (um real) cada, totalmente integralizadas e assim distribuídas:\nSócio\nQuotas\nValor (R$)\nParticipação\nJEFFERSON ARAÚJO VERAS\n150.000\n150.000,00\n50%\nKÁTIA REGINA VERAS AGUIAR\n150.000\n150.000,00\n50%\nTotal\n300.000\n300.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social.\nCLÁUSULA SEXTA – DA ADMINISTRAÇÃO\nA administração da sociedade será exercida pelos sócios JEFFERSON ARAÚJO VERAS e KÁTIA\nREGINA VERAS AGUIAR, por prazo indeterminado, que poderão agir isoladamente, competindo a\ncada um deles representar a sociedade em juízo ou fora dele, praticar os atos de gestão, adquirir,\nalienar e onerar bens móveis, inclusive embarcações e veículos, e constituir procuradores, mediante\ninstrumento que especifique os atos autorizados e o respectivo prazo.\nParágrafo único. A alienação ou a oneração de bens imóveis dependerá da assinatura de ambos os\nadministradores.\nCLÁUSULA SÉTIMA – DO PRÓ-LABORE E DO EXERCÍCIO SOCIAL\nOs administradores terão direito a pró-labore fixado de comum acordo. O exercício social coincide\ncom o ano civil, ao fim do qual serão levantados o balanço patrimonial e o de resultado econômico,\npartilhando-se lucros e perdas na proporção das quotas.\nCLÁUSULA OITAVA – DA CESSÃO DE QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas a terceiros sem o consentimento do outro sócio,\na quem fica assegurado o direito de preferência.\nCLÁUSULA NONA – DO FALECIMENTO OU INTERDIÇÃO\nO falecimento ou a interdição de qualquer sócio não dissolverá a sociedade, que prosseguirá com os\nherdeiros ou sucessores, se estes o desejarem; caso contrário, seus haveres serão apurados e pagos na\nforma da lei.\nCLÁUSULA DÉCIMA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nOs administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade por lei especial, nem condenados a pena que vede, ainda que\ntemporariamente, o acesso a cargos públicos.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FORO\nAs partes elegem o foro da Comarca de Camocim/CE para dirimir quaisquer dúvidas decorrentes\ndeste contrato.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "E, por estarem assim justos e contratados, firmam o presente instrumento.\nCamocim/CE, 22 de abril de 2024.\nJEFFERSON ARAÚJO VERAS\nKÁTIA REGINA VERAS AGUIAR\nVisto: PAULO HENRIQUE VERAS MOURÃO – OAB/CE nº 30.551\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 08/05/2024 sob o nº 6390457\nProtocolo: 24/049876-3 | NIRE: 23201698745\nEmpresa: MARÉ ALTA PESCADOS LTDA\nAutenticação: 8F1C3A6E92D07B45\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "383d1217b0d351dcfe0737bbc211610d8ab417e7506ba743f3c28e191149558f",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 42.2,
+      "tokens_saida": 882,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 38.1,
+      "tokens_saida": 1808,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20",
+   "nome": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20.pdf",
+   "tipo": "substabelecimento",
+   "titulo": "Substabelecimento (2026)",
+   "data": "2026-07-20",
+   "paginas": [
+    "INSTRUMENTO PARTICULAR DE SUBSTABELECIMENTO\nSUBSTABELECENTE: RAFAELA CUNHA FONTENELE, brasileira, solteira, advogada inscrita\nna OAB/CE sob o nº 39.115, portadora da cédula de identidade RG nº 2010123987654 SSP/CE,\ninscrita no CPF sob o nº 233.492.700-77, com endereço profissional na Rua Monsenhor Bruno, nº\n1.355, sala 604, Aldeota, Fortaleza/CE, CEP 60115-191, na qualidade de procuradora de MARÉ\nALTA PESCADOS LTDA, inscrita no CNPJ sob o nº 65.651.550/0001-16, com sede na Rua\nEngenheiro Privat, nº 210, Centro, Camocim/CE, por força do substabelecimento lavrado em\n04/05/2026 no Cartório do 5º Ofício de Notas de Fortaleza, Livro 512, Folhas 077/078, referente à\nprocuração pública lavrada em 10/03/2026 no Cartório Vasconcelos – 1º Ofício de Notas de\nCamocim, Livro 88, Folhas 141/142.\nSUBSTABELECIDO: DIEGO MATOS SABINO, brasileiro, solteiro, técnico em contabilidade,\nportador da cédula de identidade RG nº 2012876543210 SSP/CE, inscrito no CPF sob o nº\n656.742.959-30, residente e domiciliado na Rua Tenente Benévolo, nº 411, Meireles, Fortaleza/CE,\nCEP 60160-040.\nPODERES: pelo presente instrumento particular, a substabelecente substabelece, com reserva de\niguais poderes, na pessoa do substabelecido, os poderes que detém para vender, em nome de MARÉ\nALTA PESCADOS LTDA, a quem convier e pelo preço e condições que ajustar, o veículo FIAT/\nSTRADA, placa KGJ4N36, RENAVAM 08633315538, chassi 9BDAJCLTERKHUS4RD, podendo\nassinar como vendedor a Autorização para Transferência de Propriedade do Veículo (ATPV-e),\nreceber o preço e dar quitação, e representar a outorgante perante o DETRAN/CE para todos os atos\nrelacionados a essa venda.\nPRAZO: os poderes ora substabelecidos vigorarão enquanto vigente o mandato originário, cujo\ntermo final é 10/03/2027.\nFortaleza/CE, 20 de julho de 2026.\nRAFAELA CUNHA FONTENELE OAB/CE nº 39.115\nReconhecimento de firma: Reconheço por AUTENTICIDADE a firma de RAFAELA CUNHA\nFONTENELE, lançada em minha presença, do que dou fé. Fortaleza/CE, 20 de julho de 2026. Em\ntestemunho da verdade. CARTÓRIO DO 3º OFÍCIO DE NOTAS DE FORTALEZA (fictício) –\nJÚLIO CÉSAR TÁVORA LIMA, Escrevente Autorizado. Selo Digital de Fiscalização nº TN-\nCE-2026-0690154-3B8E.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/1"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "345565184bf1ad437d4afb3463b42f904e84c72f26585204af2c59ade2dd6188",
+   "leitura": {
+    "tarefas": {
+     "substabelecimento": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 25.5,
+      "tokens_saida": 464,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "SUBSTABELECIMENTO_PUBLICO_2026_05_04",
+   "nome": "SUBSTABELECIMENTO_PUBLICO_2026_05_04.pdf",
+   "tipo": "substabelecimento",
+   "titulo": "Substabelecimento (2026)",
+   "data": "2026-05-04",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCARTÓRIO DO 5º OFÍCIO DE NOTAS DE FORTALEZA (fictício)\nLivro nº 512 – Folhas 077/078\nSUBSTABELECIMENTO DE PROCURAÇÃO QUE FAZ LUIZ FERNANDO ROCHA\nLUSTOSA A FAVOR DE RAFAELA CUNHA FONTENELE\nSAIBAM quantos este público instrumento de substabelecimento virem que, aos 4 (quatro) dias do\nmês de maio do ano de 2026 (dois mil e vinte e seis), nesta cidade de Fortaleza, Capital do Estado do\nCeará, neste Cartório do 5º Ofício de Notas, perante mim, Escrevente, compareceu como\nSUBSTABELECENTE: LUIZ FERNANDO ROCHA LUSTOSA, brasileiro, casado, contador,\nportador da cédula de identidade RG nº 2000876543210 SSP/CE, inscrito no CPF sob o nº\n200.634.661-04, residente e domiciliado na Rua Barão de Aracati, nº 2.050, apartamento 803,\nAldeota, Fortaleza/CE, na qualidade de procurador de MARÉ ALTA PESCADOS LTDA, inscrita no\nCNPJ sob o nº 65.651.550/0001-16, com sede na Rua Engenheiro Privat, nº 210, Centro, Camocim/\nCE, conforme procuração pública lavrada em 10/03/2026 no Cartório Vasconcelos – 1º Ofício de\nNotas de Camocim, Livro 88, Folhas 141/142, cujo traslado me foi exibido e cuja cópia fica\narquivada nestas Notas; reconhecido como o próprio por mim, do que dou fé.\nE, pelo substabelecente, me foi dito que, usando da faculdade que lhe foi expressamente conferida\nno referido instrumento, substabelece, sem reserva de iguais poderes, na pessoa de RAFAELA\nCUNHA FONTENELE, brasileira, solteira, advogada inscrita na OAB/CE sob o nº 39.115,\nportadora da cédula de identidade RG nº 2010123987654 SSP/CE, inscrita no CPF sob o nº\n233.492.700-77, com endereço profissional na Rua Monsenhor Bruno, nº 1.355, sala 604, Aldeota,\nFortaleza/CE, CEP 60115-191, todos os poderes que lhe foram outorgados por MARÉ ALTA\nPESCADOS LTDA para vender o veículo FIAT/STRADA, placa KGJ4N36, RENAVAM\n08633315538, chassi 9BDAJCLTERKHUS4RD, assinar a Autorização para Transferência de\nPropriedade do Veículo (ATPV-e), receber o preço, dar quitação, representar a outorgante perante o\nDETRAN/CE e praticar os demais atos previstos na procuração substabelecida, inclusive o de\nsubstabelecer, observados o objeto e o prazo do mandato originário.\nAssim o disse, do que dou fé, e me pediu que lavrasse este instrumento, que, lido e achado\nconforme, aceita e assina, dispensadas as testemunhas. Emolumentos: R$ 168,40. FERMOJU: R$\n8,42. Selo: R$ 4,29. Total: R$ 181,11. Selo Digital de Fiscalização nº TN-CE-2026-0418290-F1D7.\nEu, TATIANE RIBEIRO COSTA, Escrevente, a lavrei. Eu, JOSÉ RICARDO AMORA BRAGA,\nTabelião, a subscrevo.\n(a.a.) LUIZ FERNANDO ROCHA LUSTOSA. JOSÉ RICARDO AMORA BRAGA – Tabelião.\nTRASLADO – Nada mais. Trasladado em seguida, confere com o original, ao qual me reporto e\ndou fé.\nFortaleza/CE, 4 de maio de 2026.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "JOSÉ RICARDO AMORA BRAGA – Tabelião\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "31aa7002a36da6cea3007a9967e6240c35be9406dd2c135d6d3dc79ef4141c5e",
+   "leitura": {
+    "tarefas": {
+     "substabelecimento": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 15.6,
+      "tokens_saida": 332,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "llamacpp",
+  "modelo": "qwen3.8-27b",
+  "politica": "DETRAN-CE"
+ },
+ "lado": "vendedor",
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T10:07:50",
+   "pedido": {
+    "veiculo": {
+     "descricao": "FIAT/STRADA",
+     "placa": "KGJ4N36",
+     "renavam": "08633315538",
+     "chassi": "9BDAJCLTERKHUS4RD"
+    },
+    "data_venda": "2026-08-26",
+    "valor": 89900.0,
+    "assinantes": [
+     {
+      "nome": "DIEGO MATOS SABINO",
+      "cpf": "656.742.959-30"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "POUSADA VENTOS DE CAMOCIM LTDA",
+    "vendedor_cnpj": "65.651.550/0001-16",
+    "lado": "vendedor"
+   },
+   "empresa": {
+    "razao_social": "MARÉ ALTA PESCADOS LTDA",
+    "cnpj": "65.651.550/0001-16",
+    "tipo": "LTDA",
+    "objeto": "comércio atacadista de pescados, crustáceos e frutos do mar, frescos ou congelados, no seu beneficiamento e acondicionamento, e no transporte rodoviário de cargas próprias",
+    "comercializa_veiculos": false,
+    "subtipo": null
+   },
+   "veredito": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 6.2,
+   "confianca": 0.875,
+   "componentes": {
+    "leitura": 0.875,
+    "juridica": 1.0,
+    "fatos_decisivos": 4,
+    "menor_confianca_fato": 0.8,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 6.2 ≤ limiar 15"
+   ],
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Jefferson Araújo Veras ou Kátia Regina Veras Aguiar ou Rafaela Cunha Fontenele (procurador). O caminho por substabelecimento com reserva de 20/07/2026 não vale: quem substabeleceu não é o procurador.",
+   "assinantes": [
+    {
+     "informado": "DIEGO MATOS SABINO",
+     "cpf": "656.742.959-30",
+     "chave": "65674295930",
+     "nome": "Diego Matos Sabino",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:29336048333",
+     "pessoas": [
+      {
+       "chave": "29336048333",
+       "nome": "Jefferson Araújo Veras"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "alienação de veículos — Cláusula Sexta",
+     "cadeia": [
+      "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024"
+     ],
+     "severidade": "atencao",
+     "confianca": 0.8,
+     "achados": [
+      {
+       "codigo": "CONFERENCIA_LEXICA",
+       "severidade": "atencao",
+       "titulo": "Leitura da IA corrigida pela conferência léxica",
+       "detalhe": "Campo 'escopo': a IA leu 'onerar_bens', mas as expressões  indicam 'alienacao_veiculos'.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+         "doc_titulo": "Alteração e Consolidação do Contrato Social (2024)",
+         "trecho": "A administração da sociedade será exercida pelos sócios JEFFERSON ARAÚJO VERAS e KÁTIA REGINA VERAS AGUIAR, por prazo indeterminado, que poderão agir isoladamente, competindo a cada um deles representar a sociedade em juízo ou fora dele, praticar os atos de gestão, adquirir, alienar e onerar bens móveis, inclusive embarcações e veículos, e constituir procuradores, mediante instrumento que especifique os atos autorizados e o respectivo prazo.",
+         "clausula": "Cláusula Sexta",
+         "ancoragem": 100.0,
+         "pagina": 2,
+         "inicio": 2944,
+         "fim": 3389
+        }
+       ],
+       "caminho": "contrato"
+      }
+     ],
+     "precondicoes": []
+    },
+    {
+     "id": "contrato:97148918090",
+     "pessoas": [
+      {
+       "chave": "97148918090",
+       "nome": "Kátia Regina Veras Aguiar"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "alienação de veículos — Cláusula Sexta",
+     "cadeia": [
+      "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024"
+     ],
+     "severidade": "atencao",
+     "confianca": 0.8,
+     "achados": [
+      {
+       "codigo": "CONFERENCIA_LEXICA",
+       "severidade": "atencao",
+       "titulo": "Leitura da IA corrigida pela conferência léxica",
+       "detalhe": "Campo 'escopo': a IA leu 'onerar_bens', mas as expressões  indicam 'alienacao_veiculos'.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+         "doc_titulo": "Alteração e Consolidação do Contrato Social (2024)",
+         "trecho": "A administração da sociedade será exercida pelos sócios JEFFERSON ARAÚJO VERAS e KÁTIA REGINA VERAS AGUIAR, por prazo indeterminado, que poderão agir isoladamente, competindo a cada um deles representar a sociedade em juízo ou fora dele, praticar os atos de gestão, adquirir, alienar e onerar bens móveis, inclusive embarcações e veículos, e constituir procuradores, mediante instrumento que especifique os atos autorizados e o respectivo prazo.",
+         "clausula": "Cláusula Sexta",
+         "ancoragem": 100.0,
+         "pagina": 2,
+         "inicio": 2944,
+         "fim": 3389
+        }
+       ],
+       "caminho": "contrato"
+      }
+     ],
+     "precondicoes": []
+    },
+    {
+     "id": "SUBSTABELECIMENTO_PUBLICO_2026_05_04:23349270077",
+     "pessoas": [
+      {
+       "chave": "23349270077",
+       "nome": "Rafaela Cunha Fontenele"
+      }
+     ],
+     "via": "substabelecimento",
+     "descricao": "Substabelecimento sem reserva de 04/05/2026",
+     "cadeia": [
+      "PROCURACAO_PUBLICA_2026_03_10",
+      "SUBSTABELECIMENTO_PUBLICO_2026_05_04"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [
+      {
+       "codigo": "ORIGEM_VALIDA",
+       "severidade": "ok",
+       "titulo": "Procuração de origem válida",
+       "detalhe": "Origem: procuração de 10/03/2026.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "SUBSTABELECIMENTO_PUBLICO_2026_05_04",
+         "doc_titulo": "Substabelecimento (2026)",
+         "trecho": "substabelece, sem reserva de iguais poderes, na pessoa de RAFAELA CUNHA FONTENELE",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1338,
+         "fim": 1419
+        }
+       ],
+       "caminho": "SUBSTABELECIMENTO_PUBLICO_2026_05_04"
+      },
+      {
+       "codigo": "SUBSTABELECIMENTO_PERMITIDO",
+       "severidade": "ok",
+       "titulo": "Substabelecimento permitido",
+       "detalhe": "A procuração permite substabelecer.",
+       "fundamento": [
+        "CC art. 667"
+       ],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2026_03_10",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "podendo substabelecer, no todo ou em parte, com ou sem reserva de iguais poderes",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 2191,
+         "fim": 2271
+        }
+       ],
+       "caminho": "SUBSTABELECIMENTO_PUBLICO_2026_05_04"
+      }
+     ],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [
+    {
+     "id": "PROCURACAO_PUBLICA_2026_03_10:20063466104:sem_reserva",
+     "pessoas": [
+      {
+       "chave": "20063466104",
+       "nome": "Luiz Fernando Rocha Lustosa"
+      }
+     ],
+     "via": "procuracao",
+     "descricao": "Procuração pública de 10/03/2026 (CARTÓRIO VASCONCELOS – 1º OFÍCIO DE NOTAS DE CAMOCIM)",
+     "cadeia": [
+      "PROCURACAO_PUBLICA_2026_03_10"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [
+      {
+       "codigo": "OUTORGANTE_PJ",
+       "severidade": "ok",
+       "titulo": "Outorgada pela própria empresa",
+       "detalhe": "A outorgante é a empresa, representada por Jefferson Araújo Veras.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2026_03_10",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "MARÉ ALTA PESCADOS LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº 65.651.550/0001-16",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 492,
+         "fim": 592
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2026_03_10"
+      },
+      {
+       "codigo": "OUTORGA_COM_PODERES",
+       "severidade": "ok",
+       "titulo": "Quem outorgou tinha poder",
+       "detalhe": "Em 10/03/2026, Jefferson Araújo Veras podia representar a empresa nesse ato.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2026_03_10",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "MARÉ ALTA PESCADOS LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº 65.651.550/0001-16",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 492,
+         "fim": 592
+        },
+        {
+         "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+         "doc_titulo": "Alteração e Consolidação do Contrato Social (2024)",
+         "trecho": "A administração da sociedade será exercida pelos sócios JEFFERSON ARAÚJO VERAS e KÁTIA REGINA VERAS AGUIAR, por prazo indeterminado, que poderão agir isoladamente, competindo a cada um deles representar a sociedade em juízo ou fora dele, praticar os atos de gestão, adquirir, alienar e onerar bens móveis, inclusive embarcações e veículos, e constituir procuradores, mediante instrumento que especifique os atos autorizados e o respectivo prazo.",
+         "clausula": "Cláusula Sexta",
+         "ancoragem": 100.0,
+         "pagina": 2,
+         "inicio": 2944,
+         "fim": 3389
+        },
+        {
+         "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+         "doc_titulo": "Alteração e Consolidação do Contrato Social (2024)",
+         "trecho": "A administração da sociedade será exercida pelos sócios JEFFERSON ARAÚJO VERAS e KÁTIA REGINA VERAS AGUIAR, por prazo indeterminado, que poderão agir isoladamente, competindo a cada um deles representar a sociedade em juízo ou fora dele, praticar os atos de gestão, adquirir, alienar e onerar bens móveis, inclusive embarcações e veículos, e constituir procuradores, mediante instrumento que especifique os atos autorizados e o respectivo prazo.",
+         "clausula": "Cláusula Sexta",
+         "ancoragem": 100.0,
+         "pagina": 2,
+         "inicio": 2944,
+         "fim": 3389
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2026_03_10"
+      },
+      {
+       "codigo": "PODERES_ESPECIAIS",
+       "severidade": "ok",
+       "titulo": "Poder expresso para alienar veículos",
+       "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+       "fundamento": [
+        "CC art. 661, §1º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2026_03_10",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "poderes especiais e expressos para vender, a quem convier e pelo preço e condições que ajustar, o veículo de propriedade da outorgante marca/modelo FIAT/STRADA, placa KGJ4N36, RENAVAM 08633315538, chassi 9BDAJCLTERKHUS4RD; assinar como vendedor a Autorização para Transferência de Propriedade do Veículo (ATPV-e), recibos e demais documentos; receber o preço e dar quitação; representar a outorgante perante o DETRAN/CE e demais órgãos de trânsito, requerendo vistorias, comunicação de venda e certidões; pagar taxas e débitos do veículo",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1652,
+         "fim": 2189
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2026_03_10"
+      },
+      {
+       "codigo": "VEICULO_ABRANGIDO",
+       "severidade": "ok",
+       "titulo": "Veículo identificado na procuração",
+       "detalhe": "A procuração identifica exatamente este veículo.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2026_03_10",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "poderes especiais e expressos para vender, a quem convier e pelo preço e condições que ajustar, o veículo de propriedade da outorgante marca/modelo FIAT/STRADA, placa KGJ4N36, RENAVAM 08633315538, chassi 9BDAJCLTERKHUS4RD; assinar como vendedor a Autorização para Transferência de Propriedade do Veículo (ATPV-e), recibos e demais documentos; receber o preço e dar quitação; representar a outorgante perante o DETRAN/CE e demais órgãos de trânsito, requerendo vistorias, comunicação de venda e certidões; pagar taxas e débitos do veículo",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1652,
+         "fim": 2189
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2026_03_10"
+      },
+      {
+       "codigo": "PROCURACAO_NO_PRAZO",
+       "severidade": "ok",
+       "titulo": "Dentro do prazo",
+       "detalhe": "Válida até 10/03/2027.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2026_03_10",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, a contar desta data.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 2273,
+         "fim": 2347
+        }
+       ],
+       "caminho": "PROCURACAO_PUBLICA_2026_03_10"
+      },
+      {
+       "codigo": "SUBSTABELECEU_SEM_RESERVA",
+       "severidade": "bloqueio",
+       "titulo": "Substabeleceu sem reserva",
+       "detalhe": "Luiz Fernando Rocha Lustosa substabeleceu sem reserva em 04/05/2026 e deixou de ter os poderes.",
+       "fundamento": [
+        "CC art. 667"
+       ],
+       "fontes": [],
+       "caminho": "PROCURACAO_PUBLICA_2026_03_10:20063466104"
+      }
+     ],
+     "precondicoes": []
+    },
+    {
+     "id": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20:bloqueada",
+     "pessoas": [
+      {
+       "chave": "65674295930",
+       "nome": "Diego Matos Sabino"
+      }
+     ],
+     "via": "substabelecimento",
+     "descricao": "Substabelecimento com reserva de 20/07/2026",
+     "cadeia": [
+      "PROCURACAO_PUBLICA_2026_03_10",
+      "SUBSTABELECIMENTO_PARTICULAR_2026_07_20"
+     ],
+     "severidade": "alerta",
+     "confianca": 1.0,
+     "achados": [
+      {
+       "codigo": "ORIGEM_VALIDA",
+       "severidade": "ok",
+       "titulo": "Procuração de origem válida",
+       "detalhe": "Origem: procuração de 10/03/2026.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20",
+         "doc_titulo": "Substabelecimento (2026)",
+         "trecho": "pelo presente instrumento particular, a substabelecente substabelece, com reserva de iguais poderes, na pessoa do substabelecido, os poderes que detém para vender, em nome de MARÉ ALTA PESCADOS LTDA, a quem convier e pelo preço e condições que ajustar, o veículo FIAT/STRADA, placa KGJ4N36, RENAVAM 08633315538, chassi 9BDAJCLTERKHUS4RD, podendo assinar como vendedor a Autorização para Transferência de Propriedade do Veículo (ATPV-e), receber o preço e dar quitação, e representar a outorgante perante o DETRAN/CE para todos os atos relacionados a essa venda.",
+         "clausula": null,
+         "ancoragem": 99.8,
+         "pagina": 1,
+         "inicio": 1084,
+         "fim": 1645
+        }
+       ],
+       "caminho": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20"
+      },
+      {
+       "codigo": "SUBSTABELECENTE_NAO_E_PROCURADOR",
+       "severidade": "bloqueio",
+       "titulo": "Quem substabeleceu não é o procurador",
+       "detalhe": "Rafaela Cunha Fontenele não consta como outorgado da procuração de origem.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20",
+         "doc_titulo": "Substabelecimento (2026)",
+         "trecho": "pelo presente instrumento particular, a substabelecente substabelece, com reserva de iguais poderes, na pessoa do substabelecido, os poderes que detém para vender, em nome de MARÉ ALTA PESCADOS LTDA, a quem convier e pelo preço e condições que ajustar, o veículo FIAT/STRADA, placa KGJ4N36, RENAVAM 08633315538, chassi 9BDAJCLTERKHUS4RD, podendo assinar como vendedor a Autorização para Transferência de Propriedade do Veículo (ATPV-e), receber o preço e dar quitação, e representar a outorgante perante o DETRAN/CE para todos os atos relacionados a essa venda.",
+         "clausula": null,
+         "ancoragem": 99.8,
+         "pagina": 1,
+         "inicio": 1084,
+         "fim": 1645
+        }
+       ],
+       "caminho": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20"
+      },
+      {
+       "codigo": "SUBSTABELECIMENTO_PERMITIDO",
+       "severidade": "ok",
+       "titulo": "Substabelecimento permitido",
+       "detalhe": "A procuração permite substabelecer.",
+       "fundamento": [
+        "CC art. 667"
+       ],
+       "fontes": [
+        {
+         "doc_id": "PROCURACAO_PUBLICA_2026_03_10",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "podendo substabelecer, no todo ou em parte, com ou sem reserva de iguais poderes",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 2191,
+         "fim": 2271
+        }
+       ],
+       "caminho": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20"
+      },
+      {
+       "codigo": "SUBSTABELECIMENTO_PARTICULAR",
+       "severidade": "alerta",
+       "titulo": "Substabelecimento por instrumento particular",
+       "detalhe": "O Código Civil admite substabelecer por instrumento particular mesmo procuração pública (art. 655), mas DETRAN e cartórios podem exigir a mesma forma do original.",
+       "fundamento": [
+        "CC art. 655"
+       ],
+       "fontes": [
+        {
+         "doc_id": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20",
+         "doc_titulo": "Substabelecimento (2026)",
+         "trecho": "pelo presente instrumento particular, a substabelecente substabelece, com reserva de iguais poderes, na pessoa do substabelecido, os poderes que detém para vender, em nome de MARÉ ALTA PESCADOS LTDA, a quem convier e pelo preço e condições que ajustar, o veículo FIAT/STRADA, placa KGJ4N36, RENAVAM 08633315538, chassi 9BDAJCLTERKHUS4RD, podendo assinar como vendedor a Autorização para Transferência de Propriedade do Veículo (ATPV-e), receber o preço e dar quitação, e representar a outorgante perante o DETRAN/CE para todos os atos relacionados a essa venda.",
+         "clausula": null,
+         "ancoragem": 99.8,
+         "pagina": 1,
+         "inicio": 1084,
+         "fim": 1645
+        }
+       ],
+       "caminho": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20"
+      }
+     ],
+     "precondicoes": []
+    }
+   ],
+   "caminho_escolhido": null,
+   "faltantes": [
+    {
+     "alternativa": "SUBSTABELECIMENTO_PUBLICO_2026_05_04:23349270077",
+     "via": "substabelecimento",
+     "descricao": "Substabelecimento sem reserva de 04/05/2026",
+     "pessoas": [
+      "23349270077"
+     ],
+     "faltam": [
+      "23349270077"
+     ],
+     "faltam_nomes": [
+      "Rafaela Cunha Fontenele"
+     ],
+     "pessoas_nomes": [
+      "Rafaela Cunha Fontenele"
+     ]
+    },
+    {
+     "alternativa": "contrato:29336048333",
+     "via": "contrato",
+     "descricao": "alienação de veículos — Cláusula Sexta",
+     "pessoas": [
+      "29336048333"
+     ],
+     "faltam": [
+      "29336048333"
+     ],
+     "faltam_nomes": [
+      "Jefferson Araújo Veras"
+     ],
+     "pessoas_nomes": [
+      "Jefferson Araújo Veras"
+     ]
+    },
+    {
+     "alternativa": "contrato:97148918090",
+     "via": "contrato",
+     "descricao": "alienação de veículos — Cláusula Sexta",
+     "pessoas": [
+      "97148918090"
+     ],
+     "faltam": [
+      "97148918090"
+     ],
+     "faltam_nomes": [
+      "Kátia Regina Veras Aguiar"
+     ],
+     "pessoas_nomes": [
+      "Kátia Regina Veras Aguiar"
+     ]
+    }
+   ],
+   "achados": [
+    {
+     "codigo": "CND_INSS",
+     "severidade": "info",
+     "titulo": "CND previdenciária",
+     "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+     "fundamento": [
+      "Lei 8.212/91, art. 47, I, \"c\""
+     ],
+     "fontes": [],
+     "caminho": null
+    },
+    {
+     "codigo": "TITULARIDADE_OK",
+     "severidade": "ok",
+     "titulo": "Veículo registrado no CNPJ da empresa",
+     "detalhe": "Proprietário no CRLV: MARÉ ALTA PESCADOS LTDA.",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [
+      {
+       "doc_id": "CRLV",
+       "doc_titulo": "CRLV",
+       "trecho": "KGJ4N36",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 146,
+       "fim": 153
+      }
+     ],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024#R1",
+     "escopo": "alienacao_bens_moveis",
+     "aplicavel": true,
+     "motivo": "alienação de bens móveis",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+      "doc_titulo": "Alteração e Consolidação do Contrato Social (2024)",
+      "trecho": "A administração da sociedade será exercida pelos sócios JEFFERSON ARAÚJO VERAS e KÁTIA REGINA VERAS AGUIAR, por prazo indeterminado, que poderão agir isoladamente, competindo a cada um deles representar a sociedade em juízo ou fora dele, praticar os atos de gestão, adquirir, alienar e onerar bens móveis, inclusive embarcações e veículos, e constituir procuradores, mediante instrumento que especifique os atos autorizados e o respectivo prazo.",
+      "clausula": "Cláusula Sexta",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 2944,
+      "fim": 3389
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Jefferson Araújo Veras",
+      "Kátia Regina Veras Aguiar"
+     ],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente"
+       ]
+      }
+     ],
+     "decisiva": false
+    },
+    {
+     "regra": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024#R2",
+     "escopo": "alienacao_veiculos",
+     "aplicavel": true,
+     "motivo": "alienação de veículos",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+      "doc_titulo": "Alteração e Consolidação do Contrato Social (2024)",
+      "trecho": "A administração da sociedade será exercida pelos sócios JEFFERSON ARAÚJO VERAS e KÁTIA REGINA VERAS AGUIAR, por prazo indeterminado, que poderão agir isoladamente, competindo a cada um deles representar a sociedade em juízo ou fora dele, praticar os atos de gestão, adquirir, alienar e onerar bens móveis, inclusive embarcações e veículos, e constituir procuradores, mediante instrumento que especifique os atos autorizados e o respectivo prazo.",
+      "clausula": "Cláusula Sexta",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 2944,
+      "fim": 3389
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Jefferson Araújo Veras",
+      "Kátia Regina Veras Aguiar"
+     ],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente"
+       ]
+      }
+     ],
+     "decisiva": true
+    },
+    {
+     "regra": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024#R3",
+     "escopo": "alienacao_veiculos",
+     "aplicavel": true,
+     "motivo": "alienação de veículos",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+      "doc_titulo": "Alteração e Consolidação do Contrato Social (2024)",
+      "trecho": "A administração da sociedade será exercida pelos sócios JEFFERSON ARAÚJO VERAS e KÁTIA REGINA VERAS AGUIAR, por prazo indeterminado, que poderão agir isoladamente, competindo a cada um deles representar a sociedade em juízo ou fora dele, praticar os atos de gestão, adquirir, alienar e onerar bens móveis, inclusive embarcações e veículos, e constituir procuradores, mediante instrumento que especifique os atos autorizados e o respectivo prazo.",
+      "clausula": "Cláusula Sexta",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 2944,
+      "fim": 3389
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Jefferson Araújo Veras",
+      "Kátia Regina Veras Aguiar"
+     ],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 0.8,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente"
+       ]
+      },
+      {
+       "campo": "escopo",
+       "valor_llm": "onerar_bens",
+       "valor_lexico": "alienacao_veiculos",
+       "divergiu": true,
+       "corrigido_para": "alienacao_veiculos",
+       "expressoes": []
+      }
+     ],
+     "decisiva": true
+    },
+    {
+     "regra": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024#R4",
+     "escopo": "outorgar_procuracoes",
+     "aplicavel": false,
+     "motivo": "regula a outorga de procurações (usada para validar procurações)",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+      "doc_titulo": "Alteração e Consolidação do Contrato Social (2024)",
+      "trecho": "A administração da sociedade será exercida pelos sócios JEFFERSON ARAÚJO VERAS e KÁTIA REGINA VERAS AGUIAR, por prazo indeterminado, que poderão agir isoladamente, competindo a cada um deles representar a sociedade em juízo ou fora dele, praticar os atos de gestão, adquirir, alienar e onerar bens móveis, inclusive embarcações e veículos, e constituir procuradores, mediante instrumento que especifique os atos autorizados e o respectivo prazo.",
+      "clausula": "Cláusula Sexta",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 2944,
+      "fim": 3389
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Jefferson Araújo Veras",
+      "Kátia Regina Veras Aguiar"
+     ],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente"
+       ]
+      },
+      {
+       "campo": "ato",
+       "valor_llm": "alienar",
+       "valor_lexico": "alienar+adquirir",
+       "divergiu": false,
+       "corrigido_para": "alienar+adquirir",
+       "expressoes": []
+      }
+     ],
+     "decisiva": false
+    },
+    {
+     "regra": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024#R5",
+     "escopo": "alienacao_bens_imoveis",
+     "aplicavel": false,
+     "motivo": "trata de bens imóveis; veículo é bem móvel",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+      "doc_titulo": "Alteração e Consolidação do Contrato Social (2024)",
+      "trecho": "Parágrafo único. A alienação ou a oneração de bens imóveis dependerá da assinatura de ambos os administradores.",
+      "clausula": "Cláusula Sexta, Parágrafo único",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3390,
+      "fim": 3501
+     },
+     "modo": "conjunto",
+     "pessoas": [
+      "Jefferson Araújo Veras",
+      "Kátia Regina Veras Aguiar"
+     ],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "conjunto",
+       "valor_lexico": "conjunto",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "assinatura de ambos",
+        "ambos os administradores"
+       ]
+      }
+     ],
+     "decisiva": false
+    },
+    {
+     "regra": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024#R6",
+     "escopo": "alienacao_bens_imoveis",
+     "aplicavel": false,
+     "motivo": "trata de bens imóveis; veículo é bem móvel",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+      "doc_titulo": "Alteração e Consolidação do Contrato Social (2024)",
+      "trecho": "Parágrafo único. A alienação ou a oneração de bens imóveis dependerá da assinatura de ambos os administradores.",
+      "clausula": "Cláusula Sexta, Parágrafo único",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3390,
+      "fim": 3501
+     },
+     "modo": "conjunto",
+     "pessoas": [
+      "Jefferson Araújo Veras",
+      "Kátia Regina Veras Aguiar"
+     ],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 0.8,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "conjunto",
+       "valor_lexico": "conjunto",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "assinatura de ambos",
+        "ambos os administradores"
+       ]
+      },
+      {
+       "campo": "escopo",
+       "valor_llm": "onerar_bens",
+       "valor_lexico": "alienacao_bens_imoveis",
+       "divergiu": true,
+       "corrigido_para": "alienacao_bens_imoveis",
+       "expressoes": []
+      }
+     ],
+     "decisiva": false
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-08-26",
+    "atos": [
+     {
+      "doc": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+      "titulo": "Alteração e Consolidação do Contrato Social (2024)",
+      "efeito": "2024-04-22"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "29336048333",
+      "nome": "Jefferson Araújo Veras",
+      "cargo": "Sócio-Administrador",
+      "doc": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024"
+     },
+     {
+      "chave": "97148918090",
+      "nome": "Kátia Regina Veras Aguiar",
+      "cargo": "Sócia-Administradora",
+      "doc": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "29336048333",
+      "nome": "Jefferson Araújo Veras",
+      "percentual": 50.0
+     },
+     {
+      "chave": "97148918090",
+      "nome": "Kátia Regina Veras Aguiar",
+      "percentual": 50.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "MARÉ ALTA PESCADOS LTDA",
+      "sub": "65.651.550/0001-16"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "FIAT/STRADA",
+      "sub": "KGJ4N36"
+     },
+     {
+      "id": "29336048333",
+      "tipo": "pessoa",
+      "rotulo": "Jefferson Araújo Veras",
+      "papeis": [
+       "sócio 50%",
+       "Sócio-Administrador"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "97148918090",
+      "tipo": "pessoa",
+      "rotulo": "Kátia Regina Veras Aguiar",
+      "papeis": [
+       "sócio 50%",
+       "Sócia-Administradora"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "20063466104",
+      "tipo": "pessoa",
+      "rotulo": "Luiz Fernando Rocha Lustosa",
+      "papeis": [
+       "procurador"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "23349270077",
+      "tipo": "pessoa",
+      "rotulo": "Rafaela Cunha Fontenele",
+      "papeis": [
+       "substabelecido",
+       "procurador"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "65674295930",
+      "tipo": "pessoa",
+      "rotulo": "Diego Matos Sabino",
+      "papeis": [
+       "substabelecido"
+      ],
+      "assinante": true
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "valido"
+     },
+     {
+      "de": "29336048333",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "50%",
+      "status": "neutro"
+     },
+     {
+      "de": "97148918090",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "50%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "29336048333",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "97148918090",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024"
+     },
+     {
+      "de": "20063466104",
+      "para": "23349270077",
+      "tipo": "substabelecimento",
+      "status": "valido",
+      "doc": "SUBSTABELECIMENTO_PUBLICO_2026_05_04",
+      "rotulo": "substabelece sem reserva",
+      "motivo": null
+     },
+     {
+      "de": "EMPRESA",
+      "para": "20063466104",
+      "tipo": "procuracao",
+      "status": "invalido",
+      "doc": "PROCURACAO_PUBLICA_2026_03_10",
+      "rotulo": "procuração 10/03/2026 · Substabeleceu sem reserva",
+      "motivo": "Substabeleceu sem reserva"
+     },
+     {
+      "de": "23349270077",
+      "para": "65674295930",
+      "tipo": "substabelecimento",
+      "status": "invalido",
+      "doc": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20",
+      "rotulo": "substabelece com reserva · Quem substabeleceu não é o procurador",
+      "motivo": "Quem substabeleceu não é o procurador"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2024-04-22",
+     "tipo": "ato",
+     "titulo": "Alteração e Consolidação do Contrato Social (2024)",
+     "doc": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-03-10",
+     "tipo": "procuracao",
+     "titulo": "Procuração para Luiz Fernando Rocha Lustosa",
+     "doc": "PROCURACAO_PUBLICA_2026_03_10",
+     "detalhe": "publica"
+    },
+    {
+     "data": "2026-05-04",
+     "tipo": "substabelecimento",
+     "titulo": "Luiz Fernando Rocha Lustosa substabelece a Rafaela Cunha Fontenele",
+     "doc": "SUBSTABELECIMENTO_PUBLICO_2026_05_04",
+     "detalhe": "sem_reserva"
+    },
+    {
+     "data": "2026-07-20",
+     "tipo": "substabelecimento",
+     "titulo": "Rafaela Cunha Fontenele substabelece a Diego Matos Sabino",
+     "doc": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20",
+     "detalhe": "com_reserva"
+    },
+    {
+     "data": "2026-08-26",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 89.900,00"
+    },
+    {
+     "data": "2027-03-10",
+     "tipo": "vencimento",
+     "titulo": "Vence a procuração de Luiz Fernando Rocha Lustosa",
+     "doc": "PROCURACAO_PUBLICA_2026_03_10",
+     "detalhe": ""
+    }
+   ],
+   "pessoas": {
+    "29336048333": {
+     "nome": "Jefferson Araújo Veras",
+     "cpf": "29336048333"
+    },
+    "20063466104": {
+     "nome": "Luiz Fernando Rocha Lustosa",
+     "cpf": "20063466104"
+    },
+    "97148918090": {
+     "nome": "Kátia Regina Veras Aguiar",
+     "cpf": "97148918090"
+    },
+    "23349270077": {
+     "nome": "Rafaela Cunha Fontenele",
+     "cpf": "23349270077"
+    },
+    "65674295930": {
+     "nome": "Diego Matos Sabino",
+     "cpf": "65674295930"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "não comprovada",
+    "outorgante": {
+     "nome": "MARÉ ALTA PESCADOS LTDA",
+     "cnpj": "65.651.550/0001-16",
+     "tipo": "LTDA",
+     "atos_vigentes": [
+      {
+       "titulo": "Alteração e Consolidação do Contrato Social (2024)",
+       "doc": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+       "efeito": "2024-04-22"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "Diego Matos Sabino",
+      "cpf": "656.742.959-30",
+      "identificacao": "CPF",
+      "qualidade": "substabelecido(a) em 20/07/2026"
+     }
+    ],
+    "poderes_conferidos": [
+     "Substabelecimento com reserva de 20/07/2026: não comprova poderes (Quem substabeleceu não é o procurador)."
+    ],
+    "prazo_validade": [
+     "—"
+    ],
+    "revogacao": [
+     "—"
+    ],
+    "fontes": [],
+    "documentos_verificaveis": [
+     {
+      "id": "CRLV",
+      "titulo": "CRLV",
+      "arquivo": "CRLV.pdf"
+     },
+     {
+      "id": "PROCURACAO_PUBLICA_2026_03_10",
+      "titulo": "Procuração (2026)",
+      "arquivo": "PROCURACAO_PUBLICA_2026_03_10.pdf"
+     },
+     {
+      "id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+      "titulo": "Alteração e Consolidação do Contrato Social (2024)",
+      "arquivo": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024.pdf"
+     },
+     {
+      "id": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20",
+      "titulo": "Substabelecimento (2026)",
+      "arquivo": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20.pdf"
+     },
+     {
+      "id": "SUBSTABELECIMENTO_PUBLICO_2026_05_04",
+      "titulo": "Substabelecimento (2026)",
+      "arquivo": "SUBSTABELECIMENTO_PUBLICO_2026_05_04.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "CRLV",
+     "nome": "CRLV.pdf",
+     "tipo": "crlv",
+     "titulo": "CRLV",
+     "data": null,
+     "paginas": [
+      "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n08633315538\nPLACA\nKGJ4N36\nEXERCÍCIO\n2026\nMARCA / MODELO / VERSÃO\nFIAT/STRADA\nCHASSI\n9BDAJCLTERKHUS4RD\nNOME\nMARÉ ALTA PESCADOS LTDA\nCPF / CNPJ\n65.651.550/0001-16\nDATA\n15/01/2026\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "9045adc249eabf5a7f2b7d3faaa282aeb206f90e070c3fe690853a010dc53bc1",
+     "leitura": {
+      "tarefas": {
+       "crlv": {
+        "metodo": "regex"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "PROCURACAO_PUBLICA_2026_03_10",
+     "nome": "PROCURACAO_PUBLICA_2026_03_10.pdf",
+     "tipo": "procuracao",
+     "titulo": "Procuração (2026)",
+     "data": "2026-03-10",
+     "paginas": [
+      "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCARTÓRIO VASCONCELOS – 1º OFÍCIO DE NOTAS DE CAMOCIM (fictício)\nLivro nº 88 – Folhas 141/142\nPROCURAÇÃO BASTANTE QUE FAZ MARÉ ALTA PESCADOS LTDA A FAVOR DE\nLUIZ FERNANDO ROCHA LUSTOSA\nSAIBAM quantos este público instrumento de procuração virem que, aos 10 (dez) dias do mês de\nmarço do ano de 2026 (dois mil e vinte e seis), nesta cidade de Camocim, Estado do Ceará, no\nCartório Vasconcelos, perante mim, Escrevente, compareceu como OUTORGANTE: MARÉ ALTA\nPESCADOS LTDA, sociedade empresária limitada, inscrita no CNPJ sob o nº 65.651.550/0001-16,\nNIRE 23201698745, com sede na Rua Engenheiro Privat, nº 210, Centro, Camocim/CE, neste ato\nrepresentada por seu sócio administrador JEFFERSON ARAÚJO VERAS, brasileiro, casado,\nempresário, portador da cédula de identidade RG nº 2001567890123 SSP/CE, inscrito no CPF sob o\nnº 293.360.483-33, residente e domiciliado na Rua Santos Dumont, nº 1.204, Centro, Camocim/CE,\nque age isoladamente com fundamento na Cláusula Sexta do contrato social consolidado na Segunda\nAlteração Contratual, registrada na JUCEC em 08/05/2024 sob o nº 6390457, cuja cópia fica\narquivada nestas Notas; reconhecido como o próprio por mim, do que dou fé.\nE, pela outorgante, na forma representada, me foi dito que nomeia e constitui seu bastante\nprocurador LUIZ FERNANDO ROCHA LUSTOSA, brasileiro, casado, contador, inscrito no CRC-\nCE sob o nº 018442/O, portador da cédula de identidade RG nº 2000876543210 SSP/CE, inscrito no\nCPF sob o nº 200.634.661-04, residente e domiciliado na Rua Barão de Aracati, nº 2.050,\napartamento 803, Aldeota, Fortaleza/CE, CEP 60115-081, a quem confere poderes especiais e\nexpressos para vender, a quem convier e pelo preço e condições que ajustar, o veículo de\npropriedade da outorgante marca/modelo FIAT/STRADA, placa KGJ4N36, RENAVAM\n08633315538, chassi 9BDAJCLTERKHUS4RD; assinar como vendedor a Autorização para\nTransferência de Propriedade do Veículo (ATPV-e), recibos e demais documentos; receber o preço e\ndar quitação; representar a outorgante perante o DETRAN/CE e demais órgãos de trânsito,\nrequerendo vistorias, comunicação de venda e certidões; pagar taxas e débitos do veículo; podendo\nsubstabelecer, no todo ou em parte, com ou sem reserva de iguais poderes.\nO presente mandato vigorará pelo prazo de 1 (um) ano, a contar desta data.\nAssim o disse, do que dou fé, e me pediu que lavrasse este instrumento, que, lido e achado\nconforme, aceita e assina, dispensadas as testemunhas. Emolumentos: R$ 214,60. FERMOJU: R$\n10,73. Selo: R$ 4,29. Total: R$ 229,62. Selo Digital de Fiscalização nº TN-CE-2026-0204577-\nA9C4. Eu, MARCOS ANTÔNIO CARNEIRO, Escrevente, a lavrei. Eu, ELIANE VASCONCELOS\nPRADO, Tabeliã, a subscrevo.\n(a.a.) JEFFERSON ARAÚJO VERAS. ELIANE VASCONCELOS PRADO – Tabeliã.\nTRASLADO – Nada mais. Trasladada em seguida, confere com o original, ao qual me reporto e\ndou fé.\nCamocim/CE, 10 de março de 2026.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "ELIANE VASCONCELOS PRADO – Tabeliã\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "c23413b0a5eafc77a36c444529b112dd6452bbe9b9cf596f09a56753374cea04",
+     "leitura": {
+      "tarefas": {
+       "procuracao": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 47.1,
+        "tokens_saida": 886,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024",
+     "nome": "SEGUNDA_ALTERACAO_CONSOLIDACAO_2024.pdf",
+     "tipo": "contrato_consolidado",
+     "titulo": "Alteração e Consolidação do Contrato Social (2024)",
+     "data": "2024-04-22",
+     "paginas": [
+      "SEGUNDA ALTERAÇÃO E CONSOLIDAÇÃO DO CONTRATO SOCIAL DA MARÉ ALTA\nPESCADOS LTDA\nCNPJ nº 65.651.550/0001-16 – NIRE 23201698745\nJEFFERSON ARAÚJO VERAS, brasileiro, casado sob o regime da comunhão parcial de bens,\nempresário, portador da cédula de identidade RG nº 2001567890123 SSP/CE, inscrito no CPF sob o\nnº 293.360.483-33, residente e domiciliado na Rua Santos Dumont, nº 1.204, Centro, Camocim/CE,\nCEP 62400-000; e\nKÁTIA REGINA VERAS AGUIAR, brasileira, divorciada, engenheira de pesca, portadora da\ncédula de identidade RG nº 97004567890 SSP/CE, inscrita no CPF sob o nº 971.489.180-90,\nresidente e domiciliada na Rua Pinto Martins, nº 377, Centro, Camocim/CE, CEP 62400-000;\núnicos sócios da sociedade empresária limitada MARÉ ALTA PESCADOS LTDA, com sede na Rua\nEngenheiro Privat, nº 210, Centro, Camocim/CE, CEP 62400-000, inscrita no CNPJ sob o nº\n65.651.550/0001-16, com contrato social arquivado na JUCEC sob o NIRE 23201698745, resolvem\nalterar e consolidar o contrato social, mediante as cláusulas a seguir.\nI – DA ALTERAÇÃO\nCLÁUSULA PRIMEIRA – DO AUMENTO DE CAPITAL\nO capital social, de R$ 120.000,00 (cento e vinte mil reais), é aumentado para R$ 300.000,00\n(trezentos mil reais), com a criação de 180.000 (cento e oitenta mil) novas quotas de R$ 1,00 (um\nreal), subscritas em partes iguais pelos sócios e integralizadas neste ato, em moeda corrente.\nCLÁUSULA SEGUNDA – DA ADMINISTRAÇÃO\nA sócia KÁTIA REGINA VERAS AGUIAR passa a integrar a administração da sociedade, ao lado\ndo sócio JEFFERSON ARAÚJO VERAS, na forma da Cláusula Sexta do contrato consolidado.\nCLÁUSULA TERCEIRA – DA CONSOLIDAÇÃO\nOs sócios resolvem consolidar o contrato social, que passa a vigorar com a seguinte redação.\nII – CONTRATO SOCIAL CONSOLIDADO\nCLÁUSULA PRIMEIRA – DA DENOMINAÇÃO E SEDE\nA sociedade gira sob a denominação MARÉ ALTA PESCADOS LTDA e tem sede e foro na Rua\nEngenheiro Privat, nº 210, Centro, Camocim/CE, CEP 62400-000.\nCLÁUSULA SEGUNDA – DO OBJETO\nO objeto social consiste no comércio atacadista de pescados, crustáceos e frutos do mar, frescos ou\ncongelados, no seu beneficiamento e acondicionamento, e no transporte rodoviário de cargas\npróprias.\nCLÁUSULA TERCEIRA – DO PRAZO\nA sociedade iniciou suas atividades em 3 de setembro de 2018 e seu prazo de duração é\nindeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+      "O capital social é de R$ 300.000,00 (trezentos mil reais), dividido em 300.000 (trezentas mil) quotas\nde R$ 1,00 (um real) cada, totalmente integralizadas e assim distribuídas:\nSócio\nQuotas\nValor (R$)\nParticipação\nJEFFERSON ARAÚJO VERAS\n150.000\n150.000,00\n50%\nKÁTIA REGINA VERAS AGUIAR\n150.000\n150.000,00\n50%\nTotal\n300.000\n300.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social.\nCLÁUSULA SEXTA – DA ADMINISTRAÇÃO\nA administração da sociedade será exercida pelos sócios JEFFERSON ARAÚJO VERAS e KÁTIA\nREGINA VERAS AGUIAR, por prazo indeterminado, que poderão agir isoladamente, competindo a\ncada um deles representar a sociedade em juízo ou fora dele, praticar os atos de gestão, adquirir,\nalienar e onerar bens móveis, inclusive embarcações e veículos, e constituir procuradores, mediante\ninstrumento que especifique os atos autorizados e o respectivo prazo.\nParágrafo único. A alienação ou a oneração de bens imóveis dependerá da assinatura de ambos os\nadministradores.\nCLÁUSULA SÉTIMA – DO PRÓ-LABORE E DO EXERCÍCIO SOCIAL\nOs administradores terão direito a pró-labore fixado de comum acordo. O exercício social coincide\ncom o ano civil, ao fim do qual serão levantados o balanço patrimonial e o de resultado econômico,\npartilhando-se lucros e perdas na proporção das quotas.\nCLÁUSULA OITAVA – DA CESSÃO DE QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas a terceiros sem o consentimento do outro sócio,\na quem fica assegurado o direito de preferência.\nCLÁUSULA NONA – DO FALECIMENTO OU INTERDIÇÃO\nO falecimento ou a interdição de qualquer sócio não dissolverá a sociedade, que prosseguirá com os\nherdeiros ou sucessores, se estes o desejarem; caso contrário, seus haveres serão apurados e pagos na\nforma da lei.\nCLÁUSULA DÉCIMA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nOs administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade por lei especial, nem condenados a pena que vede, ainda que\ntemporariamente, o acesso a cargos públicos.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FORO\nAs partes elegem o foro da Comarca de Camocim/CE para dirimir quaisquer dúvidas decorrentes\ndeste contrato.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+      "E, por estarem assim justos e contratados, firmam o presente instrumento.\nCamocim/CE, 22 de abril de 2024.\nJEFFERSON ARAÚJO VERAS\nKÁTIA REGINA VERAS AGUIAR\nVisto: PAULO HENRIQUE VERAS MOURÃO – OAB/CE nº 30.551\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 08/05/2024 sob o nº 6390457\nProtocolo: 24/049876-3 | NIRE: 23201698745\nEmpresa: MARÉ ALTA PESCADOS LTDA\nAutenticação: 8F1C3A6E92D07B45\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "383d1217b0d351dcfe0737bbc211610d8ab417e7506ba743f3c28e191149558f",
+     "leitura": {
+      "tarefas": {
+       "partes": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 42.2,
+        "tokens_saida": 882,
+        "modelo": "qwen3.8-27b"
+       },
+       "regras": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 38.1,
+        "tokens_saida": 1808,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20",
+     "nome": "SUBSTABELECIMENTO_PARTICULAR_2026_07_20.pdf",
+     "tipo": "substabelecimento",
+     "titulo": "Substabelecimento (2026)",
+     "data": "2026-07-20",
+     "paginas": [
+      "INSTRUMENTO PARTICULAR DE SUBSTABELECIMENTO\nSUBSTABELECENTE: RAFAELA CUNHA FONTENELE, brasileira, solteira, advogada inscrita\nna OAB/CE sob o nº 39.115, portadora da cédula de identidade RG nº 2010123987654 SSP/CE,\ninscrita no CPF sob o nº 233.492.700-77, com endereço profissional na Rua Monsenhor Bruno, nº\n1.355, sala 604, Aldeota, Fortaleza/CE, CEP 60115-191, na qualidade de procuradora de MARÉ\nALTA PESCADOS LTDA, inscrita no CNPJ sob o nº 65.651.550/0001-16, com sede na Rua\nEngenheiro Privat, nº 210, Centro, Camocim/CE, por força do substabelecimento lavrado em\n04/05/2026 no Cartório do 5º Ofício de Notas de Fortaleza, Livro 512, Folhas 077/078, referente à\nprocuração pública lavrada em 10/03/2026 no Cartório Vasconcelos – 1º Ofício de Notas de\nCamocim, Livro 88, Folhas 141/142.\nSUBSTABELECIDO: DIEGO MATOS SABINO, brasileiro, solteiro, técnico em contabilidade,\nportador da cédula de identidade RG nº 2012876543210 SSP/CE, inscrito no CPF sob o nº\n656.742.959-30, residente e domiciliado na Rua Tenente Benévolo, nº 411, Meireles, Fortaleza/CE,\nCEP 60160-040.\nPODERES: pelo presente instrumento particular, a substabelecente substabelece, com reserva de\niguais poderes, na pessoa do substabelecido, os poderes que detém para vender, em nome de MARÉ\nALTA PESCADOS LTDA, a quem convier e pelo preço e condições que ajustar, o veículo FIAT/\nSTRADA, placa KGJ4N36, RENAVAM 08633315538, chassi 9BDAJCLTERKHUS4RD, podendo\nassinar como vendedor a Autorização para Transferência de Propriedade do Veículo (ATPV-e),\nreceber o preço e dar quitação, e representar a outorgante perante o DETRAN/CE para todos os atos\nrelacionados a essa venda.\nPRAZO: os poderes ora substabelecidos vigorarão enquanto vigente o mandato originário, cujo\ntermo final é 10/03/2027.\nFortaleza/CE, 20 de julho de 2026.\nRAFAELA CUNHA FONTENELE OAB/CE nº 39.115\nReconhecimento de firma: Reconheço por AUTENTICIDADE a firma de RAFAELA CUNHA\nFONTENELE, lançada em minha presença, do que dou fé. Fortaleza/CE, 20 de julho de 2026. Em\ntestemunho da verdade. CARTÓRIO DO 3º OFÍCIO DE NOTAS DE FORTALEZA (fictício) –\nJÚLIO CÉSAR TÁVORA LIMA, Escrevente Autorizado. Selo Digital de Fiscalização nº TN-\nCE-2026-0690154-3B8E.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/1"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "345565184bf1ad437d4afb3463b42f904e84c72f26585204af2c59ade2dd6188",
+     "leitura": {
+      "tarefas": {
+       "substabelecimento": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 25.5,
+        "tokens_saida": 464,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "SUBSTABELECIMENTO_PUBLICO_2026_05_04",
+     "nome": "SUBSTABELECIMENTO_PUBLICO_2026_05_04.pdf",
+     "tipo": "substabelecimento",
+     "titulo": "Substabelecimento (2026)",
+     "data": "2026-05-04",
+     "paginas": [
+      "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCARTÓRIO DO 5º OFÍCIO DE NOTAS DE FORTALEZA (fictício)\nLivro nº 512 – Folhas 077/078\nSUBSTABELECIMENTO DE PROCURAÇÃO QUE FAZ LUIZ FERNANDO ROCHA\nLUSTOSA A FAVOR DE RAFAELA CUNHA FONTENELE\nSAIBAM quantos este público instrumento de substabelecimento virem que, aos 4 (quatro) dias do\nmês de maio do ano de 2026 (dois mil e vinte e seis), nesta cidade de Fortaleza, Capital do Estado do\nCeará, neste Cartório do 5º Ofício de Notas, perante mim, Escrevente, compareceu como\nSUBSTABELECENTE: LUIZ FERNANDO ROCHA LUSTOSA, brasileiro, casado, contador,\nportador da cédula de identidade RG nº 2000876543210 SSP/CE, inscrito no CPF sob o nº\n200.634.661-04, residente e domiciliado na Rua Barão de Aracati, nº 2.050, apartamento 803,\nAldeota, Fortaleza/CE, na qualidade de procurador de MARÉ ALTA PESCADOS LTDA, inscrita no\nCNPJ sob o nº 65.651.550/0001-16, com sede na Rua Engenheiro Privat, nº 210, Centro, Camocim/\nCE, conforme procuração pública lavrada em 10/03/2026 no Cartório Vasconcelos – 1º Ofício de\nNotas de Camocim, Livro 88, Folhas 141/142, cujo traslado me foi exibido e cuja cópia fica\narquivada nestas Notas; reconhecido como o próprio por mim, do que dou fé.\nE, pelo substabelecente, me foi dito que, usando da faculdade que lhe foi expressamente conferida\nno referido instrumento, substabelece, sem reserva de iguais poderes, na pessoa de RAFAELA\nCUNHA FONTENELE, brasileira, solteira, advogada inscrita na OAB/CE sob o nº 39.115,\nportadora da cédula de identidade RG nº 2010123987654 SSP/CE, inscrita no CPF sob o nº\n233.492.700-77, com endereço profissional na Rua Monsenhor Bruno, nº 1.355, sala 604, Aldeota,\nFortaleza/CE, CEP 60115-191, todos os poderes que lhe foram outorgados por MARÉ ALTA\nPESCADOS LTDA para vender o veículo FIAT/STRADA, placa KGJ4N36, RENAVAM\n08633315538, chassi 9BDAJCLTERKHUS4RD, assinar a Autorização para Transferência de\nPropriedade do Veículo (ATPV-e), receber o preço, dar quitação, representar a outorgante perante o\nDETRAN/CE e praticar os demais atos previstos na procuração substabelecida, inclusive o de\nsubstabelecer, observados o objeto e o prazo do mandato originário.\nAssim o disse, do que dou fé, e me pediu que lavrasse este instrumento, que, lido e achado\nconforme, aceita e assina, dispensadas as testemunhas. Emolumentos: R$ 168,40. FERMOJU: R$\n8,42. Selo: R$ 4,29. Total: R$ 181,11. Selo Digital de Fiscalização nº TN-CE-2026-0418290-F1D7.\nEu, TATIANE RIBEIRO COSTA, Escrevente, a lavrei. Eu, JOSÉ RICARDO AMORA BRAGA,\nTabelião, a subscrevo.\n(a.a.) LUIZ FERNANDO ROCHA LUSTOSA. JOSÉ RICARDO AMORA BRAGA – Tabelião.\nTRASLADO – Nada mais. Trasladado em seguida, confere com o original, ao qual me reporto e\ndou fé.\nFortaleza/CE, 4 de maio de 2026.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "JOSÉ RICARDO AMORA BRAGA – Tabelião\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "31aa7002a36da6cea3007a9967e6240c35be9406dd2c135d6d3dc79ef4141c5e",
+     "leitura": {
+      "tarefas": {
+       "substabelecimento": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 15.6,
+        "tokens_saida": 332,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "llamacpp",
+    "modelo": "qwen3.8-27b",
+    "politica": "DETRAN-CE"
+   },
+   "lado": "vendedor"
+  }
+ },
+ "geral": {
+  "veredito": "NAO_PODE",
+  "faixa": "VERMELHO",
+  "indice": 6.2,
+  "resumo": "Vendedor: Os assinantes informados não bastam. Quem pode assinar: Jefferson Araújo Veras ou Kátia Regina Veras Aguiar ou Rafaela Cunha Fontenele (procurador). O caminho por substabelecimento com reserva de 20/07/2026 não vale: quem substabeleceu não é o procurador.",
+  "motivos_faixa": [
+   "Vendedor — índice 6.2 ≤ limiar 15"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "FIAT/STRADA",
+   "placa": "KGJ4N36",
+   "renavam": "08633315538",
+   "chassi": "9BDAJCLTERKHUS4RD"
+  },
+  "data_venda": "2026-08-26",
+  "valor": 89900.0,
+  "vendedor": {
+   "tipo": "PJ",
+   "nome": "MARÉ ALTA PESCADOS LTDA",
+   "documento": "65.651.550/0001-16",
+   "assinantes": [
+    {
+     "nome": "DIEGO MATOS SABINO",
+     "cpf": "656.742.959-30"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": "POUSADA VENTOS DE CAMOCIM LTDA",
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "informado"
+ },
+ "hash_entrada": "7b96d80ebca10fc9a8985916ab74c9d9a20b867c4801f8956ec8284def86011e"
+}

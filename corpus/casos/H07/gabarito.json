@@ -1,0 +1,30 @@
+{
+  "caso": "H07",
+  "titulo": "Antiga administradora assina depois da troca",
+  "categoria": "temporal",
+  "objetivo": "Segunda alteração mudou o administrador.",
+  "validacao_cega": true,
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "JONAS"
+      ]
+    ],
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": [
+      [
+        "937.541.882-08"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Jonas Holanda Freire"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

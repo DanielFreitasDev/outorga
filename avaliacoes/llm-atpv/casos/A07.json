@@ -1,0 +1,1678 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T10:07:51",
+ "pedido": {
+  "veiculo": {
+   "descricao": "GM/S10 CD LT 2.8 4X4",
+   "placa": "ZEK4L19",
+   "renavam": "04415366979",
+   "chassi": "9BG53Y125620PA1ME"
+  },
+  "data_venda": "2026-10-14",
+  "valor": 198000.0,
+  "assinantes": [
+   {
+    "nome": "CARLOS EDUARDO BEZERRA",
+    "cpf": "417.075.364-06"
+   },
+   {
+    "nome": "LUCIANA MOURA SAMPAIO",
+    "cpf": "568.151.884-18"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "LOCADORA JANGADA LTDA.",
+  "vendedor_cnpj": "42.014.613/0001-28",
+  "lado": "vendedor"
+ },
+ "empresa": {
+  "razao_social": "CONSTRUTORA MANDACARU LTDA.",
+  "cnpj": "42.014.613/0001-28",
+  "tipo": "LTDA",
+  "objeto": "construção de edifícios, obras de urbanização e incorporação de empreendimentos imobiliários",
+  "comercializa_veiculos": false,
+  "subtipo": null
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 7.5,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 3,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "Vendedor — índice 100 ≥ limiar 85",
+  "Comprador — índice 7.5 ≤ limiar 15"
+ ],
+ "resumo": "Vendedor: Carlos Eduardo Bezerra e Luciana Moura Sampaio podem, em conjunto, assinar a ATPV-e — alienação de bens — Cláusula Sexta. · Comprador: Os assinantes informados não bastam. Quem pode assinar: Francisco Wellington Rocha. Regra aplicável: compra e venda de veículos (Cláusula Sétima).",
+ "assinantes": [
+  {
+   "informado": "CARLOS EDUARDO BEZERRA",
+   "cpf": "417.075.364-06",
+   "chave": "41707536406",
+   "nome": "Carlos Eduardo Bezerra",
+   "criterio": "CPF"
+  },
+  {
+   "informado": "LUCIANA MOURA SAMPAIO",
+   "cpf": "568.151.884-18",
+   "chave": "56815188418",
+   "nome": "Luciana Moura Sampaio",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:41707536406+56815188418",
+   "pessoas": [
+    {
+     "chave": "41707536406",
+     "nome": "Carlos Eduardo Bezerra"
+    },
+    {
+     "chave": "56815188418",
+     "nome": "Luciana Moura Sampaio"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "alienação de bens — Cláusula Sexta",
+   "cadeia": [
+    "MANDACARU_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": {
+  "id": "contrato:41707536406+56815188418",
+  "pessoas": [
+   {
+    "chave": "41707536406",
+    "nome": "Carlos Eduardo Bezerra"
+   },
+   {
+    "chave": "56815188418",
+    "nome": "Luciana Moura Sampaio"
+   }
+  ],
+  "via": "contrato",
+  "descricao": "alienação de bens — Cláusula Sexta",
+  "cadeia": [
+   "MANDACARU_CS"
+  ],
+  "severidade": "ok",
+  "confianca": 1.0,
+  "achados": [],
+  "precondicoes": []
+ },
+ "faltantes": [],
+ "achados": [
+  {
+   "codigo": "CND_INSS",
+   "severidade": "info",
+   "titulo": "CND previdenciária",
+   "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+   "fundamento": [
+    "Lei 8.212/91, art. 47, I, \"c\""
+   ],
+   "fontes": [],
+   "caminho": null
+  },
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: CONSTRUTORA MANDACARU LTDA..",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "ZEK4L19",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "MANDACARU_CS#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "MANDACARU_CS",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "A administração da sociedade será exercida conjuntamente pelos sócios CARLOS EDUARDO BEZERRA e LUCIANA MOURA SAMPAIO, aos quais compete, sempre em conjunto, a representação ativa e passiva da sociedade, em juízo ou fora dele, e a prática de todos os atos de gestão compreendidos no objeto social",
+    "clausula": "Cláusula Sexta",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3439,
+    "fim": 3734
+   },
+   "modo": "conjunto",
+   "pessoas": [
+    "Carlos Eduardo Bezerra",
+    "Luciana Moura Sampaio"
+   ],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "conjunto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "em conjunto"
+     ]
+    }
+   ],
+   "decisiva": false
+  },
+  {
+   "regra": "MANDACARU_CS#R2",
+   "escopo": "alienacao_bens",
+   "aplicavel": true,
+   "motivo": "alienação de bens",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "MANDACARU_CS",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "sendo vedada a prática isolada de qualquer ato de alienação ou oneração de bens da sociedade",
+    "clausula": "Cláusula Sexta",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3736,
+    "fim": 3828
+   },
+   "modo": "conjunto",
+   "pessoas": [
+    "Carlos Eduardo Bezerra",
+    "Luciana Moura Sampaio"
+   ],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "conjunto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "vedada a pratica isolad"
+     ]
+    },
+    {
+     "campo": "efeito",
+     "valor_llm": "veda",
+     "valor_lexico": "restringe",
+     "divergiu": false,
+     "corrigido_para": "restringe",
+     "expressoes": []
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "MANDACARU_CS#R3",
+   "escopo": "obrigacoes_garantias",
+   "aplicavel": false,
+   "motivo": "trata de avais, fianças e garantias",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "MANDACARU_CS",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "É vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+    "clausula": "Cláusula Sexta, Parágrafo primeiro",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3850,
+    "fim": 3979
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-10-14",
+  "atos": [
+   {
+    "doc": "MANDACARU_CS",
+    "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "efeito": "2023-03-02"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "41707536406",
+    "nome": "Carlos Eduardo Bezerra",
+    "cargo": "Sócio-Administrador",
+    "doc": "MANDACARU_CS"
+   },
+   {
+    "chave": "56815188418",
+    "nome": "Luciana Moura Sampaio",
+    "cargo": "Sócia-Administradora",
+    "doc": "MANDACARU_CS"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "41707536406",
+    "nome": "Carlos Eduardo Bezerra",
+    "percentual": 60.0
+   },
+   {
+    "chave": "56815188418",
+    "nome": "Luciana Moura Sampaio",
+    "percentual": 40.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "CONSTRUTORA MANDACARU LTDA.",
+    "sub": "42.014.613/0001-28"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "GM/S10 CD LT 2.8 4X4",
+    "sub": "ZEK4L19"
+   },
+   {
+    "id": "41707536406",
+    "tipo": "pessoa",
+    "rotulo": "Carlos Eduardo Bezerra",
+    "papeis": [
+     "sócio 60%",
+     "Sócio-Administrador"
+    ],
+    "assinante": true
+   },
+   {
+    "id": "56815188418",
+    "tipo": "pessoa",
+    "rotulo": "Luciana Moura Sampaio",
+    "papeis": [
+     "sócio 40%",
+     "Sócia-Administradora"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "41707536406",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "60%",
+    "status": "neutro"
+   },
+   {
+    "de": "56815188418",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "40%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "41707536406",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "MANDACARU_CS"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "56815188418",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "MANDACARU_CS"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2023-03-02",
+   "tipo": "ato",
+   "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+   "doc": "MANDACARU_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-10-14",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 198.000,00"
+  }
+ ],
+ "pessoas": {
+  "41707536406": {
+   "nome": "Carlos Eduardo Bezerra",
+   "cpf": "41707536406"
+  },
+  "56815188418": {
+   "nome": "Luciana Moura Sampaio",
+   "cpf": "56815188418"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "comprovada",
+  "outorgante": {
+   "nome": "CONSTRUTORA MANDACARU LTDA.",
+   "cnpj": "42.014.613/0001-28",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+     "doc": "MANDACARU_CS",
+     "efeito": "2023-03-02"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Carlos Eduardo Bezerra",
+    "cpf": "417.075.364-06",
+    "identificacao": "CPF",
+    "qualidade": "Sócio-Administrador"
+   },
+   {
+    "nome": "Luciana Moura Sampaio",
+    "cpf": "568.151.884-18",
+    "identificacao": "CPF",
+    "qualidade": "Sócia-Administradora"
+   }
+  ],
+  "poderes_conferidos": [
+   "Alteração e Consolidação do Contrato Social (2023), Cláusula Sexta: assinatura conjunta exigida"
+  ],
+  "prazo_validade": [
+   "Carlos Eduardo Bezerra (Sócio-Administrador): mandato por prazo indeterminado",
+   "Luciana Moura Sampaio (Sócia-Administradora): mandato por prazo indeterminado"
+  ],
+  "revogacao": [
+   "Poder decorre do ato constitutivo vigente na data da venda; recomenda-se certidão simplificada atualizada da Junta Comercial para afastar alteração posterior ainda não apresentada."
+  ],
+  "fontes": [
+   {
+    "doc_id": "MANDACARU_CS",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "sendo vedada a prática isolada de qualquer ato de alienação ou oneração de bens da sociedade",
+    "clausula": "Cláusula Sexta",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3736,
+    "fim": 3828
+   },
+   {
+    "doc_id": "MANDACARU_CS",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "A administração da sociedade será exercida conjuntamente pelos sócios CARLOS EDUARDO BEZERRA e LUCIANA MOURA SAMPAIO, aos quais compete, sempre em conjunto, a representação ativa e passiva da sociedade, em juízo ou fora dele, e a prática de todos os atos de gestão compreendidos no objeto social, sendo vedada a prática isolada de qualquer ato de alienação ou oneração de bens da sociedade.",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3439,
+    "fim": 3829
+   },
+   {
+    "doc_id": "MANDACARU_CS",
+    "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "trecho": "A administração da sociedade será exercida conjuntamente pelos sócios CARLOS EDUARDO BEZERRA e LUCIANA MOURA SAMPAIO, aos quais compete, sempre em conjunto, a representação ativa e passiva da sociedade, em juízo ou fora dele, e a prática de todos os atos de gestão compreendidos no objeto social, sendo vedada a prática isolada de qualquer ato de alienação ou oneração de bens da sociedade.",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3439,
+    "fim": 3829
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "MANDACARU_CS",
+    "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+    "arquivo": "MANDACARU_CS.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n04415366979\nPLACA\nZEK4L19\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2022\nANO MODELO\n2022\nNÚMERO DO CRV\n437714920884\nCÓDIGO DE SEGURANÇA DO CLA\n12461560545\nMARCA / MODELO / VERSÃO\nGM/S10 CD LT 2.8 4X4\nESPÉCIE / TIPO\nCARGA/CAMINHONETE\nCHASSI\n9BG53Y125620PA1ME\nCOR PREDOMINANTE\nPRATA\nCOMBUSTÍVEL\nDIESEL\nNOME\nCONSTRUTORA MANDACARU LTDA.\nCPF / CNPJ\n42.014.613/0001-28\nLOCAL\nFORTALEZA/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "5a12a795cf1a1d6f10fc4afd40e47e703b83b228247be5f7297938c88b844309",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "MANDACARU_CS",
+   "nome": "MANDACARU_CS.pdf",
+   "tipo": "contrato_consolidado",
+   "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+   "data": "2023-03-02",
+   "paginas": [
+    "CONSTRUTORA MANDACARU LTDA. CNPJ nº 42.014.613/0001-28 – NIRE 23802404048\nQUARTA ALTERAÇÃO E CONSOLIDAÇÃO DO CONTRATO SOCIAL\nPelo presente instrumento particular, os abaixo qualificados:\nCARLOS EDUARDO BEZERRA, brasileiro, casado sob o regime de comunhão parcial de bens,\nengenheiro civil, portador da Cédula de Identidade RG nº 47661846 SSP/CE, inscrito no CPF sob o\nnº 417.075.364-06, residente e domiciliado na Rua das Jangadas, nº 315, apartamento 1.201, bairro\nMeireles, Fortaleza/CE, CEP 60165-090; e\nLUCIANA MOURA SAMPAIO, brasileira, solteira, arquiteta, portadora da Cédula de Identidade\nRG nº 39601278 SSP/CE, inscrita no CPF sob o nº 568.151.884-18, residente e domiciliada na\nTravessa dos Coqueiros, nº 88, casa 4, bairro Cocó, Fortaleza/CE, CEP 60192-120;\núnicos sócios da sociedade empresária limitada CONSTRUTORA MANDACARU LTDA., com\nsede na Rua Sertão Alto, nº 1.040, sala 210, bairro Fátima, Fortaleza/CE, CEP 60040-410, inscrita\nno CNPJ sob o nº 42.014.613/0001-28, com seu ato constitutivo arquivado na Junta Comercial do\nEstado do Ceará sob o NIRE 23802404048, em sessão de 26/09/2017, e alterações posteriores, a\núltima delas (Terceira Alteração) arquivada sob o nº 21876540319, em 14/06/2021, resolvem alterar\ne consolidar o contrato social, mediante as cláusulas e condições seguintes:\nCLÁUSULA PRIMEIRA – DA ALTERAÇÃO DO ENDEREÇO DA SEDE\nA sede da sociedade, atualmente situada na Rua Sertão Alto, nº 1.040, sala 210, bairro Fátima,\nFortaleza/CE, CEP 60040-410, fica transferida para a Avenida Jardim das Dunas, nº 2.977, sala 805,\nbairro Papicu, Fortaleza/CE, CEP 60175-650.\nCLÁUSULA SEGUNDA – DA CONSOLIDAÇÃO\nEm razão da alteração ora deliberada, os sócios resolvem consolidar o contrato social, que passa a\nvigorar com a redação abaixo, a qual substitui integralmente as disposições anteriores.\nCONTRATO SOCIAL CONSOLIDADO\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL E DA SEDE\nA sociedade gira sob o nome empresarial CONSTRUTORA MANDACARU LTDA. e tem sede na\nAvenida Jardim das Dunas, nº 2.977, sala 805, bairro Papicu, Fortaleza/CE, CEP 60175-650,\npodendo abrir e encerrar filiais em qualquer parte do território nacional, mediante alteração\ncontratual.\nCLÁUSULA SEGUNDA – DO OBJETO SOCIAL\nA sociedade tem por objeto a construção de edifícios, obras de urbanização e incorporação de\nempreendimentos imobiliários, compreendendo as atividades classificadas nos códigos CNAE\n4120-4/00 (construção de edifícios), 4213-8/00 (obras de urbanização – ruas, praças e calçadas) e\n4110-7/00 (incorporação de empreendimentos imobiliários).\nCLÁUSULA TERCEIRA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciou suas atividades em 26 de setembro de 2017, e seu prazo de duração é\nindeterminado.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "CLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 500.000,00 (quinhentos mil reais), dividido em 500.000 (quinhentas mil)\nquotas de valor nominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas em\nmoeda corrente do País, assim distribuídas:\nSócio\nQuotas\nValor (R$)\nParticipação\nCARLOS EDUARDO BEZERRA\n300.000\n300.000,00\n60%\nLUCIANA MOURA SAMPAIO\n200.000\n200.000,00\n40%\nTOTAL\n500.000\n500.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social.\nCLÁUSULA SEXTA – DA ADMINISTRAÇÃO\nA administração da sociedade será exercida conjuntamente pelos sócios CARLOS EDUARDO\nBEZERRA e LUCIANA MOURA SAMPAIO, aos quais compete, sempre em conjunto, a\nrepresentação ativa e passiva da sociedade, em juízo ou fora dele, e a prática de todos os atos de\ngestão compreendidos no objeto social, sendo vedada a prática isolada de qualquer ato de alienação\nou oneração de bens da sociedade.\nParágrafo primeiro. É vedado o uso do nome empresarial em atividades estranhas ao objeto social,\nespecialmente em avais, fianças e endossos de favor.\nParágrafo segundo. Os administradores farão jus a uma retirada mensal, a título de pró-labore, fixada\nde comum acordo entre os sócios.\nCLÁUSULA SÉTIMA – DO EXERCÍCIO SOCIAL E DOS RESULTADOS\nO exercício social coincide com o ano civil. Ao término de cada exercício, os administradores\nprestarão contas justificadas de sua administração, procedendo à elaboração do inventário, do\nbalanço patrimonial e do balanço de resultado econômico, cabendo aos sócios, na proporção de suas\nquotas, os lucros ou as perdas apurados.\nParágrafo único. Nos quatro meses seguintes ao término do exercício social, os sócios deliberarão\nsobre as contas e a destinação dos resultados.\nCLÁUSULA OITAVA – DA CESSÃO DE QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas ou transferidas a terceiros sem o consentimento\ndo outro sócio, a quem fica assegurado, em igualdade de condições e preço, o direito de preferência\npara a sua aquisição.\nCLÁUSULA NONA – DO FALECIMENTO OU DA INTERDIÇÃO DE SÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros ou sucessores. Não sendo possível ou inexistindo interesse destes ou do sócio\nremanescente, os haveres do sócio falecido ou interditado serão apurados com base em balanço\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "especialmente levantado na data do evento e pagos aos herdeiros em 12 (doze) parcelas mensais e\nsucessivas.\nCLÁUSULA DÉCIMA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nOs administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade, por lei especial, ou em virtude de condenação criminal, ou por se\nencontrarem sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\npúblicos; ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato, ou contra\na economia popular, contra o sistema financeiro nacional, contra normas de defesa da concorrência,\ncontra as relações de consumo, a fé pública ou a propriedade.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FORO\nFica eleito o foro da Comarca de Fortaleza, Estado do Ceará, para dirimir quaisquer controvérsias\ndecorrentes deste contrato, com renúncia a qualquer outro, por mais privilegiado que seja.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento, que será levado\na arquivamento na Junta Comercial do Estado do Ceará.\nFortaleza/CE, 2 de março de 2023.\n__________________________________ CARLOS EDUARDO BEZERRA\n__________________________________ LUCIANA MOURA SAMPAIO\nVisto: Débora Maciel Nogueira – OAB/CE nº 27.912\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 10/03/2023 sob o nº 19033757879\nProtocolo: 23/061.448-0 | NIRE: 23802404048\nEmpresa: CONSTRUTORA MANDACARU LTDA.\nAutenticação: B41E07D93C2A6F58E0D17A94C3B8F265\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "a9557f1831eee9bf2b445609f638c1b142abcf9ed8880b9955931402654791c8",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 36.5,
+      "tokens_saida": 803,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 26.9,
+      "tokens_saida": 831,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "llamacpp",
+  "modelo": "qwen3.8-27b",
+  "politica": "DETRAN-CE"
+ },
+ "lado": "vendedor",
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T10:07:51",
+   "pedido": {
+    "veiculo": {
+     "descricao": "GM/S10 CD LT 2.8 4X4",
+     "placa": "ZEK4L19",
+     "renavam": "04415366979",
+     "chassi": "9BG53Y125620PA1ME"
+    },
+    "data_venda": "2026-10-14",
+    "valor": 198000.0,
+    "assinantes": [
+     {
+      "nome": "CARLOS EDUARDO BEZERRA",
+      "cpf": "417.075.364-06"
+     },
+     {
+      "nome": "LUCIANA MOURA SAMPAIO",
+      "cpf": "568.151.884-18"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "LOCADORA JANGADA LTDA.",
+    "vendedor_cnpj": "42.014.613/0001-28",
+    "lado": "vendedor"
+   },
+   "empresa": {
+    "razao_social": "CONSTRUTORA MANDACARU LTDA.",
+    "cnpj": "42.014.613/0001-28",
+    "tipo": "LTDA",
+    "objeto": "construção de edifícios, obras de urbanização e incorporação de empreendimentos imobiliários",
+    "comercializa_veiculos": false,
+    "subtipo": null
+   },
+   "veredito": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 3,
+    "menor_confianca_fato": 1.0,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "resumo": "Carlos Eduardo Bezerra e Luciana Moura Sampaio podem, em conjunto, assinar a ATPV-e — alienação de bens — Cláusula Sexta.",
+   "assinantes": [
+    {
+     "informado": "CARLOS EDUARDO BEZERRA",
+     "cpf": "417.075.364-06",
+     "chave": "41707536406",
+     "nome": "Carlos Eduardo Bezerra",
+     "criterio": "CPF"
+    },
+    {
+     "informado": "LUCIANA MOURA SAMPAIO",
+     "cpf": "568.151.884-18",
+     "chave": "56815188418",
+     "nome": "Luciana Moura Sampaio",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:41707536406+56815188418",
+     "pessoas": [
+      {
+       "chave": "41707536406",
+       "nome": "Carlos Eduardo Bezerra"
+      },
+      {
+       "chave": "56815188418",
+       "nome": "Luciana Moura Sampaio"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "alienação de bens — Cláusula Sexta",
+     "cadeia": [
+      "MANDACARU_CS"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [],
+   "caminho_escolhido": {
+    "id": "contrato:41707536406+56815188418",
+    "pessoas": [
+     {
+      "chave": "41707536406",
+      "nome": "Carlos Eduardo Bezerra"
+     },
+     {
+      "chave": "56815188418",
+      "nome": "Luciana Moura Sampaio"
+     }
+    ],
+    "via": "contrato",
+    "descricao": "alienação de bens — Cláusula Sexta",
+    "cadeia": [
+     "MANDACARU_CS"
+    ],
+    "severidade": "ok",
+    "confianca": 1.0,
+    "achados": [],
+    "precondicoes": []
+   },
+   "faltantes": [],
+   "achados": [
+    {
+     "codigo": "CND_INSS",
+     "severidade": "info",
+     "titulo": "CND previdenciária",
+     "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+     "fundamento": [
+      "Lei 8.212/91, art. 47, I, \"c\""
+     ],
+     "fontes": [],
+     "caminho": null
+    },
+    {
+     "codigo": "TITULARIDADE_OK",
+     "severidade": "ok",
+     "titulo": "Veículo registrado no CNPJ da empresa",
+     "detalhe": "Proprietário no CRLV: CONSTRUTORA MANDACARU LTDA..",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [
+      {
+       "doc_id": "CRLV",
+       "doc_titulo": "CRLV",
+       "trecho": "ZEK4L19",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 146,
+       "fim": 153
+      }
+     ],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "MANDACARU_CS#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "MANDACARU_CS",
+      "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+      "trecho": "A administração da sociedade será exercida conjuntamente pelos sócios CARLOS EDUARDO BEZERRA e LUCIANA MOURA SAMPAIO, aos quais compete, sempre em conjunto, a representação ativa e passiva da sociedade, em juízo ou fora dele, e a prática de todos os atos de gestão compreendidos no objeto social",
+      "clausula": "Cláusula Sexta",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3439,
+      "fim": 3734
+     },
+     "modo": "conjunto",
+     "pessoas": [
+      "Carlos Eduardo Bezerra",
+      "Luciana Moura Sampaio"
+     ],
+     "cargo": "socios",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "conjunto",
+       "valor_lexico": "conjunto",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "em conjunto"
+       ]
+      }
+     ],
+     "decisiva": false
+    },
+    {
+     "regra": "MANDACARU_CS#R2",
+     "escopo": "alienacao_bens",
+     "aplicavel": true,
+     "motivo": "alienação de bens",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "MANDACARU_CS",
+      "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+      "trecho": "sendo vedada a prática isolada de qualquer ato de alienação ou oneração de bens da sociedade",
+      "clausula": "Cláusula Sexta",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3736,
+      "fim": 3828
+     },
+     "modo": "conjunto",
+     "pessoas": [
+      "Carlos Eduardo Bezerra",
+      "Luciana Moura Sampaio"
+     ],
+     "cargo": "socios",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "conjunto",
+       "valor_lexico": "conjunto",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "vedada a pratica isolad"
+       ]
+      },
+      {
+       "campo": "efeito",
+       "valor_llm": "veda",
+       "valor_lexico": "restringe",
+       "divergiu": false,
+       "corrigido_para": "restringe",
+       "expressoes": []
+      }
+     ],
+     "decisiva": true
+    },
+    {
+     "regra": "MANDACARU_CS#R3",
+     "escopo": "obrigacoes_garantias",
+     "aplicavel": false,
+     "motivo": "trata de avais, fianças e garantias",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "MANDACARU_CS",
+      "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+      "trecho": "É vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+      "clausula": "Cláusula Sexta, Parágrafo primeiro",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3850,
+      "fim": 3979
+     },
+     "modo": "nao_especificado",
+     "pessoas": [],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-10-14",
+    "atos": [
+     {
+      "doc": "MANDACARU_CS",
+      "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+      "efeito": "2023-03-02"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "41707536406",
+      "nome": "Carlos Eduardo Bezerra",
+      "cargo": "Sócio-Administrador",
+      "doc": "MANDACARU_CS"
+     },
+     {
+      "chave": "56815188418",
+      "nome": "Luciana Moura Sampaio",
+      "cargo": "Sócia-Administradora",
+      "doc": "MANDACARU_CS"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "41707536406",
+      "nome": "Carlos Eduardo Bezerra",
+      "percentual": 60.0
+     },
+     {
+      "chave": "56815188418",
+      "nome": "Luciana Moura Sampaio",
+      "percentual": 40.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "CONSTRUTORA MANDACARU LTDA.",
+      "sub": "42.014.613/0001-28"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "GM/S10 CD LT 2.8 4X4",
+      "sub": "ZEK4L19"
+     },
+     {
+      "id": "41707536406",
+      "tipo": "pessoa",
+      "rotulo": "Carlos Eduardo Bezerra",
+      "papeis": [
+       "sócio 60%",
+       "Sócio-Administrador"
+      ],
+      "assinante": true
+     },
+     {
+      "id": "56815188418",
+      "tipo": "pessoa",
+      "rotulo": "Luciana Moura Sampaio",
+      "papeis": [
+       "sócio 40%",
+       "Sócia-Administradora"
+      ],
+      "assinante": true
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "valido"
+     },
+     {
+      "de": "41707536406",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "60%",
+      "status": "neutro"
+     },
+     {
+      "de": "56815188418",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "40%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "41707536406",
+      "tipo": "administracao",
+      "rotulo": "administra · em conjunto",
+      "status": "valido",
+      "doc": "MANDACARU_CS"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "56815188418",
+      "tipo": "administracao",
+      "rotulo": "administra · em conjunto",
+      "status": "valido",
+      "doc": "MANDACARU_CS"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2023-03-02",
+     "tipo": "ato",
+     "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+     "doc": "MANDACARU_CS",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-10-14",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 198.000,00"
+    }
+   ],
+   "pessoas": {
+    "41707536406": {
+     "nome": "Carlos Eduardo Bezerra",
+     "cpf": "41707536406"
+    },
+    "56815188418": {
+     "nome": "Luciana Moura Sampaio",
+     "cpf": "56815188418"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "comprovada",
+    "outorgante": {
+     "nome": "CONSTRUTORA MANDACARU LTDA.",
+     "cnpj": "42.014.613/0001-28",
+     "tipo": "LTDA",
+     "atos_vigentes": [
+      {
+       "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+       "doc": "MANDACARU_CS",
+       "efeito": "2023-03-02"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "Carlos Eduardo Bezerra",
+      "cpf": "417.075.364-06",
+      "identificacao": "CPF",
+      "qualidade": "Sócio-Administrador"
+     },
+     {
+      "nome": "Luciana Moura Sampaio",
+      "cpf": "568.151.884-18",
+      "identificacao": "CPF",
+      "qualidade": "Sócia-Administradora"
+     }
+    ],
+    "poderes_conferidos": [
+     "Alteração e Consolidação do Contrato Social (2023), Cláusula Sexta: assinatura conjunta exigida"
+    ],
+    "prazo_validade": [
+     "Carlos Eduardo Bezerra (Sócio-Administrador): mandato por prazo indeterminado",
+     "Luciana Moura Sampaio (Sócia-Administradora): mandato por prazo indeterminado"
+    ],
+    "revogacao": [
+     "Poder decorre do ato constitutivo vigente na data da venda; recomenda-se certidão simplificada atualizada da Junta Comercial para afastar alteração posterior ainda não apresentada."
+    ],
+    "fontes": [
+     {
+      "doc_id": "MANDACARU_CS",
+      "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+      "trecho": "sendo vedada a prática isolada de qualquer ato de alienação ou oneração de bens da sociedade",
+      "clausula": "Cláusula Sexta",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3736,
+      "fim": 3828
+     },
+     {
+      "doc_id": "MANDACARU_CS",
+      "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+      "trecho": "A administração da sociedade será exercida conjuntamente pelos sócios CARLOS EDUARDO BEZERRA e LUCIANA MOURA SAMPAIO, aos quais compete, sempre em conjunto, a representação ativa e passiva da sociedade, em juízo ou fora dele, e a prática de todos os atos de gestão compreendidos no objeto social, sendo vedada a prática isolada de qualquer ato de alienação ou oneração de bens da sociedade.",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3439,
+      "fim": 3829
+     },
+     {
+      "doc_id": "MANDACARU_CS",
+      "doc_titulo": "Alteração e Consolidação do Contrato Social (2023)",
+      "trecho": "A administração da sociedade será exercida conjuntamente pelos sócios CARLOS EDUARDO BEZERRA e LUCIANA MOURA SAMPAIO, aos quais compete, sempre em conjunto, a representação ativa e passiva da sociedade, em juízo ou fora dele, e a prática de todos os atos de gestão compreendidos no objeto social, sendo vedada a prática isolada de qualquer ato de alienação ou oneração de bens da sociedade.",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3439,
+      "fim": 3829
+     }
+    ],
+    "documentos_verificaveis": [
+     {
+      "id": "CRLV",
+      "titulo": "CRLV",
+      "arquivo": "CRLV.pdf"
+     },
+     {
+      "id": "MANDACARU_CS",
+      "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+      "arquivo": "MANDACARU_CS.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "CRLV",
+     "nome": "CRLV.pdf",
+     "tipo": "crlv",
+     "titulo": "CRLV",
+     "data": null,
+     "paginas": [
+      "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n04415366979\nPLACA\nZEK4L19\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2022\nANO MODELO\n2022\nNÚMERO DO CRV\n437714920884\nCÓDIGO DE SEGURANÇA DO CLA\n12461560545\nMARCA / MODELO / VERSÃO\nGM/S10 CD LT 2.8 4X4\nESPÉCIE / TIPO\nCARGA/CAMINHONETE\nCHASSI\n9BG53Y125620PA1ME\nCOR PREDOMINANTE\nPRATA\nCOMBUSTÍVEL\nDIESEL\nNOME\nCONSTRUTORA MANDACARU LTDA.\nCPF / CNPJ\n42.014.613/0001-28\nLOCAL\nFORTALEZA/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "5a12a795cf1a1d6f10fc4afd40e47e703b83b228247be5f7297938c88b844309",
+     "leitura": {
+      "tarefas": {
+       "crlv": {
+        "metodo": "regex"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "MANDACARU_CS",
+     "nome": "MANDACARU_CS.pdf",
+     "tipo": "contrato_consolidado",
+     "titulo": "Alteração e Consolidação do Contrato Social (2023)",
+     "data": "2023-03-02",
+     "paginas": [
+      "CONSTRUTORA MANDACARU LTDA. CNPJ nº 42.014.613/0001-28 – NIRE 23802404048\nQUARTA ALTERAÇÃO E CONSOLIDAÇÃO DO CONTRATO SOCIAL\nPelo presente instrumento particular, os abaixo qualificados:\nCARLOS EDUARDO BEZERRA, brasileiro, casado sob o regime de comunhão parcial de bens,\nengenheiro civil, portador da Cédula de Identidade RG nº 47661846 SSP/CE, inscrito no CPF sob o\nnº 417.075.364-06, residente e domiciliado na Rua das Jangadas, nº 315, apartamento 1.201, bairro\nMeireles, Fortaleza/CE, CEP 60165-090; e\nLUCIANA MOURA SAMPAIO, brasileira, solteira, arquiteta, portadora da Cédula de Identidade\nRG nº 39601278 SSP/CE, inscrita no CPF sob o nº 568.151.884-18, residente e domiciliada na\nTravessa dos Coqueiros, nº 88, casa 4, bairro Cocó, Fortaleza/CE, CEP 60192-120;\núnicos sócios da sociedade empresária limitada CONSTRUTORA MANDACARU LTDA., com\nsede na Rua Sertão Alto, nº 1.040, sala 210, bairro Fátima, Fortaleza/CE, CEP 60040-410, inscrita\nno CNPJ sob o nº 42.014.613/0001-28, com seu ato constitutivo arquivado na Junta Comercial do\nEstado do Ceará sob o NIRE 23802404048, em sessão de 26/09/2017, e alterações posteriores, a\núltima delas (Terceira Alteração) arquivada sob o nº 21876540319, em 14/06/2021, resolvem alterar\ne consolidar o contrato social, mediante as cláusulas e condições seguintes:\nCLÁUSULA PRIMEIRA – DA ALTERAÇÃO DO ENDEREÇO DA SEDE\nA sede da sociedade, atualmente situada na Rua Sertão Alto, nº 1.040, sala 210, bairro Fátima,\nFortaleza/CE, CEP 60040-410, fica transferida para a Avenida Jardim das Dunas, nº 2.977, sala 805,\nbairro Papicu, Fortaleza/CE, CEP 60175-650.\nCLÁUSULA SEGUNDA – DA CONSOLIDAÇÃO\nEm razão da alteração ora deliberada, os sócios resolvem consolidar o contrato social, que passa a\nvigorar com a redação abaixo, a qual substitui integralmente as disposições anteriores.\nCONTRATO SOCIAL CONSOLIDADO\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL E DA SEDE\nA sociedade gira sob o nome empresarial CONSTRUTORA MANDACARU LTDA. e tem sede na\nAvenida Jardim das Dunas, nº 2.977, sala 805, bairro Papicu, Fortaleza/CE, CEP 60175-650,\npodendo abrir e encerrar filiais em qualquer parte do território nacional, mediante alteração\ncontratual.\nCLÁUSULA SEGUNDA – DO OBJETO SOCIAL\nA sociedade tem por objeto a construção de edifícios, obras de urbanização e incorporação de\nempreendimentos imobiliários, compreendendo as atividades classificadas nos códigos CNAE\n4120-4/00 (construção de edifícios), 4213-8/00 (obras de urbanização – ruas, praças e calçadas) e\n4110-7/00 (incorporação de empreendimentos imobiliários).\nCLÁUSULA TERCEIRA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciou suas atividades em 26 de setembro de 2017, e seu prazo de duração é\nindeterminado.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+      "CLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 500.000,00 (quinhentos mil reais), dividido em 500.000 (quinhentas mil)\nquotas de valor nominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas em\nmoeda corrente do País, assim distribuídas:\nSócio\nQuotas\nValor (R$)\nParticipação\nCARLOS EDUARDO BEZERRA\n300.000\n300.000,00\n60%\nLUCIANA MOURA SAMPAIO\n200.000\n200.000,00\n40%\nTOTAL\n500.000\n500.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social.\nCLÁUSULA SEXTA – DA ADMINISTRAÇÃO\nA administração da sociedade será exercida conjuntamente pelos sócios CARLOS EDUARDO\nBEZERRA e LUCIANA MOURA SAMPAIO, aos quais compete, sempre em conjunto, a\nrepresentação ativa e passiva da sociedade, em juízo ou fora dele, e a prática de todos os atos de\ngestão compreendidos no objeto social, sendo vedada a prática isolada de qualquer ato de alienação\nou oneração de bens da sociedade.\nParágrafo primeiro. É vedado o uso do nome empresarial em atividades estranhas ao objeto social,\nespecialmente em avais, fianças e endossos de favor.\nParágrafo segundo. Os administradores farão jus a uma retirada mensal, a título de pró-labore, fixada\nde comum acordo entre os sócios.\nCLÁUSULA SÉTIMA – DO EXERCÍCIO SOCIAL E DOS RESULTADOS\nO exercício social coincide com o ano civil. Ao término de cada exercício, os administradores\nprestarão contas justificadas de sua administração, procedendo à elaboração do inventário, do\nbalanço patrimonial e do balanço de resultado econômico, cabendo aos sócios, na proporção de suas\nquotas, os lucros ou as perdas apurados.\nParágrafo único. Nos quatro meses seguintes ao término do exercício social, os sócios deliberarão\nsobre as contas e a destinação dos resultados.\nCLÁUSULA OITAVA – DA CESSÃO DE QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas ou transferidas a terceiros sem o consentimento\ndo outro sócio, a quem fica assegurado, em igualdade de condições e preço, o direito de preferência\npara a sua aquisição.\nCLÁUSULA NONA – DO FALECIMENTO OU DA INTERDIÇÃO DE SÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros ou sucessores. Não sendo possível ou inexistindo interesse destes ou do sócio\nremanescente, os haveres do sócio falecido ou interditado serão apurados com base em balanço\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+      "especialmente levantado na data do evento e pagos aos herdeiros em 12 (doze) parcelas mensais e\nsucessivas.\nCLÁUSULA DÉCIMA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nOs administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade, por lei especial, ou em virtude de condenação criminal, ou por se\nencontrarem sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\npúblicos; ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato, ou contra\na economia popular, contra o sistema financeiro nacional, contra normas de defesa da concorrência,\ncontra as relações de consumo, a fé pública ou a propriedade.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FORO\nFica eleito o foro da Comarca de Fortaleza, Estado do Ceará, para dirimir quaisquer controvérsias\ndecorrentes deste contrato, com renúncia a qualquer outro, por mais privilegiado que seja.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento, que será levado\na arquivamento na Junta Comercial do Estado do Ceará.\nFortaleza/CE, 2 de março de 2023.\n__________________________________ CARLOS EDUARDO BEZERRA\n__________________________________ LUCIANA MOURA SAMPAIO\nVisto: Débora Maciel Nogueira – OAB/CE nº 27.912\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 10/03/2023 sob o nº 19033757879\nProtocolo: 23/061.448-0 | NIRE: 23802404048\nEmpresa: CONSTRUTORA MANDACARU LTDA.\nAutenticação: B41E07D93C2A6F58E0D17A94C3B8F265\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "a9557f1831eee9bf2b445609f638c1b142abcf9ed8880b9955931402654791c8",
+     "leitura": {
+      "tarefas": {
+       "partes": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 36.5,
+        "tokens_saida": 803,
+        "modelo": "qwen3.8-27b"
+       },
+       "regras": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 26.9,
+        "tokens_saida": 831,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "llamacpp",
+    "modelo": "qwen3.8-27b",
+    "politica": "DETRAN-CE"
+   },
+   "lado": "vendedor"
+  },
+  "comprador": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T10:07:51",
+   "pedido": {
+    "veiculo": {
+     "descricao": "GM/S10 CD LT 2.8 4X4",
+     "placa": "ZEK4L19",
+     "renavam": "04415366979",
+     "chassi": "9BG53Y125620PA1ME"
+    },
+    "data_venda": "2026-10-14",
+    "valor": 198000.0,
+    "assinantes": [
+     {
+      "nome": "ANA BEATRIZ HOLANDA",
+      "cpf": "698.716.897-05"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "LOCADORA JANGADA LTDA.",
+    "vendedor_cnpj": "38.005.305/0001-69",
+    "lado": "comprador"
+   },
+   "empresa": {
+    "razao_social": "LOCADORA JANGADA LTDA.",
+    "cnpj": "38.005.305/0001-69",
+    "tipo": "LTDA",
+    "objeto": "locação de automóveis sem condutor e a gestão de frotas",
+    "comercializa_veiculos": false,
+    "subtipo": null
+   },
+   "veredito": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 7.5,
+   "confianca": 0.85,
+   "componentes": {
+    "leitura": 0.85,
+    "juridica": 1.0,
+    "fatos_decisivos": 2,
+    "menor_confianca_fato": 0.8,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 7.5 ≤ limiar 15"
+   ],
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Francisco Wellington Rocha. Regra aplicável: compra e venda de veículos (Cláusula Sétima).",
+   "assinantes": [
+    {
+     "informado": "ANA BEATRIZ HOLANDA",
+     "cpf": "698.716.897-05",
+     "chave": "69871689705",
+     "nome": "Ana Beatriz Holanda",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:72940557691",
+     "pessoas": [
+      {
+       "chave": "72940557691",
+       "nome": "Francisco Wellington Rocha"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "compra e venda de veículos — Cláusula Sétima",
+     "cadeia": [
+      "JANGADA_CS"
+     ],
+     "severidade": "atencao",
+     "confianca": 0.8,
+     "achados": [
+      {
+       "codigo": "CONFERENCIA_LEXICA",
+       "severidade": "atencao",
+       "titulo": "Leitura da IA corrigida pela conferência léxica",
+       "detalhe": "Campo 'escopo': a IA leu 'onerar_bens', mas as expressões  indicam 'alienacao_veiculos'.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "JANGADA_CS",
+         "doc_titulo": "Contrato Social (2020)",
+         "trecho": "A administração da sociedade cabe exclusivamente ao sócio FRANCISCO WELLINGTON ROCHA, que representará a sociedade isoladamente, ativa e passivamente, judicial e extrajudicialmente, com poderes para praticar todos os atos de gestão compreendidos no objeto social, inclusive comprar, vender e alienar os veículos integrantes da frota da sociedade, celebrar contratos de locação com clientes, abrir e movimentar contas bancárias, emitir e endossar cheques e duplicatas e representar a sociedade perante quaisquer repartições públicas.",
+         "clausula": "Cláusula Sétima",
+         "ancoragem": 100.0,
+         "pagina": 2,
+         "inicio": 3153,
+         "fim": 3685
+        }
+       ],
+       "caminho": "contrato"
+      }
+     ],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [],
+   "caminho_escolhido": null,
+   "faltantes": [
+    {
+     "alternativa": "contrato:72940557691",
+     "via": "contrato",
+     "descricao": "compra e venda de veículos — Cláusula Sétima",
+     "pessoas": [
+      "72940557691"
+     ],
+     "faltam": [
+      "72940557691"
+     ],
+     "faltam_nomes": [
+      "Francisco Wellington Rocha"
+     ],
+     "pessoas_nomes": [
+      "Francisco Wellington Rocha"
+     ]
+    }
+   ],
+   "achados": [],
+   "regras": [
+    {
+     "regra": "JANGADA_CS#R1",
+     "escopo": "alienacao_veiculos",
+     "aplicavel": true,
+     "motivo": "aquisição de veículos",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "JANGADA_CS",
+      "doc_titulo": "Contrato Social (2020)",
+      "trecho": "A administração da sociedade cabe exclusivamente ao sócio FRANCISCO WELLINGTON ROCHA, que representará a sociedade isoladamente, ativa e passivamente, judicial e extrajudicialmente, com poderes para praticar todos os atos de gestão compreendidos no objeto social, inclusive comprar, vender e alienar os veículos integrantes da frota da sociedade, celebrar contratos de locação com clientes, abrir e movimentar contas bancárias, emitir e endossar cheques e duplicatas e representar a sociedade perante quaisquer repartições públicas.",
+      "clausula": "Cláusula Sétima",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3153,
+      "fim": 3685
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Francisco Wellington Rocha"
+     ],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente"
+       ]
+      }
+     ],
+     "decisiva": true
+    },
+    {
+     "regra": "JANGADA_CS#R2",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "JANGADA_CS",
+      "doc_titulo": "Contrato Social (2020)",
+      "trecho": "A administração da sociedade cabe exclusivamente ao sócio FRANCISCO WELLINGTON ROCHA, que representará a sociedade isoladamente, ativa e passivamente, judicial e extrajudicialmente, com poderes para praticar todos os atos de gestão compreendidos no objeto social, inclusive comprar, vender e alienar os veículos integrantes da frota da sociedade, celebrar contratos de locação com clientes, abrir e movimentar contas bancárias, emitir e endossar cheques e duplicatas e representar a sociedade perante quaisquer repartições públicas.",
+      "clausula": "Cláusula Sétima",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3153,
+      "fim": 3685
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Francisco Wellington Rocha"
+     ],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente"
+       ]
+      }
+     ],
+     "decisiva": false
+    },
+    {
+     "regra": "JANGADA_CS#R3",
+     "escopo": "alienacao_veiculos",
+     "aplicavel": true,
+     "motivo": "aquisição de veículos",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "JANGADA_CS",
+      "doc_titulo": "Contrato Social (2020)",
+      "trecho": "A administração da sociedade cabe exclusivamente ao sócio FRANCISCO WELLINGTON ROCHA, que representará a sociedade isoladamente, ativa e passivamente, judicial e extrajudicialmente, com poderes para praticar todos os atos de gestão compreendidos no objeto social, inclusive comprar, vender e alienar os veículos integrantes da frota da sociedade, celebrar contratos de locação com clientes, abrir e movimentar contas bancárias, emitir e endossar cheques e duplicatas e representar a sociedade perante quaisquer repartições públicas.",
+      "clausula": "Cláusula Sétima",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3153,
+      "fim": 3685
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Francisco Wellington Rocha"
+     ],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 0.8,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente"
+       ]
+      },
+      {
+       "campo": "escopo",
+       "valor_llm": "onerar_bens",
+       "valor_lexico": "alienacao_veiculos",
+       "divergiu": true,
+       "corrigido_para": "alienacao_veiculos",
+       "expressoes": []
+      }
+     ],
+     "decisiva": true
+    },
+    {
+     "regra": "JANGADA_CS#R5",
+     "escopo": "obrigacoes_garantias",
+     "aplicavel": false,
+     "motivo": "regra de venda/alienação (não se aplica à compra)",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "JANGADA_CS",
+      "doc_titulo": "Contrato Social (2020)",
+      "trecho": "Parágrafo segundo. É vedado ao administrador o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+      "clausula": "Cláusula Sétima, Parágrafo segundo",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3899,
+      "fim": 4064
+     },
+     "modo": "nao_especificado",
+     "pessoas": [
+      "Francisco Wellington Rocha"
+     ],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-10-14",
+    "atos": [
+     {
+      "doc": "JANGADA_CS",
+      "titulo": "Contrato Social (2020)",
+      "efeito": "2020-02-14"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "72940557691",
+      "nome": "Francisco Wellington Rocha",
+      "cargo": "Sócio-Administrador",
+      "doc": "JANGADA_CS"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "72940557691",
+      "nome": "Francisco Wellington Rocha",
+      "percentual": 40.0
+     },
+     {
+      "chave": "69871689705",
+      "nome": "Ana Beatriz Holanda",
+      "percentual": 35.0
+     },
+     {
+      "chave": "84697880943",
+      "nome": "Raimundo Nonato Pires",
+      "percentual": 25.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "LOCADORA JANGADA LTDA.",
+      "sub": "38.005.305/0001-69"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "GM/S10 CD LT 2.8 4X4",
+      "sub": "ZEK4L19"
+     },
+     {
+      "id": "72940557691",
+      "tipo": "pessoa",
+      "rotulo": "Francisco Wellington Rocha",
+      "papeis": [
+       "sócio 40%",
+       "Sócio-Administrador"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "69871689705",
+      "tipo": "pessoa",
+      "rotulo": "Ana Beatriz Holanda",
+      "papeis": [
+       "sócio 35%"
+      ],
+      "assinante": true
+     },
+     {
+      "id": "84697880943",
+      "tipo": "pessoa",
+      "rotulo": "Raimundo Nonato Pires",
+      "papeis": [
+       "sócio 25%"
+      ],
+      "assinante": false
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "alerta"
+     },
+     {
+      "de": "72940557691",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "40%",
+      "status": "neutro"
+     },
+     {
+      "de": "69871689705",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "35%",
+      "status": "neutro"
+     },
+     {
+      "de": "84697880943",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "25%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "72940557691",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "JANGADA_CS"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2020-02-14",
+     "tipo": "ato",
+     "titulo": "Contrato Social (2020)",
+     "doc": "JANGADA_CS",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-10-14",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 198.000,00"
+    }
+   ],
+   "pessoas": {
+    "72940557691": {
+     "nome": "Francisco Wellington Rocha",
+     "cpf": "72940557691"
+    },
+    "69871689705": {
+     "nome": "Ana Beatriz Holanda",
+     "cpf": "69871689705"
+    },
+    "84697880943": {
+     "nome": "Raimundo Nonato Pires",
+     "cpf": "84697880943"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "não comprovada",
+    "outorgante": {
+     "nome": "LOCADORA JANGADA LTDA.",
+     "cnpj": "38.005.305/0001-69",
+     "tipo": "LTDA",
+     "atos_vigentes": [
+      {
+       "titulo": "Contrato Social (2020)",
+       "doc": "JANGADA_CS",
+       "efeito": "2020-02-14"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "Ana Beatriz Holanda",
+      "cpf": "698.716.897-05",
+      "identificacao": "CPF",
+      "qualidade": "sócio(a) sem poder de administração"
+     }
+    ],
+    "poderes_conferidos": [
+     "Contrato Social (2020), Cláusula Sétima: para este veículo, exige Francisco Wellington Rocha.",
+     "Contrato Social (2020), Cláusula Sétima: para este veículo, exige Francisco Wellington Rocha.",
+     "Assinantes informados (Ana Beatriz Holanda) não atendem a essa exigência."
+    ],
+    "prazo_validade": [
+     "—"
+    ],
+    "revogacao": [
+     "—"
+    ],
+    "fontes": [
+     {
+      "doc_id": "JANGADA_CS",
+      "doc_titulo": "Contrato Social (2020)",
+      "trecho": "A administração da sociedade cabe exclusivamente ao sócio FRANCISCO WELLINGTON ROCHA, que representará a sociedade isoladamente, ativa e passivamente, judicial e extrajudicialmente, com poderes para praticar todos os atos de gestão compreendidos no objeto social, inclusive comprar, vender e alienar os veículos integrantes da frota da sociedade, celebrar contratos de locação com clientes, abrir e movimentar contas bancárias, emitir e endossar cheques e duplicatas e representar a sociedade perante quaisquer repartições públicas.",
+      "clausula": "Cláusula Sétima",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3153,
+      "fim": 3685
+     },
+     {
+      "doc_id": "JANGADA_CS",
+      "doc_titulo": "Contrato Social (2020)",
+      "trecho": "A administração da sociedade cabe exclusivamente ao sócio FRANCISCO WELLINGTON ROCHA, que representará a sociedade isoladamente, ativa e passivamente, judicial e extrajudicialmente, com poderes para praticar todos os atos de gestão compreendidos no objeto social, inclusive comprar, vender e alienar os veículos integrantes da frota da sociedade, celebrar contratos de locação com clientes, abrir e movimentar contas bancárias, emitir e endossar cheques e duplicatas e representar a sociedade perante quaisquer repartições públicas.",
+      "clausula": "Cláusula Sétima",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3153,
+      "fim": 3685
+     }
+    ],
+    "documentos_verificaveis": [
+     {
+      "id": "JANGADA_CS",
+      "titulo": "Contrato Social (2020)",
+      "arquivo": "JANGADA_CS.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "JANGADA_CS",
+     "nome": "JANGADA_CS.pdf",
+     "tipo": "contrato_social",
+     "titulo": "Contrato Social (2020)",
+     "data": "2020-02-14",
+     "paginas": [
+      "LOCADORA JANGADA LTDA. CNPJ nº 38.005.305/0001-69 – NIRE 23200695442\nCONTRATO SOCIAL DE CONSTITUIÇÃO\nPelo presente instrumento particular, as partes abaixo qualificadas:\nFRANCISCO WELLINGTON ROCHA, brasileiro, casado sob o regime de comunhão parcial de\nbens, empresário, portador da Cédula de Identidade RG nº 13171427 SSP/CE, inscrito no CPF sob o\nnº 729.405.576-91, residente e domiciliado na Rua dos Cajueiros, nº 702, bairro Icaraí, Caucaia/CE,\nCEP 61627-180;\nANA BEATRIZ HOLANDA, brasileira, casada sob o regime de separação total de bens, contadora,\nportadora da Cédula de Identidade RG nº 54438575 SSP/CE, inscrita no CPF sob o nº\n698.716.897-05, residente e domiciliada na Rua Lagoa Seca, nº 1.315, apartamento 503, bairro\nJoaquim Távora, Fortaleza/CE, CEP 60130-305; e\nRAIMUNDO NONATO PIRES, brasileiro, viúvo, comerciante, portador da Cédula de Identidade\nRG nº 31135217 SSP/CE, inscrito no CPF sob o nº 846.978.809-43, residente e domiciliado na Rua\nSerra Verde, nº 96, Centro, Maranguape/CE, CEP 61940-085;\nresolvem, de comum acordo, constituir uma sociedade empresária limitada, que se regerá pelas\ncláusulas e condições seguintes e, nas omissões, pela Lei nº 10.406, de 10 de janeiro de 2002\n(Código Civil).\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL E DA SEDE\nA sociedade girará sob o nome empresarial LOCADORA JANGADA LTDA. e terá sede na\nAvenida Praia Mansa, nº 3.150, bairro Tabapuá, Caucaia/CE, CEP 61600-420, podendo abrir e\nencerrar filiais em qualquer parte do território nacional, mediante alteração contratual.\nCLÁUSULA SEGUNDA – DO OBJETO SOCIAL\nA sociedade tem por objeto a locação de automóveis sem condutor e a gestão de frotas,\ncompreendendo a atividade classificada no código CNAE 7711-0/00 (locação de automóveis sem\ncondutor).\nCLÁUSULA TERCEIRA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciará suas atividades na data do arquivamento deste instrumento na Junta Comercial\ndo Estado do Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 400.000,00 (quatrocentos mil reais), dividido em 400.000 (quatrocentas mil)\nquotas de valor nominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas, neste\nato, em moeda corrente do País, assim distribuídas entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nFRANCISCO WELLINGTON ROCHA\n160.000\n160.000,00\n40%\nANA BEATRIZ HOLANDA\n140.000\n140.000,00\n35%\nRAIMUNDO NONATO PIRES\n100.000\n100.000,00\n25%\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+      "Sócio\nQuotas\nValor (R$)\nParticipação\nTOTAL\n400.000\n400.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social.\nCLÁUSULA SEXTA – DA CESSÃO E TRANSFERÊNCIA DE QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas ou transferidas a terceiros sem o consentimento\ndos demais sócios, aos quais fica assegurado, em igualdade de condições e preço e na proporção de\nsuas participações, o direito de preferência para a sua aquisição, se postas à venda.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade cabe exclusivamente ao sócio FRANCISCO WELLINGTON\nROCHA, que representará a sociedade isoladamente, ativa e passivamente, judicial e\nextrajudicialmente, com poderes para praticar todos os atos de gestão compreendidos no objeto\nsocial, inclusive comprar, vender e alienar os veículos integrantes da frota da sociedade, celebrar\ncontratos de locação com clientes, abrir e movimentar contas bancárias, emitir e endossar cheques e\nduplicatas e representar a sociedade perante quaisquer repartições públicas.\nParágrafo primeiro. Os sócios ANA BEATRIZ HOLANDA e RAIMUNDO NONATO PIRES\nparticipam da sociedade exclusivamente na qualidade de quotistas, não lhes cabendo poderes de\nadministração nem o uso do nome empresarial.\nParágrafo segundo. É vedado ao administrador o uso do nome empresarial em atividades estranhas\nao objeto social, especialmente em avais, fianças e endossos de favor.\nParágrafo terceiro. O administrador fará jus a uma retirada mensal, a título de pró-labore, em valor\nfixado pelos sócios, observadas as disposições regulamentares pertinentes.\nCLÁUSULA OITAVA – DO EXERCÍCIO SOCIAL E DOS RESULTADOS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, o administrador prestará\ncontas justificadas de sua administração, procedendo à elaboração do inventário, do balanço\npatrimonial e do balanço de resultado econômico, cabendo aos sócios, na proporção de suas quotas,\nos lucros ou as perdas apurados.\nParágrafo único. Nos quatro meses seguintes ao término do exercício social, os sócios deliberarão\nsobre as contas apresentadas pelo administrador e sobre a destinação dos resultados.\nCLÁUSULA NONA – DO FALECIMENTO OU DA INTERDIÇÃO DE SÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros, sucessores e o incapaz. Não sendo possível ou inexistindo interesse destes ou dos sócios\nremanescentes, o valor de seus haveres será apurado e liquidado com base na situação patrimonial da\nsociedade, à data da resolução, verificada em balanço especialmente levantado.\nCLÁUSULA DÉCIMA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+      "O administrador declara, sob as penas da lei, que não está impedido de exercer a administração da\nsociedade, por lei especial, ou em virtude de condenação criminal, ou por se encontrar sob os efeitos\ndela, a pena que vede, ainda que temporariamente, o acesso a cargos públicos; ou por crime\nfalimentar, de prevaricação, peita ou suborno, concussão, peculato, ou contra a economia popular,\ncontra o sistema financeiro nacional, contra normas de defesa da concorrência, contra as relações de\nconsumo, a fé pública ou a propriedade.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FORO\nFica eleito o foro da Comarca de Caucaia, Estado do Ceará, para dirimir quaisquer dúvidas ou\nlitígios oriundos deste contrato, com renúncia expressa a qualquer outro, por mais privilegiado que\nseja.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em via única,\nque será levada a arquivamento na Junta Comercial do Estado do Ceará.\nCaucaia/CE, 14 de fevereiro de 2020.\n__________________________________ FRANCISCO WELLINGTON ROCHA\n__________________________________ ANA BEATRIZ HOLANDA\n__________________________________ RAIMUNDO NONATO PIRES\nVisto: Henrique Bastos Arruda – OAB/CE nº 21.604\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 27/02/2020 sob o nº 62020989637\nProtocolo: 20/037.912-6 | NIRE: 23200695442\nEmpresa: LOCADORA JANGADA LTDA.\nAutenticação: 3C9D52A0F81E47B6C2A09D3E5F7184BC\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "4d0c4a2c6613921e47e8409cfa27517a7a90e75e01cf982da05871528de1b353",
+     "leitura": {
+      "tarefas": {
+       "partes": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 28.4,
+        "tokens_saida": 576,
+        "modelo": "qwen3.8-27b"
+       },
+       "regras": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 37.1,
+        "tokens_saida": 1410,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "llamacpp",
+    "modelo": "qwen3.8-27b",
+    "politica": "DETRAN-CE"
+   },
+   "lado": "comprador"
+  }
+ },
+ "geral": {
+  "veredito": "NAO_PODE",
+  "faixa": "VERMELHO",
+  "indice": 7.5,
+  "resumo": "Vendedor: Carlos Eduardo Bezerra e Luciana Moura Sampaio podem, em conjunto, assinar a ATPV-e — alienação de bens — Cláusula Sexta. · Comprador: Os assinantes informados não bastam. Quem pode assinar: Francisco Wellington Rocha. Regra aplicável: compra e venda de veículos (Cláusula Sétima).",
+  "motivos_faixa": [
+   "Vendedor — índice 100 ≥ limiar 85",
+   "Comprador — índice 7.5 ≤ limiar 15"
+  ],
+  "lados": [
+   "vendedor",
+   "comprador"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "GM/S10 CD LT 2.8 4X4",
+   "placa": "ZEK4L19",
+   "renavam": "04415366979",
+   "chassi": "9BG53Y125620PA1ME"
+  },
+  "data_venda": "2026-10-14",
+  "valor": 198000.0,
+  "vendedor": {
+   "tipo": "PJ",
+   "nome": "CONSTRUTORA MANDACARU LTDA.",
+   "documento": "42.014.613/0001-28",
+   "assinantes": [
+    {
+     "nome": "CARLOS EDUARDO BEZERRA",
+     "cpf": "417.075.364-06"
+    },
+    {
+     "nome": "LUCIANA MOURA SAMPAIO",
+     "cpf": "568.151.884-18"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PJ",
+   "nome": "LOCADORA JANGADA LTDA.",
+   "documento": "38.005.305/0001-69",
+   "assinantes": [
+    {
+     "nome": "ANA BEATRIZ HOLANDA",
+     "cpf": "698.716.897-05"
+    }
+   ]
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "ATPV-e"
+ },
+ "hash_entrada": "4ec4097575e551c6b5c17c3461ad19035c67ff2e3af22a7e8de8323441c93b3d"
+}

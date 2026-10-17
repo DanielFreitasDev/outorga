@@ -1,0 +1,43 @@
+{
+  "caso": "A12",
+  "titulo": "MEI compra: a esposa do titular assina",
+  "categoria": "tipos",
+  "objetivo": "Quem não é o titular do MEI não assina por ele sem procuração.",
+  "validacao_cega": false,
+  "lote": "atpv",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "comprador": {
+      "veredito": "NAO_PODE",
+      "faixas_aceitaveis": [
+        "VERMELHO"
+      ],
+      "conjuntos_minimos": [
+        [
+          "ROGERIO"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "714.092.128-82"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Rogério Fernandes Lima"
+        ]
+      ]
+    }
+  }
+}

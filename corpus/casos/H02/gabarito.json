@@ -1,0 +1,57 @@
+{
+  "caso": "H02",
+  "titulo": "Quaisquer dois dos três administradores — um assina",
+  "categoria": "administracao",
+  "objetivo": "k-de-n com redação nova.",
+  "validacao_cega": true,
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "LUCAS",
+        "RENATA"
+      ],
+      [
+        "LUCAS",
+        "CAIO"
+      ],
+      [
+        "RENATA",
+        "CAIO"
+      ]
+    ],
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": [
+      [
+        "822.512.393-08",
+        "045.052.855-37"
+      ],
+      [
+        "822.512.393-08",
+        "665.425.987-40"
+      ],
+      [
+        "045.052.855-37",
+        "665.425.987-40"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Lucas Ferreira Paz",
+        "Renata Albuquerque Paz"
+      ],
+      [
+        "Lucas Ferreira Paz",
+        "Caio Ferreira Paz"
+      ],
+      [
+        "Renata Albuquerque Paz",
+        "Caio Ferreira Paz"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

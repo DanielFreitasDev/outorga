@@ -1,0 +1,1502 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T12:00:02",
+ "pedido": {
+  "veiculo": {
+   "descricao": "M.BENZ/SPRINTER 415 CDI VAN",
+   "placa": "SJS4M40",
+   "renavam": "06705217816",
+   "chassi": "9BMTR0AKDH8MHX87W"
+  },
+  "data_venda": "2026-10-16",
+  "valor": null,
+  "assinantes": [
+   {
+    "nome": "CPF 939.761.584-02",
+    "cpf": "939.761.584-02"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": null,
+  "vendedor_cnpj": "38.005.305/0001-69",
+  "lado": "vendedor",
+  "consulta": true
+ },
+ "empresa": {
+  "razao_social": "LOCADORA JANGADA LTDA.",
+  "cnpj": "38.005.305/0001-69",
+  "tipo": "LTDA",
+  "objeto": "locação de automóveis sem condutor e gestão de frotas",
+  "comercializa_veiculos": false,
+  "subtipo": null
+ },
+ "veredito": "PODE",
+ "faixa": "VERDE",
+ "indice": 97.0,
+ "confianca": 0.94,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 0.94,
+  "fatos_decisivos": 2,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 1,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 97 ≥ limiar 85"
+ ],
+ "resumo": "Pedro Henrique Lima pode assinar a ATPV-e — procuração pública de 10/02/2026.",
+ "assinantes": [
+  {
+   "informado": "CPF 939.761.584-02",
+   "cpf": "939.761.584-02",
+   "chave": "93976158402",
+   "nome": "Pedro Henrique Lima",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:72940557691",
+   "pessoas": [
+    {
+     "chave": "72940557691",
+     "nome": "Francisco Wellington Rocha"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "alienação de veículos — Contrato Social (2020)",
+   "cadeia": [
+    "JANGADA_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  },
+  {
+   "id": "POA_PEDRO:93976158402",
+   "pessoas": [
+    {
+     "chave": "93976158402",
+     "nome": "Pedro Henrique Lima"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 10/02/2026",
+   "cadeia": [
+    "POA_PEDRO"
+   ],
+   "severidade": "atencao",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PJ",
+     "severidade": "ok",
+     "titulo": "Outorgada pela própria empresa",
+     "detalhe": "A outorgante é a empresa, representada por Francisco Wellington Rocha.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PEDRO",
+       "doc_titulo": "Procuração (POA_PEDRO)",
+       "trecho": "A FAVOR DE PEDRO HENRIQUE LIMA, NA FORMA ABAIXO: SAIBAM quantos este público instrumento de procuração virem que, aos dez (10) dias do mês de fevereiro do ano de dois mil e vinte e seis (2026), nesta cidade de Caucaia, Estado do Ceará, em cartório, perante mim, Cláudia Sombra Ribeiro, Escrevente Autorizada, compareceu como OUTORGANTE: LOCADORA JANGADA LTDA",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 250,
+       "fim": 608
+      }
+     ],
+     "caminho": "POA_PEDRO"
+    },
+    {
+     "codigo": "OUTORGA_COM_PODERES",
+     "severidade": "ok",
+     "titulo": "Quem outorgou tinha poder",
+     "detalhe": "Em 10/02/2026, Francisco Wellington Rocha podia representar a empresa nesse ato.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PEDRO",
+       "doc_titulo": "Procuração (POA_PEDRO)",
+       "trecho": "A FAVOR DE PEDRO HENRIQUE LIMA, NA FORMA ABAIXO: SAIBAM quantos este público instrumento de procuração virem que, aos dez (10) dias do mês de fevereiro do ano de dois mil e vinte e seis (2026), nesta cidade de Caucaia, Estado do Ceará, em cartório, perante mim, Cláudia Sombra Ribeiro, Escrevente Autorizada, compareceu como OUTORGANTE: LOCADORA JANGADA LTDA",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 250,
+       "fim": 608
+      },
+      {
+       "doc_id": "JANGADA_CS",
+       "doc_titulo": "Contrato Social (2020)",
+       "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade cabe exclusivamente ao sócio FRANCISCO WELLINGTON ROCHA, que representará a sociedade isoladamente, ativa e passivamente, judicial e extrajudicialmente, com poderes para praticar todos os atos de gestão compreendidos no objeto social, inclusive comprar, vender e alienar os veículos integrantes da frota da sociedade, celebrar contratos de locação com clientes, abrir e movimentar contas bancárias, emitir e endossar cheques e duplicatas e representar a sociedade perante quaisquer repartições públicas",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 3118,
+       "fim": 3684
+      }
+     ],
+     "caminho": "POA_PEDRO"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PEDRO",
+       "doc_titulo": "Procuração (POA_PEDRO)",
+       "trecho": "poderes especiais",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1925,
+       "fim": 1942
+      }
+     ],
+     "caminho": "POA_PEDRO"
+    },
+    {
+     "codigo": "PROCURACAO_NO_PRAZO",
+     "severidade": "ok",
+     "titulo": "Dentro do prazo",
+     "detalhe": "Válida até 10/02/2027.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "POA_PEDRO",
+       "doc_titulo": "Procuração (POA_PEDRO)",
+       "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano a contar da data da lavratura deste instrumento, podendo o outorgado substabelecer, no todo ou em parte, com reserva de iguais poderes",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2636,
+       "fim": 2823
+      }
+     ],
+     "caminho": "POA_PEDRO"
+    },
+    {
+     "codigo": "PROCURACAO_SEM_VEICULO",
+     "severidade": "atencao",
+     "titulo": "Procuração não identifica o veículo",
+     "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+     "fundamento": [
+      "CJF, Enunciado 183"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PEDRO",
+       "doc_titulo": "Procuração (POA_PEDRO)",
+       "trecho": "poderes especiais",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1925,
+       "fim": 1942
+      }
+     ],
+     "caminho": "POA_PEDRO"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": {
+  "id": "POA_PEDRO:93976158402",
+  "pessoas": [
+   {
+    "chave": "93976158402",
+    "nome": "Pedro Henrique Lima"
+   }
+  ],
+  "via": "procuracao",
+  "descricao": "Procuração pública de 10/02/2026",
+  "cadeia": [
+   "POA_PEDRO"
+  ],
+  "severidade": "atencao",
+  "confianca": 1.0,
+  "achados": [
+   {
+    "codigo": "OUTORGANTE_PJ",
+    "severidade": "ok",
+    "titulo": "Outorgada pela própria empresa",
+    "detalhe": "A outorgante é a empresa, representada por Francisco Wellington Rocha.",
+    "fundamento": [
+     "CC art. 1.018"
+    ],
+    "fontes": [
+     {
+      "doc_id": "POA_PEDRO",
+      "doc_titulo": "Procuração (POA_PEDRO)",
+      "trecho": "A FAVOR DE PEDRO HENRIQUE LIMA, NA FORMA ABAIXO: SAIBAM quantos este público instrumento de procuração virem que, aos dez (10) dias do mês de fevereiro do ano de dois mil e vinte e seis (2026), nesta cidade de Caucaia, Estado do Ceará, em cartório, perante mim, Cláudia Sombra Ribeiro, Escrevente Autorizada, compareceu como OUTORGANTE: LOCADORA JANGADA LTDA",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 250,
+      "fim": 608
+     }
+    ],
+    "caminho": "POA_PEDRO"
+   },
+   {
+    "codigo": "OUTORGA_COM_PODERES",
+    "severidade": "ok",
+    "titulo": "Quem outorgou tinha poder",
+    "detalhe": "Em 10/02/2026, Francisco Wellington Rocha podia representar a empresa nesse ato.",
+    "fundamento": [
+     "CC art. 1.018"
+    ],
+    "fontes": [
+     {
+      "doc_id": "POA_PEDRO",
+      "doc_titulo": "Procuração (POA_PEDRO)",
+      "trecho": "A FAVOR DE PEDRO HENRIQUE LIMA, NA FORMA ABAIXO: SAIBAM quantos este público instrumento de procuração virem que, aos dez (10) dias do mês de fevereiro do ano de dois mil e vinte e seis (2026), nesta cidade de Caucaia, Estado do Ceará, em cartório, perante mim, Cláudia Sombra Ribeiro, Escrevente Autorizada, compareceu como OUTORGANTE: LOCADORA JANGADA LTDA",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 250,
+      "fim": 608
+     },
+     {
+      "doc_id": "JANGADA_CS",
+      "doc_titulo": "Contrato Social (2020)",
+      "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade cabe exclusivamente ao sócio FRANCISCO WELLINGTON ROCHA, que representará a sociedade isoladamente, ativa e passivamente, judicial e extrajudicialmente, com poderes para praticar todos os atos de gestão compreendidos no objeto social, inclusive comprar, vender e alienar os veículos integrantes da frota da sociedade, celebrar contratos de locação com clientes, abrir e movimentar contas bancárias, emitir e endossar cheques e duplicatas e representar a sociedade perante quaisquer repartições públicas",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3118,
+      "fim": 3684
+     }
+    ],
+    "caminho": "POA_PEDRO"
+   },
+   {
+    "codigo": "PODERES_ESPECIAIS",
+    "severidade": "ok",
+    "titulo": "Poder expresso para alienar veículos",
+    "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+    "fundamento": [
+     "CC art. 661, §1º"
+    ],
+    "fontes": [
+     {
+      "doc_id": "POA_PEDRO",
+      "doc_titulo": "Procuração (POA_PEDRO)",
+      "trecho": "poderes especiais",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 1925,
+      "fim": 1942
+     }
+    ],
+    "caminho": "POA_PEDRO"
+   },
+   {
+    "codigo": "PROCURACAO_NO_PRAZO",
+    "severidade": "ok",
+    "titulo": "Dentro do prazo",
+    "detalhe": "Válida até 10/02/2027.",
+    "fundamento": [],
+    "fontes": [
+     {
+      "doc_id": "POA_PEDRO",
+      "doc_titulo": "Procuração (POA_PEDRO)",
+      "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano a contar da data da lavratura deste instrumento, podendo o outorgado substabelecer, no todo ou em parte, com reserva de iguais poderes",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 2636,
+      "fim": 2823
+     }
+    ],
+    "caminho": "POA_PEDRO"
+   },
+   {
+    "codigo": "PROCURACAO_SEM_VEICULO",
+    "severidade": "atencao",
+    "titulo": "Procuração não identifica o veículo",
+    "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+    "fundamento": [
+     "CJF, Enunciado 183"
+    ],
+    "fontes": [
+     {
+      "doc_id": "POA_PEDRO",
+      "doc_titulo": "Procuração (POA_PEDRO)",
+      "trecho": "poderes especiais",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 1925,
+      "fim": 1942
+     }
+    ],
+    "caminho": "POA_PEDRO"
+   }
+  ],
+  "precondicoes": []
+ },
+ "faltantes": [],
+ "achados": [
+  {
+   "codigo": "TITULARIDADE_BASE",
+   "severidade": "ok",
+   "titulo": "Proprietário conferido na base veicular",
+   "detalhe": "Pela placa/RENAVAM, o veículo está em nome de LOCADORA JANGADA LTDA..",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "JANGADA_CS#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "JANGADA_CS",
+    "doc_titulo": "Contrato Social (2020)",
+    "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade cabe exclusivamente ao sócio FRANCISCO",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3118,
+    "fim": 3220
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Francisco Wellington Rocha"
+   ],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "JANGADA_CS#R2",
+   "escopo": "alienacao_veiculos",
+   "aplicavel": true,
+   "motivo": "alienação de veículos",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "JANGADA_CS",
+    "doc_titulo": "Contrato Social (2020)",
+    "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade cabe exclusivamente ao sócio FRANCISCO WELLINGTON ROCHA, que representará a sociedade isoladamente, ativa e passivamente, judicial e extrajudicialmente, com poderes para praticar todos os atos de gestão compreendidos no objeto social, inclusive comprar, vender e alienar os veículos integrantes da frota da sociedade, celebrar contratos de locação com clientes, abrir e movimentar contas bancárias, emitir e endossar cheques e duplicatas e representar a sociedade perante quaisquer repartições públicas",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3118,
+    "fim": 3684
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Francisco Wellington Rocha"
+   ],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    }
+   ],
+   "decisiva": true
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-10-16",
+  "atos": [
+   {
+    "doc": "JANGADA_CS",
+    "titulo": "Contrato Social (2020)",
+    "efeito": "2020-02-14"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "72940557691",
+    "nome": "Francisco Wellington Rocha",
+    "cargo": "sócio administrador",
+    "doc": "JANGADA_CS"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "72940557691",
+    "nome": "Francisco Wellington Rocha",
+    "percentual": 40.0
+   },
+   {
+    "chave": "69871689705",
+    "nome": "Ana Beatriz Holanda",
+    "percentual": 35.0
+   },
+   {
+    "chave": "84697880943",
+    "nome": "Raimundo Nonato Pires",
+    "percentual": 25.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "LOCADORA JANGADA LTDA.",
+    "sub": "38.005.305/0001-69"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "M.BENZ/SPRINTER 415 CDI VAN",
+    "sub": "SJS4M40"
+   },
+   {
+    "id": "72940557691",
+    "tipo": "pessoa",
+    "rotulo": "Francisco Wellington Rocha",
+    "papeis": [
+     "sócio 40%",
+     "sócio administrador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "69871689705",
+    "tipo": "pessoa",
+    "rotulo": "Ana Beatriz Holanda",
+    "papeis": [
+     "sócio 35%"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "84697880943",
+    "tipo": "pessoa",
+    "rotulo": "Raimundo Nonato Pires",
+    "papeis": [
+     "sócio 25%"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "93976158402",
+    "tipo": "pessoa",
+    "rotulo": "Pedro Henrique Lima",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "alerta"
+   },
+   {
+    "de": "72940557691",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "40%",
+    "status": "neutro"
+   },
+   {
+    "de": "69871689705",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "35%",
+    "status": "neutro"
+   },
+   {
+    "de": "84697880943",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "25%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "72940557691",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "JANGADA_CS"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "93976158402",
+    "tipo": "procuracao",
+    "status": "valido",
+    "doc": "POA_PEDRO",
+    "rotulo": "procuração 10/02/2026",
+    "motivo": null
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2020-02-14",
+   "tipo": "ato",
+   "titulo": "Contrato Social (2020)",
+   "doc": "JANGADA_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-02-10",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Pedro Henrique Lima",
+   "doc": "POA_PEDRO",
+   "detalhe": "publica"
+  },
+  {
+   "data": "2026-10-16",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "valor não informado"
+  },
+  {
+   "data": "2027-02-10",
+   "tipo": "vencimento",
+   "titulo": "Vence a procuração de Pedro Henrique Lima",
+   "doc": "POA_PEDRO",
+   "detalhe": ""
+  }
+ ],
+ "pessoas": {
+  "72940557691": {
+   "nome": "Francisco Wellington Rocha",
+   "cpf": "72940557691"
+  },
+  "69871689705": {
+   "nome": "Ana Beatriz Holanda",
+   "cpf": "69871689705"
+  },
+  "84697880943": {
+   "nome": "Raimundo Nonato Pires",
+   "cpf": "84697880943"
+  },
+  "93976158402": {
+   "nome": "Pedro Henrique Lima",
+   "cpf": "93976158402"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "comprovada",
+  "outorgante": {
+   "nome": "LOCADORA JANGADA LTDA.",
+   "cnpj": "38.005.305/0001-69",
+   "tipo": "LTDA",
+   "cpf": null,
+   "documento": "38.005.305/0001-69",
+   "atos_vigentes": [
+    {
+     "titulo": "Contrato Social (2020)",
+     "doc": "JANGADA_CS",
+     "efeito": "2020-02-14"
+    }
+   ],
+   "titularidade": null
+  },
+  "outorgado": [
+   {
+    "nome": "Pedro Henrique Lima",
+    "cpf": "939.761.584-02",
+    "identificacao": "CPF",
+    "qualidade": "procurador(a)"
+   }
+  ],
+  "poderes_conferidos": [
+   "Procuração pública de 10/02/2026 (livro 312-P, folhas 088/089), outorgada por LOCADORA JANGADA LTDA. (repr. Francisco Wellington Rocha): poderes especiais e expressos para vender veículos e assinar a ATPV/ATPV-e"
+  ],
+  "prazo_validade": [
+   "Procuração pública válida até 10/02/2027"
+  ],
+  "revogacao": [
+   "Nenhuma revogação nos documentos apresentados; a revogação fica anotada na serventia de origem — confirmar com certidão atualizada do cartório."
+  ],
+  "fontes": [
+   {
+    "doc_id": "POA_PEDRO",
+    "doc_titulo": "Procuração (POA_PEDRO)",
+    "trecho": "poderes especiais",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 1925,
+    "fim": 1942
+   },
+   {
+    "doc_id": "POA_PEDRO",
+    "doc_titulo": "Procuração (POA_PEDRO)",
+    "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano a contar da data da lavratura deste instrumento, podendo o outorgado substabelecer, no todo ou em parte, com reserva de iguais poderes",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 2636,
+    "fim": 2823
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "JANGADA_CS",
+    "titulo": "Contrato Social (2020)",
+    "arquivo": "JANGADA_CS.pdf"
+   },
+   {
+    "id": "POA_PEDRO",
+    "titulo": "Procuração (POA_PEDRO)",
+    "arquivo": "POA_PEDRO.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "JANGADA_CS",
+   "nome": "JANGADA_CS.pdf",
+   "tipo": "contrato_social",
+   "titulo": "Contrato Social (2020)",
+   "data": "2020-02-14",
+   "paginas": [
+    "LOCADORA JANGADA LTDA. CNPJ nº 38.005.305/0001-69 – NIRE 23200695442\nCONTRATO SOCIAL DE CONSTITUIÇÃO\nPelo presente instrumento particular, as partes abaixo qualificadas:\nFRANCISCO WELLINGTON ROCHA, brasileiro, casado sob o regime de comunhão parcial de\nbens, empresário, portador da Cédula de Identidade RG nº 13171427 SSP/CE, inscrito no CPF sob o\nnº 729.405.576-91, residente e domiciliado na Rua dos Cajueiros, nº 702, bairro Icaraí, Caucaia/CE,\nCEP 61627-180;\nANA BEATRIZ HOLANDA, brasileira, casada sob o regime de separação total de bens, contadora,\nportadora da Cédula de Identidade RG nº 54438575 SSP/CE, inscrita no CPF sob o nº\n698.716.897-05, residente e domiciliada na Rua Lagoa Seca, nº 1.315, apartamento 503, bairro\nJoaquim Távora, Fortaleza/CE, CEP 60130-305; e\nRAIMUNDO NONATO PIRES, brasileiro, viúvo, comerciante, portador da Cédula de Identidade\nRG nº 31135217 SSP/CE, inscrito no CPF sob o nº 846.978.809-43, residente e domiciliado na Rua\nSerra Verde, nº 96, Centro, Maranguape/CE, CEP 61940-085;\nresolvem, de comum acordo, constituir uma sociedade empresária limitada, que se regerá pelas\ncláusulas e condições seguintes e, nas omissões, pela Lei nº 10.406, de 10 de janeiro de 2002\n(Código Civil).\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL E DA SEDE\nA sociedade girará sob o nome empresarial LOCADORA JANGADA LTDA. e terá sede na\nAvenida Praia Mansa, nº 3.150, bairro Tabapuá, Caucaia/CE, CEP 61600-420, podendo abrir e\nencerrar filiais em qualquer parte do território nacional, mediante alteração contratual.\nCLÁUSULA SEGUNDA – DO OBJETO SOCIAL\nA sociedade tem por objeto a locação de automóveis sem condutor e a gestão de frotas,\ncompreendendo a atividade classificada no código CNAE 7711-0/00 (locação de automóveis sem\ncondutor).\nCLÁUSULA TERCEIRA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciará suas atividades na data do arquivamento deste instrumento na Junta Comercial\ndo Estado do Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 400.000,00 (quatrocentos mil reais), dividido em 400.000 (quatrocentas mil)\nquotas de valor nominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas, neste\nato, em moeda corrente do País, assim distribuídas entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nFRANCISCO WELLINGTON ROCHA\n160.000\n160.000,00\n40%\nANA BEATRIZ HOLANDA\n140.000\n140.000,00\n35%\nRAIMUNDO NONATO PIRES\n100.000\n100.000,00\n25%\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "Sócio\nQuotas\nValor (R$)\nParticipação\nTOTAL\n400.000\n400.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social.\nCLÁUSULA SEXTA – DA CESSÃO E TRANSFERÊNCIA DE QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas ou transferidas a terceiros sem o consentimento\ndos demais sócios, aos quais fica assegurado, em igualdade de condições e preço e na proporção de\nsuas participações, o direito de preferência para a sua aquisição, se postas à venda.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade cabe exclusivamente ao sócio FRANCISCO WELLINGTON\nROCHA, que representará a sociedade isoladamente, ativa e passivamente, judicial e\nextrajudicialmente, com poderes para praticar todos os atos de gestão compreendidos no objeto\nsocial, inclusive comprar, vender e alienar os veículos integrantes da frota da sociedade, celebrar\ncontratos de locação com clientes, abrir e movimentar contas bancárias, emitir e endossar cheques e\nduplicatas e representar a sociedade perante quaisquer repartições públicas.\nParágrafo primeiro. Os sócios ANA BEATRIZ HOLANDA e RAIMUNDO NONATO PIRES\nparticipam da sociedade exclusivamente na qualidade de quotistas, não lhes cabendo poderes de\nadministração nem o uso do nome empresarial.\nParágrafo segundo. É vedado ao administrador o uso do nome empresarial em atividades estranhas\nao objeto social, especialmente em avais, fianças e endossos de favor.\nParágrafo terceiro. O administrador fará jus a uma retirada mensal, a título de pró-labore, em valor\nfixado pelos sócios, observadas as disposições regulamentares pertinentes.\nCLÁUSULA OITAVA – DO EXERCÍCIO SOCIAL E DOS RESULTADOS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, o administrador prestará\ncontas justificadas de sua administração, procedendo à elaboração do inventário, do balanço\npatrimonial e do balanço de resultado econômico, cabendo aos sócios, na proporção de suas quotas,\nos lucros ou as perdas apurados.\nParágrafo único. Nos quatro meses seguintes ao término do exercício social, os sócios deliberarão\nsobre as contas apresentadas pelo administrador e sobre a destinação dos resultados.\nCLÁUSULA NONA – DO FALECIMENTO OU DA INTERDIÇÃO DE SÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros, sucessores e o incapaz. Não sendo possível ou inexistindo interesse destes ou dos sócios\nremanescentes, o valor de seus haveres será apurado e liquidado com base na situação patrimonial da\nsociedade, à data da resolução, verificada em balanço especialmente levantado.\nCLÁUSULA DÉCIMA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "O administrador declara, sob as penas da lei, que não está impedido de exercer a administração da\nsociedade, por lei especial, ou em virtude de condenação criminal, ou por se encontrar sob os efeitos\ndela, a pena que vede, ainda que temporariamente, o acesso a cargos públicos; ou por crime\nfalimentar, de prevaricação, peita ou suborno, concussão, peculato, ou contra a economia popular,\ncontra o sistema financeiro nacional, contra normas de defesa da concorrência, contra as relações de\nconsumo, a fé pública ou a propriedade.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FORO\nFica eleito o foro da Comarca de Caucaia, Estado do Ceará, para dirimir quaisquer dúvidas ou\nlitígios oriundos deste contrato, com renúncia expressa a qualquer outro, por mais privilegiado que\nseja.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em via única,\nque será levada a arquivamento na Junta Comercial do Estado do Ceará.\nCaucaia/CE, 14 de fevereiro de 2020.\n__________________________________ FRANCISCO WELLINGTON ROCHA\n__________________________________ ANA BEATRIZ HOLANDA\n__________________________________ RAIMUNDO NONATO PIRES\nVisto: Henrique Bastos Arruda – OAB/CE nº 21.604\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 27/02/2020 sob o nº 62020989637\nProtocolo: 20/037.912-6 | NIRE: 23200695442\nEmpresa: LOCADORA JANGADA LTDA.\nAutenticação: 3C9D52A0F81E47B6C2A09D3E5F7184BC\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "4d0c4a2c6613921e47e8409cfa27517a7a90e75e01cf982da05871528de1b353",
+   "leitura": {}
+  },
+  {
+   "id": "POA_PEDRO",
+   "nome": "POA_PEDRO.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (POA_PEDRO)",
+   "data": "2026-02-10",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ – COMARCA DE CAUCAIA\nTabelionato Jangadeiro de Notas e Registros – Caucaia/CE (fictício)\nMarcílio Távora Rangel – Tabelião\nLIVRO 312-P — FOLHAS 088/089\nPROCURAÇÃO BASTANTE QUE FAZ LOCADORA JANGADA LTDA. A FAVOR DE\nPEDRO HENRIQUE LIMA, NA FORMA ABAIXO:\nSAIBAM quantos este público instrumento de procuração virem que, aos dez (10) dias do mês de\nfevereiro do ano de dois mil e vinte e seis (2026), nesta cidade de Caucaia, Estado do Ceará, em\ncartório, perante mim, Cláudia Sombra Ribeiro, Escrevente Autorizada, compareceu como\nOUTORGANTE: LOCADORA JANGADA LTDA., sociedade empresária limitada, inscrita no\nCNPJ sob o nº 38.005.305/0001-69, com seus atos constitutivos arquivados na Junta Comercial do\nEstado do Ceará – JUCEC sob o NIRE 23200695442, com sede na cidade de Caucaia/CE, neste ato\nrepresentada por seu sócio administrador FRANCISCO WELLINGTON ROCHA, brasileiro,\ncasado, empresário, portador da cédula de identidade RG nº 13171427 SSP/CE, inscrito no CPF sob\no nº 729.405.576-91, residente e domiciliado em Caucaia/CE, com os poderes que lhe são conferidos\npelo Contrato Social de Constituição datado de 14 de fevereiro de 2020, registrado na JUCEC em\n27/02/2020 sob o nº 62020989637, cuja cópia, juntamente com a certidão simplificada expedida pela\nJUCEC em 03/02/2026, fica arquivada nestas notas, em pasta própria. O representante da outorgante\nfoi identificado por mim como o próprio, à vista dos documentos apresentados, do que dou fé.\nE, pela outorgante, na forma como vem representada, me foi dito que, por este público instrumento e\nnos melhores termos de direito, nomeia e constitui seu bastante procurador PEDRO HENRIQUE\nLIMA, brasileiro, casado, gerente operacional, portador da cédula de identidade RG nº 53217045\nSSP/CE, inscrito no CPF sob o nº 939.761.584-02, residente e domiciliado na Rua Coronel Correia,\nnº 455, Centro, Caucaia/CE, a quem confere poderes especiais e expressos para vender, ceder,\ntransferir ou de qualquer forma alienar veículos automotores de propriedade da outorgante, a quem e\npelo preço que convencionar, ajustando cláusulas e condições; assinar a Autorização para\nTransferência de Propriedade do Veículo (ATPV/ATPV-e), inclusive em meio eletrônico, bem como\ncontratos e recibos de compra e venda; receber o preço e dar quitação; requerer e assinar o que for\nnecessário perante o DETRAN e demais órgãos de trânsito, inclusive comunicação de venda,\nvistorias e segundas vias de documentos; pagar taxas, tributos e multas incidentes sobre os veículos;\ne praticar, enfim, todos os demais atos necessários ao fiel cumprimento deste mandato.\nO presente mandato vigorará pelo prazo de 1 (um) ano a contar da data da lavratura deste\ninstrumento, podendo o outorgado substabelecer, no todo ou em parte, com reserva de iguais\npoderes.\nA pedido da outorgante, lavrei este instrumento, o qual, depois de lido em voz alta e achado\nconforme, aceita e assina, dispensada a presença de testemunhas, nos termos da legislação vigente.\nEu, Cláudia Sombra Ribeiro, Escrevente Autorizada, a lavrei. Eu, Marcílio Távora Rangel, Tabelião,\na subscrevo e assino.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "(aa) FRANCISCO WELLINGTON ROCHA – p/ LOCADORA JANGADA LTDA.\nMARCÍLIO TÁVORA RANGEL – Tabelião\nEmolumentos: R$ 214,37 · Taxa de fiscalização: R$ 10,72 · Total: R$ 225,09\nSelo Digital: JNG-0312-2026-A47C19\nTRASLADO — Nada mais. Trasladada em seguida, conferi, subscrevo e assino em público e raso,\nem testemunho da verdade.\nCaucaia/CE, 10 de fevereiro de 2026.\nMarcílio Távora Rangel – Tabelião\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "196c667f31adf35744011dde0255e0eb01f203adb1f64d796ee94639a0d5b37f",
+   "leitura": {}
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "gabarito",
+  "politica": "DETRAN-CE"
+ },
+ "lado": "vendedor",
+ "pendencias": [],
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T12:00:02",
+   "pedido": {
+    "veiculo": {
+     "descricao": "M.BENZ/SPRINTER 415 CDI VAN",
+     "placa": "SJS4M40",
+     "renavam": "06705217816",
+     "chassi": "9BMTR0AKDH8MHX87W"
+    },
+    "data_venda": "2026-10-16",
+    "valor": null,
+    "assinantes": [
+     {
+      "nome": "CPF 939.761.584-02",
+      "cpf": "939.761.584-02"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": null,
+    "vendedor_cnpj": "38.005.305/0001-69",
+    "lado": "vendedor",
+    "consulta": true
+   },
+   "empresa": {
+    "razao_social": "LOCADORA JANGADA LTDA.",
+    "cnpj": "38.005.305/0001-69",
+    "tipo": "LTDA",
+    "objeto": "locação de automóveis sem condutor e gestão de frotas",
+    "comercializa_veiculos": false,
+    "subtipo": null
+   },
+   "veredito": "PODE",
+   "faixa": "VERDE",
+   "indice": 97.0,
+   "confianca": 0.94,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 0.94,
+    "fatos_decisivos": 2,
+    "menor_confianca_fato": 1.0,
+    "alertas": 0,
+    "atencoes": 1,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 97 ≥ limiar 85"
+   ],
+   "resumo": "Pedro Henrique Lima pode assinar a ATPV-e — procuração pública de 10/02/2026.",
+   "assinantes": [
+    {
+     "informado": "CPF 939.761.584-02",
+     "cpf": "939.761.584-02",
+     "chave": "93976158402",
+     "nome": "Pedro Henrique Lima",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:72940557691",
+     "pessoas": [
+      {
+       "chave": "72940557691",
+       "nome": "Francisco Wellington Rocha"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "alienação de veículos — Contrato Social (2020)",
+     "cadeia": [
+      "JANGADA_CS"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    },
+    {
+     "id": "POA_PEDRO:93976158402",
+     "pessoas": [
+      {
+       "chave": "93976158402",
+       "nome": "Pedro Henrique Lima"
+      }
+     ],
+     "via": "procuracao",
+     "descricao": "Procuração pública de 10/02/2026",
+     "cadeia": [
+      "POA_PEDRO"
+     ],
+     "severidade": "atencao",
+     "confianca": 1.0,
+     "achados": [
+      {
+       "codigo": "OUTORGANTE_PJ",
+       "severidade": "ok",
+       "titulo": "Outorgada pela própria empresa",
+       "detalhe": "A outorgante é a empresa, representada por Francisco Wellington Rocha.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PEDRO",
+         "doc_titulo": "Procuração (POA_PEDRO)",
+         "trecho": "A FAVOR DE PEDRO HENRIQUE LIMA, NA FORMA ABAIXO: SAIBAM quantos este público instrumento de procuração virem que, aos dez (10) dias do mês de fevereiro do ano de dois mil e vinte e seis (2026), nesta cidade de Caucaia, Estado do Ceará, em cartório, perante mim, Cláudia Sombra Ribeiro, Escrevente Autorizada, compareceu como OUTORGANTE: LOCADORA JANGADA LTDA",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 250,
+         "fim": 608
+        }
+       ],
+       "caminho": "POA_PEDRO"
+      },
+      {
+       "codigo": "OUTORGA_COM_PODERES",
+       "severidade": "ok",
+       "titulo": "Quem outorgou tinha poder",
+       "detalhe": "Em 10/02/2026, Francisco Wellington Rocha podia representar a empresa nesse ato.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PEDRO",
+         "doc_titulo": "Procuração (POA_PEDRO)",
+         "trecho": "A FAVOR DE PEDRO HENRIQUE LIMA, NA FORMA ABAIXO: SAIBAM quantos este público instrumento de procuração virem que, aos dez (10) dias do mês de fevereiro do ano de dois mil e vinte e seis (2026), nesta cidade de Caucaia, Estado do Ceará, em cartório, perante mim, Cláudia Sombra Ribeiro, Escrevente Autorizada, compareceu como OUTORGANTE: LOCADORA JANGADA LTDA",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 250,
+         "fim": 608
+        },
+        {
+         "doc_id": "JANGADA_CS",
+         "doc_titulo": "Contrato Social (2020)",
+         "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade cabe exclusivamente ao sócio FRANCISCO WELLINGTON ROCHA, que representará a sociedade isoladamente, ativa e passivamente, judicial e extrajudicialmente, com poderes para praticar todos os atos de gestão compreendidos no objeto social, inclusive comprar, vender e alienar os veículos integrantes da frota da sociedade, celebrar contratos de locação com clientes, abrir e movimentar contas bancárias, emitir e endossar cheques e duplicatas e representar a sociedade perante quaisquer repartições públicas",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 2,
+         "inicio": 3118,
+         "fim": 3684
+        }
+       ],
+       "caminho": "POA_PEDRO"
+      },
+      {
+       "codigo": "PODERES_ESPECIAIS",
+       "severidade": "ok",
+       "titulo": "Poder expresso para alienar veículos",
+       "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+       "fundamento": [
+        "CC art. 661, §1º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PEDRO",
+         "doc_titulo": "Procuração (POA_PEDRO)",
+         "trecho": "poderes especiais",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1925,
+         "fim": 1942
+        }
+       ],
+       "caminho": "POA_PEDRO"
+      },
+      {
+       "codigo": "PROCURACAO_NO_PRAZO",
+       "severidade": "ok",
+       "titulo": "Dentro do prazo",
+       "detalhe": "Válida até 10/02/2027.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "POA_PEDRO",
+         "doc_titulo": "Procuração (POA_PEDRO)",
+         "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano a contar da data da lavratura deste instrumento, podendo o outorgado substabelecer, no todo ou em parte, com reserva de iguais poderes",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 2636,
+         "fim": 2823
+        }
+       ],
+       "caminho": "POA_PEDRO"
+      },
+      {
+       "codigo": "PROCURACAO_SEM_VEICULO",
+       "severidade": "atencao",
+       "titulo": "Procuração não identifica o veículo",
+       "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+       "fundamento": [
+        "CJF, Enunciado 183"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PEDRO",
+         "doc_titulo": "Procuração (POA_PEDRO)",
+         "trecho": "poderes especiais",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1925,
+         "fim": 1942
+        }
+       ],
+       "caminho": "POA_PEDRO"
+      }
+     ],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [],
+   "caminho_escolhido": {
+    "id": "POA_PEDRO:93976158402",
+    "pessoas": [
+     {
+      "chave": "93976158402",
+      "nome": "Pedro Henrique Lima"
+     }
+    ],
+    "via": "procuracao",
+    "descricao": "Procuração pública de 10/02/2026",
+    "cadeia": [
+     "POA_PEDRO"
+    ],
+    "severidade": "atencao",
+    "confianca": 1.0,
+    "achados": [
+     {
+      "codigo": "OUTORGANTE_PJ",
+      "severidade": "ok",
+      "titulo": "Outorgada pela própria empresa",
+      "detalhe": "A outorgante é a empresa, representada por Francisco Wellington Rocha.",
+      "fundamento": [
+       "CC art. 1.018"
+      ],
+      "fontes": [
+       {
+        "doc_id": "POA_PEDRO",
+        "doc_titulo": "Procuração (POA_PEDRO)",
+        "trecho": "A FAVOR DE PEDRO HENRIQUE LIMA, NA FORMA ABAIXO: SAIBAM quantos este público instrumento de procuração virem que, aos dez (10) dias do mês de fevereiro do ano de dois mil e vinte e seis (2026), nesta cidade de Caucaia, Estado do Ceará, em cartório, perante mim, Cláudia Sombra Ribeiro, Escrevente Autorizada, compareceu como OUTORGANTE: LOCADORA JANGADA LTDA",
+        "clausula": null,
+        "ancoragem": 100.0,
+        "pagina": 1,
+        "inicio": 250,
+        "fim": 608
+       }
+      ],
+      "caminho": "POA_PEDRO"
+     },
+     {
+      "codigo": "OUTORGA_COM_PODERES",
+      "severidade": "ok",
+      "titulo": "Quem outorgou tinha poder",
+      "detalhe": "Em 10/02/2026, Francisco Wellington Rocha podia representar a empresa nesse ato.",
+      "fundamento": [
+       "CC art. 1.018"
+      ],
+      "fontes": [
+       {
+        "doc_id": "POA_PEDRO",
+        "doc_titulo": "Procuração (POA_PEDRO)",
+        "trecho": "A FAVOR DE PEDRO HENRIQUE LIMA, NA FORMA ABAIXO: SAIBAM quantos este público instrumento de procuração virem que, aos dez (10) dias do mês de fevereiro do ano de dois mil e vinte e seis (2026), nesta cidade de Caucaia, Estado do Ceará, em cartório, perante mim, Cláudia Sombra Ribeiro, Escrevente Autorizada, compareceu como OUTORGANTE: LOCADORA JANGADA LTDA",
+        "clausula": null,
+        "ancoragem": 100.0,
+        "pagina": 1,
+        "inicio": 250,
+        "fim": 608
+       },
+       {
+        "doc_id": "JANGADA_CS",
+        "doc_titulo": "Contrato Social (2020)",
+        "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade cabe exclusivamente ao sócio FRANCISCO WELLINGTON ROCHA, que representará a sociedade isoladamente, ativa e passivamente, judicial e extrajudicialmente, com poderes para praticar todos os atos de gestão compreendidos no objeto social, inclusive comprar, vender e alienar os veículos integrantes da frota da sociedade, celebrar contratos de locação com clientes, abrir e movimentar contas bancárias, emitir e endossar cheques e duplicatas e representar a sociedade perante quaisquer repartições públicas",
+        "clausula": null,
+        "ancoragem": 100.0,
+        "pagina": 2,
+        "inicio": 3118,
+        "fim": 3684
+       }
+      ],
+      "caminho": "POA_PEDRO"
+     },
+     {
+      "codigo": "PODERES_ESPECIAIS",
+      "severidade": "ok",
+      "titulo": "Poder expresso para alienar veículos",
+      "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+      "fundamento": [
+       "CC art. 661, §1º"
+      ],
+      "fontes": [
+       {
+        "doc_id": "POA_PEDRO",
+        "doc_titulo": "Procuração (POA_PEDRO)",
+        "trecho": "poderes especiais",
+        "clausula": null,
+        "ancoragem": 100.0,
+        "pagina": 1,
+        "inicio": 1925,
+        "fim": 1942
+       }
+      ],
+      "caminho": "POA_PEDRO"
+     },
+     {
+      "codigo": "PROCURACAO_NO_PRAZO",
+      "severidade": "ok",
+      "titulo": "Dentro do prazo",
+      "detalhe": "Válida até 10/02/2027.",
+      "fundamento": [],
+      "fontes": [
+       {
+        "doc_id": "POA_PEDRO",
+        "doc_titulo": "Procuração (POA_PEDRO)",
+        "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano a contar da data da lavratura deste instrumento, podendo o outorgado substabelecer, no todo ou em parte, com reserva de iguais poderes",
+        "clausula": null,
+        "ancoragem": 100.0,
+        "pagina": 1,
+        "inicio": 2636,
+        "fim": 2823
+       }
+      ],
+      "caminho": "POA_PEDRO"
+     },
+     {
+      "codigo": "PROCURACAO_SEM_VEICULO",
+      "severidade": "atencao",
+      "titulo": "Procuração não identifica o veículo",
+      "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+      "fundamento": [
+       "CJF, Enunciado 183"
+      ],
+      "fontes": [
+       {
+        "doc_id": "POA_PEDRO",
+        "doc_titulo": "Procuração (POA_PEDRO)",
+        "trecho": "poderes especiais",
+        "clausula": null,
+        "ancoragem": 100.0,
+        "pagina": 1,
+        "inicio": 1925,
+        "fim": 1942
+       }
+      ],
+      "caminho": "POA_PEDRO"
+     }
+    ],
+    "precondicoes": []
+   },
+   "faltantes": [],
+   "achados": [
+    {
+     "codigo": "TITULARIDADE_BASE",
+     "severidade": "ok",
+     "titulo": "Proprietário conferido na base veicular",
+     "detalhe": "Pela placa/RENAVAM, o veículo está em nome de LOCADORA JANGADA LTDA..",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "JANGADA_CS#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "JANGADA_CS",
+      "doc_titulo": "Contrato Social (2020)",
+      "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade cabe exclusivamente ao sócio FRANCISCO",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3118,
+      "fim": 3220
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Francisco Wellington Rocha"
+     ],
+     "cargo": null,
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    },
+    {
+     "regra": "JANGADA_CS#R2",
+     "escopo": "alienacao_veiculos",
+     "aplicavel": true,
+     "motivo": "alienação de veículos",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "JANGADA_CS",
+      "doc_titulo": "Contrato Social (2020)",
+      "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade cabe exclusivamente ao sócio FRANCISCO WELLINGTON ROCHA, que representará a sociedade isoladamente, ativa e passivamente, judicial e extrajudicialmente, com poderes para praticar todos os atos de gestão compreendidos no objeto social, inclusive comprar, vender e alienar os veículos integrantes da frota da sociedade, celebrar contratos de locação com clientes, abrir e movimentar contas bancárias, emitir e endossar cheques e duplicatas e representar a sociedade perante quaisquer repartições públicas",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3118,
+      "fim": 3684
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Francisco Wellington Rocha"
+     ],
+     "cargo": null,
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente"
+       ]
+      }
+     ],
+     "decisiva": true
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-10-16",
+    "atos": [
+     {
+      "doc": "JANGADA_CS",
+      "titulo": "Contrato Social (2020)",
+      "efeito": "2020-02-14"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "72940557691",
+      "nome": "Francisco Wellington Rocha",
+      "cargo": "sócio administrador",
+      "doc": "JANGADA_CS"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "72940557691",
+      "nome": "Francisco Wellington Rocha",
+      "percentual": 40.0
+     },
+     {
+      "chave": "69871689705",
+      "nome": "Ana Beatriz Holanda",
+      "percentual": 35.0
+     },
+     {
+      "chave": "84697880943",
+      "nome": "Raimundo Nonato Pires",
+      "percentual": 25.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "LOCADORA JANGADA LTDA.",
+      "sub": "38.005.305/0001-69"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "M.BENZ/SPRINTER 415 CDI VAN",
+      "sub": "SJS4M40"
+     },
+     {
+      "id": "72940557691",
+      "tipo": "pessoa",
+      "rotulo": "Francisco Wellington Rocha",
+      "papeis": [
+       "sócio 40%",
+       "sócio administrador"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "69871689705",
+      "tipo": "pessoa",
+      "rotulo": "Ana Beatriz Holanda",
+      "papeis": [
+       "sócio 35%"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "84697880943",
+      "tipo": "pessoa",
+      "rotulo": "Raimundo Nonato Pires",
+      "papeis": [
+       "sócio 25%"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "93976158402",
+      "tipo": "pessoa",
+      "rotulo": "Pedro Henrique Lima",
+      "papeis": [
+       "procurador"
+      ],
+      "assinante": true
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "alerta"
+     },
+     {
+      "de": "72940557691",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "40%",
+      "status": "neutro"
+     },
+     {
+      "de": "69871689705",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "35%",
+      "status": "neutro"
+     },
+     {
+      "de": "84697880943",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "25%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "72940557691",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "JANGADA_CS"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "93976158402",
+      "tipo": "procuracao",
+      "status": "valido",
+      "doc": "POA_PEDRO",
+      "rotulo": "procuração 10/02/2026",
+      "motivo": null
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2020-02-14",
+     "tipo": "ato",
+     "titulo": "Contrato Social (2020)",
+     "doc": "JANGADA_CS",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-02-10",
+     "tipo": "procuracao",
+     "titulo": "Procuração para Pedro Henrique Lima",
+     "doc": "POA_PEDRO",
+     "detalhe": "publica"
+    },
+    {
+     "data": "2026-10-16",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "valor não informado"
+    },
+    {
+     "data": "2027-02-10",
+     "tipo": "vencimento",
+     "titulo": "Vence a procuração de Pedro Henrique Lima",
+     "doc": "POA_PEDRO",
+     "detalhe": ""
+    }
+   ],
+   "pessoas": {
+    "72940557691": {
+     "nome": "Francisco Wellington Rocha",
+     "cpf": "72940557691"
+    },
+    "69871689705": {
+     "nome": "Ana Beatriz Holanda",
+     "cpf": "69871689705"
+    },
+    "84697880943": {
+     "nome": "Raimundo Nonato Pires",
+     "cpf": "84697880943"
+    },
+    "93976158402": {
+     "nome": "Pedro Henrique Lima",
+     "cpf": "93976158402"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "comprovada",
+    "outorgante": {
+     "nome": "LOCADORA JANGADA LTDA.",
+     "cnpj": "38.005.305/0001-69",
+     "tipo": "LTDA",
+     "cpf": null,
+     "documento": "38.005.305/0001-69",
+     "atos_vigentes": [
+      {
+       "titulo": "Contrato Social (2020)",
+       "doc": "JANGADA_CS",
+       "efeito": "2020-02-14"
+      }
+     ],
+     "titularidade": null
+    },
+    "outorgado": [
+     {
+      "nome": "Pedro Henrique Lima",
+      "cpf": "939.761.584-02",
+      "identificacao": "CPF",
+      "qualidade": "procurador(a)"
+     }
+    ],
+    "poderes_conferidos": [
+     "Procuração pública de 10/02/2026 (livro 312-P, folhas 088/089), outorgada por LOCADORA JANGADA LTDA. (repr. Francisco Wellington Rocha): poderes especiais e expressos para vender veículos e assinar a ATPV/ATPV-e"
+    ],
+    "prazo_validade": [
+     "Procuração pública válida até 10/02/2027"
+    ],
+    "revogacao": [
+     "Nenhuma revogação nos documentos apresentados; a revogação fica anotada na serventia de origem — confirmar com certidão atualizada do cartório."
+    ],
+    "fontes": [
+     {
+      "doc_id": "POA_PEDRO",
+      "doc_titulo": "Procuração (POA_PEDRO)",
+      "trecho": "poderes especiais",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 1925,
+      "fim": 1942
+     },
+     {
+      "doc_id": "POA_PEDRO",
+      "doc_titulo": "Procuração (POA_PEDRO)",
+      "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano a contar da data da lavratura deste instrumento, podendo o outorgado substabelecer, no todo ou em parte, com reserva de iguais poderes",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 2636,
+      "fim": 2823
+     }
+    ],
+    "documentos_verificaveis": [
+     {
+      "id": "JANGADA_CS",
+      "titulo": "Contrato Social (2020)",
+      "arquivo": "JANGADA_CS.pdf"
+     },
+     {
+      "id": "POA_PEDRO",
+      "titulo": "Procuração (POA_PEDRO)",
+      "arquivo": "POA_PEDRO.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "JANGADA_CS",
+     "nome": "JANGADA_CS.pdf",
+     "tipo": "contrato_social",
+     "titulo": "Contrato Social (2020)",
+     "data": "2020-02-14",
+     "paginas": [
+      "LOCADORA JANGADA LTDA. CNPJ nº 38.005.305/0001-69 – NIRE 23200695442\nCONTRATO SOCIAL DE CONSTITUIÇÃO\nPelo presente instrumento particular, as partes abaixo qualificadas:\nFRANCISCO WELLINGTON ROCHA, brasileiro, casado sob o regime de comunhão parcial de\nbens, empresário, portador da Cédula de Identidade RG nº 13171427 SSP/CE, inscrito no CPF sob o\nnº 729.405.576-91, residente e domiciliado na Rua dos Cajueiros, nº 702, bairro Icaraí, Caucaia/CE,\nCEP 61627-180;\nANA BEATRIZ HOLANDA, brasileira, casada sob o regime de separação total de bens, contadora,\nportadora da Cédula de Identidade RG nº 54438575 SSP/CE, inscrita no CPF sob o nº\n698.716.897-05, residente e domiciliada na Rua Lagoa Seca, nº 1.315, apartamento 503, bairro\nJoaquim Távora, Fortaleza/CE, CEP 60130-305; e\nRAIMUNDO NONATO PIRES, brasileiro, viúvo, comerciante, portador da Cédula de Identidade\nRG nº 31135217 SSP/CE, inscrito no CPF sob o nº 846.978.809-43, residente e domiciliado na Rua\nSerra Verde, nº 96, Centro, Maranguape/CE, CEP 61940-085;\nresolvem, de comum acordo, constituir uma sociedade empresária limitada, que se regerá pelas\ncláusulas e condições seguintes e, nas omissões, pela Lei nº 10.406, de 10 de janeiro de 2002\n(Código Civil).\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL E DA SEDE\nA sociedade girará sob o nome empresarial LOCADORA JANGADA LTDA. e terá sede na\nAvenida Praia Mansa, nº 3.150, bairro Tabapuá, Caucaia/CE, CEP 61600-420, podendo abrir e\nencerrar filiais em qualquer parte do território nacional, mediante alteração contratual.\nCLÁUSULA SEGUNDA – DO OBJETO SOCIAL\nA sociedade tem por objeto a locação de automóveis sem condutor e a gestão de frotas,\ncompreendendo a atividade classificada no código CNAE 7711-0/00 (locação de automóveis sem\ncondutor).\nCLÁUSULA TERCEIRA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciará suas atividades na data do arquivamento deste instrumento na Junta Comercial\ndo Estado do Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 400.000,00 (quatrocentos mil reais), dividido em 400.000 (quatrocentas mil)\nquotas de valor nominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas, neste\nato, em moeda corrente do País, assim distribuídas entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nFRANCISCO WELLINGTON ROCHA\n160.000\n160.000,00\n40%\nANA BEATRIZ HOLANDA\n140.000\n140.000,00\n35%\nRAIMUNDO NONATO PIRES\n100.000\n100.000,00\n25%\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+      "Sócio\nQuotas\nValor (R$)\nParticipação\nTOTAL\n400.000\n400.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social.\nCLÁUSULA SEXTA – DA CESSÃO E TRANSFERÊNCIA DE QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas ou transferidas a terceiros sem o consentimento\ndos demais sócios, aos quais fica assegurado, em igualdade de condições e preço e na proporção de\nsuas participações, o direito de preferência para a sua aquisição, se postas à venda.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade cabe exclusivamente ao sócio FRANCISCO WELLINGTON\nROCHA, que representará a sociedade isoladamente, ativa e passivamente, judicial e\nextrajudicialmente, com poderes para praticar todos os atos de gestão compreendidos no objeto\nsocial, inclusive comprar, vender e alienar os veículos integrantes da frota da sociedade, celebrar\ncontratos de locação com clientes, abrir e movimentar contas bancárias, emitir e endossar cheques e\nduplicatas e representar a sociedade perante quaisquer repartições públicas.\nParágrafo primeiro. Os sócios ANA BEATRIZ HOLANDA e RAIMUNDO NONATO PIRES\nparticipam da sociedade exclusivamente na qualidade de quotistas, não lhes cabendo poderes de\nadministração nem o uso do nome empresarial.\nParágrafo segundo. É vedado ao administrador o uso do nome empresarial em atividades estranhas\nao objeto social, especialmente em avais, fianças e endossos de favor.\nParágrafo terceiro. O administrador fará jus a uma retirada mensal, a título de pró-labore, em valor\nfixado pelos sócios, observadas as disposições regulamentares pertinentes.\nCLÁUSULA OITAVA – DO EXERCÍCIO SOCIAL E DOS RESULTADOS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, o administrador prestará\ncontas justificadas de sua administração, procedendo à elaboração do inventário, do balanço\npatrimonial e do balanço de resultado econômico, cabendo aos sócios, na proporção de suas quotas,\nos lucros ou as perdas apurados.\nParágrafo único. Nos quatro meses seguintes ao término do exercício social, os sócios deliberarão\nsobre as contas apresentadas pelo administrador e sobre a destinação dos resultados.\nCLÁUSULA NONA – DO FALECIMENTO OU DA INTERDIÇÃO DE SÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros, sucessores e o incapaz. Não sendo possível ou inexistindo interesse destes ou dos sócios\nremanescentes, o valor de seus haveres será apurado e liquidado com base na situação patrimonial da\nsociedade, à data da resolução, verificada em balanço especialmente levantado.\nCLÁUSULA DÉCIMA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+      "O administrador declara, sob as penas da lei, que não está impedido de exercer a administração da\nsociedade, por lei especial, ou em virtude de condenação criminal, ou por se encontrar sob os efeitos\ndela, a pena que vede, ainda que temporariamente, o acesso a cargos públicos; ou por crime\nfalimentar, de prevaricação, peita ou suborno, concussão, peculato, ou contra a economia popular,\ncontra o sistema financeiro nacional, contra normas de defesa da concorrência, contra as relações de\nconsumo, a fé pública ou a propriedade.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FORO\nFica eleito o foro da Comarca de Caucaia, Estado do Ceará, para dirimir quaisquer dúvidas ou\nlitígios oriundos deste contrato, com renúncia expressa a qualquer outro, por mais privilegiado que\nseja.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em via única,\nque será levada a arquivamento na Junta Comercial do Estado do Ceará.\nCaucaia/CE, 14 de fevereiro de 2020.\n__________________________________ FRANCISCO WELLINGTON ROCHA\n__________________________________ ANA BEATRIZ HOLANDA\n__________________________________ RAIMUNDO NONATO PIRES\nVisto: Henrique Bastos Arruda – OAB/CE nº 21.604\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 27/02/2020 sob o nº 62020989637\nProtocolo: 20/037.912-6 | NIRE: 23200695442\nEmpresa: LOCADORA JANGADA LTDA.\nAutenticação: 3C9D52A0F81E47B6C2A09D3E5F7184BC\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "4d0c4a2c6613921e47e8409cfa27517a7a90e75e01cf982da05871528de1b353",
+     "leitura": {}
+    },
+    {
+     "id": "POA_PEDRO",
+     "nome": "POA_PEDRO.pdf",
+     "tipo": "procuracao",
+     "titulo": "Procuração (POA_PEDRO)",
+     "data": "2026-02-10",
+     "paginas": [
+      "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ – COMARCA DE CAUCAIA\nTabelionato Jangadeiro de Notas e Registros – Caucaia/CE (fictício)\nMarcílio Távora Rangel – Tabelião\nLIVRO 312-P — FOLHAS 088/089\nPROCURAÇÃO BASTANTE QUE FAZ LOCADORA JANGADA LTDA. A FAVOR DE\nPEDRO HENRIQUE LIMA, NA FORMA ABAIXO:\nSAIBAM quantos este público instrumento de procuração virem que, aos dez (10) dias do mês de\nfevereiro do ano de dois mil e vinte e seis (2026), nesta cidade de Caucaia, Estado do Ceará, em\ncartório, perante mim, Cláudia Sombra Ribeiro, Escrevente Autorizada, compareceu como\nOUTORGANTE: LOCADORA JANGADA LTDA., sociedade empresária limitada, inscrita no\nCNPJ sob o nº 38.005.305/0001-69, com seus atos constitutivos arquivados na Junta Comercial do\nEstado do Ceará – JUCEC sob o NIRE 23200695442, com sede na cidade de Caucaia/CE, neste ato\nrepresentada por seu sócio administrador FRANCISCO WELLINGTON ROCHA, brasileiro,\ncasado, empresário, portador da cédula de identidade RG nº 13171427 SSP/CE, inscrito no CPF sob\no nº 729.405.576-91, residente e domiciliado em Caucaia/CE, com os poderes que lhe são conferidos\npelo Contrato Social de Constituição datado de 14 de fevereiro de 2020, registrado na JUCEC em\n27/02/2020 sob o nº 62020989637, cuja cópia, juntamente com a certidão simplificada expedida pela\nJUCEC em 03/02/2026, fica arquivada nestas notas, em pasta própria. O representante da outorgante\nfoi identificado por mim como o próprio, à vista dos documentos apresentados, do que dou fé.\nE, pela outorgante, na forma como vem representada, me foi dito que, por este público instrumento e\nnos melhores termos de direito, nomeia e constitui seu bastante procurador PEDRO HENRIQUE\nLIMA, brasileiro, casado, gerente operacional, portador da cédula de identidade RG nº 53217045\nSSP/CE, inscrito no CPF sob o nº 939.761.584-02, residente e domiciliado na Rua Coronel Correia,\nnº 455, Centro, Caucaia/CE, a quem confere poderes especiais e expressos para vender, ceder,\ntransferir ou de qualquer forma alienar veículos automotores de propriedade da outorgante, a quem e\npelo preço que convencionar, ajustando cláusulas e condições; assinar a Autorização para\nTransferência de Propriedade do Veículo (ATPV/ATPV-e), inclusive em meio eletrônico, bem como\ncontratos e recibos de compra e venda; receber o preço e dar quitação; requerer e assinar o que for\nnecessário perante o DETRAN e demais órgãos de trânsito, inclusive comunicação de venda,\nvistorias e segundas vias de documentos; pagar taxas, tributos e multas incidentes sobre os veículos;\ne praticar, enfim, todos os demais atos necessários ao fiel cumprimento deste mandato.\nO presente mandato vigorará pelo prazo de 1 (um) ano a contar da data da lavratura deste\ninstrumento, podendo o outorgado substabelecer, no todo ou em parte, com reserva de iguais\npoderes.\nA pedido da outorgante, lavrei este instrumento, o qual, depois de lido em voz alta e achado\nconforme, aceita e assina, dispensada a presença de testemunhas, nos termos da legislação vigente.\nEu, Cláudia Sombra Ribeiro, Escrevente Autorizada, a lavrei. Eu, Marcílio Távora Rangel, Tabelião,\na subscrevo e assino.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "(aa) FRANCISCO WELLINGTON ROCHA – p/ LOCADORA JANGADA LTDA.\nMARCÍLIO TÁVORA RANGEL – Tabelião\nEmolumentos: R$ 214,37 · Taxa de fiscalização: R$ 10,72 · Total: R$ 225,09\nSelo Digital: JNG-0312-2026-A47C19\nTRASLADO — Nada mais. Trasladada em seguida, conferi, subscrevo e assino em público e raso,\nem testemunho da verdade.\nCaucaia/CE, 10 de fevereiro de 2026.\nMarcílio Távora Rangel – Tabelião\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "196c667f31adf35744011dde0255e0eb01f203adb1f64d796ee94639a0d5b37f",
+     "leitura": {}
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "gabarito",
+    "politica": "DETRAN-CE"
+   },
+   "lado": "vendedor",
+   "pendencias": []
+  }
+ },
+ "geral": {
+  "veredito": "PODE",
+  "faixa": "VERDE",
+  "indice": 97.0,
+  "resumo": "Vendedor: Pedro Henrique Lima pode assinar a ATPV-e — procuração pública de 10/02/2026.",
+  "motivos_faixa": [
+   "Vendedor — índice 97 ≥ limiar 85"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "M.BENZ/SPRINTER 415 CDI VAN",
+   "placa": "SJS4M40",
+   "renavam": "06705217816",
+   "chassi": "9BMTR0AKDH8MHX87W"
+  },
+  "data_venda": "2026-10-16",
+  "valor": null,
+  "vendedor": {
+   "tipo": "PJ",
+   "nome": "LOCADORA JANGADA LTDA.",
+   "documento": "38.005.305/0001-69",
+   "assinantes": [
+    {
+     "nome": "CPF 939.761.584-02",
+     "cpf": "939.761.584-02"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": null,
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "consulta por CPF",
+  "alvo": "vendedor",
+  "titular_fonte": "base veicular"
+ },
+ "hash_entrada": "c6e5637bdfa885c2fca080cda646fabd4faab1d2927dfdb1fa3478b8b0c2f2bc"
+}

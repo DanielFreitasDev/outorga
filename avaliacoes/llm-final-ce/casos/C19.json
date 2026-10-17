@@ -1,0 +1,1490 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T10:07:21",
+ "pedido": {
+  "veiculo": {
+   "descricao": "VW/SAVEIRO ROBUST CD 1.6",
+   "placa": "VMG9C70",
+   "renavam": "02761166030",
+   "chassi": "9BWNDTLU0FTLCPH5C"
+  },
+  "data_venda": "2026-09-20",
+  "valor": 79000.0,
+  "assinantes": [
+   {
+    "nome": "Fábio Júnior Arrais",
+    "cpf": "129.110.285-03"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "Rita de Cássia Moreira",
+  "vendedor_cnpj": "84.885.681/0001-02",
+  "lado": "vendedor"
+ },
+ "empresa": {
+  "razao_social": "AGROPECUÁRIA CARIRI LTDA.",
+  "cnpj": "84.885.681/0001-02",
+  "tipo": "LTDA",
+  "objeto": "criação de bovinos, o cultivo de culturas temporárias e o comércio de produtos agropecuários",
+  "comercializa_veiculos": false,
+  "subtipo": null
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 0.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 2,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 0 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: Josefa Alencar Lobo ou Antônio Cícero Lobo. O caminho por procuração pública de 03/11/2025 (cartório padre ibiapina – 2º ofício de notas de juazeiro do norte/ce (fictício)) não vale: procuração revogada.",
+ "assinantes": [
+  {
+   "informado": "Fábio Júnior Arrais",
+   "cpf": "129.110.285-03",
+   "chave": "12911028503",
+   "nome": "Fábio Júnior Arrais",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:13627010760",
+   "pessoas": [
+    {
+     "chave": "13627010760",
+     "nome": "Josefa Alencar Lobo"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Cláusula Sétima",
+   "cadeia": [
+    "CARIRI_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  },
+  {
+   "id": "contrato:84726714708",
+   "pessoas": [
+    {
+     "chave": "84726714708",
+     "nome": "Antônio Cícero Lobo"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Cláusula Sétima",
+   "cadeia": [
+    "CARIRI_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [
+  {
+   "id": "POA_FABIO_REVOGADA:bloqueada",
+   "pessoas": [
+    {
+     "chave": "12911028503",
+     "nome": "Fábio Júnior Arrais"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 03/11/2025 (Cartório Padre Ibiapina – 2º Ofício de Notas de Juazeiro do Norte/CE (fictício))",
+   "cadeia": [
+    "POA_FABIO_REVOGADA"
+   ],
+   "severidade": "atencao",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PJ",
+     "severidade": "ok",
+     "titulo": "Outorgada pela própria empresa",
+     "detalhe": "A outorgante é a empresa, representada por Antônio Cícero Lobo.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_FABIO_REVOGADA",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "AGROPECUÁRIA CARIRI LTDA., sociedade empresária limitada, inscrita no CNPJ sob o nº 84.885.681/0001-02, NIRE 23783408381, com sede neste Município, representada por seu sócio administrador ANTÔNIO CÍCERO LOBO",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 683,
+       "fim": 891
+      }
+     ],
+     "caminho": "POA_FABIO_REVOGADA"
+    },
+    {
+     "codigo": "OUTORGA_COM_PODERES",
+     "severidade": "ok",
+     "titulo": "Quem outorgou tinha poder",
+     "detalhe": "Em 03/11/2025, Antônio Cícero Lobo podia representar a empresa nesse ato.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_FABIO_REVOGADA",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "AGROPECUÁRIA CARIRI LTDA., sociedade empresária limitada, inscrita no CNPJ sob o nº 84.885.681/0001-02, NIRE 23783408381, com sede neste Município, representada por seu sócio administrador ANTÔNIO CÍCERO LOBO",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 683,
+       "fim": 891
+      },
+      {
+       "doc_id": "CARIRI_CS",
+       "doc_titulo": "Contrato Social (2018)",
+       "trecho": "A administração da sociedade caberá aos sócios ANTÔNIO CÍCERO LOBO e JOSEFA ALENCAR LOBO, que a exercerão isoladamente, com poderes e atribuições de representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos compreendidos no objeto social e necessários à sua consecução, sempre no interesse da sociedade, vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+       "clausula": "Cláusula Sétima",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 3047,
+       "fim": 3518
+      }
+     ],
+     "caminho": "POA_FABIO_REVOGADA"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_FABIO_REVOGADA",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionar, ajustando prazos e condições de pagamento; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e), em meio físico ou eletrônico; receber o preço e dar quitação; requerer e assinar o que for necessário perante o DETRAN e demais órgãos de trânsito, inclusive vistorias, comunicação de venda e segundas vias; e praticar todos os demais atos necessários ao fiel desempenho deste mandato",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1629,
+       "fim": 2216
+      }
+     ],
+     "caminho": "POA_FABIO_REVOGADA"
+    },
+    {
+     "codigo": "PROCURACAO_REVOGADA",
+     "severidade": "bloqueio",
+     "titulo": "Procuração revogada",
+     "detalhe": "Revogada em 12/06/2026 (Revogação de procuração (2026)).",
+     "fundamento": [
+      "CC art. 682, I",
+      "CC art. 686"
+     ],
+     "fontes": [
+      {
+       "doc_id": "REV_FABIO",
+       "doc_titulo": "Revogação de procuração (2026)",
+       "trecho": "pela revogante, assim representada, me foi dito que, por esta escritura e na melhor forma de direito, revoga, para todos os fins e efeitos, a procuração pública lavrada nestas notas em 03 de novembro de 2025, no Livro 187-P, Folhas 142/143, outorgada a FÁBIO JÚNIOR ARRAIS, brasileiro, casado, gerente agrícola, CPF nº 129.110.285-03, residente na Rua São Pedro, nº 780, Centro, Juazeiro do Norte/CE, a qual fica, a partir desta data, sem nenhum efeito, cassados todos os poderes nela conferidos.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 999,
+       "fim": 1495
+      }
+     ],
+     "caminho": "POA_FABIO_REVOGADA"
+    },
+    {
+     "codigo": "PROCURACAO_SEM_VEICULO",
+     "severidade": "atencao",
+     "titulo": "Procuração não identifica o veículo",
+     "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+     "fundamento": [
+      "CJF, Enunciado 183"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_FABIO_REVOGADA",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionar, ajustando prazos e condições de pagamento; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e), em meio físico ou eletrônico; receber o preço e dar quitação; requerer e assinar o que for necessário perante o DETRAN e demais órgãos de trânsito, inclusive vistorias, comunicação de venda e segundas vias; e praticar todos os demais atos necessários ao fiel desempenho deste mandato",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1629,
+       "fim": 2216
+      }
+     ],
+     "caminho": "POA_FABIO_REVOGADA"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "contrato:13627010760",
+   "via": "contrato",
+   "descricao": "regra geral de representação — Cláusula Sétima",
+   "pessoas": [
+    "13627010760"
+   ],
+   "faltam": [
+    "13627010760"
+   ],
+   "faltam_nomes": [
+    "Josefa Alencar Lobo"
+   ],
+   "pessoas_nomes": [
+    "Josefa Alencar Lobo"
+   ]
+  },
+  {
+   "alternativa": "contrato:84726714708",
+   "via": "contrato",
+   "descricao": "regra geral de representação — Cláusula Sétima",
+   "pessoas": [
+    "84726714708"
+   ],
+   "faltam": [
+    "84726714708"
+   ],
+   "faltam_nomes": [
+    "Antônio Cícero Lobo"
+   ],
+   "pessoas_nomes": [
+    "Antônio Cícero Lobo"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: AGROPECUÁRIA CARIRI LTDA..",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "VMG9C70",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "CARIRI_CS#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "CARIRI_CS",
+    "doc_titulo": "Contrato Social (2018)",
+    "trecho": "A administração da sociedade caberá aos sócios ANTÔNIO CÍCERO LOBO e JOSEFA ALENCAR LOBO, que a exercerão isoladamente, com poderes e atribuições de representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos compreendidos no objeto social e necessários à sua consecução, sempre no interesse da sociedade, vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3047,
+    "fim": 3518
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Antônio Cícero Lobo",
+    "Josefa Alencar Lobo"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "CARIRI_CS#R2",
+   "escopo": "alienacao_veiculos",
+   "aplicavel": false,
+   "motivo": "valor R$ 79.000,00 não cruza o limite de R$ 150.000,00",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "CARIRI_CS",
+    "doc_titulo": "Contrato Social (2018)",
+    "trecho": "A alienação de veículos, máquinas e implementos agrícolas de valor unitário superior a R$ 150.000,00 (cento e cinquenta mil reais) dependerá da assinatura conjunta de ambos os administradores.",
+    "clausula": "Cláusula Sétima, Parágrafo único",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3536,
+    "fim": 3728
+   },
+   "modo": "conjunto",
+   "pessoas": [
+    "Antônio Cícero Lobo",
+    "Josefa Alencar Lobo"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": 150000.0,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "conjunto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "assinatura conjunta"
+     ]
+    }
+   ],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-09-20",
+  "atos": [
+   {
+    "doc": "CARIRI_CS",
+    "titulo": "Contrato Social (2018)",
+    "efeito": "2018-06-01"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "84726714708",
+    "nome": "Antônio Cícero Lobo",
+    "cargo": "sócio-administrador",
+    "doc": "CARIRI_CS"
+   },
+   {
+    "chave": "13627010760",
+    "nome": "Josefa Alencar Lobo",
+    "cargo": "sócio-administrador",
+    "doc": "CARIRI_CS"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "84726714708",
+    "nome": "Antônio Cícero Lobo",
+    "percentual": 55.0
+   },
+   {
+    "chave": "13627010760",
+    "nome": "Josefa Alencar Lobo",
+    "percentual": 45.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "AGROPECUÁRIA CARIRI LTDA.",
+    "sub": "84.885.681/0001-02"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "VW/SAVEIRO ROBUST CD 1.6",
+    "sub": "VMG9C70"
+   },
+   {
+    "id": "84726714708",
+    "tipo": "pessoa",
+    "rotulo": "Antônio Cícero Lobo",
+    "papeis": [
+     "sócio 55%",
+     "sócio-administrador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "13627010760",
+    "tipo": "pessoa",
+    "rotulo": "Josefa Alencar Lobo",
+    "papeis": [
+     "sócio 45%",
+     "sócio-administrador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "12911028503",
+    "tipo": "pessoa",
+    "rotulo": "Fábio Júnior Arrais",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "84726714708",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "55%",
+    "status": "neutro"
+   },
+   {
+    "de": "13627010760",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "45%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "84726714708",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "CARIRI_CS"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "13627010760",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "CARIRI_CS"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "12911028503",
+    "tipo": "procuracao",
+    "status": "invalido",
+    "doc": "POA_FABIO_REVOGADA",
+    "rotulo": "procuração 03/11/2025 · Procuração revogada",
+    "motivo": "Procuração revogada"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2018-06-01",
+   "tipo": "ato",
+   "titulo": "Contrato Social (2018)",
+   "doc": "CARIRI_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2025-11-03",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Fábio Júnior Arrais",
+   "doc": "POA_FABIO_REVOGADA",
+   "detalhe": "publica"
+  },
+  {
+   "data": "2026-06-12",
+   "tipo": "revogacao",
+   "titulo": "Revogação de procuração",
+   "doc": "REV_FABIO",
+   "detalhe": ""
+  },
+  {
+   "data": "2026-09-20",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 79.000,00"
+  }
+ ],
+ "pessoas": {
+  "84726714708": {
+   "nome": "Antônio Cícero Lobo",
+   "cpf": "84726714708"
+  },
+  "13627010760": {
+   "nome": "Josefa Alencar Lobo",
+   "cpf": "13627010760"
+  },
+  "12911028503": {
+   "nome": "Fábio Júnior Arrais",
+   "cpf": "12911028503"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "AGROPECUÁRIA CARIRI LTDA.",
+   "cnpj": "84.885.681/0001-02",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Contrato Social (2018)",
+     "doc": "CARIRI_CS",
+     "efeito": "2018-06-01"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Fábio Júnior Arrais",
+    "cpf": "129.110.285-03",
+    "identificacao": "CPF",
+    "qualidade": "procurador(a) pela procuração de 03/11/2025"
+   }
+  ],
+  "poderes_conferidos": [
+   "Procuração pública de 03/11/2025 (Cartório Padre Ibiapina – 2º Ofício de Notas de Juazeiro do Norte/CE (fictício)): não comprova poderes (Procuração revogada)."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [],
+  "documentos_verificaveis": [
+   {
+    "id": "CARIRI_CS",
+    "titulo": "Contrato Social (2018)",
+    "arquivo": "CARIRI_CS.pdf"
+   },
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "POA_FABIO_REVOGADA",
+    "titulo": "Procuração (2025)",
+    "arquivo": "POA_FABIO_REVOGADA.pdf"
+   },
+   {
+    "id": "REV_FABIO",
+    "titulo": "Revogação de procuração (2026)",
+    "arquivo": "REV_FABIO.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "CARIRI_CS",
+   "nome": "CARIRI_CS.pdf",
+   "tipo": "contrato_social",
+   "titulo": "Contrato Social (2018)",
+   "data": "2018-06-01",
+   "paginas": [
+    "AGROPECUÁRIA CARIRI LTDA. CNPJ nº 84.885.681/0001-02 – NIRE 23783408381\nCONTRATO SOCIAL DE CONSTITUIÇÃO\nPelo presente instrumento particular, as partes abaixo qualificadas:\nANTÔNIO CÍCERO LOBO, brasileiro, casado sob o regime de comunhão parcial de bens,\nagropecuarista, portador da cédula de identidade RG nº 50677843 SSP/CE, inscrito no CPF sob o nº\n847.267.147-08, residente e domiciliado na Rua das Carnaúbas, nº 1.245, bairro Lagoa Seca,\nJuazeiro do Norte/CE, CEP 63040-260; e\nJOSEFA ALENCAR LOBO, brasileira, casada sob o regime de comunhão parcial de bens,\nagropecuarista, portadora da cédula de identidade RG nº 78932180 SSP/CE, inscrita no CPF sob o nº\n136.270.107-60, residente e domiciliada na Rua das Carnaúbas, nº 1.245, bairro Lagoa Seca,\nJuazeiro do Norte/CE, CEP 63040-260;\ncasados entre si, têm justa e contratada a constituição de uma sociedade empresária limitada, nos\ntermos do art. 977 e dos arts. 1.052 e seguintes do Código Civil (Lei nº 10.406/2002), que se regerá\npelas cláusulas e condições seguintes e, nas omissões, pela legislação aplicável às sociedades\nlimitadas.\nCLÁUSULA PRIMEIRA – DA DENOMINAÇÃO E SEDE\nA sociedade girará sob o nome empresarial AGROPECUÁRIA CARIRI LTDA. e terá sede na\nRodovia CE-292, km 8, Sítio Baixio das Palmeiras, Zona Rural, Juazeiro do Norte/CE, CEP\n63050-970, podendo abrir e encerrar filiais, depósitos e escritórios em qualquer parte do território\nnacional, mediante alteração contratual.\nCLÁUSULA SEGUNDA – DO OBJETO SOCIAL\nA sociedade terá por objeto a criação de bovinos, o cultivo de culturas temporárias e o comércio de\nprodutos agropecuários.\nCLÁUSULA TERCEIRA – DO INÍCIO DAS ATIVIDADES E DO PRAZO DE DURAÇÃO\nA sociedade iniciará suas atividades na data do registro deste instrumento na Junta Comercial do\nEstado do Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 800.000,00 (oitocentos mil reais), dividido em 800.000 (oitocentas mil)\nquotas no valor nominal de R$ 1,00 (um real) cada uma, totalmente subscrito e integralizado neste\nato, em moeda corrente do País, assim distribuído entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nANTÔNIO CÍCERO LOBO\n440.000\n440.000,00\n55%\nJOSEFA ALENCAR LOBO\n360.000\n360.000,00\n45%\nTOTAL\n800.000\n800.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "A responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social, nos termos do art. 1.052 do Código Civil.\nCLÁUSULA SEXTA – DAS QUOTAS E DE SUA CESSÃO\nAs quotas são indivisíveis em relação à sociedade e não poderão ser cedidas ou transferidas a\nterceiros sem o consentimento do outro sócio, a quem fica assegurado, em igualdade de condições e\npreço, o direito de preferência para sua aquisição. O sócio que pretender ceder suas quotas deverá\ncomunicar sua intenção ao outro, por escrito, com antecedência mínima de 30 (trinta) dias.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade caberá aos sócios ANTÔNIO CÍCERO LOBO e JOSEFA ALENCAR\nLOBO, que a exercerão isoladamente, com poderes e atribuições de representação ativa e passiva da\nsociedade, em juízo ou fora dele, podendo praticar todos os atos compreendidos no objeto social e\nnecessários à sua consecução, sempre no interesse da sociedade, vedado o uso do nome empresarial\nem atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.\nParágrafo único. A alienação de veículos, máquinas e implementos agrícolas de valor unitário\nsuperior a R$ 150.000,00 (cento e cinquenta mil reais) dependerá da assinatura conjunta de ambos\nos administradores.\nCLÁUSULA OITAVA – DO PRÓ-LABORE\nOs sócios administradores poderão fazer retirada mensal a título de pró-labore, em valor fixado de\ncomum acordo entre os sócios, observadas as disposições regulamentares pertinentes.\nCLÁUSULA NONA – DO EXERCÍCIO SOCIAL E DAS DEMONSTRAÇÕES FINANCEIRAS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, os administradores\nprestarão contas justificadas de sua administração, procedendo à elaboração do inventário, do\nbalanço patrimonial e do balanço de resultado econômico, cabendo aos sócios, na proporção de suas\nquotas, os lucros ou as perdas apurados.\nCLÁUSULA DÉCIMA – DA TOMADA DE CONTAS\nNos 4 (quatro) meses seguintes ao término do exercício social, os sócios reunir-se-ão para tomar as\ncontas dos administradores e deliberar sobre o balanço patrimonial e o de resultado econômico, na\nforma do art. 1.078 do Código Civil.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FALECIMENTO OU DA INCAPACIDADE DE SÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros ou sucessores do falecido ou com o representante legal do incapaz. Não sendo possível ou\ninexistindo interesse destes ou do sócio remanescente, o valor de seus haveres será apurado e\nliquidado com base na situação patrimonial da sociedade à data da resolução, verificada em balanço\nespecialmente levantado, e pago em até 12 (doze) parcelas mensais e sucessivas.\nCLÁUSULA DÉCIMA SEGUNDA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nOs administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade, por lei especial, ou em virtude de condenação criminal, ou por se\nencontrarem sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "públicos, ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato, ou contra\na economia popular, contra o sistema financeiro nacional, contra normas de defesa da concorrência,\ncontra as relações de consumo, a fé pública ou a propriedade, nos termos do art. 1.011, § 1º, do\nCódigo Civil.\nCLÁUSULA DÉCIMA TERCEIRA – DO FORO\nFica eleito o foro da Comarca de Juazeiro do Norte/CE para dirimir quaisquer questões oriundas\ndeste contrato, com renúncia expressa a qualquer outro, por mais privilegiado que seja.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em 3 (três) vias\nde igual teor e forma.\nJuazeiro do Norte/CE, 1º de junho de 2018.\n____________________________________ ANTÔNIO CÍCERO LOBO\n____________________________________ JOSEFA ALENCAR LOBO\nVisto: Heitor Brígido Callou – OAB/CE nº 18.437\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 15/06/2018 sob o nº 22282091222\nProtocolo: 18/087.412-6 | NIRE: 23783408381\nEmpresa: AGROPECUÁRIA CARIRI LTDA.\nAutenticação: 7F3A9C21B84E06D5A1C3F9E2B7D40A68\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "b3f41f025ce6400833ba13829b75807939d9bc74f102841266481403d76fcd83",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 34.4,
+      "tokens_saida": 718,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 27.6,
+      "tokens_saida": 669,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n02761166030\nPLACA\nVMG9C70\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2021\nANO MODELO\n2022\nNÚMERO DO CRV\n162038560206\nCÓDIGO DE SEGURANÇA DO CLA\n11649599262\nMARCA / MODELO / VERSÃO\nVW/SAVEIRO ROBUST CD 1.6\nESPÉCIE / TIPO\nCARGA/CAMIONETA\nCHASSI\n9BWNDTLU0FTLCPH5C\nCOR PREDOMINANTE\nPRATA\nCOMBUSTÍVEL\nÁLCOOL/GASOLINA\nNOME\nAGROPECUÁRIA CARIRI LTDA.\nCPF / CNPJ\n84.885.681/0001-02\nLOCAL\nJUAZEIRO DO NORTE/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "d58398a56cb63f7070f1754f6de45c78214dada6092659666aaf9634af0e4e2d",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "POA_FABIO_REVOGADA",
+   "nome": "POA_FABIO_REVOGADA.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (2025)",
+   "data": "2025-11-03",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ – COMARCA DE JUAZEIRO DO NORTE\nCartório Padre Ibiapina – 2º Ofício de Notas de Juazeiro do Norte/CE (fictício)\nExpedito Callou Leite – Tabelião\nLIVRO 187-P — FOLHAS 142/143\nPROCURAÇÃO PÚBLICA — OUTORGANTE: AGROPECUÁRIA CARIRI LTDA. —\nOUTORGADO: FÁBIO JÚNIOR ARRAIS\nSAIBAM quantos este público instrumento de procuração virem que, aos três (03) dias do mês de\nnovembro do ano de dois mil e vinte e cinco (2025), nesta cidade de Juazeiro do Norte, Estado do\nCeará, no Cartório Padre Ibiapina – 2º Ofício de Notas de Juazeiro do Norte/CE (fictício), perante\nmim, Damiana Brito Gonçalves, Escrevente Substituta, compareceu como OUTORGANTE:\nAGROPECUÁRIA CARIRI LTDA., sociedade empresária limitada, inscrita no CNPJ sob o nº\n84.885.681/0001-02, NIRE 23783408381, com sede neste Município, representada por seu sócio\nadministrador ANTÔNIO CÍCERO LOBO, brasileiro, casado, agropecuarista, RG nº 50677843 SSP/\nCE, CPF nº 847.267.147-08, residente e domiciliado em Juazeiro do Norte/CE, com os poderes\nprevistos no Contrato Social de Constituição registrado na JUCEC em 15/06/2018 sob o nº\n22282091222, conforme cópia e certidão simplificada que ficam arquivadas neste Cartório. O\ncomparecente foi identificado como o próprio, à vista de seus documentos, do que dou fé.\nE, pela outorgante, por seu representante, me foi dito que, por este instrumento, faz, nomeia e\nconstitui seu procurador FÁBIO JÚNIOR ARRAIS, brasileiro, casado, gerente agrícola, RG nº\n81121624 SSP/CE, CPF nº 129.110.285-03, residente e domiciliado na Rua São Pedro, nº 780,\nCentro, Juazeiro do Norte/CE, a quem confere poderes especiais e expressos para vender, ceder,\ntransferir ou de qualquer forma alienar veículos automotores de propriedade da outorgante, a quem e\npelo preço que convencionar, ajustando prazos e condições de pagamento; assinar a Autorização\npara Transferência de Propriedade do Veículo (ATPV/ATPV-e), em meio físico ou eletrônico;\nreceber o preço e dar quitação; requerer e assinar o que for necessário perante o DETRAN e demais\nórgãos de trânsito, inclusive vistorias, comunicação de venda e segundas vias; e praticar todos os\ndemais atos necessários ao fiel desempenho deste mandato, que é outorgado por prazo\nindeterminado, vigorando até revogação expressa.\nAssim o disse, do que dou fé, e me pediu este instrumento, que lhe li em voz alta, achou conforme,\naceita e assina. Eu, Damiana Brito Gonçalves, Escrevente Substituta, digitei. Eu, Expedito Callou\nLeite, Tabelião, subscrevo e assino.\n(aa) ANTÔNIO CÍCERO LOBO, por AGROPECUÁRIA CARIRI LTDA.\nEXPEDITO CALLOU LEITE, Tabelião.\nEmolumentos: R$ 205,10 · Taxa de fiscalização: R$ 10,26 · Total: R$ 215,36\nSelo Digital: PIB-0187-2025-C6A04E\nTRASLADO — Extraído na mesma data, conforme o original, do que dou fé.\nJuazeiro do Norte/CE, 3 de novembro de 2025.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "Expedito Callou Leite – Tabelião\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "19ceeb589edd464a921e75403723f3099a48b6f0dfc63425ba8f6c59d0225757",
+   "leitura": {
+    "tarefas": {
+     "procuracao": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 33.0,
+      "tokens_saida": 758,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "REV_FABIO",
+   "nome": "REV_FABIO.pdf",
+   "tipo": "revogacao_procuracao",
+   "titulo": "Revogação de procuração (2026)",
+   "data": "2026-06-12",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ – COMARCA DE JUAZEIRO DO NORTE\nCartório Padre Ibiapina – 2º Ofício de Notas de Juazeiro do Norte/CE (fictício)\nLIVRO 211-P — FOLHA 098\nESCRITURA PÚBLICA DE REVOGAÇÃO DE PROCURAÇÃO\nSAIBAM quantos esta pública escritura de revogação de procuração virem que, aos doze (12) dias\ndo mês de junho de dois mil e vinte e seis (2026), nesta cidade de Juazeiro do Norte, Estado do\nCeará, neste Cartório, perante mim, Damiana Brito Gonçalves, Escrevente Substituta, compareceu\ncomo OUTORGANTE REVOGANTE: AGROPECUÁRIA CARIRI LTDA., inscrita no CNPJ sob o\nnº 84.885.681/0001-02, NIRE 23783408381, com sede neste Município, neste ato representada por\nsua sócia administradora JOSEFA ALENCAR LOBO, brasileira, casada, agropecuarista, RG nº\n78932180 SSP/CE, CPF nº 136.270.107-60, residente e domiciliada em Juazeiro do Norte/CE, na\nforma do Contrato Social registrado na JUCEC em 15/06/2018 sob o nº 22282091222, reconhecida\ncomo a própria por mim, do que dou fé.\nE, pela revogante, assim representada, me foi dito que, por esta escritura e na melhor forma de\ndireito, revoga, para todos os fins e efeitos, a procuração pública lavrada nestas notas em 03 de\nnovembro de 2025, no Livro 187-P, Folhas 142/143, outorgada a FÁBIO JÚNIOR ARRAIS,\nbrasileiro, casado, gerente agrícola, CPF nº 129.110.285-03, residente na Rua São Pedro, nº 780,\nCentro, Juazeiro do Norte/CE, a qual fica, a partir desta data, sem nenhum efeito, cassados todos os\npoderes nela conferidos. Requer a revogante que se proceda à anotação desta revogação à margem\ndo ato revogado e que o procurador seja notificado por este Cartório, com comprovação de\nrecebimento, a fim de que não mais pratique ato algum em nome da outorgante.\nAssim o disse, do que dou fé, e me pediu esta escritura, que, lida em voz alta, achou conforme,\naceita e assina. Eu, Damiana Brito Gonçalves, Escrevente Substituta, a lavrei. Eu, Expedito Callou\nLeite, Tabelião, subscrevo.\n(aa) JOSEFA ALENCAR LOBO, pela revogante.\nEXPEDITO CALLOU LEITE, Tabelião.\nAnotação marginal efetuada no Livro 187-P, fls. 142. Notificação expedida ao procurador nesta data.\nEmolumentos: R$ 142,80 · Taxa de fiscalização: R$ 7,14 · Total: R$ 149,94\nSelo Digital: PIB-0211-2026-7E5B90\nJuazeiro do Norte/CE, 12 de junho de 2026.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/1"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "869867dbdadecf64602f8898d12c3c3524f977038823d43f89495fe66a47f8e9",
+   "leitura": {
+    "tarefas": {
+     "revogacao": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 33.1,
+      "tokens_saida": 667,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "llamacpp",
+  "modelo": "qwen3.8-27b",
+  "politica": "DETRAN-CE"
+ },
+ "lado": "vendedor",
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T10:07:21",
+   "pedido": {
+    "veiculo": {
+     "descricao": "VW/SAVEIRO ROBUST CD 1.6",
+     "placa": "VMG9C70",
+     "renavam": "02761166030",
+     "chassi": "9BWNDTLU0FTLCPH5C"
+    },
+    "data_venda": "2026-09-20",
+    "valor": 79000.0,
+    "assinantes": [
+     {
+      "nome": "Fábio Júnior Arrais",
+      "cpf": "129.110.285-03"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "Rita de Cássia Moreira",
+    "vendedor_cnpj": "84.885.681/0001-02",
+    "lado": "vendedor"
+   },
+   "empresa": {
+    "razao_social": "AGROPECUÁRIA CARIRI LTDA.",
+    "cnpj": "84.885.681/0001-02",
+    "tipo": "LTDA",
+    "objeto": "criação de bovinos, o cultivo de culturas temporárias e o comércio de produtos agropecuários",
+    "comercializa_veiculos": false,
+    "subtipo": null
+   },
+   "veredito": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 2,
+    "menor_confianca_fato": 1.0,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Josefa Alencar Lobo ou Antônio Cícero Lobo. O caminho por procuração pública de 03/11/2025 (cartório padre ibiapina – 2º ofício de notas de juazeiro do norte/ce (fictício)) não vale: procuração revogada.",
+   "assinantes": [
+    {
+     "informado": "Fábio Júnior Arrais",
+     "cpf": "129.110.285-03",
+     "chave": "12911028503",
+     "nome": "Fábio Júnior Arrais",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:13627010760",
+     "pessoas": [
+      {
+       "chave": "13627010760",
+       "nome": "Josefa Alencar Lobo"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "regra geral de representação — Cláusula Sétima",
+     "cadeia": [
+      "CARIRI_CS"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    },
+    {
+     "id": "contrato:84726714708",
+     "pessoas": [
+      {
+       "chave": "84726714708",
+       "nome": "Antônio Cícero Lobo"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "regra geral de representação — Cláusula Sétima",
+     "cadeia": [
+      "CARIRI_CS"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [
+    {
+     "id": "POA_FABIO_REVOGADA:bloqueada",
+     "pessoas": [
+      {
+       "chave": "12911028503",
+       "nome": "Fábio Júnior Arrais"
+      }
+     ],
+     "via": "procuracao",
+     "descricao": "Procuração pública de 03/11/2025 (Cartório Padre Ibiapina – 2º Ofício de Notas de Juazeiro do Norte/CE (fictício))",
+     "cadeia": [
+      "POA_FABIO_REVOGADA"
+     ],
+     "severidade": "atencao",
+     "confianca": 1.0,
+     "achados": [
+      {
+       "codigo": "OUTORGANTE_PJ",
+       "severidade": "ok",
+       "titulo": "Outorgada pela própria empresa",
+       "detalhe": "A outorgante é a empresa, representada por Antônio Cícero Lobo.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_FABIO_REVOGADA",
+         "doc_titulo": "Procuração (2025)",
+         "trecho": "AGROPECUÁRIA CARIRI LTDA., sociedade empresária limitada, inscrita no CNPJ sob o nº 84.885.681/0001-02, NIRE 23783408381, com sede neste Município, representada por seu sócio administrador ANTÔNIO CÍCERO LOBO",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 683,
+         "fim": 891
+        }
+       ],
+       "caminho": "POA_FABIO_REVOGADA"
+      },
+      {
+       "codigo": "OUTORGA_COM_PODERES",
+       "severidade": "ok",
+       "titulo": "Quem outorgou tinha poder",
+       "detalhe": "Em 03/11/2025, Antônio Cícero Lobo podia representar a empresa nesse ato.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_FABIO_REVOGADA",
+         "doc_titulo": "Procuração (2025)",
+         "trecho": "AGROPECUÁRIA CARIRI LTDA., sociedade empresária limitada, inscrita no CNPJ sob o nº 84.885.681/0001-02, NIRE 23783408381, com sede neste Município, representada por seu sócio administrador ANTÔNIO CÍCERO LOBO",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 683,
+         "fim": 891
+        },
+        {
+         "doc_id": "CARIRI_CS",
+         "doc_titulo": "Contrato Social (2018)",
+         "trecho": "A administração da sociedade caberá aos sócios ANTÔNIO CÍCERO LOBO e JOSEFA ALENCAR LOBO, que a exercerão isoladamente, com poderes e atribuições de representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos compreendidos no objeto social e necessários à sua consecução, sempre no interesse da sociedade, vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+         "clausula": "Cláusula Sétima",
+         "ancoragem": 100.0,
+         "pagina": 2,
+         "inicio": 3047,
+         "fim": 3518
+        }
+       ],
+       "caminho": "POA_FABIO_REVOGADA"
+      },
+      {
+       "codigo": "PODERES_ESPECIAIS",
+       "severidade": "ok",
+       "titulo": "Poder expresso para alienar veículos",
+       "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+       "fundamento": [
+        "CC art. 661, §1º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_FABIO_REVOGADA",
+         "doc_titulo": "Procuração (2025)",
+         "trecho": "poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionar, ajustando prazos e condições de pagamento; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e), em meio físico ou eletrônico; receber o preço e dar quitação; requerer e assinar o que for necessário perante o DETRAN e demais órgãos de trânsito, inclusive vistorias, comunicação de venda e segundas vias; e praticar todos os demais atos necessários ao fiel desempenho deste mandato",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1629,
+         "fim": 2216
+        }
+       ],
+       "caminho": "POA_FABIO_REVOGADA"
+      },
+      {
+       "codigo": "PROCURACAO_REVOGADA",
+       "severidade": "bloqueio",
+       "titulo": "Procuração revogada",
+       "detalhe": "Revogada em 12/06/2026 (Revogação de procuração (2026)).",
+       "fundamento": [
+        "CC art. 682, I",
+        "CC art. 686"
+       ],
+       "fontes": [
+        {
+         "doc_id": "REV_FABIO",
+         "doc_titulo": "Revogação de procuração (2026)",
+         "trecho": "pela revogante, assim representada, me foi dito que, por esta escritura e na melhor forma de direito, revoga, para todos os fins e efeitos, a procuração pública lavrada nestas notas em 03 de novembro de 2025, no Livro 187-P, Folhas 142/143, outorgada a FÁBIO JÚNIOR ARRAIS, brasileiro, casado, gerente agrícola, CPF nº 129.110.285-03, residente na Rua São Pedro, nº 780, Centro, Juazeiro do Norte/CE, a qual fica, a partir desta data, sem nenhum efeito, cassados todos os poderes nela conferidos.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 999,
+         "fim": 1495
+        }
+       ],
+       "caminho": "POA_FABIO_REVOGADA"
+      },
+      {
+       "codigo": "PROCURACAO_SEM_VEICULO",
+       "severidade": "atencao",
+       "titulo": "Procuração não identifica o veículo",
+       "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+       "fundamento": [
+        "CJF, Enunciado 183"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_FABIO_REVOGADA",
+         "doc_titulo": "Procuração (2025)",
+         "trecho": "poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar veículos automotores de propriedade da outorgante, a quem e pelo preço que convencionar, ajustando prazos e condições de pagamento; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e), em meio físico ou eletrônico; receber o preço e dar quitação; requerer e assinar o que for necessário perante o DETRAN e demais órgãos de trânsito, inclusive vistorias, comunicação de venda e segundas vias; e praticar todos os demais atos necessários ao fiel desempenho deste mandato",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1629,
+         "fim": 2216
+        }
+       ],
+       "caminho": "POA_FABIO_REVOGADA"
+      }
+     ],
+     "precondicoes": []
+    }
+   ],
+   "caminho_escolhido": null,
+   "faltantes": [
+    {
+     "alternativa": "contrato:13627010760",
+     "via": "contrato",
+     "descricao": "regra geral de representação — Cláusula Sétima",
+     "pessoas": [
+      "13627010760"
+     ],
+     "faltam": [
+      "13627010760"
+     ],
+     "faltam_nomes": [
+      "Josefa Alencar Lobo"
+     ],
+     "pessoas_nomes": [
+      "Josefa Alencar Lobo"
+     ]
+    },
+    {
+     "alternativa": "contrato:84726714708",
+     "via": "contrato",
+     "descricao": "regra geral de representação — Cláusula Sétima",
+     "pessoas": [
+      "84726714708"
+     ],
+     "faltam": [
+      "84726714708"
+     ],
+     "faltam_nomes": [
+      "Antônio Cícero Lobo"
+     ],
+     "pessoas_nomes": [
+      "Antônio Cícero Lobo"
+     ]
+    }
+   ],
+   "achados": [
+    {
+     "codigo": "TITULARIDADE_OK",
+     "severidade": "ok",
+     "titulo": "Veículo registrado no CNPJ da empresa",
+     "detalhe": "Proprietário no CRLV: AGROPECUÁRIA CARIRI LTDA..",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [
+      {
+       "doc_id": "CRLV",
+       "doc_titulo": "CRLV",
+       "trecho": "VMG9C70",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 146,
+       "fim": 153
+      }
+     ],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "CARIRI_CS#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "CARIRI_CS",
+      "doc_titulo": "Contrato Social (2018)",
+      "trecho": "A administração da sociedade caberá aos sócios ANTÔNIO CÍCERO LOBO e JOSEFA ALENCAR LOBO, que a exercerão isoladamente, com poderes e atribuições de representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos compreendidos no objeto social e necessários à sua consecução, sempre no interesse da sociedade, vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+      "clausula": "Cláusula Sétima",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3047,
+      "fim": 3518
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Antônio Cícero Lobo",
+      "Josefa Alencar Lobo"
+     ],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente"
+       ]
+      }
+     ],
+     "decisiva": true
+    },
+    {
+     "regra": "CARIRI_CS#R2",
+     "escopo": "alienacao_veiculos",
+     "aplicavel": false,
+     "motivo": "valor R$ 79.000,00 não cruza o limite de R$ 150.000,00",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "CARIRI_CS",
+      "doc_titulo": "Contrato Social (2018)",
+      "trecho": "A alienação de veículos, máquinas e implementos agrícolas de valor unitário superior a R$ 150.000,00 (cento e cinquenta mil reais) dependerá da assinatura conjunta de ambos os administradores.",
+      "clausula": "Cláusula Sétima, Parágrafo único",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3536,
+      "fim": 3728
+     },
+     "modo": "conjunto",
+     "pessoas": [
+      "Antônio Cícero Lobo",
+      "Josefa Alencar Lobo"
+     ],
+     "cargo": "administradores",
+     "valor_acima_de": 150000.0,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "conjunto",
+       "valor_lexico": "conjunto",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "assinatura conjunta"
+       ]
+      }
+     ],
+     "decisiva": false
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-09-20",
+    "atos": [
+     {
+      "doc": "CARIRI_CS",
+      "titulo": "Contrato Social (2018)",
+      "efeito": "2018-06-01"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "84726714708",
+      "nome": "Antônio Cícero Lobo",
+      "cargo": "sócio-administrador",
+      "doc": "CARIRI_CS"
+     },
+     {
+      "chave": "13627010760",
+      "nome": "Josefa Alencar Lobo",
+      "cargo": "sócio-administrador",
+      "doc": "CARIRI_CS"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "84726714708",
+      "nome": "Antônio Cícero Lobo",
+      "percentual": 55.0
+     },
+     {
+      "chave": "13627010760",
+      "nome": "Josefa Alencar Lobo",
+      "percentual": 45.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "AGROPECUÁRIA CARIRI LTDA.",
+      "sub": "84.885.681/0001-02"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "VW/SAVEIRO ROBUST CD 1.6",
+      "sub": "VMG9C70"
+     },
+     {
+      "id": "84726714708",
+      "tipo": "pessoa",
+      "rotulo": "Antônio Cícero Lobo",
+      "papeis": [
+       "sócio 55%",
+       "sócio-administrador"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "13627010760",
+      "tipo": "pessoa",
+      "rotulo": "Josefa Alencar Lobo",
+      "papeis": [
+       "sócio 45%",
+       "sócio-administrador"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "12911028503",
+      "tipo": "pessoa",
+      "rotulo": "Fábio Júnior Arrais",
+      "papeis": [
+       "procurador"
+      ],
+      "assinante": true
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "valido"
+     },
+     {
+      "de": "84726714708",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "55%",
+      "status": "neutro"
+     },
+     {
+      "de": "13627010760",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "45%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "84726714708",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "CARIRI_CS"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "13627010760",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "CARIRI_CS"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "12911028503",
+      "tipo": "procuracao",
+      "status": "invalido",
+      "doc": "POA_FABIO_REVOGADA",
+      "rotulo": "procuração 03/11/2025 · Procuração revogada",
+      "motivo": "Procuração revogada"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2018-06-01",
+     "tipo": "ato",
+     "titulo": "Contrato Social (2018)",
+     "doc": "CARIRI_CS",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2025-11-03",
+     "tipo": "procuracao",
+     "titulo": "Procuração para Fábio Júnior Arrais",
+     "doc": "POA_FABIO_REVOGADA",
+     "detalhe": "publica"
+    },
+    {
+     "data": "2026-06-12",
+     "tipo": "revogacao",
+     "titulo": "Revogação de procuração",
+     "doc": "REV_FABIO",
+     "detalhe": ""
+    },
+    {
+     "data": "2026-09-20",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 79.000,00"
+    }
+   ],
+   "pessoas": {
+    "84726714708": {
+     "nome": "Antônio Cícero Lobo",
+     "cpf": "84726714708"
+    },
+    "13627010760": {
+     "nome": "Josefa Alencar Lobo",
+     "cpf": "13627010760"
+    },
+    "12911028503": {
+     "nome": "Fábio Júnior Arrais",
+     "cpf": "12911028503"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "não comprovada",
+    "outorgante": {
+     "nome": "AGROPECUÁRIA CARIRI LTDA.",
+     "cnpj": "84.885.681/0001-02",
+     "tipo": "LTDA",
+     "atos_vigentes": [
+      {
+       "titulo": "Contrato Social (2018)",
+       "doc": "CARIRI_CS",
+       "efeito": "2018-06-01"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "Fábio Júnior Arrais",
+      "cpf": "129.110.285-03",
+      "identificacao": "CPF",
+      "qualidade": "procurador(a) pela procuração de 03/11/2025"
+     }
+    ],
+    "poderes_conferidos": [
+     "Procuração pública de 03/11/2025 (Cartório Padre Ibiapina – 2º Ofício de Notas de Juazeiro do Norte/CE (fictício)): não comprova poderes (Procuração revogada)."
+    ],
+    "prazo_validade": [
+     "—"
+    ],
+    "revogacao": [
+     "—"
+    ],
+    "fontes": [],
+    "documentos_verificaveis": [
+     {
+      "id": "CARIRI_CS",
+      "titulo": "Contrato Social (2018)",
+      "arquivo": "CARIRI_CS.pdf"
+     },
+     {
+      "id": "CRLV",
+      "titulo": "CRLV",
+      "arquivo": "CRLV.pdf"
+     },
+     {
+      "id": "POA_FABIO_REVOGADA",
+      "titulo": "Procuração (2025)",
+      "arquivo": "POA_FABIO_REVOGADA.pdf"
+     },
+     {
+      "id": "REV_FABIO",
+      "titulo": "Revogação de procuração (2026)",
+      "arquivo": "REV_FABIO.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "CARIRI_CS",
+     "nome": "CARIRI_CS.pdf",
+     "tipo": "contrato_social",
+     "titulo": "Contrato Social (2018)",
+     "data": "2018-06-01",
+     "paginas": [
+      "AGROPECUÁRIA CARIRI LTDA. CNPJ nº 84.885.681/0001-02 – NIRE 23783408381\nCONTRATO SOCIAL DE CONSTITUIÇÃO\nPelo presente instrumento particular, as partes abaixo qualificadas:\nANTÔNIO CÍCERO LOBO, brasileiro, casado sob o regime de comunhão parcial de bens,\nagropecuarista, portador da cédula de identidade RG nº 50677843 SSP/CE, inscrito no CPF sob o nº\n847.267.147-08, residente e domiciliado na Rua das Carnaúbas, nº 1.245, bairro Lagoa Seca,\nJuazeiro do Norte/CE, CEP 63040-260; e\nJOSEFA ALENCAR LOBO, brasileira, casada sob o regime de comunhão parcial de bens,\nagropecuarista, portadora da cédula de identidade RG nº 78932180 SSP/CE, inscrita no CPF sob o nº\n136.270.107-60, residente e domiciliada na Rua das Carnaúbas, nº 1.245, bairro Lagoa Seca,\nJuazeiro do Norte/CE, CEP 63040-260;\ncasados entre si, têm justa e contratada a constituição de uma sociedade empresária limitada, nos\ntermos do art. 977 e dos arts. 1.052 e seguintes do Código Civil (Lei nº 10.406/2002), que se regerá\npelas cláusulas e condições seguintes e, nas omissões, pela legislação aplicável às sociedades\nlimitadas.\nCLÁUSULA PRIMEIRA – DA DENOMINAÇÃO E SEDE\nA sociedade girará sob o nome empresarial AGROPECUÁRIA CARIRI LTDA. e terá sede na\nRodovia CE-292, km 8, Sítio Baixio das Palmeiras, Zona Rural, Juazeiro do Norte/CE, CEP\n63050-970, podendo abrir e encerrar filiais, depósitos e escritórios em qualquer parte do território\nnacional, mediante alteração contratual.\nCLÁUSULA SEGUNDA – DO OBJETO SOCIAL\nA sociedade terá por objeto a criação de bovinos, o cultivo de culturas temporárias e o comércio de\nprodutos agropecuários.\nCLÁUSULA TERCEIRA – DO INÍCIO DAS ATIVIDADES E DO PRAZO DE DURAÇÃO\nA sociedade iniciará suas atividades na data do registro deste instrumento na Junta Comercial do\nEstado do Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 800.000,00 (oitocentos mil reais), dividido em 800.000 (oitocentas mil)\nquotas no valor nominal de R$ 1,00 (um real) cada uma, totalmente subscrito e integralizado neste\nato, em moeda corrente do País, assim distribuído entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nANTÔNIO CÍCERO LOBO\n440.000\n440.000,00\n55%\nJOSEFA ALENCAR LOBO\n360.000\n360.000,00\n45%\nTOTAL\n800.000\n800.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+      "A responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social, nos termos do art. 1.052 do Código Civil.\nCLÁUSULA SEXTA – DAS QUOTAS E DE SUA CESSÃO\nAs quotas são indivisíveis em relação à sociedade e não poderão ser cedidas ou transferidas a\nterceiros sem o consentimento do outro sócio, a quem fica assegurado, em igualdade de condições e\npreço, o direito de preferência para sua aquisição. O sócio que pretender ceder suas quotas deverá\ncomunicar sua intenção ao outro, por escrito, com antecedência mínima de 30 (trinta) dias.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade caberá aos sócios ANTÔNIO CÍCERO LOBO e JOSEFA ALENCAR\nLOBO, que a exercerão isoladamente, com poderes e atribuições de representação ativa e passiva da\nsociedade, em juízo ou fora dele, podendo praticar todos os atos compreendidos no objeto social e\nnecessários à sua consecução, sempre no interesse da sociedade, vedado o uso do nome empresarial\nem atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.\nParágrafo único. A alienação de veículos, máquinas e implementos agrícolas de valor unitário\nsuperior a R$ 150.000,00 (cento e cinquenta mil reais) dependerá da assinatura conjunta de ambos\nos administradores.\nCLÁUSULA OITAVA – DO PRÓ-LABORE\nOs sócios administradores poderão fazer retirada mensal a título de pró-labore, em valor fixado de\ncomum acordo entre os sócios, observadas as disposições regulamentares pertinentes.\nCLÁUSULA NONA – DO EXERCÍCIO SOCIAL E DAS DEMONSTRAÇÕES FINANCEIRAS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, os administradores\nprestarão contas justificadas de sua administração, procedendo à elaboração do inventário, do\nbalanço patrimonial e do balanço de resultado econômico, cabendo aos sócios, na proporção de suas\nquotas, os lucros ou as perdas apurados.\nCLÁUSULA DÉCIMA – DA TOMADA DE CONTAS\nNos 4 (quatro) meses seguintes ao término do exercício social, os sócios reunir-se-ão para tomar as\ncontas dos administradores e deliberar sobre o balanço patrimonial e o de resultado econômico, na\nforma do art. 1.078 do Código Civil.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FALECIMENTO OU DA INCAPACIDADE DE SÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros ou sucessores do falecido ou com o representante legal do incapaz. Não sendo possível ou\ninexistindo interesse destes ou do sócio remanescente, o valor de seus haveres será apurado e\nliquidado com base na situação patrimonial da sociedade à data da resolução, verificada em balanço\nespecialmente levantado, e pago em até 12 (doze) parcelas mensais e sucessivas.\nCLÁUSULA DÉCIMA SEGUNDA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nOs administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade, por lei especial, ou em virtude de condenação criminal, ou por se\nencontrarem sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+      "públicos, ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato, ou contra\na economia popular, contra o sistema financeiro nacional, contra normas de defesa da concorrência,\ncontra as relações de consumo, a fé pública ou a propriedade, nos termos do art. 1.011, § 1º, do\nCódigo Civil.\nCLÁUSULA DÉCIMA TERCEIRA – DO FORO\nFica eleito o foro da Comarca de Juazeiro do Norte/CE para dirimir quaisquer questões oriundas\ndeste contrato, com renúncia expressa a qualquer outro, por mais privilegiado que seja.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em 3 (três) vias\nde igual teor e forma.\nJuazeiro do Norte/CE, 1º de junho de 2018.\n____________________________________ ANTÔNIO CÍCERO LOBO\n____________________________________ JOSEFA ALENCAR LOBO\nVisto: Heitor Brígido Callou – OAB/CE nº 18.437\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 15/06/2018 sob o nº 22282091222\nProtocolo: 18/087.412-6 | NIRE: 23783408381\nEmpresa: AGROPECUÁRIA CARIRI LTDA.\nAutenticação: 7F3A9C21B84E06D5A1C3F9E2B7D40A68\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "b3f41f025ce6400833ba13829b75807939d9bc74f102841266481403d76fcd83",
+     "leitura": {
+      "tarefas": {
+       "partes": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 34.4,
+        "tokens_saida": 718,
+        "modelo": "qwen3.8-27b"
+       },
+       "regras": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 27.6,
+        "tokens_saida": 669,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "CRLV",
+     "nome": "CRLV.pdf",
+     "tipo": "crlv",
+     "titulo": "CRLV",
+     "data": null,
+     "paginas": [
+      "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n02761166030\nPLACA\nVMG9C70\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2021\nANO MODELO\n2022\nNÚMERO DO CRV\n162038560206\nCÓDIGO DE SEGURANÇA DO CLA\n11649599262\nMARCA / MODELO / VERSÃO\nVW/SAVEIRO ROBUST CD 1.6\nESPÉCIE / TIPO\nCARGA/CAMIONETA\nCHASSI\n9BWNDTLU0FTLCPH5C\nCOR PREDOMINANTE\nPRATA\nCOMBUSTÍVEL\nÁLCOOL/GASOLINA\nNOME\nAGROPECUÁRIA CARIRI LTDA.\nCPF / CNPJ\n84.885.681/0001-02\nLOCAL\nJUAZEIRO DO NORTE/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "d58398a56cb63f7070f1754f6de45c78214dada6092659666aaf9634af0e4e2d",
+     "leitura": {
+      "tarefas": {
+       "crlv": {
+        "metodo": "regex"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "POA_FABIO_REVOGADA",
+     "nome": "POA_FABIO_REVOGADA.pdf",
+     "tipo": "procuracao",
+     "titulo": "Procuração (2025)",
+     "data": "2025-11-03",
+     "paginas": [
+      "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ – COMARCA DE JUAZEIRO DO NORTE\nCartório Padre Ibiapina – 2º Ofício de Notas de Juazeiro do Norte/CE (fictício)\nExpedito Callou Leite – Tabelião\nLIVRO 187-P — FOLHAS 142/143\nPROCURAÇÃO PÚBLICA — OUTORGANTE: AGROPECUÁRIA CARIRI LTDA. —\nOUTORGADO: FÁBIO JÚNIOR ARRAIS\nSAIBAM quantos este público instrumento de procuração virem que, aos três (03) dias do mês de\nnovembro do ano de dois mil e vinte e cinco (2025), nesta cidade de Juazeiro do Norte, Estado do\nCeará, no Cartório Padre Ibiapina – 2º Ofício de Notas de Juazeiro do Norte/CE (fictício), perante\nmim, Damiana Brito Gonçalves, Escrevente Substituta, compareceu como OUTORGANTE:\nAGROPECUÁRIA CARIRI LTDA., sociedade empresária limitada, inscrita no CNPJ sob o nº\n84.885.681/0001-02, NIRE 23783408381, com sede neste Município, representada por seu sócio\nadministrador ANTÔNIO CÍCERO LOBO, brasileiro, casado, agropecuarista, RG nº 50677843 SSP/\nCE, CPF nº 847.267.147-08, residente e domiciliado em Juazeiro do Norte/CE, com os poderes\nprevistos no Contrato Social de Constituição registrado na JUCEC em 15/06/2018 sob o nº\n22282091222, conforme cópia e certidão simplificada que ficam arquivadas neste Cartório. O\ncomparecente foi identificado como o próprio, à vista de seus documentos, do que dou fé.\nE, pela outorgante, por seu representante, me foi dito que, por este instrumento, faz, nomeia e\nconstitui seu procurador FÁBIO JÚNIOR ARRAIS, brasileiro, casado, gerente agrícola, RG nº\n81121624 SSP/CE, CPF nº 129.110.285-03, residente e domiciliado na Rua São Pedro, nº 780,\nCentro, Juazeiro do Norte/CE, a quem confere poderes especiais e expressos para vender, ceder,\ntransferir ou de qualquer forma alienar veículos automotores de propriedade da outorgante, a quem e\npelo preço que convencionar, ajustando prazos e condições de pagamento; assinar a Autorização\npara Transferência de Propriedade do Veículo (ATPV/ATPV-e), em meio físico ou eletrônico;\nreceber o preço e dar quitação; requerer e assinar o que for necessário perante o DETRAN e demais\nórgãos de trânsito, inclusive vistorias, comunicação de venda e segundas vias; e praticar todos os\ndemais atos necessários ao fiel desempenho deste mandato, que é outorgado por prazo\nindeterminado, vigorando até revogação expressa.\nAssim o disse, do que dou fé, e me pediu este instrumento, que lhe li em voz alta, achou conforme,\naceita e assina. Eu, Damiana Brito Gonçalves, Escrevente Substituta, digitei. Eu, Expedito Callou\nLeite, Tabelião, subscrevo e assino.\n(aa) ANTÔNIO CÍCERO LOBO, por AGROPECUÁRIA CARIRI LTDA.\nEXPEDITO CALLOU LEITE, Tabelião.\nEmolumentos: R$ 205,10 · Taxa de fiscalização: R$ 10,26 · Total: R$ 215,36\nSelo Digital: PIB-0187-2025-C6A04E\nTRASLADO — Extraído na mesma data, conforme o original, do que dou fé.\nJuazeiro do Norte/CE, 3 de novembro de 2025.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "Expedito Callou Leite – Tabelião\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "19ceeb589edd464a921e75403723f3099a48b6f0dfc63425ba8f6c59d0225757",
+     "leitura": {
+      "tarefas": {
+       "procuracao": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 33.0,
+        "tokens_saida": 758,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "REV_FABIO",
+     "nome": "REV_FABIO.pdf",
+     "tipo": "revogacao_procuracao",
+     "titulo": "Revogação de procuração (2026)",
+     "data": "2026-06-12",
+     "paginas": [
+      "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ – COMARCA DE JUAZEIRO DO NORTE\nCartório Padre Ibiapina – 2º Ofício de Notas de Juazeiro do Norte/CE (fictício)\nLIVRO 211-P — FOLHA 098\nESCRITURA PÚBLICA DE REVOGAÇÃO DE PROCURAÇÃO\nSAIBAM quantos esta pública escritura de revogação de procuração virem que, aos doze (12) dias\ndo mês de junho de dois mil e vinte e seis (2026), nesta cidade de Juazeiro do Norte, Estado do\nCeará, neste Cartório, perante mim, Damiana Brito Gonçalves, Escrevente Substituta, compareceu\ncomo OUTORGANTE REVOGANTE: AGROPECUÁRIA CARIRI LTDA., inscrita no CNPJ sob o\nnº 84.885.681/0001-02, NIRE 23783408381, com sede neste Município, neste ato representada por\nsua sócia administradora JOSEFA ALENCAR LOBO, brasileira, casada, agropecuarista, RG nº\n78932180 SSP/CE, CPF nº 136.270.107-60, residente e domiciliada em Juazeiro do Norte/CE, na\nforma do Contrato Social registrado na JUCEC em 15/06/2018 sob o nº 22282091222, reconhecida\ncomo a própria por mim, do que dou fé.\nE, pela revogante, assim representada, me foi dito que, por esta escritura e na melhor forma de\ndireito, revoga, para todos os fins e efeitos, a procuração pública lavrada nestas notas em 03 de\nnovembro de 2025, no Livro 187-P, Folhas 142/143, outorgada a FÁBIO JÚNIOR ARRAIS,\nbrasileiro, casado, gerente agrícola, CPF nº 129.110.285-03, residente na Rua São Pedro, nº 780,\nCentro, Juazeiro do Norte/CE, a qual fica, a partir desta data, sem nenhum efeito, cassados todos os\npoderes nela conferidos. Requer a revogante que se proceda à anotação desta revogação à margem\ndo ato revogado e que o procurador seja notificado por este Cartório, com comprovação de\nrecebimento, a fim de que não mais pratique ato algum em nome da outorgante.\nAssim o disse, do que dou fé, e me pediu esta escritura, que, lida em voz alta, achou conforme,\naceita e assina. Eu, Damiana Brito Gonçalves, Escrevente Substituta, a lavrei. Eu, Expedito Callou\nLeite, Tabelião, subscrevo.\n(aa) JOSEFA ALENCAR LOBO, pela revogante.\nEXPEDITO CALLOU LEITE, Tabelião.\nAnotação marginal efetuada no Livro 187-P, fls. 142. Notificação expedida ao procurador nesta data.\nEmolumentos: R$ 142,80 · Taxa de fiscalização: R$ 7,14 · Total: R$ 149,94\nSelo Digital: PIB-0211-2026-7E5B90\nJuazeiro do Norte/CE, 12 de junho de 2026.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/1"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "869867dbdadecf64602f8898d12c3c3524f977038823d43f89495fe66a47f8e9",
+     "leitura": {
+      "tarefas": {
+       "revogacao": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 33.1,
+        "tokens_saida": 667,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "llamacpp",
+    "modelo": "qwen3.8-27b",
+    "politica": "DETRAN-CE"
+   },
+   "lado": "vendedor"
+  }
+ },
+ "geral": {
+  "veredito": "NAO_PODE",
+  "faixa": "VERMELHO",
+  "indice": 0.0,
+  "resumo": "Vendedor: Os assinantes informados não bastam. Quem pode assinar: Josefa Alencar Lobo ou Antônio Cícero Lobo. O caminho por procuração pública de 03/11/2025 (cartório padre ibiapina – 2º ofício de notas de juazeiro do norte/ce (fictício)) não vale: procuração revogada.",
+  "motivos_faixa": [
+   "Vendedor — índice 0 ≤ limiar 15"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "VW/SAVEIRO ROBUST CD 1.6",
+   "placa": "VMG9C70",
+   "renavam": "02761166030",
+   "chassi": "9BWNDTLU0FTLCPH5C"
+  },
+  "data_venda": "2026-09-20",
+  "valor": 79000.0,
+  "vendedor": {
+   "tipo": "PJ",
+   "nome": "AGROPECUÁRIA CARIRI LTDA.",
+   "documento": "84.885.681/0001-02",
+   "assinantes": [
+    {
+     "nome": "Fábio Júnior Arrais",
+     "cpf": "129.110.285-03"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": "Rita de Cássia Moreira",
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "informado"
+ },
+ "hash_entrada": "75436035bf9a584e12aa6ae03583ffb68bee3f2b5eaa8bfa18d2c24abfaf0641"
+}

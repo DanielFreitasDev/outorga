@@ -1,0 +1,952 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T10:07:52",
+ "pedido": {
+  "veiculo": {
+   "descricao": "GM/S10 CD LTZ 2.8 4X4",
+   "placa": "JSL4B82",
+   "renavam": "07207547359",
+   "chassi": "9BGU92WPD3E9W7F9X"
+  },
+  "data_venda": "2026-09-17",
+  "valor": 215000.0,
+  "assinantes": [
+   {
+    "nome": "Antônio Cícero Lobo",
+    "cpf": "847.267.147-08"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "Auto Center Litoral Ltda.",
+  "vendedor_cnpj": "84.885.681/0001-02",
+  "lado": "vendedor"
+ },
+ "empresa": {
+  "razao_social": "AGROPECUÁRIA CARIRI LTDA.",
+  "cnpj": "84.885.681/0001-02",
+  "tipo": "LTDA",
+  "objeto": "criação de bovinos, cultivo de culturas temporárias e comércio de produtos agropecuários",
+  "comercializa_veiculos": false,
+  "subtipo": null
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 0.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 1,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 0 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: Antônio Cícero Lobo e Josefa Alencar Lobo. Regra aplicável: alienação de veículos (Contrato Social (2018)).",
+ "assinantes": [
+  {
+   "informado": "Antônio Cícero Lobo",
+   "cpf": "847.267.147-08",
+   "chave": "84726714708",
+   "nome": "Antônio Cícero Lobo",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:13627010760+84726714708",
+   "pessoas": [
+    {
+     "chave": "84726714708",
+     "nome": "Antônio Cícero Lobo"
+    },
+    {
+     "chave": "13627010760",
+     "nome": "Josefa Alencar Lobo"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "alienação de veículos — Contrato Social (2018)",
+   "cadeia": [
+    "CARIRI_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "contrato:13627010760+84726714708",
+   "via": "contrato",
+   "descricao": "alienação de veículos — Contrato Social (2018)",
+   "pessoas": [
+    "13627010760",
+    "84726714708"
+   ],
+   "faltam": [
+    "13627010760"
+   ],
+   "faltam_nomes": [
+    "Josefa Alencar Lobo"
+   ],
+   "pessoas_nomes": [
+    "Josefa Alencar Lobo",
+    "Antônio Cícero Lobo"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "CND_INSS",
+   "severidade": "info",
+   "titulo": "CND previdenciária",
+   "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+   "fundamento": [
+    "Lei 8.212/91, art. 47, I, \"c\""
+   ],
+   "fontes": [],
+   "caminho": null
+  },
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: AGROPECUÁRIA CARIRI LTDA..",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "JSL4B82",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "CARIRI_CS#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "CARIRI_CS",
+    "doc_titulo": "Contrato Social (2018)",
+    "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá aos sócios ANTÔNIO CÍCERO LOBO e JOSEFA ALENCAR LOBO, que a exercerão isoladamente, com poderes e atribuições de representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos compreendidos no objeto social e necessários à sua consecução, sempre no interesse da sociedade, vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3012,
+    "fim": 3517
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Antônio Cícero Lobo",
+    "Josefa Alencar Lobo"
+   ],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    }
+   ],
+   "decisiva": false
+  },
+  {
+   "regra": "CARIRI_CS#R2",
+   "escopo": "alienacao_veiculos",
+   "aplicavel": true,
+   "motivo": "valor R$ 215.000,00 cruza o limite de R$ 150.000,00",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "CARIRI_CS",
+    "doc_titulo": "Contrato Social (2018)",
+    "trecho": "A alienação de veículos, máquinas e implementos agrícolas de valor unitário superior a R$ 150",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3536,
+    "fim": 3629
+   },
+   "modo": "conjunto",
+   "pessoas": [
+    "Antônio Cícero Lobo",
+    "Josefa Alencar Lobo"
+   ],
+   "cargo": null,
+   "valor_acima_de": 150000.0,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "conjunto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "assinatura conjunta",
+      "ambos os administradores"
+     ]
+    }
+   ],
+   "decisiva": true
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-09-17",
+  "atos": [
+   {
+    "doc": "CARIRI_CS",
+    "titulo": "Contrato Social (2018)",
+    "efeito": "2018-06-01"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "84726714708",
+    "nome": "Antônio Cícero Lobo",
+    "cargo": "sócio administrador",
+    "doc": "CARIRI_CS"
+   },
+   {
+    "chave": "13627010760",
+    "nome": "Josefa Alencar Lobo",
+    "cargo": "sócio administrador",
+    "doc": "CARIRI_CS"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "84726714708",
+    "nome": "Antônio Cícero Lobo",
+    "percentual": 55.0
+   },
+   {
+    "chave": "13627010760",
+    "nome": "Josefa Alencar Lobo",
+    "percentual": 45.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "AGROPECUÁRIA CARIRI LTDA.",
+    "sub": "84.885.681/0001-02"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "GM/S10 CD LTZ 2.8 4X4",
+    "sub": "JSL4B82"
+   },
+   {
+    "id": "84726714708",
+    "tipo": "pessoa",
+    "rotulo": "Antônio Cícero Lobo",
+    "papeis": [
+     "sócio 55%",
+     "sócio administrador"
+    ],
+    "assinante": true
+   },
+   {
+    "id": "13627010760",
+    "tipo": "pessoa",
+    "rotulo": "Josefa Alencar Lobo",
+    "papeis": [
+     "sócio 45%",
+     "sócio administrador"
+    ],
+    "assinante": false
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "84726714708",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "55%",
+    "status": "neutro"
+   },
+   {
+    "de": "13627010760",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "45%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "84726714708",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "CARIRI_CS"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "13627010760",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "CARIRI_CS"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2018-06-01",
+   "tipo": "ato",
+   "titulo": "Contrato Social (2018)",
+   "doc": "CARIRI_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-09-17",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 215.000,00"
+  }
+ ],
+ "pessoas": {
+  "84726714708": {
+   "nome": "Antônio Cícero Lobo",
+   "cpf": "84726714708"
+  },
+  "13627010760": {
+   "nome": "Josefa Alencar Lobo",
+   "cpf": "13627010760"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "AGROPECUÁRIA CARIRI LTDA.",
+   "cnpj": "84.885.681/0001-02",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Contrato Social (2018)",
+     "doc": "CARIRI_CS",
+     "efeito": "2018-06-01"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Antônio Cícero Lobo",
+    "cpf": "847.267.147-08",
+    "identificacao": "CPF",
+    "qualidade": "sócio administrador"
+   }
+  ],
+  "poderes_conferidos": [
+   "Contrato Social (2018): para este veículo, exige Antônio Cícero Lobo e Josefa Alencar Lobo.",
+   "Assinantes informados (Antônio Cícero Lobo) não atendem a essa exigência."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [
+   {
+    "doc_id": "CARIRI_CS",
+    "doc_titulo": "Contrato Social (2018)",
+    "trecho": "A alienação de veículos, máquinas e implementos agrícolas de valor unitário superior a R$ 150",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3536,
+    "fim": 3629
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "CARIRI_CS",
+    "titulo": "Contrato Social (2018)",
+    "arquivo": "CARIRI_CS.pdf"
+   },
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "CARIRI_CS",
+   "nome": "CARIRI_CS.pdf",
+   "tipo": "contrato_social",
+   "titulo": "Contrato Social (2018)",
+   "data": "2018-06-01",
+   "paginas": [
+    "AGROPECUÁRIA CARIRI LTDA. CNPJ nº 84.885.681/0001-02 – NIRE 23783408381\nCONTRATO SOCIAL DE CONSTITUIÇÃO\nPelo presente instrumento particular, as partes abaixo qualificadas:\nANTÔNIO CÍCERO LOBO, brasileiro, casado sob o regime de comunhão parcial de bens,\nagropecuarista, portador da cédula de identidade RG nº 50677843 SSP/CE, inscrito no CPF sob o nº\n847.267.147-08, residente e domiciliado na Rua das Carnaúbas, nº 1.245, bairro Lagoa Seca,\nJuazeiro do Norte/CE, CEP 63040-260; e\nJOSEFA ALENCAR LOBO, brasileira, casada sob o regime de comunhão parcial de bens,\nagropecuarista, portadora da cédula de identidade RG nº 78932180 SSP/CE, inscrita no CPF sob o nº\n136.270.107-60, residente e domiciliada na Rua das Carnaúbas, nº 1.245, bairro Lagoa Seca,\nJuazeiro do Norte/CE, CEP 63040-260;\ncasados entre si, têm justa e contratada a constituição de uma sociedade empresária limitada, nos\ntermos do art. 977 e dos arts. 1.052 e seguintes do Código Civil (Lei nº 10.406/2002), que se regerá\npelas cláusulas e condições seguintes e, nas omissões, pela legislação aplicável às sociedades\nlimitadas.\nCLÁUSULA PRIMEIRA – DA DENOMINAÇÃO E SEDE\nA sociedade girará sob o nome empresarial AGROPECUÁRIA CARIRI LTDA. e terá sede na\nRodovia CE-292, km 8, Sítio Baixio das Palmeiras, Zona Rural, Juazeiro do Norte/CE, CEP\n63050-970, podendo abrir e encerrar filiais, depósitos e escritórios em qualquer parte do território\nnacional, mediante alteração contratual.\nCLÁUSULA SEGUNDA – DO OBJETO SOCIAL\nA sociedade terá por objeto a criação de bovinos, o cultivo de culturas temporárias e o comércio de\nprodutos agropecuários.\nCLÁUSULA TERCEIRA – DO INÍCIO DAS ATIVIDADES E DO PRAZO DE DURAÇÃO\nA sociedade iniciará suas atividades na data do registro deste instrumento na Junta Comercial do\nEstado do Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 800.000,00 (oitocentos mil reais), dividido em 800.000 (oitocentas mil)\nquotas no valor nominal de R$ 1,00 (um real) cada uma, totalmente subscrito e integralizado neste\nato, em moeda corrente do País, assim distribuído entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nANTÔNIO CÍCERO LOBO\n440.000\n440.000,00\n55%\nJOSEFA ALENCAR LOBO\n360.000\n360.000,00\n45%\nTOTAL\n800.000\n800.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "A responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social, nos termos do art. 1.052 do Código Civil.\nCLÁUSULA SEXTA – DAS QUOTAS E DE SUA CESSÃO\nAs quotas são indivisíveis em relação à sociedade e não poderão ser cedidas ou transferidas a\nterceiros sem o consentimento do outro sócio, a quem fica assegurado, em igualdade de condições e\npreço, o direito de preferência para sua aquisição. O sócio que pretender ceder suas quotas deverá\ncomunicar sua intenção ao outro, por escrito, com antecedência mínima de 30 (trinta) dias.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade caberá aos sócios ANTÔNIO CÍCERO LOBO e JOSEFA ALENCAR\nLOBO, que a exercerão isoladamente, com poderes e atribuições de representação ativa e passiva da\nsociedade, em juízo ou fora dele, podendo praticar todos os atos compreendidos no objeto social e\nnecessários à sua consecução, sempre no interesse da sociedade, vedado o uso do nome empresarial\nem atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.\nParágrafo único. A alienação de veículos, máquinas e implementos agrícolas de valor unitário\nsuperior a R$ 150.000,00 (cento e cinquenta mil reais) dependerá da assinatura conjunta de ambos\nos administradores.\nCLÁUSULA OITAVA – DO PRÓ-LABORE\nOs sócios administradores poderão fazer retirada mensal a título de pró-labore, em valor fixado de\ncomum acordo entre os sócios, observadas as disposições regulamentares pertinentes.\nCLÁUSULA NONA – DO EXERCÍCIO SOCIAL E DAS DEMONSTRAÇÕES FINANCEIRAS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, os administradores\nprestarão contas justificadas de sua administração, procedendo à elaboração do inventário, do\nbalanço patrimonial e do balanço de resultado econômico, cabendo aos sócios, na proporção de suas\nquotas, os lucros ou as perdas apurados.\nCLÁUSULA DÉCIMA – DA TOMADA DE CONTAS\nNos 4 (quatro) meses seguintes ao término do exercício social, os sócios reunir-se-ão para tomar as\ncontas dos administradores e deliberar sobre o balanço patrimonial e o de resultado econômico, na\nforma do art. 1.078 do Código Civil.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FALECIMENTO OU DA INCAPACIDADE DE SÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros ou sucessores do falecido ou com o representante legal do incapaz. Não sendo possível ou\ninexistindo interesse destes ou do sócio remanescente, o valor de seus haveres será apurado e\nliquidado com base na situação patrimonial da sociedade à data da resolução, verificada em balanço\nespecialmente levantado, e pago em até 12 (doze) parcelas mensais e sucessivas.\nCLÁUSULA DÉCIMA SEGUNDA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nOs administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade, por lei especial, ou em virtude de condenação criminal, ou por se\nencontrarem sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "públicos, ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato, ou contra\na economia popular, contra o sistema financeiro nacional, contra normas de defesa da concorrência,\ncontra as relações de consumo, a fé pública ou a propriedade, nos termos do art. 1.011, § 1º, do\nCódigo Civil.\nCLÁUSULA DÉCIMA TERCEIRA – DO FORO\nFica eleito o foro da Comarca de Juazeiro do Norte/CE para dirimir quaisquer questões oriundas\ndeste contrato, com renúncia expressa a qualquer outro, por mais privilegiado que seja.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em 3 (três) vias\nde igual teor e forma.\nJuazeiro do Norte/CE, 1º de junho de 2018.\n____________________________________ ANTÔNIO CÍCERO LOBO\n____________________________________ JOSEFA ALENCAR LOBO\nVisto: Heitor Brígido Callou – OAB/CE nº 18.437\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 15/06/2018 sob o nº 22282091222\nProtocolo: 18/087.412-6 | NIRE: 23783408381\nEmpresa: AGROPECUÁRIA CARIRI LTDA.\nAutenticação: 7F3A9C21B84E06D5A1C3F9E2B7D40A68\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "b3f41f025ce6400833ba13829b75807939d9bc74f102841266481403d76fcd83",
+   "leitura": {}
+  },
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n07207547359\nPLACA\nJSL4B82\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2023\nANO MODELO\n2023\nNÚMERO DO CRV\n543832218795\nCÓDIGO DE SEGURANÇA DO CLA\n84096487730\nMARCA / MODELO / VERSÃO\nGM/S10 CD LTZ 2.8 4X4\nESPÉCIE / TIPO\nCARGA/CAMINHONETE\nCHASSI\n9BGU92WPD3E9W7F9X\nCOR PREDOMINANTE\nPRATA\nCOMBUSTÍVEL\nDIESEL\nNOME\nAGROPECUÁRIA CARIRI LTDA.\nCPF / CNPJ\n84.885.681/0001-02\nLOCAL\nJUAZEIRO DO NORTE/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "e976e4bbd76a5ccd6e66220c62241f34b63802c4e2d5d26ec3631143396fb99d",
+   "leitura": {}
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "gabarito",
+  "politica": "DETRAN-CE"
+ },
+ "lado": "vendedor",
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T10:07:52",
+   "pedido": {
+    "veiculo": {
+     "descricao": "GM/S10 CD LTZ 2.8 4X4",
+     "placa": "JSL4B82",
+     "renavam": "07207547359",
+     "chassi": "9BGU92WPD3E9W7F9X"
+    },
+    "data_venda": "2026-09-17",
+    "valor": 215000.0,
+    "assinantes": [
+     {
+      "nome": "Antônio Cícero Lobo",
+      "cpf": "847.267.147-08"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "Auto Center Litoral Ltda.",
+    "vendedor_cnpj": "84.885.681/0001-02",
+    "lado": "vendedor"
+   },
+   "empresa": {
+    "razao_social": "AGROPECUÁRIA CARIRI LTDA.",
+    "cnpj": "84.885.681/0001-02",
+    "tipo": "LTDA",
+    "objeto": "criação de bovinos, cultivo de culturas temporárias e comércio de produtos agropecuários",
+    "comercializa_veiculos": false,
+    "subtipo": null
+   },
+   "veredito": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 1,
+    "menor_confianca_fato": 1.0,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Antônio Cícero Lobo e Josefa Alencar Lobo. Regra aplicável: alienação de veículos (Contrato Social (2018)).",
+   "assinantes": [
+    {
+     "informado": "Antônio Cícero Lobo",
+     "cpf": "847.267.147-08",
+     "chave": "84726714708",
+     "nome": "Antônio Cícero Lobo",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:13627010760+84726714708",
+     "pessoas": [
+      {
+       "chave": "84726714708",
+       "nome": "Antônio Cícero Lobo"
+      },
+      {
+       "chave": "13627010760",
+       "nome": "Josefa Alencar Lobo"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "alienação de veículos — Contrato Social (2018)",
+     "cadeia": [
+      "CARIRI_CS"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [],
+   "caminho_escolhido": null,
+   "faltantes": [
+    {
+     "alternativa": "contrato:13627010760+84726714708",
+     "via": "contrato",
+     "descricao": "alienação de veículos — Contrato Social (2018)",
+     "pessoas": [
+      "13627010760",
+      "84726714708"
+     ],
+     "faltam": [
+      "13627010760"
+     ],
+     "faltam_nomes": [
+      "Josefa Alencar Lobo"
+     ],
+     "pessoas_nomes": [
+      "Josefa Alencar Lobo",
+      "Antônio Cícero Lobo"
+     ]
+    }
+   ],
+   "achados": [
+    {
+     "codigo": "CND_INSS",
+     "severidade": "info",
+     "titulo": "CND previdenciária",
+     "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+     "fundamento": [
+      "Lei 8.212/91, art. 47, I, \"c\""
+     ],
+     "fontes": [],
+     "caminho": null
+    },
+    {
+     "codigo": "TITULARIDADE_OK",
+     "severidade": "ok",
+     "titulo": "Veículo registrado no CNPJ da empresa",
+     "detalhe": "Proprietário no CRLV: AGROPECUÁRIA CARIRI LTDA..",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [
+      {
+       "doc_id": "CRLV",
+       "doc_titulo": "CRLV",
+       "trecho": "JSL4B82",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 146,
+       "fim": 153
+      }
+     ],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "CARIRI_CS#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "CARIRI_CS",
+      "doc_titulo": "Contrato Social (2018)",
+      "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá aos sócios ANTÔNIO CÍCERO LOBO e JOSEFA ALENCAR LOBO, que a exercerão isoladamente, com poderes e atribuições de representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos compreendidos no objeto social e necessários à sua consecução, sempre no interesse da sociedade, vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3012,
+      "fim": 3517
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Antônio Cícero Lobo",
+      "Josefa Alencar Lobo"
+     ],
+     "cargo": null,
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente"
+       ]
+      }
+     ],
+     "decisiva": false
+    },
+    {
+     "regra": "CARIRI_CS#R2",
+     "escopo": "alienacao_veiculos",
+     "aplicavel": true,
+     "motivo": "valor R$ 215.000,00 cruza o limite de R$ 150.000,00",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "CARIRI_CS",
+      "doc_titulo": "Contrato Social (2018)",
+      "trecho": "A alienação de veículos, máquinas e implementos agrícolas de valor unitário superior a R$ 150",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3536,
+      "fim": 3629
+     },
+     "modo": "conjunto",
+     "pessoas": [
+      "Antônio Cícero Lobo",
+      "Josefa Alencar Lobo"
+     ],
+     "cargo": null,
+     "valor_acima_de": 150000.0,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "conjunto",
+       "valor_lexico": "conjunto",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "assinatura conjunta",
+        "ambos os administradores"
+       ]
+      }
+     ],
+     "decisiva": true
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-09-17",
+    "atos": [
+     {
+      "doc": "CARIRI_CS",
+      "titulo": "Contrato Social (2018)",
+      "efeito": "2018-06-01"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "84726714708",
+      "nome": "Antônio Cícero Lobo",
+      "cargo": "sócio administrador",
+      "doc": "CARIRI_CS"
+     },
+     {
+      "chave": "13627010760",
+      "nome": "Josefa Alencar Lobo",
+      "cargo": "sócio administrador",
+      "doc": "CARIRI_CS"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "84726714708",
+      "nome": "Antônio Cícero Lobo",
+      "percentual": 55.0
+     },
+     {
+      "chave": "13627010760",
+      "nome": "Josefa Alencar Lobo",
+      "percentual": 45.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "AGROPECUÁRIA CARIRI LTDA.",
+      "sub": "84.885.681/0001-02"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "GM/S10 CD LTZ 2.8 4X4",
+      "sub": "JSL4B82"
+     },
+     {
+      "id": "84726714708",
+      "tipo": "pessoa",
+      "rotulo": "Antônio Cícero Lobo",
+      "papeis": [
+       "sócio 55%",
+       "sócio administrador"
+      ],
+      "assinante": true
+     },
+     {
+      "id": "13627010760",
+      "tipo": "pessoa",
+      "rotulo": "Josefa Alencar Lobo",
+      "papeis": [
+       "sócio 45%",
+       "sócio administrador"
+      ],
+      "assinante": false
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "valido"
+     },
+     {
+      "de": "84726714708",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "55%",
+      "status": "neutro"
+     },
+     {
+      "de": "13627010760",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "45%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "84726714708",
+      "tipo": "administracao",
+      "rotulo": "administra · em conjunto",
+      "status": "valido",
+      "doc": "CARIRI_CS"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "13627010760",
+      "tipo": "administracao",
+      "rotulo": "administra · em conjunto",
+      "status": "valido",
+      "doc": "CARIRI_CS"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2018-06-01",
+     "tipo": "ato",
+     "titulo": "Contrato Social (2018)",
+     "doc": "CARIRI_CS",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-09-17",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 215.000,00"
+    }
+   ],
+   "pessoas": {
+    "84726714708": {
+     "nome": "Antônio Cícero Lobo",
+     "cpf": "84726714708"
+    },
+    "13627010760": {
+     "nome": "Josefa Alencar Lobo",
+     "cpf": "13627010760"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "não comprovada",
+    "outorgante": {
+     "nome": "AGROPECUÁRIA CARIRI LTDA.",
+     "cnpj": "84.885.681/0001-02",
+     "tipo": "LTDA",
+     "atos_vigentes": [
+      {
+       "titulo": "Contrato Social (2018)",
+       "doc": "CARIRI_CS",
+       "efeito": "2018-06-01"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "Antônio Cícero Lobo",
+      "cpf": "847.267.147-08",
+      "identificacao": "CPF",
+      "qualidade": "sócio administrador"
+     }
+    ],
+    "poderes_conferidos": [
+     "Contrato Social (2018): para este veículo, exige Antônio Cícero Lobo e Josefa Alencar Lobo.",
+     "Assinantes informados (Antônio Cícero Lobo) não atendem a essa exigência."
+    ],
+    "prazo_validade": [
+     "—"
+    ],
+    "revogacao": [
+     "—"
+    ],
+    "fontes": [
+     {
+      "doc_id": "CARIRI_CS",
+      "doc_titulo": "Contrato Social (2018)",
+      "trecho": "A alienação de veículos, máquinas e implementos agrícolas de valor unitário superior a R$ 150",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3536,
+      "fim": 3629
+     }
+    ],
+    "documentos_verificaveis": [
+     {
+      "id": "CARIRI_CS",
+      "titulo": "Contrato Social (2018)",
+      "arquivo": "CARIRI_CS.pdf"
+     },
+     {
+      "id": "CRLV",
+      "titulo": "CRLV",
+      "arquivo": "CRLV.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "CARIRI_CS",
+     "nome": "CARIRI_CS.pdf",
+     "tipo": "contrato_social",
+     "titulo": "Contrato Social (2018)",
+     "data": "2018-06-01",
+     "paginas": [
+      "AGROPECUÁRIA CARIRI LTDA. CNPJ nº 84.885.681/0001-02 – NIRE 23783408381\nCONTRATO SOCIAL DE CONSTITUIÇÃO\nPelo presente instrumento particular, as partes abaixo qualificadas:\nANTÔNIO CÍCERO LOBO, brasileiro, casado sob o regime de comunhão parcial de bens,\nagropecuarista, portador da cédula de identidade RG nº 50677843 SSP/CE, inscrito no CPF sob o nº\n847.267.147-08, residente e domiciliado na Rua das Carnaúbas, nº 1.245, bairro Lagoa Seca,\nJuazeiro do Norte/CE, CEP 63040-260; e\nJOSEFA ALENCAR LOBO, brasileira, casada sob o regime de comunhão parcial de bens,\nagropecuarista, portadora da cédula de identidade RG nº 78932180 SSP/CE, inscrita no CPF sob o nº\n136.270.107-60, residente e domiciliada na Rua das Carnaúbas, nº 1.245, bairro Lagoa Seca,\nJuazeiro do Norte/CE, CEP 63040-260;\ncasados entre si, têm justa e contratada a constituição de uma sociedade empresária limitada, nos\ntermos do art. 977 e dos arts. 1.052 e seguintes do Código Civil (Lei nº 10.406/2002), que se regerá\npelas cláusulas e condições seguintes e, nas omissões, pela legislação aplicável às sociedades\nlimitadas.\nCLÁUSULA PRIMEIRA – DA DENOMINAÇÃO E SEDE\nA sociedade girará sob o nome empresarial AGROPECUÁRIA CARIRI LTDA. e terá sede na\nRodovia CE-292, km 8, Sítio Baixio das Palmeiras, Zona Rural, Juazeiro do Norte/CE, CEP\n63050-970, podendo abrir e encerrar filiais, depósitos e escritórios em qualquer parte do território\nnacional, mediante alteração contratual.\nCLÁUSULA SEGUNDA – DO OBJETO SOCIAL\nA sociedade terá por objeto a criação de bovinos, o cultivo de culturas temporárias e o comércio de\nprodutos agropecuários.\nCLÁUSULA TERCEIRA – DO INÍCIO DAS ATIVIDADES E DO PRAZO DE DURAÇÃO\nA sociedade iniciará suas atividades na data do registro deste instrumento na Junta Comercial do\nEstado do Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 800.000,00 (oitocentos mil reais), dividido em 800.000 (oitocentas mil)\nquotas no valor nominal de R$ 1,00 (um real) cada uma, totalmente subscrito e integralizado neste\nato, em moeda corrente do País, assim distribuído entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nANTÔNIO CÍCERO LOBO\n440.000\n440.000,00\n55%\nJOSEFA ALENCAR LOBO\n360.000\n360.000,00\n45%\nTOTAL\n800.000\n800.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+      "A responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social, nos termos do art. 1.052 do Código Civil.\nCLÁUSULA SEXTA – DAS QUOTAS E DE SUA CESSÃO\nAs quotas são indivisíveis em relação à sociedade e não poderão ser cedidas ou transferidas a\nterceiros sem o consentimento do outro sócio, a quem fica assegurado, em igualdade de condições e\npreço, o direito de preferência para sua aquisição. O sócio que pretender ceder suas quotas deverá\ncomunicar sua intenção ao outro, por escrito, com antecedência mínima de 30 (trinta) dias.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade caberá aos sócios ANTÔNIO CÍCERO LOBO e JOSEFA ALENCAR\nLOBO, que a exercerão isoladamente, com poderes e atribuições de representação ativa e passiva da\nsociedade, em juízo ou fora dele, podendo praticar todos os atos compreendidos no objeto social e\nnecessários à sua consecução, sempre no interesse da sociedade, vedado o uso do nome empresarial\nem atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.\nParágrafo único. A alienação de veículos, máquinas e implementos agrícolas de valor unitário\nsuperior a R$ 150.000,00 (cento e cinquenta mil reais) dependerá da assinatura conjunta de ambos\nos administradores.\nCLÁUSULA OITAVA – DO PRÓ-LABORE\nOs sócios administradores poderão fazer retirada mensal a título de pró-labore, em valor fixado de\ncomum acordo entre os sócios, observadas as disposições regulamentares pertinentes.\nCLÁUSULA NONA – DO EXERCÍCIO SOCIAL E DAS DEMONSTRAÇÕES FINANCEIRAS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, os administradores\nprestarão contas justificadas de sua administração, procedendo à elaboração do inventário, do\nbalanço patrimonial e do balanço de resultado econômico, cabendo aos sócios, na proporção de suas\nquotas, os lucros ou as perdas apurados.\nCLÁUSULA DÉCIMA – DA TOMADA DE CONTAS\nNos 4 (quatro) meses seguintes ao término do exercício social, os sócios reunir-se-ão para tomar as\ncontas dos administradores e deliberar sobre o balanço patrimonial e o de resultado econômico, na\nforma do art. 1.078 do Código Civil.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FALECIMENTO OU DA INCAPACIDADE DE SÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros ou sucessores do falecido ou com o representante legal do incapaz. Não sendo possível ou\ninexistindo interesse destes ou do sócio remanescente, o valor de seus haveres será apurado e\nliquidado com base na situação patrimonial da sociedade à data da resolução, verificada em balanço\nespecialmente levantado, e pago em até 12 (doze) parcelas mensais e sucessivas.\nCLÁUSULA DÉCIMA SEGUNDA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nOs administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade, por lei especial, ou em virtude de condenação criminal, ou por se\nencontrarem sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+      "públicos, ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato, ou contra\na economia popular, contra o sistema financeiro nacional, contra normas de defesa da concorrência,\ncontra as relações de consumo, a fé pública ou a propriedade, nos termos do art. 1.011, § 1º, do\nCódigo Civil.\nCLÁUSULA DÉCIMA TERCEIRA – DO FORO\nFica eleito o foro da Comarca de Juazeiro do Norte/CE para dirimir quaisquer questões oriundas\ndeste contrato, com renúncia expressa a qualquer outro, por mais privilegiado que seja.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em 3 (três) vias\nde igual teor e forma.\nJuazeiro do Norte/CE, 1º de junho de 2018.\n____________________________________ ANTÔNIO CÍCERO LOBO\n____________________________________ JOSEFA ALENCAR LOBO\nVisto: Heitor Brígido Callou – OAB/CE nº 18.437\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 15/06/2018 sob o nº 22282091222\nProtocolo: 18/087.412-6 | NIRE: 23783408381\nEmpresa: AGROPECUÁRIA CARIRI LTDA.\nAutenticação: 7F3A9C21B84E06D5A1C3F9E2B7D40A68\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "b3f41f025ce6400833ba13829b75807939d9bc74f102841266481403d76fcd83",
+     "leitura": {}
+    },
+    {
+     "id": "CRLV",
+     "nome": "CRLV.pdf",
+     "tipo": "crlv",
+     "titulo": "CRLV",
+     "data": null,
+     "paginas": [
+      "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n07207547359\nPLACA\nJSL4B82\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2023\nANO MODELO\n2023\nNÚMERO DO CRV\n543832218795\nCÓDIGO DE SEGURANÇA DO CLA\n84096487730\nMARCA / MODELO / VERSÃO\nGM/S10 CD LTZ 2.8 4X4\nESPÉCIE / TIPO\nCARGA/CAMINHONETE\nCHASSI\n9BGU92WPD3E9W7F9X\nCOR PREDOMINANTE\nPRATA\nCOMBUSTÍVEL\nDIESEL\nNOME\nAGROPECUÁRIA CARIRI LTDA.\nCPF / CNPJ\n84.885.681/0001-02\nLOCAL\nJUAZEIRO DO NORTE/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "e976e4bbd76a5ccd6e66220c62241f34b63802c4e2d5d26ec3631143396fb99d",
+     "leitura": {}
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "gabarito",
+    "politica": "DETRAN-CE"
+   },
+   "lado": "vendedor"
+  }
+ },
+ "geral": {
+  "veredito": "NAO_PODE",
+  "faixa": "VERMELHO",
+  "indice": 0.0,
+  "resumo": "Vendedor: Os assinantes informados não bastam. Quem pode assinar: Antônio Cícero Lobo e Josefa Alencar Lobo. Regra aplicável: alienação de veículos (Contrato Social (2018)).",
+  "motivos_faixa": [
+   "Vendedor — índice 0 ≤ limiar 15"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "GM/S10 CD LTZ 2.8 4X4",
+   "placa": "JSL4B82",
+   "renavam": "07207547359",
+   "chassi": "9BGU92WPD3E9W7F9X"
+  },
+  "data_venda": "2026-09-17",
+  "valor": 215000.0,
+  "vendedor": {
+   "tipo": "PJ",
+   "nome": "AGROPECUÁRIA CARIRI LTDA.",
+   "documento": "84.885.681/0001-02",
+   "assinantes": [
+    {
+     "nome": "Antônio Cícero Lobo",
+     "cpf": "847.267.147-08"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": "Auto Center Litoral Ltda.",
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "informado"
+ },
+ "hash_entrada": "147d7b2f3d7ba20050c19d193409cf55359fc6aa4a3826be5e1b56f0f1d1d8cb"
+}

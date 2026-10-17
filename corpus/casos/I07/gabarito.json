@@ -1,0 +1,25 @@
+{
+  "caso": "I07",
+  "titulo": "Procuração outorgada por sócio cujo poder de administração depende de alterações contratuais não apresentadas",
+  "categoria": "procuracao_quem_outorgou / documento_ausente",
+  "objetivo": "Testa se o sistema verifica os poderes do outorgante na data da outorga e percebe que os atos que os confeririam (Terceira e Quarta Alterações) não estão no dossiê: o contrato de 2016 mostra só AFONSO como administrador e a consolidação de 2026 não informa como CLÁUDIO atuava. O sistema não deve aprovar só com base na menção do tabelião nem recusar como se a falta de prova fosse prova de falta de poderes.",
+  "validacao_cega": true,
+  "autor": "independente",
+  "esperado": {
+    "veredito": "INDETERMINADO",
+    "faixas_aceitaveis": [
+      "AMARELO"
+    ],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null,
+    "fundamentos": [
+      "CC art. 1.018",
+      "CC art. 47",
+      "CC art. 1.154",
+      "CC art. 661, § 1º",
+      "STJ, AgInt no REsp 1.997.964/SC (a procuração da PJ sobrevive à saída do sócio signatário, se validamente outorgada)"
+    ]
+  },
+  "esperado_ce": null,
+  "raciocinio": "A procuração de 04/12/2025 é pública, identifica o veículo, tem prazo de 1 ano e confere poder especial de venda; também sobreviveria à retirada de CLÁUDIO em 20/05/2026. A dúvida está na origem: o único ato societário anterior à outorga que foi apresentado é o contrato de 2016, que designa só AFONSO como administrador e exclui TEREZA; a Terceira Alteração (19/03/2024), invocada na escritura, e a Quarta (14/08/2025), que pode ter mudado a administração antes da outorga, não estão no dossiê. A consolidação de 2026 diz apenas que CLÁUDIO deixa 'qualquer cargo ou função' e não informa se ele administrava isoladamente nem se podia constituir procuradores para alienar veículos (CC arts. 1.018 e 47). A menção do tabelião à certidão simplificada não substitui o exame do ato que conferiu os poderes. Na data da venda (16/09/2026), AFONSO e TEREZA podem assinar isoladamente pela Cláusula Sétima consolidada, mas a inclusão de SEVERINO depende de documentos ausentes; por isso os conjuntos ficam indeterminados, e o pedido deve ir para revisão humana, com exigência da Terceira e da Quarta Alterações (ou certidão de inteiro teor)."
+}

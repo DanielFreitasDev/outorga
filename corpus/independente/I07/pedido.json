@@ -1,0 +1,24 @@
+{
+  "caso": "I07",
+  "vendedor": {
+    "razao_social": "CRATO DISTRIBUIDORA DE MATERIAIS ELÉTRICOS LTDA",
+    "cnpj": "11.342.339/0001-92"
+  },
+  "veiculo": {
+    "placa": "TSF6J17",
+    "renavam": "03744342176",
+    "chassi": "9BDLHFJZMUD5NDM7K",
+    "descricao": "FIAT/ARGO"
+  },
+  "data_venda": "2026-09-16",
+  "valor": 61000.00,
+  "assinantes": [
+    {"nome": "SEVERINO RAMOS BATISTA LEITE", "cpf": "499.977.076-80"}
+  ],
+  "crlv_proprietario": {
+    "nome": "CRATO DISTRIBUIDORA DE MATERIAIS ELÉTRICOS LTDA",
+    "documento": "11.342.339/0001-92"
+  },
+  "comprador": {"nome": "MARIA DO SOCORRO ARRAES BRAGA"},
+  "forma_assinatura": "ATPV-e"
+}

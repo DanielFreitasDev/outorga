@@ -1,0 +1,35 @@
+{
+  "caso": "I08",
+  "titulo": "Sócio único de SLU assina a venda, mas só foi nomeado administrador uma semana depois; a administradora era não sócia",
+  "categoria": "sociedade_limitada_unipessoal / administrador_nomeado_depois_da_venda / procuracao_prazo",
+  "objetivo": "Testa se o sistema separa titularidade das quotas e poder de representação (o dono de 100% da SLU não era administrador na data da venda), se usa o quadro de administradores vigente em 01/09/2026 e não o da consolidação mais recente (assinada em 08/09/2026) e se descarta a procuração particular com prazo de 6 meses já vencido.",
+  "validacao_cega": true,
+  "autor": "independente",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "541.178.769-61"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "RENATA SIQUEIRA BANDEIRA"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 1.052, §§ 1º e 2º",
+      "CC art. 1.060",
+      "CC art. 1.064",
+      "CC art. 47",
+      "CC art. 682, IV",
+      "Lei 8.934/94, art. 36",
+      "Ato constitutivo, Cláusula Sétima"
+    ]
+  },
+  "esperado_ce": null,
+  "raciocinio": "Pelo ato constitutivo de 2024, a administração e o uso da denominação competiam 'com exclusividade' à administradora não sócia RENATA (Cláusula Sétima). O sócio único THIAGO, embora titular de 100% das quotas, não tinha poder de representação (CC arts. 1.060 e 1.064); a titularidade das quotas só lhe dava as decisões reservadas aos sócios (Cláusula Sexta). Ele só foi designado administrador pela Primeira Alteração, assinada em 08/09/2026 e registrada em 17/09/2026, uma semana depois da venda de 01/09/2026; a retroação do art. 36 da Lei 8.934/94 alcança no máximo a data de assinatura do ato, nunca data anterior a ela. A procuração particular a LÍVIA, de 03/11/2025, extinguiu-se pelo decurso do prazo de 6 meses em 03/05/2026 (CC art. 682, IV). Na data da venda, só RENATA podia assinar pela sociedade."
+}

@@ -1,0 +1,63 @@
+{
+  "caso": "C26",
+  "titulo": "Procuração particular sem firma reconhecida",
+  "categoria": "forma",
+  "objetivo": "Poderes corretos, mas a forma não é aceita pelo DETRAN/cartório sem reconhecimento: revisão.",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "AMARELO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "RAFAEL"
+      ],
+      [
+        "CAMILA"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 654, §2º"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "547.517.799-66"
+      ],
+      [
+        "230.048.764-00"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Rafael Nogueira Brito"
+      ],
+      [
+        "Camila Freire Rocha"
+      ]
+    ]
+  },
+  "esperado_ce": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "RAFAEL"
+      ]
+    ],
+    "fundamentos": [
+      "DETRAN-CE: procuração pública e específica"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "547.517.799-66"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Rafael Nogueira Brito"
+      ]
+    ]
+  }
+}

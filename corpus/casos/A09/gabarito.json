@@ -1,0 +1,46 @@
+{
+  "caso": "A09",
+  "titulo": "Cooperativa: Diretor-Presidente sozinho",
+  "categoria": "tipos",
+  "objetivo": "Alienação exige Diretor-Presidente em conjunto com o Diretor Financeiro.",
+  "validacao_cega": false,
+  "lote": "atpv",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "vendedor": {
+      "veredito": "NAO_PODE",
+      "faixas_aceitaveis": [
+        "VERMELHO"
+      ],
+      "conjuntos_minimos": [
+        [
+          "MANOEL",
+          "EXPEDITO"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "554.581.374-85",
+          "479.724.509-35"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Manoel Messias Freitas",
+          "Expedito Lima Cordeiro"
+        ]
+      ]
+    }
+  }
+}

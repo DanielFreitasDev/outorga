@@ -1,0 +1,272 @@
+{
+ "resumo": {
+  "modo": "llm",
+  "conjunto": "cega",
+  "casos": 8,
+  "duracao_s": 0.3,
+  "data": "2026-10-17T10:07:49",
+  "veredito_correto": 8,
+  "faixa_aceitavel": 8,
+  "quem_pode_correto": 8,
+  "quem_pode_avaliados": 8,
+  "erros_perigosos": 0,
+  "erros_caros": 0,
+  "cobertura_automatica": 1.0,
+  "acerto_na_faixa_automatica": 1.0,
+  "politica": {
+   "nome": "DETRAN-CE",
+   "limiar_aceite": 85.0,
+   "limiar_recusa": 15.0
+  }
+ },
+ "linhas": [
+  {
+   "caso": "H01",
+   "titulo": "‘De per si’ — um administrador assina",
+   "categoria": "administracao",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Otávio Bastos Neto pode assinar a ATPV-e — regra geral de representação — Cláusula 7ª.",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "H02",
+   "titulo": "Quaisquer dois dos três administradores — um assina",
+   "categoria": "administracao",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Caio Ferreira Paz e Renata Albuquerque Paz ou Lucas Ferreira Paz e Renata Albuquerque Paz ou Caio Ferreira Paz e Lucas Ferreira Paz. Regra aplicável: regra geral de representação (Cláusula Sexta).",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "H03",
+   "titulo": "Veículos da frota exigem os dois (sem valor) — um assina",
+   "categoria": "alcada",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Ivan Cordeiro Mota e Solange Prado Mota. Regra aplicável: alienação de veículos (Cláusula Sexta, Parágrafo primeiro).",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "H04",
+   "titulo": "Procuração ‘pelo período de doze meses’ vencida",
+   "categoria": "procuracao",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.4,
+   "confianca": 0.992,
+   "segundos": 0.1,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Ivan Cordeiro Mota e Solange Prado Mota. O caminho por procuração pública de 20/08/2025 (cartório iracema – 4º tabelionato de notas de fortaleza) não vale: procuração vencida.",
+   "motivos_faixa": [
+    "índice 0.4 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.4
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "H05",
+   "titulo": "‘Sem direito de substabelecer’ e houve substabelecimento",
+   "categoria": "substabelecimento",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Hugo Leitão Damasceno ou Priscila Damasceno Rios (procurador). O caminho por substabelecimento com reserva de 25/08/2026 não vale: substabelecimento proibido.",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "H06",
+   "titulo": "Procuração conjunta, veículo identificado, no prazo",
+   "categoria": "procuracao",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 92.5,
+   "confianca": 0.85,
+   "segundos": 0.0,
+   "resumo": "Nilton Arruda Coelho pode assinar a ATPV-e — procuração pública de 15/06/2026 (Cartório Iracema – 4º Tabelionato de Notas de Fortaleza).",
+   "motivos_faixa": [
+    "índice 92.5 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 92.5
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "H07",
+   "titulo": "Antiga administradora assina depois da troca",
+   "categoria": "temporal",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Jonas Holanda Freire. Regra aplicável: regra geral de representação (Cláusula 6 – DA ADMINISTRAÇÃO).",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "H08",
+   "titulo": "Restrição a imóveis e participações; veículo de R$ 320 mil",
+   "categoria": "administracao",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Hugo Leitão Damasceno pode assinar a ATPV-e — regra geral de representação — Cláusula III, Parágrafo 1.",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  }
+ ]
+}

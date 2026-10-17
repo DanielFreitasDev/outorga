@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Parecer de verificação de poderes — {{ lados.values() | map(attribute="empresa.razao_social") | join(" / ") }}</title>
+<style>
+  @page { size: A4; margin: 18mm 16mm 20mm 16mm;
+    @bottom-left { content: "Outorga · verificação de poderes para ATPV · análise de apoio à decisão"; font: 7pt 'DejaVu Sans'; color: #777; }
+    @bottom-right { content: "pág. " counter(page) " de " counter(pages); font: 7pt 'DejaVu Sans'; color: #777; } }
+  :root { --ink:#16181d; --mut:#5c6370; --line:#d9dce1; --verde:#0f7a4a; --amarelo:#9a6700; --vermelho:#b42318; }
+  body { font-family: 'DejaVu Sans', 'Liberation Sans', sans-serif; font-size: 9.2pt; color: var(--ink); line-height: 1.42; }
+  h1 { font-size: 15pt; margin: 0 0 2pt; letter-spacing: -.2pt; }
+  h2 { font-size: 10.5pt; margin: 16pt 0 6pt; padding-bottom: 3pt; border-bottom: 1pt solid var(--line); }
+  .sub { color: var(--mut); font-size: 8.4pt; }
+  .topo { display: flex; justify-content: space-between; gap: 12pt; align-items: flex-start; }
+  .selo { border-radius: 6pt; padding: 8pt 12pt; color: #fff; text-align: center; min-width: 120pt; }
+  .selo b { display: block; font-size: 13pt; letter-spacing: .4pt; }
+  .selo span { font-size: 8pt; opacity: .95; }
+  .VERDE { background: var(--verde); } .AMARELO { background: var(--amarelo); } .VERMELHO { background: var(--vermelho); }
+  .resumo { margin: 10pt 0 0; padding: 8pt 10pt; background: #f5f6f8; border-left: 3pt solid var(--ink); }
+  table { width: 100%; border-collapse: collapse; margin-top: 4pt; }
+  th, td { text-align: left; vertical-align: top; padding: 4pt 6pt; border-bottom: .6pt solid var(--line); }
+  th { width: 26%; color: var(--mut); font-weight: normal; font-size: 8.4pt; text-transform: uppercase; letter-spacing: .3pt; }
+  ul { margin: 0; padding-left: 13pt; } li { margin: 1.5pt 0; }
+  .ach { display: grid; grid-template-columns: 62pt 1fr; gap: 2pt 8pt; margin: 4pt 0; }
+  .tag { font-size: 7.2pt; text-transform: uppercase; letter-spacing: .3pt; padding: 1pt 4pt; border-radius: 3pt; border: .6pt solid; height: fit-content; text-align: center; }
+  .bloqueio { color: var(--vermelho); } .alerta { color: var(--amarelo); } .atencao { color: #6b5d00; } .ok { color: var(--verde); } .info { color: var(--mut); }
+  .cit { color: var(--mut); font-size: 8pt; font-style: italic; }
+  .mono { font-family: 'DejaVu Sans Mono', monospace; font-size: 7.4pt; word-break: break-all; }
+  .grade { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6pt; margin-top: 6pt; }
+  .kpi { border: .6pt solid var(--line); border-radius: 4pt; padding: 5pt 7pt; }
+  .kpi b { display: block; font-size: 11pt; } .kpi span { color: var(--mut); font-size: 7.6pt; }
+  .kpi .ok { color: var(--verde); } .kpi .alerta { color: var(--amarelo); } .kpi .bloqueio { color: var(--vermelho); }
+  .ach, tr, .kpi { break-inside: avoid; } h2 { break-after: avoid; }
+  .aviso { margin-top: 14pt; font-size: 7.6pt; color: var(--mut); border-top: .6pt solid var(--line); padding-top: 6pt; }
+</style>
+</head>
+<body>
+<div class="topo">
+  <div>
+    <h1>Parecer de verificação de poderes de assinatura</h1>
+    <div class="sub">ATPV-e · verificação de quem assina pelo vendedor e/ou pelo comprador · {{ r.comprovacao_poderes.norma if r.comprovacao_poderes else '' }}</div>
+    <div class="sub">Política aplicada: {{ r.meta.politica or 'DETRAN-CE' }} · gerado em {{ r.gerado_em | data }}</div>
+  </div>
+  <div class="selo {{ r.faixa }}">
+    <b>{{ {'VERDE':'ACEITO','AMARELO':'REVISÃO HUMANA','VERMELHO':'RECUSADO'}[r.faixa] }}</b>
+    <span>índice de aceitação {{ '%.0f' % r.indice }}/100</span>
+  </div>
+</div>
+
+<div class="resumo">{{ r.resumo }}</div>
+
+{% set pa = r.pedido_atpv or {} %}
+{% set ver = {'PODE':'Pode assinar','NAO_PODE':'Não pode','INDETERMINADO':'Indeterminado'} %}
+<div class="grade">
+{% for lado, nome_lado in [('vendedor', 'Vendedor'), ('comprador', 'Comprador')] %}
+  {% set rr = lados.get(lado) %}{% set parte = pa.get(lado) or {} %}
+  {% if rr %}
+  <div class="kpi"><span>{{ nome_lado }} · {{ 'pessoa física' if rr.empresa.tipo == 'PF' else 'PJ' }}</span><b>{{ rr.empresa.razao_social }}</b><span>{{ ('CPF ' ~ (rr.empresa.cpf or '—')) if rr.empresa.tipo == 'PF' else ('CNPJ ' ~ (rr.empresa.cnpj or '—')) }}</span>
+    <span class="{{ {'VERDE':'ok','AMARELO':'alerta','VERMELHO':'bloqueio'}[rr.faixa] }}"><br>{{ ver[rr.veredito] }} · índice {{ '%.0f' % rr.indice }} · confiança {{ '%.0f' % (rr.confianca*100) }}%</span></div>
+  {% elif parte and (parte.nome or parte.documento) %}
+  <div class="kpi"><span>{{ nome_lado }} · {{ 'pessoa física' if parte.tipo == 'PF' else 'PJ' }}</span><b>{{ parte.nome or '—' }}</b><span>{{ ('CPF ' if parte.tipo == 'PF' else 'CNPJ ') ~ (parte.documento or '—') }}</span>
+    <span><br>{{ 'assina em nome próprio (não verificado aqui)' if parte.tipo == 'PF' else 'não verificado nesta consulta' }}</span></div>
+  {% elif parte %}
+  <div class="kpi"><span>{{ nome_lado }}</span><b>não informado</b><span>consulta só do outro lado</span></div>
+  {% else %}
+  <div class="kpi"><span>{{ nome_lado }}</span><b>—</b></div>
+  {% endif %}
+{% endfor %}
+  <div class="kpi"><span>Veículo</span><b>{{ r.pedido.veiculo.placa or '—' }}</b><span>{{ r.pedido.veiculo.descricao or '' }}</span></div>
+  <div class="kpi"><span>Data da venda</span><b>{{ r.pedido.data_venda | data }}</b><span>{{ r.pedido.valor | moeda }}</span></div>
+</div>
+
+{% for lado, rr in lados.items() %}
+{% set rotulo = {'vendedor': 'Vendedor (antigo proprietário)', 'comprador': 'Comprador (novo proprietário)'}[lado] %}
+{% set c = rr.comprovacao_poderes %}
+{% if c %}
+<h2>{{ rotulo }} · comprovação de poderes do signatário ({{ c.status }})</h2>
+<table>
+  {% if c.outorgante.tipo == 'PF' %}
+  <tr><th>Titular</th><td>{{ c.outorgante.nome }} — CPF {{ c.outorgante.cpf or '—' }} (pessoa física)<br>
+    <span class="sub">Titularidade conferida em: {{ c.outorgante.titularidade or '—' }}</span></td></tr>
+  {% else %}
+  <tr><th>Outorgante</th><td>{{ c.outorgante.nome }} — CNPJ {{ c.outorgante.cnpj or '—' }} ({{ c.outorgante.tipo }})<br>
+    <span class="sub">Atos vigentes na data da venda: {% for a in c.outorgante.atos_vigentes %}{{ a.titulo }}{% if a.efeito %} (efeito {{ a.efeito | data }}){% endif %}{% if not loop.last %}; {% endif %}{% endfor %}</span></td></tr>
+  {% endif %}
+  <tr><th>Outorgado(s) / signatário(s)</th><td><ul>{% for o in c.outorgado %}<li>{{ o.nome }}{% if o.cpf %} — CPF {{ o.cpf }}{% endif %} · {{ o.qualidade }} <span class="sub">(identificado por {{ o.identificacao }})</span></li>{% endfor %}</ul></td></tr>
+  <tr><th>Poderes conferidos</th><td><ul>{% for p in c.poderes_conferidos %}<li>{{ p }}</li>{% endfor %}</ul></td></tr>
+  <tr><th>Prazo de validade</th><td><ul>{% for p in c.prazo_validade %}<li>{{ p }}</li>{% endfor %}</ul></td></tr>
+  <tr><th>Revogação</th><td><ul>{% for p in c.revogacao %}<li>{{ p }}</li>{% endfor %}</ul></td></tr>
+</table>
+{% endif %}
+
+<h2>{{ rotulo }} · quem pode assinar a ATPV-e</h2>
+{% if rr.quem_pode %}
+<ul>{% for a in rr.quem_pode %}<li><b>{{ a.pessoas | map(attribute='nome') | join(' + ') }}</b> — {{ a.descricao }}{% if a.severidade in ('alerta','atencao') %} <span class="{{ a.severidade }}">({{ a.severidade }})</span>{% endif %}</li>{% endfor %}</ul>
+{% else %}<p>Ninguém, com os documentos apresentados.</p>{% endif %}
+{% if rr.faltantes %}<p class="sub">O que falta para os assinantes informados: {% for f in rr.faltantes[:3] %}{{ f.faltam_nomes | join(' + ') or '—' }} ({{ f.descricao }}){% if not loop.last %}; {% endif %}{% endfor %}</p>{% endif %}
+
+<h2>{{ rotulo }} · verificações</h2>
+{% for a in itens_lados[lado] %}
+<div class="ach"><div class="tag {{ a.severidade }}">{{ a.severidade }}</div>
+  <div><b>{{ a.titulo }}</b> — {{ a.detalhe }}{% if a.fundamento %} <span class="sub">[{{ a.fundamento | join('; ') }}]</span>{% endif %}
+  {% for f in a.fontes[:1] %}{% if f and f.trecho %}<div class="cit">“{{ f.trecho[:260] }}{% if f.trecho|length > 260 %}…{% endif %}” — {{ f.doc_titulo }}{% if f.pagina %}, p. {{ f.pagina }}{% endif %}</div>{% endif %}{% endfor %}</div></div>
+{% endfor %}
+{% for b in rr.caminhos_invalidos %}
+<div class="ach"><div class="tag bloqueio">inválido</div><div><b>{{ b.pessoas | map(attribute='nome') | join(', ') }}</b> por {{ b.descricao }}: {% for a in b.achados if a.severidade == 'bloqueio' %}{{ a.titulo }}{% if not loop.last %}; {% endif %}{% endfor %}</div></div>
+{% endfor %}
+
+<h2>{{ rotulo }} · cláusulas avaliadas</h2>
+<table>
+{% for g in rr.regras %}
+  <tr><th>{{ g.escopo | replace('_', ' ') }}{% if g.decisiva %} · <b>decisiva</b>{% endif %}</th>
+  <td>{% if g.aplicavel %}aplicável{% elif g.aplicavel is none %}depende{% else %}não se aplica{% endif %} — {{ g.motivo }}
+  {% if g.fonte and g.fonte.trecho %}<div class="cit">“{{ g.fonte.trecho[:220] }}{% if g.fonte.trecho|length > 220 %}…{% endif %}” ({{ g.fonte.clausula or g.fonte.doc_titulo }})</div>{% endif %}
+  {% for v in g.verificacoes if v.divergiu %}<div class="atencao">conferência léxica: a IA leu “{{ v.valor_llm }}”, o texto indica “{{ v.valor_lexico }}”</div>{% endfor %}</td></tr>
+{% endfor %}
+</table>
+
+{% endfor %}
+<h2>Documentos analisados (verificáveis por hash)</h2>
+<table>
+{% for d in documentos %}
+  <tr><th>{{ d.titulo }}</th><td>{{ d.nome }} · {{ d.paginas|length }} pág. · leitura {{ d.metodo }}{% if d.ocr_confianca %} (OCR {{ '%.0f' % d.ocr_confianca }}%){% endif %}<br><span class="mono">SHA-256 {{ d.sha256 }}</span></td></tr>
+{% endfor %}
+</table>
+
+<div class="aviso">
+  Faixa: {{ r.motivos_faixa | join('; ') }}. Índice = 50 + 50 × direção × confiança (leitura {{ r.componentes.leitura }}, robustez jurídica {{ r.componentes.juridica }}).
+  Hash da entrada: <span class="mono">{{ r.hash_entrada }}</span>{% if a.hash %} · registro de auditoria <span class="mono">{{ a.hash }}</span>{% endif %}.
+  Análise automatizada de apoio à decisão: a leitura dos documentos é feita por IA generativa, conferida por regras jurídicas
+  determinísticas; casos fora da faixa de aceitação automática devem ser revisados por servidor responsável.
+</div>
+</body>
+</html>

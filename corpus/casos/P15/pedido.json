@@ -1,0 +1,15 @@
+{
+  "caso": "P15",
+  "veiculo": {
+    "placa": "GFP0N23"
+  },
+  "papel": "comprar",
+  "cpf": "690.828.682-70",
+  "data_venda": "2026-10-16",
+  "valor": 95000,
+  "comprador": {
+    "tipo": "PJ",
+    "nome": "COMERCIAL BOM JARDIM LTDA.",
+    "documento": "73.701.393/0001-34"
+  }
+}

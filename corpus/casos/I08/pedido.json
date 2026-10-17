@@ -1,0 +1,29 @@
+{
+  "caso": "I08",
+  "vendedor": {
+    "razao_social": "NEXUM SOLUÇÕES EM TECNOLOGIA LTDA",
+    "cnpj": "81.193.702/0001-30"
+  },
+  "veiculo": {
+    "placa": "DMK8F76",
+    "renavam": "08933492230",
+    "chassi": "9BD9ZH40S0D8GKXG6",
+    "descricao": "FIAT/MOBI"
+  },
+  "data_venda": "2026-09-01",
+  "valor": 52000.0,
+  "assinantes": [
+    {
+      "nome": "THIAGO ALBUQUERQUE MENDONÇA",
+      "cpf": "906.165.811-06"
+    }
+  ],
+  "crlv_proprietario": {
+    "nome": "NEXUM SOLUÇÕES EM TECNOLOGIA LTDA",
+    "documento": "81.193.702/0001-30"
+  },
+  "comprador": {
+    "nome": "LARISSA FAÇANHA GURGEL"
+  },
+  "forma_assinatura": "ATPV-e"
+}

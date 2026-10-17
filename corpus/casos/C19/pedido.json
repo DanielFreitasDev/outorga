@@ -1,0 +1,26 @@
+{
+  "caso": "C19",
+  "vendedor": {
+    "razao_social": "AGROPECUÁRIA CARIRI LTDA.",
+    "cnpj": "84.885.681/0001-02"
+  },
+  "veiculo": {
+    "placa": "VMG9C70",
+    "renavam": "02761166030",
+    "chassi": "9BWNDTLU0FTLCPH5C",
+    "descricao": "VW/SAVEIRO ROBUST CD 1.6"
+  },
+  "data_venda": "2026-09-20",
+  "valor": 79000,
+  "assinantes": [
+    {
+      "nome": "Fábio Júnior Arrais",
+      "cpf": "129.110.285-03"
+    }
+  ],
+  "comprador": {
+    "nome": "Rita de Cássia Moreira",
+    "cidade": "Fortaleza/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

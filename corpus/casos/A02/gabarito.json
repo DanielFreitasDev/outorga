@@ -1,0 +1,46 @@
+{
+  "caso": "A02",
+  "titulo": "Comprador PJ: compra acima da alçada com um só administrador",
+  "categoria": "comprador",
+  "objetivo": "A aquisição acima de R$ 100 mil exige os dois administradores.",
+  "validacao_cega": false,
+  "lote": "atpv",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "comprador": {
+      "veredito": "NAO_PODE",
+      "faixas_aceitaveis": [
+        "VERMELHO"
+      ],
+      "conjuntos_minimos": [
+        [
+          "GILBERTO",
+          "SIMONE"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "690.828.682-70",
+          "714.244.916-06"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Gilberto Araújo Nunes",
+          "Simone Batista Nunes"
+        ]
+      ]
+    }
+  }
+}

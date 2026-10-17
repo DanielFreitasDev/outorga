@@ -1,0 +1,31 @@
+{
+  "caso": "C05",
+  "titulo": "Administrador não sócio assina",
+  "categoria": "administracao",
+  "objetivo": "Administrador não sócio designado no contrato tem poder (art. 1.061).",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": [
+      [
+        "GUSTAVO"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 1.061"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "876.634.400-05"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Gustavo Henrique Teles"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

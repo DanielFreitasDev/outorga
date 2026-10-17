@@ -1,0 +1,53 @@
+{
+  "caso": "I01",
+  "titulo": "S.A. com Diretoria de mandato vencido, prorrogado por lei, e nova Diretoria eleita depois da venda",
+  "categoria": "sociedade_anonima / mandato_vencido / forma_de_representacao",
+  "objetivo": "Testa se o sistema aplica o art. 150, § 4º, da LSA (prazo de gestão estendido até a investidura dos sucessores), monta a Diretoria vigente na data da venda e não a da ata mais recente, exige dois Diretores em conjunto sem se deixar levar pela exceção de 'mero expediente perante repartições públicas', reconhece que a alienação abaixo da alçada do Conselho dispensa autorização e descarta procuração outorgada por um só Diretor.",
+  "validacao_cega": true,
+  "autor": "independente",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE",
+      "AMARELO"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "405.235.809-08",
+        "156.792.801-32"
+      ],
+      [
+        "405.235.809-08",
+        "217.549.940-59"
+      ],
+      [
+        "156.792.801-32",
+        "217.549.940-59"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "ROGÉRIO ALENCAR FEITOSA",
+        "LÚCIA HELENA BRÍGIDO SAMPAIO"
+      ],
+      [
+        "ROGÉRIO ALENCAR FEITOSA",
+        "MARCOS TADEU OLIVEIRA PINHEIRO"
+      ],
+      [
+        "LÚCIA HELENA BRÍGIDO SAMPAIO",
+        "MARCOS TADEU OLIVEIRA PINHEIRO"
+      ]
+    ],
+    "fundamentos": [
+      "Lei 6.404/76, art. 150, § 4º",
+      "Lei 6.404/76, art. 138, § 1º",
+      "Lei 6.404/76, art. 142, VIII",
+      "Lei 6.404/76, art. 144, parágrafo único",
+      "Estatuto Social, arts. 15, VII, 17 e 18, caput e §§ 1º a 3º",
+      "CC art. 47"
+    ]
+  },
+  "esperado_ce": null,
+  "raciocinio": "O mandato trienal da Diretoria eleita em 27/04/2023 terminou em 27/04/2026, mas na S.A. o prazo de gestão se estende até a investidura dos novos administradores (LSA, art. 150, § 4º); a nova Diretoria só foi eleita e empossada em 22/09/2026, depois da venda de 10/09/2026, de modo que ROGÉRIO, LÚCIA e MARCOS ainda eram Diretores na data do ATPV-e e PATRÍCIA ainda não era. O art. 18 do Estatuto exige dois Diretores em conjunto (ou um Diretor com procurador), e a exceção do § 1º (Diretor isolado perante repartições públicas) exclui expressamente a alienação de bens. A venda de R$ 118.500,00 fica abaixo do limite de R$ 500.000,00 do art. 15, VII, e o art. 17 dispensa autorização do Conselho, o que é o 'dispor em contrário' admitido pelo art. 142, VIII, da LSA. A procuração de 10/02/2026 a FRANCISCO WELLINGTON foi outorgada por um único Diretor, contra o art. 18, § 2º, sendo ineficaz (§ 3º), e de qualquer forma só permitiria atuação em conjunto com Diretor. Os conjuntos válidos são os três pares de Diretores em exercício em 10/09/2026, e o par pedido está entre eles."
+}

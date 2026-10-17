@@ -1,0 +1,19 @@
+{
+  "caso": "A08",
+  "forma_assinatura": "ATPV-e",
+  "vendedor": {
+    "assinantes": [
+      {
+        "nome": "Manoel Messias Freitas",
+        "cpf": "554.581.374-85"
+      },
+      {
+        "nome": "Expedito Lima Cordeiro",
+        "cpf": "479.724.509-35"
+      }
+    ]
+  },
+  "comprador": {
+    "assinantes": []
+  }
+}

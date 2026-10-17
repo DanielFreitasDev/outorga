@@ -1,0 +1,24 @@
+{
+  "caso": "I09",
+  "vendedor": {
+    "razao_social": "AVÍCOLA SERRA DE BATURITÉ LTDA",
+    "cnpj": "62.880.687/0001-54"
+  },
+  "veiculo": {
+    "placa": "TZF3H42",
+    "renavam": "03846540171",
+    "chassi": "9BDDBCWJ25MU5GY74",
+    "descricao": "FIAT/TORO"
+  },
+  "data_venda": "2026-10-02",
+  "valor": null,
+  "assinantes": [
+    {"nome": "EDMILSON FURTADO QUEIROZ", "cpf": "758.767.425-03"}
+  ],
+  "crlv_proprietario": {
+    "nome": "AVÍCOLA SERRA DE BATURITÉ LTDA",
+    "documento": "62.880.687/0001-54"
+  },
+  "comprador": {"nome": "GRANJA BOA ESPERANÇA LTDA"},
+  "forma_assinatura": "ATPV-e"
+}

@@ -1,0 +1,41 @@
+{
+  "caso": "C28",
+  "titulo": "Administrador que outorgou saiu da administração depois",
+  "categoria": "procuracao",
+  "objetivo": "Mandato outorgado pela PJ não se extingue com a troca do administrador (art. 682).",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE",
+      "AMARELO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "LUCIA"
+      ],
+      [
+        "DAVI"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 682"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "186.032.080-50"
+      ],
+      [
+        "370.283.822-81"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Lúcia Helena Brito"
+      ],
+      [
+        "Davi Brito Alencar"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

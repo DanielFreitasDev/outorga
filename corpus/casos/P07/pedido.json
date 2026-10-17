@@ -1,0 +1,14 @@
+{
+  "caso": "P07",
+  "veiculo": {
+    "placa": "PVG1A31"
+  },
+  "papel": "comprar",
+  "cpf": "196.692.613-84",
+  "data_venda": "2026-10-16",
+  "comprador": {
+    "tipo": "PF",
+    "nome": "Antônia Valéria Barros",
+    "documento": "042.938.747-47"
+  }
+}

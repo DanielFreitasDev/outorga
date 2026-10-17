@@ -1,0 +1,19 @@
+{
+  "caso": "C10",
+  "titulo": "Alçada por valor — valor não informado",
+  "categoria": "alcada",
+  "objetivo": "Sem o valor do veículo não dá para saber qual regra vale: faixa intermediária.",
+  "esperado": {
+    "veredito": "INDETERMINADO",
+    "faixas_aceitaveis": [
+      "AMARELO"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [
+      "CC art. 47"
+    ],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null
+}

@@ -1,0 +1,44 @@
+{
+  "caso": "P05",
+  "titulo": "Procuração de 6 meses, vencida",
+  "categoria": "pf",
+  "objetivo": "Prazo vencido antes da consulta.",
+  "validacao_cega": false,
+  "lote": "pf",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "vendedor": {
+      "veredito": "NAO_PODE",
+      "faixas_aceitaveis": [
+        "VERMELHO"
+      ],
+      "conjuntos_minimos": [
+        [
+          "RAIMUNDA"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "320.908.841-18"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Raimunda Nonata Siqueira"
+        ]
+      ]
+    }
+  },
+  "esperado_lados_ce": null
+}

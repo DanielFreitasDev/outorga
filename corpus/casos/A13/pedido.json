@@ -1,0 +1,15 @@
+{
+  "caso": "A13",
+  "forma_assinatura": "ATPV-e",
+  "vendedor": {
+    "assinantes": [
+      {
+        "nome": "Wellington Oliveira Sá",
+        "cpf": "639.494.511-02"
+      }
+    ]
+  },
+  "comprador": {
+    "assinantes": []
+  }
+}

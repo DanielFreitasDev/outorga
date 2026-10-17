@@ -1,0 +1,26 @@
+{
+  "caso": "C11",
+  "vendedor": {
+    "razao_social": "PESCADOS CAMOCIM LTDA.",
+    "cnpj": "06.709.072/0001-99"
+  },
+  "veiculo": {
+    "placa": "MXN8W92",
+    "renavam": "08329822298",
+    "chassi": "93YDCUWMJUZJ6LMDM",
+    "descricao": "RENAULT/MASTER FURGÃO L3H2"
+  },
+  "data_venda": "2026-09-24",
+  "valor": 210000,
+  "assinantes": [
+    {
+      "nome": "Valdir Cunha Teixeira",
+      "cpf": "819.331.908-76"
+    }
+  ],
+  "comprador": {
+    "nome": "Frota Fácil Locações Ltda.",
+    "cidade": "Maracanaú/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

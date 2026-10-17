@@ -1,0 +1,964 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T12:02:56",
+ "pedido": {
+  "veiculo": {
+   "descricao": "HYUNDAI/HB20 1.0 COMFORT",
+   "placa": "HNM2Z92",
+   "renavam": "02291958849",
+   "chassi": "9BHHU7V697PRBDC3C"
+  },
+  "data_venda": "2026-10-16",
+  "valor": null,
+  "assinantes": [
+   {
+    "nome": "CPF 707.804.256-50",
+    "cpf": "707.804.256-50"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": null,
+  "vendedor_cnpj": "320.908.841-18",
+  "lado": "vendedor",
+  "consulta": true
+ },
+ "empresa": {
+  "razao_social": "Raimunda Nonata Siqueira",
+  "cnpj": null,
+  "tipo": "PF",
+  "objeto": "",
+  "comercializa_veiculos": false,
+  "subtipo": "PF",
+  "cpf": "320.908.841-18"
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 0.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 2,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 0 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: Raimunda Nonata Siqueira. O caminho por procuração pública de 01/10/2025 (cartório iracema – 4º tabelionato de notas de fortaleza) não vale: procuração vencida.",
+ "assinantes": [
+  {
+   "informado": "CPF 707.804.256-50",
+   "cpf": "707.804.256-50",
+   "chave": "70780425650",
+   "nome": "Edvaldo Pinheiro Neto",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:32090884118",
+   "pessoas": [
+    {
+     "chave": "32090884118",
+     "nome": "Raimunda Nonata Siqueira"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "Assinatura do próprio proprietário (pessoa física)",
+   "cadeia": [
+    "TITULAR"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [
+  {
+   "id": "POA_PF_VENCIDA:bloqueada",
+   "pessoas": [
+    {
+     "chave": "70780425650",
+     "nome": "Edvaldo Pinheiro Neto"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 01/10/2025 (Cartório Iracema – 4º Tabelionato de Notas de Fortaleza)",
+   "cadeia": [
+    "POA_PF_VENCIDA"
+   ],
+   "severidade": "atencao",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_TITULAR",
+     "severidade": "ok",
+     "titulo": "Outorgada por o proprietário do veículo",
+     "detalhe": "A outorgante é Raimunda Nonata Siqueira, o proprietário do veículo (pessoa física).",
+     "fundamento": [
+      "CC art. 653"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_VENCIDA",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "compareceu como OUTORGANTE, por si e em nome próprio, RAIMUNDA NONATA SIQUEIRA, brasileira, viúva, aposentada, portadora da cédula de identidade RG nº 88587459 SSP/CE, inscrita no CPF sob o nº 320.908.841-18",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 581,
+       "fim": 788
+      }
+     ],
+     "caminho": "POA_PF_VENCIDA"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_VENCIDA",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "a quem confere poderes especiais e expressos para vender, ceder e transferir quaisquer veículos automotores de propriedade da outorgante; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV-e); e receber o preço e dar quitação, praticando, enfim, todos os atos indispensáveis ao fiel cumprimento deste mandato.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1405,
+       "fim": 1736
+      }
+     ],
+     "caminho": "POA_PF_VENCIDA"
+    },
+    {
+     "codigo": "PROCURACAO_VENCIDA",
+     "severidade": "bloqueio",
+     "titulo": "Procuração vencida",
+     "detalhe": "Válida até 01/04/2026; a venda é em 16/10/2026.",
+     "fundamento": [
+      "CC art. 682, IV"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_VENCIDA",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "O presente mandato vigorará pelo prazo de 6 (seis) meses contados desta data.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1737,
+       "fim": 1814
+      }
+     ],
+     "caminho": "POA_PF_VENCIDA"
+    },
+    {
+     "codigo": "PROCURACAO_SEM_VEICULO",
+     "severidade": "atencao",
+     "titulo": "Procuração não identifica o veículo",
+     "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+     "fundamento": [
+      "CJF, Enunciado 183"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_VENCIDA",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "a quem confere poderes especiais e expressos para vender, ceder e transferir quaisquer veículos automotores de propriedade da outorgante; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV-e); e receber o preço e dar quitação, praticando, enfim, todos os atos indispensáveis ao fiel cumprimento deste mandato.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1405,
+       "fim": 1736
+      }
+     ],
+     "caminho": "POA_PF_VENCIDA"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "contrato:32090884118",
+   "via": "contrato",
+   "descricao": "Assinatura do próprio proprietário (pessoa física)",
+   "pessoas": [
+    "32090884118"
+   ],
+   "faltam": [
+    "32090884118"
+   ],
+   "faltam_nomes": [
+    "Raimunda Nonata Siqueira"
+   ],
+   "pessoas_nomes": [
+    "Raimunda Nonata Siqueira"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "TITULARIDADE_BASE",
+   "severidade": "ok",
+   "titulo": "Proprietário conferido na base veicular",
+   "detalhe": "Pela placa/RENAVAM, o veículo está em nome de Raimunda Nonata Siqueira.",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "TITULAR#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "TITULAR",
+    "doc_titulo": "Base veicular (simulada)",
+    "trecho": "RAIMUNDA NONATA SIQUEIRA — CPF 320.908.841-18",
+    "clausula": "titularidade",
+    "ancoragem": 100.0,
+    "pagina": null,
+    "inicio": null,
+    "fim": null
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Raimunda Nonata Siqueira"
+   ],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": true
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-10-16",
+  "atos": [
+   {
+    "doc": "TITULAR",
+    "titulo": "Titularidade (pessoa física)",
+    "efeito": "1900-01-01"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "32090884118",
+    "nome": "Raimunda Nonata Siqueira",
+    "cargo": "titular (pessoa física)",
+    "doc": "TITULAR"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "32090884118",
+    "nome": "Raimunda Nonata Siqueira",
+    "percentual": 100.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "Raimunda Nonata Siqueira",
+    "sub": ""
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "HYUNDAI/HB20 1.0 COMFORT",
+    "sub": "HNM2Z92"
+   },
+   {
+    "id": "32090884118",
+    "tipo": "pessoa",
+    "rotulo": "Raimunda Nonata Siqueira",
+    "papeis": [
+     "sócio 100%",
+     "titular (pessoa física)",
+     "outorgante (pessoa física)"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "70780425650",
+    "tipo": "pessoa",
+    "rotulo": "Edvaldo Pinheiro Neto",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "alerta"
+   },
+   {
+    "de": "32090884118",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "100%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "32090884118",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "TITULAR"
+   },
+   {
+    "de": "32090884118",
+    "para": "70780425650",
+    "tipo": "procuracao",
+    "status": "invalido",
+    "doc": "POA_PF_VENCIDA",
+    "rotulo": "procuração 01/10/2025 · Procuração vencida",
+    "motivo": "Procuração vencida"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "1900-01-01",
+   "tipo": "ato",
+   "titulo": "Titularidade (pessoa física)",
+   "doc": "TITULAR",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2025-10-01",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Edvaldo Pinheiro Neto",
+   "doc": "POA_PF_VENCIDA",
+   "detalhe": "publica"
+  },
+  {
+   "data": "2026-04-01",
+   "tipo": "vencimento",
+   "titulo": "Vence a procuração de Edvaldo Pinheiro Neto",
+   "doc": "POA_PF_VENCIDA",
+   "detalhe": ""
+  },
+  {
+   "data": "2026-10-16",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "valor não informado"
+  }
+ ],
+ "pessoas": {
+  "32090884118": {
+   "nome": "Raimunda Nonata Siqueira",
+   "cpf": "32090884118"
+  },
+  "70780425650": {
+   "nome": "Edvaldo Pinheiro Neto",
+   "cpf": "70780425650"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "Raimunda Nonata Siqueira",
+   "cnpj": null,
+   "tipo": "PF",
+   "cpf": "32090884118",
+   "documento": "32090884118",
+   "atos_vigentes": [],
+   "titularidade": "Base veicular (simulada)"
+  },
+  "outorgado": [
+   {
+    "nome": "Edvaldo Pinheiro Neto",
+    "cpf": "707.804.256-50",
+    "identificacao": "CPF",
+    "qualidade": "procurador(a) pela procuração de 01/10/2025"
+   }
+  ],
+  "poderes_conferidos": [
+   "Procuração pública de 01/10/2025 (Cartório Iracema – 4º Tabelionato de Notas de Fortaleza): não comprova poderes (Procuração vencida)."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [],
+  "documentos_verificaveis": [
+   {
+    "id": "POA_PF_VENCIDA",
+    "titulo": "Procuração (2025)",
+    "arquivo": "POA_PF_VENCIDA.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "POA_PF_VENCIDA",
+   "nome": "POA_PF_VENCIDA.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (2025)",
+   "data": "2025-10-01",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ – COMARCA DE FORTALEZA\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nHeloísa Barreira Nunes – Tabeliã\nLIVRO 819 — FOLHAS 033/034\nPROCURAÇÃO BASTANTE QUE FAZ RAIMUNDA NONATA SIQUEIRA A FAVOR DE\nEDVALDO PINHEIRO NETO, NA FORMA ABAIXO:\nSAIBAM quantos este público instrumento de procuração virem que, ao primeiro (1º) dia do mês de\noutubro do ano de dois mil e vinte e cinco (2025), nesta cidade de Fortaleza, Capital do Estado do\nCeará, neste Cartório, perante mim, Rômulo Teixeira Bandeira, Escrevente Substituto, compareceu\ncomo OUTORGANTE, por si e em nome próprio, RAIMUNDA NONATA SIQUEIRA, brasileira,\nviúva, aposentada, portadora da cédula de identidade RG nº 88587459 SSP/CE, inscrita no CPF sob\no nº 320.908.841-18, residente e domiciliada na Rua Padre Valdevino, nº 1.920, apto. 204, Aldeota,\nFortaleza/CE. A outorgante, maior e capaz, foi reconhecida como a própria por mim, à vista dos\ndocumentos originais apresentados, do que dou fé.\nE, pela outorgante, me foi dito que, por este público instrumento e nos melhores termos de direito,\nnomeia e constitui seu bastante procurador EDVALDO PINHEIRO NETO, brasileiro, casado,\ncorretor de veículos, portador da cédula de identidade RG nº 59050583 SSP/CE, inscrito no CPF sob\no nº 707.804.256-50, residente e domiciliado na Rua Dezenove, nº 455, Conjunto Jereissati II,\nMaracanaú/CE, a quem confere poderes especiais e expressos para vender, ceder e transferir\nquaisquer veículos automotores de propriedade da outorgante; assinar a Autorização para\nTransferência de Propriedade do Veículo (ATPV-e); e receber o preço e dar quitação, praticando,\nenfim, todos os atos indispensáveis ao fiel cumprimento deste mandato.\nO presente mandato vigorará pelo prazo de 6 (seis) meses contados desta data.\nAssim o disse, do que dou fé, e me pediu que lavrasse este instrumento, que, lido em voz alta e\nachado conforme, aceita e assina, dispensada a presença de testemunhas, nos termos da legislação\nvigente. Eu, Rômulo Teixeira Bandeira, Escrevente Substituto, a lavrei. Eu, Heloísa Barreira Nunes,\nTabeliã, a subscrevo e assino.\n(aa) RAIMUNDA NONATA SIQUEIRA – Outorgante.\nHELOÍSA BARREIRA NUNES – Tabeliã.\nEmolumentos: R$ 209,40 · Taxa de fiscalização: R$ 10,47 · Total: R$ 219,87\nSelo Digital: IRA-0819-2025-6E0B37\nTRASLADO — Nada mais. Trasladada em seguida, conferi, subscrevo e assino em público e raso,\nem testemunho da verdade.\nFortaleza/CE, 1º de outubro de 2025.\nHeloísa Barreira Nunes – Tabeliã\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/1"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "a146e49472c0fe12a482ce17395ffde4fa555f238c1e4e51ae212b9b97b65ba3",
+   "leitura": {
+    "tarefas": {
+     "procuracao": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 24.6,
+      "tokens_saida": 653,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "llamacpp",
+  "modelo": "qwen3.8-27b",
+  "politica": "DETRAN-CE"
+ },
+ "lado": "vendedor",
+ "pendencias": [],
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T12:02:56",
+   "pedido": {
+    "veiculo": {
+     "descricao": "HYUNDAI/HB20 1.0 COMFORT",
+     "placa": "HNM2Z92",
+     "renavam": "02291958849",
+     "chassi": "9BHHU7V697PRBDC3C"
+    },
+    "data_venda": "2026-10-16",
+    "valor": null,
+    "assinantes": [
+     {
+      "nome": "CPF 707.804.256-50",
+      "cpf": "707.804.256-50"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": null,
+    "vendedor_cnpj": "320.908.841-18",
+    "lado": "vendedor",
+    "consulta": true
+   },
+   "empresa": {
+    "razao_social": "Raimunda Nonata Siqueira",
+    "cnpj": null,
+    "tipo": "PF",
+    "objeto": "",
+    "comercializa_veiculos": false,
+    "subtipo": "PF",
+    "cpf": "320.908.841-18"
+   },
+   "veredito": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 2,
+    "menor_confianca_fato": 1.0,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Raimunda Nonata Siqueira. O caminho por procuração pública de 01/10/2025 (cartório iracema – 4º tabelionato de notas de fortaleza) não vale: procuração vencida.",
+   "assinantes": [
+    {
+     "informado": "CPF 707.804.256-50",
+     "cpf": "707.804.256-50",
+     "chave": "70780425650",
+     "nome": "Edvaldo Pinheiro Neto",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:32090884118",
+     "pessoas": [
+      {
+       "chave": "32090884118",
+       "nome": "Raimunda Nonata Siqueira"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "Assinatura do próprio proprietário (pessoa física)",
+     "cadeia": [
+      "TITULAR"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [
+    {
+     "id": "POA_PF_VENCIDA:bloqueada",
+     "pessoas": [
+      {
+       "chave": "70780425650",
+       "nome": "Edvaldo Pinheiro Neto"
+      }
+     ],
+     "via": "procuracao",
+     "descricao": "Procuração pública de 01/10/2025 (Cartório Iracema – 4º Tabelionato de Notas de Fortaleza)",
+     "cadeia": [
+      "POA_PF_VENCIDA"
+     ],
+     "severidade": "atencao",
+     "confianca": 1.0,
+     "achados": [
+      {
+       "codigo": "OUTORGANTE_TITULAR",
+       "severidade": "ok",
+       "titulo": "Outorgada por o proprietário do veículo",
+       "detalhe": "A outorgante é Raimunda Nonata Siqueira, o proprietário do veículo (pessoa física).",
+       "fundamento": [
+        "CC art. 653"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_VENCIDA",
+         "doc_titulo": "Procuração (2025)",
+         "trecho": "compareceu como OUTORGANTE, por si e em nome próprio, RAIMUNDA NONATA SIQUEIRA, brasileira, viúva, aposentada, portadora da cédula de identidade RG nº 88587459 SSP/CE, inscrita no CPF sob o nº 320.908.841-18",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 581,
+         "fim": 788
+        }
+       ],
+       "caminho": "POA_PF_VENCIDA"
+      },
+      {
+       "codigo": "PODERES_ESPECIAIS",
+       "severidade": "ok",
+       "titulo": "Poder expresso para alienar veículos",
+       "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+       "fundamento": [
+        "CC art. 661, §1º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_VENCIDA",
+         "doc_titulo": "Procuração (2025)",
+         "trecho": "a quem confere poderes especiais e expressos para vender, ceder e transferir quaisquer veículos automotores de propriedade da outorgante; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV-e); e receber o preço e dar quitação, praticando, enfim, todos os atos indispensáveis ao fiel cumprimento deste mandato.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1405,
+         "fim": 1736
+        }
+       ],
+       "caminho": "POA_PF_VENCIDA"
+      },
+      {
+       "codigo": "PROCURACAO_VENCIDA",
+       "severidade": "bloqueio",
+       "titulo": "Procuração vencida",
+       "detalhe": "Válida até 01/04/2026; a venda é em 16/10/2026.",
+       "fundamento": [
+        "CC art. 682, IV"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_VENCIDA",
+         "doc_titulo": "Procuração (2025)",
+         "trecho": "O presente mandato vigorará pelo prazo de 6 (seis) meses contados desta data.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1737,
+         "fim": 1814
+        }
+       ],
+       "caminho": "POA_PF_VENCIDA"
+      },
+      {
+       "codigo": "PROCURACAO_SEM_VEICULO",
+       "severidade": "atencao",
+       "titulo": "Procuração não identifica o veículo",
+       "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+       "fundamento": [
+        "CJF, Enunciado 183"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_VENCIDA",
+         "doc_titulo": "Procuração (2025)",
+         "trecho": "a quem confere poderes especiais e expressos para vender, ceder e transferir quaisquer veículos automotores de propriedade da outorgante; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV-e); e receber o preço e dar quitação, praticando, enfim, todos os atos indispensáveis ao fiel cumprimento deste mandato.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1405,
+         "fim": 1736
+        }
+       ],
+       "caminho": "POA_PF_VENCIDA"
+      }
+     ],
+     "precondicoes": []
+    }
+   ],
+   "caminho_escolhido": null,
+   "faltantes": [
+    {
+     "alternativa": "contrato:32090884118",
+     "via": "contrato",
+     "descricao": "Assinatura do próprio proprietário (pessoa física)",
+     "pessoas": [
+      "32090884118"
+     ],
+     "faltam": [
+      "32090884118"
+     ],
+     "faltam_nomes": [
+      "Raimunda Nonata Siqueira"
+     ],
+     "pessoas_nomes": [
+      "Raimunda Nonata Siqueira"
+     ]
+    }
+   ],
+   "achados": [
+    {
+     "codigo": "TITULARIDADE_BASE",
+     "severidade": "ok",
+     "titulo": "Proprietário conferido na base veicular",
+     "detalhe": "Pela placa/RENAVAM, o veículo está em nome de Raimunda Nonata Siqueira.",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "TITULAR#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "TITULAR",
+      "doc_titulo": "Base veicular (simulada)",
+      "trecho": "RAIMUNDA NONATA SIQUEIRA — CPF 320.908.841-18",
+      "clausula": "titularidade",
+      "ancoragem": 100.0,
+      "pagina": null,
+      "inicio": null,
+      "fim": null
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Raimunda Nonata Siqueira"
+     ],
+     "cargo": null,
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": true
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-10-16",
+    "atos": [
+     {
+      "doc": "TITULAR",
+      "titulo": "Titularidade (pessoa física)",
+      "efeito": "1900-01-01"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "32090884118",
+      "nome": "Raimunda Nonata Siqueira",
+      "cargo": "titular (pessoa física)",
+      "doc": "TITULAR"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "32090884118",
+      "nome": "Raimunda Nonata Siqueira",
+      "percentual": 100.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "Raimunda Nonata Siqueira",
+      "sub": ""
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "HYUNDAI/HB20 1.0 COMFORT",
+      "sub": "HNM2Z92"
+     },
+     {
+      "id": "32090884118",
+      "tipo": "pessoa",
+      "rotulo": "Raimunda Nonata Siqueira",
+      "papeis": [
+       "sócio 100%",
+       "titular (pessoa física)",
+       "outorgante (pessoa física)"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "70780425650",
+      "tipo": "pessoa",
+      "rotulo": "Edvaldo Pinheiro Neto",
+      "papeis": [
+       "procurador"
+      ],
+      "assinante": true
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "alerta"
+     },
+     {
+      "de": "32090884118",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "100%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "32090884118",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "TITULAR"
+     },
+     {
+      "de": "32090884118",
+      "para": "70780425650",
+      "tipo": "procuracao",
+      "status": "invalido",
+      "doc": "POA_PF_VENCIDA",
+      "rotulo": "procuração 01/10/2025 · Procuração vencida",
+      "motivo": "Procuração vencida"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "1900-01-01",
+     "tipo": "ato",
+     "titulo": "Titularidade (pessoa física)",
+     "doc": "TITULAR",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2025-10-01",
+     "tipo": "procuracao",
+     "titulo": "Procuração para Edvaldo Pinheiro Neto",
+     "doc": "POA_PF_VENCIDA",
+     "detalhe": "publica"
+    },
+    {
+     "data": "2026-04-01",
+     "tipo": "vencimento",
+     "titulo": "Vence a procuração de Edvaldo Pinheiro Neto",
+     "doc": "POA_PF_VENCIDA",
+     "detalhe": ""
+    },
+    {
+     "data": "2026-10-16",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "valor não informado"
+    }
+   ],
+   "pessoas": {
+    "32090884118": {
+     "nome": "Raimunda Nonata Siqueira",
+     "cpf": "32090884118"
+    },
+    "70780425650": {
+     "nome": "Edvaldo Pinheiro Neto",
+     "cpf": "70780425650"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "não comprovada",
+    "outorgante": {
+     "nome": "Raimunda Nonata Siqueira",
+     "cnpj": null,
+     "tipo": "PF",
+     "cpf": "32090884118",
+     "documento": "32090884118",
+     "atos_vigentes": [],
+     "titularidade": "Base veicular (simulada)"
+    },
+    "outorgado": [
+     {
+      "nome": "Edvaldo Pinheiro Neto",
+      "cpf": "707.804.256-50",
+      "identificacao": "CPF",
+      "qualidade": "procurador(a) pela procuração de 01/10/2025"
+     }
+    ],
+    "poderes_conferidos": [
+     "Procuração pública de 01/10/2025 (Cartório Iracema – 4º Tabelionato de Notas de Fortaleza): não comprova poderes (Procuração vencida)."
+    ],
+    "prazo_validade": [
+     "—"
+    ],
+    "revogacao": [
+     "—"
+    ],
+    "fontes": [],
+    "documentos_verificaveis": [
+     {
+      "id": "POA_PF_VENCIDA",
+      "titulo": "Procuração (2025)",
+      "arquivo": "POA_PF_VENCIDA.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "POA_PF_VENCIDA",
+     "nome": "POA_PF_VENCIDA.pdf",
+     "tipo": "procuracao",
+     "titulo": "Procuração (2025)",
+     "data": "2025-10-01",
+     "paginas": [
+      "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ – COMARCA DE FORTALEZA\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nHeloísa Barreira Nunes – Tabeliã\nLIVRO 819 — FOLHAS 033/034\nPROCURAÇÃO BASTANTE QUE FAZ RAIMUNDA NONATA SIQUEIRA A FAVOR DE\nEDVALDO PINHEIRO NETO, NA FORMA ABAIXO:\nSAIBAM quantos este público instrumento de procuração virem que, ao primeiro (1º) dia do mês de\noutubro do ano de dois mil e vinte e cinco (2025), nesta cidade de Fortaleza, Capital do Estado do\nCeará, neste Cartório, perante mim, Rômulo Teixeira Bandeira, Escrevente Substituto, compareceu\ncomo OUTORGANTE, por si e em nome próprio, RAIMUNDA NONATA SIQUEIRA, brasileira,\nviúva, aposentada, portadora da cédula de identidade RG nº 88587459 SSP/CE, inscrita no CPF sob\no nº 320.908.841-18, residente e domiciliada na Rua Padre Valdevino, nº 1.920, apto. 204, Aldeota,\nFortaleza/CE. A outorgante, maior e capaz, foi reconhecida como a própria por mim, à vista dos\ndocumentos originais apresentados, do que dou fé.\nE, pela outorgante, me foi dito que, por este público instrumento e nos melhores termos de direito,\nnomeia e constitui seu bastante procurador EDVALDO PINHEIRO NETO, brasileiro, casado,\ncorretor de veículos, portador da cédula de identidade RG nº 59050583 SSP/CE, inscrito no CPF sob\no nº 707.804.256-50, residente e domiciliado na Rua Dezenove, nº 455, Conjunto Jereissati II,\nMaracanaú/CE, a quem confere poderes especiais e expressos para vender, ceder e transferir\nquaisquer veículos automotores de propriedade da outorgante; assinar a Autorização para\nTransferência de Propriedade do Veículo (ATPV-e); e receber o preço e dar quitação, praticando,\nenfim, todos os atos indispensáveis ao fiel cumprimento deste mandato.\nO presente mandato vigorará pelo prazo de 6 (seis) meses contados desta data.\nAssim o disse, do que dou fé, e me pediu que lavrasse este instrumento, que, lido em voz alta e\nachado conforme, aceita e assina, dispensada a presença de testemunhas, nos termos da legislação\nvigente. Eu, Rômulo Teixeira Bandeira, Escrevente Substituto, a lavrei. Eu, Heloísa Barreira Nunes,\nTabeliã, a subscrevo e assino.\n(aa) RAIMUNDA NONATA SIQUEIRA – Outorgante.\nHELOÍSA BARREIRA NUNES – Tabeliã.\nEmolumentos: R$ 209,40 · Taxa de fiscalização: R$ 10,47 · Total: R$ 219,87\nSelo Digital: IRA-0819-2025-6E0B37\nTRASLADO — Nada mais. Trasladada em seguida, conferi, subscrevo e assino em público e raso,\nem testemunho da verdade.\nFortaleza/CE, 1º de outubro de 2025.\nHeloísa Barreira Nunes – Tabeliã\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/1"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "a146e49472c0fe12a482ce17395ffde4fa555f238c1e4e51ae212b9b97b65ba3",
+     "leitura": {
+      "tarefas": {
+       "procuracao": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 24.6,
+        "tokens_saida": 653,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "llamacpp",
+    "modelo": "qwen3.8-27b",
+    "politica": "DETRAN-CE"
+   },
+   "lado": "vendedor",
+   "pendencias": []
+  }
+ },
+ "geral": {
+  "veredito": "NAO_PODE",
+  "faixa": "VERMELHO",
+  "indice": 0.0,
+  "resumo": "Vendedor: Os assinantes informados não bastam. Quem pode assinar: Raimunda Nonata Siqueira. O caminho por procuração pública de 01/10/2025 (cartório iracema – 4º tabelionato de notas de fortaleza) não vale: procuração vencida.",
+  "motivos_faixa": [
+   "Vendedor — índice 0 ≤ limiar 15"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "HYUNDAI/HB20 1.0 COMFORT",
+   "placa": "HNM2Z92",
+   "renavam": "02291958849",
+   "chassi": "9BHHU7V697PRBDC3C"
+  },
+  "data_venda": "2026-10-16",
+  "valor": null,
+  "vendedor": {
+   "tipo": "PF",
+   "nome": "RAIMUNDA NONATA SIQUEIRA",
+   "documento": "320.908.841-18",
+   "assinantes": [
+    {
+     "nome": "CPF 707.804.256-50",
+     "cpf": "707.804.256-50"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": null,
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "consulta por CPF",
+  "alvo": "vendedor",
+  "titular_fonte": "base veicular"
+ },
+ "hash_entrada": "3a9d08872f05e4f7c3678779136081f047ae879b9b08ab8c7b34e6c16d4fc0dd"
+}

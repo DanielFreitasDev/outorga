@@ -1,0 +1,32 @@
+{
+  "caso": "C13",
+  "titulo": "Carro integralizado pelo sócio — o OUTRO sócio vende sozinho",
+  "categoria": "bem_integralizado",
+  "objetivo": "Exemplo do áudio: cláusula específica do veículo prevalece sobre a regra geral 'isoladamente'.",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "MARCOS"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 997",
+      "CC art. 47"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "948.662.836-02"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Marcos Antônio Girão"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

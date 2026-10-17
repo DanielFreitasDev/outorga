@@ -1,0 +1,31 @@
+{
+  "caso": "C14",
+  "titulo": "Carro integralizado pelo sócio — ele mesmo vende",
+  "categoria": "bem_integralizado",
+  "objetivo": "Exemplo do áudio: só quem integralizou pode assinar, e é ele quem assina.",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": [
+      [
+        "MARCOS"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 997"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "948.662.836-02"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Marcos Antônio Girão"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

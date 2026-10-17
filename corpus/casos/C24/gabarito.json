@@ -1,0 +1,40 @@
+{
+  "caso": "C24",
+  "titulo": "Substabelecimento vedado na procuração",
+  "categoria": "substabelecimento",
+  "objetivo": "A procuração proíbe substabelecer: atos do substabelecido não obrigam a outorgante.",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "RAFAEL"
+      ],
+      [
+        "IGOR"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 667, §3º"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "547.517.799-66"
+      ],
+      [
+        "632.280.886-93"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Rafael Nogueira Brito"
+      ],
+      [
+        "Igor Lacerda Bastos"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

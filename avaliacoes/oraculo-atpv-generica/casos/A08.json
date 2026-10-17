@@ -1,0 +1,1244 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T10:08:21",
+ "pedido": {
+  "veiculo": {
+   "descricao": "MARCOPOLO/VOLARE W9 ESCOLAR",
+   "placa": "BNG3Z26",
+   "renavam": "04495829300",
+   "chassi": "9BS55H2FFV5FYBYBW"
+  },
+  "data_venda": "2026-10-15",
+  "valor": 310000.0,
+  "assinantes": [
+   {
+    "nome": "Manoel Messias Freitas",
+    "cpf": "554.581.374-85"
+   },
+   {
+    "nome": "Expedito Lima Cordeiro",
+    "cpf": "479.724.509-35"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "DÉBORA LINS MOURA",
+  "vendedor_cnpj": "84.862.817/0001-69",
+  "lado": "vendedor"
+ },
+ "empresa": {
+  "razao_social": "COOPERATIVA DE TRANSPORTE ESCOLAR DO VALE DO JAGUARIBE – COOPVALE",
+  "cnpj": "84.862.817/0001-69",
+  "tipo": "COOPERATIVA",
+  "objeto": "prestação de serviços de transporte escolar e de passageiros por meio dos cooperados",
+  "comercializa_veiculos": false,
+  "subtipo": "COOPERATIVA"
+ },
+ "veredito": "PODE",
+ "faixa": "VERDE",
+ "indice": 100.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 3,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 100 ≥ limiar 85"
+ ],
+ "resumo": "Expedito Lima Cordeiro e Manoel Messias Freitas podem, em conjunto, assinar a ATPV-e — alienação de bens — Estatuto Social (2019).",
+ "assinantes": [
+  {
+   "informado": "Manoel Messias Freitas",
+   "cpf": "554.581.374-85",
+   "chave": "55458137485",
+   "nome": "Manoel Messias Freitas",
+   "criterio": "CPF"
+  },
+  {
+   "informado": "Expedito Lima Cordeiro",
+   "cpf": "479.724.509-35",
+   "chave": "47972450935",
+   "nome": "Expedito Lima Cordeiro",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:47972450935+55458137485",
+   "pessoas": [
+    {
+     "chave": "47972450935",
+     "nome": "Expedito Lima Cordeiro"
+    },
+    {
+     "chave": "55458137485",
+     "nome": "Manoel Messias Freitas"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "alienação de bens — Estatuto Social (2019)",
+   "cadeia": [
+    "COOPVALE_ESTATUTO"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": {
+  "id": "contrato:47972450935+55458137485",
+  "pessoas": [
+   {
+    "chave": "47972450935",
+    "nome": "Expedito Lima Cordeiro"
+   },
+   {
+    "chave": "55458137485",
+    "nome": "Manoel Messias Freitas"
+   }
+  ],
+  "via": "contrato",
+  "descricao": "alienação de bens — Estatuto Social (2019)",
+  "cadeia": [
+   "COOPVALE_ESTATUTO"
+  ],
+  "severidade": "ok",
+  "confianca": 1.0,
+  "achados": [],
+  "precondicoes": []
+ },
+ "faltantes": [],
+ "achados": [
+  {
+   "codigo": "CND_INSS",
+   "severidade": "info",
+   "titulo": "CND previdenciária",
+   "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+   "fundamento": [
+    "Lei 8.212/91, art. 47, I, \"c\""
+   ],
+   "fontes": [],
+   "caminho": null
+  },
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: COOPERATIVA DE TRANSPORTE ESCOLAR DO VALE DO JAGUARIBE – COOPVALE.",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "BNG3Z26",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "COOPVALE_ESTATUTO#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "COOPVALE_ESTATUTO",
+    "doc_titulo": "Estatuto Social (2019)",
+    "trecho": "Compete ao Diretor-Presidente representar a Cooperativa, ativa e passivamente, em juízo ou fora dele, e convocar e presidir as Assembleias Gerais e as reuniões do Conselho de Administração; ao Vice-Presidente, auxiliar o Diretor-Presidente e coordenar os programas de educação cooperativista; ao Secretário, lavrar as atas das Assembleias Gerais e das reuniões do Conselho e guardar os livros sociais; e ao Diretor Financeiro, a gestão financeira e contábil da Cooperativa",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 4,
+    "inicio": 8455,
+    "fim": 8927
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "@cargo:Diretor-Presidente"
+   ],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "COOPVALE_ESTATUTO#R2",
+   "escopo": "alienacao_bens",
+   "aplicavel": true,
+   "motivo": "alienação de bens",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "COOPVALE_ESTATUTO",
+    "doc_titulo": "Estatuto Social (2019)",
+    "trecho": "Os documentos que criem obrigações para a Cooperativa ou importem alienação de bens serão assinados pelo Diretor-Presidente em conjunto com o Diretor Financeiro",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 4,
+    "inicio": 8946,
+    "fim": 9106
+   },
+   "modo": "conjunto",
+   "pessoas": [
+    "@cargo:Diretor-Presidente",
+    "@cargo:Diretor Financeiro"
+   ],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "conjunto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "em conjunto"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "COOPVALE_ESTATUTO#R3",
+   "escopo": "alienacao_bens_imoveis",
+   "aplicavel": false,
+   "motivo": "trata de bens imóveis; veículo é bem móvel",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "COOPVALE_ESTATUTO",
+    "doc_titulo": "Estatuto Social (2019)",
+    "trecho": "Compete também à Assembleia Geral deliberar sobre a alienação ou oneração de bens imóveis da Cooperativa",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 3,
+    "inicio": 6483,
+    "fim": 6587
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-10-15",
+  "atos": [
+   {
+    "doc": "COOPVALE_ESTATUTO",
+    "titulo": "Estatuto Social (2019)",
+    "efeito": "2019-04-26"
+   },
+   {
+    "doc": "COOPVALE_ATA_AGO",
+    "titulo": "Ata Da Assembleia Geral Ordinária",
+    "efeito": "2025-03-28"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "55458137485",
+    "nome": "Manoel Messias Freitas",
+    "cargo": "Diretor-Presidente",
+    "doc": "COOPVALE_ATA_AGO"
+   },
+   {
+    "chave": "29812352066",
+    "nome": "Joana Darc Ribeiro",
+    "cargo": "Vice-Presidente",
+    "doc": "COOPVALE_ATA_AGO"
+   },
+   {
+    "chave": "88297390730",
+    "nome": "Cícero Romão Bezerra",
+    "cargo": "Secretário",
+    "doc": "COOPVALE_ATA_AGO"
+   },
+   {
+    "chave": "47972450935",
+    "nome": "Expedito Lima Cordeiro",
+    "cargo": "Diretor Financeiro",
+    "doc": "COOPVALE_ATA_AGO"
+   }
+  ],
+  "encerrados": [],
+  "socios": []
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "COOPERATIVA DE TRANSPORTE ESCOLAR DO VALE DO JAGUARIBE – COOPVALE",
+    "sub": "84.862.817/0001-69"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "MARCOPOLO/VOLARE W9 ESCOLAR",
+    "sub": "BNG3Z26"
+   },
+   {
+    "id": "55458137485",
+    "tipo": "pessoa",
+    "rotulo": "Manoel Messias Freitas",
+    "papeis": [
+     "Diretor-Presidente"
+    ],
+    "assinante": true
+   },
+   {
+    "id": "29812352066",
+    "tipo": "pessoa",
+    "rotulo": "Joana Darc Ribeiro",
+    "papeis": [
+     "Vice-Presidente"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "88297390730",
+    "tipo": "pessoa",
+    "rotulo": "Cícero Romão Bezerra",
+    "papeis": [
+     "Secretário"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "47972450935",
+    "tipo": "pessoa",
+    "rotulo": "Expedito Lima Cordeiro",
+    "papeis": [
+     "Diretor Financeiro"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "55458137485",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "COOPVALE_ATA_AGO"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "29812352066",
+    "tipo": "administracao",
+    "rotulo": "administra · sem poder para este ato",
+    "status": "invalido",
+    "doc": "COOPVALE_ATA_AGO"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "88297390730",
+    "tipo": "administracao",
+    "rotulo": "administra · sem poder para este ato",
+    "status": "invalido",
+    "doc": "COOPVALE_ATA_AGO"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "47972450935",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "COOPVALE_ATA_AGO"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2019-04-26",
+   "tipo": "ato",
+   "titulo": "Estatuto Social (2019)",
+   "doc": "COOPVALE_ESTATUTO",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2025-03-28",
+   "tipo": "ato",
+   "titulo": "Ata Da Assembleia Geral Ordinária",
+   "doc": "COOPVALE_ATA_AGO",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-10-15",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 310.000,00"
+  },
+  {
+   "data": "2029-03-28",
+   "tipo": "fim_mandato",
+   "titulo": "Fim do mandato de Manoel Messias Freitas",
+   "doc": "COOPVALE_ATA_AGO",
+   "detalhe": "4 (quatro) anos"
+  },
+  {
+   "data": "2029-03-28",
+   "tipo": "fim_mandato",
+   "titulo": "Fim do mandato de Joana Darc Ribeiro",
+   "doc": "COOPVALE_ATA_AGO",
+   "detalhe": "4 (quatro) anos"
+  },
+  {
+   "data": "2029-03-28",
+   "tipo": "fim_mandato",
+   "titulo": "Fim do mandato de Cícero Romão Bezerra",
+   "doc": "COOPVALE_ATA_AGO",
+   "detalhe": "4 (quatro) anos"
+  },
+  {
+   "data": "2029-03-28",
+   "tipo": "fim_mandato",
+   "titulo": "Fim do mandato de Expedito Lima Cordeiro",
+   "doc": "COOPVALE_ATA_AGO",
+   "detalhe": "4 (quatro) anos"
+  }
+ ],
+ "pessoas": {
+  "55458137485": {
+   "nome": "Manoel Messias Freitas",
+   "cpf": "55458137485"
+  },
+  "29812352066": {
+   "nome": "Joana Darc Ribeiro",
+   "cpf": "29812352066"
+  },
+  "88297390730": {
+   "nome": "Cícero Romão Bezerra",
+   "cpf": "88297390730"
+  },
+  "47972450935": {
+   "nome": "Expedito Lima Cordeiro",
+   "cpf": "47972450935"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "comprovada",
+  "outorgante": {
+   "nome": "COOPERATIVA DE TRANSPORTE ESCOLAR DO VALE DO JAGUARIBE – COOPVALE",
+   "cnpj": "84.862.817/0001-69",
+   "tipo": "COOPERATIVA",
+   "atos_vigentes": [
+    {
+     "titulo": "Estatuto Social (2019)",
+     "doc": "COOPVALE_ESTATUTO",
+     "efeito": "2019-04-26"
+    },
+    {
+     "titulo": "Ata Da Assembleia Geral Ordinária",
+     "doc": "COOPVALE_ATA_AGO",
+     "efeito": "2025-03-28"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Manoel Messias Freitas",
+    "cpf": "554.581.374-85",
+    "identificacao": "CPF",
+    "qualidade": "Diretor-Presidente"
+   },
+   {
+    "nome": "Expedito Lima Cordeiro",
+    "cpf": "479.724.509-35",
+    "identificacao": "CPF",
+    "qualidade": "Diretor Financeiro"
+   }
+  ],
+  "poderes_conferidos": [
+   "Estatuto Social (2019), cláusula de administração: assinam em conjunto: Diretor-Presidente e Diretor Financeiro"
+  ],
+  "prazo_validade": [
+   "Manoel Messias Freitas (Diretor-Presidente): mandato até 28/03/2029",
+   "Expedito Lima Cordeiro (Diretor Financeiro): mandato até 28/03/2029"
+  ],
+  "revogacao": [
+   "Poder decorre do ato constitutivo vigente na data da venda; recomenda-se certidão simplificada atualizada da Junta Comercial para afastar alteração posterior ainda não apresentada."
+  ],
+  "fontes": [
+   {
+    "doc_id": "COOPVALE_ESTATUTO",
+    "doc_titulo": "Estatuto Social (2019)",
+    "trecho": "Os documentos que criem obrigações para a Cooperativa ou importem alienação de bens serão assinados pelo Diretor-Presidente em conjunto com o Diretor Financeiro",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 4,
+    "inicio": 8946,
+    "fim": 9106
+   },
+   {
+    "doc_id": "COOPVALE_ATA_AGO",
+    "doc_titulo": "Ata Da Assembleia Geral Ordinária",
+    "trecho": "Registrada uma única chapa e submetida à votação, foram eleitos por unanimidade para o Conselho de Administração, para o mandato de 4 (quatro) anos, até a Assembleia Geral Ordinária de 2029, observada a renovação mínima de 1/3 (um terço) prevista no art",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 2551,
+    "fim": 2804
+   },
+   {
+    "doc_id": "COOPVALE_ATA_AGO",
+    "doc_titulo": "Ata Da Assembleia Geral Ordinária",
+    "trecho": "Registrada uma única chapa e submetida à votação, foram eleitos por unanimidade para o Conselho de Administração, para o mandato de 4 (quatro) anos, até a Assembleia Geral Ordinária de 2029, observada a renovação mínima de 1/3 (um terço) prevista no art",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 2551,
+    "fim": 2804
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "COOPVALE_ESTATUTO",
+    "titulo": "Estatuto Social (2019)",
+    "arquivo": "COOPVALE_ESTATUTO.pdf"
+   },
+   {
+    "id": "COOPVALE_ATA_AGO",
+    "titulo": "Ata Da Assembleia Geral Ordinária",
+    "arquivo": "COOPVALE_ATA_AGO.pdf"
+   },
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "COOPVALE_ESTATUTO",
+   "nome": "COOPVALE_ESTATUTO.pdf",
+   "tipo": "estatuto_social",
+   "titulo": "Estatuto Social (2019)",
+   "data": "2019-04-26",
+   "paginas": [
+    "COOPERATIVA DE TRANSPORTE ESCOLAR DO VALE DO JAGUARIBE – COOPVALE\nCNPJ nº 84.862.817/0001-69 – NIRE 23552926272\nESTATUTO SOCIAL\n(reformado e consolidado pela Assembleia Geral Extraordinária realizada em 26 de abril de 2019)\nCAPÍTULO I – DA DENOMINAÇÃO, SEDE, ÁREA DE AÇÃO, PRAZO E OBJETO\nArt. 1º A COOPERATIVA DE TRANSPORTE ESCOLAR DO VALE DO JAGUARIBE –\nCOOPVALE, doravante denominada \"Cooperativa\", é sociedade cooperativa singular, de natureza\ncivil e sem fins lucrativos, regida pela Lei nº 5.764, de 16 de dezembro de 1971, pelos arts. 1.093 a\n1.096 do Código Civil, por este Estatuto e pelas demais disposições legais aplicáveis.\nArt. 2º A Cooperativa tem sede e administração na Rua Dom Aureliano Matos, nº 1.250, bairro\nCentro, Limoeiro do Norte/CE, CEP 62930-000, e foro jurídico na Comarca de Limoeiro do Norte/\nCE.\nArt. 3º A área de ação da Cooperativa, para fins de admissão de cooperados, abrange os Municípios\nde Limoeiro do Norte, Russas, Morada Nova, Quixeré, Tabuleiro do Norte, Jaguaruana e Alto Santo,\nno Estado do Ceará.\nArt. 4º O prazo de duração da Cooperativa é indeterminado.\nArt. 5º A Cooperativa, com base na colaboração recíproca a que se obrigam os seus cooperados, tem\npor objeto a prestação de serviços de transporte escolar e de passageiros por meio dos cooperados.\nCAPÍTULO II – DOS COOPERADOS\nArt. 6º Poderá ingressar na Cooperativa, salvo impossibilidade técnica de prestação de serviços, a\npessoa física que se dedique ao transporte escolar ou de passageiros na área de ação da Cooperativa,\ncomo condutor habilitado ou como proprietário de veículo apto à prestação dos serviços, e que\nconcorde com as disposições deste Estatuto.\n§ 1º O número de cooperados é ilimitado quanto ao máximo, não podendo ser inferior ao necessário\nà composição do Conselho de Administração e do Conselho Fiscal.\n§ 2º Aprovada pelo Conselho de Administração a proposta de admissão, o interessado subscreverá as\nquotas-partes previstas no art. 12 e assinará o Livro de Matrícula.\nArt. 7º São deveres do cooperado:\nI – integralizar as quotas-partes de capital subscritas;\nII – cumprir a lei, este Estatuto, o Regimento Interno e as deliberações da Assembleia Geral e do\nConselho de Administração;\nIII – executar com pontualidade, segurança e zelo os serviços de transporte que lhe forem\ndistribuídos;\nIV – participar, na proporção das operações que realizar, da cobertura das despesas da Cooperativa e\ndo rateio das perdas apuradas.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/5",
+    "Art. 8º A demissão do cooperado, que não poderá ser negada, dar-se-á unicamente a seu pedido,\nformulado por escrito.\nArt. 9º A eliminação do cooperado será aplicada pelo Conselho de Administração em virtude de\ninfração legal ou estatutária, especialmente quando o cooperado deixar de cumprir as obrigações\nassumidas com a Cooperativa, praticar atos que desabonem o seu conceito ou deixar de prestar\nserviços por meio dela por mais de 180 (cento e oitenta) dias consecutivos, sem justificativa aceita.\n§ 1º A eliminação constará de termo lavrado no Livro de Matrícula, com os motivos que a\ndeterminaram, e será comunicada ao interessado no prazo de 30 (trinta) dias.\n§ 2º Da eliminação caberá recurso, com efeito suspensivo, à primeira Assembleia Geral.\nArt. 10. A exclusão do cooperado ocorrerá por morte, por incapacidade civil não suprida ou pela\nperda dos requisitos estatutários de ingresso ou de permanência.\nArt. 11. A responsabilidade do cooperado é limitada ao valor de suas quotas-partes e ao prejuízo\nverificado nas operações sociais, guardada a proporção de sua participação nessas operações, e\nperdura, para os desligados, até a aprovação das contas do exercício em que se deu o desligamento.\nCAPÍTULO III – DO CAPITAL SOCIAL\nArt. 12. O capital social da Cooperativa, ilimitado quanto ao máximo, varia conforme o número de\nquotas-partes subscritas, não podendo ser inferior a R$ 60.000,00 (sessenta mil reais), e divide-se em\nquotas-partes de valor unitário de R$ 100,00 (cem reais).\n§ 1º Cada cooperado subscreverá, no ato de admissão, no mínimo 15 (quinze) quotas-partes,\nintegralizáveis à vista ou em até 10 (dez) parcelas mensais, e nenhum cooperado poderá subscrever\nmais de 1/3 (um terço) do total das quotas-partes.\n§ 2º As quotas-partes são intransferíveis a terceiros estranhos à sociedade, ainda que por herança, e o\ncapital integralizado será restituído ao cooperado desligado após a aprovação do balanço do\nexercício em que se deu o desligamento.\nCAPÍTULO IV – DA ASSEMBLEIA GERAL\nArt. 13. A Assembleia Geral, ordinária ou extraordinária, é o órgão supremo da Cooperativa, e suas\ndeliberações, tomadas nos limites da lei e deste Estatuto, vinculam a todos os cooperados, ainda que\nausentes ou discordantes.\nArt. 14. A Assembleia Geral será convocada pelo Diretor-Presidente, pelo Conselho Fiscal ou, após\nsolicitação não atendida, por 1/5 (um quinto) dos cooperados, com antecedência mínima de 10 (dez)\ndias, mediante edital afixado na sede, publicado em jornal de circulação na área de ação e\ncomunicado aos cooperados por circular.\nParágrafo único. O edital poderá prever as três convocações, observado o intervalo mínimo de 1\n(uma) hora entre elas, e indicará o número de cooperados existentes na data de sua expedição.\nArt. 15. A Assembleia Geral instalar-se-á com a presença de 2/3 (dois terços) dos cooperados, em\nprimeira convocação; de metade mais 1 (um) dos cooperados, em segunda convocação; e de, no\nmínimo, 10 (dez) cooperados, em terceira convocação.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/5",
+    "Art. 16. Cada cooperado presente terá direito a um só voto, qualquer que seja o número de suas\nquotas-partes, e as deliberações serão tomadas por maioria de votos dos presentes, ressalvado o\ndisposto no parágrafo único do art. 19.\nArt. 17. A Assembleia Geral Ordinária realizar-se-á anualmente nos 3 (três) primeiros meses após o\ntérmino do exercício social e deliberará sobre:\nI – a prestação de contas do Conselho de Administração, acompanhada do parecer do Conselho\nFiscal;\nII – a destinação das sobras ou o rateio das perdas;\nIII – a eleição dos membros do Conselho de Administração, ao término do respectivo mandato, e do\nConselho Fiscal;\nIV – a fixação dos honorários e da cédula de presença dos membros do Conselho de Administração e\ndo Conselho Fiscal.\nParágrafo único. Os membros do Conselho de Administração e do Conselho Fiscal não poderão\nvotar nas matérias dos incisos I e IV deste artigo.\nArt. 18. Compete também à Assembleia Geral deliberar sobre a alienação ou oneração de bens\nimóveis da Cooperativa.\nArt. 19. É da competência exclusiva da Assembleia Geral Extraordinária deliberar sobre a reforma\ndo Estatuto; a fusão, incorporação ou desmembramento; a mudança do objeto; a dissolução\nvoluntária e a nomeação de liquidantes; e as contas do liquidante.\nParágrafo único. São necessários os votos de 2/3 (dois terços) dos cooperados presentes para tornar\nválidas as deliberações de que trata este artigo.\nCAPÍTULO V – DO CONSELHO DE ADMINISTRAÇÃO\nArt. 20. A Cooperativa será administrada por um Conselho de Administração composto por Diretor-\nPresidente, Vice-Presidente, Secretário e Diretor Financeiro, todos cooperados, eleitos pela\nAssembleia Geral para mandato de 4 (quatro) anos, com renovação obrigatória de, no mínimo, 1/3\n(um terço) de seus membros.\n§ 1º Não podem compor o Conselho de Administração parentes entre si até o segundo grau, em linha\nreta ou colateral, nem os impedidos por lei ou condenados a pena que vede, ainda que\ntemporariamente, o acesso a cargos públicos.\n§ 2º Os eleitos serão investidos em seus cargos mediante termo de posse lavrado em livro próprio e\npermanecerão em exercício até a posse de seus sucessores.\n§ 3º Vagando algum cargo, a Assembleia Geral, convocada no prazo de 30 (trinta) dias, elegerá o\nsubstituto, que completará o mandato do antecessor.\nArt. 21. O Conselho de Administração reunir-se-á ordinariamente uma vez por mês, deliberando por\nmaioria de votos, presente a maioria de seus membros, e lhe compete:\nI – programar as operações da Cooperativa e distribuir os serviços entre os cooperados;\nII – elaborar o Regimento Interno e o orçamento anual;\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/5",
+    "III – deliberar sobre a admissão, a eliminação e a exclusão de cooperados;\nIV – contratar e dispensar empregados e fixar-lhes a remuneração;\nV – prestar contas à Assembleia Geral Ordinária.\nArt. 22. Compete ao Diretor-Presidente representar a Cooperativa, ativa e passivamente, em juízo ou\nfora dele, e convocar e presidir as Assembleias Gerais e as reuniões do Conselho de Administração;\nao Vice-Presidente, auxiliar o Diretor-Presidente e coordenar os programas de educação\ncooperativista; ao Secretário, lavrar as atas das Assembleias Gerais e das reuniões do Conselho e\nguardar os livros sociais; e ao Diretor Financeiro, a gestão financeira e contábil da Cooperativa.\nParágrafo único. Os documentos que criem obrigações para a Cooperativa ou importem alienação de\nbens serão assinados pelo Diretor-Presidente em conjunto com o Diretor Financeiro.\nCAPÍTULO VI – DO CONSELHO FISCAL\nArt. 23. A administração da Cooperativa será fiscalizada por um Conselho Fiscal composto por 3\n(três) membros efetivos e 3 (três) suplentes, cooperados que não integrem o Conselho de\nAdministração nem sejam parentes de seus membros até o segundo grau, eleitos anualmente pela\nAssembleia Geral, permitida a reeleição de apenas 1/3 (um terço) de seus componentes.\nArt. 24. Compete ao Conselho Fiscal, que se reunirá mensalmente, examinar os livros e a\nescrituração contábil da Cooperativa, emitir parecer sobre o balanço geral e as contas do exercício e\nconvocar a Assembleia Geral quando ocorrerem motivos graves e urgentes.\nCAPÍTULO VII – DOS FUNDOS\nArt. 25. A Cooperativa constituirá:\nI – Fundo de Reserva, destinado a reparar perdas e atender ao desenvolvimento de suas atividades,\nformado por 10% (dez por cento), no mínimo, das sobras líquidas do exercício;\nII – Fundo de Assistência Técnica, Educacional e Social – FATES, destinado à assistência aos\ncooperados, a seus familiares e aos empregados da Cooperativa, formado por 5% (cinco por cento),\nno mínimo, das sobras líquidas do exercício.\nParágrafo único. Os fundos previstos neste artigo são indivisíveis entre os cooperados, ainda que em\ncaso de dissolução da Cooperativa.\nCAPÍTULO VIII – DO BALANÇO, DAS SOBRAS E DAS PERDAS\nArt. 26. O exercício social coincide com o ano civil, levantando-se o balanço geral em 31 de\ndezembro de cada ano.\nArt. 27. As sobras líquidas do exercício, deduzidas as parcelas destinadas aos fundos do art. 25,\nserão distribuídas aos cooperados proporcionalmente às operações por eles realizadas com a\nCooperativa, salvo deliberação diversa da Assembleia Geral.\nParágrafo único. As perdas do exercício serão cobertas pelo Fundo de Reserva e, sendo este\ninsuficiente, rateadas entre os cooperados na proporção das operações realizadas.\nCAPÍTULO IX – DA DISSOLUÇÃO E DA LIQUIDAÇÃO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 4/5",
+    "Art. 28. A Cooperativa dissolver-se-á de pleno direito quando assim deliberar a Assembleia Geral;\npela redução do número de cooperados ou do capital social abaixo dos mínimos estatutários, se não\nrestabelecidos até a Assembleia Geral seguinte; pela paralisação de suas atividades por mais de 120\n(cento e vinte) dias; e nos demais casos previstos em lei.\nArt. 29. Deliberada a dissolução, a Assembleia Geral nomeará um ou mais liquidantes e um\nConselho Fiscal de 3 (três) membros para proceder à liquidação, e o remanescente, inclusive o dos\nfundos indivisíveis, terá a destinação prevista na legislação cooperativista.\nCAPÍTULO X – DAS DISPOSIÇÕES GERAIS\nArt. 30. As atas das Assembleias Gerais serão lavradas em livro próprio e, juntamente com as\nalterações deste Estatuto, arquivadas na Junta Comercial do Estado do Ceará – JUCEC.\nArt. 31. Os casos omissos serão resolvidos de acordo com a Lei nº 5.764/1971 e os arts. 1.093 a\n1.096 do Código Civil.\nLimoeiro do Norte/CE, 26 de abril de 2019.\nTexto consolidado aprovado pela Assembleia Geral Extraordinária realizada nesta data.\nVisto: Augusto Nepomuceno Peixoto – OAB/CE nº 16.392\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 10/05/2019 sob o nº 80271642775\nProtocolo: 19/082.517-3 | NIRE: 23552926272\nEmpresa: COOPERATIVA DE TRANSPORTE ESCOLAR DO VALE DO JAGUARIBE – COOPVALE | CNPJ:\n84.862.817/0001-69\nAutenticação: 5B8E21D07C4FA93E16D2B0A7\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 5/5"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "dd6a0b2f98ce96775e137aa2b117b4a773544ead0d08f52721dad4ea2cc3f3f3",
+   "leitura": {}
+  },
+  {
+   "id": "COOPVALE_ATA_AGO",
+   "nome": "COOPVALE_ATA_AGO.pdf",
+   "tipo": "ata_assembleia",
+   "titulo": "Ata Da Assembleia Geral Ordinária",
+   "data": "2025-03-28",
+   "paginas": [
+    "COOPERATIVA DE TRANSPORTE ESCOLAR DO VALE DO JAGUARIBE – COOPVALE\nCNPJ nº 84.862.817/0001-69 – NIRE 23552926272\nATA DA ASSEMBLEIA GERAL ORDINÁRIA REALIZADA EM 28 DE MARÇO DE 2025\n1. DATA, HORA E LOCAL: Aos 28 (vinte e oito) dias do mês de março de 2025, às 19h00, em\nterceira convocação, na sede social da Cooperativa, situada na Rua Dom Aureliano Matos, nº 1.250,\nbairro Centro, Limoeiro do Norte/CE, CEP 62930-000.\n2. CONVOCAÇÃO: Edital expedido pelo Diretor-Presidente em 14 de março de 2025, afixado na\nsede, publicado em jornal de circulação regional e comunicado aos cooperados por circular, nos\ntermos do art. 14 do Estatuto Social, com previsão de três convocações, às 17h00, às 18h00 e às\n19h00. Não havendo quórum de instalação nas duas primeiras, a Assembleia instalou-se em terceira\nconvocação.\n3. PRESENÇA: Compareceram 23 (vinte e três) cooperados, de um total de 41 (quarenta e um)\ncooperados existentes na data da expedição do edital, conforme assinaturas no Livro de Presença e\nlista anexa, número superior ao mínimo de 10 (dez) cooperados exigido pelo art. 15 do Estatuto\nSocial para a terceira convocação. Presentes, ainda, os membros do Conselho Fiscal em exercício.\n4. MESA: Presidente: JOSÉ AILTON GUIMARÃES, Diretor-Presidente em fim de mandato e não\ncandidato à reeleição, a quem cabe presidir a Assembleia nos termos do art. 22 do Estatuto Social.\nSecretária: EDILEUZA GONDIM BARRETO, cooperada convidada pelo Presidente.\n5. ORDEM DO DIA: (i) prestação de contas do exercício de 2024; (ii) destinação das sobras do\nexercício de 2024; (iii) eleição dos membros do Conselho de Administração; e (iv) eleição dos\nmembros do Conselho Fiscal.\n6. DELIBERAÇÕES: Instalada a Assembleia e lido o edital de convocação, os cooperados\npresentes, após exame e discussão das matérias da ordem do dia, deliberaram:\n6.1. Aprovar, sem ressalvas, as contas do exercício de 2024, à vista do relatório da gestão, do\nbalanço geral encerrado em 31 de dezembro de 2024 e do parecer favorável do Conselho Fiscal,\nabstendo-se de votar os membros do Conselho de Administração e do Conselho Fiscal, na forma do\nart. 17, parágrafo único, do Estatuto Social.\n6.2. Destinar as sobras líquidas do exercício, no valor de R$ 48.620,00 (quarenta e oito mil,\nseiscentos e vinte reais), da seguinte forma: R$ 4.862,00 (10%) ao Fundo de Reserva; R$ 2.431,00\n(5%) ao FATES; e o saldo de R$ 41.327,00 (quarenta e um mil, trezentos e vinte e sete reais) aos\ncooperados, proporcionalmente às operações realizadas, nos termos dos arts. 25 e 27 do Estatuto\nSocial.\n6.3. Registrada uma única chapa e submetida à votação, foram eleitos por unanimidade para o\nConselho de Administração, para o mandato de 4 (quatro) anos, até a Assembleia Geral Ordinária de\n2029, observada a renovação mínima de 1/3 (um terço) prevista no art. 20 do Estatuto Social, os\nseguintes cooperados:\n(i) Diretor-Presidente: MANOEL MESSIAS FREITAS, brasileiro, casado, motorista profissional,\nportador da carteira de identidade nº 13303377 SSP/CE, inscrito no CPF sob o nº 554.581.374-85,\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "residente e domiciliado na Rua Padre Joaquim de Menezes, nº 415, bairro Bom Nome, Limoeiro do\nNorte/CE, CEP 62930-000;\n(ii) Vice-Presidente: JOANA DARC RIBEIRO, brasileira, casada, motorista profissional, portadora\nda carteira de identidade nº 97268863 SSP/CE, inscrita no CPF sob o nº 298.123.520-66, residente e\ndomiciliada na Rua Coronel Antônio Joaquim, nº 88, bairro Centro, Limoeiro do Norte/CE, CEP\n62930-000;\n(iii) Secretário: CÍCERO ROMÃO BEZERRA, brasileiro, casado, motorista profissional, portador\nda carteira de identidade nº 65687404 SSP/CE, inscrito no CPF sob o nº 882.973.907-30, residente e\ndomiciliado na Rua Coronel Araújo Lima, nº 702, bairro Centro, Russas/CE, CEP 62900-000; e\n(iv) Diretor Financeiro: EXPEDITO LIMA CORDEIRO, brasileiro, viúvo, técnico em contabilidade,\nportador da carteira de identidade nº 70048637 SSP/CE, inscrito no CPF sob o nº 479.724.509-35,\nresidente e domiciliado na Travessa São José, nº 57, bairro Centro, Limoeiro do Norte/CE, CEP\n62930-000.\n6.4. Os eleitos tomaram posse nesta mesma data, mediante assinatura dos respectivos termos de\nposse lavrados no livro próprio, e declararam, sob as penas da lei, que não estão impedidos de\nexercer a administração da Cooperativa e que não são parentes entre si até o segundo grau, em linha\nreta ou colateral.\n6.5. Eleger para o Conselho Fiscal, na forma do art. 23 do Estatuto Social, para o mandato de 1 (um)\nano, até a Assembleia Geral Ordinária de 2026, os seguintes cooperados, que não integram o\nConselho de Administração: como membros efetivos, FRANCISCO EDINARDO REBOUÇAS\n(CPF nº 864.158.402-15), VALDENORA CASTELO DIÓGENES (CPF nº 184.607.840-70) e LUIZ\nGONZAGA SOMBRA (CPF nº 996.797.824-41); e como suplentes, ANTÔNIA ERISMAR\nQUEIROGA, GILVAN TORQUATO LESSA e MARIA IVONEIDE JUCÁ.\n6.6. Autorizar o arquivamento desta ata na Junta Comercial do Estado do Ceará – JUCEC, nos\ntermos do art. 30 do Estatuto Social.\n7. ENCERRAMENTO: Nada mais havendo a tratar, o Presidente suspendeu os trabalhos pelo\ntempo necessário à lavratura desta ata, que, lida e achada conforme, foi aprovada e assinada pelo\nPresidente, pela Secretária, pelos eleitos e pelos cooperados presentes, conforme lista anexa.\nLimoeiro do Norte/CE, 28 de março de 2025.\nJOSÉ AILTON GUIMARÃES – Presidente da Assembleia\nEDILEUZA GONDIM BARRETO – Secretária\nConselho de Administração eleito:\nMANOEL MESSIAS FREITAS – Diretor-Presidente\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "JOANA DARC RIBEIRO – Vice-Presidente\nCÍCERO ROMÃO BEZERRA – Secretário\nEXPEDITO LIMA CORDEIRO – Diretor Financeiro\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 08/04/2025 sob o nº 79069972150\nProtocolo: 25/061.384-2 | NIRE: 23552926272\nEmpresa: COOPERATIVA DE TRANSPORTE ESCOLAR DO VALE DO JAGUARIBE – COOPVALE | CNPJ:\n84.862.817/0001-69\nAutenticação: E04C7A19B35F82D6A1C9047B\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "5506996b28a978655f91220be7471b119bff7d16ee6bd24f6880cee051abb108",
+   "leitura": {}
+  },
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n04495829300\nPLACA\nBNG3Z26\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2021\nANO MODELO\n2021\nNÚMERO DO CRV\n569768916363\nCÓDIGO DE SEGURANÇA DO CLA\n99043043575\nMARCA / MODELO / VERSÃO\nMARCOPOLO/VOLARE W9 ESCOLAR\nESPÉCIE / TIPO\nPASSAGEIRO/MICRO-\nÔNIBUS\nCHASSI\n9BS55H2FFV5FYBYBW\nCOR PREDOMINANTE\nAMARELA\nCOMBUSTÍVEL\nDIESEL\nNOME\nCOOPERATIVA DE TRANSPORTE ESCOLAR\nDO VALE DO JAGUARIBE – COOPVALE\nCPF / CNPJ\n84.862.817/0001-69\nLOCAL\nLIMOEIRO DO\nNORTE/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "a7a36a1fab80c59c65508a263349bebd52e759e8a93c98a0553bdf140b0ad485",
+   "leitura": {}
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "gabarito",
+  "politica": "Código Civil (genérica)"
+ },
+ "lado": "vendedor",
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T10:08:21",
+   "pedido": {
+    "veiculo": {
+     "descricao": "MARCOPOLO/VOLARE W9 ESCOLAR",
+     "placa": "BNG3Z26",
+     "renavam": "04495829300",
+     "chassi": "9BS55H2FFV5FYBYBW"
+    },
+    "data_venda": "2026-10-15",
+    "valor": 310000.0,
+    "assinantes": [
+     {
+      "nome": "Manoel Messias Freitas",
+      "cpf": "554.581.374-85"
+     },
+     {
+      "nome": "Expedito Lima Cordeiro",
+      "cpf": "479.724.509-35"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "DÉBORA LINS MOURA",
+    "vendedor_cnpj": "84.862.817/0001-69",
+    "lado": "vendedor"
+   },
+   "empresa": {
+    "razao_social": "COOPERATIVA DE TRANSPORTE ESCOLAR DO VALE DO JAGUARIBE – COOPVALE",
+    "cnpj": "84.862.817/0001-69",
+    "tipo": "COOPERATIVA",
+    "objeto": "prestação de serviços de transporte escolar e de passageiros por meio dos cooperados",
+    "comercializa_veiculos": false,
+    "subtipo": "COOPERATIVA"
+   },
+   "veredito": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 3,
+    "menor_confianca_fato": 1.0,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "resumo": "Expedito Lima Cordeiro e Manoel Messias Freitas podem, em conjunto, assinar a ATPV-e — alienação de bens — Estatuto Social (2019).",
+   "assinantes": [
+    {
+     "informado": "Manoel Messias Freitas",
+     "cpf": "554.581.374-85",
+     "chave": "55458137485",
+     "nome": "Manoel Messias Freitas",
+     "criterio": "CPF"
+    },
+    {
+     "informado": "Expedito Lima Cordeiro",
+     "cpf": "479.724.509-35",
+     "chave": "47972450935",
+     "nome": "Expedito Lima Cordeiro",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:47972450935+55458137485",
+     "pessoas": [
+      {
+       "chave": "47972450935",
+       "nome": "Expedito Lima Cordeiro"
+      },
+      {
+       "chave": "55458137485",
+       "nome": "Manoel Messias Freitas"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "alienação de bens — Estatuto Social (2019)",
+     "cadeia": [
+      "COOPVALE_ESTATUTO"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [],
+   "caminho_escolhido": {
+    "id": "contrato:47972450935+55458137485",
+    "pessoas": [
+     {
+      "chave": "47972450935",
+      "nome": "Expedito Lima Cordeiro"
+     },
+     {
+      "chave": "55458137485",
+      "nome": "Manoel Messias Freitas"
+     }
+    ],
+    "via": "contrato",
+    "descricao": "alienação de bens — Estatuto Social (2019)",
+    "cadeia": [
+     "COOPVALE_ESTATUTO"
+    ],
+    "severidade": "ok",
+    "confianca": 1.0,
+    "achados": [],
+    "precondicoes": []
+   },
+   "faltantes": [],
+   "achados": [
+    {
+     "codigo": "CND_INSS",
+     "severidade": "info",
+     "titulo": "CND previdenciária",
+     "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+     "fundamento": [
+      "Lei 8.212/91, art. 47, I, \"c\""
+     ],
+     "fontes": [],
+     "caminho": null
+    },
+    {
+     "codigo": "TITULARIDADE_OK",
+     "severidade": "ok",
+     "titulo": "Veículo registrado no CNPJ da empresa",
+     "detalhe": "Proprietário no CRLV: COOPERATIVA DE TRANSPORTE ESCOLAR DO VALE DO JAGUARIBE – COOPVALE.",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [
+      {
+       "doc_id": "CRLV",
+       "doc_titulo": "CRLV",
+       "trecho": "BNG3Z26",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 146,
+       "fim": 153
+      }
+     ],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "COOPVALE_ESTATUTO#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "COOPVALE_ESTATUTO",
+      "doc_titulo": "Estatuto Social (2019)",
+      "trecho": "Compete ao Diretor-Presidente representar a Cooperativa, ativa e passivamente, em juízo ou fora dele, e convocar e presidir as Assembleias Gerais e as reuniões do Conselho de Administração; ao Vice-Presidente, auxiliar o Diretor-Presidente e coordenar os programas de educação cooperativista; ao Secretário, lavrar as atas das Assembleias Gerais e das reuniões do Conselho e guardar os livros sociais; e ao Diretor Financeiro, a gestão financeira e contábil da Cooperativa",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 4,
+      "inicio": 8455,
+      "fim": 8927
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "@cargo:Diretor-Presidente"
+     ],
+     "cargo": null,
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    },
+    {
+     "regra": "COOPVALE_ESTATUTO#R2",
+     "escopo": "alienacao_bens",
+     "aplicavel": true,
+     "motivo": "alienação de bens",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "COOPVALE_ESTATUTO",
+      "doc_titulo": "Estatuto Social (2019)",
+      "trecho": "Os documentos que criem obrigações para a Cooperativa ou importem alienação de bens serão assinados pelo Diretor-Presidente em conjunto com o Diretor Financeiro",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 4,
+      "inicio": 8946,
+      "fim": 9106
+     },
+     "modo": "conjunto",
+     "pessoas": [
+      "@cargo:Diretor-Presidente",
+      "@cargo:Diretor Financeiro"
+     ],
+     "cargo": null,
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "conjunto",
+       "valor_lexico": "conjunto",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "em conjunto"
+       ]
+      }
+     ],
+     "decisiva": true
+    },
+    {
+     "regra": "COOPVALE_ESTATUTO#R3",
+     "escopo": "alienacao_bens_imoveis",
+     "aplicavel": false,
+     "motivo": "trata de bens imóveis; veículo é bem móvel",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "COOPVALE_ESTATUTO",
+      "doc_titulo": "Estatuto Social (2019)",
+      "trecho": "Compete também à Assembleia Geral deliberar sobre a alienação ou oneração de bens imóveis da Cooperativa",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 3,
+      "inicio": 6483,
+      "fim": 6587
+     },
+     "modo": "nao_especificado",
+     "pessoas": [],
+     "cargo": null,
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-10-15",
+    "atos": [
+     {
+      "doc": "COOPVALE_ESTATUTO",
+      "titulo": "Estatuto Social (2019)",
+      "efeito": "2019-04-26"
+     },
+     {
+      "doc": "COOPVALE_ATA_AGO",
+      "titulo": "Ata Da Assembleia Geral Ordinária",
+      "efeito": "2025-03-28"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "55458137485",
+      "nome": "Manoel Messias Freitas",
+      "cargo": "Diretor-Presidente",
+      "doc": "COOPVALE_ATA_AGO"
+     },
+     {
+      "chave": "29812352066",
+      "nome": "Joana Darc Ribeiro",
+      "cargo": "Vice-Presidente",
+      "doc": "COOPVALE_ATA_AGO"
+     },
+     {
+      "chave": "88297390730",
+      "nome": "Cícero Romão Bezerra",
+      "cargo": "Secretário",
+      "doc": "COOPVALE_ATA_AGO"
+     },
+     {
+      "chave": "47972450935",
+      "nome": "Expedito Lima Cordeiro",
+      "cargo": "Diretor Financeiro",
+      "doc": "COOPVALE_ATA_AGO"
+     }
+    ],
+    "encerrados": [],
+    "socios": []
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "COOPERATIVA DE TRANSPORTE ESCOLAR DO VALE DO JAGUARIBE – COOPVALE",
+      "sub": "84.862.817/0001-69"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "MARCOPOLO/VOLARE W9 ESCOLAR",
+      "sub": "BNG3Z26"
+     },
+     {
+      "id": "55458137485",
+      "tipo": "pessoa",
+      "rotulo": "Manoel Messias Freitas",
+      "papeis": [
+       "Diretor-Presidente"
+      ],
+      "assinante": true
+     },
+     {
+      "id": "29812352066",
+      "tipo": "pessoa",
+      "rotulo": "Joana Darc Ribeiro",
+      "papeis": [
+       "Vice-Presidente"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "88297390730",
+      "tipo": "pessoa",
+      "rotulo": "Cícero Romão Bezerra",
+      "papeis": [
+       "Secretário"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "47972450935",
+      "tipo": "pessoa",
+      "rotulo": "Expedito Lima Cordeiro",
+      "papeis": [
+       "Diretor Financeiro"
+      ],
+      "assinante": true
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "valido"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "55458137485",
+      "tipo": "administracao",
+      "rotulo": "administra · em conjunto",
+      "status": "valido",
+      "doc": "COOPVALE_ATA_AGO"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "29812352066",
+      "tipo": "administracao",
+      "rotulo": "administra · sem poder para este ato",
+      "status": "invalido",
+      "doc": "COOPVALE_ATA_AGO"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "88297390730",
+      "tipo": "administracao",
+      "rotulo": "administra · sem poder para este ato",
+      "status": "invalido",
+      "doc": "COOPVALE_ATA_AGO"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "47972450935",
+      "tipo": "administracao",
+      "rotulo": "administra · em conjunto",
+      "status": "valido",
+      "doc": "COOPVALE_ATA_AGO"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2019-04-26",
+     "tipo": "ato",
+     "titulo": "Estatuto Social (2019)",
+     "doc": "COOPVALE_ESTATUTO",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2025-03-28",
+     "tipo": "ato",
+     "titulo": "Ata Da Assembleia Geral Ordinária",
+     "doc": "COOPVALE_ATA_AGO",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-10-15",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 310.000,00"
+    },
+    {
+     "data": "2029-03-28",
+     "tipo": "fim_mandato",
+     "titulo": "Fim do mandato de Manoel Messias Freitas",
+     "doc": "COOPVALE_ATA_AGO",
+     "detalhe": "4 (quatro) anos"
+    },
+    {
+     "data": "2029-03-28",
+     "tipo": "fim_mandato",
+     "titulo": "Fim do mandato de Joana Darc Ribeiro",
+     "doc": "COOPVALE_ATA_AGO",
+     "detalhe": "4 (quatro) anos"
+    },
+    {
+     "data": "2029-03-28",
+     "tipo": "fim_mandato",
+     "titulo": "Fim do mandato de Cícero Romão Bezerra",
+     "doc": "COOPVALE_ATA_AGO",
+     "detalhe": "4 (quatro) anos"
+    },
+    {
+     "data": "2029-03-28",
+     "tipo": "fim_mandato",
+     "titulo": "Fim do mandato de Expedito Lima Cordeiro",
+     "doc": "COOPVALE_ATA_AGO",
+     "detalhe": "4 (quatro) anos"
+    }
+   ],
+   "pessoas": {
+    "55458137485": {
+     "nome": "Manoel Messias Freitas",
+     "cpf": "55458137485"
+    },
+    "29812352066": {
+     "nome": "Joana Darc Ribeiro",
+     "cpf": "29812352066"
+    },
+    "88297390730": {
+     "nome": "Cícero Romão Bezerra",
+     "cpf": "88297390730"
+    },
+    "47972450935": {
+     "nome": "Expedito Lima Cordeiro",
+     "cpf": "47972450935"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "comprovada",
+    "outorgante": {
+     "nome": "COOPERATIVA DE TRANSPORTE ESCOLAR DO VALE DO JAGUARIBE – COOPVALE",
+     "cnpj": "84.862.817/0001-69",
+     "tipo": "COOPERATIVA",
+     "atos_vigentes": [
+      {
+       "titulo": "Estatuto Social (2019)",
+       "doc": "COOPVALE_ESTATUTO",
+       "efeito": "2019-04-26"
+      },
+      {
+       "titulo": "Ata Da Assembleia Geral Ordinária",
+       "doc": "COOPVALE_ATA_AGO",
+       "efeito": "2025-03-28"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "Manoel Messias Freitas",
+      "cpf": "554.581.374-85",
+      "identificacao": "CPF",
+      "qualidade": "Diretor-Presidente"
+     },
+     {
+      "nome": "Expedito Lima Cordeiro",
+      "cpf": "479.724.509-35",
+      "identificacao": "CPF",
+      "qualidade": "Diretor Financeiro"
+     }
+    ],
+    "poderes_conferidos": [
+     "Estatuto Social (2019), cláusula de administração: assinam em conjunto: Diretor-Presidente e Diretor Financeiro"
+    ],
+    "prazo_validade": [
+     "Manoel Messias Freitas (Diretor-Presidente): mandato até 28/03/2029",
+     "Expedito Lima Cordeiro (Diretor Financeiro): mandato até 28/03/2029"
+    ],
+    "revogacao": [
+     "Poder decorre do ato constitutivo vigente na data da venda; recomenda-se certidão simplificada atualizada da Junta Comercial para afastar alteração posterior ainda não apresentada."
+    ],
+    "fontes": [
+     {
+      "doc_id": "COOPVALE_ESTATUTO",
+      "doc_titulo": "Estatuto Social (2019)",
+      "trecho": "Os documentos que criem obrigações para a Cooperativa ou importem alienação de bens serão assinados pelo Diretor-Presidente em conjunto com o Diretor Financeiro",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 4,
+      "inicio": 8946,
+      "fim": 9106
+     },
+     {
+      "doc_id": "COOPVALE_ATA_AGO",
+      "doc_titulo": "Ata Da Assembleia Geral Ordinária",
+      "trecho": "Registrada uma única chapa e submetida à votação, foram eleitos por unanimidade para o Conselho de Administração, para o mandato de 4 (quatro) anos, até a Assembleia Geral Ordinária de 2029, observada a renovação mínima de 1/3 (um terço) prevista no art",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 2551,
+      "fim": 2804
+     },
+     {
+      "doc_id": "COOPVALE_ATA_AGO",
+      "doc_titulo": "Ata Da Assembleia Geral Ordinária",
+      "trecho": "Registrada uma única chapa e submetida à votação, foram eleitos por unanimidade para o Conselho de Administração, para o mandato de 4 (quatro) anos, até a Assembleia Geral Ordinária de 2029, observada a renovação mínima de 1/3 (um terço) prevista no art",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 2551,
+      "fim": 2804
+     }
+    ],
+    "documentos_verificaveis": [
+     {
+      "id": "COOPVALE_ESTATUTO",
+      "titulo": "Estatuto Social (2019)",
+      "arquivo": "COOPVALE_ESTATUTO.pdf"
+     },
+     {
+      "id": "COOPVALE_ATA_AGO",
+      "titulo": "Ata Da Assembleia Geral Ordinária",
+      "arquivo": "COOPVALE_ATA_AGO.pdf"
+     },
+     {
+      "id": "CRLV",
+      "titulo": "CRLV",
+      "arquivo": "CRLV.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "COOPVALE_ESTATUTO",
+     "nome": "COOPVALE_ESTATUTO.pdf",
+     "tipo": "estatuto_social",
+     "titulo": "Estatuto Social (2019)",
+     "data": "2019-04-26",
+     "paginas": [
+      "COOPERATIVA DE TRANSPORTE ESCOLAR DO VALE DO JAGUARIBE – COOPVALE\nCNPJ nº 84.862.817/0001-69 – NIRE 23552926272\nESTATUTO SOCIAL\n(reformado e consolidado pela Assembleia Geral Extraordinária realizada em 26 de abril de 2019)\nCAPÍTULO I – DA DENOMINAÇÃO, SEDE, ÁREA DE AÇÃO, PRAZO E OBJETO\nArt. 1º A COOPERATIVA DE TRANSPORTE ESCOLAR DO VALE DO JAGUARIBE –\nCOOPVALE, doravante denominada \"Cooperativa\", é sociedade cooperativa singular, de natureza\ncivil e sem fins lucrativos, regida pela Lei nº 5.764, de 16 de dezembro de 1971, pelos arts. 1.093 a\n1.096 do Código Civil, por este Estatuto e pelas demais disposições legais aplicáveis.\nArt. 2º A Cooperativa tem sede e administração na Rua Dom Aureliano Matos, nº 1.250, bairro\nCentro, Limoeiro do Norte/CE, CEP 62930-000, e foro jurídico na Comarca de Limoeiro do Norte/\nCE.\nArt. 3º A área de ação da Cooperativa, para fins de admissão de cooperados, abrange os Municípios\nde Limoeiro do Norte, Russas, Morada Nova, Quixeré, Tabuleiro do Norte, Jaguaruana e Alto Santo,\nno Estado do Ceará.\nArt. 4º O prazo de duração da Cooperativa é indeterminado.\nArt. 5º A Cooperativa, com base na colaboração recíproca a que se obrigam os seus cooperados, tem\npor objeto a prestação de serviços de transporte escolar e de passageiros por meio dos cooperados.\nCAPÍTULO II – DOS COOPERADOS\nArt. 6º Poderá ingressar na Cooperativa, salvo impossibilidade técnica de prestação de serviços, a\npessoa física que se dedique ao transporte escolar ou de passageiros na área de ação da Cooperativa,\ncomo condutor habilitado ou como proprietário de veículo apto à prestação dos serviços, e que\nconcorde com as disposições deste Estatuto.\n§ 1º O número de cooperados é ilimitado quanto ao máximo, não podendo ser inferior ao necessário\nà composição do Conselho de Administração e do Conselho Fiscal.\n§ 2º Aprovada pelo Conselho de Administração a proposta de admissão, o interessado subscreverá as\nquotas-partes previstas no art. 12 e assinará o Livro de Matrícula.\nArt. 7º São deveres do cooperado:\nI – integralizar as quotas-partes de capital subscritas;\nII – cumprir a lei, este Estatuto, o Regimento Interno e as deliberações da Assembleia Geral e do\nConselho de Administração;\nIII – executar com pontualidade, segurança e zelo os serviços de transporte que lhe forem\ndistribuídos;\nIV – participar, na proporção das operações que realizar, da cobertura das despesas da Cooperativa e\ndo rateio das perdas apuradas.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/5",
+      "Art. 8º A demissão do cooperado, que não poderá ser negada, dar-se-á unicamente a seu pedido,\nformulado por escrito.\nArt. 9º A eliminação do cooperado será aplicada pelo Conselho de Administração em virtude de\ninfração legal ou estatutária, especialmente quando o cooperado deixar de cumprir as obrigações\nassumidas com a Cooperativa, praticar atos que desabonem o seu conceito ou deixar de prestar\nserviços por meio dela por mais de 180 (cento e oitenta) dias consecutivos, sem justificativa aceita.\n§ 1º A eliminação constará de termo lavrado no Livro de Matrícula, com os motivos que a\ndeterminaram, e será comunicada ao interessado no prazo de 30 (trinta) dias.\n§ 2º Da eliminação caberá recurso, com efeito suspensivo, à primeira Assembleia Geral.\nArt. 10. A exclusão do cooperado ocorrerá por morte, por incapacidade civil não suprida ou pela\nperda dos requisitos estatutários de ingresso ou de permanência.\nArt. 11. A responsabilidade do cooperado é limitada ao valor de suas quotas-partes e ao prejuízo\nverificado nas operações sociais, guardada a proporção de sua participação nessas operações, e\nperdura, para os desligados, até a aprovação das contas do exercício em que se deu o desligamento.\nCAPÍTULO III – DO CAPITAL SOCIAL\nArt. 12. O capital social da Cooperativa, ilimitado quanto ao máximo, varia conforme o número de\nquotas-partes subscritas, não podendo ser inferior a R$ 60.000,00 (sessenta mil reais), e divide-se em\nquotas-partes de valor unitário de R$ 100,00 (cem reais).\n§ 1º Cada cooperado subscreverá, no ato de admissão, no mínimo 15 (quinze) quotas-partes,\nintegralizáveis à vista ou em até 10 (dez) parcelas mensais, e nenhum cooperado poderá subscrever\nmais de 1/3 (um terço) do total das quotas-partes.\n§ 2º As quotas-partes são intransferíveis a terceiros estranhos à sociedade, ainda que por herança, e o\ncapital integralizado será restituído ao cooperado desligado após a aprovação do balanço do\nexercício em que se deu o desligamento.\nCAPÍTULO IV – DA ASSEMBLEIA GERAL\nArt. 13. A Assembleia Geral, ordinária ou extraordinária, é o órgão supremo da Cooperativa, e suas\ndeliberações, tomadas nos limites da lei e deste Estatuto, vinculam a todos os cooperados, ainda que\nausentes ou discordantes.\nArt. 14. A Assembleia Geral será convocada pelo Diretor-Presidente, pelo Conselho Fiscal ou, após\nsolicitação não atendida, por 1/5 (um quinto) dos cooperados, com antecedência mínima de 10 (dez)\ndias, mediante edital afixado na sede, publicado em jornal de circulação na área de ação e\ncomunicado aos cooperados por circular.\nParágrafo único. O edital poderá prever as três convocações, observado o intervalo mínimo de 1\n(uma) hora entre elas, e indicará o número de cooperados existentes na data de sua expedição.\nArt. 15. A Assembleia Geral instalar-se-á com a presença de 2/3 (dois terços) dos cooperados, em\nprimeira convocação; de metade mais 1 (um) dos cooperados, em segunda convocação; e de, no\nmínimo, 10 (dez) cooperados, em terceira convocação.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/5",
+      "Art. 16. Cada cooperado presente terá direito a um só voto, qualquer que seja o número de suas\nquotas-partes, e as deliberações serão tomadas por maioria de votos dos presentes, ressalvado o\ndisposto no parágrafo único do art. 19.\nArt. 17. A Assembleia Geral Ordinária realizar-se-á anualmente nos 3 (três) primeiros meses após o\ntérmino do exercício social e deliberará sobre:\nI – a prestação de contas do Conselho de Administração, acompanhada do parecer do Conselho\nFiscal;\nII – a destinação das sobras ou o rateio das perdas;\nIII – a eleição dos membros do Conselho de Administração, ao término do respectivo mandato, e do\nConselho Fiscal;\nIV – a fixação dos honorários e da cédula de presença dos membros do Conselho de Administração e\ndo Conselho Fiscal.\nParágrafo único. Os membros do Conselho de Administração e do Conselho Fiscal não poderão\nvotar nas matérias dos incisos I e IV deste artigo.\nArt. 18. Compete também à Assembleia Geral deliberar sobre a alienação ou oneração de bens\nimóveis da Cooperativa.\nArt. 19. É da competência exclusiva da Assembleia Geral Extraordinária deliberar sobre a reforma\ndo Estatuto; a fusão, incorporação ou desmembramento; a mudança do objeto; a dissolução\nvoluntária e a nomeação de liquidantes; e as contas do liquidante.\nParágrafo único. São necessários os votos de 2/3 (dois terços) dos cooperados presentes para tornar\nválidas as deliberações de que trata este artigo.\nCAPÍTULO V – DO CONSELHO DE ADMINISTRAÇÃO\nArt. 20. A Cooperativa será administrada por um Conselho de Administração composto por Diretor-\nPresidente, Vice-Presidente, Secretário e Diretor Financeiro, todos cooperados, eleitos pela\nAssembleia Geral para mandato de 4 (quatro) anos, com renovação obrigatória de, no mínimo, 1/3\n(um terço) de seus membros.\n§ 1º Não podem compor o Conselho de Administração parentes entre si até o segundo grau, em linha\nreta ou colateral, nem os impedidos por lei ou condenados a pena que vede, ainda que\ntemporariamente, o acesso a cargos públicos.\n§ 2º Os eleitos serão investidos em seus cargos mediante termo de posse lavrado em livro próprio e\npermanecerão em exercício até a posse de seus sucessores.\n§ 3º Vagando algum cargo, a Assembleia Geral, convocada no prazo de 30 (trinta) dias, elegerá o\nsubstituto, que completará o mandato do antecessor.\nArt. 21. O Conselho de Administração reunir-se-á ordinariamente uma vez por mês, deliberando por\nmaioria de votos, presente a maioria de seus membros, e lhe compete:\nI – programar as operações da Cooperativa e distribuir os serviços entre os cooperados;\nII – elaborar o Regimento Interno e o orçamento anual;\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/5",
+      "III – deliberar sobre a admissão, a eliminação e a exclusão de cooperados;\nIV – contratar e dispensar empregados e fixar-lhes a remuneração;\nV – prestar contas à Assembleia Geral Ordinária.\nArt. 22. Compete ao Diretor-Presidente representar a Cooperativa, ativa e passivamente, em juízo ou\nfora dele, e convocar e presidir as Assembleias Gerais e as reuniões do Conselho de Administração;\nao Vice-Presidente, auxiliar o Diretor-Presidente e coordenar os programas de educação\ncooperativista; ao Secretário, lavrar as atas das Assembleias Gerais e das reuniões do Conselho e\nguardar os livros sociais; e ao Diretor Financeiro, a gestão financeira e contábil da Cooperativa.\nParágrafo único. Os documentos que criem obrigações para a Cooperativa ou importem alienação de\nbens serão assinados pelo Diretor-Presidente em conjunto com o Diretor Financeiro.\nCAPÍTULO VI – DO CONSELHO FISCAL\nArt. 23. A administração da Cooperativa será fiscalizada por um Conselho Fiscal composto por 3\n(três) membros efetivos e 3 (três) suplentes, cooperados que não integrem o Conselho de\nAdministração nem sejam parentes de seus membros até o segundo grau, eleitos anualmente pela\nAssembleia Geral, permitida a reeleição de apenas 1/3 (um terço) de seus componentes.\nArt. 24. Compete ao Conselho Fiscal, que se reunirá mensalmente, examinar os livros e a\nescrituração contábil da Cooperativa, emitir parecer sobre o balanço geral e as contas do exercício e\nconvocar a Assembleia Geral quando ocorrerem motivos graves e urgentes.\nCAPÍTULO VII – DOS FUNDOS\nArt. 25. A Cooperativa constituirá:\nI – Fundo de Reserva, destinado a reparar perdas e atender ao desenvolvimento de suas atividades,\nformado por 10% (dez por cento), no mínimo, das sobras líquidas do exercício;\nII – Fundo de Assistência Técnica, Educacional e Social – FATES, destinado à assistência aos\ncooperados, a seus familiares e aos empregados da Cooperativa, formado por 5% (cinco por cento),\nno mínimo, das sobras líquidas do exercício.\nParágrafo único. Os fundos previstos neste artigo são indivisíveis entre os cooperados, ainda que em\ncaso de dissolução da Cooperativa.\nCAPÍTULO VIII – DO BALANÇO, DAS SOBRAS E DAS PERDAS\nArt. 26. O exercício social coincide com o ano civil, levantando-se o balanço geral em 31 de\ndezembro de cada ano.\nArt. 27. As sobras líquidas do exercício, deduzidas as parcelas destinadas aos fundos do art. 25,\nserão distribuídas aos cooperados proporcionalmente às operações por eles realizadas com a\nCooperativa, salvo deliberação diversa da Assembleia Geral.\nParágrafo único. As perdas do exercício serão cobertas pelo Fundo de Reserva e, sendo este\ninsuficiente, rateadas entre os cooperados na proporção das operações realizadas.\nCAPÍTULO IX – DA DISSOLUÇÃO E DA LIQUIDAÇÃO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 4/5",
+      "Art. 28. A Cooperativa dissolver-se-á de pleno direito quando assim deliberar a Assembleia Geral;\npela redução do número de cooperados ou do capital social abaixo dos mínimos estatutários, se não\nrestabelecidos até a Assembleia Geral seguinte; pela paralisação de suas atividades por mais de 120\n(cento e vinte) dias; e nos demais casos previstos em lei.\nArt. 29. Deliberada a dissolução, a Assembleia Geral nomeará um ou mais liquidantes e um\nConselho Fiscal de 3 (três) membros para proceder à liquidação, e o remanescente, inclusive o dos\nfundos indivisíveis, terá a destinação prevista na legislação cooperativista.\nCAPÍTULO X – DAS DISPOSIÇÕES GERAIS\nArt. 30. As atas das Assembleias Gerais serão lavradas em livro próprio e, juntamente com as\nalterações deste Estatuto, arquivadas na Junta Comercial do Estado do Ceará – JUCEC.\nArt. 31. Os casos omissos serão resolvidos de acordo com a Lei nº 5.764/1971 e os arts. 1.093 a\n1.096 do Código Civil.\nLimoeiro do Norte/CE, 26 de abril de 2019.\nTexto consolidado aprovado pela Assembleia Geral Extraordinária realizada nesta data.\nVisto: Augusto Nepomuceno Peixoto – OAB/CE nº 16.392\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 10/05/2019 sob o nº 80271642775\nProtocolo: 19/082.517-3 | NIRE: 23552926272\nEmpresa: COOPERATIVA DE TRANSPORTE ESCOLAR DO VALE DO JAGUARIBE – COOPVALE | CNPJ:\n84.862.817/0001-69\nAutenticação: 5B8E21D07C4FA93E16D2B0A7\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 5/5"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "dd6a0b2f98ce96775e137aa2b117b4a773544ead0d08f52721dad4ea2cc3f3f3",
+     "leitura": {}
+    },
+    {
+     "id": "COOPVALE_ATA_AGO",
+     "nome": "COOPVALE_ATA_AGO.pdf",
+     "tipo": "ata_assembleia",
+     "titulo": "Ata Da Assembleia Geral Ordinária",
+     "data": "2025-03-28",
+     "paginas": [
+      "COOPERATIVA DE TRANSPORTE ESCOLAR DO VALE DO JAGUARIBE – COOPVALE\nCNPJ nº 84.862.817/0001-69 – NIRE 23552926272\nATA DA ASSEMBLEIA GERAL ORDINÁRIA REALIZADA EM 28 DE MARÇO DE 2025\n1. DATA, HORA E LOCAL: Aos 28 (vinte e oito) dias do mês de março de 2025, às 19h00, em\nterceira convocação, na sede social da Cooperativa, situada na Rua Dom Aureliano Matos, nº 1.250,\nbairro Centro, Limoeiro do Norte/CE, CEP 62930-000.\n2. CONVOCAÇÃO: Edital expedido pelo Diretor-Presidente em 14 de março de 2025, afixado na\nsede, publicado em jornal de circulação regional e comunicado aos cooperados por circular, nos\ntermos do art. 14 do Estatuto Social, com previsão de três convocações, às 17h00, às 18h00 e às\n19h00. Não havendo quórum de instalação nas duas primeiras, a Assembleia instalou-se em terceira\nconvocação.\n3. PRESENÇA: Compareceram 23 (vinte e três) cooperados, de um total de 41 (quarenta e um)\ncooperados existentes na data da expedição do edital, conforme assinaturas no Livro de Presença e\nlista anexa, número superior ao mínimo de 10 (dez) cooperados exigido pelo art. 15 do Estatuto\nSocial para a terceira convocação. Presentes, ainda, os membros do Conselho Fiscal em exercício.\n4. MESA: Presidente: JOSÉ AILTON GUIMARÃES, Diretor-Presidente em fim de mandato e não\ncandidato à reeleição, a quem cabe presidir a Assembleia nos termos do art. 22 do Estatuto Social.\nSecretária: EDILEUZA GONDIM BARRETO, cooperada convidada pelo Presidente.\n5. ORDEM DO DIA: (i) prestação de contas do exercício de 2024; (ii) destinação das sobras do\nexercício de 2024; (iii) eleição dos membros do Conselho de Administração; e (iv) eleição dos\nmembros do Conselho Fiscal.\n6. DELIBERAÇÕES: Instalada a Assembleia e lido o edital de convocação, os cooperados\npresentes, após exame e discussão das matérias da ordem do dia, deliberaram:\n6.1. Aprovar, sem ressalvas, as contas do exercício de 2024, à vista do relatório da gestão, do\nbalanço geral encerrado em 31 de dezembro de 2024 e do parecer favorável do Conselho Fiscal,\nabstendo-se de votar os membros do Conselho de Administração e do Conselho Fiscal, na forma do\nart. 17, parágrafo único, do Estatuto Social.\n6.2. Destinar as sobras líquidas do exercício, no valor de R$ 48.620,00 (quarenta e oito mil,\nseiscentos e vinte reais), da seguinte forma: R$ 4.862,00 (10%) ao Fundo de Reserva; R$ 2.431,00\n(5%) ao FATES; e o saldo de R$ 41.327,00 (quarenta e um mil, trezentos e vinte e sete reais) aos\ncooperados, proporcionalmente às operações realizadas, nos termos dos arts. 25 e 27 do Estatuto\nSocial.\n6.3. Registrada uma única chapa e submetida à votação, foram eleitos por unanimidade para o\nConselho de Administração, para o mandato de 4 (quatro) anos, até a Assembleia Geral Ordinária de\n2029, observada a renovação mínima de 1/3 (um terço) prevista no art. 20 do Estatuto Social, os\nseguintes cooperados:\n(i) Diretor-Presidente: MANOEL MESSIAS FREITAS, brasileiro, casado, motorista profissional,\nportador da carteira de identidade nº 13303377 SSP/CE, inscrito no CPF sob o nº 554.581.374-85,\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+      "residente e domiciliado na Rua Padre Joaquim de Menezes, nº 415, bairro Bom Nome, Limoeiro do\nNorte/CE, CEP 62930-000;\n(ii) Vice-Presidente: JOANA DARC RIBEIRO, brasileira, casada, motorista profissional, portadora\nda carteira de identidade nº 97268863 SSP/CE, inscrita no CPF sob o nº 298.123.520-66, residente e\ndomiciliada na Rua Coronel Antônio Joaquim, nº 88, bairro Centro, Limoeiro do Norte/CE, CEP\n62930-000;\n(iii) Secretário: CÍCERO ROMÃO BEZERRA, brasileiro, casado, motorista profissional, portador\nda carteira de identidade nº 65687404 SSP/CE, inscrito no CPF sob o nº 882.973.907-30, residente e\ndomiciliado na Rua Coronel Araújo Lima, nº 702, bairro Centro, Russas/CE, CEP 62900-000; e\n(iv) Diretor Financeiro: EXPEDITO LIMA CORDEIRO, brasileiro, viúvo, técnico em contabilidade,\nportador da carteira de identidade nº 70048637 SSP/CE, inscrito no CPF sob o nº 479.724.509-35,\nresidente e domiciliado na Travessa São José, nº 57, bairro Centro, Limoeiro do Norte/CE, CEP\n62930-000.\n6.4. Os eleitos tomaram posse nesta mesma data, mediante assinatura dos respectivos termos de\nposse lavrados no livro próprio, e declararam, sob as penas da lei, que não estão impedidos de\nexercer a administração da Cooperativa e que não são parentes entre si até o segundo grau, em linha\nreta ou colateral.\n6.5. Eleger para o Conselho Fiscal, na forma do art. 23 do Estatuto Social, para o mandato de 1 (um)\nano, até a Assembleia Geral Ordinária de 2026, os seguintes cooperados, que não integram o\nConselho de Administração: como membros efetivos, FRANCISCO EDINARDO REBOUÇAS\n(CPF nº 864.158.402-15), VALDENORA CASTELO DIÓGENES (CPF nº 184.607.840-70) e LUIZ\nGONZAGA SOMBRA (CPF nº 996.797.824-41); e como suplentes, ANTÔNIA ERISMAR\nQUEIROGA, GILVAN TORQUATO LESSA e MARIA IVONEIDE JUCÁ.\n6.6. Autorizar o arquivamento desta ata na Junta Comercial do Estado do Ceará – JUCEC, nos\ntermos do art. 30 do Estatuto Social.\n7. ENCERRAMENTO: Nada mais havendo a tratar, o Presidente suspendeu os trabalhos pelo\ntempo necessário à lavratura desta ata, que, lida e achada conforme, foi aprovada e assinada pelo\nPresidente, pela Secretária, pelos eleitos e pelos cooperados presentes, conforme lista anexa.\nLimoeiro do Norte/CE, 28 de março de 2025.\nJOSÉ AILTON GUIMARÃES – Presidente da Assembleia\nEDILEUZA GONDIM BARRETO – Secretária\nConselho de Administração eleito:\nMANOEL MESSIAS FREITAS – Diretor-Presidente\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+      "JOANA DARC RIBEIRO – Vice-Presidente\nCÍCERO ROMÃO BEZERRA – Secretário\nEXPEDITO LIMA CORDEIRO – Diretor Financeiro\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 08/04/2025 sob o nº 79069972150\nProtocolo: 25/061.384-2 | NIRE: 23552926272\nEmpresa: COOPERATIVA DE TRANSPORTE ESCOLAR DO VALE DO JAGUARIBE – COOPVALE | CNPJ:\n84.862.817/0001-69\nAutenticação: E04C7A19B35F82D6A1C9047B\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "5506996b28a978655f91220be7471b119bff7d16ee6bd24f6880cee051abb108",
+     "leitura": {}
+    },
+    {
+     "id": "CRLV",
+     "nome": "CRLV.pdf",
+     "tipo": "crlv",
+     "titulo": "CRLV",
+     "data": null,
+     "paginas": [
+      "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n04495829300\nPLACA\nBNG3Z26\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2021\nANO MODELO\n2021\nNÚMERO DO CRV\n569768916363\nCÓDIGO DE SEGURANÇA DO CLA\n99043043575\nMARCA / MODELO / VERSÃO\nMARCOPOLO/VOLARE W9 ESCOLAR\nESPÉCIE / TIPO\nPASSAGEIRO/MICRO-\nÔNIBUS\nCHASSI\n9BS55H2FFV5FYBYBW\nCOR PREDOMINANTE\nAMARELA\nCOMBUSTÍVEL\nDIESEL\nNOME\nCOOPERATIVA DE TRANSPORTE ESCOLAR\nDO VALE DO JAGUARIBE – COOPVALE\nCPF / CNPJ\n84.862.817/0001-69\nLOCAL\nLIMOEIRO DO\nNORTE/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "a7a36a1fab80c59c65508a263349bebd52e759e8a93c98a0553bdf140b0ad485",
+     "leitura": {}
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "gabarito",
+    "politica": "Código Civil (genérica)"
+   },
+   "lado": "vendedor"
+  }
+ },
+ "geral": {
+  "veredito": "PODE",
+  "faixa": "VERDE",
+  "indice": 100.0,
+  "resumo": "Vendedor: Expedito Lima Cordeiro e Manoel Messias Freitas podem, em conjunto, assinar a ATPV-e — alienação de bens — Estatuto Social (2019).",
+  "motivos_faixa": [
+   "Vendedor — índice 100 ≥ limiar 85"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "MARCOPOLO/VOLARE W9 ESCOLAR",
+   "placa": "BNG3Z26",
+   "renavam": "04495829300",
+   "chassi": "9BS55H2FFV5FYBYBW"
+  },
+  "data_venda": "2026-10-15",
+  "valor": 310000.0,
+  "vendedor": {
+   "tipo": "PJ",
+   "nome": "COOPERATIVA DE TRANSPORTE ESCOLAR DO VALE DO JAGUARIBE – COOPVALE",
+   "documento": "84.862.817/0001-69",
+   "assinantes": [
+    {
+     "nome": "Manoel Messias Freitas",
+     "cpf": "554.581.374-85"
+    },
+    {
+     "nome": "Expedito Lima Cordeiro",
+     "cpf": "479.724.509-35"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": "DÉBORA LINS MOURA",
+   "documento": "045.115.091-07",
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "ATPV-e"
+ },
+ "hash_entrada": "31801c03d179c814607934a32c21ca0aa66dd9d8bdd9f5ab0a8bc50a65101e18"
+}

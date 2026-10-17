@@ -1,0 +1,53 @@
+{
+  "caso": "P07",
+  "titulo": "Compradora pessoa física representada por procuradora",
+  "categoria": "pf",
+  "objetivo": "Procuração com poderes para comprar.",
+  "validacao_cega": false,
+  "lote": "pf",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "comprador": {
+      "veredito": "PODE",
+      "faixas_aceitaveis": [
+        "VERDE"
+      ],
+      "conjuntos_minimos": [
+        [
+          "VALERIA"
+        ],
+        [
+          "PATRICIA"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "042.938.747-47"
+        ],
+        [
+          "196.692.613-84"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Antônia Valéria Barros"
+        ],
+        [
+          "Patrícia Moura Leal"
+        ]
+      ]
+    }
+  },
+  "esperado_lados_ce": null
+}

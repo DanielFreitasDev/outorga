@@ -1,0 +1,15 @@
+{
+  "caso": "A01",
+  "forma_assinatura": "ATPV-e",
+  "vendedor": {
+    "assinantes": []
+  },
+  "comprador": {
+    "assinantes": [
+      {
+        "nome": "GILBERTO A NUNES",
+        "cpf": "690.828.682-70"
+      }
+    ]
+  }
+}

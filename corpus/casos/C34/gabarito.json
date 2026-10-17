@@ -1,0 +1,31 @@
+{
+  "caso": "C34",
+  "titulo": "Empresário individual",
+  "categoria": "estrutura",
+  "objetivo": "EI não é sociedade: o titular assina pelo CNPJ.",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": [
+      [
+        "JOSUE"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 966"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "914.524.410-30"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Josué Pereira da Silva"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

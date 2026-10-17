@@ -1,0 +1,26 @@
+{
+  "caso": "C09",
+  "vendedor": {
+    "razao_social": "AGROPECUÁRIA CARIRI LTDA.",
+    "cnpj": "84.885.681/0001-02"
+  },
+  "veiculo": {
+    "placa": "JSL4B82",
+    "renavam": "07207547359",
+    "chassi": "9BGU92WPD3E9W7F9X",
+    "descricao": "GM/S10 CD LTZ 2.8 4X4"
+  },
+  "data_venda": "2026-09-17",
+  "valor": 215000,
+  "assinantes": [
+    {
+      "nome": "Antônio Cícero Lobo",
+      "cpf": "847.267.147-08"
+    }
+  ],
+  "comprador": {
+    "nome": "Auto Center Litoral Ltda.",
+    "cidade": "Fortaleza/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

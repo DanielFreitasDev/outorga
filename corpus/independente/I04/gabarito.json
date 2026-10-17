@@ -1,0 +1,54 @@
+{
+  "caso": "I04",
+  "titulo": "Cadeia de substabelecimentos: o primeiro 'sem reserva' e o último por instrumento particular",
+  "categoria": "substabelecimento_em_cadeia / forma_da_procuracao / leitura_semantica",
+  "objetivo": "Testa a leitura de uma cadeia procuração pública, substabelecimento público sem reserva e substabelecimento particular com reserva: o procurador original perde os poderes ao substabelecer sem reserva; pelo Código Civil o último substabelecido pode vender (art. 655, forma pública não exigida para bem móvel), mas pela política do DETRAN-CE, que só aceita procuração pública, o elo particular não é admitido.",
+  "validacao_cega": true,
+  "autor": "independente",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": ["VERDE", "AMARELO"],
+    "conjuntos_minimos_cpf": [
+      ["293.360.483-33"],
+      ["971.489.180-90"],
+      ["233.492.700-77"],
+      ["656.742.959-30"]
+    ],
+    "conjuntos_minimos_nomes": [
+      ["JEFFERSON ARAÚJO VERAS"],
+      ["KÁTIA REGINA VERAS AGUIAR"],
+      ["RAFAELA CUNHA FONTENELE"],
+      ["DIEGO MATOS SABINO"]
+    ],
+    "fundamentos": [
+      "CC art. 655",
+      "CC art. 667, § 2º",
+      "CC art. 117, parágrafo único",
+      "CC art. 661, § 1º",
+      "CC art. 1.018",
+      "CC art. 47",
+      "Enunciado 182 da III Jornada de Direito Civil (CJF)",
+      "Contrato social consolidado, Cláusula Sexta"
+    ]
+  },
+  "esperado_ce": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": ["VERMELHO", "AMARELO"],
+    "conjuntos_minimos_cpf": [
+      ["293.360.483-33"],
+      ["971.489.180-90"],
+      ["233.492.700-77"]
+    ],
+    "conjuntos_minimos_nomes": [
+      ["JEFFERSON ARAÚJO VERAS"],
+      ["KÁTIA REGINA VERAS AGUIAR"],
+      ["RAFAELA CUNHA FONTENELE"]
+    ],
+    "fundamentos": [
+      "DETRAN-CE: procurador somente por procuração pública e específica para o ato, com validade de até 1 ano da expedição",
+      "CC art. 655 c/c Enunciado 182 da III Jornada de Direito Civil (CJF)",
+      "CC art. 661, § 1º"
+    ]
+  },
+  "raciocinio": "JEFFERSON, administrador com atuação isolada (Cláusula Sexta), outorgou em 10/03/2026 procuração pública com poder especial de vender o FIAT/STRADA placa KGJ4N36, prazo de 1 ano e faculdade de substabelecer com ou sem reserva. LUIZ FERNANDO substabeleceu 'sem reserva de iguais poderes' a RAFAELA por escritura pública de 04/05/2026; com isso transferiu os poderes e deixou de poder agir, e RAFAELA recebeu também o poder de substabelecer. RAFAELA substabeleceu 'com reserva' a DIEGO por instrumento particular com firma reconhecida por autenticidade em 20/07/2026, de modo que ambos ficam com poderes. Pelo Código Civil, o substabelecimento particular de procuração pública é válido quando a forma pública não é da substância do ato (art. 655; Enunciado 182 do CJF), e a venda de veículo não exige escritura; DIEGO pode assinar, tal como os dois administradores e RAFAELA. Pela política do DETRAN-CE, que só admite procurador com procuração pública e específica, o elo particular não serve: DIEGO não pode assinar, e RAFAELA, com substabelecimento público dentro de 1 ano, continua válida."
+}

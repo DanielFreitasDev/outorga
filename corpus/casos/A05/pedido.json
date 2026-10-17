@@ -1,0 +1,15 @@
+{
+  "caso": "A05",
+  "forma_assinatura": "ATPV-e",
+  "vendedor": {
+    "assinantes": []
+  },
+  "comprador": {
+    "assinantes": [
+      {
+        "nome": "Pedro Henrique Lima",
+        "cpf": "939.761.584-02"
+      }
+    ]
+  }
+}

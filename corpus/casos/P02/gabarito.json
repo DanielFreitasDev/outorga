@@ -1,0 +1,53 @@
+{
+  "caso": "P02",
+  "titulo": "Procurador com procuração pública e específica",
+  "categoria": "pf",
+  "objetivo": "Procuração da dona, pública, do veículo, no prazo.",
+  "validacao_cega": false,
+  "lote": "pf",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "vendedor": {
+      "veredito": "PODE",
+      "faixas_aceitaveis": [
+        "VERDE"
+      ],
+      "conjuntos_minimos": [
+        [
+          "RAIMUNDA"
+        ],
+        [
+          "JOSUELIMA"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "320.908.841-18"
+        ],
+        [
+          "753.490.565-65"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Raimunda Nonata Siqueira"
+        ],
+        [
+          "Josué Lima Ferreira"
+        ]
+      ]
+    }
+  },
+  "esperado_lados_ce": null
+}

@@ -1,0 +1,15 @@
+{
+  "caso": "A04",
+  "forma_assinatura": "ATPV-e",
+  "vendedor": {
+    "assinantes": []
+  },
+  "comprador": {
+    "assinantes": [
+      {
+        "nome": "Elias Rodrigues Maia",
+        "cpf": "355.918.820-21"
+      }
+    ]
+  }
+}

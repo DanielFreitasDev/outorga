@@ -1,0 +1,514 @@
+{
+ "resumo": {
+  "modo": "oraculo",
+  "conjunto": "atpv",
+  "casos": 14,
+  "duracao_s": 0.4,
+  "data": "2026-10-17T10:08:20",
+  "veredito_correto": 14,
+  "faixa_aceitavel": 14,
+  "quem_pode_correto": 14,
+  "quem_pode_avaliados": 14,
+  "erros_perigosos": 0,
+  "erros_caros": 0,
+  "cobertura_automatica": 1.0,
+  "acerto_na_faixa_automatica": 1.0,
+  "politica": {
+   "nome": "DETRAN-CE",
+   "limiar_aceite": 85.0,
+   "limiar_recusa": 15.0
+  }
+ },
+ "linhas": [
+  {
+   "caso": "A01",
+   "titulo": "Comprador PJ: administrador assina compra abaixo da alçada",
+   "categoria": "comprador",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Gilberto Araújo Nunes pode assinar a ATPV-e como comprador(a) — regra geral de representação — Contrato Social (2021).",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "comprador": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "comprador": true
+   }
+  },
+  {
+   "caso": "A02",
+   "titulo": "Comprador PJ: compra acima da alçada com um só administrador",
+   "categoria": "comprador",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Gilberto Araújo Nunes e Simone Batista Nunes. Regra aplicável: aquisição de veículos (Contrato Social (2021)).",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "comprador": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "comprador": true
+   }
+  },
+  {
+   "caso": "A03",
+   "titulo": "Restrição de compra não alcança a venda",
+   "categoria": "comprador",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Simone Batista Nunes pode assinar a ATPV-e — regra geral de representação — Contrato Social (2021).",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "A04",
+   "titulo": "Comprador PJ por procurador com poder de compra",
+   "categoria": "comprador",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 92.5,
+   "confianca": 0.85,
+   "segundos": 0.0,
+   "resumo": "Elias Rodrigues Maia pode assinar a ATPV-e como comprador(a) — procuração pública de 20/07/2026.",
+   "motivos_faixa": [
+    "índice 92.5 ≥ limiar 85"
+   ],
+   "lados": {
+    "comprador": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 92.5
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "comprador": true
+   }
+  },
+  {
+   "caso": "A05",
+   "titulo": "Procuração só de venda usada para comprar",
+   "categoria": "comprador",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Francisco Wellington Rocha. O caminho por procuração pública de 10/02/2026 não vale: procuração é para vender, não para comprar.",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "comprador": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "comprador": true
+   }
+  },
+  {
+   "caso": "A06",
+   "titulo": "PJ dos dois lados: ambos com poder",
+   "categoria": "dois_lados",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Vendedor: João Batista Andrade pode assinar a ATPV-e — regra geral de representação — Contrato Social (2019). · Comprador: Simone Batista Nunes pode assinar a ATPV-e como comprador(a) — regra geral de representação — Contrato Social (2021).",
+   "motivos_faixa": [
+    "Vendedor — índice 100 ≥ limiar 85",
+    "Comprador — índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    },
+    "comprador": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true,
+    "comprador": true
+   }
+  },
+  {
+   "caso": "A07",
+   "titulo": "PJ dos dois lados, assinaturas lidas da ATPV-e: comprador sem poder",
+   "categoria": "dois_lados",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Vendedor: Carlos Eduardo Bezerra e Luciana Moura Sampaio podem, em conjunto, assinar a ATPV-e — alienação de bens — Contrato Social Consolidado (2023). · Comprador: Os assinantes informados não bastam. Quem pode assinar: Francisco Wellington Rocha. Regra aplicável: compra e venda de veículos (Contrato Social (2020)).",
+   "motivos_faixa": [
+    "Vendedor — índice 100 ≥ limiar 85",
+    "Comprador — índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    },
+    "comprador": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true,
+    "comprador": true
+   }
+  },
+  {
+   "caso": "A08",
+   "titulo": "Cooperativa: Diretor-Presidente e Diretor Financeiro assinam",
+   "categoria": "tipos",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Expedito Lima Cordeiro e Manoel Messias Freitas podem, em conjunto, assinar a ATPV-e — alienação de bens — Estatuto Social (2019).",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "A09",
+   "titulo": "Cooperativa: Diretor-Presidente sozinho",
+   "categoria": "tipos",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Expedito Lima Cordeiro e Manoel Messias Freitas. Regra aplicável: alienação de bens (Estatuto Social (2019)).",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "A10",
+   "titulo": "Associação compradora: Presidente eleita assina",
+   "categoria": "tipos",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Maria do Socorro Viana pode assinar a ATPV-e como comprador(a) — regra geral de representação — Estatuto Social (2017).",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "comprador": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "comprador": true
+   }
+  },
+  {
+   "caso": "A11",
+   "titulo": "MEI vende: o titular assina",
+   "categoria": "tipos",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Rogério Fernandes Lima pode assinar a ATPV-e — regra supletiva (contrato não define a forma de assinar).",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "A12",
+   "titulo": "MEI compra: a esposa do titular assina",
+   "categoria": "tipos",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 10.0,
+   "confianca": 0.8,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Rogério Fernandes Lima.",
+   "motivos_faixa": [
+    "índice 10 ≤ limiar 15"
+   ],
+   "lados": {
+    "comprador": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 10.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "comprador": true
+   }
+  },
+  {
+   "caso": "A13",
+   "titulo": "EIRELI (hoje SLU) vende: o titular assina",
+   "categoria": "tipos",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Wellington Oliveira Sá pode assinar a ATPV-e — regra geral de representação — Ato Constitutivo (SLU) (2019).",
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "PODE",
+     "faixa": "VERDE",
+     "indice": 100.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  },
+  {
+   "caso": "A14",
+   "titulo": "Sociedade simples: um sócio assina sozinho",
+   "categoria": "tipos",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "segundos": 0.0,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Larissa Gomes Pinho e Thiago Pinho Arruda. Regra aplicável: regra geral de representação (Contrato Social (2022)).",
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "lados": {
+    "vendedor": {
+     "veredito": "NAO_PODE",
+     "faixa": "VERMELHO",
+     "indice": 0.0
+    }
+   },
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false,
+   "lados_ok": {
+    "vendedor": true
+   }
+  }
+ ]
+}

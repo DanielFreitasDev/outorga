@@ -1,0 +1,44 @@
+{
+  "caso": "P04",
+  "titulo": "Procuração só com poderes gerais (DETRAN, IPVA, multas)",
+  "categoria": "pf",
+  "objetivo": "Vender exige poderes especiais e expressos (CC 661).",
+  "validacao_cega": false,
+  "lote": "pf",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "vendedor": {
+      "veredito": "NAO_PODE",
+      "faixas_aceitaveis": [
+        "VERMELHO"
+      ],
+      "conjuntos_minimos": [
+        [
+          "ERIVAN"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "812.329.658-47"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Francisco Erivan Cavalcante"
+        ]
+      ]
+    }
+  },
+  "esperado_lados_ce": null
+}

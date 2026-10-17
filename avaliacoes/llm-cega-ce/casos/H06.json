@@ -1,0 +1,889 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T01:29:42",
+ "pedido": {
+  "veiculo": {
+   "descricao": "CAOA CHERY/ARRIZO 6 PRO 1.5T",
+   "placa": "DWE4R61",
+   "renavam": "07567141273",
+   "chassi": "99A39TDZGJ08R5U38"
+  },
+  "data_venda": "2026-09-25",
+  "valor": 132000.0,
+  "assinantes": [
+   {
+    "nome": "Nilton Arruda Coelho",
+    "cpf": "869.934.673-56"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "Jefferson Lucas Araújo",
+  "vendedor_cnpj": "38.601.295/0001-24"
+ },
+ "empresa": {
+  "razao_social": "TAVARES & MOURÃO EVENTOS LTDA.",
+  "cnpj": "38.601.295/0001-24",
+  "tipo": "LTDA",
+  "objeto": "organização de eventos e a locação de estruturas, compreendendo palcos, tendas, arquibancadas, mobiliário e equipamentos de iluminação e som utilizados em feiras, congressos e festividades.",
+  "comercializa_veiculos": false
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 0.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 1,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 0 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: Breno Sampaio Tavares e Clarice Tavares Mourão ou Breno Sampaio Tavares e Nilton Arruda Coelho (procurador) ou Clarice Tavares Mourão e Nilton Arruda Coelho (procurador). Regra aplicável: regra geral de representação (Cláusula Sétima).",
+ "assinantes": [
+  {
+   "informado": "Nilton Arruda Coelho",
+   "cpf": "869.934.673-56",
+   "chave": "86993467356",
+   "nome": "Nilton Arruda Coelho",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:25137790451+35129221206",
+   "pessoas": [
+    {
+     "chave": "25137790451",
+     "nome": "Breno Sampaio Tavares"
+    },
+    {
+     "chave": "35129221206",
+     "nome": "Clarice Tavares Mourão"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Cláusula Sétima",
+   "cadeia": [
+    "TAVARES_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  },
+  {
+   "id": "POA_H_TAVARES_ARRIZO:25137790451+86993467356",
+   "pessoas": [
+    {
+     "chave": "25137790451",
+     "nome": "Breno Sampaio Tavares"
+    },
+    {
+     "chave": "86993467356",
+     "nome": "Nilton Arruda Coelho"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 15/06/2026 (Cartório Iracema – 4º Tabelionato de Notas de Fortaleza)",
+   "cadeia": [
+    "POA_H_TAVARES_ARRIZO"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PJ",
+     "severidade": "ok",
+     "titulo": "Outorgada pela própria empresa",
+     "detalhe": "A outorgante é a empresa, representada por Breno Sampaio Tavares e Clarice Tavares Mourão.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_H_TAVARES_ARRIZO",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "compareceu como OUTORGANTE TAVARES & MOURÃO EVENTOS LTDA., sociedade empresária limitada, com sede em Eusébio/CE, inscrita no CNPJ sob o nº 38.601.295/0001-24, NIRE 23472410731, que se faz representar, conjuntamente, por seus dois administradores",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 476,
+       "fim": 722
+      }
+     ],
+     "caminho": "POA_H_TAVARES_ARRIZO"
+    },
+    {
+     "codigo": "OUTORGA_COM_PODERES",
+     "severidade": "ok",
+     "titulo": "Quem outorgou tinha poder",
+     "detalhe": "Em 15/06/2026, Breno Sampaio Tavares e Clarice Tavares Mourão podia representar a empresa nesse ato.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_H_TAVARES_ARRIZO",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "compareceu como OUTORGANTE TAVARES & MOURÃO EVENTOS LTDA., sociedade empresária limitada, com sede em Eusébio/CE, inscrita no CNPJ sob o nº 38.601.295/0001-24, NIRE 23472410731, que se faz representar, conjuntamente, por seus dois administradores",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 476,
+       "fim": 722
+      },
+      {
+       "doc_id": "TAVARES_CS",
+       "doc_titulo": "Contrato Social (2023)",
+       "trecho": "a sociedade somente se obriga pela assinatura conjunta de ambos os administradores em contratos, títulos, documentos e quaisquer instrumentos que lhe criem obrigações.",
+       "clausula": "Cláusula Sétima",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 3078,
+       "fim": 3245
+      }
+     ],
+     "caminho": "POA_H_TAVARES_ARRIZO"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar o ATPV.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_H_TAVARES_ARRIZO",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "outorgando-lhe poderes especiais e expressos, restritos ao bem abaixo descrito, para vendê-lo pelo preço e às condições que ajustar, firmar a respectiva Autorização para Transferência de Propriedade do Veículo em meio digital (ATPV-e), receber o preço e dar quitação",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1517,
+       "fim": 1783
+      }
+     ],
+     "caminho": "POA_H_TAVARES_ARRIZO"
+    },
+    {
+     "codigo": "VEICULO_ABRANGIDO",
+     "severidade": "ok",
+     "titulo": "Veículo identificado na procuração",
+     "detalhe": "A procuração identifica exatamente este veículo.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "POA_H_TAVARES_ARRIZO",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "outorgando-lhe poderes especiais e expressos, restritos ao bem abaixo descrito, para vendê-lo pelo preço e às condições que ajustar, firmar a respectiva Autorização para Transferência de Propriedade do Veículo em meio digital (ATPV-e), receber o preço e dar quitação",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1517,
+       "fim": 1783
+      }
+     ],
+     "caminho": "POA_H_TAVARES_ARRIZO"
+    },
+    {
+     "codigo": "PROCURACAO_NO_PRAZO",
+     "severidade": "ok",
+     "titulo": "Dentro do prazo",
+     "detalhe": "Válida até 15/12/2026.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "POA_H_TAVARES_ARRIZO",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "O mandato terá duração de 6 (seis) meses, contados desta data, findos os quais perderá automaticamente seus efeitos.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1990,
+       "fim": 2106
+      }
+     ],
+     "caminho": "POA_H_TAVARES_ARRIZO"
+    }
+   ],
+   "precondicoes": []
+  },
+  {
+   "id": "POA_H_TAVARES_ARRIZO:35129221206+86993467356",
+   "pessoas": [
+    {
+     "chave": "35129221206",
+     "nome": "Clarice Tavares Mourão"
+    },
+    {
+     "chave": "86993467356",
+     "nome": "Nilton Arruda Coelho"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 15/06/2026 (Cartório Iracema – 4º Tabelionato de Notas de Fortaleza)",
+   "cadeia": [
+    "POA_H_TAVARES_ARRIZO"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PJ",
+     "severidade": "ok",
+     "titulo": "Outorgada pela própria empresa",
+     "detalhe": "A outorgante é a empresa, representada por Breno Sampaio Tavares e Clarice Tavares Mourão.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_H_TAVARES_ARRIZO",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "compareceu como OUTORGANTE TAVARES & MOURÃO EVENTOS LTDA., sociedade empresária limitada, com sede em Eusébio/CE, inscrita no CNPJ sob o nº 38.601.295/0001-24, NIRE 23472410731, que se faz representar, conjuntamente, por seus dois administradores",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 476,
+       "fim": 722
+      }
+     ],
+     "caminho": "POA_H_TAVARES_ARRIZO"
+    },
+    {
+     "codigo": "OUTORGA_COM_PODERES",
+     "severidade": "ok",
+     "titulo": "Quem outorgou tinha poder",
+     "detalhe": "Em 15/06/2026, Breno Sampaio Tavares e Clarice Tavares Mourão podia representar a empresa nesse ato.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_H_TAVARES_ARRIZO",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "compareceu como OUTORGANTE TAVARES & MOURÃO EVENTOS LTDA., sociedade empresária limitada, com sede em Eusébio/CE, inscrita no CNPJ sob o nº 38.601.295/0001-24, NIRE 23472410731, que se faz representar, conjuntamente, por seus dois administradores",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 476,
+       "fim": 722
+      },
+      {
+       "doc_id": "TAVARES_CS",
+       "doc_titulo": "Contrato Social (2023)",
+       "trecho": "a sociedade somente se obriga pela assinatura conjunta de ambos os administradores em contratos, títulos, documentos e quaisquer instrumentos que lhe criem obrigações.",
+       "clausula": "Cláusula Sétima",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 3078,
+       "fim": 3245
+      }
+     ],
+     "caminho": "POA_H_TAVARES_ARRIZO"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar o ATPV.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_H_TAVARES_ARRIZO",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "outorgando-lhe poderes especiais e expressos, restritos ao bem abaixo descrito, para vendê-lo pelo preço e às condições que ajustar, firmar a respectiva Autorização para Transferência de Propriedade do Veículo em meio digital (ATPV-e), receber o preço e dar quitação",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1517,
+       "fim": 1783
+      }
+     ],
+     "caminho": "POA_H_TAVARES_ARRIZO"
+    },
+    {
+     "codigo": "VEICULO_ABRANGIDO",
+     "severidade": "ok",
+     "titulo": "Veículo identificado na procuração",
+     "detalhe": "A procuração identifica exatamente este veículo.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "POA_H_TAVARES_ARRIZO",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "outorgando-lhe poderes especiais e expressos, restritos ao bem abaixo descrito, para vendê-lo pelo preço e às condições que ajustar, firmar a respectiva Autorização para Transferência de Propriedade do Veículo em meio digital (ATPV-e), receber o preço e dar quitação",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1517,
+       "fim": 1783
+      }
+     ],
+     "caminho": "POA_H_TAVARES_ARRIZO"
+    },
+    {
+     "codigo": "PROCURACAO_NO_PRAZO",
+     "severidade": "ok",
+     "titulo": "Dentro do prazo",
+     "detalhe": "Válida até 15/12/2026.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "POA_H_TAVARES_ARRIZO",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "O mandato terá duração de 6 (seis) meses, contados desta data, findos os quais perderá automaticamente seus efeitos.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1990,
+       "fim": 2106
+      }
+     ],
+     "caminho": "POA_H_TAVARES_ARRIZO"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "POA_H_TAVARES_ARRIZO:25137790451+86993467356",
+   "via": "procuracao",
+   "descricao": "Procuração pública de 15/06/2026 (Cartório Iracema – 4º Tabelionato de Notas de Fortaleza)",
+   "pessoas": [
+    "25137790451",
+    "86993467356"
+   ],
+   "faltam": [
+    "25137790451"
+   ],
+   "faltam_nomes": [
+    "Breno Sampaio Tavares"
+   ],
+   "pessoas_nomes": [
+    "Breno Sampaio Tavares",
+    "Nilton Arruda Coelho"
+   ]
+  },
+  {
+   "alternativa": "POA_H_TAVARES_ARRIZO:35129221206+86993467356",
+   "via": "procuracao",
+   "descricao": "Procuração pública de 15/06/2026 (Cartório Iracema – 4º Tabelionato de Notas de Fortaleza)",
+   "pessoas": [
+    "35129221206",
+    "86993467356"
+   ],
+   "faltam": [
+    "35129221206"
+   ],
+   "faltam_nomes": [
+    "Clarice Tavares Mourão"
+   ],
+   "pessoas_nomes": [
+    "Clarice Tavares Mourão",
+    "Nilton Arruda Coelho"
+   ]
+  },
+  {
+   "alternativa": "contrato:25137790451+35129221206",
+   "via": "contrato",
+   "descricao": "regra geral de representação — Cláusula Sétima",
+   "pessoas": [
+    "25137790451",
+    "35129221206"
+   ],
+   "faltam": [
+    "25137790451",
+    "35129221206"
+   ],
+   "faltam_nomes": [
+    "Breno Sampaio Tavares",
+    "Clarice Tavares Mourão"
+   ],
+   "pessoas_nomes": [
+    "Breno Sampaio Tavares",
+    "Clarice Tavares Mourão"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "CND_INSS",
+   "severidade": "info",
+   "titulo": "CND previdenciária",
+   "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+   "fundamento": [
+    "Lei 8.212/91, art. 47, I, \"c\""
+   ],
+   "fontes": [],
+   "caminho": null
+  },
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: TAVARES & MOURÃO EVENTOS LTDA..",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "DWE4R61",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "TAVARES_CS#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "TAVARES_CS",
+    "doc_titulo": "Contrato Social (2023)",
+    "trecho": "a sociedade somente se obriga pela assinatura conjunta de ambos os administradores em contratos, títulos, documentos e quaisquer instrumentos que lhe criem obrigações.",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3078,
+    "fim": 3245
+   },
+   "modo": "conjunto",
+   "pessoas": [
+    "Breno Sampaio Tavares",
+    "Clarice Tavares Mourão"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "conjunto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "assinatura conjunta"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "TAVARES_CS#R2",
+   "escopo": "obrigacoes_garantias",
+   "aplicavel": false,
+   "motivo": "trata de avais, fianças e garantias",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "TAVARES_CS",
+    "doc_titulo": "Contrato Social (2023)",
+    "trecho": "É vedado aos administradores empregar o nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+    "clausula": "Cláusula Sétima, Parágrafo primeiro",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3266,
+    "fim": 3417
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "TAVARES_CS#R3",
+   "escopo": "outorgar_procuracoes",
+   "aplicavel": false,
+   "motivo": "regula a outorga de procurações (usada para validar procurações)",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "TAVARES_CS",
+    "doc_titulo": "Contrato Social (2023)",
+    "trecho": "As procurações em nome da sociedade serão outorgadas pelos dois administradores em conjunto e terão prazo não superior a 12 (doze) meses.",
+    "clausula": "Cláusula Sétima, Parágrafo segundo",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3437,
+    "fim": 3574
+   },
+   "modo": "quantidade_minima",
+   "pessoas": [],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "conjunto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "em conjunto"
+     ]
+    },
+    {
+     "campo": "quantidade_minima",
+     "valor_llm": "conjunto/2",
+     "valor_lexico": "quantidade_minima/2",
+     "divergiu": false,
+     "corrigido_para": "quantidade_minima/2",
+     "expressoes": []
+    }
+   ],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-09-25",
+  "atos": [
+   {
+    "doc": "TAVARES_CS",
+    "titulo": "Contrato Social (2023)",
+    "efeito": "2023-05-02"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "25137790451",
+    "nome": "Breno Sampaio Tavares",
+    "cargo": "sócio-administrador",
+    "doc": "TAVARES_CS"
+   },
+   {
+    "chave": "35129221206",
+    "nome": "Clarice Tavares Mourão",
+    "cargo": "sócio-administradora",
+    "doc": "TAVARES_CS"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "25137790451",
+    "nome": "Breno Sampaio Tavares",
+    "percentual": 50.0
+   },
+   {
+    "chave": "35129221206",
+    "nome": "Clarice Tavares Mourão",
+    "percentual": 50.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "TAVARES & MOURÃO EVENTOS LTDA.",
+    "sub": "38.601.295/0001-24"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "CAOA CHERY/ARRIZO 6 PRO 1.5T",
+    "sub": "DWE4R61"
+   },
+   {
+    "id": "25137790451",
+    "tipo": "pessoa",
+    "rotulo": "Breno Sampaio Tavares",
+    "papeis": [
+     "sócio 50%",
+     "sócio-administrador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "35129221206",
+    "tipo": "pessoa",
+    "rotulo": "Clarice Tavares Mourão",
+    "papeis": [
+     "sócio 50%",
+     "sócio-administradora"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "86993467356",
+    "tipo": "pessoa",
+    "rotulo": "Nilton Arruda Coelho",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "25137790451",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "50%",
+    "status": "neutro"
+   },
+   {
+    "de": "35129221206",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "50%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "25137790451",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "TAVARES_CS"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "35129221206",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "TAVARES_CS"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "86993467356",
+    "tipo": "procuracao",
+    "status": "valido",
+    "doc": "POA_H_TAVARES_ARRIZO",
+    "rotulo": "procuração 15/06/2026",
+    "motivo": null
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2023-05-02",
+   "tipo": "ato",
+   "titulo": "Contrato Social (2023)",
+   "doc": "TAVARES_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-06-15",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Nilton Arruda Coelho",
+   "doc": "POA_H_TAVARES_ARRIZO",
+   "detalhe": "publica"
+  },
+  {
+   "data": "2026-09-25",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 132.000,00"
+  },
+  {
+   "data": "2026-12-15",
+   "tipo": "vencimento",
+   "titulo": "Vence a procuração de Nilton Arruda Coelho",
+   "doc": "POA_H_TAVARES_ARRIZO",
+   "detalhe": ""
+  }
+ ],
+ "pessoas": {
+  "25137790451": {
+   "nome": "Breno Sampaio Tavares",
+   "cpf": "25137790451"
+  },
+  "35129221206": {
+   "nome": "Clarice Tavares Mourão",
+   "cpf": "35129221206"
+  },
+  "86993467356": {
+   "nome": "Nilton Arruda Coelho",
+   "cpf": "86993467356"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "TAVARES & MOURÃO EVENTOS LTDA.",
+   "cnpj": "38.601.295/0001-24",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Contrato Social (2023)",
+     "doc": "TAVARES_CS",
+     "efeito": "2023-05-02"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Nilton Arruda Coelho",
+    "cpf": "869.934.673-56",
+    "identificacao": "CPF",
+    "qualidade": "procurador(a) pela procuração de 15/06/2026"
+   }
+  ],
+  "poderes_conferidos": [
+   "Contrato Social (2023), Cláusula Sétima: para este veículo, exige Breno Sampaio Tavares e Clarice Tavares Mourão.",
+   "Assinantes informados (Nilton Arruda Coelho) não atendem a essa exigência."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [
+   {
+    "doc_id": "TAVARES_CS",
+    "doc_titulo": "Contrato Social (2023)",
+    "trecho": "a sociedade somente se obriga pela assinatura conjunta de ambos os administradores em contratos, títulos, documentos e quaisquer instrumentos que lhe criem obrigações.",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3078,
+    "fim": 3245
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "POA_H_TAVARES_ARRIZO",
+    "titulo": "Procuração (2026)",
+    "arquivo": "POA_H_TAVARES_ARRIZO.pdf"
+   },
+   {
+    "id": "TAVARES_CS",
+    "titulo": "Contrato Social (2023)",
+    "arquivo": "TAVARES_CS.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n07567141273\nPLACA\nDWE4R61\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2023\nANO MODELO\n2023\nNÚMERO DO CRV\n442437132504\nCÓDIGO DE SEGURANÇA DO CLA\n78866805977\nMARCA / MODELO / VERSÃO\nCAOA CHERY/ARRIZO 6 PRO 1.5T\nESPÉCIE / TIPO\nPASSAGEIRO/AUTOMÓVEL\nCHASSI\n99A39TDZGJ08R5U38\nCOR PREDOMINANTE\nPRETA\nCOMBUSTÍVEL\nGASOLINA\nNOME\nTAVARES & MOURÃO EVENTOS LTDA.\nCPF / CNPJ\n38.601.295/0001-24\nLOCAL\nEUSÉBIO/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "63e59f39af7f0097ef8045a494720b60ebad81af6f179d0cd0e7ba522204567e",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "POA_H_TAVARES_ARRIZO",
+   "nome": "POA_H_TAVARES_ARRIZO.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (2026)",
+   "data": "2026-06-15",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ – COMARCA DE FORTALEZA\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nHeloísa Barreira Nunes – Tabeliã\nLIVRO 866 — FOLHAS 120/121\nPROCURAÇÃO PARA ALIENAÇÃO DE VEÍCULO DETERMINADO\nSAIBAM quantos este público instrumento de procuração virem que, aos quinze (15) dias do mês de\njunho do ano de dois mil e vinte e seis (2026), nesta cidade de Fortaleza, perante mim, Patrícia\nViana Duarte, Escrevente Autorizada, compareceu como OUTORGANTE TAVARES & MOURÃO\nEVENTOS LTDA., sociedade empresária limitada, com sede em Eusébio/CE, inscrita no CNPJ sob\no nº 38.601.295/0001-24, NIRE 23472410731, que se faz representar, conjuntamente, por seus dois\nadministradores: BRENO SAMPAIO TAVARES, brasileiro, casado, empresário, RG nº 37603545\nSSP/CE, CPF nº 251.377.904-51; e CLARICE TAVARES MOURÃO, brasileira, casada, empresária,\nRG nº 11260449 SSP/CE, CPF nº 351.292.212-06; ambos residentes em Eusébio/CE, os quais atuam\nna forma da Cláusula 7ª do contrato social de constituição, registrado na JUCEC em 16/05/2023 sob\no nº 55146073876, documento que me foi apresentado e cuja cópia fica arquivada. Identifiquei os\ncomparecentes à vista dos documentos originais, do que dou fé.\nPelos representantes da outorgante foi dito que nomeiam e constituem procurador da sociedade\nNILTON ARRUDA COELHO, brasileiro, casado, despachante documentalista, RG nº 57736408\nSSP/CE, CPF nº 869.934.673-56, com escritório na Rua Pedro Borges, nº 33, sala 712, Centro,\nFortaleza/CE, outorgando-lhe poderes especiais e expressos, restritos ao bem abaixo descrito, para\nvendê-lo pelo preço e às condições que ajustar, firmar a respectiva Autorização para Transferência\nde Propriedade do Veículo em meio digital (ATPV-e), receber o preço e dar quitação:\nVeículo: CAOA CHERY/ARRIZO 6 PRO 1.5T, espécie passageiro/automóvel, ano de fabricação\n2023, ano modelo 2023, cor preta, combustível gasolina, placa DWE4R61, RENAVAM\n07567141273, chassi 99A39TDZGJ08R5U38.\nO mandato terá duração de 6 (seis) meses, contados desta data, findos os quais perderá\nautomaticamente seus efeitos.\nAssim disseram, do que dou fé, e me pediram que lavrasse este instrumento, que, lido em voz alta e\nachado em ordem, aceitam e assinam. Eu, Patrícia Viana Duarte, Escrevente Autorizada, o lavrei.\nEu, Heloísa Barreira Nunes, Tabeliã, o subscrevo.\n(aa) BRENO SAMPAIO TAVARES e CLARICE TAVARES MOURÃO, pela outorgante.\nHELOÍSA BARREIRA NUNES, Tabeliã.\nEmolumentos: R$ 214,37 · FERMOJU: R$ 10,72 · Total: R$ 225,09\nSelo Digital: IRA-0866-2026-5FA0C8\nTRASLADO — Conferido e consertado com o original, do que dou fé.\nFortaleza/CE, 15 de junho de 2026.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "Heloísa Barreira Nunes – Tabeliã\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "88aa28db778f803fa79dab218d4bd98fe10719939c6f66cae097f97eb87e8e26",
+   "leitura": {
+    "tarefas": {
+     "procuracao": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 70.1,
+      "tokens_saida": 916,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "TAVARES_CS",
+   "nome": "TAVARES_CS.pdf",
+   "tipo": "contrato_social",
+   "titulo": "Contrato Social (2023)",
+   "data": "2023-05-02",
+   "paginas": [
+    "TAVARES & MOURÃO EVENTOS LTDA.\nCONTRATO SOCIAL DE CONSTITUIÇÃO\nCNPJ nº 38.601.295/0001-24 · NIRE 23472410731\nOs signatários deste instrumento particular, a saber:\nBRENO SAMPAIO TAVARES, brasileiro, casado sob o regime de comunhão parcial de bens,\nempresário, portador da carteira de identidade RG nº 37603545 SSP/CE, inscrito no Cadastro de\nPessoas Físicas sob o nº 251.377.904-51, residente e domiciliado na Rua Tenente José Barreira, nº\n418, bairro Centro, Eusébio/CE, CEP 61760-000; e\nCLARICE TAVARES MOURÃO, brasileira, casada sob o regime de separação total de bens,\nempresária, portadora da carteira de identidade RG nº 11260449 SSP/CE, inscrita no Cadastro de\nPessoas Físicas sob o nº 351.292.212-06, residente e domiciliada na Avenida Eusébio de Queiroz, nº\n2.870, casa 5, condomínio Jardim das Palmeiras, Eusébio/CE, CEP 61760-000;\najustam, de comum acordo, constituir uma sociedade empresária do tipo limitada, que será regida\npelas cláusulas a seguir, pelos artigos 1.052 a 1.087 da Lei nº 10.406/2002 (Código Civil) e,\nsupletivamente, pelas normas da sociedade simples.\nCLÁUSULA 1ª – NOME EMPRESARIAL E SEDE\nA sociedade adota o nome empresarial TAVARES & MOURÃO EVENTOS LTDA. e tem sede na\nRodovia CE-040, km 14, nº 9.300, galpão 2, bairro Coaçu, Eusébio/CE, CEP 61760-000, podendo\ninstalar filiais, depósitos e escritórios em qualquer localidade do País, por deliberação dos sócios.\nCLÁUSULA 2ª – OBJETO\nA sociedade tem por objeto a organização de eventos e a locação de estruturas, compreendendo\npalcos, tendas, arquibancadas, mobiliário e equipamentos de iluminação e som utilizados em feiras,\ncongressos e festividades.\nCLÁUSULA 3ª – INÍCIO E DURAÇÃO\nAs atividades sociais têm início na data do arquivamento deste ato na Junta Comercial do Estado do\nCeará, e a sociedade vigorará por tempo indeterminado.\nCLÁUSULA 4ª – CAPITAL SOCIAL\nO capital social é de R$ 220.000,00 (duzentos e vinte mil reais), representado por 220.000 (duzentas\ne vinte mil) quotas de valor nominal de R$ 1,00 (um real) cada, subscritas e integralizadas, neste ato,\nem moeda corrente do País, na proporção abaixo:\nSócio\nQuotas\nValor (R$)\nParticipação\nBRENO SAMPAIO TAVARES\n110.000\n110.000,00\n50%\nCLARICE TAVARES MOURÃO\n110.000\n110.000,00\n50%\nTOTAL\n220.000\n220.000,00\n100%\nCLÁUSULA 5ª – RESPONSABILIDADE\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "A responsabilidade de cada sócio fica limitada ao valor de suas quotas, respondendo todos,\nsolidariamente, pela integralização do capital social, nos termos do art. 1.052 do Código Civil.\nCLÁUSULA 6ª – TRANSFERÊNCIA DE QUOTAS\nNenhum sócio poderá ceder ou alienar suas quotas a terceiros sem antes oferecê-las ao outro sócio,\nque terá preferência para adquiri-las em igualdade de condições, devendo manifestar-se no prazo de\n30 (trinta) dias contados da comunicação escrita da oferta.\nCLÁUSULA 7ª – ADMINISTRAÇÃO E REPRESENTAÇÃO\nA administração da sociedade será exercida pelos sócios BRENO SAMPAIO TAVARES e\nCLARICE TAVARES MOURÃO, cabendo-lhes a representação ativa e passiva, judicial e\nextrajudicial, de modo que a sociedade somente se obriga pela assinatura conjunta de ambos os\nadministradores em contratos, títulos, documentos e quaisquer instrumentos que lhe criem\nobrigações.\nParágrafo primeiro. É vedado aos administradores empregar o nome empresarial em atividades\nestranhas ao objeto social, especialmente em avais, fianças e endossos de favor.\nParágrafo segundo. As procurações em nome da sociedade serão outorgadas pelos dois\nadministradores em conjunto e terão prazo não superior a 12 (doze) meses.\nCLÁUSULA 8ª – RETIRADA PRÓ-LABORE\nOs administradores poderão retirar mensalmente, a título de pró-labore, quantia fixada de comum\nacordo pelos sócios, observada a legislação previdenciária e tributária aplicável.\nCLÁUSULA 9ª – EXERCÍCIO SOCIAL E RESULTADOS\nO exercício social encerra-se em 31 de dezembro de cada ano, quando serão levantados o inventário,\no balanço patrimonial e o balanço de resultado econômico. Os lucros ou prejuízos apurados serão\natribuídos aos sócios na proporção de suas quotas, podendo os lucros, por decisão unânime, ser\nmantidos em reserva.\nCLÁUSULA 10ª – REUNIÕES E DELIBERAÇÕES\nOs sócios reunir-se-ão nos quatro meses seguintes ao término do exercício para tomar as contas dos\nadministradores e deliberar sobre o balanço. As demais deliberações sociais observarão os quóruns\nprevistos nos arts. 1.071 a 1.080 do Código Civil, dispensadas as formalidades de convocação\nquando ambos os sócios comparecerem ou se declararem cientes, por escrito, do local, data, hora e\nordem do dia.\nCLÁUSULA 11ª – FALECIMENTO, INTERDIÇÃO OU RETIRADA\nOcorrendo o falecimento ou a interdição de qualquer sócio, a sociedade prosseguirá com os\nherdeiros, sucessores ou o representante legal do incapaz, se assim acordarem com o sócio\nremanescente. Não havendo acordo, os haveres do sócio falecido ou interditado serão apurados com\nbase em balanço especialmente levantado na data do evento e pagos em 12 (doze) parcelas mensais e\nsucessivas, corrigidas pelo IPCA.\nCLÁUSULA 12ª – DECLARAÇÃO DE DESIMPEDIMENTO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "Os administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração de sociedade empresária, por lei especial, nem em virtude de condenação criminal ou\npor se encontrarem sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a\ncargos públicos, ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato, ou\ncontra a economia popular, o sistema financeiro nacional, as normas de defesa da concorrência, as\nrelações de consumo, a fé pública ou a propriedade.\nCLÁUSULA 13ª – ENQUADRAMENTO\nOs sócios declaram que a sociedade se enquadra como microempresa, nos termos da Lei\nComplementar nº 123, de 14 de dezembro de 2006, e que não incide em nenhuma das vedações do §\n4º do art. 3º daquela lei.\nCLÁUSULA 14ª – FORO\nAs partes elegem o foro da Comarca de Eusébio/CE para dirimir as questões oriundas deste contrato,\ncom exclusão de qualquer outro.\nE, por estarem de acordo, os sócios firmam o presente instrumento em via única, digitalmente, para\narquivamento na Junta Comercial.\nEusébio/CE, 2 de maio de 2023.\n____________________________________ BRENO SAMPAIO TAVARES\n____________________________________ CLARICE TAVARES MOURÃO\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 16/05/2023 sob o nº 55146073876\nProtocolo: 23/061.907-4 | NIRE: 23472410731\nEmpresa: TAVARES & MOURÃO EVENTOS LTDA.\nAutenticação: 7C2E91A04BD35F68E19C0A7B42D6F3E1\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "0bd472292b8d2f29c93699b45c46aa1f5e9c12c9c499ca9878dc24b108ea7a15",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 51.2,
+      "tokens_saida": 802,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 98.1,
+      "tokens_saida": 750,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "politica": "DETRAN-CE"
+ },
+ "hash_entrada": "815a5cd105a6d43c1850bfc4c6bca925bd95d1ff0770fbb519041479d3de1d05"
+}

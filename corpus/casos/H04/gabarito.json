@@ -1,0 +1,33 @@
+{
+  "caso": "H04",
+  "titulo": "Procuração ‘pelo período de doze meses’ vencida",
+  "categoria": "procuracao",
+  "objetivo": "Prazo escrito de forma nova; venceu.",
+  "validacao_cega": true,
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "IVAN",
+        "SOLANGE"
+      ]
+    ],
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": [
+      [
+        "717.429.247-00",
+        "116.677.373-68"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Ivan Cordeiro Mota",
+        "Solange Prado Mota"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

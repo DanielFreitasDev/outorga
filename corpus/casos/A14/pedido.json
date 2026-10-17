@@ -1,0 +1,15 @@
+{
+  "caso": "A14",
+  "forma_assinatura": "ATPV-e",
+  "vendedor": {
+    "assinantes": [
+      {
+        "nome": "Larissa Gomes Pinho",
+        "cpf": "159.997.325-14"
+      }
+    ]
+  },
+  "comprador": {
+    "assinantes": []
+  }
+}

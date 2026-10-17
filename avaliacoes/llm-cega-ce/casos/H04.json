@@ -1,0 +1,699 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T01:21:44",
+ "pedido": {
+  "veiculo": {
+   "descricao": "FORD/RANGER XLS 2.2 4X4",
+   "placa": "GKJ4G86",
+   "renavam": "06648034614",
+   "chassi": "9BF75BYATUS055DX8"
+  },
+  "data_venda": "2026-09-05",
+  "valor": 178000.0,
+  "assinantes": [
+   {
+    "nome": "Nilton Arruda Coelho",
+    "cpf": "869.934.673-56"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "Diego Fernandes Uchoa",
+  "vendedor_cnpj": "10.601.907/0001-60"
+ },
+ "empresa": {
+  "razao_social": "TRANSPORTADORA LITORAL LESTE LTDA.",
+  "cnpj": "10.601.907/0001-60",
+  "tipo": "LTDA",
+  "objeto": "transporte rodoviário de cargas, em âmbito municipal, intermunicipal, interestadual e internacional, incluindo cargas secas, fracionadas e conteinerizadas, bem como as atividades auxiliares de carga e descarga vinculadas aos serviços prestados.",
+  "comercializa_veiculos": false
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 0.4,
+ "confianca": 0.992,
+ "componentes": {
+  "leitura": 0.992,
+  "juridica": 1.0,
+  "fatos_decisivos": 2,
+  "menor_confianca_fato": 0.99,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 0.4 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: Ivan Cordeiro Mota e Solange Prado Mota. O caminho por procuração pública de 20/08/2025 (cartório iracema – 4º tabelionato de notas de fortaleza) não vale: procuração vencida.",
+ "assinantes": [
+  {
+   "informado": "Nilton Arruda Coelho",
+   "cpf": "869.934.673-56",
+   "chave": "86993467356",
+   "nome": "Nilton Arruda Coelho",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:11667737368+71742924700",
+   "pessoas": [
+    {
+     "chave": "71742924700",
+     "nome": "Ivan Cordeiro Mota"
+    },
+    {
+     "chave": "11667737368",
+     "nome": "Solange Prado Mota"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "alienação de veículos — Cláusula Sexta, Parágrafo primeiro",
+   "cadeia": [
+    "LITORAL_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [
+  {
+   "id": "POA_H_NILTON_12M:bloqueada",
+   "pessoas": [
+    {
+     "chave": "86993467356",
+     "nome": "Nilton Arruda Coelho"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 20/08/2025 (Cartório Iracema – 4º Tabelionato de Notas de Fortaleza)",
+   "cadeia": [
+    "POA_H_NILTON_12M"
+   ],
+   "severidade": "atencao",
+   "confianca": 0.99,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PJ",
+     "severidade": "ok",
+     "titulo": "Outorgada pela própria empresa",
+     "detalhe": "A outorgante é a empresa, representada por Ivan Cordeiro Mota e Solange Prado Mota.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_H_NILTON_12M",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "TRANSPORTADORA LITORAL LESTE LTDA., pessoa jurídica de direito privado, com sede em Aracati/CE, inscrita no CNPJ sob o nº 10.601.907/0001-60, NIRE 23855427600, presentada, em conjunto, pelos dois sócios administradores: IVAN CORDEIRO MOTA... e SOLANGE PRADO MOTA...",
+       "clausula": null,
+       "ancoragem": 94.0,
+       "pagina": 1,
+       "inicio": 548,
+       "fim": 813
+      }
+     ],
+     "caminho": "POA_H_NILTON_12M"
+    },
+    {
+     "codigo": "OUTORGA_COM_PODERES",
+     "severidade": "ok",
+     "titulo": "Quem outorgou tinha poder",
+     "detalhe": "Em 20/08/2025, Ivan Cordeiro Mota e Solange Prado Mota podia representar a empresa nesse ato.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_H_NILTON_12M",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "TRANSPORTADORA LITORAL LESTE LTDA., pessoa jurídica de direito privado, com sede em Aracati/CE, inscrita no CNPJ sob o nº 10.601.907/0001-60, NIRE 23855427600, presentada, em conjunto, pelos dois sócios administradores: IVAN CORDEIRO MOTA... e SOLANGE PRADO MOTA...",
+       "clausula": null,
+       "ancoragem": 94.0,
+       "pagina": 1,
+       "inicio": 548,
+       "fim": 813
+      },
+      {
+       "doc_id": "LITORAL_CS",
+       "doc_titulo": "Contrato Social (2019)",
+       "trecho": "Os veículos integrantes da frota somente poderão ser vendidos mediante a assinatura conjunta de ambos os sócios administradores",
+       "clausula": "Cláusula Sexta, Parágrafo primeiro",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 3081,
+       "fim": 3208
+      }
+     ],
+     "caminho": "POA_H_NILTON_12M"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar o ATPV.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_H_NILTON_12M",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "poderes especiais e expressos para, em nome dela, vender, ceder, transferir ou por qualquer outra forma alienar os veículos automotores que compõem o seu patrimônio, ajustando com os adquirentes que escolher o preço e as condições do negócio; firmar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e), em meio físico ou digital; receber valores e passar recibo e quitação; requerer, assinar e acompanhar, perante o DETRAN e demais repartições de trânsito, tudo o que for necessário à transferência, inclusive vistorias e comunicações de venda.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1611,
+       "fim": 2176
+      }
+     ],
+     "caminho": "POA_H_NILTON_12M"
+    },
+    {
+     "codigo": "PROCURACAO_VENCIDA",
+     "severidade": "bloqueio",
+     "titulo": "Procuração vencida",
+     "detalhe": "Válida até 20/08/2026; a venda é em 05/09/2026.",
+     "fundamento": [
+      "CC art. 682, IV"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_H_NILTON_12M",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "O mandato ora conferido vigorará pelo período de doze meses contados desta data, extinguindo-se de pleno direito ao seu término.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2177,
+       "fim": 2305
+      }
+     ],
+     "caminho": "POA_H_NILTON_12M"
+    },
+    {
+     "codigo": "PROCURACAO_SEM_VEICULO",
+     "severidade": "atencao",
+     "titulo": "Procuração não identifica o veículo",
+     "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+     "fundamento": [
+      "CJF, Enunciado 183"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_H_NILTON_12M",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "poderes especiais e expressos para, em nome dela, vender, ceder, transferir ou por qualquer outra forma alienar os veículos automotores que compõem o seu patrimônio, ajustando com os adquirentes que escolher o preço e as condições do negócio; firmar a Autorização para Transferência de Propriedade do Veículo (ATPV/ATPV-e), em meio físico ou digital; receber valores e passar recibo e quitação; requerer, assinar e acompanhar, perante o DETRAN e demais repartições de trânsito, tudo o que for necessário à transferência, inclusive vistorias e comunicações de venda.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1611,
+       "fim": 2176
+      }
+     ],
+     "caminho": "POA_H_NILTON_12M"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "contrato:11667737368+71742924700",
+   "via": "contrato",
+   "descricao": "alienação de veículos — Cláusula Sexta, Parágrafo primeiro",
+   "pessoas": [
+    "11667737368",
+    "71742924700"
+   ],
+   "faltam": [
+    "11667737368",
+    "71742924700"
+   ],
+   "faltam_nomes": [
+    "Solange Prado Mota",
+    "Ivan Cordeiro Mota"
+   ],
+   "pessoas_nomes": [
+    "Solange Prado Mota",
+    "Ivan Cordeiro Mota"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "CND_INSS",
+   "severidade": "info",
+   "titulo": "CND previdenciária",
+   "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+   "fundamento": [
+    "Lei 8.212/91, art. 47, I, \"c\""
+   ],
+   "fontes": [],
+   "caminho": null
+  },
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: TRANSPORTADORA LITORAL LESTE LTDA..",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "GKJ4G86",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "LITORAL_CS#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "LITORAL_CS",
+    "doc_titulo": "Contrato Social (2019)",
+    "trecho": "qualquer deles poderá praticar isoladamente os atos de gestão necessários ao desenvolvimento das atividades sociais",
+    "clausula": "Cláusula Sexta",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2944,
+    "fim": 3059
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Ivan Cordeiro Mota",
+    "Solange Prado Mota"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    }
+   ],
+   "decisiva": false
+  },
+  {
+   "regra": "LITORAL_CS#R2",
+   "escopo": "alienacao_veiculos",
+   "aplicavel": true,
+   "motivo": "alienação de veículos",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "LITORAL_CS",
+    "doc_titulo": "Contrato Social (2019)",
+    "trecho": "Os veículos integrantes da frota somente poderão ser vendidos mediante a assinatura conjunta de ambos os sócios administradores",
+    "clausula": "Cláusula Sexta, Parágrafo primeiro",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3081,
+    "fim": 3208
+   },
+   "modo": "conjunto",
+   "pessoas": [
+    "Ivan Cordeiro Mota",
+    "Solange Prado Mota"
+   ],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "conjunto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "assinatura conjunta"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "LITORAL_CS#R3",
+   "escopo": "obrigacoes_garantias",
+   "aplicavel": false,
+   "motivo": "trata de avais, fianças e garantias",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "LITORAL_CS",
+    "doc_titulo": "Contrato Social (2019)",
+    "trecho": "Fica vedado aos administradores utilizar o nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor",
+    "clausula": "Cláusula Sexta, Parágrafo segundo",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3229,
+    "fim": 3382
+   },
+   "modo": "nao_especificado",
+   "pessoas": [
+    "Ivan Cordeiro Mota",
+    "Solange Prado Mota"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-09-05",
+  "atos": [
+   {
+    "doc": "LITORAL_CS",
+    "titulo": "Contrato Social (2019)",
+    "efeito": "2019-08-26"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "71742924700",
+    "nome": "Ivan Cordeiro Mota",
+    "cargo": "administrador",
+    "doc": "LITORAL_CS"
+   },
+   {
+    "chave": "11667737368",
+    "nome": "Solange Prado Mota",
+    "cargo": "administrador",
+    "doc": "LITORAL_CS"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "71742924700",
+    "nome": "Ivan Cordeiro Mota",
+    "percentual": 60.0
+   },
+   {
+    "chave": "11667737368",
+    "nome": "Solange Prado Mota",
+    "percentual": 40.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "TRANSPORTADORA LITORAL LESTE LTDA.",
+    "sub": "10.601.907/0001-60"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "FORD/RANGER XLS 2.2 4X4",
+    "sub": "GKJ4G86"
+   },
+   {
+    "id": "71742924700",
+    "tipo": "pessoa",
+    "rotulo": "Ivan Cordeiro Mota",
+    "papeis": [
+     "sócio 60%",
+     "administrador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "11667737368",
+    "tipo": "pessoa",
+    "rotulo": "Solange Prado Mota",
+    "papeis": [
+     "sócio 40%",
+     "administrador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "86993467356",
+    "tipo": "pessoa",
+    "rotulo": "Nilton Arruda Coelho",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "71742924700",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "60%",
+    "status": "neutro"
+   },
+   {
+    "de": "11667737368",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "40%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "71742924700",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "LITORAL_CS"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "11667737368",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "LITORAL_CS"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "86993467356",
+    "tipo": "procuracao",
+    "status": "invalido",
+    "doc": "POA_H_NILTON_12M",
+    "rotulo": "procuração 20/08/2025 · Procuração vencida",
+    "motivo": "Procuração vencida"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2019-08-26",
+   "tipo": "ato",
+   "titulo": "Contrato Social (2019)",
+   "doc": "LITORAL_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2025-08-20",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Nilton Arruda Coelho",
+   "doc": "POA_H_NILTON_12M",
+   "detalhe": "publica"
+  },
+  {
+   "data": "2026-08-20",
+   "tipo": "vencimento",
+   "titulo": "Vence a procuração de Nilton Arruda Coelho",
+   "doc": "POA_H_NILTON_12M",
+   "detalhe": ""
+  },
+  {
+   "data": "2026-09-05",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 178.000,00"
+  }
+ ],
+ "pessoas": {
+  "71742924700": {
+   "nome": "Ivan Cordeiro Mota",
+   "cpf": "71742924700"
+  },
+  "11667737368": {
+   "nome": "Solange Prado Mota",
+   "cpf": "11667737368"
+  },
+  "86993467356": {
+   "nome": "Nilton Arruda Coelho",
+   "cpf": "86993467356"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "TRANSPORTADORA LITORAL LESTE LTDA.",
+   "cnpj": "10.601.907/0001-60",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Contrato Social (2019)",
+     "doc": "LITORAL_CS",
+     "efeito": "2019-08-26"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Nilton Arruda Coelho",
+    "cpf": "869.934.673-56",
+    "identificacao": "CPF",
+    "qualidade": "procurador(a) pela procuração de 20/08/2025"
+   }
+  ],
+  "poderes_conferidos": [
+   "Procuração pública de 20/08/2025 (Cartório Iracema – 4º Tabelionato de Notas de Fortaleza): não comprova poderes (Procuração vencida)."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [],
+  "documentos_verificaveis": [
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "LITORAL_CS",
+    "titulo": "Contrato Social (2019)",
+    "arquivo": "LITORAL_CS.pdf"
+   },
+   {
+    "id": "POA_H_NILTON_12M",
+    "titulo": "Procuração (2025)",
+    "arquivo": "POA_H_NILTON_12M.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n06648034614\nPLACA\nGKJ4G86\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2022\nANO MODELO\n2022\nNÚMERO DO CRV\n384412933910\nCÓDIGO DE SEGURANÇA DO CLA\n84347005313\nMARCA / MODELO / VERSÃO\nFORD/RANGER XLS 2.2 4X4\nESPÉCIE / TIPO\nCARGA/CAMINHONETE\nCHASSI\n9BF75BYATUS055DX8\nCOR PREDOMINANTE\nCINZA\nCOMBUSTÍVEL\nDIESEL\nNOME\nTRANSPORTADORA LITORAL LESTE LTDA.\nCPF / CNPJ\n10.601.907/0001-60\nLOCAL\nARACATI/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "b248b85651d560c4dfa63213e9d267678a4049c446e31733ebebf050fda67732",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "LITORAL_CS",
+   "nome": "LITORAL_CS.pdf",
+   "tipo": "contrato_social",
+   "titulo": "Contrato Social (2019)",
+   "data": "2019-08-26",
+   "paginas": [
+    "TRANSPORTADORA LITORAL LESTE LTDA.\n(CNPJ nº 10.601.907/0001-60 – NIRE 23855427600)\nCONTRATO SOCIAL DE CONSTITUIÇÃO\nSaibam todos que, por este instrumento particular de constituição de sociedade limitada, as pessoas\nadiante qualificadas:\nIVAN CORDEIRO MOTA, brasileiro, casado sob o regime de comunhão universal de bens,\ntransportador, inscrito no CPF sob o nº 717.429.247-00 e portador do RG nº 38276486 SSP/CE,\nresidente e domiciliado na Rua Coronel Alexanzito, nº 96, Centro, Aracati/CE, CEP 62800-000; e\nSOLANGE PRADO MOTA, brasileira, casada sob o regime de comunhão universal de bens,\nempresária, inscrita no CPF sob o nº 116.677.373-68 e portadora do RG nº 15041768 SSP/CE,\nresidente e domiciliada na Rua Coronel Alexanzito, nº 96, Centro, Aracati/CE, CEP 62800-000;\ncontratam a constituição de uma sociedade empresária limitada, mediante as cláusulas e condições a\nseguir, aplicando-se às omissões as normas do Código Civil relativas às sociedades limitadas.\nCLÁUSULA PRIMEIRA – DENOMINAÇÃO E SEDE\nA sociedade denomina-se TRANSPORTADORA LITORAL LESTE LTDA. e tem sede na Rodovia\nBR-304, Km 48, s/n, bairro Pedregal, Aracati/CE, CEP 62800-000, onde também funcionará o seu\npátio de manobras e manutenção.\nCLÁUSULA SEGUNDA – OBJETO SOCIAL\nO objeto social consiste no transporte rodoviário de cargas, em âmbito municipal, intermunicipal,\ninterestadual e internacional, incluindo cargas secas, fracionadas e conteinerizadas, bem como as\natividades auxiliares de carga e descarga vinculadas aos serviços prestados.\nCLÁUSULA TERCEIRA – DURAÇÃO\nA sociedade iniciará suas operações a partir do arquivamento deste contrato na Junta Comercial do\nEstado do Ceará e terá prazo indeterminado de duração.\nCLÁUSULA QUARTA – CAPITAL SOCIAL\nO capital social, inteiramente subscrito e realizado nesta data em moeda corrente do País, é de R$\n900.000,00 (novecentos mil reais), dividido em 900.000 (novecentas mil) quotas no valor unitário de\nR$ 1,00 (um real), distribuídas da seguinte forma:\nSócio\nQuotas\nValor (R$)\nParticipação\nIVAN CORDEIRO MOTA\n540.000\n540.000,00\n60%\nSOLANGE PRADO MOTA\n360.000\n360.000,00\n40%\nTotal\n900.000\n900.000,00\n100%\nParágrafo único. A responsabilidade de cada sócio limita-se ao valor de suas quotas, mas ambos\nrespondem solidariamente pela integralização do capital social.\nCLÁUSULA QUINTA – CESSÃO DE QUOTAS\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "As quotas não poderão ser cedidas ou transferidas, a qualquer título, sem que antes sejam oferecidas\nao outro sócio, que terá direito de preferência em igualdade de preço e condições, a ser exercido por\nescrito no prazo de 30 (trinta) dias.\nCLÁUSULA SEXTA – ADMINISTRAÇÃO\nA sociedade é administrada pelos sócios IVAN CORDEIRO MOTA e SOLANGE PRADO MOTA,\nque ficam investidos nas funções de administradores por tempo indeterminado e representarão a\nsociedade em juízo ou fora dele, perante órgãos públicos, bancos, clientes e fornecedores, sendo que\nqualquer deles poderá praticar isoladamente os atos de gestão necessários ao desenvolvimento das\natividades sociais.\nParágrafo primeiro. Os veículos integrantes da frota somente poderão ser vendidos mediante a\nassinatura conjunta de ambos os sócios administradores.\nParágrafo segundo. Fica vedado aos administradores utilizar o nome empresarial em atividades\nestranhas ao objeto social, especialmente em avais, fianças e endossos de favor.\nParágrafo terceiro. Os administradores declaram, sob as penas da lei, que não estão impedidos de\nexercer a administração da sociedade, por lei especial ou em virtude de condenação criminal, nos\ntermos do art. 1.011, § 1º, do Código Civil.\nCLÁUSULA SÉTIMA – REMUNERAÇÃO DOS ADMINISTRADORES\nOs administradores poderão fazer retiradas mensais a título de pró-labore, em montante fixado pelos\nsócios, respeitados os limites da legislação de regência.\nCLÁUSULA OITAVA – BALANÇO E RESULTADOS\nO exercício social encerra-se em 31 de dezembro de cada ano, quando serão levantados o inventário,\no balanço patrimonial e o balanço de resultado econômico. Os resultados serão atribuídos aos sócios\nna proporção de suas quotas, e as contas dos administradores serão apreciadas pelos sócios nos\nquatro meses subsequentes ao término do exercício.\nCLÁUSULA NONA – FALECIMENTO DE SÓCIO\nEm caso de falecimento de qualquer dos sócios, a sociedade prosseguirá com o sócio sobrevivente e\nos herdeiros do falecido, que poderão nela ingressar mediante alteração contratual. Não havendo\nacordo, o valor das quotas do falecido será apurado em balanço especial, levantado na data do óbito,\ne pago aos herdeiros em 24 (vinte e quatro) prestações mensais e consecutivas.\nCLÁUSULA DÉCIMA – SEGURO E CONFORMIDADE\nA sociedade manterá seguro de responsabilidade civil do transportador e cumprirá as exigências da\nAgência Nacional de Transportes Terrestres relativas ao Registro Nacional de Transportadores\nRodoviários de Cargas.\nCLÁUSULA DÉCIMA PRIMEIRA – FORO\nPara as questões decorrentes deste contrato, as partes elegem o foro da Comarca de Aracati/CE,\nrenunciando a qualquer outro, por mais privilegiado que seja.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "Assim acordados, os sócios assinam o presente instrumento em 2 (duas) vias de igual teor, na\npresença das testemunhas abaixo.\nAracati/CE, 26 de agosto de 2019.\n____________________________________ IVAN CORDEIRO MOTA\n____________________________________ SOLANGE PRADO MOTA\nTestemunhas: Joaquina Prates Lemos – RG 2003451 SSP/CE; Wellington Abreu Sales – RG\n5598120 SSP/CE\nVisto: Germana Rolim Sobreira – OAB/CE nº 18.806\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 09/09/2019 sob o nº 25766095137\nProtocolo: 19/266.140-8 | NIRE: 23855427600\nEmpresa: TRANSPORTADORA LITORAL LESTE LTDA.\nAutenticação: 5A93E17C0B4D28F6E9A2C31D7B0F84E6\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "4d2ce9bdb6cda83789f4893211b5e7983e1fc9a4a73b7b5b0b4a6d7088478a8f",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 55.6,
+      "tokens_saida": 779,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 70.4,
+      "tokens_saida": 764,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "POA_H_NILTON_12M",
+   "nome": "POA_H_NILTON_12M.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (2025)",
+   "data": "2025-08-20",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ – COMARCA DE FORTALEZA\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nHeloísa Barreira Nunes – Tabeliã\nLIVRO 812 — FOLHAS 147/148\nESCRITURA PÚBLICA DE MANDATO OUTORGADA POR TRANSPORTADORA\nLITORAL LESTE LTDA.\nSAIBAM quantos este público instrumento de procuração virem que, no dia vinte (20) de agosto do\nano de dois mil e vinte e cinco (2025), nesta Capital, em seu cartório, perante mim, Rômulo Teixeira\nBandeira, Escrevente Substituto, apresentou-se, na qualidade de OUTORGANTE,\nTRANSPORTADORA LITORAL LESTE LTDA., pessoa jurídica de direito privado, com sede em\nAracati/CE, inscrita no CNPJ sob o nº 10.601.907/0001-60, NIRE 23855427600, presentada, em\nconjunto, pelos dois sócios administradores: IVAN CORDEIRO MOTA, brasileiro, casado,\ntransportador, RG nº 38276486 SSP/CE, CPF nº 717.429.247-00; e SOLANGE PRADO MOTA,\nbrasileira, casada, empresária, RG nº 15041768 SSP/CE, CPF nº 116.677.373-68; ambos\ndomiciliados em Aracati/CE. Os poderes de representação foram conferidos à vista do contrato\nsocial de constituição da outorgante, arquivado na Junta Comercial do Estado do Ceará, de cuja\ncópia autenticada fica arquivada uma reprodução nesta serventia. Reconheço a identidade dos\ncomparecentes pelos documentos originais exibidos, do que dou fé.\nDisse a outorgante, por seus administradores, que nomeia seu procurador NILTON ARRUDA\nCOELHO, brasileiro, casado, despachante documentalista, RG nº 57736408 SSP/CE, CPF nº\n869.934.673-56, com endereço profissional na Rua Pedro Borges, nº 33, sala 712, Centro, Fortaleza/\nCE, a quem outorga poderes especiais e expressos para, em nome dela, vender, ceder, transferir ou\npor qualquer outra forma alienar os veículos automotores que compõem o seu patrimônio, ajustando\ncom os adquirentes que escolher o preço e as condições do negócio; firmar a Autorização para\nTransferência de Propriedade do Veículo (ATPV/ATPV-e), em meio físico ou digital; receber valores\ne passar recibo e quitação; requerer, assinar e acompanhar, perante o DETRAN e demais repartições\nde trânsito, tudo o que for necessário à transferência, inclusive vistorias e comunicações de venda.\nO mandato ora conferido vigorará pelo período de doze meses contados desta data, extinguindo-se\nde pleno direito ao seu término.\nAssim o declararam, do que dou fé. A pedido da outorgante, lavrei esta escritura, que, lida em voz\nalta e achada conforme, foi aceita e assinada pelos representantes. Eu, Rômulo Teixeira Bandeira,\nEscrevente Substituto, a escrevi. Eu, Heloísa Barreira Nunes, Tabeliã, a subscrevo.\n(aa) IVAN CORDEIRO MOTA e SOLANGE PRADO MOTA, pela outorgante.\nHELOÍSA BARREIRA NUNES, Tabeliã.\nEmolumentos: R$ 209,40 · FERMOJU: R$ 10,47 · Total: R$ 219,87\nSelo Digital: IRA-0812-2025-7E31A9\nTRASLADO — Confere com o original lavrado nas notas deste Tabelionato, do que dou fé.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "Fortaleza/CE, 20 de agosto de 2025.\nHeloísa Barreira Nunes – Tabeliã\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "35bc2608556744ddca64d38ddfb117f92d418a728d43a4ff116830a42a1b6069",
+   "leitura": {
+    "tarefas": {
+     "procuracao": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 80.6,
+      "tokens_saida": 827,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "politica": "DETRAN-CE"
+ },
+ "hash_entrada": "5087ad4566e4a320226b0e7433232ec8f8c039bc324783652bcb8bf5b6d75ee6"
+}

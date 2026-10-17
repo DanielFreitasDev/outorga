@@ -1,0 +1,26 @@
+{
+  "caso": "C16",
+  "vendedor": {
+    "razao_social": "LOCADORA JANGADA LTDA.",
+    "cnpj": "38.005.305/0001-69"
+  },
+  "veiculo": {
+    "placa": "NWX9B89",
+    "renavam": "08541775885",
+    "chassi": "93YGUVCFCE5G167BK",
+    "descricao": "RENAULT/KWID ZEN 1.0"
+  },
+  "data_venda": "2026-09-18",
+  "valor": 62000,
+  "assinantes": [
+    {
+      "nome": "Pedro Henrique Lima",
+      "cpf": "939.761.584-02"
+    }
+  ],
+  "comprador": {
+    "nome": "Patrícia Lemos Barroso",
+    "cidade": "Sobral/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

@@ -1,0 +1,33 @@
+{
+  "caso": "I02",
+  "vendedor": {
+    "razao_social": "CASTRO MOTA DISTRIBUIÇÃO DE BEBIDAS LTDA",
+    "cnpj": "69.893.229/0001-07"
+  },
+  "veiculo": {
+    "placa": "MLS9L81",
+    "renavam": "09106363909",
+    "chassi": "9BDUV1SG5JPC74ECJ",
+    "descricao": "FIAT/DUCATO"
+  },
+  "data_venda": "2026-08-19",
+  "valor": 167000.0,
+  "assinantes": [
+    {
+      "nome": "RAIMUNDO NONATO CASTRO FILHO",
+      "cpf": "212.536.260-06"
+    },
+    {
+      "nome": "GERMANA CASTRO LEITE",
+      "cpf": "335.672.125-91"
+    }
+  ],
+  "crlv_proprietario": {
+    "nome": "CASTRO MOTA DISTRIBUIÇÃO DE BEBIDAS LTDA",
+    "documento": "69.893.229/0001-07"
+  },
+  "comprador": {
+    "nome": "TRANSPORTADORA CARIRI EXPRESS LTDA"
+  },
+  "forma_assinatura": "ATPV-e"
+}

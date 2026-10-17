@@ -1,0 +1,44 @@
+{
+  "caso": "P03",
+  "titulo": "CPF diferente do dono, sem procuração",
+  "categoria": "pf",
+  "objetivo": "O sistema pergunta pela procuração (não recusa de cara).",
+  "validacao_cega": false,
+  "lote": "pf",
+  "esperado": {
+    "veredito": "INDETERMINADO",
+    "faixas_aceitaveis": [
+      "AMARELO"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "vendedor": {
+      "veredito": "INDETERMINADO",
+      "faixas_aceitaveis": [
+        "AMARELO"
+      ],
+      "conjuntos_minimos": [
+        [
+          "RAIMUNDA"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "320.908.841-18"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Raimunda Nonata Siqueira"
+        ]
+      ]
+    }
+  },
+  "esperado_lados_ce": null
+}

@@ -1,0 +1,33 @@
+{
+  "caso": "I01",
+  "vendedor": {
+    "razao_social": "SERTÃO VERDE AGROINDUSTRIAL S.A.",
+    "cnpj": "40.253.280/0001-64"
+  },
+  "veiculo": {
+    "placa": "RCD7A80",
+    "renavam": "04486347756",
+    "chassi": "9BDVLE8LCK8CM30B5",
+    "descricao": "FIAT/FASTBACK"
+  },
+  "data_venda": "2026-09-10",
+  "valor": 118500.0,
+  "assinantes": [
+    {
+      "nome": "ROGÉRIO ALENCAR FEITOSA",
+      "cpf": "405.235.809-08"
+    },
+    {
+      "nome": "LÚCIA HELENA BRÍGIDO SAMPAIO",
+      "cpf": "156.792.801-32"
+    }
+  ],
+  "crlv_proprietario": {
+    "nome": "SERTÃO VERDE AGROINDUSTRIAL S.A.",
+    "documento": "40.253.280/0001-64"
+  },
+  "comprador": {
+    "nome": "CÍCERO DAMASCENO ROLIM"
+  },
+  "forma_assinatura": "ATPV-e"
+}

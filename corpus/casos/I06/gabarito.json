@@ -1,0 +1,26 @@
+{
+  "caso": "I06",
+  "titulo": "Ata 'aprovada por unanimidade dos presentes' e pela 'maioria dos sócios', mas com só 55% do capital quando o contrato exige 2/3",
+  "categoria": "aprovacao_de_socios / quorum / leitura_semantica",
+  "objetivo": "Testa se o sistema calcula o quórum de deliberação pelo capital (votos proporcionais às quotas) e sobre o capital total, como manda a cláusula, sem se impressionar com 'unanimidade dos presentes', 'maioria dos sócios' ou com o registro da ata na Junta; e se conclui que, sem aprovação válida, nenhum signatário obriga a sociedade nessa venda.",
+  "validacao_cega": true,
+  "autor": "independente",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos_cpf": [],
+    "conjuntos_minimos_nomes": [],
+    "fundamentos": [
+      "CC art. 1.010",
+      "CC art. 1.072, § 5º",
+      "CC art. 1.076, III",
+      "CC art. 47",
+      "CC art. 1.154, parágrafo único",
+      "Contrato social consolidado, Cláusula Nona, I, e Cláusula Décima, § 2º"
+    ]
+  },
+  "esperado_ce": null,
+  "raciocinio": "A Cláusula Nona, I, condiciona a alienação de veículos do ativo imobilizado à aprovação prévia de sócios titulares de no mínimo 2/3 do capital social (1.333.334 das 2.000.000 quotas), e a Cláusula Décima, § 2º, manda contar os votos pelo valor das quotas (CC art. 1.010). A reunião instalou-se validamente em segunda convocação, mas os três sócios presentes somam 1.100.000 quotas, ou 55% do capital; a 'unanimidade dos presentes' e a 'maioria dos sócios (três dos quatro)' não alcançam o quórum contratual, que se mede sobre o capital total e não sobre os presentes nem por cabeça. O arquivamento da ata na JUCEC não supre a falta de quórum, e a deliberação contrária ao contrato não vincula a sociedade (art. 1.072, § 5º, a contrario). A limitação consta de contrato arquivado e é oponível a terceiros (art. 1.154, parágrafo único). Sem aprovação válida, a administradora IVANILDA não pode alienar o FIAT/TITANO, e ninguém mais tem poderes para isso: o conjunto de signatários válidos na data é vazio."
+}

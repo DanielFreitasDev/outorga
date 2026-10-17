@@ -1,0 +1,10 @@
+✓ H01 ‘De per si’ — um administrador assina                      esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok  93.2s
+✗ H02 Quaisquer dois dos três administradores — um assina        esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=X 136.4s
+✓ H03 Veículos da frota exigem os dois (sem valor) — um assina   esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok 126.1s
+✓ H04 Procuração ‘pelo período de doze meses’ vencida            esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.4 quem=ok  80.7s
+✓ H05 ‘Sem direito de substabelecer’ e houve substabelecimento   esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok 259.0s
+✗ H06 Procuração conjunta, veículo identificado, no prazo        esp=PODE          prev=NAO_PODE      VERMELHO idx=  0.0 quem=X 219.5s ⚠ caro
+✓ H07 Antiga administradora assina depois da troca               esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok 311.6s
+✓ H08 Restrição a imóveis e participações; veículo de R$ 320 mil esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+
+veredito 7/8 · faixa aceitável 7/8 · quem pode 6/8 · perigosos 0 · caros 1 · automático 100% · 1226.6s

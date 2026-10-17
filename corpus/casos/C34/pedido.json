@@ -1,0 +1,26 @@
+{
+  "caso": "C34",
+  "vendedor": {
+    "razao_social": "J P DA SILVA MATERIAIS DE CONSTRUCAO",
+    "cnpj": "42.172.334/0001-92"
+  },
+  "veiculo": {
+    "placa": "KEJ8F77",
+    "renavam": "06017967723",
+    "chassi": "9BFAVGJ4NU6KPXLVB",
+    "descricao": "FORD/CARGO 816 S"
+  },
+  "data_venda": "2026-09-19",
+  "valor": 175000,
+  "assinantes": [
+    {
+      "nome": "Josué Pereira da Silva",
+      "cpf": "914.524.410-30"
+    }
+  ],
+  "comprador": {
+    "nome": "Patrícia Lemos Barroso",
+    "cidade": "Sobral/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

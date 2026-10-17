@@ -1,0 +1,761 @@
+{
+ "aviso": "BASE SIMULADA — dados fictícios do corpus de avaliação",
+ "veiculos": [
+  {
+   "placa": "NZM3U35",
+   "renavam": "05355778794",
+   "chassi": "9BDWNL3K8AZ3CMFW0",
+   "marca_modelo": "FIAT/STRADA FREEDOM 1.3 CS",
+   "ano_modelo": 2024,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "TRANSPORTES SERTÃO VERDE LTDA.",
+    "documento": "34.146.175/0001-23"
+   }
+  },
+  {
+   "placa": "UJE1A68",
+   "renavam": "03949066880",
+   "chassi": "9BRL9GFK1YTWCNLVV",
+   "marca_modelo": "TOYOTA/HILUX CD SRX 4X4 2.8",
+   "ano_modelo": 2024,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "CONSTRUTORA MANDACARU LTDA.",
+    "documento": "42.014.613/0001-28"
+   }
+  },
+  {
+   "placa": "UKM2N24",
+   "renavam": "00976582805",
+   "chassi": "9BWMXKLBH9A0E0WPK",
+   "marca_modelo": "VW/SAVEIRO ROBUST CD 1.6",
+   "ano_modelo": 2022,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "CONSTRUTORA MANDACARU LTDA.",
+    "documento": "42.014.613/0001-28"
+   }
+  },
+  {
+   "placa": "WWH2D41",
+   "renavam": "07116494155",
+   "chassi": "9BH78HSZ6ZFEF8WTR",
+   "marca_modelo": "HYUNDAI/HB20 1.0M SENSE",
+   "ano_modelo": 2022,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "LOCADORA JANGADA LTDA.",
+    "documento": "38.005.305/0001-69"
+   }
+  },
+  {
+   "placa": "FLP8U42",
+   "renavam": "05765237351",
+   "chassi": "9BMZ31PK5J4UYHXU5",
+   "marca_modelo": "M.BENZ/ACCELO 1016",
+   "ano_modelo": 2021,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "LOGÍSTICA MARACANAÚ LTDA.",
+    "documento": "47.865.893/0001-00"
+   }
+  },
+  {
+   "placa": "JEU4H42",
+   "renavam": "02814497663",
+   "chassi": "9BDBY3YG8P4ZYD2MA",
+   "marca_modelo": "FIAT/FIORINO ENDURANCE 1.4",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "LOGÍSTICA MARACANAÚ LTDA.",
+    "documento": "47.865.893/0001-00"
+   }
+  },
+  {
+   "placa": "JUZ4E42",
+   "renavam": "09967750036",
+   "chassi": "988HUXBP69U0FNAGK",
+   "marca_modelo": "JEEP/COMPASS LONGITUDE T270",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "CLÍNICA IRACEMA ODONTOLOGIA LTDA.",
+    "documento": "59.776.055/0001-30"
+   }
+  },
+  {
+   "placa": "LHR3W86",
+   "renavam": "02419689822",
+   "chassi": "9BGGBU3CM9R7YYZX7",
+   "marca_modelo": "GM/MONTANA PREMIER 1.2 TURBO",
+   "ano_modelo": 2024,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "AGROPECUÁRIA CARIRI LTDA.",
+    "documento": "84.885.681/0001-02"
+   }
+  },
+  {
+   "placa": "JSL4B82",
+   "renavam": "07207547359",
+   "chassi": "9BGU92WPD3E9W7F9X",
+   "marca_modelo": "GM/S10 CD LTZ 2.8 4X4",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "AGROPECUÁRIA CARIRI LTDA.",
+    "documento": "84.885.681/0001-02"
+   }
+  },
+  {
+   "placa": "SLY5M23",
+   "renavam": "01824886192",
+   "chassi": "9BRPB6SP49J9PU8JX",
+   "marca_modelo": "TOYOTA/SW4 SRX 4X4 2.8",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "AGROPECUÁRIA CARIRI LTDA.",
+    "documento": "84.885.681/0001-02"
+   }
+  },
+  {
+   "placa": "MXN8W92",
+   "renavam": "08329822298",
+   "chassi": "93YDCUWMJUZJ6LMDM",
+   "marca_modelo": "RENAULT/MASTER FURGÃO L3H2",
+   "ano_modelo": 2022,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "PESCADOS CAMOCIM LTDA.",
+    "documento": "06.709.072/0001-99"
+   }
+  },
+  {
+   "placa": "YEP9S69",
+   "renavam": "00438581768",
+   "chassi": "9BWKXK9C7ADGZTYBL",
+   "marca_modelo": "VW/DELIVERY 9.170",
+   "ano_modelo": 2021,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "PESCADOS CAMOCIM LTDA.",
+    "documento": "06.709.072/0001-99"
+   }
+  },
+  {
+   "placa": "ZYW2D22",
+   "renavam": "03636082444",
+   "chassi": "9BR02A76UZ8JGKRZ6",
+   "marca_modelo": "TOYOTA/COROLLA XEI 2.0 FLEX",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PF",
+    "nome": "MARCOS ANTÔNIO GIRÃO",
+    "documento": "948.662.836-02"
+   }
+  },
+  {
+   "placa": "NWX9B89",
+   "renavam": "08541775885",
+   "chassi": "93YGUVCFCE5G167BK",
+   "marca_modelo": "RENAULT/KWID ZEN 1.0",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "LOCADORA JANGADA LTDA.",
+    "documento": "38.005.305/0001-69"
+   }
+  },
+  {
+   "placa": "LEA1N11",
+   "renavam": "02840019811",
+   "chassi": "9BDYKW7SX6S2S9X3C",
+   "marca_modelo": "FIAT/CRONOS DRIVE 1.3",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "LOCADORA JANGADA LTDA.",
+    "documento": "38.005.305/0001-69"
+   }
+  },
+  {
+   "placa": "SHW2R24",
+   "renavam": "01979678070",
+   "chassi": "9BMP1C6JVSXU4BZLH",
+   "marca_modelo": "M.BENZ/SPRINTER 416 CDI FURGÃO",
+   "ano_modelo": 2021,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "CONSTRUTORA MANDACARU LTDA.",
+    "documento": "42.014.613/0001-28"
+   }
+  },
+  {
+   "placa": "VMG9C70",
+   "renavam": "02761166030",
+   "chassi": "9BWNDTLU0FTLCPH5C",
+   "marca_modelo": "VW/SAVEIRO ROBUST CD 1.6",
+   "ano_modelo": 2022,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "AGROPECUÁRIA CARIRI LTDA.",
+    "documento": "84.885.681/0001-02"
+   }
+  },
+  {
+   "placa": "MZR8X04",
+   "renavam": "03704121438",
+   "chassi": "9BRAVC7TELS8DZR26",
+   "marca_modelo": "TOYOTA/COROLLA CROSS XRE 2.0",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "CONSTRUTORA MANDACARU LTDA.",
+    "documento": "42.014.613/0001-28"
+   }
+  },
+  {
+   "placa": "CHB0P49",
+   "renavam": "08179223289",
+   "chassi": "93ZN9Y2UL6FBZEJS7",
+   "marca_modelo": "IVECO/DAILY 35-150 CS",
+   "ano_modelo": 2022,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "TRANSPORTES SERTÃO VERDE LTDA.",
+    "documento": "34.146.175/0001-23"
+   }
+  },
+  {
+   "placa": "ALF7V12",
+   "renavam": "03729871120",
+   "chassi": "93HAWK3TB5VK1A5HG",
+   "marca_modelo": "HONDA/HR-V EXL 1.5",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+    "documento": "33.437.010/0001-48"
+   }
+  },
+  {
+   "placa": "HLR1N35",
+   "renavam": "07744796749",
+   "chassi": "9BDXLGBPPV2RXLGR1",
+   "marca_modelo": "FIAT/TORO VOLCANO 2.0 DIESEL 4X4",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "LOCADORA JANGADA LTDA.",
+    "documento": "38.005.305/0001-69"
+   }
+  },
+  {
+   "placa": "EWL8N26",
+   "renavam": "09848864577",
+   "chassi": "9BWSM9WCNWL4J518D",
+   "marca_modelo": "VW/AMAROK HIGHLINE V6 3.0",
+   "ano_modelo": 2022,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+    "documento": "33.437.010/0001-48"
+   }
+  },
+  {
+   "placa": "WKB9T43",
+   "renavam": "08463884987",
+   "chassi": "9BDZZ1RA3410S1ZBG",
+   "marca_modelo": "FIAT/STRADA ENDURANCE 1.3 CS",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "AGROPECUÁRIA CARIRI LTDA.",
+    "documento": "84.885.681/0001-02"
+   }
+  },
+  {
+   "placa": "HGF7W50",
+   "renavam": "07268350814",
+   "chassi": "9BDGHP2H6ZG3SXWAG",
+   "marca_modelo": "FIAT/PULSE DRIVE 1.3",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+    "documento": "33.437.010/0001-48"
+   }
+  },
+  {
+   "placa": "CLY2R80",
+   "renavam": "06113875923",
+   "chassi": "9BMHFZSK56G4JFB64",
+   "marca_modelo": "M.BENZ/ATEGO 2426 6X2",
+   "ano_modelo": 2020,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "LOGÍSTICA MARACANAÚ LTDA.",
+    "documento": "47.865.893/0001-00"
+   }
+  },
+  {
+   "placa": "CRS0R60",
+   "renavam": "05106261488",
+   "chassi": "9BDS4GZLAKWT4GR0E",
+   "marca_modelo": "FIAT/FIORINO ENDURANCE 1.4",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "PANIFICADORA CHAPADA DO ARARIPE LTDA.",
+    "documento": "87.526.239/0001-88"
+   }
+  },
+  {
+   "placa": "PXC9W33",
+   "renavam": "05699439826",
+   "chassi": "9BV3TCT6V3TP5LZWT",
+   "marca_modelo": "VOLVO/FH 460 6X2T",
+   "ano_modelo": 2019,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "CERÂMICA RUSSAS LTDA.",
+    "documento": "24.646.686/0001-50"
+   }
+  },
+  {
+   "placa": "KDW3A25",
+   "renavam": "09955156690",
+   "chassi": "9BD61G045X1ZAZ1ZT",
+   "marca_modelo": "FIAT/DUCATO CARGO 2.2",
+   "ano_modelo": 2022,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "GRÁFICA SOBRALENSE LTDA.",
+    "documento": "16.653.989/0001-72"
+   }
+  },
+  {
+   "placa": "ZEY5F63",
+   "renavam": "08120617698",
+   "chassi": "93HY9ZFBTSH1SWMWA",
+   "marca_modelo": "HONDA/CIVIC EXL 2.0",
+   "ano_modelo": 2021,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+    "documento": "33.437.010/0001-48"
+   }
+  },
+  {
+   "placa": "SAM6R05",
+   "renavam": "09048801562",
+   "chassi": "9BWT1WTAPPDERMD06",
+   "marca_modelo": "VW/CONSTELLATION 24.280",
+   "ano_modelo": 2021,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "DISTRIBUIDORA ARACATI S.A.",
+    "documento": "74.535.813/0001-12"
+   }
+  },
+  {
+   "placa": "DYW8T81",
+   "renavam": "09042163114",
+   "chassi": "9BRGE1CJ5BV305ND3",
+   "marca_modelo": "TOYOTA/HILUX CD SRV 4X4 2.8",
+   "ano_modelo": 2022,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "DISTRIBUIDORA ARACATI S.A.",
+    "documento": "74.535.813/0001-12"
+   }
+  },
+  {
+   "placa": "KEJ8F77",
+   "renavam": "06017967723",
+   "chassi": "9BFAVGJ4NU6KPXLVB",
+   "marca_modelo": "FORD/CARGO 816 S",
+   "ano_modelo": 2019,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "J P DA SILVA MATERIAIS DE CONSTRUCAO",
+    "documento": "42.172.334/0001-92"
+   }
+  },
+  {
+   "placa": "DGR6C46",
+   "renavam": "06105914834",
+   "chassi": "9BGNYTFWHER6ZJLKN",
+   "marca_modelo": "GM/ONIX LT 1.0",
+   "ano_modelo": 2022,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "BEIRA-MAR VEÍCULOS LTDA.",
+    "documento": "67.704.410/0001-94"
+   }
+  },
+  {
+   "placa": "UJY1N32",
+   "renavam": "09753325717",
+   "chassi": "93YJVDZRU7CWKU62G",
+   "marca_modelo": "RENAULT/MASTER FURGÃO L3H2",
+   "ano_modelo": 2022,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "LOGÍSTICA MARACANAÚ LTDA.",
+    "documento": "47.865.893/0001-00"
+   }
+  },
+  {
+   "placa": "TGC6Y55",
+   "renavam": "03233735288",
+   "chassi": "9BR4460PW57FPNHFZ",
+   "marca_modelo": "TOYOTA/HILUX CD SR 4X2 2.8",
+   "ano_modelo": 2021,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "PESCADOS CAMOCIM LTDA.",
+    "documento": "06.709.072/0001-99"
+   }
+  },
+  {
+   "placa": "VMD0R23",
+   "renavam": "04638238970",
+   "chassi": "93Y2J7GHST92DW14M",
+   "marca_modelo": "RENAULT/MASTER MINIBUS L3H2",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "LATICÍNIOS SERRA DA IBIAPABA LTDA.",
+    "documento": "19.140.486/0001-91"
+   }
+  },
+  {
+   "placa": "JEA7B42",
+   "renavam": "07862225636",
+   "chassi": "9BWRZ8GVSPUWDM5F6",
+   "marca_modelo": "VW/SAVEIRO CS 1.6",
+   "ano_modelo": 2022,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "MÓVEIS SOBRAL DESIGN LTDA.",
+    "documento": "44.587.387/0001-08"
+   }
+  },
+  {
+   "placa": "PEZ5C11",
+   "renavam": "02133290596",
+   "chassi": "9BM8B32KTD596FCK6",
+   "marca_modelo": "M.BENZ/ACTROS 2651 S 6X4",
+   "ano_modelo": 2021,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "TRANSPORTADORA LITORAL LESTE LTDA.",
+    "documento": "10.601.907/0001-60"
+   }
+  },
+  {
+   "placa": "GKJ4G86",
+   "renavam": "06648034614",
+   "chassi": "9BF75BYATUS055DX8",
+   "marca_modelo": "FORD/RANGER XLS 2.2 4X4",
+   "ano_modelo": 2022,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "TRANSPORTADORA LITORAL LESTE LTDA.",
+    "documento": "10.601.907/0001-60"
+   }
+  },
+  {
+   "placa": "MSL2F85",
+   "renavam": "01494700490",
+   "chassi": "93YE1HMUJLFHMUVAF",
+   "marca_modelo": "RENAULT/DUSTER INTENSE 1.6",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA.",
+    "documento": "35.326.130/0001-01"
+   }
+  },
+  {
+   "placa": "DWE4R61",
+   "renavam": "07567141273",
+   "chassi": "99A39TDZGJ08R5U38",
+   "marca_modelo": "CAOA CHERY/ARRIZO 6 PRO 1.5T",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "TAVARES & MOURÃO EVENTOS LTDA.",
+    "documento": "38.601.295/0001-24"
+   }
+  },
+  {
+   "placa": "TSS1Z68",
+   "renavam": "00337387460",
+   "chassi": "93XWENGS6NKZP0YAT",
+   "marca_modelo": "MITSUBISHI/L200 TRITON SPORT HPE",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "AGRÍCOLA SERTANEJA DE QUIXADÁ LTDA.",
+    "documento": "56.485.814/0001-18"
+   }
+  },
+  {
+   "placa": "GFR7F42",
+   "renavam": "09513807172",
+   "chassi": "9BDHAZ4ZB6RYZT4R6",
+   "marca_modelo": "FIAT/STRADA VOLCANO 1.3 CD",
+   "ano_modelo": 2024,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "DAMASCENO PARTICIPAÇÕES E SERVIÇOS LTDA.",
+    "documento": "35.326.130/0001-01"
+   }
+  },
+  {
+   "placa": "ZEJ9J91",
+   "renavam": "05079959092",
+   "chassi": "9BGRMD6K5MG9Y9U7Y",
+   "marca_modelo": "GM/ONIX PLUS LTZ 1.0 TURBO",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PF",
+    "nome": "NÁDIA ROCHA BESSA",
+    "documento": "404.863.203-59"
+   }
+  },
+  {
+   "placa": "ADE7K49",
+   "renavam": "04933102863",
+   "chassi": "9BR2FRGCD3LSGFFHX",
+   "marca_modelo": "TOYOTA/HILUX CD SRX 4X4 2.8",
+   "ano_modelo": 2024,
+   "proprietario": {
+    "tipo": "PF",
+    "nome": "NÁDIA ROCHA BESSA",
+    "documento": "404.863.203-59"
+   }
+  },
+  {
+   "placa": "NXR3N68",
+   "renavam": "07438789846",
+   "chassi": "9BD4TTZB15UMLT01Z",
+   "marca_modelo": "FIAT/TORO ENDURANCE 1.3 TURBO",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "COMERCIAL BOM JARDIM LTDA.",
+    "documento": "73.701.393/0001-34"
+   }
+  },
+  {
+   "placa": "NZL4Z28",
+   "renavam": "06760128536",
+   "chassi": "9BD0WS6X7BJP6D45U",
+   "marca_modelo": "FIAT/DUCATO MAXICARGO 2.3",
+   "ano_modelo": 2022,
+   "proprietario": {
+    "tipo": "PF",
+    "nome": "NÁDIA ROCHA BESSA",
+    "documento": "404.863.203-59"
+   }
+  },
+  {
+   "placa": "KMK2H24",
+   "renavam": "07833877850",
+   "chassi": "9BDK6DPK78GELP8Z9",
+   "marca_modelo": "FIAT/ARGO DRIVE 1.0",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PF",
+    "nome": "NÁDIA ROCHA BESSA",
+    "documento": "404.863.203-59"
+   }
+  },
+  {
+   "placa": "YAL0M91",
+   "renavam": "06567183504",
+   "chassi": "9BW7JNHS0X7L0JU5U",
+   "marca_modelo": "VW/SAVEIRO ROBUST CS 1.6",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "TRANSPORTES SERTÃO VERDE LTDA.",
+    "documento": "34.146.175/0001-23"
+   }
+  },
+  {
+   "placa": "ZEK4L19",
+   "renavam": "04415366979",
+   "chassi": "9BG53Y125620PA1ME",
+   "marca_modelo": "GM/S10 CD LT 2.8 4X4",
+   "ano_modelo": 2022,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "CONSTRUTORA MANDACARU LTDA.",
+    "documento": "42.014.613/0001-28"
+   }
+  },
+  {
+   "placa": "BNG3Z26",
+   "renavam": "04495829300",
+   "chassi": "9BS55H2FFV5FYBYBW",
+   "marca_modelo": "MARCOPOLO/VOLARE W9 ESCOLAR",
+   "ano_modelo": 2021,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "COOPERATIVA DE TRANSPORTE ESCOLAR DO VALE DO JAGUARIBE – COOPVALE",
+    "documento": "84.862.817/0001-69"
+   }
+  },
+  {
+   "placa": "TVL4G05",
+   "renavam": "06595479137",
+   "chassi": "9BM9ZLGAF46YFX4NK",
+   "marca_modelo": "M.BENZ/SPRINTER 516 ESCOLAR",
+   "ano_modelo": 2020,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "COOPERATIVA DE TRANSPORTE ESCOLAR DO VALE DO JAGUARIBE – COOPVALE",
+    "documento": "84.862.817/0001-69"
+   }
+  },
+  {
+   "placa": "MDF9F54",
+   "renavam": "05624179290",
+   "chassi": "9BGG6CDYYESP50D18",
+   "marca_modelo": "GM/SPIN PREMIER 1.8",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PF",
+    "nome": "NÁDIA ROCHA BESSA",
+    "documento": "404.863.203-59"
+   }
+  },
+  {
+   "placa": "DFU7V03",
+   "renavam": "01577162533",
+   "chassi": "9BDDP7AR0DK0FZ4GL",
+   "marca_modelo": "FIAT/FIORINO ENDURANCE 1.4",
+   "ano_modelo": 2022,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "60.827.183 ROGERIO FERNANDES LIMA",
+    "documento": "60.827.183/0001-45"
+   }
+  },
+  {
+   "placa": "KYF8B28",
+   "renavam": "06787072272",
+   "chassi": "9BD2WYCZ9YDKBKE1B",
+   "marca_modelo": "FIAT/STRADA ENDURANCE 1.3 CS",
+   "ano_modelo": 2024,
+   "proprietario": {
+    "tipo": "PF",
+    "nome": "NÁDIA ROCHA BESSA",
+    "documento": "404.863.203-59"
+   }
+  },
+  {
+   "placa": "NJF4C28",
+   "renavam": "08661574674",
+   "chassi": "9BFTH92M0PBVVR7X2",
+   "marca_modelo": "FORD/RANGER XLT 3.2 4X4",
+   "ano_modelo": 2021,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "OLIVEIRA SÁ ENGENHARIA EIRELI",
+    "documento": "32.604.032/0001-92"
+   }
+  },
+  {
+   "placa": "AYS5S36",
+   "renavam": "09228282466",
+   "chassi": "988C62K9H00N30ADA",
+   "marca_modelo": "JEEP/RENEGADE LONGITUDE 1.3 T270",
+   "ano_modelo": 2023,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "PINHO & ARRUDA FISIOTERAPIA S/S",
+    "documento": "01.264.413/0001-46"
+   }
+  },
+  {
+   "placa": "HNM2Z92",
+   "renavam": "02291958849",
+   "chassi": "9BHHU7V697PRBDC3C",
+   "marca_modelo": "HYUNDAI/HB20 1.0 COMFORT",
+   "ano_modelo": 2021,
+   "proprietario": {
+    "tipo": "PF",
+    "nome": "RAIMUNDA NONATA SIQUEIRA",
+    "documento": "320.908.841-18"
+   }
+  },
+  {
+   "placa": "WPL2U01",
+   "renavam": "09290055737",
+   "chassi": "9BDJ0KZYJ5CB2AAAB",
+   "marca_modelo": "FIAT/STRADA WORKING 1.4",
+   "ano_modelo": 2020,
+   "proprietario": {
+    "tipo": "PF",
+    "nome": "FRANCISCO ERIVAN CAVALCANTE",
+    "documento": "812.329.658-47"
+   }
+  },
+  {
+   "placa": "PVG1A31",
+   "renavam": "03979780734",
+   "chassi": "93YJ23PB77L47FCFR",
+   "marca_modelo": "RENAULT/KWID ZEN 1.0",
+   "ano_modelo": 2022,
+   "proprietario": {
+    "tipo": "PF",
+    "nome": "LUANA CASTRO RIBEIRO",
+    "documento": "921.142.477-16"
+   }
+  },
+  {
+   "placa": "JFY7H56",
+   "renavam": "07971923792",
+   "chassi": "9BDNUMM3Y1UFF22Y9",
+   "marca_modelo": "FIAT/TORO FREEDOM 1.8 AT6",
+   "ano_modelo": 2020,
+   "proprietario": {
+    "tipo": "PF",
+    "nome": "GILMAR SOUSA PONTES",
+    "documento": "881.776.891-00"
+   }
+  },
+  {
+   "placa": "SJS4M40",
+   "renavam": "06705217816",
+   "chassi": "9BMTR0AKDH8MHX87W",
+   "marca_modelo": "M.BENZ/SPRINTER 415 CDI VAN",
+   "ano_modelo": 2021,
+   "proprietario": {
+    "tipo": "PJ",
+    "nome": "LOCADORA JANGADA LTDA.",
+    "documento": "38.005.305/0001-69"
+   }
+  },
+  {
+   "placa": "GFP0N23",
+   "renavam": "00877399417",
+   "chassi": "9BHWFT7FLAT680JNR",
+   "marca_modelo": "HYUNDAI/CRETA 1.6 ACTION",
+   "ano_modelo": 2022,
+   "proprietario": {
+    "tipo": "PF",
+    "nome": "RAIMUNDA NONATA SIQUEIRA",
+    "documento": "320.908.841-18"
+   }
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+  "caso": "C32",
+  "titulo": "S.A. — um diretor sozinho",
+  "categoria": "estrutura",
+  "objetivo": "Estatuto exige 2 diretores ou diretor + procurador.",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "MARCELO",
+        "HELENA"
+      ],
+      [
+        "MARCELO",
+        "TIAGO"
+      ],
+      [
+        "HELENA",
+        "TIAGO"
+      ]
+    ],
+    "fundamentos": [
+      "Lei 6.404/76 art. 144"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "589.831.948-47",
+        "394.948.214-83"
+      ],
+      [
+        "589.831.948-47",
+        "621.052.185-12"
+      ],
+      [
+        "394.948.214-83",
+        "621.052.185-12"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Marcelo Augusto Feitosa",
+        "Helena Castro Lins"
+      ],
+      [
+        "Marcelo Augusto Feitosa",
+        "Tiago Rolim Vasconcelos"
+      ],
+      [
+        "Helena Castro Lins",
+        "Tiago Rolim Vasconcelos"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

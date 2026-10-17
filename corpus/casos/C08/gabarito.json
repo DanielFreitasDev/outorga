@@ -1,0 +1,40 @@
+{
+  "caso": "C08",
+  "titulo": "Alçada por valor — abaixo do limite",
+  "categoria": "alcada",
+  "objetivo": "Veículo de R$ 112 mil, limite R$ 150 mil: assinatura isolada vale.",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": [
+      [
+        "ANTONIO"
+      ],
+      [
+        "JOSEFA"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 1.015"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "847.267.147-08"
+      ],
+      [
+        "136.270.107-60"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Antônio Cícero Lobo"
+      ],
+      [
+        "Josefa Alencar Lobo"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

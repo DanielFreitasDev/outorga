@@ -1,0 +1,13 @@
+✗ A01 Comprador PJ: administrador assina compra abaixo da alçada esp=PODE          prev=PODE          AMARELO  idx= 97.0 quem=ok 102.9s
+✓ A02 Comprador PJ: compra acima da alçada com um só administrad esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx= 10.0 quem=ok   0.0s
+✓ A03 Restrição de compra não alcança a venda                    esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+✓ A04 Comprador PJ por procurador com poder de compra            esp=PODE          prev=PODE          VERDE    idx= 91.7 quem=ok  61.7s
+✓ A05 Procuração só de venda usada para comprar                  esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  6.6 quem=ok   0.0s
+✗ A06 PJ dos dois lados: ambos com poder                         esp=PODE          prev=PODE          AMARELO  idx= 97.0 quem=ok   0.1s
+✓ A07 PJ dos dois lados, assinaturas lidas da ATPV-e: comprador  esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  7.5 quem=ok   0.1s
+✗ A10 Associação compradora: Presidente eleita assina            esp=PODE          prev=PODE          VERDE    idx=100.0 quem=X 206.6s
+✓ A11 MEI vende: o titular assina                                esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok  55.5s
+✓ A12 MEI compra: a esposa do titular assina                     esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx= 10.0 quem=ok   0.0s
+✓ A14 Sociedade simples: um sócio assina sozinho                 esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok 112.4s
+
+veredito 8/11 · faixa aceitável 9/11 · quem pode 10/11 · perigosos 0 · caros 0 · automático 82% · 539.3s

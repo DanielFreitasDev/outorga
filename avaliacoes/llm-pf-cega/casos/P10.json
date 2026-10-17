@@ -1,0 +1,1004 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T12:08:56",
+ "pedido": {
+  "veiculo": {
+   "descricao": "FIAT/STRADA WORKING 1.4",
+   "placa": "WPL2U01",
+   "renavam": "09290055737",
+   "chassi": "9BDJ0KZYJ5CB2AAAB"
+  },
+  "data_venda": "2026-10-16",
+  "valor": null,
+  "assinantes": [
+   {
+    "nome": "CPF 707.804.256-50",
+    "cpf": "707.804.256-50"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": null,
+  "vendedor_cnpj": "812.329.658-47",
+  "lado": "vendedor",
+  "consulta": true
+ },
+ "empresa": {
+  "razao_social": "Francisco Erivan Cavalcante",
+  "cnpj": null,
+  "tipo": "PF",
+  "objeto": "",
+  "comercializa_veiculos": false,
+  "subtipo": "PF",
+  "cpf": "812.329.658-47"
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 0.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 2,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 0 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: Francisco Erivan Cavalcante. O caminho por procuração particular de 05/09/2026 (iracaema – 4º tabelionato de notas de fortaleza (fictício)) não vale: procuração particular com firma reconhecida.",
+ "assinantes": [
+  {
+   "informado": "CPF 707.804.256-50",
+   "cpf": "707.804.256-50",
+   "chave": "70780425650",
+   "nome": "Edvaldo Pinheiro Neto",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:81232965847",
+   "pessoas": [
+    {
+     "chave": "81232965847",
+     "nome": "Francisco Erivan Cavalcante"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "Assinatura do próprio proprietário (pessoa física)",
+   "cadeia": [
+    "TITULAR"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [
+  {
+   "id": "POA_PF_PARTICULAR:bloqueada",
+   "pessoas": [
+    {
+     "chave": "70780425650",
+     "nome": "Edvaldo Pinheiro Neto"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração particular de 05/09/2026 (Iracaema – 4º Tabelionato de Notas de Fortaleza (fictício))",
+   "cadeia": [
+    "POA_PF_PARTICULAR"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_TITULAR",
+     "severidade": "ok",
+     "titulo": "Outorgada por o proprietário do veículo",
+     "detalhe": "A outorgante é Francisco Erivan Cavalcante, o proprietário do veículo (pessoa física).",
+     "fundamento": [
+      "CC art. 653"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_PARTICULAR",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "OUTORGANTE: FRANCISCO ERIVAN CAVALCANTE, brasileiro, casado, comerciante, portador da cédula de identidade RG nº 25363612 SSP/CE, inscrito no CPF sob o nº 812.329.658-47, residente e domiciliado na Rua das Carnaúbas, nº 712, Jurema, Caucaia/CE.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 36,
+       "fim": 280
+      }
+     ],
+     "caminho": "POA_PF_PARTICULAR"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_PARTICULAR",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "pelo presente instrumento particular de mandato, o outorgante acima qualificado, em nome próprio, nomeia e constitui seu bastante procurador o outorgado, a quem confere poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar, a quem e pelo preço que convencionar, o veículo FIAT/STRADA WORKING 1.4, espécie/tipo CARGA/CAMIONETA, combustível álcool/gasolina, ano/modelo 2019/2020, cor branca, placa WPL2U01, RENAVAM 09290055737, chassi 9BDJ0KZYJ5CB2AAAB, de propriedade do outorgante, ajustando cláusulas e condições; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV-e), inclusive em meio eletrônico, bem como o contrato e o recibo de compra e venda; receber o preço e dar quitação; entregar ao adquirente o veículo, suas chaves e seus documentos; requerer e assinar o que for necessário perante o DETRAN, inclusive vistoria, consulta de débitos, segunda via de documentos e comunicação de venda do referido veículo; recolher taxas, tributos, licenciamento e multas que eventualmente recaiam sobre ele; assinar declarações, requerimentos e termos de responsabilidade; e praticar, enfim, todos os demais atos necessários ao bom e fiel cumprimento deste mandato, que o outorgante dá por firme e valioso.",
+       "clausula": null,
+       "ancoragem": 99.9,
+       "pagina": 1,
+       "inicio": 543,
+       "fim": 1801
+      }
+     ],
+     "caminho": "POA_PF_PARTICULAR"
+    },
+    {
+     "codigo": "VEICULO_ABRANGIDO",
+     "severidade": "ok",
+     "titulo": "Veículo identificado na procuração",
+     "detalhe": "A procuração identifica exatamente este veículo.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_PARTICULAR",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "pelo presente instrumento particular de mandato, o outorgante acima qualificado, em nome próprio, nomeia e constitui seu bastante procurador o outorgado, a quem confere poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar, a quem e pelo preço que convencionar, o veículo FIAT/STRADA WORKING 1.4, espécie/tipo CARGA/CAMIONETA, combustível álcool/gasolina, ano/modelo 2019/2020, cor branca, placa WPL2U01, RENAVAM 09290055737, chassi 9BDJ0KZYJ5CB2AAAB, de propriedade do outorgante, ajustando cláusulas e condições; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV-e), inclusive em meio eletrônico, bem como o contrato e o recibo de compra e venda; receber o preço e dar quitação; entregar ao adquirente o veículo, suas chaves e seus documentos; requerer e assinar o que for necessário perante o DETRAN, inclusive vistoria, consulta de débitos, segunda via de documentos e comunicação de venda do referido veículo; recolher taxas, tributos, licenciamento e multas que eventualmente recaiam sobre ele; assinar declarações, requerimentos e termos de responsabilidade; e praticar, enfim, todos os demais atos necessários ao bom e fiel cumprimento deste mandato, que o outorgante dá por firme e valioso.",
+       "clausula": null,
+       "ancoragem": 99.9,
+       "pagina": 1,
+       "inicio": 543,
+       "fim": 1801
+      }
+     ],
+     "caminho": "POA_PF_PARTICULAR"
+    },
+    {
+     "codigo": "PROCURACAO_NO_PRAZO",
+     "severidade": "ok",
+     "titulo": "Dentro do prazo",
+     "detalhe": "Válida até 05/09/2027.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_PARTICULAR",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "O presente mandato é válido pelo prazo de 1 (um) ano, contado da data de sua assinatura.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1810,
+       "fim": 1898
+      }
+     ],
+     "caminho": "POA_PF_PARTICULAR"
+    },
+    {
+     "codigo": "FORMA_PARTICULAR",
+     "severidade": "bloqueio",
+     "titulo": "Procuração particular com firma reconhecida",
+     "detalhe": "O DETRAN-CE só aceita procurador por instrumento de procuração PÚBLICA e específica para o ato. (Civilmente o instrumento particular é válido; a exigência é do órgão.)",
+     "fundamento": [
+      "DETRAN-CE (serviço de transferência)",
+      "CC art. 654, §2º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_PARTICULAR",
+       "doc_titulo": "Procuração (2026)",
+       "trecho": "OUTORGANTE: FRANCISCO ERIVAN CAVALCANTE, brasileiro, casado, comerciante, portador da cédula de identidade RG nº 25363612 SSP/CE, inscrito no CPF sob o nº 812.329.658-47, residente e domiciliado na Rua das Carnaúbas, nº 712, Jurema, Caucaia/CE.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 36,
+       "fim": 280
+      }
+     ],
+     "caminho": "POA_PF_PARTICULAR"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "contrato:81232965847",
+   "via": "contrato",
+   "descricao": "Assinatura do próprio proprietário (pessoa física)",
+   "pessoas": [
+    "81232965847"
+   ],
+   "faltam": [
+    "81232965847"
+   ],
+   "faltam_nomes": [
+    "Francisco Erivan Cavalcante"
+   ],
+   "pessoas_nomes": [
+    "Francisco Erivan Cavalcante"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "TITULARIDADE_BASE",
+   "severidade": "ok",
+   "titulo": "Proprietário conferido na base veicular",
+   "detalhe": "Pela placa/RENAVAM, o veículo está em nome de Francisco Erivan Cavalcante.",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "TITULAR#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "TITULAR",
+    "doc_titulo": "Base veicular (simulada)",
+    "trecho": "FRANCISCO ERIVAN CAVALCANTE — CPF 812.329.658-47",
+    "clausula": "titularidade",
+    "ancoragem": 100.0,
+    "pagina": null,
+    "inicio": null,
+    "fim": null
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Francisco Erivan Cavalcante"
+   ],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": true
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-10-16",
+  "atos": [
+   {
+    "doc": "TITULAR",
+    "titulo": "Titularidade (pessoa física)",
+    "efeito": "1900-01-01"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "81232965847",
+    "nome": "Francisco Erivan Cavalcante",
+    "cargo": "titular (pessoa física)",
+    "doc": "TITULAR"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "81232965847",
+    "nome": "Francisco Erivan Cavalcante",
+    "percentual": 100.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "Francisco Erivan Cavalcante",
+    "sub": ""
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "FIAT/STRADA WORKING 1.4",
+    "sub": "WPL2U01"
+   },
+   {
+    "id": "81232965847",
+    "tipo": "pessoa",
+    "rotulo": "Francisco Erivan Cavalcante",
+    "papeis": [
+     "sócio 100%",
+     "titular (pessoa física)",
+     "outorgante (pessoa física)"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "70780425650",
+    "tipo": "pessoa",
+    "rotulo": "Edvaldo Pinheiro Neto",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "alerta"
+   },
+   {
+    "de": "81232965847",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "100%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "81232965847",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "TITULAR"
+   },
+   {
+    "de": "81232965847",
+    "para": "70780425650",
+    "tipo": "procuracao",
+    "status": "invalido",
+    "doc": "POA_PF_PARTICULAR",
+    "rotulo": "procuração 05/09/2026 · Procuração particular com firma reconhecida",
+    "motivo": "Procuração particular com firma reconhecida"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "1900-01-01",
+   "tipo": "ato",
+   "titulo": "Titularidade (pessoa física)",
+   "doc": "TITULAR",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-09-05",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Edvaldo Pinheiro Neto",
+   "doc": "POA_PF_PARTICULAR",
+   "detalhe": "particular"
+  },
+  {
+   "data": "2026-10-16",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "valor não informado"
+  },
+  {
+   "data": "2027-09-05",
+   "tipo": "vencimento",
+   "titulo": "Vence a procuração de Edvaldo Pinheiro Neto",
+   "doc": "POA_PF_PARTICULAR",
+   "detalhe": ""
+  }
+ ],
+ "pessoas": {
+  "81232965847": {
+   "nome": "Francisco Erivan Cavalcante",
+   "cpf": "81232965847"
+  },
+  "70780425650": {
+   "nome": "Edvaldo Pinheiro Neto",
+   "cpf": "70780425650"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "Francisco Erivan Cavalcante",
+   "cnpj": null,
+   "tipo": "PF",
+   "cpf": "81232965847",
+   "documento": "81232965847",
+   "atos_vigentes": [],
+   "titularidade": "Base veicular (simulada)"
+  },
+  "outorgado": [
+   {
+    "nome": "Edvaldo Pinheiro Neto",
+    "cpf": "707.804.256-50",
+    "identificacao": "CPF",
+    "qualidade": "procurador(a) pela procuração de 05/09/2026"
+   }
+  ],
+  "poderes_conferidos": [
+   "Procuração particular de 05/09/2026 (Iracaema – 4º Tabelionato de Notas de Fortaleza (fictício)): não comprova poderes (Procuração particular com firma reconhecida)."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [],
+  "documentos_verificaveis": [
+   {
+    "id": "POA_PF_PARTICULAR",
+    "titulo": "Procuração (2026)",
+    "arquivo": "POA_PF_PARTICULAR.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "POA_PF_PARTICULAR",
+   "nome": "POA_PF_PARTICULAR.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (2026)",
+   "data": "2026-09-05",
+   "paginas": [
+    "PROCURAÇÃO\n(INSTRUMENTO PARTICULAR)\nOUTORGANTE: FRANCISCO ERIVAN CAVALCANTE, brasileiro, casado, comerciante,\nportador da cédula de identidade RG nº 25363612 SSP/CE, inscrito no CPF sob o nº\n812.329.658-47, residente e domiciliado na Rua das Carnaúbas, nº 712, Jurema, Caucaia/CE.\nOUTORGADO: EDVALDO PINHEIRO NETO, brasileiro, casado, corretor de veículos, portador\nda cédula de identidade RG nº 59050583 SSP/CE, inscrito no CPF sob o nº 707.804.256-50,\nresidente e domiciliado na Rua das Acácias, nº 233, Jereissati I, Maracanaú/CE.\nPODERES: Pelo presente instrumento particular de mandato, o outorgante acima qualificado, em\nnome próprio, nomeia e constitui seu bastante procurador o outorgado, a quem confere poderes\nespeciais e expressos para vender, ceder, transferir ou de qualquer forma alienar, a quem e pelo\npreço que convencionar, o veículo FIAT/STRADA WORKING 1.4, espécie/tipo CARGA/\nCAMIONETA, combustível álcool/gasolina, ano/modelo 2019/2020, cor branca, placa WPL2U01,\nRENAVAM 09290055737, chassi 9BDJ0KZYJ5CB2AAAB, de propriedade do outorgante,\najustando cláusulas e condições; assinar a Autorização para Transferência de Propriedade do Veículo\n(ATPV-e), inclusive em meio eletrônico, bem como o contrato e o recibo de compra e venda; receber\no preço e dar quitação; entregar ao adquirente o veículo, suas chaves e seus documentos; requerer e\nassinar o que for necessário perante o DETRAN, inclusive vistoria, consulta de débitos, segunda via\nde documentos e comunicação de venda do referido veículo; recolher taxas, tributos, licenciamento e\nmultas que eventualmente recaiam sobre ele; assinar declarações, requerimentos e termos de\nresponsabilidade; e praticar, enfim, todos os demais atos necessários ao bom e fiel cumprimento\ndeste mandato, que o outorgante dá por firme e valioso.\nPRAZO: O presente mandato é válido pelo prazo de 1 (um) ano, contado da data de sua assinatura.\nDECLARAÇÃO: O outorgante declara que o veículo acima descrito encontra-se registrado em seu\nnome perante o DETRAN-CE e que assina este instrumento de livre e espontânea vontade,\nresponsabilizando-se pela veracidade das informações nele contidas.\nFortaleza/CE, 5 de setembro de 2026.\n______________________________________\nFRANCISCO ERIVAN CAVALCANTE\nCPF nº 812.329.658-47\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nRECONHECIMENTO DE FIRMA POR AUTENTICIDADE\nReconheço, por autenticidade, a firma de FRANCISCO ERIVAN CAVALCANTE, portador do RG\nnº 25363612 SSP/CE e inscrito no CPF sob o nº 812.329.658-47, aposta em minha presença neste\ndocumento, à vista do documento de identidade original apresentado e conforme ficha-padrão\narquivada nesta serventia, do que dou fé.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "Fortaleza/CE, 5 de setembro de 2026. Em testemunho da verdade.\nRogério Lustosa Maia – Escrevente Notarial\nSelo Digital: IRA-AUT-2026-8D27B5 · Emolumentos: R$ 9,85\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "8ba5b3ddaddf6b582fc0603bf42b8b9a1260fe89786c5c281371937ede88a7df",
+   "leitura": {
+    "tarefas": {
+     "procuracao": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 53.2,
+      "tokens_saida": 1074,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "llamacpp",
+  "modelo": "qwen3.8-27b",
+  "politica": "DETRAN-CE"
+ },
+ "lado": "vendedor",
+ "pendencias": [],
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T12:08:56",
+   "pedido": {
+    "veiculo": {
+     "descricao": "FIAT/STRADA WORKING 1.4",
+     "placa": "WPL2U01",
+     "renavam": "09290055737",
+     "chassi": "9BDJ0KZYJ5CB2AAAB"
+    },
+    "data_venda": "2026-10-16",
+    "valor": null,
+    "assinantes": [
+     {
+      "nome": "CPF 707.804.256-50",
+      "cpf": "707.804.256-50"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": null,
+    "vendedor_cnpj": "812.329.658-47",
+    "lado": "vendedor",
+    "consulta": true
+   },
+   "empresa": {
+    "razao_social": "Francisco Erivan Cavalcante",
+    "cnpj": null,
+    "tipo": "PF",
+    "objeto": "",
+    "comercializa_veiculos": false,
+    "subtipo": "PF",
+    "cpf": "812.329.658-47"
+   },
+   "veredito": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 2,
+    "menor_confianca_fato": 1.0,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Francisco Erivan Cavalcante. O caminho por procuração particular de 05/09/2026 (iracaema – 4º tabelionato de notas de fortaleza (fictício)) não vale: procuração particular com firma reconhecida.",
+   "assinantes": [
+    {
+     "informado": "CPF 707.804.256-50",
+     "cpf": "707.804.256-50",
+     "chave": "70780425650",
+     "nome": "Edvaldo Pinheiro Neto",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:81232965847",
+     "pessoas": [
+      {
+       "chave": "81232965847",
+       "nome": "Francisco Erivan Cavalcante"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "Assinatura do próprio proprietário (pessoa física)",
+     "cadeia": [
+      "TITULAR"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [
+    {
+     "id": "POA_PF_PARTICULAR:bloqueada",
+     "pessoas": [
+      {
+       "chave": "70780425650",
+       "nome": "Edvaldo Pinheiro Neto"
+      }
+     ],
+     "via": "procuracao",
+     "descricao": "Procuração particular de 05/09/2026 (Iracaema – 4º Tabelionato de Notas de Fortaleza (fictício))",
+     "cadeia": [
+      "POA_PF_PARTICULAR"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [
+      {
+       "codigo": "OUTORGANTE_TITULAR",
+       "severidade": "ok",
+       "titulo": "Outorgada por o proprietário do veículo",
+       "detalhe": "A outorgante é Francisco Erivan Cavalcante, o proprietário do veículo (pessoa física).",
+       "fundamento": [
+        "CC art. 653"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_PARTICULAR",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "OUTORGANTE: FRANCISCO ERIVAN CAVALCANTE, brasileiro, casado, comerciante, portador da cédula de identidade RG nº 25363612 SSP/CE, inscrito no CPF sob o nº 812.329.658-47, residente e domiciliado na Rua das Carnaúbas, nº 712, Jurema, Caucaia/CE.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 36,
+         "fim": 280
+        }
+       ],
+       "caminho": "POA_PF_PARTICULAR"
+      },
+      {
+       "codigo": "PODERES_ESPECIAIS",
+       "severidade": "ok",
+       "titulo": "Poder expresso para alienar veículos",
+       "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+       "fundamento": [
+        "CC art. 661, §1º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_PARTICULAR",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "pelo presente instrumento particular de mandato, o outorgante acima qualificado, em nome próprio, nomeia e constitui seu bastante procurador o outorgado, a quem confere poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar, a quem e pelo preço que convencionar, o veículo FIAT/STRADA WORKING 1.4, espécie/tipo CARGA/CAMIONETA, combustível álcool/gasolina, ano/modelo 2019/2020, cor branca, placa WPL2U01, RENAVAM 09290055737, chassi 9BDJ0KZYJ5CB2AAAB, de propriedade do outorgante, ajustando cláusulas e condições; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV-e), inclusive em meio eletrônico, bem como o contrato e o recibo de compra e venda; receber o preço e dar quitação; entregar ao adquirente o veículo, suas chaves e seus documentos; requerer e assinar o que for necessário perante o DETRAN, inclusive vistoria, consulta de débitos, segunda via de documentos e comunicação de venda do referido veículo; recolher taxas, tributos, licenciamento e multas que eventualmente recaiam sobre ele; assinar declarações, requerimentos e termos de responsabilidade; e praticar, enfim, todos os demais atos necessários ao bom e fiel cumprimento deste mandato, que o outorgante dá por firme e valioso.",
+         "clausula": null,
+         "ancoragem": 99.9,
+         "pagina": 1,
+         "inicio": 543,
+         "fim": 1801
+        }
+       ],
+       "caminho": "POA_PF_PARTICULAR"
+      },
+      {
+       "codigo": "VEICULO_ABRANGIDO",
+       "severidade": "ok",
+       "titulo": "Veículo identificado na procuração",
+       "detalhe": "A procuração identifica exatamente este veículo.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_PARTICULAR",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "pelo presente instrumento particular de mandato, o outorgante acima qualificado, em nome próprio, nomeia e constitui seu bastante procurador o outorgado, a quem confere poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar, a quem e pelo preço que convencionar, o veículo FIAT/STRADA WORKING 1.4, espécie/tipo CARGA/CAMIONETA, combustível álcool/gasolina, ano/modelo 2019/2020, cor branca, placa WPL2U01, RENAVAM 09290055737, chassi 9BDJ0KZYJ5CB2AAAB, de propriedade do outorgante, ajustando cláusulas e condições; assinar a Autorização para Transferência de Propriedade do Veículo (ATPV-e), inclusive em meio eletrônico, bem como o contrato e o recibo de compra e venda; receber o preço e dar quitação; entregar ao adquirente o veículo, suas chaves e seus documentos; requerer e assinar o que for necessário perante o DETRAN, inclusive vistoria, consulta de débitos, segunda via de documentos e comunicação de venda do referido veículo; recolher taxas, tributos, licenciamento e multas que eventualmente recaiam sobre ele; assinar declarações, requerimentos e termos de responsabilidade; e praticar, enfim, todos os demais atos necessários ao bom e fiel cumprimento deste mandato, que o outorgante dá por firme e valioso.",
+         "clausula": null,
+         "ancoragem": 99.9,
+         "pagina": 1,
+         "inicio": 543,
+         "fim": 1801
+        }
+       ],
+       "caminho": "POA_PF_PARTICULAR"
+      },
+      {
+       "codigo": "PROCURACAO_NO_PRAZO",
+       "severidade": "ok",
+       "titulo": "Dentro do prazo",
+       "detalhe": "Válida até 05/09/2027.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_PARTICULAR",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "O presente mandato é válido pelo prazo de 1 (um) ano, contado da data de sua assinatura.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1810,
+         "fim": 1898
+        }
+       ],
+       "caminho": "POA_PF_PARTICULAR"
+      },
+      {
+       "codigo": "FORMA_PARTICULAR",
+       "severidade": "bloqueio",
+       "titulo": "Procuração particular com firma reconhecida",
+       "detalhe": "O DETRAN-CE só aceita procurador por instrumento de procuração PÚBLICA e específica para o ato. (Civilmente o instrumento particular é válido; a exigência é do órgão.)",
+       "fundamento": [
+        "DETRAN-CE (serviço de transferência)",
+        "CC art. 654, §2º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_PARTICULAR",
+         "doc_titulo": "Procuração (2026)",
+         "trecho": "OUTORGANTE: FRANCISCO ERIVAN CAVALCANTE, brasileiro, casado, comerciante, portador da cédula de identidade RG nº 25363612 SSP/CE, inscrito no CPF sob o nº 812.329.658-47, residente e domiciliado na Rua das Carnaúbas, nº 712, Jurema, Caucaia/CE.",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 36,
+         "fim": 280
+        }
+       ],
+       "caminho": "POA_PF_PARTICULAR"
+      }
+     ],
+     "precondicoes": []
+    }
+   ],
+   "caminho_escolhido": null,
+   "faltantes": [
+    {
+     "alternativa": "contrato:81232965847",
+     "via": "contrato",
+     "descricao": "Assinatura do próprio proprietário (pessoa física)",
+     "pessoas": [
+      "81232965847"
+     ],
+     "faltam": [
+      "81232965847"
+     ],
+     "faltam_nomes": [
+      "Francisco Erivan Cavalcante"
+     ],
+     "pessoas_nomes": [
+      "Francisco Erivan Cavalcante"
+     ]
+    }
+   ],
+   "achados": [
+    {
+     "codigo": "TITULARIDADE_BASE",
+     "severidade": "ok",
+     "titulo": "Proprietário conferido na base veicular",
+     "detalhe": "Pela placa/RENAVAM, o veículo está em nome de Francisco Erivan Cavalcante.",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "TITULAR#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "TITULAR",
+      "doc_titulo": "Base veicular (simulada)",
+      "trecho": "FRANCISCO ERIVAN CAVALCANTE — CPF 812.329.658-47",
+      "clausula": "titularidade",
+      "ancoragem": 100.0,
+      "pagina": null,
+      "inicio": null,
+      "fim": null
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Francisco Erivan Cavalcante"
+     ],
+     "cargo": null,
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": true
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-10-16",
+    "atos": [
+     {
+      "doc": "TITULAR",
+      "titulo": "Titularidade (pessoa física)",
+      "efeito": "1900-01-01"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "81232965847",
+      "nome": "Francisco Erivan Cavalcante",
+      "cargo": "titular (pessoa física)",
+      "doc": "TITULAR"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "81232965847",
+      "nome": "Francisco Erivan Cavalcante",
+      "percentual": 100.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "Francisco Erivan Cavalcante",
+      "sub": ""
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "FIAT/STRADA WORKING 1.4",
+      "sub": "WPL2U01"
+     },
+     {
+      "id": "81232965847",
+      "tipo": "pessoa",
+      "rotulo": "Francisco Erivan Cavalcante",
+      "papeis": [
+       "sócio 100%",
+       "titular (pessoa física)",
+       "outorgante (pessoa física)"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "70780425650",
+      "tipo": "pessoa",
+      "rotulo": "Edvaldo Pinheiro Neto",
+      "papeis": [
+       "procurador"
+      ],
+      "assinante": true
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "alerta"
+     },
+     {
+      "de": "81232965847",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "100%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "81232965847",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "TITULAR"
+     },
+     {
+      "de": "81232965847",
+      "para": "70780425650",
+      "tipo": "procuracao",
+      "status": "invalido",
+      "doc": "POA_PF_PARTICULAR",
+      "rotulo": "procuração 05/09/2026 · Procuração particular com firma reconhecida",
+      "motivo": "Procuração particular com firma reconhecida"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "1900-01-01",
+     "tipo": "ato",
+     "titulo": "Titularidade (pessoa física)",
+     "doc": "TITULAR",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-09-05",
+     "tipo": "procuracao",
+     "titulo": "Procuração para Edvaldo Pinheiro Neto",
+     "doc": "POA_PF_PARTICULAR",
+     "detalhe": "particular"
+    },
+    {
+     "data": "2026-10-16",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "valor não informado"
+    },
+    {
+     "data": "2027-09-05",
+     "tipo": "vencimento",
+     "titulo": "Vence a procuração de Edvaldo Pinheiro Neto",
+     "doc": "POA_PF_PARTICULAR",
+     "detalhe": ""
+    }
+   ],
+   "pessoas": {
+    "81232965847": {
+     "nome": "Francisco Erivan Cavalcante",
+     "cpf": "81232965847"
+    },
+    "70780425650": {
+     "nome": "Edvaldo Pinheiro Neto",
+     "cpf": "70780425650"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "não comprovada",
+    "outorgante": {
+     "nome": "Francisco Erivan Cavalcante",
+     "cnpj": null,
+     "tipo": "PF",
+     "cpf": "81232965847",
+     "documento": "81232965847",
+     "atos_vigentes": [],
+     "titularidade": "Base veicular (simulada)"
+    },
+    "outorgado": [
+     {
+      "nome": "Edvaldo Pinheiro Neto",
+      "cpf": "707.804.256-50",
+      "identificacao": "CPF",
+      "qualidade": "procurador(a) pela procuração de 05/09/2026"
+     }
+    ],
+    "poderes_conferidos": [
+     "Procuração particular de 05/09/2026 (Iracaema – 4º Tabelionato de Notas de Fortaleza (fictício)): não comprova poderes (Procuração particular com firma reconhecida)."
+    ],
+    "prazo_validade": [
+     "—"
+    ],
+    "revogacao": [
+     "—"
+    ],
+    "fontes": [],
+    "documentos_verificaveis": [
+     {
+      "id": "POA_PF_PARTICULAR",
+      "titulo": "Procuração (2026)",
+      "arquivo": "POA_PF_PARTICULAR.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "POA_PF_PARTICULAR",
+     "nome": "POA_PF_PARTICULAR.pdf",
+     "tipo": "procuracao",
+     "titulo": "Procuração (2026)",
+     "data": "2026-09-05",
+     "paginas": [
+      "PROCURAÇÃO\n(INSTRUMENTO PARTICULAR)\nOUTORGANTE: FRANCISCO ERIVAN CAVALCANTE, brasileiro, casado, comerciante,\nportador da cédula de identidade RG nº 25363612 SSP/CE, inscrito no CPF sob o nº\n812.329.658-47, residente e domiciliado na Rua das Carnaúbas, nº 712, Jurema, Caucaia/CE.\nOUTORGADO: EDVALDO PINHEIRO NETO, brasileiro, casado, corretor de veículos, portador\nda cédula de identidade RG nº 59050583 SSP/CE, inscrito no CPF sob o nº 707.804.256-50,\nresidente e domiciliado na Rua das Acácias, nº 233, Jereissati I, Maracanaú/CE.\nPODERES: Pelo presente instrumento particular de mandato, o outorgante acima qualificado, em\nnome próprio, nomeia e constitui seu bastante procurador o outorgado, a quem confere poderes\nespeciais e expressos para vender, ceder, transferir ou de qualquer forma alienar, a quem e pelo\npreço que convencionar, o veículo FIAT/STRADA WORKING 1.4, espécie/tipo CARGA/\nCAMIONETA, combustível álcool/gasolina, ano/modelo 2019/2020, cor branca, placa WPL2U01,\nRENAVAM 09290055737, chassi 9BDJ0KZYJ5CB2AAAB, de propriedade do outorgante,\najustando cláusulas e condições; assinar a Autorização para Transferência de Propriedade do Veículo\n(ATPV-e), inclusive em meio eletrônico, bem como o contrato e o recibo de compra e venda; receber\no preço e dar quitação; entregar ao adquirente o veículo, suas chaves e seus documentos; requerer e\nassinar o que for necessário perante o DETRAN, inclusive vistoria, consulta de débitos, segunda via\nde documentos e comunicação de venda do referido veículo; recolher taxas, tributos, licenciamento e\nmultas que eventualmente recaiam sobre ele; assinar declarações, requerimentos e termos de\nresponsabilidade; e praticar, enfim, todos os demais atos necessários ao bom e fiel cumprimento\ndeste mandato, que o outorgante dá por firme e valioso.\nPRAZO: O presente mandato é válido pelo prazo de 1 (um) ano, contado da data de sua assinatura.\nDECLARAÇÃO: O outorgante declara que o veículo acima descrito encontra-se registrado em seu\nnome perante o DETRAN-CE e que assina este instrumento de livre e espontânea vontade,\nresponsabilizando-se pela veracidade das informações nele contidas.\nFortaleza/CE, 5 de setembro de 2026.\n______________________________________\nFRANCISCO ERIVAN CAVALCANTE\nCPF nº 812.329.658-47\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nRECONHECIMENTO DE FIRMA POR AUTENTICIDADE\nReconheço, por autenticidade, a firma de FRANCISCO ERIVAN CAVALCANTE, portador do RG\nnº 25363612 SSP/CE e inscrito no CPF sob o nº 812.329.658-47, aposta em minha presença neste\ndocumento, à vista do documento de identidade original apresentado e conforme ficha-padrão\narquivada nesta serventia, do que dou fé.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "Fortaleza/CE, 5 de setembro de 2026. Em testemunho da verdade.\nRogério Lustosa Maia – Escrevente Notarial\nSelo Digital: IRA-AUT-2026-8D27B5 · Emolumentos: R$ 9,85\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "8ba5b3ddaddf6b582fc0603bf42b8b9a1260fe89786c5c281371937ede88a7df",
+     "leitura": {
+      "tarefas": {
+       "procuracao": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 53.2,
+        "tokens_saida": 1074,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "llamacpp",
+    "modelo": "qwen3.8-27b",
+    "politica": "DETRAN-CE"
+   },
+   "lado": "vendedor",
+   "pendencias": []
+  }
+ },
+ "geral": {
+  "veredito": "NAO_PODE",
+  "faixa": "VERMELHO",
+  "indice": 0.0,
+  "resumo": "Vendedor: Os assinantes informados não bastam. Quem pode assinar: Francisco Erivan Cavalcante. O caminho por procuração particular de 05/09/2026 (iracaema – 4º tabelionato de notas de fortaleza (fictício)) não vale: procuração particular com firma reconhecida.",
+  "motivos_faixa": [
+   "Vendedor — índice 0 ≤ limiar 15"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "FIAT/STRADA WORKING 1.4",
+   "placa": "WPL2U01",
+   "renavam": "09290055737",
+   "chassi": "9BDJ0KZYJ5CB2AAAB"
+  },
+  "data_venda": "2026-10-16",
+  "valor": null,
+  "vendedor": {
+   "tipo": "PF",
+   "nome": "FRANCISCO ERIVAN CAVALCANTE",
+   "documento": "812.329.658-47",
+   "assinantes": [
+    {
+     "nome": "CPF 707.804.256-50",
+     "cpf": "707.804.256-50"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": null,
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "consulta por CPF",
+  "alvo": "vendedor",
+  "titular_fonte": "base veicular"
+ },
+ "hash_entrada": "8008b03557c852f4b5673ac1bef7fac9911db1ef3a41bc90d52a933ea7429705"
+}

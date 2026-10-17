@@ -1,0 +1,46 @@
+{
+  "caso": "A08",
+  "titulo": "Cooperativa: Diretor-Presidente e Diretor Financeiro assinam",
+  "categoria": "tipos",
+  "objetivo": "Estatuto sem nomes + ata da AGO elegendo a diretoria; restrição da Assembleia só para imóveis.",
+  "validacao_cega": false,
+  "lote": "atpv",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "vendedor": {
+      "veredito": "PODE",
+      "faixas_aceitaveis": [
+        "VERDE"
+      ],
+      "conjuntos_minimos": [
+        [
+          "MANOEL",
+          "EXPEDITO"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "554.581.374-85",
+          "479.724.509-35"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Manoel Messias Freitas",
+          "Expedito Lima Cordeiro"
+        ]
+      ]
+    }
+  }
+}

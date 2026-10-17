@@ -1,0 +1,26 @@
+{
+  "caso": "C32",
+  "vendedor": {
+    "razao_social": "DISTRIBUIDORA ARACATI S.A.",
+    "cnpj": "74.535.813/0001-12"
+  },
+  "veiculo": {
+    "placa": "SAM6R05",
+    "renavam": "09048801562",
+    "chassi": "9BWT1WTAPPDERMD06",
+    "descricao": "VW/CONSTELLATION 24.280"
+  },
+  "data_venda": "2026-09-23",
+  "valor": 380000,
+  "assinantes": [
+    {
+      "nome": "Marcelo Augusto Feitosa",
+      "cpf": "589.831.948-47"
+    }
+  ],
+  "comprador": {
+    "nome": "Jefferson Lucas Araújo",
+    "cidade": "Caucaia/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

@@ -1,0 +1,42 @@
+{
+  "caso": "H06",
+  "titulo": "Procuração conjunta, veículo identificado, no prazo",
+  "categoria": "procuracao",
+  "objetivo": "Outorga correta pelos dois administradores.",
+  "validacao_cega": true,
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": [
+      [
+        "BRENO",
+        "CLARICE"
+      ],
+      [
+        "NILTON"
+      ]
+    ],
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": [
+      [
+        "251.377.904-51",
+        "351.292.212-06"
+      ],
+      [
+        "869.934.673-56"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Breno Sampaio Tavares",
+        "Clarice Tavares Mourão"
+      ],
+      [
+        "Nilton Arruda Coelho"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

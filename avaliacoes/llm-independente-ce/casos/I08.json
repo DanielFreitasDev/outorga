@@ -1,0 +1,730 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T07:08:11",
+ "pedido": {
+  "veiculo": {
+   "descricao": "FIAT/MOBI",
+   "placa": "DMK8F76",
+   "renavam": "08933492230",
+   "chassi": "9BD9ZH40S0D8GKXG6"
+  },
+  "data_venda": "2026-09-01",
+  "valor": 52000.0,
+  "assinantes": [
+   {
+    "nome": "THIAGO ALBUQUERQUE MENDONÇA",
+    "cpf": "906.165.811-06"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "LARISSA FAÇANHA GURGEL",
+  "vendedor_cnpj": "81.193.702/0001-30"
+ },
+ "empresa": {
+  "razao_social": "NEXUM SOLUÇÕES EM TECNOLOGIA LTDA",
+  "cnpj": "81.193.702/0001-30",
+  "tipo": "SLU",
+  "objeto": "desenvolvimento e o licenciamento de programas de computador, a consultoria em tecnologia da informação, o suporte técnico e a manutenção de sistemas, e o tratamento de dados e hospedagem na internet",
+  "comercializa_veiculos": false
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 0.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 1,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 0 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: Renata Siqueira Bandeira. Regra aplicável: alienação de veículos (Cláusula Sétima).",
+ "assinantes": [
+  {
+   "informado": "THIAGO ALBUQUERQUE MENDONÇA",
+   "cpf": "906.165.811-06",
+   "chave": "90616581106",
+   "nome": "Thiago Albuquerque Mendonça",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:54117876961",
+   "pessoas": [
+    {
+     "chave": "54117876961",
+     "nome": "Renata Siqueira Bandeira"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "alienação de veículos — Cláusula Sétima",
+   "cadeia": [
+    "ATO_CONSTITUTIVO_SLU_2024"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [
+  {
+   "id": "PROCURACAO_PARTICULAR_2025_11_03:bloqueada",
+   "pessoas": [
+    {
+     "chave": "52238439919",
+     "nome": "Lívia Carvalho Monteiro"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração particular de 03/11/2025",
+   "cadeia": [
+    "PROCURACAO_PARTICULAR_2025_11_03"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PJ",
+     "severidade": "ok",
+     "titulo": "Outorgada pela própria empresa",
+     "detalhe": "A outorgante é a empresa, representada por Renata Siqueira Bandeira.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PARTICULAR_2025_11_03",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "OUTORGANTE: NEXUM SOLUÇÕES EM TECNOLOGIA LTDA, sociedade limitada unipessoal, inscrita no CNPJ sob o nº 81.193.702/0001-30",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 11,
+       "fim": 133
+      }
+     ],
+     "caminho": "PROCURACAO_PARTICULAR_2025_11_03"
+    },
+    {
+     "codigo": "OUTORGA_COM_PODERES",
+     "severidade": "ok",
+     "titulo": "Quem outorgou tinha poder",
+     "detalhe": "Em 03/11/2025, Renata Siqueira Bandeira podia representar a empresa nesse ato.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PARTICULAR_2025_11_03",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "OUTORGANTE: NEXUM SOLUÇÕES EM TECNOLOGIA LTDA, sociedade limitada unipessoal, inscrita no CNPJ sob o nº 81.193.702/0001-30",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 11,
+       "fim": 133
+      },
+      {
+       "doc_id": "ATO_CONSTITUTIVO_SLU_2024",
+       "doc_titulo": "Ato Constitutivo (SLU) (2024)",
+       "trecho": "à qual compete, com exclusividade, o uso da denominação social e a representação da sociedade, ativa e passivamente, em juízo ou fora dele, podendo praticar todos os atos de gestão, adquirir, alienar e onerar bens móveis, inclusive veículos",
+       "clausula": "Cláusula Sétima",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 2483,
+       "fim": 2723
+      }
+     ],
+     "caminho": "PROCURACAO_PARTICULAR_2025_11_03"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar o ATPV.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PARTICULAR_2025_11_03",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "para, em nome da outorgante, vender, a quem convier e pelo preço que ajustar, o veículo de sua propriedade marca/modelo FIAT/MOBI, placa DMK8F76, RENAVAM 08933492230, chassi 9BD9ZH40S0D8GKXG6, podendo assinar como vendedora a Autorização para Transferência de Propriedade do Veículo (ATPV-e), receber o preço, dar quitação e representar a outorgante perante o DETRAN/CE em todos os atos necessários à transferência do veículo.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 856,
+       "fim": 1282
+      }
+     ],
+     "caminho": "PROCURACAO_PARTICULAR_2025_11_03"
+    },
+    {
+     "codigo": "VEICULO_ABRANGIDO",
+     "severidade": "ok",
+     "titulo": "Veículo identificado na procuração",
+     "detalhe": "A procuração identifica exatamente este veículo.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PARTICULAR_2025_11_03",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "para, em nome da outorgante, vender, a quem convier e pelo preço que ajustar, o veículo de sua propriedade marca/modelo FIAT/MOBI, placa DMK8F76, RENAVAM 08933492230, chassi 9BD9ZH40S0D8GKXG6, podendo assinar como vendedora a Autorização para Transferência de Propriedade do Veículo (ATPV-e), receber o preço, dar quitação e representar a outorgante perante o DETRAN/CE em todos os atos necessários à transferência do veículo.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 856,
+       "fim": 1282
+      }
+     ],
+     "caminho": "PROCURACAO_PARTICULAR_2025_11_03"
+    },
+    {
+     "codigo": "PROCURACAO_VENCIDA",
+     "severidade": "bloqueio",
+     "titulo": "Procuração vencida",
+     "detalhe": "Válida até 03/05/2026; a venda é em 01/09/2026.",
+     "fundamento": [
+      "CC art. 682, IV"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PARTICULAR_2025_11_03",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "a presente procuração vigorará por 6 (seis) meses, contados da data de sua assinatura, extinguindo-se automaticamente ao término desse prazo, independentemente de notificação.",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1290,
+       "fim": 1465
+      }
+     ],
+     "caminho": "PROCURACAO_PARTICULAR_2025_11_03"
+    },
+    {
+     "codigo": "FORMA_PARTICULAR",
+     "severidade": "bloqueio",
+     "titulo": "Procuração particular com firma reconhecida",
+     "detalhe": "O DETRAN-CE só aceita procurador por instrumento de procuração PÚBLICA e específica para o ato. (Civilmente o instrumento particular é válido; a exigência é do órgão.)",
+     "fundamento": [
+      "DETRAN-CE (serviço de transferência)",
+      "CC art. 654, §2º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "PROCURACAO_PARTICULAR_2025_11_03",
+       "doc_titulo": "Procuração (2025)",
+       "trecho": "OUTORGANTE: NEXUM SOLUÇÕES EM TECNOLOGIA LTDA, sociedade limitada unipessoal, inscrita no CNPJ sob o nº 81.193.702/0001-30",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 11,
+       "fim": 133
+      }
+     ],
+     "caminho": "PROCURACAO_PARTICULAR_2025_11_03"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "contrato:54117876961",
+   "via": "contrato",
+   "descricao": "alienação de veículos — Cláusula Sétima",
+   "pessoas": [
+    "54117876961"
+   ],
+   "faltam": [
+    "54117876961"
+   ],
+   "faltam_nomes": [
+    "Renata Siqueira Bandeira"
+   ],
+   "pessoas_nomes": [
+    "Renata Siqueira Bandeira"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: NEXUM SOLUÇÕES EM TECNOLOGIA LTDA.",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "DMK8F76",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "ATO_CONSTITUTIVO_SLU_2024#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "ATO_CONSTITUTIVO_SLU_2024",
+    "doc_titulo": "Ato Constitutivo (SLU) (2024)",
+    "trecho": "A administração da sociedade será exercida pela administradora não sócia RENATA SIQUEIRA BANDEIRA",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 2022,
+    "fim": 2119
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Renata Siqueira Bandeira"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "ATO_CONSTITUTIVO_SLU_2024#R2",
+   "escopo": "alienacao_veiculos",
+   "aplicavel": true,
+   "motivo": "alienação de veículos",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "ATO_CONSTITUTIVO_SLU_2024",
+    "doc_titulo": "Ato Constitutivo (SLU) (2024)",
+    "trecho": "à qual compete, com exclusividade, o uso da denominação social e a representação da sociedade, ativa e passivamente, em juízo ou fora dele, podendo praticar todos os atos de gestão, adquirir, alienar e onerar bens móveis, inclusive veículos",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2483,
+    "fim": 2723
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Renata Siqueira Bandeira"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": true
+  },
+  {
+   "regra": "ATO_CONSTITUTIVO_SLU_2024#R3",
+   "escopo": "outorgar_procuracoes",
+   "aplicavel": false,
+   "motivo": "regula a outorga de procurações (usada para validar procurações)",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "ATO_CONSTITUTIVO_SLU_2024",
+    "doc_titulo": "Ato Constitutivo (SLU) (2024)",
+    "trecho": "abrir e movimentar contas bancárias e constituir procuradores em nome da sociedade, especificando nos instrumentos os atos autorizados e o respectivo prazo",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2725,
+    "fim": 2880
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Renata Siqueira Bandeira"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "ATO_CONSTITUTIVO_SLU_2024#R4",
+   "escopo": "obrigacoes_garantias",
+   "aplicavel": false,
+   "motivo": "trata de avais, fianças e garantias",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "ATO_CONSTITUTIVO_SLU_2024",
+    "doc_titulo": "Ato Constitutivo (SLU) (2024)",
+    "trecho": "É vedado o uso da denominação social em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+    "clausula": "Cláusula Sétima, Parágrafo 2º",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3104,
+    "fim": 3235
+   },
+   "modo": "nao_especificado",
+   "pessoas": [
+    "Renata Siqueira Bandeira"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-09-01",
+  "atos": [
+   {
+    "doc": "ATO_CONSTITUTIVO_SLU_2024",
+    "titulo": "Ato Constitutivo (SLU) (2024)",
+    "efeito": "2024-02-05"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "54117876961",
+    "nome": "Renata Siqueira Bandeira",
+    "cargo": "administradora",
+    "doc": "ATO_CONSTITUTIVO_SLU_2024"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "90616581106",
+    "nome": "Thiago Albuquerque Mendonça",
+    "percentual": 100.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "NEXUM SOLUÇÕES EM TECNOLOGIA LTDA",
+    "sub": "81.193.702/0001-30"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "FIAT/MOBI",
+    "sub": "DMK8F76"
+   },
+   {
+    "id": "90616581106",
+    "tipo": "pessoa",
+    "rotulo": "Thiago Albuquerque Mendonça",
+    "papeis": [
+     "sócio 100%"
+    ],
+    "assinante": true
+   },
+   {
+    "id": "54117876961",
+    "tipo": "pessoa",
+    "rotulo": "Renata Siqueira Bandeira",
+    "papeis": [
+     "administradora"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "52238439919",
+    "tipo": "pessoa",
+    "rotulo": "Lívia Carvalho Monteiro",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": false
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "90616581106",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "100%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "54117876961",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "ATO_CONSTITUTIVO_SLU_2024"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "52238439919",
+    "tipo": "procuracao",
+    "status": "invalido",
+    "doc": "PROCURACAO_PARTICULAR_2025_11_03",
+    "rotulo": "procuração 03/11/2025 · Procuração vencida",
+    "motivo": "Procuração vencida"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2024-02-05",
+   "tipo": "ato",
+   "titulo": "Ato Constitutivo (SLU) (2024)",
+   "doc": "ATO_CONSTITUTIVO_SLU_2024",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2025-11-03",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Lívia Carvalho Monteiro",
+   "doc": "PROCURACAO_PARTICULAR_2025_11_03",
+   "detalhe": "particular"
+  },
+  {
+   "data": "2026-05-03",
+   "tipo": "vencimento",
+   "titulo": "Vence a procuração de Lívia Carvalho Monteiro",
+   "doc": "PROCURACAO_PARTICULAR_2025_11_03",
+   "detalhe": ""
+  },
+  {
+   "data": "2026-09-01",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 52.000,00"
+  },
+  {
+   "data": "2026-09-08",
+   "tipo": "ato",
+   "titulo": "Alteração e Consolidação do Contrato Social (2026)",
+   "doc": "PRIMEIRA_ALTERACAO_CONSOLIDACAO_2026_09_08",
+   "detalhe": "altera a administração"
+  }
+ ],
+ "pessoas": {
+  "90616581106": {
+   "nome": "Thiago Albuquerque Mendonça",
+   "cpf": "90616581106"
+  },
+  "54117876961": {
+   "nome": "Renata Siqueira Bandeira",
+   "cpf": "54117876961"
+  },
+  "52238439919": {
+   "nome": "Lívia Carvalho Monteiro",
+   "cpf": "52238439919"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "NEXUM SOLUÇÕES EM TECNOLOGIA LTDA",
+   "cnpj": "81.193.702/0001-30",
+   "tipo": "SLU",
+   "atos_vigentes": [
+    {
+     "titulo": "Ato Constitutivo (SLU) (2024)",
+     "doc": "ATO_CONSTITUTIVO_SLU_2024",
+     "efeito": "2024-02-05"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Thiago Albuquerque Mendonça",
+    "cpf": "906.165.811-06",
+    "identificacao": "CPF",
+    "qualidade": "administrador"
+   }
+  ],
+  "poderes_conferidos": [
+   "Ato Constitutivo (SLU) (2024), Cláusula Sétima: para este veículo, exige Renata Siqueira Bandeira.",
+   "Assinantes informados (Thiago Albuquerque Mendonça) não atendem a essa exigência."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [
+   {
+    "doc_id": "ATO_CONSTITUTIVO_SLU_2024",
+    "doc_titulo": "Ato Constitutivo (SLU) (2024)",
+    "trecho": "à qual compete, com exclusividade, o uso da denominação social e a representação da sociedade, ativa e passivamente, em juízo ou fora dele, podendo praticar todos os atos de gestão, adquirir, alienar e onerar bens móveis, inclusive veículos",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2483,
+    "fim": 2723
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "ATO_CONSTITUTIVO_SLU_2024",
+    "titulo": "Ato Constitutivo (SLU) (2024)",
+    "arquivo": "ATO_CONSTITUTIVO_SLU_2024.pdf"
+   },
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "PRIMEIRA_ALTERACAO_CONSOLIDACAO_2026_09_08",
+    "titulo": "Alteração e Consolidação do Contrato Social (2026)",
+    "arquivo": "PRIMEIRA_ALTERACAO_CONSOLIDACAO_2026_09_08.pdf"
+   },
+   {
+    "id": "PROCURACAO_PARTICULAR_2025_11_03",
+    "titulo": "Procuração (2025)",
+    "arquivo": "PROCURACAO_PARTICULAR_2025_11_03.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "ATO_CONSTITUTIVO_SLU_2024",
+   "nome": "ATO_CONSTITUTIVO_SLU_2024.pdf",
+   "tipo": "ato_constitutivo_slu",
+   "titulo": "Ato Constitutivo (SLU) (2024)",
+   "data": "2024-02-05",
+   "paginas": [
+    "ATO CONSTITUTIVO DE SOCIEDADE LIMITADA UNIPESSOAL\nNEXUM SOLUÇÕES EM TECNOLOGIA LTDA\nTHIAGO ALBUQUERQUE MENDONÇA, brasileiro, casado sob o regime da separação total de\nbens, analista de sistemas, portador da cédula de identidade RG nº 2005678901234 SSP/CE, inscrito\nno CPF sob o nº 906.165.811-06, residente e domiciliado na Rua Andrade Furtado, nº 1.211,\napartamento 1.703, Cocó, Fortaleza/CE, CEP 60192-070, resolve constituir, como sócio único, uma\nsociedade limitada unipessoal, nos termos do art. 1.052, §§ 1º e 2º, do Código Civil, que se regerá\npelas cláusulas seguintes.\nCLÁUSULA PRIMEIRA – DA DENOMINAÇÃO E SEDE\nA sociedade girará sob a denominação NEXUM SOLUÇÕES EM TECNOLOGIA LTDA, com sede\nna Avenida Eusébio de Queiroz, nº 3.300, Sala 412, Centro, Eusébio/CE, CEP 61760-000.\nCLÁUSULA SEGUNDA – DO OBJETO\nA sociedade terá por objeto o desenvolvimento e o licenciamento de programas de computador, a\nconsultoria em tecnologia da informação, o suporte técnico e a manutenção de sistemas, e o\ntratamento de dados e hospedagem na internet.\nCLÁUSULA TERCEIRA – DO INÍCIO E DO PRAZO\nA sociedade iniciará suas atividades na data do arquivamento deste ato e terá prazo indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 150.000,00 (cento e cinquenta mil reais), dividido em 150.000 (cento e\ncinquenta mil) quotas de R$ 1,00 (um real) cada, totalmente subscritas e integralizadas neste ato, em\nmoeda corrente, pelo sócio único:\nSócio\nQuotas\nValor (R$)\nParticipação\nTHIAGO ALBUQUERQUE MENDONÇA\n150.000\n150.000,00\n100%\nTotal\n150.000\n150.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE\nA responsabilidade do sócio único é restrita ao valor de suas quotas, nos termos do art. 1.052 do\nCódigo Civil.\nCLÁUSULA SEXTA – DAS DECISÕES DO SÓCIO ÚNICO\nAs matérias que a lei ou este ato reservam à deliberação dos sócios serão decididas pelo sócio único,\npor escrito, em documento que será levado a arquivamento sempre que destinado a produzir efeitos\nperante terceiros.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade será exercida pela administradora não sócia RENATA SIQUEIRA\nBANDEIRA, brasileira, solteira, administradora de empresas, portadora da cédula de identidade RG\nnº 2008765432109 SSP/CE, inscrita no CPF sob o nº 541.178.769-61, residente e domiciliada na\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "Rua Quinze de Novembro, nº 640, Centro, Eusébio/CE, CEP 61760-000, designada neste ato por\nprazo indeterminado, à qual compete, com exclusividade, o uso da denominação social e a\nrepresentação da sociedade, ativa e passivamente, em juízo ou fora dele, podendo praticar todos os\natos de gestão, adquirir, alienar e onerar bens móveis, inclusive veículos, abrir e movimentar contas\nbancárias e constituir procuradores em nome da sociedade, especificando nos instrumentos os atos\nautorizados e o respectivo prazo.\n§ 1º A administradora declara, sob as penas da lei, que não está impedida de exercer a administração\nda sociedade por lei especial ou em virtude de condenação criminal, e aceita a designação, tomando\nposse neste ato.\n§ 2º É vedado o uso da denominação social em atividades estranhas ao objeto social, especialmente\nem avais, fianças e endossos de favor.\nCLÁUSULA OITAVA – DA REMUNERAÇÃO DA ADMINISTRAÇÃO\nA administradora fará jus a pró-labore mensal fixado por decisão escrita do sócio único.\nCLÁUSULA NONA – DO EXERCÍCIO SOCIAL\nO exercício social coincide com o ano civil. Ao seu término serão elaborados o inventário, o balanço\npatrimonial e o balanço de resultado econômico, cabendo ao sócio único os lucros ou perdas\napurados.\nCLÁUSULA DÉCIMA – DO FALECIMENTO OU INCAPACIDADE DO SÓCIO ÚNICO\nEm caso de falecimento ou incapacidade do sócio único, a sociedade prosseguirá com seus herdeiros\nou representante legal, salvo deliberação em contrário destes.\nCLÁUSULA DÉCIMA PRIMEIRA – DO ENQUADRAMENTO\nO sócio único declara que a sociedade se enquadra como microempresa, nos termos da Lei\nComplementar nº 123/2006, e que não se enquadra em qualquer das hipóteses de exclusão.\nCLÁUSULA DÉCIMA SEGUNDA – DO FORO\nFica eleito o foro da Comarca de Eusébio/CE para dirimir as questões oriundas deste ato\nconstitutivo.\nEusébio/CE, 5 de fevereiro de 2024.\nTHIAGO ALBUQUERQUE MENDONÇA – Sócio único\nRENATA SIQUEIRA BANDEIRA – Administradora, em aceitação\nVisto: BRUNA LEITÃO VASCONCELOS – OAB/CE nº 36.402\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 20/02/2024 sob o nº 6352290\nProtocolo: 24/018834-2 | NIRE: 23201845672\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "Empresa: NEXUM SOLUÇÕES EM TECNOLOGIA LTDA\nAutenticação: A5C0E7B39D2F1468\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "533e763643b66ea380f62f678899d36f0b05bc3c8c6aa063638668158f40ea4f",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 28.6,
+      "tokens_saida": 501,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 29.0,
+      "tokens_saida": 976,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n08933492230\nPLACA\nDMK8F76\nEXERCÍCIO\n2026\nMARCA / MODELO / VERSÃO\nFIAT/MOBI\nCHASSI\n9BD9ZH40S0D8GKXG6\nNOME\nNEXUM SOLUÇÕES EM TECNOLOGIA LTDA\nCPF / CNPJ\n81.193.702/0001-30\nDATA\n15/01/2026\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "a927b24b57d2524ebcdc973be350aaf9b2d4d4fb7b31838d0f93c08c1bda41d2",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "PRIMEIRA_ALTERACAO_CONSOLIDACAO_2026_09_08",
+   "nome": "PRIMEIRA_ALTERACAO_CONSOLIDACAO_2026_09_08.pdf",
+   "tipo": "contrato_consolidado",
+   "titulo": "Alteração e Consolidação do Contrato Social (2026)",
+   "data": "2026-09-08",
+   "paginas": [
+    "PRIMEIRA ALTERAÇÃO E CONSOLIDAÇÃO DO ATO CONSTITUTIVO DA NEXUM\nSOLUÇÕES EM TECNOLOGIA LTDA\nCNPJ nº 81.193.702/0001-30 – NIRE 23201845672\nTHIAGO ALBUQUERQUE MENDONÇA, brasileiro, casado sob o regime da separação total de\nbens, analista de sistemas, portador da cédula de identidade RG nº 2005678901234 SSP/CE, inscrito\nno CPF sob o nº 906.165.811-06, residente e domiciliado na Rua Andrade Furtado, nº 1.211,\napartamento 1.703, Cocó, Fortaleza/CE, CEP 60192-070, sócio único da sociedade limitada\nunipessoal NEXUM SOLUÇÕES EM TECNOLOGIA LTDA, com sede na Avenida Eusébio de\nQueiroz, nº 3.300, Sala 412, Centro, Eusébio/CE, CEP 61760-000, inscrita no CNPJ sob o nº\n81.193.702/0001-30, cujo ato constitutivo se encontra arquivado na JUCEC sob o nº 6352290, em\n20/02/2024, resolve alterar e consolidar o ato constitutivo, nos termos seguintes.\nI – DA ALTERAÇÃO\nCLÁUSULA PRIMEIRA – DA DESIGNAÇÃO DE ADMINISTRADOR\nO sócio único passa a exercer também a administração da sociedade, isoladamente e por prazo\nindeterminado, em igualdade de poderes com a administradora RENATA SIQUEIRA BANDEIRA,\ncuja designação fica mantida. O administrador ora designado declara, sob as penas da lei, não estar\nimpedido de exercer a administração e toma posse neste ato.\nCLÁUSULA SEGUNDA – DA CONSOLIDAÇÃO\nEm razão da alteração acima, o ato constitutivo passa a vigorar com a seguinte redação consolidada,\npermanecendo inalteradas, quanto ao conteúdo, as cláusulas não modificadas.\nII – ATO CONSTITUTIVO CONSOLIDADO\nCLÁUSULA PRIMEIRA – DA DENOMINAÇÃO E SEDE\nA sociedade gira sob a denominação NEXUM SOLUÇÕES EM TECNOLOGIA LTDA, com sede\nna Avenida Eusébio de Queiroz, nº 3.300, Sala 412, Centro, Eusébio/CE, CEP 61760-000.\nCLÁUSULA SEGUNDA – DO OBJETO\nA sociedade tem por objeto o desenvolvimento e o licenciamento de programas de computador, a\nconsultoria em tecnologia da informação, o suporte técnico e a manutenção de sistemas, e o\ntratamento de dados e hospedagem na internet.\nCLÁUSULA TERCEIRA – DO PRAZO\nA sociedade iniciou suas atividades em 20 de fevereiro de 2024 e tem prazo indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 150.000,00 (cento e cinquenta mil reais), dividido em 150.000 (cento e\ncinquenta mil) quotas de R$ 1,00 (um real) cada, totalmente integralizadas e pertencentes ao sócio\núnico THIAGO ALBUQUERQUE MENDONÇA.\nCLÁUSULA QUINTA – DA RESPONSABILIDADE\nA responsabilidade do sócio único é restrita ao valor de suas quotas.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "CLÁUSULA SEXTA – DAS DECISÕES DO SÓCIO ÚNICO\nAs matérias que a lei ou este ato reservam à deliberação dos sócios serão decididas pelo sócio único,\npor escrito, em documento que será levado a arquivamento sempre que destinado a produzir efeitos\nperante terceiros.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade será exercida, isoladamente e por prazo indeterminado, pela\nadministradora não sócia RENATA SIQUEIRA BANDEIRA, inscrita no CPF sob o nº\n541.178.769-61, e pelo sócio único THIAGO ALBUQUERQUE MENDONÇA, inscrito no CPF sob\no nº 906.165.811-06, aos quais compete o uso da denominação social e a representação da\nsociedade, ativa e passivamente, em juízo ou fora dele, podendo praticar todos os atos de gestão,\nadquirir, alienar e onerar bens móveis, inclusive veículos, abrir e movimentar contas bancárias e\nconstituir procuradores em nome da sociedade, especificando nos instrumentos os atos autorizados e\no respectivo prazo.\nParágrafo único. É vedado o uso da denominação social em atividades estranhas ao objeto social,\nespecialmente em avais, fianças e endossos de favor.\nCLÁUSULA OITAVA – DA REMUNERAÇÃO DA ADMINISTRAÇÃO\nOs administradores farão jus a pró-labore mensal fixado por decisão escrita do sócio único.\nCLÁUSULA NONA – DO EXERCÍCIO SOCIAL\nO exercício social coincide com o ano civil, com a elaboração, ao seu término, do inventário e dos\nbalanços exigidos por lei.\nCLÁUSULA DÉCIMA – DO FALECIMENTO OU INCAPACIDADE DO SÓCIO ÚNICO\nEm caso de falecimento ou incapacidade do sócio único, a sociedade prosseguirá com seus herdeiros\nou representante legal, salvo deliberação em contrário destes.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FORO\nFica eleito o foro da Comarca de Eusébio/CE para dirimir as questões oriundas deste ato.\nEusébio/CE, 8 de setembro de 2026.\nTHIAGO ALBUQUERQUE MENDONÇA – Sócio único e administrador\nVisto: BRUNA LEITÃO VASCONCELOS – OAB/CE nº 36.402\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 17/09/2026 sob o nº 6689173\nProtocolo: 26/093327-5 | NIRE: 23201845672\nEmpresa: NEXUM SOLUÇÕES EM TECNOLOGIA LTDA\nAutenticação: 3D8F1B6A0C27E594\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "b68b52d8919bbb319d7a6748421869f0ab32fa09f0fdf141c8deb86ef5e6ac23",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 31.8,
+      "tokens_saida": 732,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 36.3,
+      "tokens_saida": 1433,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "PROCURACAO_PARTICULAR_2025_11_03",
+   "nome": "PROCURACAO_PARTICULAR_2025_11_03.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (2025)",
+   "data": "2025-11-03",
+   "paginas": [
+    "PROCURAÇÃO\nOUTORGANTE: NEXUM SOLUÇÕES EM TECNOLOGIA LTDA, sociedade limitada\nunipessoal, inscrita no CNPJ sob o nº 81.193.702/0001-30, NIRE 23201845672, com sede na\nAvenida Eusébio de Queiroz, nº 3.300, Sala 412, Centro, Eusébio/CE, CEP 61760-000, neste ato\nrepresentada por sua administradora RENATA SIQUEIRA BANDEIRA, brasileira, solteira,\nadministradora de empresas, portadora da cédula de identidade RG nº 2008765432109 SSP/CE,\ninscrita no CPF sob o nº 541.178.769-61, nos termos da Cláusula Sétima do ato constitutivo\nregistrado na JUCEC em 20/02/2024 sob o nº 6352290.\nOUTORGADA: LÍVIA CARVALHO MONTEIRO, brasileira, solteira, assistente administrativa,\nportadora da cédula de identidade RG nº 2012345678901 SSP/CE, inscrita no CPF sob o nº\n522.384.399-19, residente e domiciliada na Rua São José, nº 310, Centro, Aquiraz/CE, CEP\n61700-000.\nPODERES: para, em nome da outorgante, vender, a quem convier e pelo preço que ajustar, o\nveículo de sua propriedade marca/modelo FIAT/MOBI, placa DMK8F76, RENAVAM\n08933492230, chassi 9BD9ZH40S0D8GKXG6, podendo assinar como vendedora a Autorização\npara Transferência de Propriedade do Veículo (ATPV-e), receber o preço, dar quitação e representar\na outorgante perante o DETRAN/CE em todos os atos necessários à transferência do veículo.\nPRAZO: a presente procuração vigorará por 6 (seis) meses, contados da data de sua assinatura,\nextinguindo-se automaticamente ao término desse prazo, independentemente de notificação.\nEusébio/CE, 3 de novembro de 2025.\nNEXUM SOLUÇÕES EM TECNOLOGIA LTDA p.p. RENATA SIQUEIRA BANDEIRA –\nAdministradora\nReconhecimento de firma: Reconheço por AUTENTICIDADE a firma de RENATA SIQUEIRA\nBANDEIRA, do que dou fé. Eusébio/CE, 3 de novembro de 2025. CARTÓRIO DO OFÍCIO\nÚNICO DE EUSÉBIO (fictício) – SÔNIA MARIA PESSOA LIMA, Escrevente Autorizada. Selo\nDigital de Fiscalização nº TN-CE-2025-1048821-9A4C.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/1"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "92a11bf243fab12f1242ee5e2b0da3d3f389e3816e88b197251153aaa4f9c356",
+   "leitura": {
+    "tarefas": {
+     "procuracao": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 44.0,
+      "tokens_saida": 852,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "politica": "DETRAN-CE"
+ },
+ "hash_entrada": "5d45ba7e362d7b2365853778860dee573dfc16a5efa690ccd32e5429477bcca1"
+}

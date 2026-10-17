@@ -1,0 +1,87 @@
+{
+  "caso": "P10",
+  "titulo": "Procuração particular com firma reconhecida",
+  "categoria": "pf",
+  "objetivo": "Vale pelo Código Civil; o DETRAN-CE exige pública.",
+  "validacao_cega": false,
+  "lote": "pf",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE",
+      "AMARELO"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_lados": {
+    "vendedor": {
+      "veredito": "PODE",
+      "faixas_aceitaveis": [
+        "VERDE",
+        "AMARELO"
+      ],
+      "conjuntos_minimos": [
+        [
+          "ERIVAN"
+        ],
+        [
+          "EDVALDO"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "812.329.658-47"
+        ],
+        [
+          "707.804.256-50"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Francisco Erivan Cavalcante"
+        ],
+        [
+          "Edvaldo Pinheiro Neto"
+        ]
+      ]
+    }
+  },
+  "esperado_lados_ce": {
+    "vendedor": {
+      "veredito": "NAO_PODE",
+      "faixas_aceitaveis": [
+        "VERMELHO"
+      ],
+      "conjuntos_minimos": [
+        [
+          "ERIVAN"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "812.329.658-47"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Francisco Erivan Cavalcante"
+        ]
+      ]
+    }
+  }
+}

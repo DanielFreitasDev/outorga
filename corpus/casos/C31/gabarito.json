@@ -1,0 +1,31 @@
+{
+  "caso": "C31",
+  "titulo": "Sociedade limitada unipessoal — sócio único assina",
+  "categoria": "estrutura",
+  "objetivo": "SLU: o sócio único administrador assina.",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": [
+      [
+        "RAFAEL"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 1.052, §1º"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "547.517.799-66"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Rafael Nogueira Brito"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

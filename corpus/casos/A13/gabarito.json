@@ -1,0 +1,43 @@
+{
+  "caso": "A13",
+  "titulo": "EIRELI (hoje SLU) vende: o titular assina",
+  "categoria": "tipos",
+  "objetivo": "EIRELI de 2019, transformada em SLU pela Lei 14.195/2021: o titular administrador assina.",
+  "validacao_cega": false,
+  "lote": "atpv",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "vendedor": {
+      "veredito": "PODE",
+      "faixas_aceitaveis": [
+        "VERDE"
+      ],
+      "conjuntos_minimos": [
+        [
+          "WELLINGTON"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "639.494.511-02"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Wellington Oliveira Sá"
+        ]
+      ]
+    }
+  }
+}

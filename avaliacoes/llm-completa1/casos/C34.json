@@ -1,0 +1,330 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T01:03:48",
+ "pedido": {
+  "veiculo": {
+   "descricao": "FORD/CARGO 816 S",
+   "placa": "KEJ8F77",
+   "renavam": "06017967723",
+   "chassi": "9BFAVGJ4NU6KPXLVB"
+  },
+  "data_venda": "2026-09-19",
+  "valor": 175000.0,
+  "assinantes": [
+   {
+    "nome": "Josué Pereira da Silva",
+    "cpf": "914.524.410-30"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "Patrícia Lemos Barroso"
+ },
+ "empresa": {
+  "razao_social": "J P DA SILVA MATERIAIS DE CONSTRUCAO",
+  "cnpj": "42.172.334/0001-92",
+  "tipo": "EI",
+  "objeto": "comércio varejista de materiais de construção em geral",
+  "comercializa_veiculos": false
+ },
+ "veredito": "PODE",
+ "faixa": "VERDE",
+ "indice": 100.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 1,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 100 ≥ limiar 85"
+ ],
+ "resumo": "Josué Pereira da Silva pode assinar o ATPV — regra supletiva (contrato não define a forma de assinar).",
+ "assinantes": [
+  {
+   "informado": "Josué Pereira da Silva",
+   "cpf": "914.524.410-30",
+   "chave": "91452441030",
+   "nome": "Josué Pereira da Silva",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:91452441030",
+   "pessoas": [
+    {
+     "chave": "91452441030",
+     "nome": "Josué Pereira da Silva"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "Regra supletiva (contrato não define a forma de assinar)",
+   "cadeia": [
+    "JPSILVA_REQ"
+   ],
+   "severidade": "ok",
+   "confianca": 0.85,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": {
+  "id": "contrato:91452441030",
+  "pessoas": [
+   {
+    "chave": "91452441030",
+    "nome": "Josué Pereira da Silva"
+   }
+  ],
+  "via": "contrato",
+  "descricao": "Regra supletiva (contrato não define a forma de assinar)",
+  "cadeia": [
+   "JPSILVA_REQ"
+  ],
+  "severidade": "ok",
+  "confianca": 0.85,
+  "achados": [],
+  "precondicoes": []
+ },
+ "faltantes": [],
+ "achados": [
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: J P DA SILVA MATERIAIS DE CONSTRUCAO.",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "KEJ8F77",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-09-19",
+  "atos": [
+   {
+    "doc": "JPSILVA_REQ",
+    "titulo": "Requerimento de Empresário (2016)",
+    "efeito": "2016-09-05"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "91452441030",
+    "nome": "Josué Pereira da Silva",
+    "cargo": "Empresário",
+    "doc": "JPSILVA_REQ"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "91452441030",
+    "nome": "Josué Pereira da Silva",
+    "percentual": 100.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "J P DA SILVA MATERIAIS DE CONSTRUCAO",
+    "sub": "42.172.334/0001-92"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "FORD/CARGO 816 S",
+    "sub": "KEJ8F77"
+   },
+   {
+    "id": "91452441030",
+    "tipo": "pessoa",
+    "rotulo": "Josué Pereira da Silva",
+    "papeis": [
+     "sócio 100%",
+     "Empresário"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "91452441030",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "100%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "91452441030",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "JPSILVA_REQ"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2016-09-05",
+   "tipo": "ato",
+   "titulo": "Requerimento de Empresário (2016)",
+   "doc": "JPSILVA_REQ",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-09-19",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 175.000,00"
+  }
+ ],
+ "pessoas": {
+  "91452441030": {
+   "nome": "Josué Pereira da Silva",
+   "cpf": "91452441030"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "comprovada",
+  "outorgante": {
+   "nome": "J P DA SILVA MATERIAIS DE CONSTRUCAO",
+   "cnpj": "42.172.334/0001-92",
+   "tipo": "EI",
+   "atos_vigentes": [
+    {
+     "titulo": "Requerimento de Empresário (2016)",
+     "doc": "JPSILVA_REQ",
+     "efeito": "2016-09-05"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Josué Pereira da Silva",
+    "cpf": "914.524.410-30",
+    "identificacao": "CPF",
+    "qualidade": "Empresário"
+   }
+  ],
+  "poderes_conferidos": [
+   "Regra supletiva do Código Civil (o ato constitutivo não define a forma de assinar)."
+  ],
+  "prazo_validade": [
+   "Josué Pereira da Silva (Empresário): mandato por prazo indeterminado"
+  ],
+  "revogacao": [
+   "Poder decorre do ato constitutivo vigente na data da venda; recomenda-se certidão simplificada atualizada da Junta Comercial para afastar alteração posterior ainda não apresentada."
+  ],
+  "fontes": [
+   {
+    "doc_id": "JPSILVA_REQ",
+    "doc_titulo": "Requerimento de Empresário (2016)",
+    "trecho": "declarando que exercerá a atividade empresária em nome próprio",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 341,
+    "fim": 403
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "JPSILVA_REQ",
+    "titulo": "Requerimento de Empresário (2016)",
+    "arquivo": "JPSILVA_REQ.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n06017967723\nPLACA\nKEJ8F77\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2019\nANO MODELO\n2019\nNÚMERO DO CRV\n543313882697\nCÓDIGO DE SEGURANÇA DO CLA\n26528924503\nMARCA / MODELO / VERSÃO\nFORD/CARGO 816 S\nESPÉCIE / TIPO\nCARGA/CAMINHÃO\nCHASSI\n9BFAVGJ4NU6KPXLVB\nCOR PREDOMINANTE\nBRANCA\nCOMBUSTÍVEL\nDIESEL\nNOME\nJ P DA SILVA MATERIAIS DE CONSTRUCAO\nCPF / CNPJ\n42.172.334/0001-92\nLOCAL\nIGUATU/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "5e112268b9c23712adfccc68a58694870a6c9bb3aef063be1e20b974d2b84dc3",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "JPSILVA_REQ",
+   "nome": "JPSILVA_REQ.pdf",
+   "tipo": "requerimento_empresario",
+   "titulo": "Requerimento de Empresário (2016)",
+   "data": "2016-09-05",
+   "paginas": [
+    "JUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nREQUERIMENTO DE EMPRESÁRIO\nIlustríssimo Senhor Presidente da Junta Comercial do Estado do Ceará,\nO requerente abaixo qualificado vem requerer a Vossa Senhoria o arquivamento do presente\ninstrumento, para fins de inscrição como EMPRESÁRIO INDIVIDUAL, nos termos dos arts. 966 a\n971 do Código Civil, declarando que exercerá a atividade empresária em nome próprio, respondendo\ncom o seu patrimônio pessoal pelas obrigações assumidas.\nCAMPO\nINFORMAÇÃO\nCÓDIGO DO ATO\n080 – INSCRIÇÃO\nNOME CIVIL\nJOSUÉ PEREIRA DA SILVA\nNACIONALIDADE\nbrasileira\nESTADO CIVIL\ncasado – regime de comunhão parcial de bens\nPROFISSÃO\ncomerciante\nDATA DE NASCIMENTO\n14/03/1978\nFILIAÇÃO\nSeverino Alves da Silva e Francisca Pereira da Silva\nIDENTIDADE\n56249698 SSP/CE\nCPF\n914.524.410-30\nENDEREÇO RESIDENCIAL\nRua Doutor José Sobreira, nº 345, bairro Centro, Iguatu/CE,\nCEP 63500-095\nNOME EMPRESARIAL\nJ P DA SILVA MATERIAIS DE CONSTRUCAO\nENDEREÇO DO ESTABELECIMENTO\nAvenida Perimetral, nº 1.120, bairro Areias, Iguatu/CE, CEP\n63503-110\nVALOR DO CAPITAL\nR$ 80.000,00 (oitenta mil reais)\nDESCRIÇÃO DO OBJETO\ncomércio varejista de materiais de construção em geral\nCÓDIGO DE ATIVIDADE ECONÔMICA\n(CNAE)\n4744-0/99 – comércio varejista de materiais de construção em\ngeral\nDATA DE INÍCIO DAS ATIVIDADES\n05/09/2016\nNIRE\n23768134828\nCNPJ\n42.172.334/0001-92\nENQUADRAMENTO\nmicroempresa (Lei Complementar nº 123/2006)\nDECLARAÇÃO DE DESIMPEDIMENTO\nDeclaro, sob as penas da lei, que não estou impedido de exercer atividade empresária, que não\npossuo outra inscrição de empresário individual em qualquer Junta Comercial do País, que não\nexerço atividade empresária por meio de outra pessoa jurídica de que seja titular nessa condição e\nque são verdadeiras as informações prestadas neste requerimento.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "Nestes termos, pede deferimento.\nIguatu/CE, 5 de setembro de 2016.\nJOSUÉ PEREIRA DA SILVA\nEmpresário\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 12/09/2016 sob o nº 74567639385\nProtocolo: 16/271.905-3 | NIRE: 23768134828\nEmpresa: J P DA SILVA MATERIAIS DE CONSTRUCAO | CNPJ: 42.172.334/0001-92\nAutenticação: 1B6E3F90A4D7C25E8F1B06D4\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "4adc7372e454827b33f3a9649893fda14457f7e08dd27dfeb0076e085be7e90a",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 27.6,
+      "tokens_saida": 484,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "politica": "DETRAN-CE"
+ },
+ "hash_entrada": "0cfd85269d61400d70bd3db9150dd7bbe61a86ff52466a55d1a8d8ed2d541f5e"
+}

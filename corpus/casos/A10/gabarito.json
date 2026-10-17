@@ -1,0 +1,43 @@
+{
+  "caso": "A10",
+  "titulo": "Associação compradora: Presidente eleita assina",
+  "categoria": "tipos",
+  "objetivo": "Associação civil (CC arts. 53-61): Presidente representa sozinha; restrição só para imóveis.",
+  "validacao_cega": false,
+  "lote": "atpv",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "comprador": {
+      "veredito": "PODE",
+      "faixas_aceitaveis": [
+        "VERDE"
+      ],
+      "conjuntos_minimos": [
+        [
+          "SOCORRO"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "477.653.427-46"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Maria do Socorro Viana"
+        ]
+      ]
+    }
+  }
+}

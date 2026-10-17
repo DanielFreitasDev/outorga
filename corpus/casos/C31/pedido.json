@@ -1,0 +1,26 @@
+{
+  "caso": "C31",
+  "vendedor": {
+    "razao_social": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+    "cnpj": "33.437.010/0001-48"
+  },
+  "veiculo": {
+    "placa": "ZEY5F63",
+    "renavam": "08120617698",
+    "chassi": "93HY9ZFBTSH1SWMWA",
+    "descricao": "HONDA/CIVIC EXL 2.0"
+  },
+  "data_venda": "2026-09-12",
+  "valor": 118000,
+  "assinantes": [
+    {
+      "nome": "Rafael Nogueira Brito",
+      "cpf": "547.517.799-66"
+    }
+  ],
+  "comprador": {
+    "nome": "Rita de Cássia Moreira",
+    "cidade": "Fortaleza/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

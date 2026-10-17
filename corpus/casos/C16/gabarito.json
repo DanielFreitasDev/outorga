@@ -1,0 +1,41 @@
+{
+  "caso": "C16",
+  "titulo": "Procuração pública válida com poderes especiais",
+  "categoria": "procuracao",
+  "objetivo": "Delegação correta: outorgada pela PJ, poderes especiais e expressos, no prazo.",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": [
+      [
+        "FRANCISCO"
+      ],
+      [
+        "PEDRO"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 661, §1º",
+      "CC art. 1.018"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "729.405.576-91"
+      ],
+      [
+        "939.761.584-02"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Francisco Wellington Rocha"
+      ],
+      [
+        "Pedro Henrique Lima"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

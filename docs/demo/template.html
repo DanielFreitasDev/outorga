@@ -1,0 +1,524 @@
+<title>Outorga ATPV-e</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Serif:ital,wght@0,400;1,400&display=swap">
+<style>
+:root{
+  --bg:#f3f5f8; --paper:#ffffff; --ink:#18202b; --mut:#5a6577; --faint:#8a94a3; --line:#dde2ea; --line2:#eef1f5;
+  --acc:#2c49a0; --acc-soft:#e8edfb; --verde:#12704f; --verde-soft:#e3f3ec; --amar:#9a6100; --amar-soft:#fbf1dc;
+  --verm:#b0261c; --verm-soft:#fbe7e5; --neutro:#9aa3b1;
+  --f-ui:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-cond:"IBM Plex Sans Condensed","IBM Plex Sans",system-ui,sans-serif;
+  --f-doc:"IBM Plex Serif",Georgia,"Times New Roman",serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark;--bg:#0e131a;--paper:#151c25;--ink:#e5eaf1;--mut:#a1acbb;--faint:#76818f;--line:#2a3441;--line2:#1d2530;
+  --acc:#93a9ff;--acc-soft:#1d2643;--verde:#4fc79a;--verde-soft:#123327;--amar:#f0b54d;--amar-soft:#36290f;
+  --verm:#ff7f73;--verm-soft:#3a1714;--neutro:#5d6877;}}
+:root[data-theme="dark"]{
+  color-scheme:dark;--bg:#0e131a;--paper:#151c25;--ink:#e5eaf1;--mut:#a1acbb;--faint:#76818f;--line:#2a3441;--line2:#1d2530;
+  --acc:#93a9ff;--acc-soft:#1d2643;--verde:#4fc79a;--verde-soft:#123327;--amar:#f0b54d;--amar-soft:#36290f;
+  --verm:#ff7f73;--verm-soft:#3a1714;--neutro:#5d6877;}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--f-ui);margin:0;padding-inline:16px}
+.wrap{max-width:1100px;margin:0 auto;padding-block:28px 64px}
+h1,h2,h3{font-family:var(--f-cond);letter-spacing:-.01em;text-wrap:balance;margin:0}
+h1{font-size:clamp(30px,5vw,46px);line-height:1.08;font-weight:700}
+h2{font-size:26px;font-weight:700}
+h3{font-size:17px;font-weight:600}
+p{margin:0}
+.eyebrow{font:500 12px/1.2 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+.mut{color:var(--mut)} .mono{font-family:var(--f-mono);font-size:.92em}
+section{margin-top:56px;display:grid;gap:18px}
+.sec-head{display:grid;gap:6px;max-width:760px}
+.sec-head p{color:var(--mut)}
+a{color:var(--acc)}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+
+/* hero */
+.hero{display:grid;gap:22px;padding-block:8px 6px}
+.lede{font-size:17px;max-width:780px;color:var(--ink)}
+.stamps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.stamp-card{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px;display:grid;gap:10px;align-content:start}
+.stamp{display:inline-block;justify-self:start;font:700 15px/1 var(--f-cond);letter-spacing:.12em;text-transform:uppercase;padding:8px 12px 7px;border:2.5px solid currentColor;border-radius:6px;transform:rotate(-2.5deg);box-shadow:inset 0 0 0 1.5px var(--paper),inset 0 0 0 3px currentColor}
+.stamp.VERDE{color:var(--verde)} .stamp.AMARELO{color:var(--amar)} .stamp.VERMELHO{color:var(--verm)}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.kpi{border-top:2px solid var(--ink);padding-top:8px;display:grid;gap:2px}
+.kpi b{font:700 28px/1.1 var(--f-cond);font-variant-numeric:tabular-nums}
+.kpi span{font-size:13px;color:var(--mut)}
+
+/* entendimento */
+.two{display:grid;grid-template-columns:1.25fr 1fr;gap:18px}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:18px 20px;display:grid;gap:12px;align-content:start}
+ol.clean,ul.clean{margin:0;padding-left:20px;display:grid;gap:8px}
+.q{counter-reset:q;list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.q li{counter-increment:q;display:grid;grid-template-columns:26px 1fr;gap:8px}
+.q li::before{content:counter(q);font:600 12px/22px var(--f-mono);text-align:center;width:22px;height:22px;border-radius:50%;background:var(--acc-soft);color:var(--acc)}
+
+/* trecho de norma */
+.trecho{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:4px 10px 10px 4px;padding:16px 20px;display:grid;gap:8px}
+.trecho blockquote{margin:0;font:italic 17px/1.6 var(--f-doc);color:var(--ink)}
+.trecho cite{font:500 12px/1.3 var(--f-mono);font-style:normal;color:var(--mut);letter-spacing:.02em}
+.trechos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.trecho.full{grid-column:1/-1}
+.prazo{display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-size:14px}
+.pill{font:500 12px/1 var(--f-mono);padding:6px 9px;border-radius:999px;border:1px solid var(--line);background:var(--paper)}
+
+/* demo */
+.chips{display:grid;gap:10px}
+.chip-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chip-row .eyebrow{min-width:150px}
+.chip{font:500 13px/1.2 var(--f-ui);padding:7px 11px;border-radius:7px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;display:inline-flex;gap:7px;align-items:center}
+.chip:hover{border-color:var(--acc)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;flex:none;vertical-align:middle}
+.dot.VERDE{background:var(--verde)} .dot.AMARELO{background:var(--amar)} .dot.VERMELHO{background:var(--verm)}
+.caso{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.caso-top{display:grid;grid-template-columns:auto 1fr;gap:20px;padding:20px 22px;border-bottom:1px solid var(--line);align-items:start}
+.caso-top .stamp{font-size:20px;padding:10px 14px 9px}
+.caso-meta{display:grid;gap:8px}
+.caso-meta .titulo{font:600 19px/1.25 var(--f-cond)}
+.facts{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--mut)}
+.facts b{color:var(--ink);font-weight:500}
+.gauge{display:grid;gap:6px;margin-top:22px}
+.gauge-bar{position:relative;height:12px;border-radius:6px;overflow:visible;display:flex}
+.gauge-bar i{display:block;height:100%}
+.gauge-bar .z1{background:var(--verm-soft);border-radius:6px 0 0 6px;border:1px solid var(--verm)}
+.gauge-bar .z2{background:var(--amar-soft);border-block:1px solid var(--amar)}
+.gauge-bar .z3{background:var(--verde-soft);border-radius:0 6px 6px 0;border:1px solid var(--verde)}
+.needle{position:absolute;top:-6px;width:3px;height:24px;background:var(--ink);border-radius:2px;transform:translateX(-50%);transition:left .4s ease}
+.needle::after{content:attr(data-v);position:absolute;top:-22px;left:50%;transform:translateX(-50%);font:600 12px/1 var(--f-mono);background:var(--ink);color:var(--paper);padding:3px 5px;border-radius:4px;white-space:nowrap}
+.gauge-legend{display:flex;justify-content:space-between;font:12px var(--f-mono);color:var(--faint)}
+.resumo{font-size:15.5px}
+.tabs{display:flex;gap:2px;padding:0 14px;border-bottom:1px solid var(--line);overflow-x:auto}
+.tab{font:500 14px var(--f-ui);background:none;border:0;border-bottom:2px solid transparent;color:var(--mut);padding:12px 10px;cursor:pointer;white-space:nowrap}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--acc)}
+.tabpanel{padding:20px 22px;display:grid;gap:16px}
+table.t7{width:100%;border-collapse:collapse}
+.t7 th,.t7 td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--line2)}
+.t7 th{width:190px;font:500 12px/1.3 var(--f-mono);text-transform:uppercase;letter-spacing:.05em;color:var(--mut)}
+.t7 ul{margin:0;padding-left:18px}
+.status{font:600 12px/1 var(--f-mono);text-transform:uppercase;letter-spacing:.06em;padding:5px 8px;border-radius:5px}
+.status.comprovada{background:var(--verde-soft);color:var(--verde)} .status.pendente{background:var(--amar-soft);color:var(--amar)}
+.status.nao{background:var(--verm-soft);color:var(--verm)}
+.quem{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.quem-card{border:1px solid var(--line);border-radius:9px;padding:10px 12px;display:grid;gap:4px}
+.quem-card b{font-weight:600}
+.via{font:500 11px/1 var(--f-mono);text-transform:uppercase;letter-spacing:.06em;color:var(--acc)}
+.ach{display:grid;grid-template-columns:86px 1fr;gap:4px 12px;padding:10px 0;border-bottom:1px solid var(--line2)}
+.ach:last-child{border-bottom:0}
+.sev{font:600 11px/1 var(--f-mono);text-transform:uppercase;letter-spacing:.05em;padding:5px 6px;border-radius:4px;text-align:center;align-self:start}
+.sev.bloqueio{background:var(--verm-soft);color:var(--verm)} .sev.alerta{background:var(--amar-soft);color:var(--amar)}
+.sev.atencao{background:var(--line2);color:var(--mut)} .sev.ok{background:var(--verde-soft);color:var(--verde)}
+.cit{font:italic 14px/1.5 var(--f-doc);color:var(--mut);border-left:2px solid var(--line);padding-left:10px;margin-top:4px}
+.fund{font:12px var(--f-mono);color:var(--faint)}
+.regra{display:grid;gap:4px;padding:10px 0;border-bottom:1px solid var(--line2)}
+.regra .sel{font:600 11px/1 var(--f-mono);text-transform:uppercase;letter-spacing:.05em}
+.sel.sim{color:var(--verde)} .sel.nao{color:var(--faint)} .sel.dep{color:var(--amar)}
+.corr{font-size:13px;color:var(--acc)}
+.grafo-wrap{overflow-x:auto;border:1px solid var(--line2);border-radius:9px;background:var(--bg)}
+.legenda{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--mut)}
+.legenda span{display:inline-flex;gap:6px;align-items:center}
+.ln{width:22px;height:0;border-top:2.5px solid}
+
+/* faixa */
+.faixa{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:20px 22px;display:grid;gap:16px}
+.strip-wrap{overflow-x:auto}
+.ctrls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.ctrl{display:grid;gap:6px}
+.ctrl label{font:500 13px var(--f-ui);display:flex;justify-content:space-between}
+.ctrl label b{font-family:var(--f-mono)}
+input[type=range]{width:100%;accent-color:var(--acc)}
+.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.metric{border:1px solid var(--line);border-radius:9px;padding:10px 12px;display:grid;gap:2px}
+.metric b{font:700 24px/1.1 var(--f-cond);font-variant-numeric:tabular-nums}
+.metric span{font-size:12.5px;color:var(--mut)}
+.metric.bad b{color:var(--verm)}
+
+/* pipeline */
+.pipe{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.step{background:var(--paper);border:1px solid var(--line);border-radius:9px;padding:12px;display:grid;gap:6px;position:relative}
+.step b{font:600 14px/1.25 var(--f-cond)}
+.step p{font-size:13px;color:var(--mut)}
+.step .n{font:500 11px var(--f-mono);color:var(--acc)}
+.step.ia{border-color:var(--acc)}
+table.res{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.res th,.res td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
+.res th{font:500 12px var(--f-mono);text-transform:uppercase;letter-spacing:.05em;color:var(--mut)}
+.res-wrap{overflow-x:auto;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:6px 10px}
+footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--mut);display:grid;gap:6px}
+
+@media (max-width:860px){
+  .two,.trechos{grid-template-columns:1fr}
+  .kpis,.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pipe{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .caso-top{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .stamps{grid-template-columns:1fr}
+  .ctrls{grid-template-columns:1fr}
+  .chip-row .eyebrow{min-width:100%}
+  .t7 th{width:110px}
+  .ach{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){.needle{transition:none}}
+</style>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">Protótipo · verificação de poderes para a ATPV-e · dados fictícios</div>
+    <h1>Quem pode assinar a ATPV-e por esta empresa?</h1>
+    <p class="lede">Um agente local que, antes da assinatura da ATPV-e, lê a própria ATPV-e e os documentos de cada empresa envolvida (contrato social, alterações, estatuto, atas, procurações, CRLV) e decide se quem vai assinar tem poder, <b>vendendo ou comprando</b>, em todos os tipos de pessoa jurídica — e também quando uma <b>pessoa física</b> é representada por procurador. Pode ser feito <b>antes da ATPV-e</b>: basta o veículo e o CPF de quem vai assinar. A IA generativa faz a leitura; regras jurídicas conferem e decidem; o resultado sai numa escala de aceitação com faixa intermediária para revisão humana.</p>
+    <div class="stamps">
+      <div class="stamp-card"><span class="stamp VERDE">Aceito</span><p>Confiança alta e nenhum alerta: os assinantes têm poder comprovado.</p></div>
+      <div class="stamp-card"><span class="stamp AMARELO">Revisão humana</span><p>Faixa intermediária: dúvida, documento faltando ou exigência a conferir. Sai com a lista do que verificar.</p></div>
+      <div class="stamp-card"><span class="stamp VERMELHO">Recusado</span><p>Sem poder: procuração vencida, revogada, sem poderes de venda, assinatura conjunta faltando…</p></div>
+    </div>
+    <div class="kpis" id="kpis"></div>
+  </header>
+
+  <section id="entendi">
+    <div class="sec-head"><div class="eyebrow">O pedido</div><h2>O que eu entendi do áudio</h2></div>
+    <div class="two">
+      <div class="panel">
+        <ul class="clean">
+          <li><b>O veículo é da empresa (CNPJ).</b> No exemplo, o sócio integralizou o próprio carro no capital: o carro passou a ser da sociedade, e quem assina a venda é a empresa, representada por quem o contrato indicar.</li>
+          <li><b>Cada contrato diz uma coisa.</b> Qualquer sócio sozinho, os dois em conjunto, só um sócio específico (quem integralizou aquele carro), dois acima de certo valor, aprovação dos sócios… e alterações posteriores mudam a regra.</li>
+          <li><b>Procuração e delegação.</b> Quem tem o poder pode ter delegado. É preciso conferir quem outorgou, os poderes especiais para vender, o prazo, a revogação, o veículo e o substabelecimento.</li>
+          <li><b>Pior cenário: só o contrato.</b> Se todos os sócios assinam, em regra vale. O desafio é quando assina um só ou um procurador.</li>
+          <li><b>Leitura semântica.</b> "Indistintamente" quer dizer que cada um assina sozinho; restrição a imóveis não alcança carro; a cláusula do veículo específico vale mais que a regra geral.</li>
+          <li><b>Generativa com faixa intermediária.</b> A IA lê, mas a decisão não é um sim/não cego: sai um índice de 0 a 100 com três faixas, e os limites são ajustáveis.</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>O que o chefe respondeu (17/10)</h3>
+        <ol class="q">
+          <li><b>Entrada:</b> a ATPV-e. O agente lê dela veículo, vendedor, comprador, valor, data e assinaturas.</li>
+          <li><b>Tipos:</b> todos — Ltda, unipessoal, S.A., cooperativa, associação, MEI/empresário, EIRELI, sociedade simples.</li>
+          <li><b>Momento:</b> antes de assinar a ATPV-e, saber se a pessoa tem poder <b>vendendo ou comprando</b>.</li>
+          <li><b>Onde roda:</b> local, como um agente (pasta vigiada; nada sai da máquina).</li>
+          <li><b>Formato:</b> foco só na ATPV-e digital.</li>
+          <li><b>Antes da ATPV-e (11h40):</b> a pessoa informa o CPF; se o veículo é de empresa, confere o poder desse CPF; se é pessoa física e o CPF é outro, pergunta se tem procuração e confere se ela dá poder àquele CPF.</li>
+        </ol>
+        <p class="mut" style="font-size:13.5px;margin-top:10px">Ainda em aberto: se o sistema pode consultar a base veicular do DETRAN (no protótipo é simulada), se a procuração deve ser conferida também na CENSEC e o sentido exato de "faixa intermediária" (segue o modelo de três faixas).</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="agora">
+    <div class="sec-head"><div class="eyebrow">Contexto regulatório</div><h2>Por que isso importa agora</h2>
+      <p>Pesquisa feita em 16 e 17/10/2026 em fontes oficiais. A regulamentação nacional do dispositivo abaixo não foi localizada até essa data.</p></div>
+    <div class="trechos">
+      <div class="trecho full"><blockquote>"Quando o antigo ou o novo proprietário for pessoa jurídica, a assinatura será admitida mediante comprovação eletrônica dos poderes do signatário, por consulta a bases oficiais ou por instrumento de outorga verificável, com identificação do outorgante, do outorgado, dos poderes conferidos, do prazo de validade e de eventual revogação [...]"</blockquote><cite>Resolução CONTRAN nº 1.027/2026, art. 28, § 7º · DOU 18/08/2026 · revogou a Res. 809/2020</cite></div>
+      <div class="trecho"><blockquote>"[...] a plataforma oficial de venda digital de veículos mantida pelo Governo Federal não admite a transferência por pessoas jurídicas, justamente em razão da inviabilidade de verificação automatizada e segura de poderes societários."</blockquote><cite>Provimento CNJ nº 252/2026, considerandos</cite></div>
+      <div class="trecho"><blockquote>"Procurador por instrumento de procuração pública e específica para o ato (com validade de até 01 ano da data de expedição)."</blockquote><cite>DETRAN-CE · serviço de transferência (gov.br)</cite></div>
+    </div>
+    <div class="prazo"><span class="pill">adequação de 90 dias ≈ até 16/11/2026</span><span class="pill">firma reconhecida prova autoria, não poderes</span><span class="pill">o parecer sai nos 5 elementos do § 7º</span></div>
+  </section>
+
+  <section id="demo">
+    <div class="sec-head"><div class="eyebrow">Demonstração</div><h2>Casos analisados pela IA local</h2>
+      <p id="demo-sub">Resultados reais do protótipo: leitura pelo Qwen 27B rodando na própria máquina, conferência e decisão pelo motor de regras. Empresas, pessoas e documentos são fictícios.</p></div>
+    <div class="chips" id="chips"></div>
+    <article class="caso" id="caso"></article>
+  </section>
+
+  <section id="lados">
+    <div class="sec-head"><div class="eyebrow">Respostas do chefe</div><h2>Vendendo ou comprando, todos os tipos de empresa</h2>
+      <p id="lados-sub">Cada lado PJ da ATPV-e é verificado com os documentos da própria empresa (separados pelo CNPJ). Para o vendedor, vale a regra de venda; para o comprador, a de compra: procuração só de venda não serve para comprar, e uma alçada de compra não trava a venda. Com PJ dos dois lados, decide o lado mais fraco.</p></div>
+    <div class="res-wrap"><table class="res" id="lados-tab"></table></div>
+    <div class="two" style="margin-top:18px">
+      <div class="panel"><h3>Modo agente (local)</h3><p class="mut" style="font-size:14px">O agente vigia uma pasta. Cada pedido é uma subpasta (ou um .zip) com a ATPV-e e os documentos das empresas. Ele lê, decide e devolve parecer em PDF, um resumo e o resultado estruturado; registra tudo na trilha de auditoria e arquiva a entrada. Se a IA local estiver desligada, o pedido espera na fila.</p></div>
+      <div class="panel"><h3>Como o lote foi testado</h3><p class="mut" style="font-size:14px" id="lados-metodo">14 casos novos (comprador PJ, PJ dos dois lados, cooperativa, associação, MEI, EIRELI, sociedade simples) com documentos redigidos por agentes sem acesso ao código. A ATPV-e simulada é a entrada principal: o pedido traz só quem vai assinar.</p></div>
+    </div>
+  </section>
+
+  <section id="cpf">
+    <div class="sec-head"><div class="eyebrow">Antes da ATPV-e</div><h2>Consulta por CPF: empresa ou pessoa física</h2>
+      <p>Pedido do chefe: basta o veículo, o CPF de quem vai assinar e se vai vender ou comprar. O dono vem da base veicular (simulada no protótipo). Se o CPF não for o do dono — ou, na empresa, não tiver poder pelos atos — o sistema pergunta pela procuração e confere se ela dá àquele CPF poder para o ato.</p></div>
+    <div class="res-wrap"><table class="res" id="cpf-tab"></table></div>
+  </section>
+
+  <section id="faixa">
+    <div class="sec-head"><div class="eyebrow">O ajuste que o chefe pediu</div><h2>A faixa intermediária, calibrável</h2>
+      <p>Cada ponto é um dos 38 cenários do corpus, posicionado pelo índice de aceitação que o sistema calculou. Arraste os limites: o que fica entre eles vai para revisão humana. A meta é decidir sozinho o máximo possível sem nenhum aceite indevido.</p></div>
+    <div class="faixa">
+      <div class="strip-wrap"><svg id="strip" viewBox="0 0 1000 210" width="100%" role="img" aria-label="Distribuição dos casos pelo índice de aceitação"></svg></div>
+      <div class="ctrls">
+        <div class="ctrl"><label for="lr">Recusa automática até <b id="vlr">15</b></label><input id="lr" type="range" min="0" max="49" value="15"></div>
+        <div class="ctrl"><label for="la">Aceite automático a partir de <b id="vla">85</b></label><input id="la" type="range" min="51" max="100" value="85"></div>
+      </div>
+      <div class="metrics" id="metrics"></div>
+      <p class="mut" style="font-size:13.5px">Casos com alerta (procuração antiga, contrato omisso, falta de ata, CRLV no CPF do sócio…) ficam na faixa intermediária qualquer que seja o limite. No sistema, cada revisão humana vira um rótulo, e a calibração sugere o limite com o erro estimado e um limite superior estatístico (Clopper-Pearson).</p>
+    </div>
+  </section>
+
+  <section id="como">
+    <div class="sec-head"><div class="eyebrow">Arquitetura</div><h2>Como funciona</h2>
+      <p>Medido nesta máquina: sozinha, a IA leu "indistintamente" como assinatura conjunta, que é o contrário. Por isso ela lê e cita, e o resto confere.</p></div>
+    <div class="pipe">
+      <div class="step"><span class="n">1</span><b>Ingestão</b><p>PDF, DOCX ou imagem; OCR em português quando a página é digitalizada.</p></div>
+      <div class="step ia"><span class="n">2</span><b>Leitura pela IA local</b><p>JSON estruturado; cada fato com o trecho literal do documento.</p></div>
+      <div class="step"><span class="n">3</span><b>Conferência léxica</b><p>Corrige a leitura pelas expressões citadas ("indistintamente" → isolado).</p></div>
+      <div class="step"><span class="n">4</span><b>Ancoragem</b><p>Cada citação é procurada no texto original; citação inexistente vai para revisão.</p></div>
+      <div class="step"><span class="n">5</span><b>Motor de regras</b><p>Regime vigente, especialidade, alçadas, procurações, substabelecimentos, CRLV, política do órgão.</p></div>
+      <div class="step"><span class="n">6</span><b>Índice e parecer</b><p>0–100, faixa, parecer no formato do § 7º, revisão humana e trilha de auditoria.</p></div>
+    </div>
+    <div class="res-wrap"><table class="res" id="res"></table></div>
+  </section>
+
+  <section id="proximos">
+    <div class="sec-head"><div class="eyebrow">Daqui para frente</div><h2>Próximos passos sugeridos</h2></div>
+    <div class="panel"><ul class="clean">
+      <li>Confirmar a faixa intermediária e de onde vêm os documentos das empresas. Antes de decidir sozinho: piloto com 20–30 processos reais anonimizados (vendendo e comprando) e um novo lote independente, com a faixa intermediária larga.</li>
+      <li>Calibrar o leitor da ATPV-e com o PDF oficial (o protótipo usa um layout simulado e cai na IA se não reconhecer).</li>
+      <li>Consultar bases oficiais (Receita/Junta) para confirmar administradores e a situação do CNPJ, como prevê o § 7º.</li>
+      <li>Casar o CPF de quem assinou a ATPV-e (certificado ICP-Brasil ou assinatura avançada) com as combinações devolvidas pelo motor.</li>
+      <li>Expor a API para o sistema de transferência do DETRAN consumir no momento da assinatura.</li>
+    </ul></div>
+  </section>
+
+  <footer>
+    <div>Protótipo "Outorga". Todos os nomes, CPFs, CNPJs, cartórios e documentos da demonstração são fictícios. Análise de apoio à decisão; não substitui a conferência do servidor responsável.</div>
+    <div class="mono" id="rodape"></div>
+  </footer>
+</div>
+
+<script id="dados" type="application/json">__DADOS__</script>
+<script>
+(function(){
+const D = JSON.parse(document.getElementById('dados').textContent);
+const $ = (s, el=document) => el.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmtData = s => s ? s.slice(0,10).split('-').reverse().join('/') : '—';
+const fmtValor = v => v == null ? 'valor não informado' : 'R$ ' + Number(v).toLocaleString('pt-BR', {minimumFractionDigits: 2});
+const ROT = {VERDE:'Aceito', AMARELO:'Revisão humana', VERMELHO:'Recusado'};
+const VER = {PODE:'pode assinar', NAO_PODE:'não pode', INDETERMINADO:'pendente (pede documento)'};
+let limR = 15, limA = 85;
+
+// ---------- KPIs
+const R = D.resumo, O = D.oraculo;
+const pct = x => Math.round(x * 100) + '%';
+const P1 = D.primeira ? D.primeira.resumo : R, CG = D.cega ? D.cega.resumo : null, IN = D.independente ? D.independente.resumo : null;
+$('#kpis').innerHTML = [
+  [`${P1.veredito_correto}/${P1.casos}`, 'vereditos certos com a IA local lendo os 38 cenários do zero'],
+  [CG ? `${CG.veredito_correto}/${CG.casos}` : '—', 'em 8 cenários novos, com redações nunca vistas'],
+  [IN ? `${IN.veredito_correto}/${IN.casos}` : '—', 'em 10 casos de um autor independente, sem acesso ao código'],
+  [IN ? String(IN.erros_perigosos) : '0', 'aceites indevidos achados pelo teste independente, já corrigidos'],
+].map(([b, s]) => `<div class="kpi"><b>${b}</b><span>${s}</span></div>`).join('');
+
+// ---------- chips
+const GRUPOS = [
+  ['Exemplo do áudio', ['C13','C14','C15']],
+  ['Forma de assinar', ['C01','C02','C03','C07','C29']],
+  ['Procuração', ['C16','C17','C18','C20','C21','C26']],
+  ['Substabelecimento', ['C23','C25']],
+  ['Outros', ['C11','C33']],
+  ['Comprador e outros tipos', ['A04','A10','A09','A11']],
+];
+let atual = D.casos['C13'] ? 'C13' : Object.keys(D.casos)[0];
+function chips(){
+  $('#chips').innerHTML = GRUPOS.map(([g, ids]) => {
+    const bts = ids.filter(id => D.casos[id]).map(id => {
+      const c = D.casos[id];
+      return `<button class="chip" type="button" data-id="${id}" aria-pressed="${id===atual}"><span class="dot ${c.faixa}"></span>${esc(c.titulo)}</button>`;
+    }).join('');
+    return bts ? `<div class="chip-row"><span class="eyebrow">${g}</span>${bts}</div>` : '';
+  }).join('');
+  document.querySelectorAll('.chip').forEach(b => b.addEventListener('click', () => { atual = b.dataset.id; chips(); caso(); }));
+}
+
+// ---------- caso
+let aba = 'decisao';
+function gauge(indice){
+  const r = limR, a = limA;
+  return `<div class="gauge"><div class="gauge-bar"><i class="z1" style="width:${r}%"></i><i class="z2" style="width:${a-r}%"></i><i class="z3" style="width:${100-a}%"></i>
+    <div class="needle" style="left:${indice}%" data-v="${Math.round(indice)}"></div></div>
+    <div class="gauge-legend"><span>0 · não pode</span><span>índice de aceitação</span><span>pode · 100</span></div></div>`;
+}
+function caso(){
+  const c = D.casos[atual];
+  const ok = c.veredito === c.esperado && c.faixas_esperadas.includes(c.faixa);
+  $('#caso').innerHTML = `
+  <div class="caso-top">
+    <span class="stamp ${c.faixa}">${ROT[c.faixa]}</span>
+    <div class="caso-meta">
+      <div class="titulo">${esc(c.titulo)}</div>
+      <div class="facts"><span><b>${esc(c.empresa)}</b></span><span>${esc(c.veiculo)} · <b class="mono">${esc(c.placa)}</b></span>
+        <span>venda em <b>${fmtData(c.data)}</b> · ${fmtValor(c.valor)}</span><span>assina: <b>${esc(c.assinantes.join(', '))}</b></span></div>
+      ${gauge(c.indice)}
+      <p class="resumo">${esc(c.resumo)}</p>
+      <p class="mut" style="font-size:13px">Gabarito: ${VER[c.esperado]} · ${ok ? '✓ o sistema acertou' : '✗ divergiu do gabarito'} · ${esc(c.objetivo)}</p>
+    </div>
+  </div>
+  <div class="tabs" role="tablist">
+    ${[['decisao','Decisão (§ 7º)'],['grafo','Grafo de poderes'],['verif','Verificações'],['clausulas','Cláusulas lidas']].map(([k,t]) =>
+      `<button class="tab" role="tab" type="button" data-aba="${k}" aria-selected="${aba===k}">${t}</button>`).join('')}
+  </div>
+  <div class="tabpanel" id="painel"></div>`;
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => { aba = t.dataset.aba; caso(); }));
+  const p = $('#painel');
+  if (aba === 'decisao') p.innerHTML = painelDecisao(c);
+  if (aba === 'grafo') p.innerHTML = painelGrafo(c);
+  if (aba === 'verif') p.innerHTML = painelVerif(c);
+  if (aba === 'clausulas') p.innerHTML = painelClausulas(c);
+}
+function lista(xs){ return `<ul>${xs.map(x => `<li>${esc(x)}</li>`).join('')}</ul>`; }
+function painelDecisao(c){
+  const st = c.c7.status, cls = st === 'comprovada' ? 'comprovada' : st === 'pendente' ? 'pendente' : 'nao';
+  const quem = c.quem_pode.length ? c.quem_pode.map(q => `<div class="quem-card"><span class="via">${q.via === 'contrato' ? 'pelo contrato' : q.via}</span><b>${esc(q.pessoas.join(' + '))}</b><span class="mut" style="font-size:13px">${esc(q.descricao)}</span></div>`).join('')
+    : '<p class="mut">Ninguém, com os documentos apresentados.</p>';
+  const falta = c.faltantes.length && c.veredito !== 'PODE' ? `<p class="mut" style="font-size:14px">Para valer: ${c.faltantes.map(f => esc((f.faltam.join(' + ') || '—') + ' (' + f.descricao + ')')).join('; ')}.</p>` : '';
+  return `<div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><h3>Comprovação de poderes do signatário</h3><span class="status ${cls}">${esc(st)}</span></div>
+  <div style="overflow-x:auto"><table class="t7">
+    <tr><th>Outorgante</th><td>${esc(c.c7.outorgante)}</td></tr>
+    <tr><th>Outorgado</th><td>${lista(c.c7.outorgado)}</td></tr>
+    <tr><th>Poderes conferidos</th><td>${lista(c.c7.poderes)}</td></tr>
+    <tr><th>Prazo de validade</th><td>${lista(c.c7.prazo)}</td></tr>
+    <tr><th>Revogação</th><td>${lista(c.c7.revogacao)}</td></tr>
+  </table></div>
+  <h3>Quem pode assinar a ATPV-e deste veículo</h3><div class="quem">${quem}</div>${falta}`;
+}
+function painelVerif(c){
+  return c.achados.map(a => `<div class="ach"><span class="sev ${a.sev}">${a.sev === 'atencao' ? 'atenção' : a.sev}</span><div><b>${esc(a.titulo)}</b> — ${esc(a.detalhe)}
+    ${a.fund && a.fund.length ? `<div class="fund">${esc(a.fund.join(' · '))}</div>` : ''}
+    ${a.cit ? `<div class="cit">“${esc(a.cit)}${a.cit.length >= 240 ? '…' : ''}” — ${esc(a.doc)}</div>` : ''}</div></div>`).join('')
+    + `<p class="mut" style="font-size:13px">Documentos lidos: ${c.documentos.map(d => esc(d.titulo) + (d.ocr ? ` (OCR ${Math.round(d.ocr)}%)` : '') + (d.segundos ? ` · ${d.segundos}s` : '')).join(' · ')}</p>`;
+}
+function painelClausulas(c){
+  return c.regras.map(g => {
+    const sel = g.aplicavel === true ? ['sim','aplicável'] : g.aplicavel === false ? ['nao','não se aplica'] : ['dep','depende'];
+    return `<div class="regra"><div><span class="sel ${sel[0]}">${sel[1]}${g.decisiva ? ' · decisiva' : ''}</span> · <span class="mono">${esc(g.escopo.replaceAll('_',' '))}</span> — ${esc(g.motivo)}</div>
+      ${g.trecho ? `<div class="cit">“${esc(g.trecho)}${g.trecho.length >= 220 ? '…' : ''}”</div>` : ''}
+      ${g.correcoes.map(x => `<div class="corr">conferência léxica: ${esc(x)}</div>`).join('')}</div>`;
+  }).join('') || '<p class="mut">Sem cláusulas de representação neste caso.</p>';
+}
+
+// ---------- grafo em camadas (SVG)
+function painelGrafo(c){
+  const G = c.grafo, nos = {}; G.nos.forEach(n => nos[n.id] = {...n, camada: null});
+  const cam = id => nos[id] && nos[id].camada;
+  nos.VEICULO && (nos.VEICULO.camada = 0); nos.EMPRESA && (nos.EMPRESA.camada = 1);
+  for (let it = 0; it < 4; it++) G.arestas.forEach(e => {
+    if (e.tipo === 'socio' && nos[e.de] && nos[e.de].camada == null) nos[e.de].camada = 2;
+    if ((e.tipo === 'administracao' || e.tipo === 'clausula') && nos[e.para]) nos[e.para].camada = Math.max(nos[e.para].camada ?? 0, 2);
+    if ((e.tipo === 'procuracao' || e.tipo === 'substabelecimento') && nos[e.para] && cam(e.de) != null)
+      nos[e.para].camada = Math.max(nos[e.para].camada ?? 0, Math.max(cam(e.de) + 1, e.tipo === 'procuracao' ? 3 : 0));
+  });
+  Object.values(nos).forEach(n => { if (n.camada == null) n.camada = 2; });
+  const porCam = {}; Object.values(nos).forEach(n => (porCam[n.camada] ||= []).push(n));
+  const W = 186, H = 50, GX = 70, GY = 22, X0 = 16, Y0 = 18;
+  const ncam = Math.max(...Object.keys(porCam).map(Number)) + 1;
+  const maxN = Math.max(...Object.values(porCam).map(l => l.length));
+  const altura = Y0 * 2 + maxN * H + (maxN - 1) * GY;
+  Object.entries(porCam).forEach(([k, lst]) => {
+    const tot = lst.length * H + (lst.length - 1) * GY, y0 = (altura - tot) / 2;
+    lst.forEach((n, i) => { n.x = X0 + Number(k) * (W + GX); n.y = y0 + i * (H + GY); });
+  });
+  const largura = X0 * 2 + ncam * W + (ncam - 1) * GX;
+  const cor = s => ({valido:'var(--verde)', alerta:'var(--amar)', invalido:'var(--verm)', neutro:'var(--neutro)'}[s] || 'var(--neutro)');
+  let svgE = '', svgL = '';
+  G.arestas.forEach(e => {
+    let a = nos[e.de], b = nos[e.para]; if (!a || !b) return;
+    if (e.tipo === 'socio') { [a, b] = [b, a]; }
+    if (a.camada > b.camada) [a, b] = [b, a];
+    const x1 = a.x + W, y1 = a.y + H/2, x2 = b.x, y2 = b.y + H/2, mx = (x1 + x2) / 2;
+    const dash = e.status === 'invalido' ? ' stroke-dasharray="6 5"' : e.tipo === 'socio' ? ' stroke-dasharray="2 4"' : '';
+    svgE += `<path d="M${x1},${y1} C${mx},${y1} ${mx},${y2} ${x2},${y2}" fill="none" stroke="${cor(e.status)}" stroke-width="${e.tipo==='socio'?1.4:2.2}"${dash}/>`;
+    if (e.tipo !== 'socio' && e.tipo !== 'propriedade') {
+      const t = (e.rotulo || '').slice(0, 34);
+      svgL += `<g transform="translate(${mx},${(y1+y2)/2})"><rect x="${-t.length*3.05-6}" y="-10" width="${t.length*6.1+12}" height="18" rx="4" fill="var(--paper)" stroke="${cor(e.status)}" stroke-width="1"/><text x="0" y="3" text-anchor="middle" font-size="10.5" font-family="IBM Plex Mono, monospace" fill="${cor(e.status)}">${esc(t)}</text></g>`;
+    }
+  });
+  let svgN = '';
+  Object.values(nos).forEach(n => {
+    const ass = n.assinante, fill = n.tipo === 'empresa' ? 'var(--acc-soft)' : 'var(--paper)';
+    const stroke = ass ? 'var(--ink)' : n.tipo === 'empresa' ? 'var(--acc)' : 'var(--line)';
+    const sub = n.tipo === 'pessoa' ? (n.papeis || []).join(' · ') : (n.sub || '');
+    svgN += `<g><rect x="${n.x}" y="${n.y}" width="${W}" height="${H}" rx="8" fill="${fill}" stroke="${stroke}" stroke-width="${ass ? 2.4 : 1.2}"/>
+      <text x="${n.x+10}" y="${n.y+20}" font-size="12.5" font-weight="600" font-family="IBM Plex Sans, sans-serif" fill="var(--ink)">${esc((n.rotulo||'').slice(0,26))}</text>
+      <text x="${n.x+10}" y="${n.y+37}" font-size="10.5" font-family="IBM Plex Mono, monospace" fill="var(--mut)">${esc(sub.slice(0,30))}</text>
+      ${ass ? `<rect x="${n.x+W-62}" y="${n.y-9}" width="58" height="17" rx="8" fill="var(--ink)"/><text x="${n.x+W-33}" y="${n.y+3}" text-anchor="middle" font-size="9.5" font-family="IBM Plex Mono, monospace" fill="var(--paper)">assina</text>` : ''}</g>`;
+  });
+  return `<div class="legenda"><span><i class="ln" style="border-color:var(--verde)"></i>poder válido</span><span><i class="ln" style="border-color:var(--amar)"></i>com alerta</span><span><i class="ln" style="border-color:var(--verm);border-top-style:dashed"></i>inválido</span><span><i class="ln" style="border-color:var(--neutro);border-top-style:dotted"></i>sócio (sem poder por si)</span></div>
+  <div class="grafo-wrap"><svg viewBox="0 0 ${largura} ${altura}" width="${largura}" height="${altura}" role="img" aria-label="Grafo de poderes">${svgE}${svgL}${svgN}</svg></div>`;
+}
+
+// ---------- faixa intermediária
+const P = D.pontos.map(p => ({...p, forcado: p.faixa === 'AMARELO' && (p.indice >= 85 || p.indice <= 15)}));
+function faixaSim(p){ if (p.forcado) return 'AMARELO'; if (p.indice >= limA) return 'VERDE'; if (p.indice <= limR) return 'VERMELHO'; return 'AMARELO'; }
+function strip(){
+  const s = $('#strip'), X = v => 40 + v * 9.2;
+  const cats = [...new Set(P.map(p => p.categoria))];
+  let h = `<rect x="${X(0)}" y="18" width="${X(limR)-X(0)}" height="150" fill="var(--verm-soft)"/>
+    <rect x="${X(limR)}" y="18" width="${X(limA)-X(limR)}" height="150" fill="var(--amar-soft)"/>
+    <rect x="${X(limA)}" y="18" width="${X(100)-X(limA)}" height="150" fill="var(--verde-soft)"/>
+    <line x1="${X(limR)}" x2="${X(limR)}" y1="12" y2="172" stroke="var(--verm)" stroke-width="2"/>
+    <line x1="${X(limA)}" x2="${X(limA)}" y1="12" y2="172" stroke="var(--verde)" stroke-width="2"/>`;
+  [0,25,50,75,100].forEach(v => h += `<text x="${X(v)}" y="190" text-anchor="middle" font-size="12" font-family="IBM Plex Mono, monospace" fill="var(--mut)">${v}</text>`);
+  h += `<text x="${X(limR)/2 + X(0)/2}" y="206" text-anchor="middle" font-size="11" fill="var(--verm)" font-family="IBM Plex Sans, sans-serif">recusa</text>
+        <text x="${(X(limR)+X(limA))/2}" y="206" text-anchor="middle" font-size="11" fill="var(--amar)" font-family="IBM Plex Sans, sans-serif">revisão humana</text>
+        <text x="${(X(limA)+X(100))/2}" y="206" text-anchor="middle" font-size="11" fill="var(--verde)" font-family="IBM Plex Sans, sans-serif">aceite</text>`;
+  const cont = {};
+  P.forEach(p => {
+    const k = Math.round(p.indice); cont[k] = (cont[k] || 0) + 1;
+    const y = 160 - ((cont[k] - 1) % 12) * 11.5, x = X(p.indice) + (Math.floor((cont[k]-1)/12)) * 9;
+    const certo = p.previsto === p.esperado;
+    const f = faixaSim(p), fill = f === 'VERDE' ? 'var(--verde)' : f === 'VERMELHO' ? 'var(--verm)' : 'var(--amar)';
+    h += `<circle cx="${x}" cy="${y}" r="4.6" fill="${fill}" stroke="${certo ? 'var(--paper)' : 'var(--ink)'}" stroke-width="${certo ? 1 : 2.4}"><title>${esc(p.id + ' · ' + p.titulo + ' · índice ' + p.indice + (p.forcado ? ' · com alerta' : '') + (certo ? '' : ' · veredito divergente'))}</title></circle>`;
+  });
+  s.innerHTML = h;
+  const sim = P.map(p => ({...p, f: faixaSim(p)}));
+  const auto = sim.filter(p => p.f !== 'AMARELO');
+  const aceitesIndevidos = sim.filter(p => p.f === 'VERDE' && p.esperado !== 'PODE').length;
+  const recusasIndevidas = sim.filter(p => p.f === 'VERMELHO' && p.esperado === 'PODE').length;
+  const acertoAuto = auto.length ? auto.filter(p => p.previsto === p.esperado).length / auto.length : 1;
+  $('#metrics').innerHTML = [
+    [pct(auto.length / sim.length), `decididos sozinhos (${auto.length} de ${sim.length})`, false],
+    [pct(acertoAuto), 'acerto na decisão automática', acertoAuto < 1],
+    [String(aceitesIndevidos), 'aceites indevidos (o erro perigoso)', aceitesIndevidos > 0],
+    [String(recusasIndevidas), 'recusas indevidas (retrabalho)', recusasIndevidas > 0],
+  ].map(([b, s, bad]) => `<div class="metric${bad ? ' bad' : ''}"><b>${b}</b><span>${s}</span></div>`).join('');
+  $('#vlr').textContent = limR; $('#vla').textContent = limA;
+}
+$('#lr').addEventListener('input', e => { limR = +e.target.value; strip(); if (D.casos[atual]) caso(); });
+$('#la').addEventListener('input', e => { limA = +e.target.value; strip(); if (D.casos[atual]) caso(); });
+
+// ---------- resultados
+const linhas = [];
+if (O) linhas.push(['Gabarito (leitura perfeita): valida o motor jurídico', O]);
+if (D.primeira) linhas.push(['IA local, execução cega (cada documento lido do zero)', D.primeira.resumo]);
+linhas.push(['IA local, mesmas leituras após corrigir o único erro (não é teste cego)', R]);
+if (D.cega) linhas.push(['IA local, validação cega: 8 cenários novos', D.cega.resumo]);
+if (D.independente) linhas.push(['IA local, validação independente: 10 casos de outro autor', D.independente.resumo]);
+if (D.independente_pos) linhas.push(['Independente, após corrigir os erros (não é teste cego)', D.independente_pos.resumo]);
+if (D.atpv_cega) linhas.push(['Lote ATPV-e (14 casos novos): IA local, primeira leitura', D.atpv_cega.resumo]);
+if (D.atpv && D.atpv_cega) linhas.push(['Lote ATPV-e após a correção (não é teste cego)', D.atpv.resumo]);
+if (D.pf) linhas.push(['Consulta por CPF (15 casos novos, antes da ATPV-e): IA local, rodada cega', D.pf.resumo]);
+$('#res').innerHTML = `<tr><th>Execução</th><th>Veredito</th><th>Faixa aceitável</th><th>Quem pode assinar</th><th>Aceites indevidos</th><th>Automático</th></tr>` +
+  linhas.map(([n, r]) => `<tr><td>${esc(n)}</td><td>${r.veredito_correto}/${r.casos}</td><td>${r.faixa_aceitavel}/${r.casos}</td><td>${r.quem_pode_correto}/${r.quem_pode_avaliados}</td><td>${r.erros_perigosos}</td><td>${pct(r.cobertura_automatica)}</td></tr>`).join('');
+const P1r = D.primeira ? D.primeira.resumo : R;
+$('#rodape').textContent = `corpus: 38 cenários + 8 de validação cega + 10 de autor independente + 14 do lote ATPV-e + 15 de consulta por CPF · avaliação de ${fmtData(P1r.data)} · leitura dos 38 cenários pela IA local: ${Math.round(P1r.duracao_s/60)} min numa RTX 3060`;
+
+// ---------- consulta por CPF
+if (D.pf) {
+  const PAPEL = {vender: 'vender', comprar: 'comprar'};
+  $('#cpf-tab').innerHTML = `<tr><th>Caso</th><th>Dono do veículo · papel</th><th>Quem vai assinar</th><th>Resultado</th></tr>` +
+    D.pf.linhas.map(l => `<tr><td><b>${esc(l.id)}</b> ${esc(l.titulo)}<br><span class="mut" style="font-size:12.5px">${l.documentos.length ? esc(l.documentos.length + ' documento(s)') : 'sem documentos'}</span></td>` +
+      `<td>${esc(l.dono)}<br><span class="mut" style="font-size:12.5px">${l.papel === 'comprar' && l.comprador ? 'comprar para ' + esc(l.comprador) : esc(PAPEL[l.papel])}</span></td><td>${esc(l.quem)}</td>` +
+      `<td><span class="dot ${l.faixa}"></span> ${ROT[l.faixa]}${l.pendencias.includes('procuracao') ? ' · pede procuração' : ''}<br><span class="mut" style="font-size:12.5px">esperado: ${esc(VER[l.esperado])} ${l.ok ? '✓' : '✗'}</span></td></tr>`).join('');
+} else { const s = document.getElementById('cpf'); if (s) s.remove(); }
+
+// ---------- lote ATPV-e (por lado)
+if (D.atpv) {
+  const lado = l => l ? `<span class="dot ${l.faixa}"></span> ${esc(l.empresa)}<br><span class="mut" style="font-size:12.5px">${esc(VER[l.veredito])} · ${esc((l.assinantes||[]).join(', ') || 'consulta')}</span>` : null;
+  $('#lados-tab').innerHTML = `<tr><th>Caso</th><th>Vendedor</th><th>Comprador</th><th>Resultado</th></tr>` +
+    D.atpv.linhas.map(l => `<tr><td><b>${esc(l.id)}</b> ${esc(l.titulo)}</td>` +
+      `<td>${lado(l.lados.vendedor) || esc(l.vendedor)}</td><td>${lado(l.lados.comprador) || esc(l.comprador)}</td>` +
+      `<td><span class="dot ${l.faixa}"></span> ${ROT[l.faixa]}<br><span class="mut" style="font-size:12.5px">esperado: ${esc(VER[l.esperado])} ${l.ok ? '✓' : '✗'}</span></td></tr>`).join('');
+} else { const s = document.getElementById('lados'); if (s) s.remove(); }
+
+chips(); caso(); strip();
+})();
+</script>

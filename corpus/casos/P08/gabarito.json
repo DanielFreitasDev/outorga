@@ -1,0 +1,44 @@
+{
+  "caso": "P08",
+  "titulo": "Procuração revogada",
+  "categoria": "pf",
+  "objetivo": "Escritura de revogação anterior à consulta.",
+  "validacao_cega": false,
+  "lote": "pf",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "vendedor": {
+      "veredito": "NAO_PODE",
+      "faixas_aceitaveis": [
+        "VERMELHO"
+      ],
+      "conjuntos_minimos": [
+        [
+          "GILMAR"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "881.776.891-00"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Gilmar Sousa Pontes"
+        ]
+      ]
+    }
+  },
+  "esperado_lados_ce": null
+}

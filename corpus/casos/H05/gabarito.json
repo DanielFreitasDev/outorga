@@ -1,0 +1,39 @@
+{
+  "caso": "H05",
+  "titulo": "‘Sem direito de substabelecer’ e houve substabelecimento",
+  "categoria": "substabelecimento",
+  "objetivo": "Vedação com redação nova.",
+  "validacao_cega": true,
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "HUGO"
+      ],
+      [
+        "PRISCILA"
+      ]
+    ],
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": [
+      [
+        "976.863.353-05"
+      ],
+      [
+        "614.083.160-13"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Hugo Leitão Damasceno"
+      ],
+      [
+        "Priscila Damasceno Rios"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

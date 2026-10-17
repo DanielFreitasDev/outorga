@@ -1,0 +1,43 @@
+{
+  "caso": "A05",
+  "titulo": "Procuração só de venda usada para comprar",
+  "categoria": "comprador",
+  "objetivo": "Poderes para vender não incluem comprar (interpretação estrita do mandato).",
+  "validacao_cega": false,
+  "lote": "atpv",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "comprador": {
+      "veredito": "NAO_PODE",
+      "faixas_aceitaveis": [
+        "VERMELHO"
+      ],
+      "conjuntos_minimos": [
+        [
+          "FRANCISCO"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "729.405.576-91"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Francisco Wellington Rocha"
+        ]
+      ]
+    }
+  }
+}

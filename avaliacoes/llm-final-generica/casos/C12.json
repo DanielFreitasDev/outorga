@@ -1,0 +1,1420 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T10:07:35",
+ "pedido": {
+  "veiculo": {
+   "descricao": "VW/DELIVERY 9.170",
+   "placa": "YEP9S69",
+   "renavam": "00438581768",
+   "chassi": "9BWKXK9C7ADGZTYBL"
+  },
+  "data_venda": "2026-09-24",
+  "valor": 310000.0,
+  "assinantes": [
+   {
+    "nome": "Márcia Regina Sá",
+    "cpf": "520.599.728-17"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "Diego Fernandes Uchoa",
+  "vendedor_cnpj": "06.709.072/0001-99",
+  "lado": "vendedor"
+ },
+ "empresa": {
+  "razao_social": "PESCADOS CAMOCIM LTDA.",
+  "cnpj": "06.709.072/0001-99",
+  "tipo": "LTDA",
+  "objeto": "comércio atacadista de pescados e frutos do mar, o seu beneficiamento e o transporte próprio das mercadorias que comercializar",
+  "comercializa_veiculos": false,
+  "subtipo": null
+ },
+ "veredito": "PODE",
+ "faixa": "VERDE",
+ "indice": 100.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 2,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 100 ≥ limiar 85"
+ ],
+ "resumo": "Márcia Regina Sá pode assinar a ATPV-e — regra geral de representação — Cláusula Sétima.",
+ "assinantes": [
+  {
+   "informado": "Márcia Regina Sá",
+   "cpf": "520.599.728-17",
+   "chave": "52059972817",
+   "nome": "Márcia Regina Sá",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:52059972817",
+   "pessoas": [
+    {
+     "chave": "52059972817",
+     "nome": "Márcia Regina Sá"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Cláusula Sétima",
+   "cadeia": [
+    "CAMOCIM_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": [
+    {
+     "codigo": "DELIBERACAO_SOCIOS",
+     "descricao": "Aprovação prévia de sócios com mais da metade do capital",
+     "quorum": 50.01,
+     "satisfeita": true,
+     "detalhe": "Aprovada em 28/08/2026 por sócios com 65% do capital.",
+     "fontes": [
+      {
+       "doc_id": "CAMOCIM_CS",
+       "doc_titulo": "Contrato Social (2021)",
+       "trecho": "Dependerão de prévia aprovação de sócios que representem mais da metade do capital social a alienação ou a oneração de bens do ativo não circulante da sociedade, inclusive veículos automotores, máquinas e equipamentos.",
+       "clausula": "Cláusula Sétima, Parágrafo primeiro",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 3732,
+       "fim": 3950
+      },
+      {
+       "doc_id": "CAMOCIM_ATA",
+       "doc_titulo": "Ata de Reunião de Sócios (2026)",
+       "trecho": "aprovaram, por unanimidade dos presentes, a alienação do veículo VW/DELIVERY 9.170, espécie/tipo carga/caminhão, ano/modelo 2021/2021, cor branca, combustível diesel, placa YEP9S69, RENAVAM 00438581768, chassi 9BWKXK9C7ADGZTYBL, de propriedade da sociedade, pelo valor mínimo de R$ 300.000,00 (trezentos mil reais), ficando os administradores autorizados, na forma do contrato social, a praticar todos os atos necessários à efetivação da venda, inclusive assinar a Autorização para Transferência de Propriedade do Veículo em meio digital (ATPV-e), receber o preço e dar quitação.",
+       "clausula": null,
+       "ancoragem": 99.8,
+       "pagina": 1,
+       "inicio": 1611,
+       "fim": 2190
+      }
+     ],
+     "pessoas": []
+    }
+   ]
+  },
+  {
+   "id": "contrato:81933190876",
+   "pessoas": [
+    {
+     "chave": "81933190876",
+     "nome": "Valdir Cunha Teixeira"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Cláusula Sétima",
+   "cadeia": [
+    "CAMOCIM_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": [
+    {
+     "codigo": "DELIBERACAO_SOCIOS",
+     "descricao": "Aprovação prévia de sócios com mais da metade do capital",
+     "quorum": 50.01,
+     "satisfeita": true,
+     "detalhe": "Aprovada em 28/08/2026 por sócios com 65% do capital.",
+     "fontes": [
+      {
+       "doc_id": "CAMOCIM_CS",
+       "doc_titulo": "Contrato Social (2021)",
+       "trecho": "Dependerão de prévia aprovação de sócios que representem mais da metade do capital social a alienação ou a oneração de bens do ativo não circulante da sociedade, inclusive veículos automotores, máquinas e equipamentos.",
+       "clausula": "Cláusula Sétima, Parágrafo primeiro",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 3732,
+       "fim": 3950
+      },
+      {
+       "doc_id": "CAMOCIM_ATA",
+       "doc_titulo": "Ata de Reunião de Sócios (2026)",
+       "trecho": "aprovaram, por unanimidade dos presentes, a alienação do veículo VW/DELIVERY 9.170, espécie/tipo carga/caminhão, ano/modelo 2021/2021, cor branca, combustível diesel, placa YEP9S69, RENAVAM 00438581768, chassi 9BWKXK9C7ADGZTYBL, de propriedade da sociedade, pelo valor mínimo de R$ 300.000,00 (trezentos mil reais), ficando os administradores autorizados, na forma do contrato social, a praticar todos os atos necessários à efetivação da venda, inclusive assinar a Autorização para Transferência de Propriedade do Veículo em meio digital (ATPV-e), receber o preço e dar quitação.",
+       "clausula": null,
+       "ancoragem": 99.8,
+       "pagina": 1,
+       "inicio": 1611,
+       "fim": 2190
+      }
+     ],
+     "pessoas": []
+    }
+   ]
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": {
+  "id": "contrato:52059972817",
+  "pessoas": [
+   {
+    "chave": "52059972817",
+    "nome": "Márcia Regina Sá"
+   }
+  ],
+  "via": "contrato",
+  "descricao": "regra geral de representação — Cláusula Sétima",
+  "cadeia": [
+   "CAMOCIM_CS"
+  ],
+  "severidade": "ok",
+  "confianca": 1.0,
+  "achados": [],
+  "precondicoes": [
+   {
+    "codigo": "DELIBERACAO_SOCIOS",
+    "descricao": "Aprovação prévia de sócios com mais da metade do capital",
+    "quorum": 50.01,
+    "satisfeita": true,
+    "detalhe": "Aprovada em 28/08/2026 por sócios com 65% do capital.",
+    "fontes": [
+     {
+      "doc_id": "CAMOCIM_CS",
+      "doc_titulo": "Contrato Social (2021)",
+      "trecho": "Dependerão de prévia aprovação de sócios que representem mais da metade do capital social a alienação ou a oneração de bens do ativo não circulante da sociedade, inclusive veículos automotores, máquinas e equipamentos.",
+      "clausula": "Cláusula Sétima, Parágrafo primeiro",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3732,
+      "fim": 3950
+     },
+     {
+      "doc_id": "CAMOCIM_ATA",
+      "doc_titulo": "Ata de Reunião de Sócios (2026)",
+      "trecho": "aprovaram, por unanimidade dos presentes, a alienação do veículo VW/DELIVERY 9.170, espécie/tipo carga/caminhão, ano/modelo 2021/2021, cor branca, combustível diesel, placa YEP9S69, RENAVAM 00438581768, chassi 9BWKXK9C7ADGZTYBL, de propriedade da sociedade, pelo valor mínimo de R$ 300.000,00 (trezentos mil reais), ficando os administradores autorizados, na forma do contrato social, a praticar todos os atos necessários à efetivação da venda, inclusive assinar a Autorização para Transferência de Propriedade do Veículo em meio digital (ATPV-e), receber o preço e dar quitação.",
+      "clausula": null,
+      "ancoragem": 99.8,
+      "pagina": 1,
+      "inicio": 1611,
+      "fim": 2190
+     }
+    ],
+    "pessoas": []
+   }
+  ]
+ },
+ "faltantes": [],
+ "achados": [
+  {
+   "codigo": "CND_INSS",
+   "severidade": "info",
+   "titulo": "CND previdenciária",
+   "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+   "fundamento": [
+    "Lei 8.212/91, art. 47, I, \"c\""
+   ],
+   "fontes": [],
+   "caminho": null
+  },
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: PESCADOS CAMOCIM LTDA..",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "YEP9S69",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "CAMOCIM_CS#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "CAMOCIM_CS",
+    "doc_titulo": "Contrato Social (2021)",
+    "trecho": "A administração da sociedade caberá aos sócios VALDIR CUNHA TEIXEIRA e MÁRCIA REGINA SÁ, com poderes e atribuições de representação ativa e passiva da sociedade, judicial e extrajudicial, podendo praticar, qualquer deles isoladamente, todos os atos compreendidos no objeto social, sempre no interesse da sociedade, vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3269,
+    "fim": 3711
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Valdir Cunha Teixeira",
+    "Márcia Regina Sá"
+   ],
+   "cargo": "administradores",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente",
+      "qualquer deles"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "CAMOCIM_CS#R2",
+   "escopo": "alienacao_ativo_imobilizado",
+   "aplicavel": true,
+   "motivo": "alienação de ativo imobilizado/não circulante",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "CAMOCIM_CS",
+    "doc_titulo": "Contrato Social (2021)",
+    "trecho": "Dependerão de prévia aprovação de sócios que representem mais da metade do capital social a alienação ou a oneração de bens do ativo não circulante da sociedade, inclusive veículos automotores, máquinas e equipamentos.",
+    "clausula": "Cláusula Sétima, Parágrafo primeiro",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3732,
+    "fim": 3950
+   },
+   "modo": "nao_especificado",
+   "pessoas": [],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "CAMOCIM_CS#R3",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "CAMOCIM_CS",
+    "doc_titulo": "Contrato Social (2021)",
+    "trecho": "O sócio OSVALDO LIMA PRADO não participará da administração da sociedade, exercendo exclusivamente os direitos inerentes à condição de quotista.",
+    "clausula": "Cláusula Sétima, Parágrafo segundo",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3970,
+    "fim": 4114
+   },
+   "modo": "nao_especificado",
+   "pessoas": [
+    "Osvaldo Lima Prado"
+   ],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [
+  {
+   "codigo": "DELIBERACAO_SOCIOS",
+   "descricao": "Aprovação prévia de sócios com mais da metade do capital",
+   "quorum": 50.01,
+   "satisfeita": null,
+   "detalhe": "",
+   "fontes": [
+    {
+     "doc_id": "CAMOCIM_CS",
+     "doc_titulo": "Contrato Social (2021)",
+     "trecho": "Dependerão de prévia aprovação de sócios que representem mais da metade do capital social a alienação ou a oneração de bens do ativo não circulante da sociedade, inclusive veículos automotores, máquinas e equipamentos.",
+     "clausula": "Cláusula Sétima, Parágrafo primeiro",
+     "ancoragem": 100.0,
+     "pagina": 2,
+     "inicio": 3732,
+     "fim": 3950
+    }
+   ],
+   "pessoas": []
+  }
+ ],
+ "regime": {
+  "data": "2026-09-24",
+  "atos": [
+   {
+    "doc": "CAMOCIM_CS",
+    "titulo": "Contrato Social (2021)",
+    "efeito": "2021-04-05"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "81933190876",
+    "nome": "Valdir Cunha Teixeira",
+    "cargo": "sócio administrador",
+    "doc": "CAMOCIM_CS"
+   },
+   {
+    "chave": "52059972817",
+    "nome": "Márcia Regina Sá",
+    "cargo": "sócia administradora",
+    "doc": "CAMOCIM_CS"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "81933190876",
+    "nome": "Valdir Cunha Teixeira",
+    "percentual": 40.0
+   },
+   {
+    "chave": "52059972817",
+    "nome": "Márcia Regina Sá",
+    "percentual": 35.0
+   },
+   {
+    "chave": "79298416261",
+    "nome": "Osvaldo Lima Prado",
+    "percentual": 25.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "PESCADOS CAMOCIM LTDA.",
+    "sub": "06.709.072/0001-99"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "VW/DELIVERY 9.170",
+    "sub": "YEP9S69"
+   },
+   {
+    "id": "81933190876",
+    "tipo": "pessoa",
+    "rotulo": "Valdir Cunha Teixeira",
+    "papeis": [
+     "sócio 40%",
+     "sócio administrador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "52059972817",
+    "tipo": "pessoa",
+    "rotulo": "Márcia Regina Sá",
+    "papeis": [
+     "sócio 35%",
+     "sócia administradora"
+    ],
+    "assinante": true
+   },
+   {
+    "id": "79298416261",
+    "tipo": "pessoa",
+    "rotulo": "Osvaldo Lima Prado",
+    "papeis": [
+     "sócio 25%"
+    ],
+    "assinante": false
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "81933190876",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "40%",
+    "status": "neutro"
+   },
+   {
+    "de": "52059972817",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "35%",
+    "status": "neutro"
+   },
+   {
+    "de": "79298416261",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "25%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "81933190876",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "CAMOCIM_CS"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "52059972817",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "CAMOCIM_CS"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2021-04-05",
+   "tipo": "ato",
+   "titulo": "Contrato Social (2021)",
+   "doc": "CAMOCIM_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-08-28",
+   "tipo": "deliberacao",
+   "titulo": "Deliberação de sócios",
+   "doc": "CAMOCIM_ATA#D1",
+   "detalhe": "65% do capital"
+  },
+  {
+   "data": "2026-09-24",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 310.000,00"
+  }
+ ],
+ "pessoas": {
+  "81933190876": {
+   "nome": "Valdir Cunha Teixeira",
+   "cpf": "81933190876"
+  },
+  "79298416261": {
+   "nome": "Osvaldo Lima Prado",
+   "cpf": "79298416261"
+  },
+  "52059972817": {
+   "nome": "Márcia Regina Sá",
+   "cpf": "52059972817"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "comprovada",
+  "outorgante": {
+   "nome": "PESCADOS CAMOCIM LTDA.",
+   "cnpj": "06.709.072/0001-99",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Contrato Social (2021)",
+     "doc": "CAMOCIM_CS",
+     "efeito": "2021-04-05"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Márcia Regina Sá",
+    "cpf": "520.599.728-17",
+    "identificacao": "CPF",
+    "qualidade": "sócia administradora"
+   }
+  ],
+  "poderes_conferidos": [
+   "Contrato Social (2021), Cláusula Sétima: qualquer administrador designado assina sozinho — exigida a assinatura indicada na cláusula específica"
+  ],
+  "prazo_validade": [
+   "Márcia Regina Sá (sócia administradora): mandato por prazo indeterminado"
+  ],
+  "revogacao": [
+   "Poder decorre do ato constitutivo vigente na data da venda; recomenda-se certidão simplificada atualizada da Junta Comercial para afastar alteração posterior ainda não apresentada."
+  ],
+  "fontes": [
+   {
+    "doc_id": "CAMOCIM_CS",
+    "doc_titulo": "Contrato Social (2021)",
+    "trecho": "A administração da sociedade caberá aos sócios VALDIR CUNHA TEIXEIRA e MÁRCIA REGINA SÁ, com poderes e atribuições de representação ativa e passiva da sociedade, judicial e extrajudicial, podendo praticar, qualquer deles isoladamente, todos os atos compreendidos no objeto social, sempre no interesse da sociedade, vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3269,
+    "fim": 3711
+   },
+   {
+    "doc_id": "CAMOCIM_CS",
+    "doc_titulo": "Contrato Social (2021)",
+    "trecho": "A administração da sociedade caberá aos sócios VALDIR CUNHA TEIXEIRA e MÁRCIA REGINA SÁ, com poderes e atribuições de representação ativa e passiva da sociedade, judicial e extrajudicial, podendo praticar, qualquer deles isoladamente, todos os atos compreendidos no objeto social",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3269,
+    "fim": 3548
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "CAMOCIM_ATA",
+    "titulo": "Ata de Reunião de Sócios (2026)",
+    "arquivo": "CAMOCIM_ATA.pdf"
+   },
+   {
+    "id": "CAMOCIM_CS",
+    "titulo": "Contrato Social (2021)",
+    "arquivo": "CAMOCIM_CS.pdf"
+   },
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "CAMOCIM_ATA",
+   "nome": "CAMOCIM_ATA.pdf",
+   "tipo": "ata_reuniao_socios",
+   "titulo": "Ata de Reunião de Sócios (2026)",
+   "data": "2026-08-28",
+   "paginas": [
+    "PESCADOS CAMOCIM LTDA. CNPJ nº 06.709.072/0001-99 – NIRE 23808152572\nATA DE REUNIÃO DE SÓCIOS REALIZADA EM 28 DE AGOSTO DE 2026\nDATA, HORA E LOCAL: Aos 28 (vinte e oito) dias do mês de agosto de 2026, às 9h30, na\nsede social da PESCADOS CAMOCIM LTDA., situada na Rua Beira Rio, nº 2.140, bairro\nPraia, Camocim/CE, CEP 62400-000.\nCONVOCAÇÃO: Realizada pelo sócio administrador VALDIR CUNHA TEIXEIRA,\nmediante carta com aviso de recebimento entregue a todos os sócios em 17/08/2026, da qual\nconstaram a data, a hora, o local e a ordem do dia.\nPRESENÇA: Presentes os sócios VALDIR CUNHA TEIXEIRA, brasileiro, casado,\nempresário, inscrito no CPF sob o nº 819.331.908-76, titular de 140.000 quotas,\nrepresentativas de 40% (quarenta por cento) do capital social, e OSVALDO LIMA PRADO,\nbrasileiro, casado, empresário, inscrito no CPF sob o nº 792.984.162-61, titular de 87.500\nquotas, representativas de 25% (vinte e cinco por cento) do capital social, totalizando 65%\n(sessenta e cinco por cento) do capital social. Ausente a sócia MÁRCIA REGINA SÁ, inscrita\nno CPF sob o nº 520.599.728-17, titular de 122.500 quotas, representativas de 35% (trinta e\ncinco por cento) do capital social, embora regularmente convocada.\nMESA: Presidente: VALDIR CUNHA TEIXEIRA. Secretário: OSVALDO LIMA PRADO.\nORDEM DO DIA: Deliberar, nos termos do Parágrafo primeiro da Cláusula Sétima do\ncontrato social, sobre a alienação de veículo integrante do ativo não circulante da sociedade.\nDELIBERAÇÃO: Instalada a reunião e após a discussão da matéria, os sócios presentes,\nrepresentando 65% (sessenta e cinco por cento) do capital social, aprovaram, por\nunanimidade dos presentes, a alienação do veículo VW/DELIVERY 9.170, espécie/tipo carga/\ncaminhão, ano/modelo 2021/2021, cor branca, combustível diesel, placa YEP9S69,\nRENAVAM 00438581768, chassi 9BWKXK9C7ADGZTYBL, de propriedade da sociedade,\npelo valor mínimo de R$ 300.000,00 (trezentos mil reais), ficando os administradores\nautorizados, na forma do contrato social, a praticar todos os atos necessários à efetivação da\nvenda, inclusive assinar a Autorização para Transferência de Propriedade do Veículo em meio\ndigital (ATPV-e), receber o preço e dar quitação.\nENCERRAMENTO: Nada mais havendo a tratar, o Presidente ofereceu a palavra a quem dela\nquisesse fazer uso e, como ninguém se manifestou, suspendeu os trabalhos pelo tempo\nnecessário à lavratura desta ata em livro próprio, a qual, reaberta a sessão, foi lida, achada\nconforme e assinada pelos sócios presentes.\nCamocim/CE, 28 de agosto de 2026.\n____________________________________ VALDIR CUNHA TEIXEIRA – Presidente da mesa e\nsócio\n____________________________________ OSVALDO LIMA PRADO – Secretário da mesa e\nsócio\nConfere com a original lavrada no Livro de Atas de Reuniões de Sócios nº 01, folhas 14 e 15.\n1.\n2.\n3.\n4.\n5.\n6.\n7.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/1"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "2ce67a8778210844713b343145218e51d32b334611585bff77cf58e17e5dc106",
+   "leitura": {
+    "tarefas": {
+     "ata": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 27.3,
+      "tokens_saida": 546,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "CAMOCIM_CS",
+   "nome": "CAMOCIM_CS.pdf",
+   "tipo": "contrato_social",
+   "titulo": "Contrato Social (2021)",
+   "data": "2021-04-05",
+   "paginas": [
+    "PESCADOS CAMOCIM LTDA. CNPJ nº 06.709.072/0001-99 – NIRE 23808152572\nCONTRATO SOCIAL DE CONSTITUIÇÃO\nPelo presente instrumento particular, as partes abaixo qualificadas:\nVALDIR CUNHA TEIXEIRA, brasileiro, casado sob o regime de comunhão parcial de bens,\nempresário, portador da cédula de identidade RG nº 37042350 SSP/CE, inscrito no CPF sob o nº\n819.331.908-76, residente e domiciliado na Rua Santos Dumont, nº 512, bairro Centro, Camocim/\nCE, CEP 62400-000;\nMÁRCIA REGINA SÁ, brasileira, solteira, empresária, portadora da cédula de identidade RG nº\n30920845 SSP/CE, inscrita no CPF sob o nº 520.599.728-17, residente e domiciliada na Avenida\nPinto Martins, nº 1.380, bairro Cruzeiro, Camocim/CE, CEP 62400-000; e\nOSVALDO LIMA PRADO, brasileiro, casado sob o regime de comunhão parcial de bens,\nempresário, portador da cédula de identidade RG nº 19165850 SSP/CE, inscrito no CPF sob o nº\n792.984.162-61, residente e domiciliado na Rua dos Pescadores, nº 77, bairro Brasília, Camocim/\nCE, CEP 62400-000;\ntêm entre si justa e contratada a constituição de uma sociedade empresária limitada, que se regerá\npelas cláusulas e condições seguintes e, nas omissões, pelos arts. 1.052 e seguintes do Código Civil\n(Lei nº 10.406/2002).\nCLÁUSULA PRIMEIRA – DA DENOMINAÇÃO E SEDE\nA sociedade girará sob o nome empresarial PESCADOS CAMOCIM LTDA. e terá sede na Rua\nBeira Rio, nº 2.140, bairro Praia, Camocim/CE, CEP 62400-000, podendo abrir e encerrar filiais,\nentrepostos e depósitos em qualquer parte do território nacional, mediante alteração contratual.\nCLÁUSULA SEGUNDA – DO OBJETO SOCIAL\nA sociedade terá por objeto o comércio atacadista de pescados e frutos do mar, o seu beneficiamento\ne o transporte próprio das mercadorias que comercializar.\nCLÁUSULA TERCEIRA – DO INÍCIO DAS ATIVIDADES E DO PRAZO DE DURAÇÃO\nA sociedade iniciará suas atividades na data do registro deste instrumento na Junta Comercial do\nEstado do Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 350.000,00 (trezentos e cinquenta mil reais), dividido em 350.000 (trezentas\ne cinquenta mil) quotas no valor nominal de R$ 1,00 (um real) cada uma, totalmente subscrito e\nintegralizado neste ato, em moeda corrente do País, assim distribuído entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nVALDIR CUNHA TEIXEIRA\n140.000\n140.000,00\n40%\nMÁRCIA REGINA SÁ\n122.500\n122.500,00\n35%\nOSVALDO LIMA PRADO\n87.500\n87.500,00\n25%\nTOTAL\n350.000\n350.000,00\n100%\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "CLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social, nos termos do art. 1.052 do Código Civil.\nCLÁUSULA SEXTA – DAS QUOTAS E DE SUA CESSÃO\nAs quotas são indivisíveis em relação à sociedade e não poderão ser cedidas ou transferidas a\nterceiros sem o consentimento dos demais sócios, aos quais fica assegurado, em igualdade de\ncondições e na proporção de suas participações, o direito de preferência para sua aquisição. O sócio\nque pretender ceder suas quotas comunicará sua intenção aos demais, por escrito, com antecedência\nmínima de 30 (trinta) dias.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade caberá aos sócios VALDIR CUNHA TEIXEIRA e MÁRCIA REGINA\nSÁ, com poderes e atribuições de representação ativa e passiva da sociedade, judicial e extrajudicial,\npodendo praticar, qualquer deles isoladamente, todos os atos compreendidos no objeto social,\nsempre no interesse da sociedade, vedado o uso do nome empresarial em atividades estranhas ao\nobjeto social, especialmente em avais, fianças e endossos de favor.\nParágrafo primeiro. Dependerão de prévia aprovação de sócios que representem mais da metade do\ncapital social a alienação ou a oneração de bens do ativo não circulante da sociedade, inclusive\nveículos automotores, máquinas e equipamentos.\nParágrafo segundo. O sócio OSVALDO LIMA PRADO não participará da administração da\nsociedade, exercendo exclusivamente os direitos inerentes à condição de quotista.\nCLÁUSULA OITAVA – DO PRÓ-LABORE\nOs sócios administradores poderão fazer retirada mensal a título de pró-labore, em valor fixado de\ncomum acordo entre os sócios, observadas as disposições regulamentares pertinentes.\nCLÁUSULA NONA – DO EXERCÍCIO SOCIAL E DAS DEMONSTRAÇÕES FINANCEIRAS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, os administradores\nprestarão contas justificadas de sua administração, procedendo à elaboração do inventário, do\nbalanço patrimonial e do balanço de resultado econômico, cabendo aos sócios, na proporção de suas\nquotas, os lucros ou as perdas apurados.\nCLÁUSULA DÉCIMA – DA TOMADA DE CONTAS\nNos 4 (quatro) meses seguintes ao término do exercício social, os sócios reunir-se-ão para tomar as\ncontas dos administradores e deliberar sobre o balanço patrimonial e o de resultado econômico, na\nforma do art. 1.078 do Código Civil.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FALECIMENTO OU DA INCAPACIDADE DE SÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros ou sucessores do falecido ou com o representante legal do incapaz. Não sendo possível ou\ninexistindo interesse destes ou dos sócios remanescentes, o valor de seus haveres será apurado e\nliquidado com base na situação patrimonial da sociedade à data da resolução, verificada em balanço\nespecialmente levantado.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "CLÁUSULA DÉCIMA SEGUNDA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nOs administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade, por lei especial, ou em virtude de condenação criminal, ou por se\nencontrarem sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\npúblicos, ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato, ou contra\na economia popular, contra o sistema financeiro nacional, contra normas de defesa da concorrência,\ncontra as relações de consumo, a fé pública ou a propriedade, nos termos do art. 1.011, § 1º, do\nCódigo Civil.\nCLÁUSULA DÉCIMA TERCEIRA – DO FORO\nFica eleito o foro da Comarca de Camocim/CE para dirimir quaisquer questões oriundas deste\ncontrato, com renúncia expressa a qualquer outro, por mais privilegiado que seja.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em 3 (três) vias\nde igual teor e forma.\nCamocim/CE, 5 de abril de 2021.\n____________________________________ VALDIR CUNHA TEIXEIRA\n____________________________________ MÁRCIA REGINA SÁ\n____________________________________ OSVALDO LIMA PRADO\nVisto: Lívia Maranhão Coelho – OAB/CE nº 29.115\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 19/04/2021 sob o nº 47600699222\nProtocolo: 21/041.837-0 | NIRE: 23808152572\nEmpresa: PESCADOS CAMOCIM LTDA.\nAutenticação: C41E08B7A95D2F36E1087BC4D2A9F513\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "07a783242a797f254fd097f88fffc9e656999092046499099c47d32b9c89be4d",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 40.6,
+      "tokens_saida": 821,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 29.6,
+      "tokens_saida": 818,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n00438581768\nPLACA\nYEP9S69\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2021\nANO MODELO\n2021\nNÚMERO DO CRV\n952984043128\nCÓDIGO DE SEGURANÇA DO CLA\n84466914894\nMARCA / MODELO / VERSÃO\nVW/DELIVERY 9.170\nESPÉCIE / TIPO\nCARGA/CAMINHÃO\nCHASSI\n9BWKXK9C7ADGZTYBL\nCOR PREDOMINANTE\nBRANCA\nCOMBUSTÍVEL\nDIESEL\nNOME\nPESCADOS CAMOCIM LTDA.\nCPF / CNPJ\n06.709.072/0001-99\nLOCAL\nCAMOCIM/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "d8ebe815602934d6f50d7f8a8f865cf85af91204d0725ae50fa594ba98bb05b5",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "llamacpp",
+  "modelo": "qwen3.8-27b",
+  "politica": "Código Civil (genérica)"
+ },
+ "lado": "vendedor",
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T10:07:35",
+   "pedido": {
+    "veiculo": {
+     "descricao": "VW/DELIVERY 9.170",
+     "placa": "YEP9S69",
+     "renavam": "00438581768",
+     "chassi": "9BWKXK9C7ADGZTYBL"
+    },
+    "data_venda": "2026-09-24",
+    "valor": 310000.0,
+    "assinantes": [
+     {
+      "nome": "Márcia Regina Sá",
+      "cpf": "520.599.728-17"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "Diego Fernandes Uchoa",
+    "vendedor_cnpj": "06.709.072/0001-99",
+    "lado": "vendedor"
+   },
+   "empresa": {
+    "razao_social": "PESCADOS CAMOCIM LTDA.",
+    "cnpj": "06.709.072/0001-99",
+    "tipo": "LTDA",
+    "objeto": "comércio atacadista de pescados e frutos do mar, o seu beneficiamento e o transporte próprio das mercadorias que comercializar",
+    "comercializa_veiculos": false,
+    "subtipo": null
+   },
+   "veredito": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 2,
+    "menor_confianca_fato": 1.0,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "resumo": "Márcia Regina Sá pode assinar a ATPV-e — regra geral de representação — Cláusula Sétima.",
+   "assinantes": [
+    {
+     "informado": "Márcia Regina Sá",
+     "cpf": "520.599.728-17",
+     "chave": "52059972817",
+     "nome": "Márcia Regina Sá",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:52059972817",
+     "pessoas": [
+      {
+       "chave": "52059972817",
+       "nome": "Márcia Regina Sá"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "regra geral de representação — Cláusula Sétima",
+     "cadeia": [
+      "CAMOCIM_CS"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": [
+      {
+       "codigo": "DELIBERACAO_SOCIOS",
+       "descricao": "Aprovação prévia de sócios com mais da metade do capital",
+       "quorum": 50.01,
+       "satisfeita": true,
+       "detalhe": "Aprovada em 28/08/2026 por sócios com 65% do capital.",
+       "fontes": [
+        {
+         "doc_id": "CAMOCIM_CS",
+         "doc_titulo": "Contrato Social (2021)",
+         "trecho": "Dependerão de prévia aprovação de sócios que representem mais da metade do capital social a alienação ou a oneração de bens do ativo não circulante da sociedade, inclusive veículos automotores, máquinas e equipamentos.",
+         "clausula": "Cláusula Sétima, Parágrafo primeiro",
+         "ancoragem": 100.0,
+         "pagina": 2,
+         "inicio": 3732,
+         "fim": 3950
+        },
+        {
+         "doc_id": "CAMOCIM_ATA",
+         "doc_titulo": "Ata de Reunião de Sócios (2026)",
+         "trecho": "aprovaram, por unanimidade dos presentes, a alienação do veículo VW/DELIVERY 9.170, espécie/tipo carga/caminhão, ano/modelo 2021/2021, cor branca, combustível diesel, placa YEP9S69, RENAVAM 00438581768, chassi 9BWKXK9C7ADGZTYBL, de propriedade da sociedade, pelo valor mínimo de R$ 300.000,00 (trezentos mil reais), ficando os administradores autorizados, na forma do contrato social, a praticar todos os atos necessários à efetivação da venda, inclusive assinar a Autorização para Transferência de Propriedade do Veículo em meio digital (ATPV-e), receber o preço e dar quitação.",
+         "clausula": null,
+         "ancoragem": 99.8,
+         "pagina": 1,
+         "inicio": 1611,
+         "fim": 2190
+        }
+       ],
+       "pessoas": []
+      }
+     ]
+    },
+    {
+     "id": "contrato:81933190876",
+     "pessoas": [
+      {
+       "chave": "81933190876",
+       "nome": "Valdir Cunha Teixeira"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "regra geral de representação — Cláusula Sétima",
+     "cadeia": [
+      "CAMOCIM_CS"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": [
+      {
+       "codigo": "DELIBERACAO_SOCIOS",
+       "descricao": "Aprovação prévia de sócios com mais da metade do capital",
+       "quorum": 50.01,
+       "satisfeita": true,
+       "detalhe": "Aprovada em 28/08/2026 por sócios com 65% do capital.",
+       "fontes": [
+        {
+         "doc_id": "CAMOCIM_CS",
+         "doc_titulo": "Contrato Social (2021)",
+         "trecho": "Dependerão de prévia aprovação de sócios que representem mais da metade do capital social a alienação ou a oneração de bens do ativo não circulante da sociedade, inclusive veículos automotores, máquinas e equipamentos.",
+         "clausula": "Cláusula Sétima, Parágrafo primeiro",
+         "ancoragem": 100.0,
+         "pagina": 2,
+         "inicio": 3732,
+         "fim": 3950
+        },
+        {
+         "doc_id": "CAMOCIM_ATA",
+         "doc_titulo": "Ata de Reunião de Sócios (2026)",
+         "trecho": "aprovaram, por unanimidade dos presentes, a alienação do veículo VW/DELIVERY 9.170, espécie/tipo carga/caminhão, ano/modelo 2021/2021, cor branca, combustível diesel, placa YEP9S69, RENAVAM 00438581768, chassi 9BWKXK9C7ADGZTYBL, de propriedade da sociedade, pelo valor mínimo de R$ 300.000,00 (trezentos mil reais), ficando os administradores autorizados, na forma do contrato social, a praticar todos os atos necessários à efetivação da venda, inclusive assinar a Autorização para Transferência de Propriedade do Veículo em meio digital (ATPV-e), receber o preço e dar quitação.",
+         "clausula": null,
+         "ancoragem": 99.8,
+         "pagina": 1,
+         "inicio": 1611,
+         "fim": 2190
+        }
+       ],
+       "pessoas": []
+      }
+     ]
+    }
+   ],
+   "caminhos_invalidos": [],
+   "caminho_escolhido": {
+    "id": "contrato:52059972817",
+    "pessoas": [
+     {
+      "chave": "52059972817",
+      "nome": "Márcia Regina Sá"
+     }
+    ],
+    "via": "contrato",
+    "descricao": "regra geral de representação — Cláusula Sétima",
+    "cadeia": [
+     "CAMOCIM_CS"
+    ],
+    "severidade": "ok",
+    "confianca": 1.0,
+    "achados": [],
+    "precondicoes": [
+     {
+      "codigo": "DELIBERACAO_SOCIOS",
+      "descricao": "Aprovação prévia de sócios com mais da metade do capital",
+      "quorum": 50.01,
+      "satisfeita": true,
+      "detalhe": "Aprovada em 28/08/2026 por sócios com 65% do capital.",
+      "fontes": [
+       {
+        "doc_id": "CAMOCIM_CS",
+        "doc_titulo": "Contrato Social (2021)",
+        "trecho": "Dependerão de prévia aprovação de sócios que representem mais da metade do capital social a alienação ou a oneração de bens do ativo não circulante da sociedade, inclusive veículos automotores, máquinas e equipamentos.",
+        "clausula": "Cláusula Sétima, Parágrafo primeiro",
+        "ancoragem": 100.0,
+        "pagina": 2,
+        "inicio": 3732,
+        "fim": 3950
+       },
+       {
+        "doc_id": "CAMOCIM_ATA",
+        "doc_titulo": "Ata de Reunião de Sócios (2026)",
+        "trecho": "aprovaram, por unanimidade dos presentes, a alienação do veículo VW/DELIVERY 9.170, espécie/tipo carga/caminhão, ano/modelo 2021/2021, cor branca, combustível diesel, placa YEP9S69, RENAVAM 00438581768, chassi 9BWKXK9C7ADGZTYBL, de propriedade da sociedade, pelo valor mínimo de R$ 300.000,00 (trezentos mil reais), ficando os administradores autorizados, na forma do contrato social, a praticar todos os atos necessários à efetivação da venda, inclusive assinar a Autorização para Transferência de Propriedade do Veículo em meio digital (ATPV-e), receber o preço e dar quitação.",
+        "clausula": null,
+        "ancoragem": 99.8,
+        "pagina": 1,
+        "inicio": 1611,
+        "fim": 2190
+       }
+      ],
+      "pessoas": []
+     }
+    ]
+   },
+   "faltantes": [],
+   "achados": [
+    {
+     "codigo": "CND_INSS",
+     "severidade": "info",
+     "titulo": "CND previdenciária",
+     "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+     "fundamento": [
+      "Lei 8.212/91, art. 47, I, \"c\""
+     ],
+     "fontes": [],
+     "caminho": null
+    },
+    {
+     "codigo": "TITULARIDADE_OK",
+     "severidade": "ok",
+     "titulo": "Veículo registrado no CNPJ da empresa",
+     "detalhe": "Proprietário no CRLV: PESCADOS CAMOCIM LTDA..",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [
+      {
+       "doc_id": "CRLV",
+       "doc_titulo": "CRLV",
+       "trecho": "YEP9S69",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 146,
+       "fim": 153
+      }
+     ],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "CAMOCIM_CS#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "CAMOCIM_CS",
+      "doc_titulo": "Contrato Social (2021)",
+      "trecho": "A administração da sociedade caberá aos sócios VALDIR CUNHA TEIXEIRA e MÁRCIA REGINA SÁ, com poderes e atribuições de representação ativa e passiva da sociedade, judicial e extrajudicial, podendo praticar, qualquer deles isoladamente, todos os atos compreendidos no objeto social, sempre no interesse da sociedade, vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+      "clausula": "Cláusula Sétima",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3269,
+      "fim": 3711
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Valdir Cunha Teixeira",
+      "Márcia Regina Sá"
+     ],
+     "cargo": "administradores",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente",
+        "qualquer deles"
+       ]
+      }
+     ],
+     "decisiva": true
+    },
+    {
+     "regra": "CAMOCIM_CS#R2",
+     "escopo": "alienacao_ativo_imobilizado",
+     "aplicavel": true,
+     "motivo": "alienação de ativo imobilizado/não circulante",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "CAMOCIM_CS",
+      "doc_titulo": "Contrato Social (2021)",
+      "trecho": "Dependerão de prévia aprovação de sócios que representem mais da metade do capital social a alienação ou a oneração de bens do ativo não circulante da sociedade, inclusive veículos automotores, máquinas e equipamentos.",
+      "clausula": "Cláusula Sétima, Parágrafo primeiro",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3732,
+      "fim": 3950
+     },
+     "modo": "nao_especificado",
+     "pessoas": [],
+     "cargo": "socios",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    },
+    {
+     "regra": "CAMOCIM_CS#R3",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "CAMOCIM_CS",
+      "doc_titulo": "Contrato Social (2021)",
+      "trecho": "O sócio OSVALDO LIMA PRADO não participará da administração da sociedade, exercendo exclusivamente os direitos inerentes à condição de quotista.",
+      "clausula": "Cláusula Sétima, Parágrafo segundo",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3970,
+      "fim": 4114
+     },
+     "modo": "nao_especificado",
+     "pessoas": [
+      "Osvaldo Lima Prado"
+     ],
+     "cargo": "socios",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    }
+   ],
+   "precondicoes": [
+    {
+     "codigo": "DELIBERACAO_SOCIOS",
+     "descricao": "Aprovação prévia de sócios com mais da metade do capital",
+     "quorum": 50.01,
+     "satisfeita": null,
+     "detalhe": "",
+     "fontes": [
+      {
+       "doc_id": "CAMOCIM_CS",
+       "doc_titulo": "Contrato Social (2021)",
+       "trecho": "Dependerão de prévia aprovação de sócios que representem mais da metade do capital social a alienação ou a oneração de bens do ativo não circulante da sociedade, inclusive veículos automotores, máquinas e equipamentos.",
+       "clausula": "Cláusula Sétima, Parágrafo primeiro",
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 3732,
+       "fim": 3950
+      }
+     ],
+     "pessoas": []
+    }
+   ],
+   "regime": {
+    "data": "2026-09-24",
+    "atos": [
+     {
+      "doc": "CAMOCIM_CS",
+      "titulo": "Contrato Social (2021)",
+      "efeito": "2021-04-05"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "81933190876",
+      "nome": "Valdir Cunha Teixeira",
+      "cargo": "sócio administrador",
+      "doc": "CAMOCIM_CS"
+     },
+     {
+      "chave": "52059972817",
+      "nome": "Márcia Regina Sá",
+      "cargo": "sócia administradora",
+      "doc": "CAMOCIM_CS"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "81933190876",
+      "nome": "Valdir Cunha Teixeira",
+      "percentual": 40.0
+     },
+     {
+      "chave": "52059972817",
+      "nome": "Márcia Regina Sá",
+      "percentual": 35.0
+     },
+     {
+      "chave": "79298416261",
+      "nome": "Osvaldo Lima Prado",
+      "percentual": 25.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "PESCADOS CAMOCIM LTDA.",
+      "sub": "06.709.072/0001-99"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "VW/DELIVERY 9.170",
+      "sub": "YEP9S69"
+     },
+     {
+      "id": "81933190876",
+      "tipo": "pessoa",
+      "rotulo": "Valdir Cunha Teixeira",
+      "papeis": [
+       "sócio 40%",
+       "sócio administrador"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "52059972817",
+      "tipo": "pessoa",
+      "rotulo": "Márcia Regina Sá",
+      "papeis": [
+       "sócio 35%",
+       "sócia administradora"
+      ],
+      "assinante": true
+     },
+     {
+      "id": "79298416261",
+      "tipo": "pessoa",
+      "rotulo": "Osvaldo Lima Prado",
+      "papeis": [
+       "sócio 25%"
+      ],
+      "assinante": false
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "valido"
+     },
+     {
+      "de": "81933190876",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "40%",
+      "status": "neutro"
+     },
+     {
+      "de": "52059972817",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "35%",
+      "status": "neutro"
+     },
+     {
+      "de": "79298416261",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "25%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "81933190876",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "CAMOCIM_CS"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "52059972817",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "CAMOCIM_CS"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2021-04-05",
+     "tipo": "ato",
+     "titulo": "Contrato Social (2021)",
+     "doc": "CAMOCIM_CS",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-08-28",
+     "tipo": "deliberacao",
+     "titulo": "Deliberação de sócios",
+     "doc": "CAMOCIM_ATA#D1",
+     "detalhe": "65% do capital"
+    },
+    {
+     "data": "2026-09-24",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 310.000,00"
+    }
+   ],
+   "pessoas": {
+    "81933190876": {
+     "nome": "Valdir Cunha Teixeira",
+     "cpf": "81933190876"
+    },
+    "79298416261": {
+     "nome": "Osvaldo Lima Prado",
+     "cpf": "79298416261"
+    },
+    "52059972817": {
+     "nome": "Márcia Regina Sá",
+     "cpf": "52059972817"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "comprovada",
+    "outorgante": {
+     "nome": "PESCADOS CAMOCIM LTDA.",
+     "cnpj": "06.709.072/0001-99",
+     "tipo": "LTDA",
+     "atos_vigentes": [
+      {
+       "titulo": "Contrato Social (2021)",
+       "doc": "CAMOCIM_CS",
+       "efeito": "2021-04-05"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "Márcia Regina Sá",
+      "cpf": "520.599.728-17",
+      "identificacao": "CPF",
+      "qualidade": "sócia administradora"
+     }
+    ],
+    "poderes_conferidos": [
+     "Contrato Social (2021), Cláusula Sétima: qualquer administrador designado assina sozinho — exigida a assinatura indicada na cláusula específica"
+    ],
+    "prazo_validade": [
+     "Márcia Regina Sá (sócia administradora): mandato por prazo indeterminado"
+    ],
+    "revogacao": [
+     "Poder decorre do ato constitutivo vigente na data da venda; recomenda-se certidão simplificada atualizada da Junta Comercial para afastar alteração posterior ainda não apresentada."
+    ],
+    "fontes": [
+     {
+      "doc_id": "CAMOCIM_CS",
+      "doc_titulo": "Contrato Social (2021)",
+      "trecho": "A administração da sociedade caberá aos sócios VALDIR CUNHA TEIXEIRA e MÁRCIA REGINA SÁ, com poderes e atribuições de representação ativa e passiva da sociedade, judicial e extrajudicial, podendo praticar, qualquer deles isoladamente, todos os atos compreendidos no objeto social, sempre no interesse da sociedade, vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+      "clausula": "Cláusula Sétima",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3269,
+      "fim": 3711
+     },
+     {
+      "doc_id": "CAMOCIM_CS",
+      "doc_titulo": "Contrato Social (2021)",
+      "trecho": "A administração da sociedade caberá aos sócios VALDIR CUNHA TEIXEIRA e MÁRCIA REGINA SÁ, com poderes e atribuições de representação ativa e passiva da sociedade, judicial e extrajudicial, podendo praticar, qualquer deles isoladamente, todos os atos compreendidos no objeto social",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3269,
+      "fim": 3548
+     }
+    ],
+    "documentos_verificaveis": [
+     {
+      "id": "CAMOCIM_ATA",
+      "titulo": "Ata de Reunião de Sócios (2026)",
+      "arquivo": "CAMOCIM_ATA.pdf"
+     },
+     {
+      "id": "CAMOCIM_CS",
+      "titulo": "Contrato Social (2021)",
+      "arquivo": "CAMOCIM_CS.pdf"
+     },
+     {
+      "id": "CRLV",
+      "titulo": "CRLV",
+      "arquivo": "CRLV.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "CAMOCIM_ATA",
+     "nome": "CAMOCIM_ATA.pdf",
+     "tipo": "ata_reuniao_socios",
+     "titulo": "Ata de Reunião de Sócios (2026)",
+     "data": "2026-08-28",
+     "paginas": [
+      "PESCADOS CAMOCIM LTDA. CNPJ nº 06.709.072/0001-99 – NIRE 23808152572\nATA DE REUNIÃO DE SÓCIOS REALIZADA EM 28 DE AGOSTO DE 2026\nDATA, HORA E LOCAL: Aos 28 (vinte e oito) dias do mês de agosto de 2026, às 9h30, na\nsede social da PESCADOS CAMOCIM LTDA., situada na Rua Beira Rio, nº 2.140, bairro\nPraia, Camocim/CE, CEP 62400-000.\nCONVOCAÇÃO: Realizada pelo sócio administrador VALDIR CUNHA TEIXEIRA,\nmediante carta com aviso de recebimento entregue a todos os sócios em 17/08/2026, da qual\nconstaram a data, a hora, o local e a ordem do dia.\nPRESENÇA: Presentes os sócios VALDIR CUNHA TEIXEIRA, brasileiro, casado,\nempresário, inscrito no CPF sob o nº 819.331.908-76, titular de 140.000 quotas,\nrepresentativas de 40% (quarenta por cento) do capital social, e OSVALDO LIMA PRADO,\nbrasileiro, casado, empresário, inscrito no CPF sob o nº 792.984.162-61, titular de 87.500\nquotas, representativas de 25% (vinte e cinco por cento) do capital social, totalizando 65%\n(sessenta e cinco por cento) do capital social. Ausente a sócia MÁRCIA REGINA SÁ, inscrita\nno CPF sob o nº 520.599.728-17, titular de 122.500 quotas, representativas de 35% (trinta e\ncinco por cento) do capital social, embora regularmente convocada.\nMESA: Presidente: VALDIR CUNHA TEIXEIRA. Secretário: OSVALDO LIMA PRADO.\nORDEM DO DIA: Deliberar, nos termos do Parágrafo primeiro da Cláusula Sétima do\ncontrato social, sobre a alienação de veículo integrante do ativo não circulante da sociedade.\nDELIBERAÇÃO: Instalada a reunião e após a discussão da matéria, os sócios presentes,\nrepresentando 65% (sessenta e cinco por cento) do capital social, aprovaram, por\nunanimidade dos presentes, a alienação do veículo VW/DELIVERY 9.170, espécie/tipo carga/\ncaminhão, ano/modelo 2021/2021, cor branca, combustível diesel, placa YEP9S69,\nRENAVAM 00438581768, chassi 9BWKXK9C7ADGZTYBL, de propriedade da sociedade,\npelo valor mínimo de R$ 300.000,00 (trezentos mil reais), ficando os administradores\nautorizados, na forma do contrato social, a praticar todos os atos necessários à efetivação da\nvenda, inclusive assinar a Autorização para Transferência de Propriedade do Veículo em meio\ndigital (ATPV-e), receber o preço e dar quitação.\nENCERRAMENTO: Nada mais havendo a tratar, o Presidente ofereceu a palavra a quem dela\nquisesse fazer uso e, como ninguém se manifestou, suspendeu os trabalhos pelo tempo\nnecessário à lavratura desta ata em livro próprio, a qual, reaberta a sessão, foi lida, achada\nconforme e assinada pelos sócios presentes.\nCamocim/CE, 28 de agosto de 2026.\n____________________________________ VALDIR CUNHA TEIXEIRA – Presidente da mesa e\nsócio\n____________________________________ OSVALDO LIMA PRADO – Secretário da mesa e\nsócio\nConfere com a original lavrada no Livro de Atas de Reuniões de Sócios nº 01, folhas 14 e 15.\n1.\n2.\n3.\n4.\n5.\n6.\n7.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/1"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "2ce67a8778210844713b343145218e51d32b334611585bff77cf58e17e5dc106",
+     "leitura": {
+      "tarefas": {
+       "ata": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 27.3,
+        "tokens_saida": 546,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "CAMOCIM_CS",
+     "nome": "CAMOCIM_CS.pdf",
+     "tipo": "contrato_social",
+     "titulo": "Contrato Social (2021)",
+     "data": "2021-04-05",
+     "paginas": [
+      "PESCADOS CAMOCIM LTDA. CNPJ nº 06.709.072/0001-99 – NIRE 23808152572\nCONTRATO SOCIAL DE CONSTITUIÇÃO\nPelo presente instrumento particular, as partes abaixo qualificadas:\nVALDIR CUNHA TEIXEIRA, brasileiro, casado sob o regime de comunhão parcial de bens,\nempresário, portador da cédula de identidade RG nº 37042350 SSP/CE, inscrito no CPF sob o nº\n819.331.908-76, residente e domiciliado na Rua Santos Dumont, nº 512, bairro Centro, Camocim/\nCE, CEP 62400-000;\nMÁRCIA REGINA SÁ, brasileira, solteira, empresária, portadora da cédula de identidade RG nº\n30920845 SSP/CE, inscrita no CPF sob o nº 520.599.728-17, residente e domiciliada na Avenida\nPinto Martins, nº 1.380, bairro Cruzeiro, Camocim/CE, CEP 62400-000; e\nOSVALDO LIMA PRADO, brasileiro, casado sob o regime de comunhão parcial de bens,\nempresário, portador da cédula de identidade RG nº 19165850 SSP/CE, inscrito no CPF sob o nº\n792.984.162-61, residente e domiciliado na Rua dos Pescadores, nº 77, bairro Brasília, Camocim/\nCE, CEP 62400-000;\ntêm entre si justa e contratada a constituição de uma sociedade empresária limitada, que se regerá\npelas cláusulas e condições seguintes e, nas omissões, pelos arts. 1.052 e seguintes do Código Civil\n(Lei nº 10.406/2002).\nCLÁUSULA PRIMEIRA – DA DENOMINAÇÃO E SEDE\nA sociedade girará sob o nome empresarial PESCADOS CAMOCIM LTDA. e terá sede na Rua\nBeira Rio, nº 2.140, bairro Praia, Camocim/CE, CEP 62400-000, podendo abrir e encerrar filiais,\nentrepostos e depósitos em qualquer parte do território nacional, mediante alteração contratual.\nCLÁUSULA SEGUNDA – DO OBJETO SOCIAL\nA sociedade terá por objeto o comércio atacadista de pescados e frutos do mar, o seu beneficiamento\ne o transporte próprio das mercadorias que comercializar.\nCLÁUSULA TERCEIRA – DO INÍCIO DAS ATIVIDADES E DO PRAZO DE DURAÇÃO\nA sociedade iniciará suas atividades na data do registro deste instrumento na Junta Comercial do\nEstado do Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 350.000,00 (trezentos e cinquenta mil reais), dividido em 350.000 (trezentas\ne cinquenta mil) quotas no valor nominal de R$ 1,00 (um real) cada uma, totalmente subscrito e\nintegralizado neste ato, em moeda corrente do País, assim distribuído entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nVALDIR CUNHA TEIXEIRA\n140.000\n140.000,00\n40%\nMÁRCIA REGINA SÁ\n122.500\n122.500,00\n35%\nOSVALDO LIMA PRADO\n87.500\n87.500,00\n25%\nTOTAL\n350.000\n350.000,00\n100%\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+      "CLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social, nos termos do art. 1.052 do Código Civil.\nCLÁUSULA SEXTA – DAS QUOTAS E DE SUA CESSÃO\nAs quotas são indivisíveis em relação à sociedade e não poderão ser cedidas ou transferidas a\nterceiros sem o consentimento dos demais sócios, aos quais fica assegurado, em igualdade de\ncondições e na proporção de suas participações, o direito de preferência para sua aquisição. O sócio\nque pretender ceder suas quotas comunicará sua intenção aos demais, por escrito, com antecedência\nmínima de 30 (trinta) dias.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade caberá aos sócios VALDIR CUNHA TEIXEIRA e MÁRCIA REGINA\nSÁ, com poderes e atribuições de representação ativa e passiva da sociedade, judicial e extrajudicial,\npodendo praticar, qualquer deles isoladamente, todos os atos compreendidos no objeto social,\nsempre no interesse da sociedade, vedado o uso do nome empresarial em atividades estranhas ao\nobjeto social, especialmente em avais, fianças e endossos de favor.\nParágrafo primeiro. Dependerão de prévia aprovação de sócios que representem mais da metade do\ncapital social a alienação ou a oneração de bens do ativo não circulante da sociedade, inclusive\nveículos automotores, máquinas e equipamentos.\nParágrafo segundo. O sócio OSVALDO LIMA PRADO não participará da administração da\nsociedade, exercendo exclusivamente os direitos inerentes à condição de quotista.\nCLÁUSULA OITAVA – DO PRÓ-LABORE\nOs sócios administradores poderão fazer retirada mensal a título de pró-labore, em valor fixado de\ncomum acordo entre os sócios, observadas as disposições regulamentares pertinentes.\nCLÁUSULA NONA – DO EXERCÍCIO SOCIAL E DAS DEMONSTRAÇÕES FINANCEIRAS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, os administradores\nprestarão contas justificadas de sua administração, procedendo à elaboração do inventário, do\nbalanço patrimonial e do balanço de resultado econômico, cabendo aos sócios, na proporção de suas\nquotas, os lucros ou as perdas apurados.\nCLÁUSULA DÉCIMA – DA TOMADA DE CONTAS\nNos 4 (quatro) meses seguintes ao término do exercício social, os sócios reunir-se-ão para tomar as\ncontas dos administradores e deliberar sobre o balanço patrimonial e o de resultado econômico, na\nforma do art. 1.078 do Código Civil.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FALECIMENTO OU DA INCAPACIDADE DE SÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros ou sucessores do falecido ou com o representante legal do incapaz. Não sendo possível ou\ninexistindo interesse destes ou dos sócios remanescentes, o valor de seus haveres será apurado e\nliquidado com base na situação patrimonial da sociedade à data da resolução, verificada em balanço\nespecialmente levantado.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+      "CLÁUSULA DÉCIMA SEGUNDA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nOs administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade, por lei especial, ou em virtude de condenação criminal, ou por se\nencontrarem sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\npúblicos, ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato, ou contra\na economia popular, contra o sistema financeiro nacional, contra normas de defesa da concorrência,\ncontra as relações de consumo, a fé pública ou a propriedade, nos termos do art. 1.011, § 1º, do\nCódigo Civil.\nCLÁUSULA DÉCIMA TERCEIRA – DO FORO\nFica eleito o foro da Comarca de Camocim/CE para dirimir quaisquer questões oriundas deste\ncontrato, com renúncia expressa a qualquer outro, por mais privilegiado que seja.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em 3 (três) vias\nde igual teor e forma.\nCamocim/CE, 5 de abril de 2021.\n____________________________________ VALDIR CUNHA TEIXEIRA\n____________________________________ MÁRCIA REGINA SÁ\n____________________________________ OSVALDO LIMA PRADO\nVisto: Lívia Maranhão Coelho – OAB/CE nº 29.115\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 19/04/2021 sob o nº 47600699222\nProtocolo: 21/041.837-0 | NIRE: 23808152572\nEmpresa: PESCADOS CAMOCIM LTDA.\nAutenticação: C41E08B7A95D2F36E1087BC4D2A9F513\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "07a783242a797f254fd097f88fffc9e656999092046499099c47d32b9c89be4d",
+     "leitura": {
+      "tarefas": {
+       "partes": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 40.6,
+        "tokens_saida": 821,
+        "modelo": "qwen3.8-27b"
+       },
+       "regras": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 29.6,
+        "tokens_saida": 818,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "CRLV",
+     "nome": "CRLV.pdf",
+     "tipo": "crlv",
+     "titulo": "CRLV",
+     "data": null,
+     "paginas": [
+      "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n00438581768\nPLACA\nYEP9S69\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2021\nANO MODELO\n2021\nNÚMERO DO CRV\n952984043128\nCÓDIGO DE SEGURANÇA DO CLA\n84466914894\nMARCA / MODELO / VERSÃO\nVW/DELIVERY 9.170\nESPÉCIE / TIPO\nCARGA/CAMINHÃO\nCHASSI\n9BWKXK9C7ADGZTYBL\nCOR PREDOMINANTE\nBRANCA\nCOMBUSTÍVEL\nDIESEL\nNOME\nPESCADOS CAMOCIM LTDA.\nCPF / CNPJ\n06.709.072/0001-99\nLOCAL\nCAMOCIM/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "d8ebe815602934d6f50d7f8a8f865cf85af91204d0725ae50fa594ba98bb05b5",
+     "leitura": {
+      "tarefas": {
+       "crlv": {
+        "metodo": "regex"
+       }
+      },
+      "texto_truncado": false
+     }
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "llamacpp",
+    "modelo": "qwen3.8-27b",
+    "politica": "Código Civil (genérica)"
+   },
+   "lado": "vendedor"
+  }
+ },
+ "geral": {
+  "veredito": "PODE",
+  "faixa": "VERDE",
+  "indice": 100.0,
+  "resumo": "Vendedor: Márcia Regina Sá pode assinar a ATPV-e — regra geral de representação — Cláusula Sétima.",
+  "motivos_faixa": [
+   "Vendedor — índice 100 ≥ limiar 85"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "VW/DELIVERY 9.170",
+   "placa": "YEP9S69",
+   "renavam": "00438581768",
+   "chassi": "9BWKXK9C7ADGZTYBL"
+  },
+  "data_venda": "2026-09-24",
+  "valor": 310000.0,
+  "vendedor": {
+   "tipo": "PJ",
+   "nome": "PESCADOS CAMOCIM LTDA.",
+   "documento": "06.709.072/0001-99",
+   "assinantes": [
+    {
+     "nome": "Márcia Regina Sá",
+     "cpf": "520.599.728-17"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": "Diego Fernandes Uchoa",
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "informado"
+ },
+ "hash_entrada": "e7357677bcb9c404050205c9fb9e952b5e4839df3f7eb2a70ba62d8ace8aba03"
+}

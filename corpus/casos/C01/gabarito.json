@@ -1,0 +1,41 @@
+{
+  "caso": "C01",
+  "titulo": "Administração 'indistintamente' — um sócio assina",
+  "categoria": "administracao",
+  "objetivo": "Semântica: 'indistintamente' = cada administrador assina sozinho; restrição sobre imóveis não alcança veículo; nome digitado abreviado.",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": [
+      [
+        "JOAO"
+      ],
+      [
+        "MARIA"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 1.013",
+      "CC art. 1.060"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "158.813.998-03"
+      ],
+      [
+        "987.973.091-76"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "João Batista Andrade"
+      ],
+      [
+        "Maria Clara Fontenele"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

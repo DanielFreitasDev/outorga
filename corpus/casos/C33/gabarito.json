@@ -1,0 +1,94 @@
+{
+  "caso": "C33",
+  "titulo": "S.A. — diretor + procurador com procuração válida",
+  "categoria": "estrutura",
+  "objetivo": "Combinação mista do estatuto: 1 diretor + 1 procurador.",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": [
+      [
+        "MARCELO",
+        "HELENA"
+      ],
+      [
+        "MARCELO",
+        "TIAGO"
+      ],
+      [
+        "HELENA",
+        "TIAGO"
+      ],
+      [
+        "MARCELO",
+        "SERGIO"
+      ],
+      [
+        "HELENA",
+        "SERGIO"
+      ],
+      [
+        "TIAGO",
+        "SERGIO"
+      ]
+    ],
+    "fundamentos": [
+      "Lei 6.404/76 art. 144"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "589.831.948-47",
+        "394.948.214-83"
+      ],
+      [
+        "589.831.948-47",
+        "621.052.185-12"
+      ],
+      [
+        "394.948.214-83",
+        "621.052.185-12"
+      ],
+      [
+        "589.831.948-47",
+        "291.280.845-60"
+      ],
+      [
+        "394.948.214-83",
+        "291.280.845-60"
+      ],
+      [
+        "621.052.185-12",
+        "291.280.845-60"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Marcelo Augusto Feitosa",
+        "Helena Castro Lins"
+      ],
+      [
+        "Marcelo Augusto Feitosa",
+        "Tiago Rolim Vasconcelos"
+      ],
+      [
+        "Helena Castro Lins",
+        "Tiago Rolim Vasconcelos"
+      ],
+      [
+        "Marcelo Augusto Feitosa",
+        "Sérgio Paiva Gomes"
+      ],
+      [
+        "Helena Castro Lins",
+        "Sérgio Paiva Gomes"
+      ],
+      [
+        "Tiago Rolim Vasconcelos",
+        "Sérgio Paiva Gomes"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

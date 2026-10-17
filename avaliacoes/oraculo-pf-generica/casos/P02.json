@@ -1,0 +1,1142 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T12:00:03",
+ "pedido": {
+  "veiculo": {
+   "descricao": "HYUNDAI/HB20 1.0 COMFORT",
+   "placa": "HNM2Z92",
+   "renavam": "02291958849",
+   "chassi": "9BHHU7V697PRBDC3C"
+  },
+  "data_venda": "2026-10-16",
+  "valor": null,
+  "assinantes": [
+   {
+    "nome": "CPF 753.490.565-65",
+    "cpf": "753.490.565-65"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": null,
+  "vendedor_cnpj": "320.908.841-18",
+  "lado": "vendedor",
+  "consulta": true
+ },
+ "empresa": {
+  "razao_social": "Raimunda Nonata Siqueira",
+  "cnpj": null,
+  "tipo": "PF",
+  "objeto": "",
+  "comercializa_veiculos": false,
+  "subtipo": "PF",
+  "cpf": "320.908.841-18"
+ },
+ "veredito": "PODE",
+ "faixa": "VERDE",
+ "indice": 100.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 2,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 100 ≥ limiar 85"
+ ],
+ "resumo": "Josué Lima Ferreira pode assinar a ATPV-e como procurador(a) de Raimunda Nonata Siqueira — procuração pública de 12/08/2026.",
+ "assinantes": [
+  {
+   "informado": "CPF 753.490.565-65",
+   "cpf": "753.490.565-65",
+   "chave": "75349056565",
+   "nome": "Josué Lima Ferreira",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:32090884118",
+   "pessoas": [
+    {
+     "chave": "32090884118",
+     "nome": "Raimunda Nonata Siqueira"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "Assinatura do próprio proprietário (pessoa física)",
+   "cadeia": [
+    "TITULAR"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  },
+  {
+   "id": "POA_PF_HB20:75349056565",
+   "pessoas": [
+    {
+     "chave": "75349056565",
+     "nome": "Josué Lima Ferreira"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 12/08/2026",
+   "cadeia": [
+    "POA_PF_HB20"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_TITULAR",
+     "severidade": "ok",
+     "titulo": "Outorgada por o proprietário do veículo",
+     "detalhe": "A outorgante é Raimunda Nonata Siqueira, o proprietário do veículo (pessoa física).",
+     "fundamento": [
+      "CC art. 653"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_HB20",
+       "doc_titulo": "Procuração (POA_PF_HB20)",
+       "trecho": "OUTORGANTE, por si e em nome próprio, RAIMUNDA NONATA SIQUEIRA, brasileira, viúva, aposentada, portadora da cédula de identidade RG nº 88587459 SSP/CE, inscrita no CPF sob o nº 320",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 585,
+       "fim": 765
+      }
+     ],
+     "caminho": "POA_PF_HB20"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_HB20",
+       "doc_titulo": "Procuração (POA_PF_HB20)",
+       "trecho": "poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar, a quem e pelo preço que convencionar, o veículo HYUNDAI/HB20 1",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1401,
+       "fim": 1554
+      }
+     ],
+     "caminho": "POA_PF_HB20"
+    },
+    {
+     "codigo": "VEICULO_ABRANGIDO",
+     "severidade": "ok",
+     "titulo": "Veículo identificado na procuração",
+     "detalhe": "A procuração identifica exatamente este veículo.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_HB20",
+       "doc_titulo": "Procuração (POA_PF_HB20)",
+       "trecho": "poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar, a quem e pelo preço que convencionar, o veículo HYUNDAI/HB20 1",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1401,
+       "fim": 1554
+      }
+     ],
+     "caminho": "POA_PF_HB20"
+    },
+    {
+     "codigo": "PROCURACAO_NO_PRAZO",
+     "severidade": "ok",
+     "titulo": "Dentro do prazo",
+     "detalhe": "Válida até 12/08/2027.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_HB20",
+       "doc_titulo": "Procuração (POA_PF_HB20)",
+       "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado da data da lavratura deste instrumento",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1943,
+       "fim": 2043
+      }
+     ],
+     "caminho": "POA_PF_HB20"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": {
+  "id": "POA_PF_HB20:75349056565",
+  "pessoas": [
+   {
+    "chave": "75349056565",
+    "nome": "Josué Lima Ferreira"
+   }
+  ],
+  "via": "procuracao",
+  "descricao": "Procuração pública de 12/08/2026",
+  "cadeia": [
+   "POA_PF_HB20"
+  ],
+  "severidade": "ok",
+  "confianca": 1.0,
+  "achados": [
+   {
+    "codigo": "OUTORGANTE_TITULAR",
+    "severidade": "ok",
+    "titulo": "Outorgada por o proprietário do veículo",
+    "detalhe": "A outorgante é Raimunda Nonata Siqueira, o proprietário do veículo (pessoa física).",
+    "fundamento": [
+     "CC art. 653"
+    ],
+    "fontes": [
+     {
+      "doc_id": "POA_PF_HB20",
+      "doc_titulo": "Procuração (POA_PF_HB20)",
+      "trecho": "OUTORGANTE, por si e em nome próprio, RAIMUNDA NONATA SIQUEIRA, brasileira, viúva, aposentada, portadora da cédula de identidade RG nº 88587459 SSP/CE, inscrita no CPF sob o nº 320",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 585,
+      "fim": 765
+     }
+    ],
+    "caminho": "POA_PF_HB20"
+   },
+   {
+    "codigo": "PODERES_ESPECIAIS",
+    "severidade": "ok",
+    "titulo": "Poder expresso para alienar veículos",
+    "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+    "fundamento": [
+     "CC art. 661, §1º"
+    ],
+    "fontes": [
+     {
+      "doc_id": "POA_PF_HB20",
+      "doc_titulo": "Procuração (POA_PF_HB20)",
+      "trecho": "poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar, a quem e pelo preço que convencionar, o veículo HYUNDAI/HB20 1",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 1401,
+      "fim": 1554
+     }
+    ],
+    "caminho": "POA_PF_HB20"
+   },
+   {
+    "codigo": "VEICULO_ABRANGIDO",
+    "severidade": "ok",
+    "titulo": "Veículo identificado na procuração",
+    "detalhe": "A procuração identifica exatamente este veículo.",
+    "fundamento": [],
+    "fontes": [
+     {
+      "doc_id": "POA_PF_HB20",
+      "doc_titulo": "Procuração (POA_PF_HB20)",
+      "trecho": "poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar, a quem e pelo preço que convencionar, o veículo HYUNDAI/HB20 1",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 1401,
+      "fim": 1554
+     }
+    ],
+    "caminho": "POA_PF_HB20"
+   },
+   {
+    "codigo": "PROCURACAO_NO_PRAZO",
+    "severidade": "ok",
+    "titulo": "Dentro do prazo",
+    "detalhe": "Válida até 12/08/2027.",
+    "fundamento": [],
+    "fontes": [
+     {
+      "doc_id": "POA_PF_HB20",
+      "doc_titulo": "Procuração (POA_PF_HB20)",
+      "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado da data da lavratura deste instrumento",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 1943,
+      "fim": 2043
+     }
+    ],
+    "caminho": "POA_PF_HB20"
+   }
+  ],
+  "precondicoes": []
+ },
+ "faltantes": [],
+ "achados": [
+  {
+   "codigo": "TITULARIDADE_BASE",
+   "severidade": "ok",
+   "titulo": "Proprietário conferido na base veicular",
+   "detalhe": "Pela placa/RENAVAM, o veículo está em nome de Raimunda Nonata Siqueira.",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "TITULAR#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "TITULAR",
+    "doc_titulo": "Base veicular (simulada)",
+    "trecho": "RAIMUNDA NONATA SIQUEIRA — CPF 320.908.841-18",
+    "clausula": "titularidade",
+    "ancoragem": 100.0,
+    "pagina": null,
+    "inicio": null,
+    "fim": null
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Raimunda Nonata Siqueira"
+   ],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": true
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-10-16",
+  "atos": [
+   {
+    "doc": "TITULAR",
+    "titulo": "Titularidade (pessoa física)",
+    "efeito": "1900-01-01"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "32090884118",
+    "nome": "Raimunda Nonata Siqueira",
+    "cargo": "titular (pessoa física)",
+    "doc": "TITULAR"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "32090884118",
+    "nome": "Raimunda Nonata Siqueira",
+    "percentual": 100.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "Raimunda Nonata Siqueira",
+    "sub": ""
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "HYUNDAI/HB20 1.0 COMFORT",
+    "sub": "HNM2Z92"
+   },
+   {
+    "id": "32090884118",
+    "tipo": "pessoa",
+    "rotulo": "Raimunda Nonata Siqueira",
+    "papeis": [
+     "sócio 100%",
+     "titular (pessoa física)",
+     "outorgante (pessoa física)"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "75349056565",
+    "tipo": "pessoa",
+    "rotulo": "Josué Lima Ferreira",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "alerta"
+   },
+   {
+    "de": "32090884118",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "100%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "32090884118",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "TITULAR"
+   },
+   {
+    "de": "32090884118",
+    "para": "75349056565",
+    "tipo": "procuracao",
+    "status": "valido",
+    "doc": "POA_PF_HB20",
+    "rotulo": "procuração 12/08/2026",
+    "motivo": null
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "1900-01-01",
+   "tipo": "ato",
+   "titulo": "Titularidade (pessoa física)",
+   "doc": "TITULAR",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-08-12",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Josué Lima Ferreira",
+   "doc": "POA_PF_HB20",
+   "detalhe": "publica"
+  },
+  {
+   "data": "2026-10-16",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "valor não informado"
+  },
+  {
+   "data": "2027-08-12",
+   "tipo": "vencimento",
+   "titulo": "Vence a procuração de Josué Lima Ferreira",
+   "doc": "POA_PF_HB20",
+   "detalhe": ""
+  }
+ ],
+ "pessoas": {
+  "32090884118": {
+   "nome": "Raimunda Nonata Siqueira",
+   "cpf": "32090884118"
+  },
+  "75349056565": {
+   "nome": "Josué Lima Ferreira",
+   "cpf": "75349056565"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "comprovada",
+  "outorgante": {
+   "nome": "Raimunda Nonata Siqueira",
+   "cnpj": null,
+   "tipo": "PF",
+   "cpf": "32090884118",
+   "documento": "32090884118",
+   "atos_vigentes": [],
+   "titularidade": "Base veicular (simulada)"
+  },
+  "outorgado": [
+   {
+    "nome": "Josué Lima Ferreira",
+    "cpf": "753.490.565-65",
+    "identificacao": "CPF",
+    "qualidade": "procurador(a)"
+   }
+  ],
+  "poderes_conferidos": [
+   "Procuração pública de 12/08/2026 (livro 876, folhas 141/142), outorgada por RAIMUNDA NONATA SIQUEIRA (pessoa física): poderes especiais e expressos para vender veículos e assinar a ATPV/ATPV-e"
+  ],
+  "prazo_validade": [
+   "Procuração pública válida até 12/08/2027"
+  ],
+  "revogacao": [
+   "Nenhuma revogação nos documentos apresentados; a revogação fica anotada na serventia de origem — confirmar com certidão atualizada do cartório."
+  ],
+  "fontes": [
+   {
+    "doc_id": "POA_PF_HB20",
+    "doc_titulo": "Procuração (POA_PF_HB20)",
+    "trecho": "poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar, a quem e pelo preço que convencionar, o veículo HYUNDAI/HB20 1",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 1401,
+    "fim": 1554
+   },
+   {
+    "doc_id": "POA_PF_HB20",
+    "doc_titulo": "Procuração (POA_PF_HB20)",
+    "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado da data da lavratura deste instrumento",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 1943,
+    "fim": 2043
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "POA_PF_HB20",
+    "titulo": "Procuração (POA_PF_HB20)",
+    "arquivo": "POA_PF_HB20.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "POA_PF_HB20",
+   "nome": "POA_PF_HB20.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (POA_PF_HB20)",
+   "data": "2026-08-12",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ – COMARCA DE FORTALEZA\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nHeloísa Barreira Nunes – Tabeliã\nLIVRO 876 — FOLHAS 141/142\nPROCURAÇÃO BASTANTE QUE FAZ RAIMUNDA NONATA SIQUEIRA A FAVOR DE\nJOSUÉ LIMA FERREIRA, NA FORMA ABAIXO:\nSAIBAM quantos este público instrumento de procuração virem que, aos doze (12) dias do mês de\nagosto do ano de dois mil e vinte e seis (2026), nesta cidade de Fortaleza, Capital do Estado do\nCeará, neste Cartório, perante mim, Rogério Lustosa Maia, Escrevente Notarial, compareceu como\nOUTORGANTE, por si e em nome próprio, RAIMUNDA NONATA SIQUEIRA, brasileira, viúva,\naposentada, portadora da cédula de identidade RG nº 88587459 SSP/CE, inscrita no CPF sob o nº\n320.908.841-18, residente e domiciliada na Rua Padre Valdevino, nº 1.920, apto. 204, Aldeota,\nFortaleza/CE. A outorgante, maior e capaz, foi reconhecida como a própria por mim, à vista dos\ndocumentos originais apresentados, do que dou fé.\nE, pela outorgante, me foi dito que, por este público instrumento e nos melhores termos de direito,\nnomeia e constitui seu bastante procurador JOSUÉ LIMA FERREIRA, brasileiro, casado,\ndespachante documentalista, portador da cédula de identidade RG nº 88527416 SSP/CE, inscrito no\nCPF sob o nº 753.490.565-65, com escritório na Rua Pedro Pereira, nº 640, sala 7, Centro, Fortaleza/\nCE, a quem confere poderes especiais e expressos para vender, ceder, transferir ou de qualquer\nforma alienar, a quem e pelo preço que convencionar, o veículo HYUNDAI/HB20 1.0 COMFORT,\nano/modelo 2020/2021, cor prata, placa HNM2Z92, RENAVAM 02291958849, chassi\n9BHHU7V697PRBDC3C, de propriedade da outorgante; assinar a Autorização para Transferência\nde Propriedade do Veículo (ATPV-e); receber o preço e dar quitação; e requerer e assinar o que for\nnecessário perante o DETRAN, praticando, enfim, todos os atos indispensáveis ao fiel cumprimento\ndeste mandato.\nO presente mandato vigorará pelo prazo de 1 (um) ano, contado da data da lavratura deste\ninstrumento.\nA outorgante declara-se responsável pela exatidão dos dados do veículo acima descrito, por ela\nfornecidos.\nAssim o disse, do que dou fé, e me pediu que lavrasse este instrumento, que, lido em voz alta e\nachado conforme, aceita e assina, dispensada a presença de testemunhas, nos termos da legislação\nvigente. Eu, Rogério Lustosa Maia, Escrevente Notarial, a lavrei. Eu, Heloísa Barreira Nunes,\nTabeliã, a subscrevo e assino.\n(aa) RAIMUNDA NONATA SIQUEIRA – Outorgante.\nHELOÍSA BARREIRA NUNES – Tabeliã.\nEmolumentos: R$ 214,37 · Taxa de fiscalização: R$ 10,72 · Total: R$ 225,09\nSelo Digital: IRA-0876-2026-9B4E21\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "TRASLADO — Nada mais. Trasladada em seguida, conferi, subscrevo e assino em público e raso,\nem testemunho da verdade.\nFortaleza/CE, 12 de agosto de 2026.\nHeloísa Barreira Nunes – Tabeliã\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "63f7166fddaa523229a1963a447286eef057aca87872ca4e733d2ff9d8cbac30",
+   "leitura": {}
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "gabarito",
+  "politica": "Código Civil (genérica)"
+ },
+ "lado": "vendedor",
+ "pendencias": [],
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T12:00:03",
+   "pedido": {
+    "veiculo": {
+     "descricao": "HYUNDAI/HB20 1.0 COMFORT",
+     "placa": "HNM2Z92",
+     "renavam": "02291958849",
+     "chassi": "9BHHU7V697PRBDC3C"
+    },
+    "data_venda": "2026-10-16",
+    "valor": null,
+    "assinantes": [
+     {
+      "nome": "CPF 753.490.565-65",
+      "cpf": "753.490.565-65"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": null,
+    "vendedor_cnpj": "320.908.841-18",
+    "lado": "vendedor",
+    "consulta": true
+   },
+   "empresa": {
+    "razao_social": "Raimunda Nonata Siqueira",
+    "cnpj": null,
+    "tipo": "PF",
+    "objeto": "",
+    "comercializa_veiculos": false,
+    "subtipo": "PF",
+    "cpf": "320.908.841-18"
+   },
+   "veredito": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 2,
+    "menor_confianca_fato": 1.0,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "resumo": "Josué Lima Ferreira pode assinar a ATPV-e como procurador(a) de Raimunda Nonata Siqueira — procuração pública de 12/08/2026.",
+   "assinantes": [
+    {
+     "informado": "CPF 753.490.565-65",
+     "cpf": "753.490.565-65",
+     "chave": "75349056565",
+     "nome": "Josué Lima Ferreira",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:32090884118",
+     "pessoas": [
+      {
+       "chave": "32090884118",
+       "nome": "Raimunda Nonata Siqueira"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "Assinatura do próprio proprietário (pessoa física)",
+     "cadeia": [
+      "TITULAR"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    },
+    {
+     "id": "POA_PF_HB20:75349056565",
+     "pessoas": [
+      {
+       "chave": "75349056565",
+       "nome": "Josué Lima Ferreira"
+      }
+     ],
+     "via": "procuracao",
+     "descricao": "Procuração pública de 12/08/2026",
+     "cadeia": [
+      "POA_PF_HB20"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [
+      {
+       "codigo": "OUTORGANTE_TITULAR",
+       "severidade": "ok",
+       "titulo": "Outorgada por o proprietário do veículo",
+       "detalhe": "A outorgante é Raimunda Nonata Siqueira, o proprietário do veículo (pessoa física).",
+       "fundamento": [
+        "CC art. 653"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_HB20",
+         "doc_titulo": "Procuração (POA_PF_HB20)",
+         "trecho": "OUTORGANTE, por si e em nome próprio, RAIMUNDA NONATA SIQUEIRA, brasileira, viúva, aposentada, portadora da cédula de identidade RG nº 88587459 SSP/CE, inscrita no CPF sob o nº 320",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 585,
+         "fim": 765
+        }
+       ],
+       "caminho": "POA_PF_HB20"
+      },
+      {
+       "codigo": "PODERES_ESPECIAIS",
+       "severidade": "ok",
+       "titulo": "Poder expresso para alienar veículos",
+       "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+       "fundamento": [
+        "CC art. 661, §1º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_HB20",
+         "doc_titulo": "Procuração (POA_PF_HB20)",
+         "trecho": "poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar, a quem e pelo preço que convencionar, o veículo HYUNDAI/HB20 1",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1401,
+         "fim": 1554
+        }
+       ],
+       "caminho": "POA_PF_HB20"
+      },
+      {
+       "codigo": "VEICULO_ABRANGIDO",
+       "severidade": "ok",
+       "titulo": "Veículo identificado na procuração",
+       "detalhe": "A procuração identifica exatamente este veículo.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_HB20",
+         "doc_titulo": "Procuração (POA_PF_HB20)",
+         "trecho": "poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar, a quem e pelo preço que convencionar, o veículo HYUNDAI/HB20 1",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1401,
+         "fim": 1554
+        }
+       ],
+       "caminho": "POA_PF_HB20"
+      },
+      {
+       "codigo": "PROCURACAO_NO_PRAZO",
+       "severidade": "ok",
+       "titulo": "Dentro do prazo",
+       "detalhe": "Válida até 12/08/2027.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_HB20",
+         "doc_titulo": "Procuração (POA_PF_HB20)",
+         "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado da data da lavratura deste instrumento",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1943,
+         "fim": 2043
+        }
+       ],
+       "caminho": "POA_PF_HB20"
+      }
+     ],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [],
+   "caminho_escolhido": {
+    "id": "POA_PF_HB20:75349056565",
+    "pessoas": [
+     {
+      "chave": "75349056565",
+      "nome": "Josué Lima Ferreira"
+     }
+    ],
+    "via": "procuracao",
+    "descricao": "Procuração pública de 12/08/2026",
+    "cadeia": [
+     "POA_PF_HB20"
+    ],
+    "severidade": "ok",
+    "confianca": 1.0,
+    "achados": [
+     {
+      "codigo": "OUTORGANTE_TITULAR",
+      "severidade": "ok",
+      "titulo": "Outorgada por o proprietário do veículo",
+      "detalhe": "A outorgante é Raimunda Nonata Siqueira, o proprietário do veículo (pessoa física).",
+      "fundamento": [
+       "CC art. 653"
+      ],
+      "fontes": [
+       {
+        "doc_id": "POA_PF_HB20",
+        "doc_titulo": "Procuração (POA_PF_HB20)",
+        "trecho": "OUTORGANTE, por si e em nome próprio, RAIMUNDA NONATA SIQUEIRA, brasileira, viúva, aposentada, portadora da cédula de identidade RG nº 88587459 SSP/CE, inscrita no CPF sob o nº 320",
+        "clausula": null,
+        "ancoragem": 100.0,
+        "pagina": 1,
+        "inicio": 585,
+        "fim": 765
+       }
+      ],
+      "caminho": "POA_PF_HB20"
+     },
+     {
+      "codigo": "PODERES_ESPECIAIS",
+      "severidade": "ok",
+      "titulo": "Poder expresso para alienar veículos",
+      "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+      "fundamento": [
+       "CC art. 661, §1º"
+      ],
+      "fontes": [
+       {
+        "doc_id": "POA_PF_HB20",
+        "doc_titulo": "Procuração (POA_PF_HB20)",
+        "trecho": "poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar, a quem e pelo preço que convencionar, o veículo HYUNDAI/HB20 1",
+        "clausula": null,
+        "ancoragem": 100.0,
+        "pagina": 1,
+        "inicio": 1401,
+        "fim": 1554
+       }
+      ],
+      "caminho": "POA_PF_HB20"
+     },
+     {
+      "codigo": "VEICULO_ABRANGIDO",
+      "severidade": "ok",
+      "titulo": "Veículo identificado na procuração",
+      "detalhe": "A procuração identifica exatamente este veículo.",
+      "fundamento": [],
+      "fontes": [
+       {
+        "doc_id": "POA_PF_HB20",
+        "doc_titulo": "Procuração (POA_PF_HB20)",
+        "trecho": "poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar, a quem e pelo preço que convencionar, o veículo HYUNDAI/HB20 1",
+        "clausula": null,
+        "ancoragem": 100.0,
+        "pagina": 1,
+        "inicio": 1401,
+        "fim": 1554
+       }
+      ],
+      "caminho": "POA_PF_HB20"
+     },
+     {
+      "codigo": "PROCURACAO_NO_PRAZO",
+      "severidade": "ok",
+      "titulo": "Dentro do prazo",
+      "detalhe": "Válida até 12/08/2027.",
+      "fundamento": [],
+      "fontes": [
+       {
+        "doc_id": "POA_PF_HB20",
+        "doc_titulo": "Procuração (POA_PF_HB20)",
+        "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado da data da lavratura deste instrumento",
+        "clausula": null,
+        "ancoragem": 100.0,
+        "pagina": 1,
+        "inicio": 1943,
+        "fim": 2043
+       }
+      ],
+      "caminho": "POA_PF_HB20"
+     }
+    ],
+    "precondicoes": []
+   },
+   "faltantes": [],
+   "achados": [
+    {
+     "codigo": "TITULARIDADE_BASE",
+     "severidade": "ok",
+     "titulo": "Proprietário conferido na base veicular",
+     "detalhe": "Pela placa/RENAVAM, o veículo está em nome de Raimunda Nonata Siqueira.",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "TITULAR#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "TITULAR",
+      "doc_titulo": "Base veicular (simulada)",
+      "trecho": "RAIMUNDA NONATA SIQUEIRA — CPF 320.908.841-18",
+      "clausula": "titularidade",
+      "ancoragem": 100.0,
+      "pagina": null,
+      "inicio": null,
+      "fim": null
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Raimunda Nonata Siqueira"
+     ],
+     "cargo": null,
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": true
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-10-16",
+    "atos": [
+     {
+      "doc": "TITULAR",
+      "titulo": "Titularidade (pessoa física)",
+      "efeito": "1900-01-01"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "32090884118",
+      "nome": "Raimunda Nonata Siqueira",
+      "cargo": "titular (pessoa física)",
+      "doc": "TITULAR"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "32090884118",
+      "nome": "Raimunda Nonata Siqueira",
+      "percentual": 100.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "Raimunda Nonata Siqueira",
+      "sub": ""
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "HYUNDAI/HB20 1.0 COMFORT",
+      "sub": "HNM2Z92"
+     },
+     {
+      "id": "32090884118",
+      "tipo": "pessoa",
+      "rotulo": "Raimunda Nonata Siqueira",
+      "papeis": [
+       "sócio 100%",
+       "titular (pessoa física)",
+       "outorgante (pessoa física)"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "75349056565",
+      "tipo": "pessoa",
+      "rotulo": "Josué Lima Ferreira",
+      "papeis": [
+       "procurador"
+      ],
+      "assinante": true
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "alerta"
+     },
+     {
+      "de": "32090884118",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "100%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "32090884118",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "TITULAR"
+     },
+     {
+      "de": "32090884118",
+      "para": "75349056565",
+      "tipo": "procuracao",
+      "status": "valido",
+      "doc": "POA_PF_HB20",
+      "rotulo": "procuração 12/08/2026",
+      "motivo": null
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "1900-01-01",
+     "tipo": "ato",
+     "titulo": "Titularidade (pessoa física)",
+     "doc": "TITULAR",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-08-12",
+     "tipo": "procuracao",
+     "titulo": "Procuração para Josué Lima Ferreira",
+     "doc": "POA_PF_HB20",
+     "detalhe": "publica"
+    },
+    {
+     "data": "2026-10-16",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "valor não informado"
+    },
+    {
+     "data": "2027-08-12",
+     "tipo": "vencimento",
+     "titulo": "Vence a procuração de Josué Lima Ferreira",
+     "doc": "POA_PF_HB20",
+     "detalhe": ""
+    }
+   ],
+   "pessoas": {
+    "32090884118": {
+     "nome": "Raimunda Nonata Siqueira",
+     "cpf": "32090884118"
+    },
+    "75349056565": {
+     "nome": "Josué Lima Ferreira",
+     "cpf": "75349056565"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "comprovada",
+    "outorgante": {
+     "nome": "Raimunda Nonata Siqueira",
+     "cnpj": null,
+     "tipo": "PF",
+     "cpf": "32090884118",
+     "documento": "32090884118",
+     "atos_vigentes": [],
+     "titularidade": "Base veicular (simulada)"
+    },
+    "outorgado": [
+     {
+      "nome": "Josué Lima Ferreira",
+      "cpf": "753.490.565-65",
+      "identificacao": "CPF",
+      "qualidade": "procurador(a)"
+     }
+    ],
+    "poderes_conferidos": [
+     "Procuração pública de 12/08/2026 (livro 876, folhas 141/142), outorgada por RAIMUNDA NONATA SIQUEIRA (pessoa física): poderes especiais e expressos para vender veículos e assinar a ATPV/ATPV-e"
+    ],
+    "prazo_validade": [
+     "Procuração pública válida até 12/08/2027"
+    ],
+    "revogacao": [
+     "Nenhuma revogação nos documentos apresentados; a revogação fica anotada na serventia de origem — confirmar com certidão atualizada do cartório."
+    ],
+    "fontes": [
+     {
+      "doc_id": "POA_PF_HB20",
+      "doc_titulo": "Procuração (POA_PF_HB20)",
+      "trecho": "poderes especiais e expressos para vender, ceder, transferir ou de qualquer forma alienar, a quem e pelo preço que convencionar, o veículo HYUNDAI/HB20 1",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 1401,
+      "fim": 1554
+     },
+     {
+      "doc_id": "POA_PF_HB20",
+      "doc_titulo": "Procuração (POA_PF_HB20)",
+      "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado da data da lavratura deste instrumento",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 1943,
+      "fim": 2043
+     }
+    ],
+    "documentos_verificaveis": [
+     {
+      "id": "POA_PF_HB20",
+      "titulo": "Procuração (POA_PF_HB20)",
+      "arquivo": "POA_PF_HB20.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "POA_PF_HB20",
+     "nome": "POA_PF_HB20.pdf",
+     "tipo": "procuracao",
+     "titulo": "Procuração (POA_PF_HB20)",
+     "data": "2026-08-12",
+     "paginas": [
+      "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ – COMARCA DE FORTALEZA\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nHeloísa Barreira Nunes – Tabeliã\nLIVRO 876 — FOLHAS 141/142\nPROCURAÇÃO BASTANTE QUE FAZ RAIMUNDA NONATA SIQUEIRA A FAVOR DE\nJOSUÉ LIMA FERREIRA, NA FORMA ABAIXO:\nSAIBAM quantos este público instrumento de procuração virem que, aos doze (12) dias do mês de\nagosto do ano de dois mil e vinte e seis (2026), nesta cidade de Fortaleza, Capital do Estado do\nCeará, neste Cartório, perante mim, Rogério Lustosa Maia, Escrevente Notarial, compareceu como\nOUTORGANTE, por si e em nome próprio, RAIMUNDA NONATA SIQUEIRA, brasileira, viúva,\naposentada, portadora da cédula de identidade RG nº 88587459 SSP/CE, inscrita no CPF sob o nº\n320.908.841-18, residente e domiciliada na Rua Padre Valdevino, nº 1.920, apto. 204, Aldeota,\nFortaleza/CE. A outorgante, maior e capaz, foi reconhecida como a própria por mim, à vista dos\ndocumentos originais apresentados, do que dou fé.\nE, pela outorgante, me foi dito que, por este público instrumento e nos melhores termos de direito,\nnomeia e constitui seu bastante procurador JOSUÉ LIMA FERREIRA, brasileiro, casado,\ndespachante documentalista, portador da cédula de identidade RG nº 88527416 SSP/CE, inscrito no\nCPF sob o nº 753.490.565-65, com escritório na Rua Pedro Pereira, nº 640, sala 7, Centro, Fortaleza/\nCE, a quem confere poderes especiais e expressos para vender, ceder, transferir ou de qualquer\nforma alienar, a quem e pelo preço que convencionar, o veículo HYUNDAI/HB20 1.0 COMFORT,\nano/modelo 2020/2021, cor prata, placa HNM2Z92, RENAVAM 02291958849, chassi\n9BHHU7V697PRBDC3C, de propriedade da outorgante; assinar a Autorização para Transferência\nde Propriedade do Veículo (ATPV-e); receber o preço e dar quitação; e requerer e assinar o que for\nnecessário perante o DETRAN, praticando, enfim, todos os atos indispensáveis ao fiel cumprimento\ndeste mandato.\nO presente mandato vigorará pelo prazo de 1 (um) ano, contado da data da lavratura deste\ninstrumento.\nA outorgante declara-se responsável pela exatidão dos dados do veículo acima descrito, por ela\nfornecidos.\nAssim o disse, do que dou fé, e me pediu que lavrasse este instrumento, que, lido em voz alta e\nachado conforme, aceita e assina, dispensada a presença de testemunhas, nos termos da legislação\nvigente. Eu, Rogério Lustosa Maia, Escrevente Notarial, a lavrei. Eu, Heloísa Barreira Nunes,\nTabeliã, a subscrevo e assino.\n(aa) RAIMUNDA NONATA SIQUEIRA – Outorgante.\nHELOÍSA BARREIRA NUNES – Tabeliã.\nEmolumentos: R$ 214,37 · Taxa de fiscalização: R$ 10,72 · Total: R$ 225,09\nSelo Digital: IRA-0876-2026-9B4E21\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "TRASLADO — Nada mais. Trasladada em seguida, conferi, subscrevo e assino em público e raso,\nem testemunho da verdade.\nFortaleza/CE, 12 de agosto de 2026.\nHeloísa Barreira Nunes – Tabeliã\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "63f7166fddaa523229a1963a447286eef057aca87872ca4e733d2ff9d8cbac30",
+     "leitura": {}
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "gabarito",
+    "politica": "Código Civil (genérica)"
+   },
+   "lado": "vendedor",
+   "pendencias": []
+  }
+ },
+ "geral": {
+  "veredito": "PODE",
+  "faixa": "VERDE",
+  "indice": 100.0,
+  "resumo": "Vendedor: Josué Lima Ferreira pode assinar a ATPV-e como procurador(a) de Raimunda Nonata Siqueira — procuração pública de 12/08/2026.",
+  "motivos_faixa": [
+   "Vendedor — índice 100 ≥ limiar 85"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "HYUNDAI/HB20 1.0 COMFORT",
+   "placa": "HNM2Z92",
+   "renavam": "02291958849",
+   "chassi": "9BHHU7V697PRBDC3C"
+  },
+  "data_venda": "2026-10-16",
+  "valor": null,
+  "vendedor": {
+   "tipo": "PF",
+   "nome": "RAIMUNDA NONATA SIQUEIRA",
+   "documento": "320.908.841-18",
+   "assinantes": [
+    {
+     "nome": "CPF 753.490.565-65",
+     "cpf": "753.490.565-65"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": null,
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "consulta por CPF",
+  "alvo": "vendedor",
+  "titular_fonte": "base veicular"
+ },
+ "hash_entrada": "5ef9fdb7e392deb3f8c127b5e454dc46c8f82aa65302e387f28fc9d4c954e1af"
+}

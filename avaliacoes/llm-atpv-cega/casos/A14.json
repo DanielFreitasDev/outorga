@@ -1,0 +1,976 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T09:52:55",
+ "pedido": {
+  "veiculo": {
+   "descricao": "JEEP/RENEGADE LONGITUDE 1.3 T270",
+   "placa": "AYS5S36",
+   "renavam": "09228282466",
+   "chassi": "988C62K9H00N30ADA"
+  },
+  "data_venda": "2026-10-16",
+  "valor": 128000.0,
+  "assinantes": [
+   {
+    "nome": "Larissa Gomes Pinho",
+    "cpf": "159.997.325-14"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "DÉBORA LINS MOURA",
+  "vendedor_cnpj": "01.264.413/0001-46",
+  "lado": "vendedor"
+ },
+ "empresa": {
+  "razao_social": "PINHO & ARRUDA FISIOTERAPIA S/S",
+  "cnpj": "01.264.413/0001-46",
+  "tipo": "SS",
+  "objeto": "prestação de serviços de fisioterapia e reabilitação, exercidos pessoalmente pelos sócios, compreendendo a avaliação cinético-funcional, a fisioterapia traumatoortopédica, neurofuncional, respiratória e desportiva e a execução de programas de reabilitação física e funcional, atividades classificadas no código CNAE 8650-0/04 (atividades de fisioterapia)",
+  "comercializa_veiculos": false,
+  "subtipo": "SS"
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 0.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 1,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 0 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: Larissa Gomes Pinho e Thiago Pinho Arruda. Regra aplicável: regra geral de representação (Cláusula Sétima).",
+ "assinantes": [
+  {
+   "informado": "Larissa Gomes Pinho",
+   "cpf": "159.997.325-14",
+   "chave": "15999732514",
+   "nome": "Larissa Gomes Pinho",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:15999732514+42708486187",
+   "pessoas": [
+    {
+     "chave": "15999732514",
+     "nome": "Larissa Gomes Pinho"
+    },
+    {
+     "chave": "42708486187",
+     "nome": "Thiago Pinho Arruda"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Cláusula Sétima",
+   "cadeia": [
+    "PINHO_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "contrato:15999732514+42708486187",
+   "via": "contrato",
+   "descricao": "regra geral de representação — Cláusula Sétima",
+   "pessoas": [
+    "15999732514",
+    "42708486187"
+   ],
+   "faltam": [
+    "42708486187"
+   ],
+   "faltam_nomes": [
+    "Thiago Pinho Arruda"
+   ],
+   "pessoas_nomes": [
+    "Larissa Gomes Pinho",
+    "Thiago Pinho Arruda"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "CND_INSS",
+   "severidade": "info",
+   "titulo": "CND previdenciária",
+   "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+   "fundamento": [
+    "Lei 8.212/91, art. 47, I, \"c\""
+   ],
+   "fontes": [],
+   "caminho": null
+  },
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: PINHO & ARRUDA FISIOTERAPIA S/.",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "AYS5S36",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "PINHO_CS#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "PINHO_CS",
+    "doc_titulo": "Contrato Social (2022)",
+    "trecho": "A administração da sociedade compete a ambos os sócios, que somente poderão obrigá-la mediante a assinatura de ambos, cabendo-lhes a representação da sociedade, ativa e passiva, judicial e extrajudicial, e a gestão dos negócios sociais, vedado o uso da denominação social em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 4378,
+    "fim": 4744
+   },
+   "modo": "conjunto",
+   "pessoas": [
+    "Larissa Gomes Pinho",
+    "Thiago Pinho Arruda"
+   ],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "conjunto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "assinatura de ambos"
+     ]
+    }
+   ],
+   "decisiva": true
+  },
+  {
+   "regra": "PINHO_CS#R2",
+   "escopo": "obrigacoes_garantias",
+   "aplicavel": false,
+   "motivo": "trata de avais, fianças e garantias",
+   "so_condicao": true,
+   "fonte": {
+    "doc_id": "PINHO_CS",
+    "doc_titulo": "Contrato Social (2022)",
+    "trecho": "vedado o uso da denominação social em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 4615,
+    "fim": 4744
+   },
+   "modo": "nao_especificado",
+   "pessoas": [
+    "Larissa Gomes Pinho",
+    "Thiago Pinho Arruda"
+   ],
+   "cargo": "socios",
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-10-16",
+  "atos": [
+   {
+    "doc": "PINHO_CS",
+    "titulo": "Contrato Social (2022)",
+    "efeito": "2022-05-09"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "15999732514",
+    "nome": "Larissa Gomes Pinho",
+    "cargo": "sócia-administradora",
+    "doc": "PINHO_CS"
+   },
+   {
+    "chave": "42708486187",
+    "nome": "Thiago Pinho Arruda",
+    "cargo": "sócio-administrador",
+    "doc": "PINHO_CS"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "15999732514",
+    "nome": "Larissa Gomes Pinho",
+    "percentual": 50.0
+   },
+   {
+    "chave": "42708486187",
+    "nome": "Thiago Pinho Arruda",
+    "percentual": 50.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "PINHO & ARRUDA FISIOTERAPIA S/S",
+    "sub": "01.264.413/0001-46"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "JEEP/RENEGADE LONGITUDE 1.3 T270",
+    "sub": "AYS5S36"
+   },
+   {
+    "id": "15999732514",
+    "tipo": "pessoa",
+    "rotulo": "Larissa Gomes Pinho",
+    "papeis": [
+     "sócio 50%",
+     "sócia-administradora"
+    ],
+    "assinante": true
+   },
+   {
+    "id": "42708486187",
+    "tipo": "pessoa",
+    "rotulo": "Thiago Pinho Arruda",
+    "papeis": [
+     "sócio 50%",
+     "sócio-administrador"
+    ],
+    "assinante": false
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "15999732514",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "50%",
+    "status": "neutro"
+   },
+   {
+    "de": "42708486187",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "50%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "15999732514",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "PINHO_CS"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "42708486187",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "PINHO_CS"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2022-05-09",
+   "tipo": "ato",
+   "titulo": "Contrato Social (2022)",
+   "doc": "PINHO_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-10-16",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 128.000,00"
+  }
+ ],
+ "pessoas": {
+  "15999732514": {
+   "nome": "Larissa Gomes Pinho",
+   "cpf": "15999732514"
+  },
+  "42708486187": {
+   "nome": "Thiago Pinho Arruda",
+   "cpf": "42708486187"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "PINHO & ARRUDA FISIOTERAPIA S/S",
+   "cnpj": "01.264.413/0001-46",
+   "tipo": "SS",
+   "atos_vigentes": [
+    {
+     "titulo": "Contrato Social (2022)",
+     "doc": "PINHO_CS",
+     "efeito": "2022-05-09"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Larissa Gomes Pinho",
+    "cpf": "159.997.325-14",
+    "identificacao": "CPF",
+    "qualidade": "sócia-administradora"
+   }
+  ],
+  "poderes_conferidos": [
+   "Contrato Social (2022), Cláusula Sétima: para este veículo, exige Larissa Gomes Pinho e Thiago Pinho Arruda.",
+   "Assinantes informados (Larissa Gomes Pinho) não atendem a essa exigência."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [
+   {
+    "doc_id": "PINHO_CS",
+    "doc_titulo": "Contrato Social (2022)",
+    "trecho": "A administração da sociedade compete a ambos os sócios, que somente poderão obrigá-la mediante a assinatura de ambos, cabendo-lhes a representação da sociedade, ativa e passiva, judicial e extrajudicial, e a gestão dos negócios sociais, vedado o uso da denominação social em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+    "clausula": "Cláusula Sétima",
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 4378,
+    "fim": 4744
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   },
+   {
+    "id": "PINHO_CS",
+    "titulo": "Contrato Social (2022)",
+    "arquivo": "PINHO_CS.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n09228282466\nPLACA\nAYS5S36\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2023\nANO MODELO\n2023\nNÚMERO DO CRV\n557396105682\nCÓDIGO DE SEGURANÇA DO CLA\n70263794811\nMARCA / MODELO / VERSÃO\nJEEP/RENEGADE LONGITUDE 1.3 T270\nESPÉCIE / TIPO\nPASSAGEIRO/\nAUTOMÓVEL\nCHASSI\n988C62K9H00N30ADA\nCOR PREDOMINANTE\nCINZA\nCOMBUSTÍVEL\nÁLCOOL/GASOLINA\nNOME\nPINHO & ARRUDA FISIOTERAPIA S/\nS\nCPF / CNPJ\n01.264.413/0001-46\nLOCAL\nFORTALEZA/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "2bf37d794658c586ea37b2cdab2c5c0f34c4984df1def4353cb2d17c62c56b22",
+   "leitura": {
+    "tarefas": {
+     "crlv": {
+      "metodo": "regex"
+     }
+    },
+    "texto_truncado": false
+   }
+  },
+  {
+   "id": "PINHO_CS",
+   "nome": "PINHO_CS.pdf",
+   "tipo": "contrato_social",
+   "titulo": "Contrato Social (2022)",
+   "data": "2022-05-09",
+   "paginas": [
+    "PINHO & ARRUDA FISIOTERAPIA S/S CNPJ nº 01.264.413/0001-46\nCONTRATO SOCIAL DE SOCIEDADE SIMPLES\nPelo presente instrumento particular, as partes abaixo qualificadas:\nLARISSA GOMES PINHO, brasileira, solteira, fisioterapeuta, inscrita no Conselho Regional de\nFisioterapia e Terapia Ocupacional da 6ª Região – CREFITO-6 sob o nº 187442-F, portadora da\nCédula de Identidade RG nº 90998109 SSP/CE, inscrita no CPF sob o nº 159.997.325-14, residente\ne domiciliada na Rua das Jandaias, nº 845, apartamento 302, bairro Fátima, Fortaleza/CE, CEP\n60040-160; e\nTHIAGO PINHO ARRUDA, brasileiro, casado, fisioterapeuta, inscrito no Conselho Regional de\nFisioterapia e Terapia Ocupacional da 6ª Região – CREFITO-6 sob o nº 203915-F, portador da\nCédula de Identidade RG nº 61288515 SSP/CE, inscrito no CPF sob o nº 427.084.861-87, residente\ne domiciliado na Avenida dos Paus-Brancos, nº 1.320, casa 12, bairro Cambeba, Fortaleza/CE, CEP\n60822-130;\ntêm entre si justo e contratado constituir uma sociedade simples pura, de natureza não empresária,\nque se regerá pelas cláusulas e condições seguintes e pelos arts. 997 a 1.038 da Lei nº 10.406, de 10\nde janeiro de 2002 (Código Civil).\nCLÁUSULA PRIMEIRA – DA DENOMINAÇÃO, DA NATUREZA E DA SEDE\nA sociedade adota a denominação PINHO & ARRUDA FISIOTERAPIA S/S e terá sede na Rua\ndos Cedros, nº 1.090, salas 204 a 206, bairro Aldeota, Fortaleza/CE, CEP 60150-080.\n§ 1º A sociedade constitui-se como sociedade simples pura, de natureza não empresária, sem adotar\nnenhum dos tipos de sociedade empresária previstos no Código Civil, e terá este contrato inscrito no\nRegistro Civil das Pessoas Jurídicas do local de sua sede, nos termos do art. 998 do Código Civil.\n§ 2º A sociedade poderá abrir e encerrar filiais ou unidades de atendimento em qualquer parte do\nterritório nacional, mediante alteração deste contrato, observado o disposto no art. 1.000 do Código\nCivil.\nCLÁUSULA SEGUNDA – DO OBJETO SOCIAL\nA sociedade tem por objeto a prestação de serviços de fisioterapia e reabilitação, exercidos\npessoalmente pelos sócios, compreendendo a avaliação cinético-funcional, a fisioterapia traumatoortopédica, neurofuncional, respiratória e desportiva e a execução de programas de reabilitação\nfísica e funcional, atividades classificadas no código CNAE 8650-0/04 (atividades de fisioterapia).\nParágrafo único. As atividades compreendidas no objeto social, de natureza intelectual e científica,\nserão exercidas pessoalmente pelos sócios, regularmente inscritos no CREFITO-6, que assumem a\nresponsabilidade técnica pelos serviços prestados, não constituindo o exercício da profissão\nelemento de empresa, nos termos do parágrafo único do art. 966 do Código Civil.\nCLÁUSULA TERCEIRA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciará suas atividades na data da inscrição deste contrato no Registro Civil das\nPessoas Jurídicas, e seu prazo de duração é indeterminado.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "CLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 80.000,00 (oitenta mil reais), dividido em 80.000 (oitenta mil) quotas, no\nvalor nominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas, neste ato, em\nmoeda corrente do País, assim distribuídas entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nLARISSA GOMES PINHO\n40.000\n40.000,00\n50%\nTHIAGO PINHO ARRUDA\n40.000\n40.000,00\n50%\nTOTAL\n80.000\n80.000,00\n100%\nParágrafo único. Além da integralização de suas quotas, cada sócio obriga-se a prestar pessoalmente\nà sociedade os serviços profissionais compreendidos no objeto social.\nCLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nOs sócios respondem subsidiariamente pelas obrigações sociais: se os bens da sociedade não lhe\ncobrirem as dívidas, responderão os sócios pelo saldo, na proporção em que participem das perdas\nsociais, nos termos do art. 1.023 do Código Civil.\nParágrafo único. Os bens particulares dos sócios não poderão ser executados por dívidas da\nsociedade senão depois de executados os bens sociais, conforme o art. 1.024 do Código Civil.\nCLÁUSULA SEXTA – DA PARTICIPAÇÃO NOS LUCROS E NAS PERDAS\nOs sócios participarão dos lucros e das perdas sociais na proporção de suas respectivas quotas, sendo\nnula qualquer estipulação que exclua algum deles de participar dos lucros e das perdas, nos termos\ndo art. 1.008 do Código Civil.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade compete a ambos os sócios, que somente poderão obrigá-la mediante\na assinatura de ambos, cabendo-lhes a representação da sociedade, ativa e passiva, judicial e\nextrajudicial, e a gestão dos negócios sociais, vedado o uso da denominação social em atividades\nestranhas ao objeto social, especialmente em avais, fianças e endossos de favor.\nParágrafo único. Os sócios administradores farão jus a uma retirada mensal, a título de pró-labore,\nem valor a ser fixado de comum acordo, observada a legislação tributária e previdenciária aplicável.\nCLÁUSULA OITAVA – DO EXERCÍCIO SOCIAL E DA PRESTAÇÃO DE CONTAS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, os administradores\nprestarão contas justificadas de sua administração e levantarão o inventário, o balanço patrimonial e\no balanço de resultado econômico, nos termos do art. 1.020 do Código Civil, sendo os lucros ou as\nperdas apurados atribuídos aos sócios na forma da Cláusula Sexta.\nCLÁUSULA NONA – DA CESSÃO DE QUOTAS\nA cessão, total ou parcial, de quotas não terá eficácia quanto ao outro sócio e à sociedade sem a\ncorrespondente modificação deste contrato, com o consentimento do outro sócio, a quem fica\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "assegurado o direito de preferência, em igualdade de preço e condições, nos termos do art. 1.003 do\nCódigo Civil.\nParágrafo único. Em razão da natureza do objeto social, somente poderá ingressar na sociedade, a\nqualquer título, fisioterapeuta regularmente inscrito no conselho profissional competente.\nCLÁUSULA DÉCIMA – DO FALECIMENTO, DA INCAPACIDADE E DA RETIRADA DE\nSÓCIO\nNo caso de falecimento ou de incapacidade de qualquer dos sócios, a sociedade não se dissolverá,\nliquidando-se a quota do sócio falecido ou incapaz, cujo valor será apurado com base na situação\npatrimonial da sociedade, à data da resolução, verificada em balanço especialmente levantado, e\npago aos herdeiros, sucessores ou ao representante legal do incapaz no prazo de 90 (noventa) dias,\nnos termos dos arts. 1.028 e 1.031 do Código Civil.\nParágrafo único. O mesmo critério de apuração de haveres será observado na retirada voluntária de\nsócio, que deverá notificar o outro com antecedência mínima de 60 (sessenta) dias, na forma do art.\n1.029 do Código Civil, e nos demais casos em que a sociedade se resolva em relação a algum de\nseus sócios.\nCLÁUSULA DÉCIMA PRIMEIRA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nOs sócios administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade, por lei especial, ou em virtude de condenação criminal, ou por se\nencontrarem sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\npúblicos; ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato, ou contra\na economia popular, contra o sistema financeiro nacional, contra normas de defesa da concorrência,\ncontra as relações de consumo, a fé pública ou a propriedade, nos termos do art. 1.011, § 1º, do\nCódigo Civil.\nCLÁUSULA DÉCIMA SEGUNDA – DO FORO\nFica eleito o foro da Comarca de Fortaleza, Estado do Ceará, para dirimir quaisquer controvérsias\noriundas deste contrato, com renúncia expressa a qualquer outro, por mais privilegiado que seja.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em 3 (três) vias\nde igual teor e forma, destinando-se a primeira ao registro no Registro Civil das Pessoas Jurídicas da\nComarca de Fortaleza.\nFortaleza/CE, 9 de maio de 2022.\n__________________________________ LARISSA GOMES PINHO\n__________________________________ THIAGO PINHO ARRUDA\nVisto: Natália Brandão Fontes – OAB/CE nº 29.734\nREGISTRO CIVIL DAS PESSOAS JURÍDICAS\nCartório Alencar – 2º Registro Civil das Pessoas Jurídicas de Fortaleza (fictício)\nProtocolado e registrado sob o nº 97885, no Livro A, em 23/05/2022\nGlória Benevides Torquato – Oficial Registradora\nSelo digital: RCPJ-FOR-2022-4E1B7C\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "06b244807ac9d9437161e64a543f9ad658450cebfb8ba71b2707130e559e873c",
+   "leitura": {
+    "tarefas": {
+     "partes": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 39.4,
+      "tokens_saida": 760,
+      "modelo": "qwen3.8-27b"
+     },
+     "regras": {
+      "amostras": 1,
+      "concordancia": 1.0,
+      "segundos": 22.8,
+      "tokens_saida": 614,
+      "modelo": "qwen3.8-27b"
+     }
+    },
+    "texto_truncado": false
+   }
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "politica": "DETRAN-CE"
+ },
+ "lado": "vendedor",
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T09:52:55",
+   "pedido": {
+    "veiculo": {
+     "descricao": "JEEP/RENEGADE LONGITUDE 1.3 T270",
+     "placa": "AYS5S36",
+     "renavam": "09228282466",
+     "chassi": "988C62K9H00N30ADA"
+    },
+    "data_venda": "2026-10-16",
+    "valor": 128000.0,
+    "assinantes": [
+     {
+      "nome": "Larissa Gomes Pinho",
+      "cpf": "159.997.325-14"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "DÉBORA LINS MOURA",
+    "vendedor_cnpj": "01.264.413/0001-46",
+    "lado": "vendedor"
+   },
+   "empresa": {
+    "razao_social": "PINHO & ARRUDA FISIOTERAPIA S/S",
+    "cnpj": "01.264.413/0001-46",
+    "tipo": "SS",
+    "objeto": "prestação de serviços de fisioterapia e reabilitação, exercidos pessoalmente pelos sócios, compreendendo a avaliação cinético-funcional, a fisioterapia traumatoortopédica, neurofuncional, respiratória e desportiva e a execução de programas de reabilitação física e funcional, atividades classificadas no código CNAE 8650-0/04 (atividades de fisioterapia)",
+    "comercializa_veiculos": false,
+    "subtipo": "SS"
+   },
+   "veredito": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 1,
+    "menor_confianca_fato": 1.0,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Larissa Gomes Pinho e Thiago Pinho Arruda. Regra aplicável: regra geral de representação (Cláusula Sétima).",
+   "assinantes": [
+    {
+     "informado": "Larissa Gomes Pinho",
+     "cpf": "159.997.325-14",
+     "chave": "15999732514",
+     "nome": "Larissa Gomes Pinho",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:15999732514+42708486187",
+     "pessoas": [
+      {
+       "chave": "15999732514",
+       "nome": "Larissa Gomes Pinho"
+      },
+      {
+       "chave": "42708486187",
+       "nome": "Thiago Pinho Arruda"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "regra geral de representação — Cláusula Sétima",
+     "cadeia": [
+      "PINHO_CS"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [],
+   "caminho_escolhido": null,
+   "faltantes": [
+    {
+     "alternativa": "contrato:15999732514+42708486187",
+     "via": "contrato",
+     "descricao": "regra geral de representação — Cláusula Sétima",
+     "pessoas": [
+      "15999732514",
+      "42708486187"
+     ],
+     "faltam": [
+      "42708486187"
+     ],
+     "faltam_nomes": [
+      "Thiago Pinho Arruda"
+     ],
+     "pessoas_nomes": [
+      "Larissa Gomes Pinho",
+      "Thiago Pinho Arruda"
+     ]
+    }
+   ],
+   "achados": [
+    {
+     "codigo": "CND_INSS",
+     "severidade": "info",
+     "titulo": "CND previdenciária",
+     "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+     "fundamento": [
+      "Lei 8.212/91, art. 47, I, \"c\""
+     ],
+     "fontes": [],
+     "caminho": null
+    },
+    {
+     "codigo": "TITULARIDADE_OK",
+     "severidade": "ok",
+     "titulo": "Veículo registrado no CNPJ da empresa",
+     "detalhe": "Proprietário no CRLV: PINHO & ARRUDA FISIOTERAPIA S/.",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [
+      {
+       "doc_id": "CRLV",
+       "doc_titulo": "CRLV",
+       "trecho": "AYS5S36",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 146,
+       "fim": 153
+      }
+     ],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "PINHO_CS#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "PINHO_CS",
+      "doc_titulo": "Contrato Social (2022)",
+      "trecho": "A administração da sociedade compete a ambos os sócios, que somente poderão obrigá-la mediante a assinatura de ambos, cabendo-lhes a representação da sociedade, ativa e passiva, judicial e extrajudicial, e a gestão dos negócios sociais, vedado o uso da denominação social em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+      "clausula": "Cláusula Sétima",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 4378,
+      "fim": 4744
+     },
+     "modo": "conjunto",
+     "pessoas": [
+      "Larissa Gomes Pinho",
+      "Thiago Pinho Arruda"
+     ],
+     "cargo": "socios",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "conjunto",
+       "valor_lexico": "conjunto",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "assinatura de ambos"
+       ]
+      }
+     ],
+     "decisiva": true
+    },
+    {
+     "regra": "PINHO_CS#R2",
+     "escopo": "obrigacoes_garantias",
+     "aplicavel": false,
+     "motivo": "trata de avais, fianças e garantias",
+     "so_condicao": true,
+     "fonte": {
+      "doc_id": "PINHO_CS",
+      "doc_titulo": "Contrato Social (2022)",
+      "trecho": "vedado o uso da denominação social em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+      "clausula": "Cláusula Sétima",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 4615,
+      "fim": 4744
+     },
+     "modo": "nao_especificado",
+     "pessoas": [
+      "Larissa Gomes Pinho",
+      "Thiago Pinho Arruda"
+     ],
+     "cargo": "socios",
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-10-16",
+    "atos": [
+     {
+      "doc": "PINHO_CS",
+      "titulo": "Contrato Social (2022)",
+      "efeito": "2022-05-09"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "15999732514",
+      "nome": "Larissa Gomes Pinho",
+      "cargo": "sócia-administradora",
+      "doc": "PINHO_CS"
+     },
+     {
+      "chave": "42708486187",
+      "nome": "Thiago Pinho Arruda",
+      "cargo": "sócio-administrador",
+      "doc": "PINHO_CS"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "15999732514",
+      "nome": "Larissa Gomes Pinho",
+      "percentual": 50.0
+     },
+     {
+      "chave": "42708486187",
+      "nome": "Thiago Pinho Arruda",
+      "percentual": 50.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "PINHO & ARRUDA FISIOTERAPIA S/S",
+      "sub": "01.264.413/0001-46"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "JEEP/RENEGADE LONGITUDE 1.3 T270",
+      "sub": "AYS5S36"
+     },
+     {
+      "id": "15999732514",
+      "tipo": "pessoa",
+      "rotulo": "Larissa Gomes Pinho",
+      "papeis": [
+       "sócio 50%",
+       "sócia-administradora"
+      ],
+      "assinante": true
+     },
+     {
+      "id": "42708486187",
+      "tipo": "pessoa",
+      "rotulo": "Thiago Pinho Arruda",
+      "papeis": [
+       "sócio 50%",
+       "sócio-administrador"
+      ],
+      "assinante": false
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "valido"
+     },
+     {
+      "de": "15999732514",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "50%",
+      "status": "neutro"
+     },
+     {
+      "de": "42708486187",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "50%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "15999732514",
+      "tipo": "administracao",
+      "rotulo": "administra · em conjunto",
+      "status": "valido",
+      "doc": "PINHO_CS"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "42708486187",
+      "tipo": "administracao",
+      "rotulo": "administra · em conjunto",
+      "status": "valido",
+      "doc": "PINHO_CS"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2022-05-09",
+     "tipo": "ato",
+     "titulo": "Contrato Social (2022)",
+     "doc": "PINHO_CS",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-10-16",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 128.000,00"
+    }
+   ],
+   "pessoas": {
+    "15999732514": {
+     "nome": "Larissa Gomes Pinho",
+     "cpf": "15999732514"
+    },
+    "42708486187": {
+     "nome": "Thiago Pinho Arruda",
+     "cpf": "42708486187"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "não comprovada",
+    "outorgante": {
+     "nome": "PINHO & ARRUDA FISIOTERAPIA S/S",
+     "cnpj": "01.264.413/0001-46",
+     "tipo": "SS",
+     "atos_vigentes": [
+      {
+       "titulo": "Contrato Social (2022)",
+       "doc": "PINHO_CS",
+       "efeito": "2022-05-09"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "Larissa Gomes Pinho",
+      "cpf": "159.997.325-14",
+      "identificacao": "CPF",
+      "qualidade": "sócia-administradora"
+     }
+    ],
+    "poderes_conferidos": [
+     "Contrato Social (2022), Cláusula Sétima: para este veículo, exige Larissa Gomes Pinho e Thiago Pinho Arruda.",
+     "Assinantes informados (Larissa Gomes Pinho) não atendem a essa exigência."
+    ],
+    "prazo_validade": [
+     "—"
+    ],
+    "revogacao": [
+     "—"
+    ],
+    "fontes": [
+     {
+      "doc_id": "PINHO_CS",
+      "doc_titulo": "Contrato Social (2022)",
+      "trecho": "A administração da sociedade compete a ambos os sócios, que somente poderão obrigá-la mediante a assinatura de ambos, cabendo-lhes a representação da sociedade, ativa e passiva, judicial e extrajudicial, e a gestão dos negócios sociais, vedado o uso da denominação social em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor.",
+      "clausula": "Cláusula Sétima",
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 4378,
+      "fim": 4744
+     }
+    ],
+    "documentos_verificaveis": [
+     {
+      "id": "CRLV",
+      "titulo": "CRLV",
+      "arquivo": "CRLV.pdf"
+     },
+     {
+      "id": "PINHO_CS",
+      "titulo": "Contrato Social (2022)",
+      "arquivo": "PINHO_CS.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "CRLV",
+     "nome": "CRLV.pdf",
+     "tipo": "crlv",
+     "titulo": "CRLV",
+     "data": null,
+     "paginas": [
+      "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n09228282466\nPLACA\nAYS5S36\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2023\nANO MODELO\n2023\nNÚMERO DO CRV\n557396105682\nCÓDIGO DE SEGURANÇA DO CLA\n70263794811\nMARCA / MODELO / VERSÃO\nJEEP/RENEGADE LONGITUDE 1.3 T270\nESPÉCIE / TIPO\nPASSAGEIRO/\nAUTOMÓVEL\nCHASSI\n988C62K9H00N30ADA\nCOR PREDOMINANTE\nCINZA\nCOMBUSTÍVEL\nÁLCOOL/GASOLINA\nNOME\nPINHO & ARRUDA FISIOTERAPIA S/\nS\nCPF / CNPJ\n01.264.413/0001-46\nLOCAL\nFORTALEZA/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "2bf37d794658c586ea37b2cdab2c5c0f34c4984df1def4353cb2d17c62c56b22",
+     "leitura": {
+      "tarefas": {
+       "crlv": {
+        "metodo": "regex"
+       }
+      },
+      "texto_truncado": false
+     }
+    },
+    {
+     "id": "PINHO_CS",
+     "nome": "PINHO_CS.pdf",
+     "tipo": "contrato_social",
+     "titulo": "Contrato Social (2022)",
+     "data": "2022-05-09",
+     "paginas": [
+      "PINHO & ARRUDA FISIOTERAPIA S/S CNPJ nº 01.264.413/0001-46\nCONTRATO SOCIAL DE SOCIEDADE SIMPLES\nPelo presente instrumento particular, as partes abaixo qualificadas:\nLARISSA GOMES PINHO, brasileira, solteira, fisioterapeuta, inscrita no Conselho Regional de\nFisioterapia e Terapia Ocupacional da 6ª Região – CREFITO-6 sob o nº 187442-F, portadora da\nCédula de Identidade RG nº 90998109 SSP/CE, inscrita no CPF sob o nº 159.997.325-14, residente\ne domiciliada na Rua das Jandaias, nº 845, apartamento 302, bairro Fátima, Fortaleza/CE, CEP\n60040-160; e\nTHIAGO PINHO ARRUDA, brasileiro, casado, fisioterapeuta, inscrito no Conselho Regional de\nFisioterapia e Terapia Ocupacional da 6ª Região – CREFITO-6 sob o nº 203915-F, portador da\nCédula de Identidade RG nº 61288515 SSP/CE, inscrito no CPF sob o nº 427.084.861-87, residente\ne domiciliado na Avenida dos Paus-Brancos, nº 1.320, casa 12, bairro Cambeba, Fortaleza/CE, CEP\n60822-130;\ntêm entre si justo e contratado constituir uma sociedade simples pura, de natureza não empresária,\nque se regerá pelas cláusulas e condições seguintes e pelos arts. 997 a 1.038 da Lei nº 10.406, de 10\nde janeiro de 2002 (Código Civil).\nCLÁUSULA PRIMEIRA – DA DENOMINAÇÃO, DA NATUREZA E DA SEDE\nA sociedade adota a denominação PINHO & ARRUDA FISIOTERAPIA S/S e terá sede na Rua\ndos Cedros, nº 1.090, salas 204 a 206, bairro Aldeota, Fortaleza/CE, CEP 60150-080.\n§ 1º A sociedade constitui-se como sociedade simples pura, de natureza não empresária, sem adotar\nnenhum dos tipos de sociedade empresária previstos no Código Civil, e terá este contrato inscrito no\nRegistro Civil das Pessoas Jurídicas do local de sua sede, nos termos do art. 998 do Código Civil.\n§ 2º A sociedade poderá abrir e encerrar filiais ou unidades de atendimento em qualquer parte do\nterritório nacional, mediante alteração deste contrato, observado o disposto no art. 1.000 do Código\nCivil.\nCLÁUSULA SEGUNDA – DO OBJETO SOCIAL\nA sociedade tem por objeto a prestação de serviços de fisioterapia e reabilitação, exercidos\npessoalmente pelos sócios, compreendendo a avaliação cinético-funcional, a fisioterapia traumatoortopédica, neurofuncional, respiratória e desportiva e a execução de programas de reabilitação\nfísica e funcional, atividades classificadas no código CNAE 8650-0/04 (atividades de fisioterapia).\nParágrafo único. As atividades compreendidas no objeto social, de natureza intelectual e científica,\nserão exercidas pessoalmente pelos sócios, regularmente inscritos no CREFITO-6, que assumem a\nresponsabilidade técnica pelos serviços prestados, não constituindo o exercício da profissão\nelemento de empresa, nos termos do parágrafo único do art. 966 do Código Civil.\nCLÁUSULA TERCEIRA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciará suas atividades na data da inscrição deste contrato no Registro Civil das\nPessoas Jurídicas, e seu prazo de duração é indeterminado.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+      "CLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 80.000,00 (oitenta mil reais), dividido em 80.000 (oitenta mil) quotas, no\nvalor nominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas, neste ato, em\nmoeda corrente do País, assim distribuídas entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nLARISSA GOMES PINHO\n40.000\n40.000,00\n50%\nTHIAGO PINHO ARRUDA\n40.000\n40.000,00\n50%\nTOTAL\n80.000\n80.000,00\n100%\nParágrafo único. Além da integralização de suas quotas, cada sócio obriga-se a prestar pessoalmente\nà sociedade os serviços profissionais compreendidos no objeto social.\nCLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nOs sócios respondem subsidiariamente pelas obrigações sociais: se os bens da sociedade não lhe\ncobrirem as dívidas, responderão os sócios pelo saldo, na proporção em que participem das perdas\nsociais, nos termos do art. 1.023 do Código Civil.\nParágrafo único. Os bens particulares dos sócios não poderão ser executados por dívidas da\nsociedade senão depois de executados os bens sociais, conforme o art. 1.024 do Código Civil.\nCLÁUSULA SEXTA – DA PARTICIPAÇÃO NOS LUCROS E NAS PERDAS\nOs sócios participarão dos lucros e das perdas sociais na proporção de suas respectivas quotas, sendo\nnula qualquer estipulação que exclua algum deles de participar dos lucros e das perdas, nos termos\ndo art. 1.008 do Código Civil.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade compete a ambos os sócios, que somente poderão obrigá-la mediante\na assinatura de ambos, cabendo-lhes a representação da sociedade, ativa e passiva, judicial e\nextrajudicial, e a gestão dos negócios sociais, vedado o uso da denominação social em atividades\nestranhas ao objeto social, especialmente em avais, fianças e endossos de favor.\nParágrafo único. Os sócios administradores farão jus a uma retirada mensal, a título de pró-labore,\nem valor a ser fixado de comum acordo, observada a legislação tributária e previdenciária aplicável.\nCLÁUSULA OITAVA – DO EXERCÍCIO SOCIAL E DA PRESTAÇÃO DE CONTAS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, os administradores\nprestarão contas justificadas de sua administração e levantarão o inventário, o balanço patrimonial e\no balanço de resultado econômico, nos termos do art. 1.020 do Código Civil, sendo os lucros ou as\nperdas apurados atribuídos aos sócios na forma da Cláusula Sexta.\nCLÁUSULA NONA – DA CESSÃO DE QUOTAS\nA cessão, total ou parcial, de quotas não terá eficácia quanto ao outro sócio e à sociedade sem a\ncorrespondente modificação deste contrato, com o consentimento do outro sócio, a quem fica\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+      "assegurado o direito de preferência, em igualdade de preço e condições, nos termos do art. 1.003 do\nCódigo Civil.\nParágrafo único. Em razão da natureza do objeto social, somente poderá ingressar na sociedade, a\nqualquer título, fisioterapeuta regularmente inscrito no conselho profissional competente.\nCLÁUSULA DÉCIMA – DO FALECIMENTO, DA INCAPACIDADE E DA RETIRADA DE\nSÓCIO\nNo caso de falecimento ou de incapacidade de qualquer dos sócios, a sociedade não se dissolverá,\nliquidando-se a quota do sócio falecido ou incapaz, cujo valor será apurado com base na situação\npatrimonial da sociedade, à data da resolução, verificada em balanço especialmente levantado, e\npago aos herdeiros, sucessores ou ao representante legal do incapaz no prazo de 90 (noventa) dias,\nnos termos dos arts. 1.028 e 1.031 do Código Civil.\nParágrafo único. O mesmo critério de apuração de haveres será observado na retirada voluntária de\nsócio, que deverá notificar o outro com antecedência mínima de 60 (sessenta) dias, na forma do art.\n1.029 do Código Civil, e nos demais casos em que a sociedade se resolva em relação a algum de\nseus sócios.\nCLÁUSULA DÉCIMA PRIMEIRA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nOs sócios administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade, por lei especial, ou em virtude de condenação criminal, ou por se\nencontrarem sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\npúblicos; ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato, ou contra\na economia popular, contra o sistema financeiro nacional, contra normas de defesa da concorrência,\ncontra as relações de consumo, a fé pública ou a propriedade, nos termos do art. 1.011, § 1º, do\nCódigo Civil.\nCLÁUSULA DÉCIMA SEGUNDA – DO FORO\nFica eleito o foro da Comarca de Fortaleza, Estado do Ceará, para dirimir quaisquer controvérsias\noriundas deste contrato, com renúncia expressa a qualquer outro, por mais privilegiado que seja.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em 3 (três) vias\nde igual teor e forma, destinando-se a primeira ao registro no Registro Civil das Pessoas Jurídicas da\nComarca de Fortaleza.\nFortaleza/CE, 9 de maio de 2022.\n__________________________________ LARISSA GOMES PINHO\n__________________________________ THIAGO PINHO ARRUDA\nVisto: Natália Brandão Fontes – OAB/CE nº 29.734\nREGISTRO CIVIL DAS PESSOAS JURÍDICAS\nCartório Alencar – 2º Registro Civil das Pessoas Jurídicas de Fortaleza (fictício)\nProtocolado e registrado sob o nº 97885, no Livro A, em 23/05/2022\nGlória Benevides Torquato – Oficial Registradora\nSelo digital: RCPJ-FOR-2022-4E1B7C\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "06b244807ac9d9437161e64a543f9ad658450cebfb8ba71b2707130e559e873c",
+     "leitura": {
+      "tarefas": {
+       "partes": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 39.4,
+        "tokens_saida": 760,
+        "modelo": "qwen3.8-27b"
+       },
+       "regras": {
+        "amostras": 1,
+        "concordancia": 1.0,
+        "segundos": 22.8,
+        "tokens_saida": 614,
+        "modelo": "qwen3.8-27b"
+       }
+      },
+      "texto_truncado": false
+     }
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "politica": "DETRAN-CE"
+   },
+   "lado": "vendedor"
+  }
+ },
+ "geral": {
+  "veredito": "NAO_PODE",
+  "faixa": "VERMELHO",
+  "indice": 0.0,
+  "resumo": "Vendedor: Os assinantes informados não bastam. Quem pode assinar: Larissa Gomes Pinho e Thiago Pinho Arruda. Regra aplicável: regra geral de representação (Cláusula Sétima).",
+  "motivos_faixa": [
+   "Vendedor — índice 0 ≤ limiar 15"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "JEEP/RENEGADE LONGITUDE 1.3 T270",
+   "placa": "AYS5S36",
+   "renavam": "09228282466",
+   "chassi": "988C62K9H00N30ADA"
+  },
+  "data_venda": "2026-10-16",
+  "valor": 128000.0,
+  "vendedor": {
+   "tipo": "PJ",
+   "nome": "PINHO & ARRUDA FISIOTERAPIA S/S",
+   "documento": "01.264.413/0001-46",
+   "assinantes": [
+    {
+     "nome": "Larissa Gomes Pinho",
+     "cpf": "159.997.325-14"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": "DÉBORA LINS MOURA",
+   "documento": "045.115.091-07",
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "ATPV-e"
+ },
+ "hash_entrada": "163ef3a5d4c8337841ee0b7af5bb79fff5e17b1d0627feb481367c839ff8c65c"
+}

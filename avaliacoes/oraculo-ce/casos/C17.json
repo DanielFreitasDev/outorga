@@ -1,0 +1,1230 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T10:07:52",
+ "pedido": {
+  "veiculo": {
+   "descricao": "FIAT/CRONOS DRIVE 1.3",
+   "placa": "LEA1N11",
+   "renavam": "02840019811",
+   "chassi": "9BDYKW7SX6S2S9X3C"
+  },
+  "data_venda": "2026-09-18",
+  "valor": 85000.0,
+  "assinantes": [
+   {
+    "nome": "Rodrigo Sales Furtado",
+    "cpf": "450.604.541-69"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "Frota Fácil Locações Ltda.",
+  "vendedor_cnpj": "38.005.305/0001-69",
+  "lado": "vendedor"
+ },
+ "empresa": {
+  "razao_social": "LOCADORA JANGADA LTDA.",
+  "cnpj": "38.005.305/0001-69",
+  "tipo": "LTDA",
+  "objeto": "locação de automóveis sem condutor e gestão de frotas",
+  "comercializa_veiculos": false,
+  "subtipo": null
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 0.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 2,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 0 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: Francisco Wellington Rocha. O caminho por procuração pública de 05/03/2026 não vale: sem poder expresso para vender.",
+ "assinantes": [
+  {
+   "informado": "Rodrigo Sales Furtado",
+   "cpf": "450.604.541-69",
+   "chave": "45060454169",
+   "nome": "Rodrigo Sales Furtado",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:72940557691",
+   "pessoas": [
+    {
+     "chave": "72940557691",
+     "nome": "Francisco Wellington Rocha"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "alienação de veículos — Contrato Social (2020)",
+   "cadeia": [
+    "JANGADA_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [
+  {
+   "id": "POA_RODRIGO:bloqueada",
+   "pessoas": [
+    {
+     "chave": "45060454169",
+     "nome": "Rodrigo Sales Furtado"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 05/03/2026",
+   "cadeia": [
+    "POA_RODRIGO"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PJ",
+     "severidade": "ok",
+     "titulo": "Outorgada pela própria empresa",
+     "detalhe": "A outorgante é a empresa, representada por Francisco Wellington Rocha.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_RODRIGO",
+       "doc_titulo": "Procuração (POA_RODRIGO)",
+       "trecho": "A RODRIGO SALES FURTADO SAIBAM quantos este público instrumento de procuração virem que, aos cinco (05) dias do mês de março de dois mil e vinte e seis (2026), nesta cidade de Caucaia, Estado do Ceará, neste Tabelionato, perante mim, Cláudia Sombra Ribeiro, Escrevente Autorizada, compareceu como OUTORGANTE a sociedade empresária limitada LOCADORA JANGADA LTDA",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 241,
+       "fim": 602
+      }
+     ],
+     "caminho": "POA_RODRIGO"
+    },
+    {
+     "codigo": "OUTORGA_COM_PODERES",
+     "severidade": "ok",
+     "titulo": "Quem outorgou tinha poder",
+     "detalhe": "Em 05/03/2026, Francisco Wellington Rocha podia representar a empresa nesse ato.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_RODRIGO",
+       "doc_titulo": "Procuração (POA_RODRIGO)",
+       "trecho": "A RODRIGO SALES FURTADO SAIBAM quantos este público instrumento de procuração virem que, aos cinco (05) dias do mês de março de dois mil e vinte e seis (2026), nesta cidade de Caucaia, Estado do Ceará, neste Tabelionato, perante mim, Cláudia Sombra Ribeiro, Escrevente Autorizada, compareceu como OUTORGANTE a sociedade empresária limitada LOCADORA JANGADA LTDA",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 241,
+       "fim": 602
+      },
+      {
+       "doc_id": "JANGADA_CS",
+       "doc_titulo": "Contrato Social (2020)",
+       "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade cabe exclusivamente ao sócio FRANCISCO WELLINGTON ROCHA, que representará a sociedade isoladamente, ativa e passivamente, judicial e extrajudicialmente, com poderes para praticar todos os atos de gestão compreendidos no objeto social, inclusive comprar, vender e alienar os veículos integrantes da frota da sociedade, celebrar contratos de locação com clientes, abrir e movimentar contas bancárias, emitir e endossar cheques e duplicatas e representar a sociedade perante quaisquer repartições públicas",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 3118,
+       "fim": 3684
+      }
+     ],
+     "caminho": "POA_RODRIGO"
+    },
+    {
+     "codigo": "PODERES_INSUFICIENTES",
+     "severidade": "bloqueio",
+     "titulo": "Sem poder expresso para vender",
+     "detalhe": "A procuração não confere poder expresso para alienar veículos — só poderes gerais de administração. Mandato em termos gerais só confere poderes de administração; alienar exige poderes especiais e expressos.",
+     "fundamento": [
+      "CC art. 661, caput e §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_RODRIGO",
+       "doc_titulo": "Procuração (POA_RODRIGO)",
+       "trecho": "Pela outorgante, por intermédio de seu representante, foi dito que nomeia e constitui seu procurador RODRIGO SALES FURTADO, brasileiro, solteiro, supervisor administrativo, RG nº 40854883 SSP/CE, CPF nº 450.604.541-69, residente e domiciliado na Rua Doutor Leite Albuquerque, nº 1.020, Centro, Caucaia/CE, ao qual outorga amplos e gerais poderes",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1218,
+       "fim": 1563
+      }
+     ],
+     "caminho": "POA_RODRIGO"
+    },
+    {
+     "codigo": "PROCURACAO_NO_PRAZO",
+     "severidade": "ok",
+     "titulo": "Dentro do prazo",
+     "detalhe": "Válida até 31/12/2026.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "POA_RODRIGO",
+       "doc_titulo": "Procuração (POA_RODRIGO)",
+       "trecho": "O presente mandato vigorará até 31 de dezembro de 2026",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2556,
+       "fim": 2610
+      }
+     ],
+     "caminho": "POA_RODRIGO"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "contrato:72940557691",
+   "via": "contrato",
+   "descricao": "alienação de veículos — Contrato Social (2020)",
+   "pessoas": [
+    "72940557691"
+   ],
+   "faltam": [
+    "72940557691"
+   ],
+   "faltam_nomes": [
+    "Francisco Wellington Rocha"
+   ],
+   "pessoas_nomes": [
+    "Francisco Wellington Rocha"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: LOCADORA JANGADA LTDA..",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "LEA1N11",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "JANGADA_CS#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "JANGADA_CS",
+    "doc_titulo": "Contrato Social (2020)",
+    "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade cabe exclusivamente ao sócio FRANCISCO",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3118,
+    "fim": 3220
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Francisco Wellington Rocha"
+   ],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": false
+  },
+  {
+   "regra": "JANGADA_CS#R2",
+   "escopo": "alienacao_veiculos",
+   "aplicavel": true,
+   "motivo": "alienação de veículos",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "JANGADA_CS",
+    "doc_titulo": "Contrato Social (2020)",
+    "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade cabe exclusivamente ao sócio FRANCISCO WELLINGTON ROCHA, que representará a sociedade isoladamente, ativa e passivamente, judicial e extrajudicialmente, com poderes para praticar todos os atos de gestão compreendidos no objeto social, inclusive comprar, vender e alienar os veículos integrantes da frota da sociedade, celebrar contratos de locação com clientes, abrir e movimentar contas bancárias, emitir e endossar cheques e duplicatas e representar a sociedade perante quaisquer repartições públicas",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 3118,
+    "fim": 3684
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Francisco Wellington Rocha"
+   ],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    }
+   ],
+   "decisiva": true
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-09-18",
+  "atos": [
+   {
+    "doc": "JANGADA_CS",
+    "titulo": "Contrato Social (2020)",
+    "efeito": "2020-02-14"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "72940557691",
+    "nome": "Francisco Wellington Rocha",
+    "cargo": "sócio administrador",
+    "doc": "JANGADA_CS"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "72940557691",
+    "nome": "Francisco Wellington Rocha",
+    "percentual": 40.0
+   },
+   {
+    "chave": "69871689705",
+    "nome": "Ana Beatriz Holanda",
+    "percentual": 35.0
+   },
+   {
+    "chave": "84697880943",
+    "nome": "Raimundo Nonato Pires",
+    "percentual": 25.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "LOCADORA JANGADA LTDA.",
+    "sub": "38.005.305/0001-69"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "FIAT/CRONOS DRIVE 1.3",
+    "sub": "LEA1N11"
+   },
+   {
+    "id": "72940557691",
+    "tipo": "pessoa",
+    "rotulo": "Francisco Wellington Rocha",
+    "papeis": [
+     "sócio 40%",
+     "sócio administrador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "69871689705",
+    "tipo": "pessoa",
+    "rotulo": "Ana Beatriz Holanda",
+    "papeis": [
+     "sócio 35%"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "84697880943",
+    "tipo": "pessoa",
+    "rotulo": "Raimundo Nonato Pires",
+    "papeis": [
+     "sócio 25%"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "45060454169",
+    "tipo": "pessoa",
+    "rotulo": "Rodrigo Sales Furtado",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "72940557691",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "40%",
+    "status": "neutro"
+   },
+   {
+    "de": "69871689705",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "35%",
+    "status": "neutro"
+   },
+   {
+    "de": "84697880943",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "25%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "72940557691",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "JANGADA_CS"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "45060454169",
+    "tipo": "procuracao",
+    "status": "invalido",
+    "doc": "POA_RODRIGO",
+    "rotulo": "procuração 05/03/2026 · Sem poder expresso para vender",
+    "motivo": "Sem poder expresso para vender"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2020-02-14",
+   "tipo": "ato",
+   "titulo": "Contrato Social (2020)",
+   "doc": "JANGADA_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-03-05",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Rodrigo Sales Furtado",
+   "doc": "POA_RODRIGO",
+   "detalhe": "publica"
+  },
+  {
+   "data": "2026-09-18",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 85.000,00"
+  },
+  {
+   "data": "2026-12-31",
+   "tipo": "vencimento",
+   "titulo": "Vence a procuração de Rodrigo Sales Furtado",
+   "doc": "POA_RODRIGO",
+   "detalhe": ""
+  }
+ ],
+ "pessoas": {
+  "72940557691": {
+   "nome": "Francisco Wellington Rocha",
+   "cpf": "72940557691"
+  },
+  "69871689705": {
+   "nome": "Ana Beatriz Holanda",
+   "cpf": "69871689705"
+  },
+  "84697880943": {
+   "nome": "Raimundo Nonato Pires",
+   "cpf": "84697880943"
+  },
+  "45060454169": {
+   "nome": "Rodrigo Sales Furtado",
+   "cpf": "45060454169"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "LOCADORA JANGADA LTDA.",
+   "cnpj": "38.005.305/0001-69",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Contrato Social (2020)",
+     "doc": "JANGADA_CS",
+     "efeito": "2020-02-14"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Rodrigo Sales Furtado",
+    "cpf": "450.604.541-69",
+    "identificacao": "CPF",
+    "qualidade": "procurador(a) pela procuração de 05/03/2026"
+   }
+  ],
+  "poderes_conferidos": [
+   "Procuração pública de 05/03/2026: não comprova poderes (Sem poder expresso para vender)."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [],
+  "documentos_verificaveis": [
+   {
+    "id": "JANGADA_CS",
+    "titulo": "Contrato Social (2020)",
+    "arquivo": "JANGADA_CS.pdf"
+   },
+   {
+    "id": "POA_RODRIGO",
+    "titulo": "Procuração (POA_RODRIGO)",
+    "arquivo": "POA_RODRIGO.pdf"
+   },
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "JANGADA_CS",
+   "nome": "JANGADA_CS.pdf",
+   "tipo": "contrato_social",
+   "titulo": "Contrato Social (2020)",
+   "data": "2020-02-14",
+   "paginas": [
+    "LOCADORA JANGADA LTDA. CNPJ nº 38.005.305/0001-69 – NIRE 23200695442\nCONTRATO SOCIAL DE CONSTITUIÇÃO\nPelo presente instrumento particular, as partes abaixo qualificadas:\nFRANCISCO WELLINGTON ROCHA, brasileiro, casado sob o regime de comunhão parcial de\nbens, empresário, portador da Cédula de Identidade RG nº 13171427 SSP/CE, inscrito no CPF sob o\nnº 729.405.576-91, residente e domiciliado na Rua dos Cajueiros, nº 702, bairro Icaraí, Caucaia/CE,\nCEP 61627-180;\nANA BEATRIZ HOLANDA, brasileira, casada sob o regime de separação total de bens, contadora,\nportadora da Cédula de Identidade RG nº 54438575 SSP/CE, inscrita no CPF sob o nº\n698.716.897-05, residente e domiciliada na Rua Lagoa Seca, nº 1.315, apartamento 503, bairro\nJoaquim Távora, Fortaleza/CE, CEP 60130-305; e\nRAIMUNDO NONATO PIRES, brasileiro, viúvo, comerciante, portador da Cédula de Identidade\nRG nº 31135217 SSP/CE, inscrito no CPF sob o nº 846.978.809-43, residente e domiciliado na Rua\nSerra Verde, nº 96, Centro, Maranguape/CE, CEP 61940-085;\nresolvem, de comum acordo, constituir uma sociedade empresária limitada, que se regerá pelas\ncláusulas e condições seguintes e, nas omissões, pela Lei nº 10.406, de 10 de janeiro de 2002\n(Código Civil).\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL E DA SEDE\nA sociedade girará sob o nome empresarial LOCADORA JANGADA LTDA. e terá sede na\nAvenida Praia Mansa, nº 3.150, bairro Tabapuá, Caucaia/CE, CEP 61600-420, podendo abrir e\nencerrar filiais em qualquer parte do território nacional, mediante alteração contratual.\nCLÁUSULA SEGUNDA – DO OBJETO SOCIAL\nA sociedade tem por objeto a locação de automóveis sem condutor e a gestão de frotas,\ncompreendendo a atividade classificada no código CNAE 7711-0/00 (locação de automóveis sem\ncondutor).\nCLÁUSULA TERCEIRA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciará suas atividades na data do arquivamento deste instrumento na Junta Comercial\ndo Estado do Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 400.000,00 (quatrocentos mil reais), dividido em 400.000 (quatrocentas mil)\nquotas de valor nominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas, neste\nato, em moeda corrente do País, assim distribuídas entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nFRANCISCO WELLINGTON ROCHA\n160.000\n160.000,00\n40%\nANA BEATRIZ HOLANDA\n140.000\n140.000,00\n35%\nRAIMUNDO NONATO PIRES\n100.000\n100.000,00\n25%\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "Sócio\nQuotas\nValor (R$)\nParticipação\nTOTAL\n400.000\n400.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social.\nCLÁUSULA SEXTA – DA CESSÃO E TRANSFERÊNCIA DE QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas ou transferidas a terceiros sem o consentimento\ndos demais sócios, aos quais fica assegurado, em igualdade de condições e preço e na proporção de\nsuas participações, o direito de preferência para a sua aquisição, se postas à venda.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade cabe exclusivamente ao sócio FRANCISCO WELLINGTON\nROCHA, que representará a sociedade isoladamente, ativa e passivamente, judicial e\nextrajudicialmente, com poderes para praticar todos os atos de gestão compreendidos no objeto\nsocial, inclusive comprar, vender e alienar os veículos integrantes da frota da sociedade, celebrar\ncontratos de locação com clientes, abrir e movimentar contas bancárias, emitir e endossar cheques e\nduplicatas e representar a sociedade perante quaisquer repartições públicas.\nParágrafo primeiro. Os sócios ANA BEATRIZ HOLANDA e RAIMUNDO NONATO PIRES\nparticipam da sociedade exclusivamente na qualidade de quotistas, não lhes cabendo poderes de\nadministração nem o uso do nome empresarial.\nParágrafo segundo. É vedado ao administrador o uso do nome empresarial em atividades estranhas\nao objeto social, especialmente em avais, fianças e endossos de favor.\nParágrafo terceiro. O administrador fará jus a uma retirada mensal, a título de pró-labore, em valor\nfixado pelos sócios, observadas as disposições regulamentares pertinentes.\nCLÁUSULA OITAVA – DO EXERCÍCIO SOCIAL E DOS RESULTADOS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, o administrador prestará\ncontas justificadas de sua administração, procedendo à elaboração do inventário, do balanço\npatrimonial e do balanço de resultado econômico, cabendo aos sócios, na proporção de suas quotas,\nos lucros ou as perdas apurados.\nParágrafo único. Nos quatro meses seguintes ao término do exercício social, os sócios deliberarão\nsobre as contas apresentadas pelo administrador e sobre a destinação dos resultados.\nCLÁUSULA NONA – DO FALECIMENTO OU DA INTERDIÇÃO DE SÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros, sucessores e o incapaz. Não sendo possível ou inexistindo interesse destes ou dos sócios\nremanescentes, o valor de seus haveres será apurado e liquidado com base na situação patrimonial da\nsociedade, à data da resolução, verificada em balanço especialmente levantado.\nCLÁUSULA DÉCIMA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "O administrador declara, sob as penas da lei, que não está impedido de exercer a administração da\nsociedade, por lei especial, ou em virtude de condenação criminal, ou por se encontrar sob os efeitos\ndela, a pena que vede, ainda que temporariamente, o acesso a cargos públicos; ou por crime\nfalimentar, de prevaricação, peita ou suborno, concussão, peculato, ou contra a economia popular,\ncontra o sistema financeiro nacional, contra normas de defesa da concorrência, contra as relações de\nconsumo, a fé pública ou a propriedade.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FORO\nFica eleito o foro da Comarca de Caucaia, Estado do Ceará, para dirimir quaisquer dúvidas ou\nlitígios oriundos deste contrato, com renúncia expressa a qualquer outro, por mais privilegiado que\nseja.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em via única,\nque será levada a arquivamento na Junta Comercial do Estado do Ceará.\nCaucaia/CE, 14 de fevereiro de 2020.\n__________________________________ FRANCISCO WELLINGTON ROCHA\n__________________________________ ANA BEATRIZ HOLANDA\n__________________________________ RAIMUNDO NONATO PIRES\nVisto: Henrique Bastos Arruda – OAB/CE nº 21.604\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 27/02/2020 sob o nº 62020989637\nProtocolo: 20/037.912-6 | NIRE: 23200695442\nEmpresa: LOCADORA JANGADA LTDA.\nAutenticação: 3C9D52A0F81E47B6C2A09D3E5F7184BC\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "4d0c4a2c6613921e47e8409cfa27517a7a90e75e01cf982da05871528de1b353",
+   "leitura": {}
+  },
+  {
+   "id": "POA_RODRIGO",
+   "nome": "POA_RODRIGO.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (POA_RODRIGO)",
+   "data": "2026-03-05",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ – COMARCA DE CAUCAIA\nTabelionato Jangadeiro de Notas e Registros – Caucaia/CE (fictício)\nMarcílio Távora Rangel – Tabelião\nLIVRO 314-P — FOLHAS 017/018\nPROCURAÇÃO QUE FAZ LOCADORA JANGADA LTDA. A RODRIGO SALES\nFURTADO\nSAIBAM quantos este público instrumento de procuração virem que, aos cinco (05) dias do mês de\nmarço de dois mil e vinte e seis (2026), nesta cidade de Caucaia, Estado do Ceará, neste Tabelionato,\nperante mim, Cláudia Sombra Ribeiro, Escrevente Autorizada, compareceu como OUTORGANTE a\nsociedade empresária limitada LOCADORA JANGADA LTDA., inscrita no CNPJ sob o nº\n38.005.305/0001-69, NIRE 23200695442, com sede na cidade de Caucaia/CE, representada neste\nato por seu sócio administrador FRANCISCO WELLINGTON ROCHA, brasileiro, casado,\nempresário, RG nº 13171427 SSP/CE, CPF nº 729.405.576-91, residente e domiciliado em Caucaia/\nCE, nos termos do Contrato Social de Constituição registrado na JUCEC em 27/02/2020 sob o nº\n62020989637, do qual se arquiva cópia nestas notas, acompanhada de certidão simplificada\nexpedida pela JUCEC em 25/02/2026. Reconhecido como o próprio por mim, à vista dos\ndocumentos de identificação apresentados, do que dou fé.\nPela outorgante, por intermédio de seu representante, foi dito que nomeia e constitui seu procurador\nRODRIGO SALES FURTADO, brasileiro, solteiro, supervisor administrativo, RG nº 40854883\nSSP/CE, CPF nº 450.604.541-69, residente e domiciliado na Rua Doutor Leite Albuquerque, nº\n1.020, Centro, Caucaia/CE, ao qual outorga amplos e gerais poderes de administração para gerir os\nnegócios da outorgante e representá-la perante quaisquer repartições públicas federais, estaduais e\nmunicipais, autarquias, empresas públicas e sociedades de economia mista, inclusive o\nDepartamento Estadual de Trânsito do Ceará – DETRAN/CE, a Secretaria da Fazenda do Estado e\nas prefeituras municipais, podendo, para tanto, assinar requerimentos, formulários, declarações e\ntermos de responsabilidade; pagar taxas, tributos, licenciamentos e multas; promover o\nlicenciamento anual e as vistorias periódicas dos veículos da frota da outorgante; requerer e retirar\ndocumentos, certidões, guias e segundas vias; receber correspondências, intimações e notificações\nadministrativas; apresentar defesas prévias e recursos administrativos relativos a infrações de\ntrânsito, inclusive indicando o condutor responsável; acompanhar processos administrativos de seu\ninteresse; e praticar os demais atos de mera administração necessários ao bom desempenho deste\nmandato.\nO presente mandato vigorará até 31 de dezembro de 2026.\nAssim o disse, do que dou fé, pedindo-me que lavrasse este instrumento, que, lido em voz alta e\nachado em tudo conforme, outorga, aceita e assina. Eu, Cláudia Sombra Ribeiro, Escrevente\nAutorizada, digitei. Eu, Marcílio Távora Rangel, Tabelião, subscrevo e assino.\n(aa) FRANCISCO WELLINGTON ROCHA, pela outorgante.\nMARCÍLIO TÁVORA RANGEL, Tabelião.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "Emolumentos: R$ 214,37 · Taxa de fiscalização: R$ 10,72 · Total: R$ 225,09\nSelo Digital: JNG-0314-2026-9B2E07\nTRASLADO — Conferido com o original, a que me reporto e dou fé.\nCaucaia/CE, 5 de março de 2026.\nMarcílio Távora Rangel – Tabelião\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "79044b32211ca3958f6185db68a4a96defb2c09860ee4099960eeef2c3f95470",
+   "leitura": {}
+  },
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n02840019811\nPLACA\nLEA1N11\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2023\nANO MODELO\n2023\nNÚMERO DO CRV\n501537330062\nCÓDIGO DE SEGURANÇA DO CLA\n10492935284\nMARCA / MODELO / VERSÃO\nFIAT/CRONOS DRIVE 1.3\nESPÉCIE / TIPO\nPASSAGEIRO/AUTOMÓVEL\nCHASSI\n9BDYKW7SX6S2S9X3C\nCOR PREDOMINANTE\nPRATA\nCOMBUSTÍVEL\nÁLCOOL/GASOLINA\nNOME\nLOCADORA JANGADA LTDA.\nCPF / CNPJ\n38.005.305/0001-69\nLOCAL\nCAUCAIA/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "9674c048b474400fc2edf2bffa9f7bba852728e07b3b9bbcc56a0a73ca178e23",
+   "leitura": {}
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "gabarito",
+  "politica": "DETRAN-CE"
+ },
+ "lado": "vendedor",
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T10:07:52",
+   "pedido": {
+    "veiculo": {
+     "descricao": "FIAT/CRONOS DRIVE 1.3",
+     "placa": "LEA1N11",
+     "renavam": "02840019811",
+     "chassi": "9BDYKW7SX6S2S9X3C"
+    },
+    "data_venda": "2026-09-18",
+    "valor": 85000.0,
+    "assinantes": [
+     {
+      "nome": "Rodrigo Sales Furtado",
+      "cpf": "450.604.541-69"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "Frota Fácil Locações Ltda.",
+    "vendedor_cnpj": "38.005.305/0001-69",
+    "lado": "vendedor"
+   },
+   "empresa": {
+    "razao_social": "LOCADORA JANGADA LTDA.",
+    "cnpj": "38.005.305/0001-69",
+    "tipo": "LTDA",
+    "objeto": "locação de automóveis sem condutor e gestão de frotas",
+    "comercializa_veiculos": false,
+    "subtipo": null
+   },
+   "veredito": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 2,
+    "menor_confianca_fato": 1.0,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Francisco Wellington Rocha. O caminho por procuração pública de 05/03/2026 não vale: sem poder expresso para vender.",
+   "assinantes": [
+    {
+     "informado": "Rodrigo Sales Furtado",
+     "cpf": "450.604.541-69",
+     "chave": "45060454169",
+     "nome": "Rodrigo Sales Furtado",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:72940557691",
+     "pessoas": [
+      {
+       "chave": "72940557691",
+       "nome": "Francisco Wellington Rocha"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "alienação de veículos — Contrato Social (2020)",
+     "cadeia": [
+      "JANGADA_CS"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [
+    {
+     "id": "POA_RODRIGO:bloqueada",
+     "pessoas": [
+      {
+       "chave": "45060454169",
+       "nome": "Rodrigo Sales Furtado"
+      }
+     ],
+     "via": "procuracao",
+     "descricao": "Procuração pública de 05/03/2026",
+     "cadeia": [
+      "POA_RODRIGO"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [
+      {
+       "codigo": "OUTORGANTE_PJ",
+       "severidade": "ok",
+       "titulo": "Outorgada pela própria empresa",
+       "detalhe": "A outorgante é a empresa, representada por Francisco Wellington Rocha.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_RODRIGO",
+         "doc_titulo": "Procuração (POA_RODRIGO)",
+         "trecho": "A RODRIGO SALES FURTADO SAIBAM quantos este público instrumento de procuração virem que, aos cinco (05) dias do mês de março de dois mil e vinte e seis (2026), nesta cidade de Caucaia, Estado do Ceará, neste Tabelionato, perante mim, Cláudia Sombra Ribeiro, Escrevente Autorizada, compareceu como OUTORGANTE a sociedade empresária limitada LOCADORA JANGADA LTDA",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 241,
+         "fim": 602
+        }
+       ],
+       "caminho": "POA_RODRIGO"
+      },
+      {
+       "codigo": "OUTORGA_COM_PODERES",
+       "severidade": "ok",
+       "titulo": "Quem outorgou tinha poder",
+       "detalhe": "Em 05/03/2026, Francisco Wellington Rocha podia representar a empresa nesse ato.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_RODRIGO",
+         "doc_titulo": "Procuração (POA_RODRIGO)",
+         "trecho": "A RODRIGO SALES FURTADO SAIBAM quantos este público instrumento de procuração virem que, aos cinco (05) dias do mês de março de dois mil e vinte e seis (2026), nesta cidade de Caucaia, Estado do Ceará, neste Tabelionato, perante mim, Cláudia Sombra Ribeiro, Escrevente Autorizada, compareceu como OUTORGANTE a sociedade empresária limitada LOCADORA JANGADA LTDA",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 241,
+         "fim": 602
+        },
+        {
+         "doc_id": "JANGADA_CS",
+         "doc_titulo": "Contrato Social (2020)",
+         "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade cabe exclusivamente ao sócio FRANCISCO WELLINGTON ROCHA, que representará a sociedade isoladamente, ativa e passivamente, judicial e extrajudicialmente, com poderes para praticar todos os atos de gestão compreendidos no objeto social, inclusive comprar, vender e alienar os veículos integrantes da frota da sociedade, celebrar contratos de locação com clientes, abrir e movimentar contas bancárias, emitir e endossar cheques e duplicatas e representar a sociedade perante quaisquer repartições públicas",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 2,
+         "inicio": 3118,
+         "fim": 3684
+        }
+       ],
+       "caminho": "POA_RODRIGO"
+      },
+      {
+       "codigo": "PODERES_INSUFICIENTES",
+       "severidade": "bloqueio",
+       "titulo": "Sem poder expresso para vender",
+       "detalhe": "A procuração não confere poder expresso para alienar veículos — só poderes gerais de administração. Mandato em termos gerais só confere poderes de administração; alienar exige poderes especiais e expressos.",
+       "fundamento": [
+        "CC art. 661, caput e §1º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_RODRIGO",
+         "doc_titulo": "Procuração (POA_RODRIGO)",
+         "trecho": "Pela outorgante, por intermédio de seu representante, foi dito que nomeia e constitui seu procurador RODRIGO SALES FURTADO, brasileiro, solteiro, supervisor administrativo, RG nº 40854883 SSP/CE, CPF nº 450.604.541-69, residente e domiciliado na Rua Doutor Leite Albuquerque, nº 1.020, Centro, Caucaia/CE, ao qual outorga amplos e gerais poderes",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1218,
+         "fim": 1563
+        }
+       ],
+       "caminho": "POA_RODRIGO"
+      },
+      {
+       "codigo": "PROCURACAO_NO_PRAZO",
+       "severidade": "ok",
+       "titulo": "Dentro do prazo",
+       "detalhe": "Válida até 31/12/2026.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "POA_RODRIGO",
+         "doc_titulo": "Procuração (POA_RODRIGO)",
+         "trecho": "O presente mandato vigorará até 31 de dezembro de 2026",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 2556,
+         "fim": 2610
+        }
+       ],
+       "caminho": "POA_RODRIGO"
+      }
+     ],
+     "precondicoes": []
+    }
+   ],
+   "caminho_escolhido": null,
+   "faltantes": [
+    {
+     "alternativa": "contrato:72940557691",
+     "via": "contrato",
+     "descricao": "alienação de veículos — Contrato Social (2020)",
+     "pessoas": [
+      "72940557691"
+     ],
+     "faltam": [
+      "72940557691"
+     ],
+     "faltam_nomes": [
+      "Francisco Wellington Rocha"
+     ],
+     "pessoas_nomes": [
+      "Francisco Wellington Rocha"
+     ]
+    }
+   ],
+   "achados": [
+    {
+     "codigo": "TITULARIDADE_OK",
+     "severidade": "ok",
+     "titulo": "Veículo registrado no CNPJ da empresa",
+     "detalhe": "Proprietário no CRLV: LOCADORA JANGADA LTDA..",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [
+      {
+       "doc_id": "CRLV",
+       "doc_titulo": "CRLV",
+       "trecho": "LEA1N11",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 146,
+       "fim": 153
+      }
+     ],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "JANGADA_CS#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "JANGADA_CS",
+      "doc_titulo": "Contrato Social (2020)",
+      "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade cabe exclusivamente ao sócio FRANCISCO",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3118,
+      "fim": 3220
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Francisco Wellington Rocha"
+     ],
+     "cargo": null,
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": false
+    },
+    {
+     "regra": "JANGADA_CS#R2",
+     "escopo": "alienacao_veiculos",
+     "aplicavel": true,
+     "motivo": "alienação de veículos",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "JANGADA_CS",
+      "doc_titulo": "Contrato Social (2020)",
+      "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade cabe exclusivamente ao sócio FRANCISCO WELLINGTON ROCHA, que representará a sociedade isoladamente, ativa e passivamente, judicial e extrajudicialmente, com poderes para praticar todos os atos de gestão compreendidos no objeto social, inclusive comprar, vender e alienar os veículos integrantes da frota da sociedade, celebrar contratos de locação com clientes, abrir e movimentar contas bancárias, emitir e endossar cheques e duplicatas e representar a sociedade perante quaisquer repartições públicas",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 3118,
+      "fim": 3684
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Francisco Wellington Rocha"
+     ],
+     "cargo": null,
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente"
+       ]
+      }
+     ],
+     "decisiva": true
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-09-18",
+    "atos": [
+     {
+      "doc": "JANGADA_CS",
+      "titulo": "Contrato Social (2020)",
+      "efeito": "2020-02-14"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "72940557691",
+      "nome": "Francisco Wellington Rocha",
+      "cargo": "sócio administrador",
+      "doc": "JANGADA_CS"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "72940557691",
+      "nome": "Francisco Wellington Rocha",
+      "percentual": 40.0
+     },
+     {
+      "chave": "69871689705",
+      "nome": "Ana Beatriz Holanda",
+      "percentual": 35.0
+     },
+     {
+      "chave": "84697880943",
+      "nome": "Raimundo Nonato Pires",
+      "percentual": 25.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "LOCADORA JANGADA LTDA.",
+      "sub": "38.005.305/0001-69"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "FIAT/CRONOS DRIVE 1.3",
+      "sub": "LEA1N11"
+     },
+     {
+      "id": "72940557691",
+      "tipo": "pessoa",
+      "rotulo": "Francisco Wellington Rocha",
+      "papeis": [
+       "sócio 40%",
+       "sócio administrador"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "69871689705",
+      "tipo": "pessoa",
+      "rotulo": "Ana Beatriz Holanda",
+      "papeis": [
+       "sócio 35%"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "84697880943",
+      "tipo": "pessoa",
+      "rotulo": "Raimundo Nonato Pires",
+      "papeis": [
+       "sócio 25%"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "45060454169",
+      "tipo": "pessoa",
+      "rotulo": "Rodrigo Sales Furtado",
+      "papeis": [
+       "procurador"
+      ],
+      "assinante": true
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "valido"
+     },
+     {
+      "de": "72940557691",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "40%",
+      "status": "neutro"
+     },
+     {
+      "de": "69871689705",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "35%",
+      "status": "neutro"
+     },
+     {
+      "de": "84697880943",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "25%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "72940557691",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "JANGADA_CS"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "45060454169",
+      "tipo": "procuracao",
+      "status": "invalido",
+      "doc": "POA_RODRIGO",
+      "rotulo": "procuração 05/03/2026 · Sem poder expresso para vender",
+      "motivo": "Sem poder expresso para vender"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2020-02-14",
+     "tipo": "ato",
+     "titulo": "Contrato Social (2020)",
+     "doc": "JANGADA_CS",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-03-05",
+     "tipo": "procuracao",
+     "titulo": "Procuração para Rodrigo Sales Furtado",
+     "doc": "POA_RODRIGO",
+     "detalhe": "publica"
+    },
+    {
+     "data": "2026-09-18",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 85.000,00"
+    },
+    {
+     "data": "2026-12-31",
+     "tipo": "vencimento",
+     "titulo": "Vence a procuração de Rodrigo Sales Furtado",
+     "doc": "POA_RODRIGO",
+     "detalhe": ""
+    }
+   ],
+   "pessoas": {
+    "72940557691": {
+     "nome": "Francisco Wellington Rocha",
+     "cpf": "72940557691"
+    },
+    "69871689705": {
+     "nome": "Ana Beatriz Holanda",
+     "cpf": "69871689705"
+    },
+    "84697880943": {
+     "nome": "Raimundo Nonato Pires",
+     "cpf": "84697880943"
+    },
+    "45060454169": {
+     "nome": "Rodrigo Sales Furtado",
+     "cpf": "45060454169"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "não comprovada",
+    "outorgante": {
+     "nome": "LOCADORA JANGADA LTDA.",
+     "cnpj": "38.005.305/0001-69",
+     "tipo": "LTDA",
+     "atos_vigentes": [
+      {
+       "titulo": "Contrato Social (2020)",
+       "doc": "JANGADA_CS",
+       "efeito": "2020-02-14"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "Rodrigo Sales Furtado",
+      "cpf": "450.604.541-69",
+      "identificacao": "CPF",
+      "qualidade": "procurador(a) pela procuração de 05/03/2026"
+     }
+    ],
+    "poderes_conferidos": [
+     "Procuração pública de 05/03/2026: não comprova poderes (Sem poder expresso para vender)."
+    ],
+    "prazo_validade": [
+     "—"
+    ],
+    "revogacao": [
+     "—"
+    ],
+    "fontes": [],
+    "documentos_verificaveis": [
+     {
+      "id": "JANGADA_CS",
+      "titulo": "Contrato Social (2020)",
+      "arquivo": "JANGADA_CS.pdf"
+     },
+     {
+      "id": "POA_RODRIGO",
+      "titulo": "Procuração (POA_RODRIGO)",
+      "arquivo": "POA_RODRIGO.pdf"
+     },
+     {
+      "id": "CRLV",
+      "titulo": "CRLV",
+      "arquivo": "CRLV.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "JANGADA_CS",
+     "nome": "JANGADA_CS.pdf",
+     "tipo": "contrato_social",
+     "titulo": "Contrato Social (2020)",
+     "data": "2020-02-14",
+     "paginas": [
+      "LOCADORA JANGADA LTDA. CNPJ nº 38.005.305/0001-69 – NIRE 23200695442\nCONTRATO SOCIAL DE CONSTITUIÇÃO\nPelo presente instrumento particular, as partes abaixo qualificadas:\nFRANCISCO WELLINGTON ROCHA, brasileiro, casado sob o regime de comunhão parcial de\nbens, empresário, portador da Cédula de Identidade RG nº 13171427 SSP/CE, inscrito no CPF sob o\nnº 729.405.576-91, residente e domiciliado na Rua dos Cajueiros, nº 702, bairro Icaraí, Caucaia/CE,\nCEP 61627-180;\nANA BEATRIZ HOLANDA, brasileira, casada sob o regime de separação total de bens, contadora,\nportadora da Cédula de Identidade RG nº 54438575 SSP/CE, inscrita no CPF sob o nº\n698.716.897-05, residente e domiciliada na Rua Lagoa Seca, nº 1.315, apartamento 503, bairro\nJoaquim Távora, Fortaleza/CE, CEP 60130-305; e\nRAIMUNDO NONATO PIRES, brasileiro, viúvo, comerciante, portador da Cédula de Identidade\nRG nº 31135217 SSP/CE, inscrito no CPF sob o nº 846.978.809-43, residente e domiciliado na Rua\nSerra Verde, nº 96, Centro, Maranguape/CE, CEP 61940-085;\nresolvem, de comum acordo, constituir uma sociedade empresária limitada, que se regerá pelas\ncláusulas e condições seguintes e, nas omissões, pela Lei nº 10.406, de 10 de janeiro de 2002\n(Código Civil).\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL E DA SEDE\nA sociedade girará sob o nome empresarial LOCADORA JANGADA LTDA. e terá sede na\nAvenida Praia Mansa, nº 3.150, bairro Tabapuá, Caucaia/CE, CEP 61600-420, podendo abrir e\nencerrar filiais em qualquer parte do território nacional, mediante alteração contratual.\nCLÁUSULA SEGUNDA – DO OBJETO SOCIAL\nA sociedade tem por objeto a locação de automóveis sem condutor e a gestão de frotas,\ncompreendendo a atividade classificada no código CNAE 7711-0/00 (locação de automóveis sem\ncondutor).\nCLÁUSULA TERCEIRA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciará suas atividades na data do arquivamento deste instrumento na Junta Comercial\ndo Estado do Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUARTA – DO CAPITAL SOCIAL\nO capital social é de R$ 400.000,00 (quatrocentos mil reais), dividido em 400.000 (quatrocentas mil)\nquotas de valor nominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas, neste\nato, em moeda corrente do País, assim distribuídas entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nFRANCISCO WELLINGTON ROCHA\n160.000\n160.000,00\n40%\nANA BEATRIZ HOLANDA\n140.000\n140.000,00\n35%\nRAIMUNDO NONATO PIRES\n100.000\n100.000,00\n25%\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+      "Sócio\nQuotas\nValor (R$)\nParticipação\nTOTAL\n400.000\n400.000,00\n100%\nCLÁUSULA QUINTA – DA RESPONSABILIDADE DOS SÓCIOS\nA responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social.\nCLÁUSULA SEXTA – DA CESSÃO E TRANSFERÊNCIA DE QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas ou transferidas a terceiros sem o consentimento\ndos demais sócios, aos quais fica assegurado, em igualdade de condições e preço e na proporção de\nsuas participações, o direito de preferência para a sua aquisição, se postas à venda.\nCLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade cabe exclusivamente ao sócio FRANCISCO WELLINGTON\nROCHA, que representará a sociedade isoladamente, ativa e passivamente, judicial e\nextrajudicialmente, com poderes para praticar todos os atos de gestão compreendidos no objeto\nsocial, inclusive comprar, vender e alienar os veículos integrantes da frota da sociedade, celebrar\ncontratos de locação com clientes, abrir e movimentar contas bancárias, emitir e endossar cheques e\nduplicatas e representar a sociedade perante quaisquer repartições públicas.\nParágrafo primeiro. Os sócios ANA BEATRIZ HOLANDA e RAIMUNDO NONATO PIRES\nparticipam da sociedade exclusivamente na qualidade de quotistas, não lhes cabendo poderes de\nadministração nem o uso do nome empresarial.\nParágrafo segundo. É vedado ao administrador o uso do nome empresarial em atividades estranhas\nao objeto social, especialmente em avais, fianças e endossos de favor.\nParágrafo terceiro. O administrador fará jus a uma retirada mensal, a título de pró-labore, em valor\nfixado pelos sócios, observadas as disposições regulamentares pertinentes.\nCLÁUSULA OITAVA – DO EXERCÍCIO SOCIAL E DOS RESULTADOS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, o administrador prestará\ncontas justificadas de sua administração, procedendo à elaboração do inventário, do balanço\npatrimonial e do balanço de resultado econômico, cabendo aos sócios, na proporção de suas quotas,\nos lucros ou as perdas apurados.\nParágrafo único. Nos quatro meses seguintes ao término do exercício social, os sócios deliberarão\nsobre as contas apresentadas pelo administrador e sobre a destinação dos resultados.\nCLÁUSULA NONA – DO FALECIMENTO OU DA INTERDIÇÃO DE SÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros, sucessores e o incapaz. Não sendo possível ou inexistindo interesse destes ou dos sócios\nremanescentes, o valor de seus haveres será apurado e liquidado com base na situação patrimonial da\nsociedade, à data da resolução, verificada em balanço especialmente levantado.\nCLÁUSULA DÉCIMA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+      "O administrador declara, sob as penas da lei, que não está impedido de exercer a administração da\nsociedade, por lei especial, ou em virtude de condenação criminal, ou por se encontrar sob os efeitos\ndela, a pena que vede, ainda que temporariamente, o acesso a cargos públicos; ou por crime\nfalimentar, de prevaricação, peita ou suborno, concussão, peculato, ou contra a economia popular,\ncontra o sistema financeiro nacional, contra normas de defesa da concorrência, contra as relações de\nconsumo, a fé pública ou a propriedade.\nCLÁUSULA DÉCIMA PRIMEIRA – DO FORO\nFica eleito o foro da Comarca de Caucaia, Estado do Ceará, para dirimir quaisquer dúvidas ou\nlitígios oriundos deste contrato, com renúncia expressa a qualquer outro, por mais privilegiado que\nseja.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em via única,\nque será levada a arquivamento na Junta Comercial do Estado do Ceará.\nCaucaia/CE, 14 de fevereiro de 2020.\n__________________________________ FRANCISCO WELLINGTON ROCHA\n__________________________________ ANA BEATRIZ HOLANDA\n__________________________________ RAIMUNDO NONATO PIRES\nVisto: Henrique Bastos Arruda – OAB/CE nº 21.604\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 27/02/2020 sob o nº 62020989637\nProtocolo: 20/037.912-6 | NIRE: 23200695442\nEmpresa: LOCADORA JANGADA LTDA.\nAutenticação: 3C9D52A0F81E47B6C2A09D3E5F7184BC\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "4d0c4a2c6613921e47e8409cfa27517a7a90e75e01cf982da05871528de1b353",
+     "leitura": {}
+    },
+    {
+     "id": "POA_RODRIGO",
+     "nome": "POA_RODRIGO.pdf",
+     "tipo": "procuracao",
+     "titulo": "Procuração (POA_RODRIGO)",
+     "data": "2026-03-05",
+     "paginas": [
+      "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ – COMARCA DE CAUCAIA\nTabelionato Jangadeiro de Notas e Registros – Caucaia/CE (fictício)\nMarcílio Távora Rangel – Tabelião\nLIVRO 314-P — FOLHAS 017/018\nPROCURAÇÃO QUE FAZ LOCADORA JANGADA LTDA. A RODRIGO SALES\nFURTADO\nSAIBAM quantos este público instrumento de procuração virem que, aos cinco (05) dias do mês de\nmarço de dois mil e vinte e seis (2026), nesta cidade de Caucaia, Estado do Ceará, neste Tabelionato,\nperante mim, Cláudia Sombra Ribeiro, Escrevente Autorizada, compareceu como OUTORGANTE a\nsociedade empresária limitada LOCADORA JANGADA LTDA., inscrita no CNPJ sob o nº\n38.005.305/0001-69, NIRE 23200695442, com sede na cidade de Caucaia/CE, representada neste\nato por seu sócio administrador FRANCISCO WELLINGTON ROCHA, brasileiro, casado,\nempresário, RG nº 13171427 SSP/CE, CPF nº 729.405.576-91, residente e domiciliado em Caucaia/\nCE, nos termos do Contrato Social de Constituição registrado na JUCEC em 27/02/2020 sob o nº\n62020989637, do qual se arquiva cópia nestas notas, acompanhada de certidão simplificada\nexpedida pela JUCEC em 25/02/2026. Reconhecido como o próprio por mim, à vista dos\ndocumentos de identificação apresentados, do que dou fé.\nPela outorgante, por intermédio de seu representante, foi dito que nomeia e constitui seu procurador\nRODRIGO SALES FURTADO, brasileiro, solteiro, supervisor administrativo, RG nº 40854883\nSSP/CE, CPF nº 450.604.541-69, residente e domiciliado na Rua Doutor Leite Albuquerque, nº\n1.020, Centro, Caucaia/CE, ao qual outorga amplos e gerais poderes de administração para gerir os\nnegócios da outorgante e representá-la perante quaisquer repartições públicas federais, estaduais e\nmunicipais, autarquias, empresas públicas e sociedades de economia mista, inclusive o\nDepartamento Estadual de Trânsito do Ceará – DETRAN/CE, a Secretaria da Fazenda do Estado e\nas prefeituras municipais, podendo, para tanto, assinar requerimentos, formulários, declarações e\ntermos de responsabilidade; pagar taxas, tributos, licenciamentos e multas; promover o\nlicenciamento anual e as vistorias periódicas dos veículos da frota da outorgante; requerer e retirar\ndocumentos, certidões, guias e segundas vias; receber correspondências, intimações e notificações\nadministrativas; apresentar defesas prévias e recursos administrativos relativos a infrações de\ntrânsito, inclusive indicando o condutor responsável; acompanhar processos administrativos de seu\ninteresse; e praticar os demais atos de mera administração necessários ao bom desempenho deste\nmandato.\nO presente mandato vigorará até 31 de dezembro de 2026.\nAssim o disse, do que dou fé, pedindo-me que lavrasse este instrumento, que, lido em voz alta e\nachado em tudo conforme, outorga, aceita e assina. Eu, Cláudia Sombra Ribeiro, Escrevente\nAutorizada, digitei. Eu, Marcílio Távora Rangel, Tabelião, subscrevo e assino.\n(aa) FRANCISCO WELLINGTON ROCHA, pela outorgante.\nMARCÍLIO TÁVORA RANGEL, Tabelião.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "Emolumentos: R$ 214,37 · Taxa de fiscalização: R$ 10,72 · Total: R$ 225,09\nSelo Digital: JNG-0314-2026-9B2E07\nTRASLADO — Conferido com o original, a que me reporto e dou fé.\nCaucaia/CE, 5 de março de 2026.\nMarcílio Távora Rangel – Tabelião\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "79044b32211ca3958f6185db68a4a96defb2c09860ee4099960eeef2c3f95470",
+     "leitura": {}
+    },
+    {
+     "id": "CRLV",
+     "nome": "CRLV.pdf",
+     "tipo": "crlv",
+     "titulo": "CRLV",
+     "data": null,
+     "paginas": [
+      "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n02840019811\nPLACA\nLEA1N11\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2023\nANO MODELO\n2023\nNÚMERO DO CRV\n501537330062\nCÓDIGO DE SEGURANÇA DO CLA\n10492935284\nMARCA / MODELO / VERSÃO\nFIAT/CRONOS DRIVE 1.3\nESPÉCIE / TIPO\nPASSAGEIRO/AUTOMÓVEL\nCHASSI\n9BDYKW7SX6S2S9X3C\nCOR PREDOMINANTE\nPRATA\nCOMBUSTÍVEL\nÁLCOOL/GASOLINA\nNOME\nLOCADORA JANGADA LTDA.\nCPF / CNPJ\n38.005.305/0001-69\nLOCAL\nCAUCAIA/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "9674c048b474400fc2edf2bffa9f7bba852728e07b3b9bbcc56a0a73ca178e23",
+     "leitura": {}
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "gabarito",
+    "politica": "DETRAN-CE"
+   },
+   "lado": "vendedor"
+  }
+ },
+ "geral": {
+  "veredito": "NAO_PODE",
+  "faixa": "VERMELHO",
+  "indice": 0.0,
+  "resumo": "Vendedor: Os assinantes informados não bastam. Quem pode assinar: Francisco Wellington Rocha. O caminho por procuração pública de 05/03/2026 não vale: sem poder expresso para vender.",
+  "motivos_faixa": [
+   "Vendedor — índice 0 ≤ limiar 15"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "FIAT/CRONOS DRIVE 1.3",
+   "placa": "LEA1N11",
+   "renavam": "02840019811",
+   "chassi": "9BDYKW7SX6S2S9X3C"
+  },
+  "data_venda": "2026-09-18",
+  "valor": 85000.0,
+  "vendedor": {
+   "tipo": "PJ",
+   "nome": "LOCADORA JANGADA LTDA.",
+   "documento": "38.005.305/0001-69",
+   "assinantes": [
+    {
+     "nome": "Rodrigo Sales Furtado",
+     "cpf": "450.604.541-69"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": "Frota Fácil Locações Ltda.",
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "informado"
+ },
+ "hash_entrada": "f6b33f33d129257ddb3978735405bbf98af61692de2c8126f1926f2fd88eff3a"
+}

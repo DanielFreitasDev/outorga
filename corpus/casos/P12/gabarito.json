@@ -1,0 +1,44 @@
+{
+  "caso": "P12",
+  "titulo": "Dona é empresa: CPF do administrador",
+  "categoria": "pj",
+  "objetivo": "Consulta por CPF com veículo de PJ.",
+  "validacao_cega": false,
+  "lote": "pf",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "vendedor": {
+      "veredito": "PODE",
+      "faixas_aceitaveis": [
+        "VERDE"
+      ],
+      "conjuntos_minimos": [
+        [
+          "FRANCISCO"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "729.405.576-91"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Francisco Wellington Rocha"
+        ]
+      ]
+    }
+  },
+  "esperado_lados_ce": null
+}

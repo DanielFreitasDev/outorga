@@ -1,0 +1,20 @@
+{
+  "caso": "C30",
+  "titulo": "Administrador com mandato por prazo determinado vencido",
+  "categoria": "temporal",
+  "objetivo": "Prazo de 3 anos venceu em 2024 sem recondução nos documentos (art. 1.063).",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO",
+      "AMARELO"
+    ],
+    "conjuntos_minimos": [],
+    "fundamentos": [
+      "CC art. 1.063"
+    ],
+    "conjuntos_minimos_cpf": [],
+    "conjuntos_minimos_nomes": []
+  },
+  "esperado_ce": null
+}

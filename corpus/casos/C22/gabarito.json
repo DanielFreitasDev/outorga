@@ -1,0 +1,31 @@
+{
+  "caso": "C22",
+  "titulo": "Procuração para OUTRO veículo específico",
+  "categoria": "procuracao",
+  "objetivo": "Procuração só para o Civic; a venda é do HR-V.",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "RAFAEL"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 661, §1º"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "547.517.799-66"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Rafael Nogueira Brito"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

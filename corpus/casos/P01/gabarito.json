@@ -1,0 +1,44 @@
+{
+  "caso": "P01",
+  "titulo": "Pessoa física: o próprio dono vai assinar",
+  "categoria": "pf",
+  "objetivo": "CPF do proprietário: nada a comprovar além da identidade.",
+  "validacao_cega": false,
+  "lote": "pf",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "vendedor": {
+      "veredito": "PODE",
+      "faixas_aceitaveis": [
+        "VERDE"
+      ],
+      "conjuntos_minimos": [
+        [
+          "RAIMUNDA"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "320.908.841-18"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Raimunda Nonata Siqueira"
+        ]
+      ]
+    }
+  },
+  "esperado_lados_ce": null
+}

@@ -1,0 +1,52 @@
+{
+  "caso": "A03",
+  "titulo": "Restrição de compra não alcança a venda",
+  "categoria": "comprador",
+  "objetivo": "Armadilha: a mesma empresa VENDE um veículo de R$ 135 mil; a cláusula é só para aquisição.",
+  "validacao_cega": false,
+  "lote": "atpv",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "vendedor": {
+      "veredito": "PODE",
+      "faixas_aceitaveis": [
+        "VERDE"
+      ],
+      "conjuntos_minimos": [
+        [
+          "GILBERTO"
+        ],
+        [
+          "SIMONE"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "690.828.682-70"
+        ],
+        [
+          "714.244.916-06"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Gilberto Araújo Nunes"
+        ],
+        [
+          "Simone Batista Nunes"
+        ]
+      ]
+    }
+  }
+}

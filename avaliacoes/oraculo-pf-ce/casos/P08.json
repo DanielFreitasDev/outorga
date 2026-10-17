@@ -1,0 +1,982 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T12:00:02",
+ "pedido": {
+  "veiculo": {
+   "descricao": "FIAT/TORO FREEDOM 1.8 AT6",
+   "placa": "JFY7H56",
+   "renavam": "07971923792",
+   "chassi": "9BDNUMM3Y1UFF22Y9"
+  },
+  "data_venda": "2026-10-16",
+  "valor": null,
+  "assinantes": [
+   {
+    "nome": "CPF 707.804.256-50",
+    "cpf": "707.804.256-50"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": null,
+  "vendedor_cnpj": "881.776.891-00",
+  "lado": "vendedor",
+  "consulta": true
+ },
+ "empresa": {
+  "razao_social": "Gilmar Sousa Pontes",
+  "cnpj": null,
+  "tipo": "PF",
+  "objeto": "",
+  "comercializa_veiculos": false,
+  "subtipo": "PF",
+  "cpf": "881.776.891-00"
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 0.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 2,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 0 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: Gilmar Sousa Pontes. O caminho por procuração pública de 20/01/2026 não vale: procuração revogada.",
+ "assinantes": [
+  {
+   "informado": "CPF 707.804.256-50",
+   "cpf": "707.804.256-50",
+   "chave": "70780425650",
+   "nome": "Edvaldo Pinheiro Neto",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:88177689100",
+   "pessoas": [
+    {
+     "chave": "88177689100",
+     "nome": "Gilmar Sousa Pontes"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "Assinatura do próprio proprietário (pessoa física)",
+   "cadeia": [
+    "TITULAR"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [
+  {
+   "id": "POA_PF_TODOS_GILMAR:bloqueada",
+   "pessoas": [
+    {
+     "chave": "70780425650",
+     "nome": "Edvaldo Pinheiro Neto"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 20/01/2026",
+   "cadeia": [
+    "POA_PF_TODOS_GILMAR"
+   ],
+   "severidade": "atencao",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_TITULAR",
+     "severidade": "ok",
+     "titulo": "Outorgada por o proprietário do veículo",
+     "detalhe": "A outorgante é Gilmar Sousa Pontes, o proprietário do veículo (pessoa física).",
+     "fundamento": [
+      "CC art. 653"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_TODOS_GILMAR",
+       "doc_titulo": "Procuração (POA_PF_TODOS_GILMAR)",
+       "trecho": "OUTORGANTE: GILMAR SOUSA PONTES, brasileiro, divorciado, agricultor, portador da cédula de identidade RG nº 1656959 SSP/CE, inscrito no CPF sob o nº 881",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 520,
+       "fim": 672
+      }
+     ],
+     "caminho": "POA_PF_TODOS_GILMAR"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_TODOS_GILMAR",
+       "doc_titulo": "Procuração (POA_PF_TODOS_GILMAR)",
+       "trecho": "poderes especiais",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1370,
+       "fim": 1387
+      }
+     ],
+     "caminho": "POA_PF_TODOS_GILMAR"
+    },
+    {
+     "codigo": "PROCURACAO_REVOGADA",
+     "severidade": "bloqueio",
+     "titulo": "Procuração revogada",
+     "detalhe": "Revogada em 10/06/2026 (Revogação de procuração).",
+     "fundamento": [
+      "CC art. 682, I",
+      "CC art. 686"
+     ],
+     "fontes": [
+      {
+       "doc_id": "REV_PF_GILMAR",
+       "doc_titulo": "Revogação de procuração",
+       "trecho": "REVOGA",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 190,
+       "fim": 196
+      }
+     ],
+     "caminho": "POA_PF_TODOS_GILMAR"
+    },
+    {
+     "codigo": "PROCURACAO_SEM_VEICULO",
+     "severidade": "atencao",
+     "titulo": "Procuração não identifica o veículo",
+     "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+     "fundamento": [
+      "CJF, Enunciado 183"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_PF_TODOS_GILMAR",
+       "doc_titulo": "Procuração (POA_PF_TODOS_GILMAR)",
+       "trecho": "poderes especiais",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1370,
+       "fim": 1387
+      }
+     ],
+     "caminho": "POA_PF_TODOS_GILMAR"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "contrato:88177689100",
+   "via": "contrato",
+   "descricao": "Assinatura do próprio proprietário (pessoa física)",
+   "pessoas": [
+    "88177689100"
+   ],
+   "faltam": [
+    "88177689100"
+   ],
+   "faltam_nomes": [
+    "Gilmar Sousa Pontes"
+   ],
+   "pessoas_nomes": [
+    "Gilmar Sousa Pontes"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "TITULARIDADE_BASE",
+   "severidade": "ok",
+   "titulo": "Proprietário conferido na base veicular",
+   "detalhe": "Pela placa/RENAVAM, o veículo está em nome de Gilmar Sousa Pontes.",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "TITULAR#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "TITULAR",
+    "doc_titulo": "Base veicular (simulada)",
+    "trecho": "GILMAR SOUSA PONTES — CPF 881.776.891-00",
+    "clausula": "titularidade",
+    "ancoragem": 100.0,
+    "pagina": null,
+    "inicio": null,
+    "fim": null
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Gilmar Sousa Pontes"
+   ],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [],
+   "decisiva": true
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-10-16",
+  "atos": [
+   {
+    "doc": "TITULAR",
+    "titulo": "Titularidade (pessoa física)",
+    "efeito": "1900-01-01"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "88177689100",
+    "nome": "Gilmar Sousa Pontes",
+    "cargo": "titular (pessoa física)",
+    "doc": "TITULAR"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "88177689100",
+    "nome": "Gilmar Sousa Pontes",
+    "percentual": 100.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "Gilmar Sousa Pontes",
+    "sub": ""
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "FIAT/TORO FREEDOM 1.8 AT6",
+    "sub": "JFY7H56"
+   },
+   {
+    "id": "88177689100",
+    "tipo": "pessoa",
+    "rotulo": "Gilmar Sousa Pontes",
+    "papeis": [
+     "sócio 100%",
+     "titular (pessoa física)",
+     "outorgante (pessoa física)"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "70780425650",
+    "tipo": "pessoa",
+    "rotulo": "Edvaldo Pinheiro Neto",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "alerta"
+   },
+   {
+    "de": "88177689100",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "100%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "88177689100",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "TITULAR"
+   },
+   {
+    "de": "88177689100",
+    "para": "70780425650",
+    "tipo": "procuracao",
+    "status": "invalido",
+    "doc": "POA_PF_TODOS_GILMAR",
+    "rotulo": "procuração 20/01/2026 · Procuração revogada",
+    "motivo": "Procuração revogada"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "1900-01-01",
+   "tipo": "ato",
+   "titulo": "Titularidade (pessoa física)",
+   "doc": "TITULAR",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-01-20",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Edvaldo Pinheiro Neto",
+   "doc": "POA_PF_TODOS_GILMAR",
+   "detalhe": "publica"
+  },
+  {
+   "data": "2026-06-10",
+   "tipo": "revogacao",
+   "titulo": "Revogação de procuração",
+   "doc": "REV_PF_GILMAR",
+   "detalhe": ""
+  },
+  {
+   "data": "2026-10-16",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "valor não informado"
+  }
+ ],
+ "pessoas": {
+  "88177689100": {
+   "nome": "Gilmar Sousa Pontes",
+   "cpf": "88177689100"
+  },
+  "70780425650": {
+   "nome": "Edvaldo Pinheiro Neto",
+   "cpf": "70780425650"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "Gilmar Sousa Pontes",
+   "cnpj": null,
+   "tipo": "PF",
+   "cpf": "88177689100",
+   "documento": "88177689100",
+   "atos_vigentes": [],
+   "titularidade": "Base veicular (simulada)"
+  },
+  "outorgado": [
+   {
+    "nome": "Edvaldo Pinheiro Neto",
+    "cpf": "707.804.256-50",
+    "identificacao": "CPF",
+    "qualidade": "procurador(a) pela procuração de 20/01/2026"
+   }
+  ],
+  "poderes_conferidos": [
+   "Procuração pública de 20/01/2026: não comprova poderes (Procuração revogada)."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [],
+  "documentos_verificaveis": [
+   {
+    "id": "POA_PF_TODOS_GILMAR",
+    "titulo": "Procuração (POA_PF_TODOS_GILMAR)",
+    "arquivo": "POA_PF_TODOS_GILMAR.pdf"
+   },
+   {
+    "id": "REV_PF_GILMAR",
+    "titulo": "Revogação de procuração",
+    "arquivo": "REV_PF_GILMAR.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "POA_PF_TODOS_GILMAR",
+   "nome": "POA_PF_TODOS_GILMAR.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (POA_PF_TODOS_GILMAR)",
+   "data": "2026-01-20",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nHeloísa Barreira Nunes – Tabeliã\nLIVRO 837 — FOLHAS 113/114\nPROCURAÇÃO BASTANTE QUE FAZ GILMAR SOUSA PONTES A EDVALDO\nPINHEIRO NETO\nSAIBAM quantos este público instrumento de procuração virem que, aos vinte (20) dias do mês de\njaneiro do ano de dois mil e vinte e seis (2026), nesta cidade de Fortaleza, Estado do Ceará, em\ncartório, perante mim, Rogério Lustosa Maia, Escrevente Notarial, compareceu como\nOUTORGANTE: GILMAR SOUSA PONTES, brasileiro, divorciado, agricultor, portador da cédula\nde identidade RG nº 1656959 SSP/CE, inscrito no CPF sob o nº 881.776.891-00, residente e\ndomiciliado na Rua Anastácio Braga, nº 233, Centro, Itapipoca/CE, pessoa física, agindo em seu\npróprio nome. O outorgante foi identificado por mim como o próprio, à vista do documento de\nidentidade original que me foi apresentado, do que dou fé.\nE, pelo outorgante, me foi dito que, por este público instrumento e nos melhores termos de direito,\nnomeia e constitui seu bastante procurador EDVALDO PINHEIRO NETO, brasileiro, casado,\ncorretor de veículos, portador da cédula de identidade RG nº 59050583 SSP/CE, inscrito no CPF sob\no nº 707.804.256-50, residente e domiciliado na Avenida Padre José Holanda do Vale, nº 1.087,\nbairro Piratininga, Maracanaú/CE, a quem confere poderes especiais e expressos para vender, ceder\ne transferir quaisquer veículos automotores de propriedade do outorgante, a quem e pelo preço que\nconvencionar; assinar a Autorização para Transferência de Propriedade do Veículo em meio\neletrônico (ATPV-e), bem como os recibos e contratos de compra e venda correspondentes; receber o\npreço, no todo ou em parte, e dar a respectiva quitação; e praticar, enfim, todos os demais atos\nnecessários ao bom e fiel cumprimento deste mandato, que o outorgante dá por firme e valioso.\nO presente mandato é conferido por prazo indeterminado, até revogação, permanecendo em vigor\nenquanto não for expressamente revogado pelo outorgante.\nA pedido do outorgante, lavrei este instrumento, o qual, depois de lido em voz alta e achado\nconforme, aceita e assina, dispensada a presença de testemunhas, nos termos da legislação vigente.\nEu, Rogério Lustosa Maia, Escrevente Notarial, a lavrei. Eu, Heloísa Barreira Nunes, Tabeliã, a\nsubscrevo e assino.\n(aa) GILMAR SOUSA PONTES – Outorgante\nHELOÍSA BARREIRA NUNES – Tabeliã\nEmolumentos: R$ 168,40 · Taxa de fiscalização: R$ 8,42 · Total: R$ 176,82\nSelo Digital: IRA-0837-2026-6B1E94\nTRASLADO — Nada mais. Trasladada em seguida, conferi, subscrevo e assino em público e raso,\nem testemunho da verdade.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "Fortaleza/CE, 20 de janeiro de 2026.\nHeloísa Barreira Nunes – Tabeliã\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "02974df3bb1bbf342dbd2fc823a2d63da5fdcd049f56ec04c35251bbeb3c9086",
+   "leitura": {}
+  },
+  {
+   "id": "REV_PF_GILMAR",
+   "nome": "REV_PF_GILMAR.pdf",
+   "tipo": "revogacao_procuracao",
+   "titulo": "Revogação de procuração",
+   "data": "2026-06-10",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nHeloísa Barreira Nunes – Tabeliã\nLIVRO 864 — FOLHA 077\nESCRITURA PÚBLICA DE REVOGAÇÃO DE PROCURAÇÃO\nSAIBAM quantos esta pública escritura de revogação de procuração virem que, aos dez (10) dias do\nmês de junho do ano de dois mil e vinte e seis (2026), nesta cidade de Fortaleza, Estado do Ceará,\nneste Cartório, perante mim, Patrícia Viana Duarte, Escrevente Autorizada, compareceu como\nOUTORGANTE REVOGANTE: GILMAR SOUSA PONTES, brasileiro, divorciado, agricultor,\nportador da cédula de identidade RG nº 1656959 SSP/CE, inscrito no CPF sob o nº 881.776.891-00,\nresidente e domiciliado na Rua Anastácio Braga, nº 233, Centro, Itapipoca/CE, pessoa física, agindo\nem seu próprio nome, reconhecido como o próprio por mim, à vista do documento de identidade\noriginal apresentado, do que dou fé.\nE, pelo revogante, me foi dito que, por esta escritura e na melhor forma de direito, revoga, para\ntodos os fins e efeitos, a procuração pública por ele outorgada em 20 de janeiro de 2026, lavrada\nneste mesmo Cartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício), no Livro 837,\nFolhas 113/114, a EDVALDO PINHEIRO NETO, brasileiro, casado, corretor de veículos, inscrito\nno CPF sob o nº 707.804.256-50, residente e domiciliado na Avenida Padre José Holanda do Vale, nº\n1.087, bairro Piratininga, Maracanaú/CE, pela qual lhe foram conferidos poderes para vender, ceder\ne transferir quaisquer veículos automotores de propriedade do outorgante, a qual fica, a partir desta\ndata, sem nenhum efeito, cassados todos os poderes nela conferidos. Requer o revogante que se\nproceda à anotação desta revogação à margem do ato revogado e que o procurador seja notificado\npor este Cartório, com comprovação de recebimento, a fim de que não mais pratique ato algum em\nnome do outorgante.\nAssim o disse, do que dou fé, e me pediu esta escritura, que, lida em voz alta, achou conforme,\naceita e assina. Eu, Patrícia Viana Duarte, Escrevente Autorizada, a lavrei. Eu, Heloísa Barreira\nNunes, Tabeliã, subscrevo e assino.\n(a) GILMAR SOUSA PONTES – Revogante\nHELOÍSA BARREIRA NUNES – Tabeliã\nAnotação marginal efetuada no Livro 837, fls. 113. Notificação expedida ao procurador nesta data.\nEmolumentos: R$ 98,60 · Taxa de fiscalização: R$ 4,93 · Total: R$ 103,53\nSelo Digital: IRA-0864-2026-D27F0A\nFortaleza/CE, 10 de junho de 2026.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/1"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "b2e0ef79f2c47091952804ab6c42202d5488f8f4be8027c8ea50e337b90374cf",
+   "leitura": {}
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "gabarito",
+  "politica": "DETRAN-CE"
+ },
+ "lado": "vendedor",
+ "pendencias": [],
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T12:00:02",
+   "pedido": {
+    "veiculo": {
+     "descricao": "FIAT/TORO FREEDOM 1.8 AT6",
+     "placa": "JFY7H56",
+     "renavam": "07971923792",
+     "chassi": "9BDNUMM3Y1UFF22Y9"
+    },
+    "data_venda": "2026-10-16",
+    "valor": null,
+    "assinantes": [
+     {
+      "nome": "CPF 707.804.256-50",
+      "cpf": "707.804.256-50"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": null,
+    "vendedor_cnpj": "881.776.891-00",
+    "lado": "vendedor",
+    "consulta": true
+   },
+   "empresa": {
+    "razao_social": "Gilmar Sousa Pontes",
+    "cnpj": null,
+    "tipo": "PF",
+    "objeto": "",
+    "comercializa_veiculos": false,
+    "subtipo": "PF",
+    "cpf": "881.776.891-00"
+   },
+   "veredito": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 2,
+    "menor_confianca_fato": 1.0,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Gilmar Sousa Pontes. O caminho por procuração pública de 20/01/2026 não vale: procuração revogada.",
+   "assinantes": [
+    {
+     "informado": "CPF 707.804.256-50",
+     "cpf": "707.804.256-50",
+     "chave": "70780425650",
+     "nome": "Edvaldo Pinheiro Neto",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:88177689100",
+     "pessoas": [
+      {
+       "chave": "88177689100",
+       "nome": "Gilmar Sousa Pontes"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "Assinatura do próprio proprietário (pessoa física)",
+     "cadeia": [
+      "TITULAR"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [
+    {
+     "id": "POA_PF_TODOS_GILMAR:bloqueada",
+     "pessoas": [
+      {
+       "chave": "70780425650",
+       "nome": "Edvaldo Pinheiro Neto"
+      }
+     ],
+     "via": "procuracao",
+     "descricao": "Procuração pública de 20/01/2026",
+     "cadeia": [
+      "POA_PF_TODOS_GILMAR"
+     ],
+     "severidade": "atencao",
+     "confianca": 1.0,
+     "achados": [
+      {
+       "codigo": "OUTORGANTE_TITULAR",
+       "severidade": "ok",
+       "titulo": "Outorgada por o proprietário do veículo",
+       "detalhe": "A outorgante é Gilmar Sousa Pontes, o proprietário do veículo (pessoa física).",
+       "fundamento": [
+        "CC art. 653"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_TODOS_GILMAR",
+         "doc_titulo": "Procuração (POA_PF_TODOS_GILMAR)",
+         "trecho": "OUTORGANTE: GILMAR SOUSA PONTES, brasileiro, divorciado, agricultor, portador da cédula de identidade RG nº 1656959 SSP/CE, inscrito no CPF sob o nº 881",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 520,
+         "fim": 672
+        }
+       ],
+       "caminho": "POA_PF_TODOS_GILMAR"
+      },
+      {
+       "codigo": "PODERES_ESPECIAIS",
+       "severidade": "ok",
+       "titulo": "Poder expresso para alienar veículos",
+       "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+       "fundamento": [
+        "CC art. 661, §1º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_TODOS_GILMAR",
+         "doc_titulo": "Procuração (POA_PF_TODOS_GILMAR)",
+         "trecho": "poderes especiais",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1370,
+         "fim": 1387
+        }
+       ],
+       "caminho": "POA_PF_TODOS_GILMAR"
+      },
+      {
+       "codigo": "PROCURACAO_REVOGADA",
+       "severidade": "bloqueio",
+       "titulo": "Procuração revogada",
+       "detalhe": "Revogada em 10/06/2026 (Revogação de procuração).",
+       "fundamento": [
+        "CC art. 682, I",
+        "CC art. 686"
+       ],
+       "fontes": [
+        {
+         "doc_id": "REV_PF_GILMAR",
+         "doc_titulo": "Revogação de procuração",
+         "trecho": "REVOGA",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 190,
+         "fim": 196
+        }
+       ],
+       "caminho": "POA_PF_TODOS_GILMAR"
+      },
+      {
+       "codigo": "PROCURACAO_SEM_VEICULO",
+       "severidade": "atencao",
+       "titulo": "Procuração não identifica o veículo",
+       "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+       "fundamento": [
+        "CJF, Enunciado 183"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_PF_TODOS_GILMAR",
+         "doc_titulo": "Procuração (POA_PF_TODOS_GILMAR)",
+         "trecho": "poderes especiais",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1370,
+         "fim": 1387
+        }
+       ],
+       "caminho": "POA_PF_TODOS_GILMAR"
+      }
+     ],
+     "precondicoes": []
+    }
+   ],
+   "caminho_escolhido": null,
+   "faltantes": [
+    {
+     "alternativa": "contrato:88177689100",
+     "via": "contrato",
+     "descricao": "Assinatura do próprio proprietário (pessoa física)",
+     "pessoas": [
+      "88177689100"
+     ],
+     "faltam": [
+      "88177689100"
+     ],
+     "faltam_nomes": [
+      "Gilmar Sousa Pontes"
+     ],
+     "pessoas_nomes": [
+      "Gilmar Sousa Pontes"
+     ]
+    }
+   ],
+   "achados": [
+    {
+     "codigo": "TITULARIDADE_BASE",
+     "severidade": "ok",
+     "titulo": "Proprietário conferido na base veicular",
+     "detalhe": "Pela placa/RENAVAM, o veículo está em nome de Gilmar Sousa Pontes.",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "TITULAR#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "TITULAR",
+      "doc_titulo": "Base veicular (simulada)",
+      "trecho": "GILMAR SOUSA PONTES — CPF 881.776.891-00",
+      "clausula": "titularidade",
+      "ancoragem": 100.0,
+      "pagina": null,
+      "inicio": null,
+      "fim": null
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Gilmar Sousa Pontes"
+     ],
+     "cargo": null,
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [],
+     "decisiva": true
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-10-16",
+    "atos": [
+     {
+      "doc": "TITULAR",
+      "titulo": "Titularidade (pessoa física)",
+      "efeito": "1900-01-01"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "88177689100",
+      "nome": "Gilmar Sousa Pontes",
+      "cargo": "titular (pessoa física)",
+      "doc": "TITULAR"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "88177689100",
+      "nome": "Gilmar Sousa Pontes",
+      "percentual": 100.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "Gilmar Sousa Pontes",
+      "sub": ""
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "FIAT/TORO FREEDOM 1.8 AT6",
+      "sub": "JFY7H56"
+     },
+     {
+      "id": "88177689100",
+      "tipo": "pessoa",
+      "rotulo": "Gilmar Sousa Pontes",
+      "papeis": [
+       "sócio 100%",
+       "titular (pessoa física)",
+       "outorgante (pessoa física)"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "70780425650",
+      "tipo": "pessoa",
+      "rotulo": "Edvaldo Pinheiro Neto",
+      "papeis": [
+       "procurador"
+      ],
+      "assinante": true
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "alerta"
+     },
+     {
+      "de": "88177689100",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "100%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "88177689100",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "TITULAR"
+     },
+     {
+      "de": "88177689100",
+      "para": "70780425650",
+      "tipo": "procuracao",
+      "status": "invalido",
+      "doc": "POA_PF_TODOS_GILMAR",
+      "rotulo": "procuração 20/01/2026 · Procuração revogada",
+      "motivo": "Procuração revogada"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "1900-01-01",
+     "tipo": "ato",
+     "titulo": "Titularidade (pessoa física)",
+     "doc": "TITULAR",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-01-20",
+     "tipo": "procuracao",
+     "titulo": "Procuração para Edvaldo Pinheiro Neto",
+     "doc": "POA_PF_TODOS_GILMAR",
+     "detalhe": "publica"
+    },
+    {
+     "data": "2026-06-10",
+     "tipo": "revogacao",
+     "titulo": "Revogação de procuração",
+     "doc": "REV_PF_GILMAR",
+     "detalhe": ""
+    },
+    {
+     "data": "2026-10-16",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "valor não informado"
+    }
+   ],
+   "pessoas": {
+    "88177689100": {
+     "nome": "Gilmar Sousa Pontes",
+     "cpf": "88177689100"
+    },
+    "70780425650": {
+     "nome": "Edvaldo Pinheiro Neto",
+     "cpf": "70780425650"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "não comprovada",
+    "outorgante": {
+     "nome": "Gilmar Sousa Pontes",
+     "cnpj": null,
+     "tipo": "PF",
+     "cpf": "88177689100",
+     "documento": "88177689100",
+     "atos_vigentes": [],
+     "titularidade": "Base veicular (simulada)"
+    },
+    "outorgado": [
+     {
+      "nome": "Edvaldo Pinheiro Neto",
+      "cpf": "707.804.256-50",
+      "identificacao": "CPF",
+      "qualidade": "procurador(a) pela procuração de 20/01/2026"
+     }
+    ],
+    "poderes_conferidos": [
+     "Procuração pública de 20/01/2026: não comprova poderes (Procuração revogada)."
+    ],
+    "prazo_validade": [
+     "—"
+    ],
+    "revogacao": [
+     "—"
+    ],
+    "fontes": [],
+    "documentos_verificaveis": [
+     {
+      "id": "POA_PF_TODOS_GILMAR",
+      "titulo": "Procuração (POA_PF_TODOS_GILMAR)",
+      "arquivo": "POA_PF_TODOS_GILMAR.pdf"
+     },
+     {
+      "id": "REV_PF_GILMAR",
+      "titulo": "Revogação de procuração",
+      "arquivo": "REV_PF_GILMAR.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "POA_PF_TODOS_GILMAR",
+     "nome": "POA_PF_TODOS_GILMAR.pdf",
+     "tipo": "procuracao",
+     "titulo": "Procuração (POA_PF_TODOS_GILMAR)",
+     "data": "2026-01-20",
+     "paginas": [
+      "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nHeloísa Barreira Nunes – Tabeliã\nLIVRO 837 — FOLHAS 113/114\nPROCURAÇÃO BASTANTE QUE FAZ GILMAR SOUSA PONTES A EDVALDO\nPINHEIRO NETO\nSAIBAM quantos este público instrumento de procuração virem que, aos vinte (20) dias do mês de\njaneiro do ano de dois mil e vinte e seis (2026), nesta cidade de Fortaleza, Estado do Ceará, em\ncartório, perante mim, Rogério Lustosa Maia, Escrevente Notarial, compareceu como\nOUTORGANTE: GILMAR SOUSA PONTES, brasileiro, divorciado, agricultor, portador da cédula\nde identidade RG nº 1656959 SSP/CE, inscrito no CPF sob o nº 881.776.891-00, residente e\ndomiciliado na Rua Anastácio Braga, nº 233, Centro, Itapipoca/CE, pessoa física, agindo em seu\npróprio nome. O outorgante foi identificado por mim como o próprio, à vista do documento de\nidentidade original que me foi apresentado, do que dou fé.\nE, pelo outorgante, me foi dito que, por este público instrumento e nos melhores termos de direito,\nnomeia e constitui seu bastante procurador EDVALDO PINHEIRO NETO, brasileiro, casado,\ncorretor de veículos, portador da cédula de identidade RG nº 59050583 SSP/CE, inscrito no CPF sob\no nº 707.804.256-50, residente e domiciliado na Avenida Padre José Holanda do Vale, nº 1.087,\nbairro Piratininga, Maracanaú/CE, a quem confere poderes especiais e expressos para vender, ceder\ne transferir quaisquer veículos automotores de propriedade do outorgante, a quem e pelo preço que\nconvencionar; assinar a Autorização para Transferência de Propriedade do Veículo em meio\neletrônico (ATPV-e), bem como os recibos e contratos de compra e venda correspondentes; receber o\npreço, no todo ou em parte, e dar a respectiva quitação; e praticar, enfim, todos os demais atos\nnecessários ao bom e fiel cumprimento deste mandato, que o outorgante dá por firme e valioso.\nO presente mandato é conferido por prazo indeterminado, até revogação, permanecendo em vigor\nenquanto não for expressamente revogado pelo outorgante.\nA pedido do outorgante, lavrei este instrumento, o qual, depois de lido em voz alta e achado\nconforme, aceita e assina, dispensada a presença de testemunhas, nos termos da legislação vigente.\nEu, Rogério Lustosa Maia, Escrevente Notarial, a lavrei. Eu, Heloísa Barreira Nunes, Tabeliã, a\nsubscrevo e assino.\n(aa) GILMAR SOUSA PONTES – Outorgante\nHELOÍSA BARREIRA NUNES – Tabeliã\nEmolumentos: R$ 168,40 · Taxa de fiscalização: R$ 8,42 · Total: R$ 176,82\nSelo Digital: IRA-0837-2026-6B1E94\nTRASLADO — Nada mais. Trasladada em seguida, conferi, subscrevo e assino em público e raso,\nem testemunho da verdade.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "Fortaleza/CE, 20 de janeiro de 2026.\nHeloísa Barreira Nunes – Tabeliã\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "02974df3bb1bbf342dbd2fc823a2d63da5fdcd049f56ec04c35251bbeb3c9086",
+     "leitura": {}
+    },
+    {
+     "id": "REV_PF_GILMAR",
+     "nome": "REV_PF_GILMAR.pdf",
+     "tipo": "revogacao_procuracao",
+     "titulo": "Revogação de procuração",
+     "data": "2026-06-10",
+     "paginas": [
+      "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nHeloísa Barreira Nunes – Tabeliã\nLIVRO 864 — FOLHA 077\nESCRITURA PÚBLICA DE REVOGAÇÃO DE PROCURAÇÃO\nSAIBAM quantos esta pública escritura de revogação de procuração virem que, aos dez (10) dias do\nmês de junho do ano de dois mil e vinte e seis (2026), nesta cidade de Fortaleza, Estado do Ceará,\nneste Cartório, perante mim, Patrícia Viana Duarte, Escrevente Autorizada, compareceu como\nOUTORGANTE REVOGANTE: GILMAR SOUSA PONTES, brasileiro, divorciado, agricultor,\nportador da cédula de identidade RG nº 1656959 SSP/CE, inscrito no CPF sob o nº 881.776.891-00,\nresidente e domiciliado na Rua Anastácio Braga, nº 233, Centro, Itapipoca/CE, pessoa física, agindo\nem seu próprio nome, reconhecido como o próprio por mim, à vista do documento de identidade\noriginal apresentado, do que dou fé.\nE, pelo revogante, me foi dito que, por esta escritura e na melhor forma de direito, revoga, para\ntodos os fins e efeitos, a procuração pública por ele outorgada em 20 de janeiro de 2026, lavrada\nneste mesmo Cartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício), no Livro 837,\nFolhas 113/114, a EDVALDO PINHEIRO NETO, brasileiro, casado, corretor de veículos, inscrito\nno CPF sob o nº 707.804.256-50, residente e domiciliado na Avenida Padre José Holanda do Vale, nº\n1.087, bairro Piratininga, Maracanaú/CE, pela qual lhe foram conferidos poderes para vender, ceder\ne transferir quaisquer veículos automotores de propriedade do outorgante, a qual fica, a partir desta\ndata, sem nenhum efeito, cassados todos os poderes nela conferidos. Requer o revogante que se\nproceda à anotação desta revogação à margem do ato revogado e que o procurador seja notificado\npor este Cartório, com comprovação de recebimento, a fim de que não mais pratique ato algum em\nnome do outorgante.\nAssim o disse, do que dou fé, e me pediu esta escritura, que, lida em voz alta, achou conforme,\naceita e assina. Eu, Patrícia Viana Duarte, Escrevente Autorizada, a lavrei. Eu, Heloísa Barreira\nNunes, Tabeliã, subscrevo e assino.\n(a) GILMAR SOUSA PONTES – Revogante\nHELOÍSA BARREIRA NUNES – Tabeliã\nAnotação marginal efetuada no Livro 837, fls. 113. Notificação expedida ao procurador nesta data.\nEmolumentos: R$ 98,60 · Taxa de fiscalização: R$ 4,93 · Total: R$ 103,53\nSelo Digital: IRA-0864-2026-D27F0A\nFortaleza/CE, 10 de junho de 2026.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/1"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "b2e0ef79f2c47091952804ab6c42202d5488f8f4be8027c8ea50e337b90374cf",
+     "leitura": {}
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "gabarito",
+    "politica": "DETRAN-CE"
+   },
+   "lado": "vendedor",
+   "pendencias": []
+  }
+ },
+ "geral": {
+  "veredito": "NAO_PODE",
+  "faixa": "VERMELHO",
+  "indice": 0.0,
+  "resumo": "Vendedor: Os assinantes informados não bastam. Quem pode assinar: Gilmar Sousa Pontes. O caminho por procuração pública de 20/01/2026 não vale: procuração revogada.",
+  "motivos_faixa": [
+   "Vendedor — índice 0 ≤ limiar 15"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "FIAT/TORO FREEDOM 1.8 AT6",
+   "placa": "JFY7H56",
+   "renavam": "07971923792",
+   "chassi": "9BDNUMM3Y1UFF22Y9"
+  },
+  "data_venda": "2026-10-16",
+  "valor": null,
+  "vendedor": {
+   "tipo": "PF",
+   "nome": "GILMAR SOUSA PONTES",
+   "documento": "881.776.891-00",
+   "assinantes": [
+    {
+     "nome": "CPF 707.804.256-50",
+     "cpf": "707.804.256-50"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": null,
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "consulta por CPF",
+  "alvo": "vendedor",
+  "titular_fonte": "base veicular"
+ },
+ "hash_entrada": "d39e97c539cbf4508d41b1dc997df53510b7e3f72ee59b4c383c1ce5db4dc087"
+}

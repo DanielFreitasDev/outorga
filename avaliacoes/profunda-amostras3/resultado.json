@@ -1,0 +1,122 @@
+{
+ "resumo": {
+  "modo": "llm",
+  "conjunto": "principal",
+  "casos": 4,
+  "duracao_s": 1432.5,
+  "data": "2026-10-17T01:35:14",
+  "veredito_correto": 4,
+  "faixa_aceitavel": 3,
+  "quem_pode_correto": 4,
+  "quem_pode_avaliados": 4,
+  "erros_perigosos": 0,
+  "erros_caros": 0,
+  "cobertura_automatica": 0.75,
+  "acerto_na_faixa_automatica": 1.0,
+  "politica": {
+   "nome": "DETRAN-CE",
+   "limiar_aceite": 85.0,
+   "limiar_recusa": 15.0
+  }
+ },
+ "linhas": [
+  {
+   "caso": "C13",
+   "titulo": "Carro integralizado pelo sócio — o OUTRO sócio vende sozinho",
+   "categoria": "bem_integralizado",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 8.4,
+   "confianca": 0.833,
+   "segundos": 137.8,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Marcos Antônio Girão. Regra aplicável: cláusula do veículo específico (Cláusula Oitava, Parágrafo único).",
+   "motivos_faixa": [
+    "índice 8.4 ≤ limiar 15"
+   ],
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C20",
+   "titulo": "Procuração outorgada por quem não tinha poder sozinho",
+   "categoria": "procuracao",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO",
+    "AMARELO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 8.4,
+   "confianca": 0.833,
+   "segundos": 294.9,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Carlos Eduardo Bezerra e Luciana Moura Sampaio. O caminho por procuração pública de 02/04/2026 (cartório iracema – 4º tabelionato de notas de fortaleza) não vale: quem outorgou não tinha poder sozinho.",
+   "motivos_faixa": [
+    "índice 8.4 ≤ limiar 15"
+   ],
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C21",
+   "titulo": "Procuração do sócio em nome próprio (PF), não da empresa",
+   "categoria": "procuracao",
+   "esperado": "NAO_PODE",
+   "faixas_aceitaveis": [
+    "VERMELHO",
+    "AMARELO"
+   ],
+   "previsto": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 12.5,
+   "confianca": 0.75,
+   "segundos": 424.4,
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: João Batista Andrade ou Maria Clara Fontenele. O caminho por procuração particular de 14/05/2026 (irácema – 4º tabelionato de notas de fortaleza (fictício)) não vale: procuração da pessoa física, não da empresa, procuração particular com firma reconhecida.",
+   "motivos_faixa": [
+    "índice 12.5 ≤ limiar 15"
+   ],
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": true,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  },
+  {
+   "caso": "C33",
+   "titulo": "S.A. — diretor + procurador com procuração válida",
+   "categoria": "estrutura",
+   "esperado": "PODE",
+   "faixas_aceitaveis": [
+    "VERDE"
+   ],
+   "previsto": "PODE",
+   "faixa": "AMARELO",
+   "indice": 83.3,
+   "confianca": 0.666,
+   "segundos": 575.4,
+   "resumo": "Sérgio Paiva Gomes e Tiago Rolim Vasconcelos podem, em conjunto, assinar o ATPV — procuração pública de 18/02/2026 (Tabelionato Jaguaribe – Ofício Único de Notas de Aracati/CE (fictício)).",
+   "motivos_faixa": [
+    "índice 83.3 entre os limiares (15–85)"
+   ],
+   "forcado": false,
+   "veredito_ok": true,
+   "faixa_ok": false,
+   "conjuntos_ok": true,
+   "erro_perigoso": false,
+   "erro_caro": false
+  }
+ ]
+}

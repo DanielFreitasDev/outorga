@@ -1,0 +1,30 @@
+{
+  "caso": "C03",
+  "vendedor": {
+    "razao_social": "CONSTRUTORA MANDACARU LTDA.",
+    "cnpj": "42.014.613/0001-28"
+  },
+  "veiculo": {
+    "placa": "UKM2N24",
+    "renavam": "00976582805",
+    "chassi": "9BWMXKLBH9A0E0WPK",
+    "descricao": "VW/SAVEIRO ROBUST CD 1.6"
+  },
+  "data_venda": "2026-09-15",
+  "valor": 79000,
+  "assinantes": [
+    {
+      "nome": "Carlos Eduardo Bezerra",
+      "cpf": "417.075.364-06"
+    },
+    {
+      "nome": "Luciana Moura Sampaio",
+      "cpf": "568.151.884-18"
+    }
+  ],
+  "comprador": {
+    "nome": "Auto Center Litoral Ltda.",
+    "cidade": "Fortaleza/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

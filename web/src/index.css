@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+/* ---------------------------------------------------------------- tokens (tema claro) */
+:root {
+  color-scheme: light;
+  --bg: #f4f6f9;
+  --surface: #ffffff;
+  --surface-2: #f0f3f7;
+  --surface-3: #e7ebf1;
+  --line: #e1e5eb;
+  --line-strong: #c9d0da;
+  --ink: #131820;
+  --ink-2: #39414e;
+  --muted: #687284;
+  --accent: #1a56a8;
+  --accent-ink: #ffffff;
+  --accent-soft: #e7eff9;
+  --ok: #0d7146;
+  --ok-soft: #e4f3eb;
+  --warn: #946000;
+  --warn-soft: #fbf1dc;
+  --bad: #b32217;
+  --bad-soft: #fcebe9;
+  --info: #4a5568;
+  --zona-ok: #2e9b63;
+  --zona-warn: #e2a72e;
+  --zona-bad: #d64a3e;
+  --mark: #fde9a8;
+  --mark-strong: #f7c948;
+  --shadow: 0 1px 2px rgb(16 24 40 / 0.05), 0 1px 3px rgb(16 24 40 / 0.06);
+  --shadow-lg: 0 10px 30px -12px rgb(16 24 40 / 0.22);
+}
+
+/* ---------------------------------------------------------------- tokens (tema escuro) */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0d1117;
+  --surface: #141a22;
+  --surface-2: #1a212b;
+  --surface-3: #222a36;
+  --line: #262f3b;
+  --line-strong: #364152;
+  --ink: #e7ebf1;
+  --ink-2: #c1c8d3;
+  --muted: #8a94a6;
+  --accent: #6ea8ff;
+  --accent-ink: #0b1220;
+  --accent-soft: #15243b;
+  --ok: #46c487;
+  --ok-soft: #0f2a1e;
+  --warn: #e3ac4c;
+  --warn-soft: #2c2210;
+  --bad: #f2776c;
+  --bad-soft: #2e1714;
+  --info: #a0aec0;
+  --zona-ok: #3aae74;
+  --zona-warn: #d9a043;
+  --zona-bad: #e7665a;
+  --mark: #5b4a12;
+  --mark-strong: #8a6d14;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.4);
+  --shadow-lg: 0 14px 34px -14px rgb(0 0 0 / 0.7);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-ok: var(--ok);
+  --color-ok-soft: var(--ok-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-bad: var(--bad);
+  --color-bad-soft: var(--bad-soft);
+  --color-info: var(--info);
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+  --shadow-card: var(--shadow);
+  --shadow-pop: var(--shadow-lg);
+}
+
+/* ---------------------------------------------------------------- base */
+html { background: var(--bg); }
+html, body, #root { min-height: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+::selection { background: var(--accent-soft); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; }
+
+.num { font-variant-numeric: tabular-nums; }
+.scroll-thin { scrollbar-width: thin; scrollbar-color: var(--line-strong) transparent; }
+
+mark.fonte {
+  background: var(--mark);
+  color: inherit;
+  border-radius: 2px;
+  padding: 0 1px;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--mark-strong) 55%, transparent);
+  cursor: pointer;
+}
+mark.fonte.alvo { animation: pulso 1.6s ease-out 1; background: var(--mark-strong); }
+@keyframes pulso {
+  0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--mark-strong) 90%, transparent); }
+  100% { box-shadow: 0 0 0 10px transparent; }
+}
+
+@keyframes surgir { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.surgir { animation: surgir 0.35s ease-out both; }
+
+@keyframes digitar { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+.digitar { animation: digitar 0.9s steps(40, end) both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .surgir, .digitar, mark.fonte.alvo { animation: none; }
+}
+
+.doc-texto {
+  font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.7;
+  font-size: 13.5px;
+}

@@ -1,0 +1,29 @@
+{
+  "caso": "I10",
+  "vendedor": {
+    "razao_social": "FROTA & GURGEL REFRIGERAÇÃO LTDA",
+    "cnpj": "19.561.198/0001-00"
+  },
+  "veiculo": {
+    "placa": "ENC9L17",
+    "renavam": "06774918887",
+    "chassi": "9BDDCXER2B2UM5XM9",
+    "descricao": "FIAT/DOBLO"
+  },
+  "data_venda": "2026-10-08",
+  "valor": 63500.0,
+  "assinantes": [
+    {
+      "nome": "JULIANA GURGEL FROTA",
+      "cpf": "769.119.235-57"
+    }
+  ],
+  "crlv_proprietario": {
+    "nome": "FROTA REFRIGERAÇÃO EIRELI",
+    "documento": "19.561.198/0001-00"
+  },
+  "comprador": {
+    "nome": "CLIMATIZA NORDESTE INSTALAÇÕES LTDA"
+  },
+  "forma_assinatura": "ATPV-e"
+}

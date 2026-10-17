@@ -1,0 +1,32 @@
+{
+  "caso": "C04",
+  "titulo": "Sócia quotista sem poder de administração assina",
+  "categoria": "administracao",
+  "objetivo": "Ser sócio não dá poder de representação; só o administrador designado.",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "FRANCISCO"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 1.060",
+      "CC art. 1.064"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "729.405.576-91"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Francisco Wellington Rocha"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

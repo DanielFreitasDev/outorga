@@ -1,0 +1,1506 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T10:07:52",
+ "pedido": {
+  "veiculo": {
+   "descricao": "VW/AMAROK HIGHLINE V6 3.0",
+   "placa": "EWL8N26",
+   "renavam": "09848864577",
+   "chassi": "9BWSM9WCNWL4J518D"
+  },
+  "data_venda": "2026-09-22",
+  "valor": 240000.0,
+  "assinantes": [
+   {
+    "nome": "Kleber Jorge Matos",
+    "cpf": "659.085.380-00"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "Diego Fernandes Uchoa",
+  "vendedor_cnpj": "33.437.010/0001-48",
+  "lado": "vendedor"
+ },
+ "empresa": {
+  "razao_social": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+  "cnpj": "33.437.010/0001-48",
+  "tipo": "SLU",
+  "objeto": "desenvolvimento de programas de computador sob encomenda e consultoria em tecnologia da informação",
+  "comercializa_veiculos": false,
+  "subtipo": null
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 0.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 3,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 0 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: Rafael Nogueira Brito ou Igor Lacerda Bastos (procurador). O caminho por substabelecimento com reserva de 20/08/2026 não vale: substabelecimento proibido.",
+ "assinantes": [
+  {
+   "informado": "Kleber Jorge Matos",
+   "cpf": "659.085.380-00",
+   "chave": "65908538000",
+   "nome": "Kleber Jorge Matos",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:54751779966",
+   "pessoas": [
+    {
+     "chave": "54751779966",
+     "nome": "Rafael Nogueira Brito"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "regra geral de representação — Ato Constitutivo (SLU) (2022)",
+   "cadeia": [
+    "TECH_CS"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  },
+  {
+   "id": "POA_IGOR:63228088693",
+   "pessoas": [
+    {
+     "chave": "63228088693",
+     "nome": "Igor Lacerda Bastos"
+    }
+   ],
+   "via": "procuracao",
+   "descricao": "Procuração pública de 10/03/2026",
+   "cadeia": [
+    "POA_IGOR"
+   ],
+   "severidade": "atencao",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "OUTORGANTE_PJ",
+     "severidade": "ok",
+     "titulo": "Outorgada pela própria empresa",
+     "detalhe": "A outorgante é a empresa, representada por Rafael Nogueira Brito.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_IGOR",
+       "doc_titulo": "Procuração (POA_IGOR)",
+       "trecho": "A IGOR LACERDA BASTOS SAIBAM quantos este público instrumento de procuração virem que, aos dez (10) dias do mês de março de dois mil e vinte e seis (2026), nesta cidade de Fortaleza, Capital do Estado do Ceará, em cartório, perante mim, Patrícia Viana Duarte, Escrevente Autorizada, compareceu como OUTORGANTE: TECHNORDESTE SOLUÇÕES DIGITAIS LTDA",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 239,
+       "fim": 585
+      }
+     ],
+     "caminho": "POA_IGOR"
+    },
+    {
+     "codigo": "OUTORGA_COM_PODERES",
+     "severidade": "ok",
+     "titulo": "Quem outorgou tinha poder",
+     "detalhe": "Em 10/03/2026, Rafael Nogueira Brito podia representar a empresa nesse ato.",
+     "fundamento": [
+      "CC art. 1.018"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_IGOR",
+       "doc_titulo": "Procuração (POA_IGOR)",
+       "trecho": "A IGOR LACERDA BASTOS SAIBAM quantos este público instrumento de procuração virem que, aos dez (10) dias do mês de março de dois mil e vinte e seis (2026), nesta cidade de Fortaleza, Capital do Estado do Ceará, em cartório, perante mim, Patrícia Viana Duarte, Escrevente Autorizada, compareceu como OUTORGANTE: TECHNORDESTE SOLUÇÕES DIGITAIS LTDA",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 239,
+       "fim": 585
+      },
+      {
+       "doc_id": "TECH_CS",
+       "doc_titulo": "Ato Constitutivo (SLU) (2022)",
+       "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá ao sócio único RAFAEL NOGUEIRA BRITO, que a exercerá isoladamente, por prazo indeterminado, com poderes e atribuições de representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos necessários à consecução do objeto social, vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 2,
+       "inicio": 2446,
+       "fim": 2918
+      }
+     ],
+     "caminho": "POA_IGOR"
+    },
+    {
+     "codigo": "PODERES_ESPECIAIS",
+     "severidade": "ok",
+     "titulo": "Poder expresso para alienar veículos",
+     "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+     "fundamento": [
+      "CC art. 661, §1º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_IGOR",
+       "doc_titulo": "Procuração (POA_IGOR)",
+       "trecho": "801, Dionísio Torres, Fortaleza/CE, a quem confere poderes especiais",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1550,
+       "fim": 1618
+      }
+     ],
+     "caminho": "POA_IGOR"
+    },
+    {
+     "codigo": "PROCURACAO_NO_PRAZO",
+     "severidade": "ok",
+     "titulo": "Dentro do prazo",
+     "detalhe": "Válida até 10/03/2027.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "POA_IGOR",
+       "doc_titulo": "Procuração (POA_IGOR)",
+       "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data, sendo expressamente vedado o substabelecimento, no todo ou em parte",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2116,
+       "fim": 2257
+      }
+     ],
+     "caminho": "POA_IGOR"
+    },
+    {
+     "codigo": "PROCURACAO_SEM_VEICULO",
+     "severidade": "atencao",
+     "titulo": "Procuração não identifica o veículo",
+     "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+     "fundamento": [
+      "CJF, Enunciado 183"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_IGOR",
+       "doc_titulo": "Procuração (POA_IGOR)",
+       "trecho": "801, Dionísio Torres, Fortaleza/CE, a quem confere poderes especiais",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1550,
+       "fim": 1618
+      }
+     ],
+     "caminho": "POA_IGOR"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [
+  {
+   "id": "SUB_IGOR_KLEBER:bloqueada",
+   "pessoas": [
+    {
+     "chave": "65908538000",
+     "nome": "Kleber Jorge Matos"
+    }
+   ],
+   "via": "substabelecimento",
+   "descricao": "Substabelecimento com reserva de 20/08/2026",
+   "cadeia": [
+    "POA_IGOR",
+    "SUB_IGOR_KLEBER"
+   ],
+   "severidade": "alerta",
+   "confianca": 1.0,
+   "achados": [
+    {
+     "codigo": "ORIGEM_VALIDA",
+     "severidade": "ok",
+     "titulo": "Procuração de origem válida",
+     "detalhe": "Origem: procuração de 10/03/2026.",
+     "fundamento": [],
+     "fontes": [
+      {
+       "doc_id": "SUB_IGOR_KLEBER",
+       "doc_titulo": "Substabelecimento (SUB_IGOR_KLEBER)",
+       "trecho": "801, Dionísio Torres, Fortaleza/CE, na qualidade de procurador de TECHNORDESTE SOLUÇÕES DIGITAIS LTDA., inscrita no CNPJ sob o nº 33.437.010/0001-48, com sede em Fortaleza/CE, conforme procuração pública lavrada em 10/03/2026 no Cartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício), Livro 845, Folhas 031/032, substabelece, com reserva de iguais poderes, na pessoa de KLEBER JORGE MATOS, brasileiro, casado, despachante documentalista, portador do RG nº 97862011 SSP/CE, inscrito no CPF sob o nº 659",
+       "clausula": null,
+       "ancoragem": 99.8,
+       "pagina": 1,
+       "inicio": 268,
+       "fim": 781
+      }
+     ],
+     "caminho": "SUB_IGOR_KLEBER"
+    },
+    {
+     "codigo": "PROCURACAO_SEM_VEICULO",
+     "severidade": "atencao",
+     "titulo": "Procuração não identifica o veículo (procuração de origem)",
+     "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+     "fundamento": [
+      "CJF, Enunciado 183"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_IGOR",
+       "doc_titulo": "Procuração (POA_IGOR)",
+       "trecho": "801, Dionísio Torres, Fortaleza/CE, a quem confere poderes especiais",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 1550,
+       "fim": 1618
+      }
+     ],
+     "caminho": "SUB_IGOR_KLEBER"
+    },
+    {
+     "codigo": "SUBSTABELECIMENTO_VEDADO",
+     "severidade": "bloqueio",
+     "titulo": "Substabelecimento proibido",
+     "detalhe": "A procuração original proíbe substabelecer: os atos do substabelecido não obrigam a empresa, salvo ratificação expressa.",
+     "fundamento": [
+      "CC art. 667, §3º"
+     ],
+     "fontes": [
+      {
+       "doc_id": "POA_IGOR",
+       "doc_titulo": "Procuração (POA_IGOR)",
+       "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data, sendo expressamente vedado o substabelecimento, no todo ou em parte",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 2116,
+       "fim": 2257
+      },
+      {
+       "doc_id": "SUB_IGOR_KLEBER",
+       "doc_titulo": "Substabelecimento (SUB_IGOR_KLEBER)",
+       "trecho": "801, Dionísio Torres, Fortaleza/CE, na qualidade de procurador de TECHNORDESTE SOLUÇÕES DIGITAIS LTDA., inscrita no CNPJ sob o nº 33.437.010/0001-48, com sede em Fortaleza/CE, conforme procuração pública lavrada em 10/03/2026 no Cartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício), Livro 845, Folhas 031/032, substabelece, com reserva de iguais poderes, na pessoa de KLEBER JORGE MATOS, brasileiro, casado, despachante documentalista, portador do RG nº 97862011 SSP/CE, inscrito no CPF sob o nº 659",
+       "clausula": null,
+       "ancoragem": 99.8,
+       "pagina": 1,
+       "inicio": 268,
+       "fim": 781
+      }
+     ],
+     "caminho": "SUB_IGOR_KLEBER"
+    },
+    {
+     "codigo": "SUBSTABELECIMENTO_PARTICULAR",
+     "severidade": "alerta",
+     "titulo": "Substabelecimento por instrumento particular",
+     "detalhe": "O Código Civil admite substabelecer por instrumento particular mesmo procuração pública (art. 655), mas DETRAN e cartórios podem exigir a mesma forma do original.",
+     "fundamento": [
+      "CC art. 655"
+     ],
+     "fontes": [
+      {
+       "doc_id": "SUB_IGOR_KLEBER",
+       "doc_titulo": "Substabelecimento (SUB_IGOR_KLEBER)",
+       "trecho": "801, Dionísio Torres, Fortaleza/CE, na qualidade de procurador de TECHNORDESTE SOLUÇÕES DIGITAIS LTDA., inscrita no CNPJ sob o nº 33.437.010/0001-48, com sede em Fortaleza/CE, conforme procuração pública lavrada em 10/03/2026 no Cartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício), Livro 845, Folhas 031/032, substabelece, com reserva de iguais poderes, na pessoa de KLEBER JORGE MATOS, brasileiro, casado, despachante documentalista, portador do RG nº 97862011 SSP/CE, inscrito no CPF sob o nº 659",
+       "clausula": null,
+       "ancoragem": 99.8,
+       "pagina": 1,
+       "inicio": 268,
+       "fim": 781
+      }
+     ],
+     "caminho": "SUB_IGOR_KLEBER"
+    }
+   ],
+   "precondicoes": []
+  }
+ ],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "contrato:54751779966",
+   "via": "contrato",
+   "descricao": "regra geral de representação — Ato Constitutivo (SLU) (2022)",
+   "pessoas": [
+    "54751779966"
+   ],
+   "faltam": [
+    "54751779966"
+   ],
+   "faltam_nomes": [
+    "Rafael Nogueira Brito"
+   ],
+   "pessoas_nomes": [
+    "Rafael Nogueira Brito"
+   ]
+  },
+  {
+   "alternativa": "POA_IGOR:63228088693",
+   "via": "procuracao",
+   "descricao": "Procuração pública de 10/03/2026",
+   "pessoas": [
+    "63228088693"
+   ],
+   "faltam": [
+    "63228088693"
+   ],
+   "faltam_nomes": [
+    "Igor Lacerda Bastos"
+   ],
+   "pessoas_nomes": [
+    "Igor Lacerda Bastos"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "CND_INSS",
+   "severidade": "info",
+   "titulo": "CND previdenciária",
+   "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+   "fundamento": [
+    "Lei 8.212/91, art. 47, I, \"c\""
+   ],
+   "fontes": [],
+   "caminho": null
+  },
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: TECHNORDESTE SOLUÇÕES DIGITAIS LTDA..",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "EWL8N26",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "TECH_CS#R1",
+   "escopo": "geral",
+   "aplicavel": true,
+   "motivo": "regra geral de representação",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "TECH_CS",
+    "doc_titulo": "Ato Constitutivo (SLU) (2022)",
+    "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá ao sócio único RAFAEL NOGUEIRA BRITO, que a exercerá isoladamente, por prazo indeterminado, com poderes e atribuições de representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos necessários à consecução do objeto social, vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 2,
+    "inicio": 2446,
+    "fim": 2918
+   },
+   "modo": "isolado",
+   "pessoas": [
+    "Rafael Nogueira Brito"
+   ],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "isolado",
+     "valor_lexico": "isolado",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "isoladamente"
+     ]
+    }
+   ],
+   "decisiva": true
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-09-22",
+  "atos": [
+   {
+    "doc": "TECH_CS",
+    "titulo": "Ato Constitutivo (SLU) (2022)",
+    "efeito": "2022-07-11"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "54751779966",
+    "nome": "Rafael Nogueira Brito",
+    "cargo": "sócio único administrador",
+    "doc": "TECH_CS"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "54751779966",
+    "nome": "Rafael Nogueira Brito",
+    "percentual": 100.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+    "sub": "33.437.010/0001-48"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "VW/AMAROK HIGHLINE V6 3.0",
+    "sub": "EWL8N26"
+   },
+   {
+    "id": "54751779966",
+    "tipo": "pessoa",
+    "rotulo": "Rafael Nogueira Brito",
+    "papeis": [
+     "sócio 100%",
+     "sócio único administrador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "63228088693",
+    "tipo": "pessoa",
+    "rotulo": "Igor Lacerda Bastos",
+    "papeis": [
+     "procurador"
+    ],
+    "assinante": false
+   },
+   {
+    "id": "65908538000",
+    "tipo": "pessoa",
+    "rotulo": "Kleber Jorge Matos",
+    "papeis": [
+     "substabelecido"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "54751779966",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "100%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "54751779966",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "TECH_CS"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "63228088693",
+    "tipo": "procuracao",
+    "status": "valido",
+    "doc": "POA_IGOR",
+    "rotulo": "procuração 10/03/2026",
+    "motivo": null
+   },
+   {
+    "de": "63228088693",
+    "para": "65908538000",
+    "tipo": "substabelecimento",
+    "status": "invalido",
+    "doc": "SUB_IGOR_KLEBER",
+    "rotulo": "substabelece com reserva · Substabelecimento proibido",
+    "motivo": "Substabelecimento proibido"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2022-07-11",
+   "tipo": "ato",
+   "titulo": "Ato Constitutivo (SLU) (2022)",
+   "doc": "TECH_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-03-10",
+   "tipo": "procuracao",
+   "titulo": "Procuração para Igor Lacerda Bastos",
+   "doc": "POA_IGOR",
+   "detalhe": "publica"
+  },
+  {
+   "data": "2026-08-20",
+   "tipo": "substabelecimento",
+   "titulo": "Igor Lacerda Bastos substabelece a Kleber Jorge Matos",
+   "doc": "SUB_IGOR_KLEBER",
+   "detalhe": "com_reserva"
+  },
+  {
+   "data": "2026-09-22",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 240.000,00"
+  },
+  {
+   "data": "2027-03-10",
+   "tipo": "vencimento",
+   "titulo": "Vence a procuração de Igor Lacerda Bastos",
+   "doc": "POA_IGOR",
+   "detalhe": ""
+  }
+ ],
+ "pessoas": {
+  "54751779966": {
+   "nome": "Rafael Nogueira Brito",
+   "cpf": "54751779966"
+  },
+  "63228088693": {
+   "nome": "Igor Lacerda Bastos",
+   "cpf": "63228088693"
+  },
+  "65908538000": {
+   "nome": "Kleber Jorge Matos",
+   "cpf": "65908538000"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+   "cnpj": "33.437.010/0001-48",
+   "tipo": "SLU",
+   "atos_vigentes": [
+    {
+     "titulo": "Ato Constitutivo (SLU) (2022)",
+     "doc": "TECH_CS",
+     "efeito": "2022-07-11"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Kleber Jorge Matos",
+    "cpf": "659.085.380-00",
+    "identificacao": "CPF",
+    "qualidade": "substabelecido(a) em 20/08/2026"
+   }
+  ],
+  "poderes_conferidos": [
+   "Substabelecimento com reserva de 20/08/2026: não comprova poderes (Substabelecimento proibido)."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [],
+  "documentos_verificaveis": [
+   {
+    "id": "TECH_CS",
+    "titulo": "Ato Constitutivo (SLU) (2022)",
+    "arquivo": "TECH_CS.pdf"
+   },
+   {
+    "id": "POA_IGOR",
+    "titulo": "Procuração (POA_IGOR)",
+    "arquivo": "POA_IGOR.pdf"
+   },
+   {
+    "id": "SUB_IGOR_KLEBER",
+    "titulo": "Substabelecimento (SUB_IGOR_KLEBER)",
+    "arquivo": "SUB_IGOR_KLEBER.pdf"
+   },
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "TECH_CS",
+   "nome": "TECH_CS.pdf",
+   "tipo": "ato_constitutivo_slu",
+   "titulo": "Ato Constitutivo (SLU) (2022)",
+   "data": "2022-07-11",
+   "paginas": [
+    "ATO CONSTITUTIVO DE SOCIEDADE LIMITADA UNIPESSOAL\nTECHNORDESTE SOLUÇÕES DIGITAIS LTDA.\nRAFAEL NOGUEIRA BRITO, brasileiro, solteiro, maior, analista de sistemas, portador da carteira\nde identidade nº 23915476 SSP/CE e inscrito no CPF sob o nº 547.517.799-66, residente e\ndomiciliado na Rua Dom Expedito Lopes, nº 1.245, apartamento 802, bairro Dionísio Torres,\nFortaleza/CE, CEP 60135-410, resolve, por este instrumento particular e na forma do art. 1.052, § 1º,\ndo Código Civil (Lei nº 10.406/2002), constituir uma sociedade limitada unipessoal, que se regerá\npelas cláusulas e condições seguintes e, nas omissões, pelas disposições legais aplicáveis às\nsociedades limitadas.\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL\nA sociedade girará sob o nome empresarial TECHNORDESTE SOLUÇÕES DIGITAIS LTDA. e\npoderá adotar o nome fantasia \"TechNordeste\".\nCLÁUSULA SEGUNDA – DA SEDE\nA sociedade terá sede na Avenida Santos Dumont, nº 3.131, sala 1.104, bairro Aldeota, Fortaleza/CE,\nCEP 60150-162, podendo abrir e encerrar filiais, escritórios e outras dependências em qualquer parte\ndo território nacional, por decisão do sócio único.\nCLÁUSULA TERCEIRA – DO OBJETO SOCIAL\nA sociedade tem por objeto o desenvolvimento de programas de computador sob encomenda e a\nconsultoria em tecnologia da informação.\nParágrafo único. As atividades da sociedade correspondem aos seguintes códigos da Classificação\nNacional de Atividades Econômicas: 6201-5/01 – desenvolvimento de programas de computador\nsob encomenda; e 6204-0/00 – consultoria em tecnologia da informação.\nCLÁUSULA QUARTA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciará suas atividades na data do registro deste ato constitutivo na Junta Comercial do\nEstado do Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUINTA – DO CAPITAL SOCIAL\nO capital social é de R$ 100.000,00 (cem mil reais), dividido em 100.000 (cem mil) quotas de valor\nnominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas neste ato, em moeda\ncorrente do País, pelo sócio único, conforme o quadro abaixo:\nSócio\nQuotas\nValor (R$)\nParticipação\nRAFAEL NOGUEIRA BRITO\n100.000\n100.000,00\n100%\nTotal\n100.000\n100.000,00\n100%\nCLÁUSULA SEXTA – DA RESPONSABILIDADE\nA responsabilidade do sócio único é restrita ao valor de suas quotas, respondendo, porém, pela\nintegralização do capital social, nos termos do art. 1.052 do Código Civil.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade caberá ao sócio único RAFAEL NOGUEIRA BRITO, que a exercerá\nisoladamente, por prazo indeterminado, com poderes e atribuições de representação ativa e passiva\nda sociedade, em juízo ou fora dele, podendo praticar todos os atos necessários à consecução do\nobjeto social, vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto\nsocial, especialmente em avais, fianças e endossos de favor.\nParágrafo único. As procurações outorgadas pela sociedade deverão especificar os poderes\nconferidos e, salvo as outorgadas para fins judiciais, terão prazo de validade não superior a 1 (um)\nano.\nCLÁUSULA OITAVA – DO PRÓ-LABORE\nO administrador poderá fazer jus a uma retirada mensal a título de pró-labore, em valor fixado por\ndecisão do sócio único, observadas as disposições da legislação tributária e previdenciária.\nCLÁUSULA NONA – DO EXERCÍCIO SOCIAL E DAS DEMONSTRAÇÕES\nO exercício social coincidirá com o ano civil. Ao término de cada exercício social, em 31 de\ndezembro, o administrador prestará contas justificadas de sua administração, procedendo à\nelaboração do inventário, do balanço patrimonial e do balanço de resultado econômico, cabendo ao\nsócio único os lucros ou as perdas apurados.\nCLÁUSULA DÉCIMA – DAS DECISÕES DO SÓCIO ÚNICO\nAs decisões que, na sociedade limitada pluripessoal, seriam objeto de deliberação dos sócios serão\ntomadas pelo sócio único e formalizadas por escrito, dispensadas as formalidades de convocação e\nde reunião, devendo ser arquivadas na Junta Comercial sempre que a lei assim o exigir.\nCLÁUSULA DÉCIMA PRIMEIRA – DA ADMISSÃO DE NOVOS SÓCIOS\nA sociedade poderá, a qualquer tempo, admitir novos sócios, mediante alteração deste ato\nconstitutivo, hipótese em que passará a reger-se pelas normas aplicáveis à sociedade limitada\npluripessoal.\nCLÁUSULA DÉCIMA SEGUNDA – DO FALECIMENTO OU DA INCAPACIDADE\nFalecendo ou sendo interditado o sócio único, a sociedade continuará suas atividades com os\nherdeiros, sucessores ou o representante legal do incapaz, que deverão, no prazo legal, promover a\nalteração deste ato constitutivo. Não sendo possível a continuidade, ou inexistindo interesse dos\nherdeiros e sucessores, a sociedade será dissolvida e liquidada na forma da lei.\nCLÁUSULA DÉCIMA TERCEIRA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nO administrador declara, sob as penas da lei, que não está impedido de exercer a administração da\nsociedade por lei especial, ou em virtude de condenação criminal, ou por se encontrar sob os efeitos\ndela, a pena que vede, ainda que temporariamente, o acesso a cargos públicos; ou por crime\nfalimentar, de prevaricação, peita ou suborno, concussão, peculato; ou contra a economia popular,\ncontra o sistema financeiro nacional, contra as normas de defesa da concorrência, contra as relações\nde consumo, a fé pública ou a propriedade, nos termos do art. 1.011, § 1º, do Código Civil.\nCLÁUSULA DÉCIMA QUARTA – DO ENQUADRAMENTO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "O sócio único declara que a sociedade se enquadra como microempresa, nos termos da Lei\nComplementar nº 123, de 14 de dezembro de 2006, e que não se enquadra em qualquer das hipóteses\nde exclusão previstas no § 4º do art. 3º da referida lei.\nCLÁUSULA DÉCIMA QUINTA – DO FORO\nFica eleito o foro da Comarca de Fortaleza/CE para o exercício e o cumprimento dos direitos e das\nobrigações resultantes deste ato constitutivo, com renúncia a qualquer outro, por mais privilegiado\nque seja.\nE, por estar assim constituída a sociedade, o sócio único assina o presente instrumento em via única,\ndigitalmente, para que produza seus efeitos legais após o arquivamento na Junta Comercial do\nEstado do Ceará.\nFortaleza/CE, 11 de julho de 2022.\nRAFAEL NOGUEIRA BRITO\nSócio único e administrador\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 20/07/2022 sob o nº 27382031353\nProtocolo: 22/418.763-0 | NIRE: 23894574783\nEmpresa: TECHNORDESTE SOLUÇÕES DIGITAIS LTDA. | CNPJ: 33.437.010/0001-48\nAutenticação: 7F3A9C1E44B2D08A6E15C93F\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "3cbd647a647164b4bbd765f62f21dcc3f3cb865ad2a9ef79e86c3c90ea7595b5",
+   "leitura": {}
+  },
+  {
+   "id": "POA_IGOR",
+   "nome": "POA_IGOR.pdf",
+   "tipo": "procuracao",
+   "titulo": "Procuração (POA_IGOR)",
+   "data": "2026-03-10",
+   "paginas": [
+    "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nHeloísa Barreira Nunes – Tabeliã\nLIVRO 845 — FOLHAS 031/032\nPROCURAÇÃO BASTANTE QUE FAZ TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.\nA IGOR LACERDA BASTOS\nSAIBAM quantos este público instrumento de procuração virem que, aos dez (10) dias do mês de\nmarço de dois mil e vinte e seis (2026), nesta cidade de Fortaleza, Capital do Estado do Ceará, em\ncartório, perante mim, Patrícia Viana Duarte, Escrevente Autorizada, compareceu como\nOUTORGANTE: TECHNORDESTE SOLUÇÕES DIGITAIS LTDA., sociedade limitada\nunipessoal, inscrita no CNPJ sob o nº 33.437.010/0001-48, NIRE 23894574783, com sede nesta\nCapital, neste ato representada por seu sócio único e administrador RAFAEL NOGUEIRA BRITO,\nbrasileiro, solteiro, analista de sistemas, RG nº 23915476 SSP/CE, CPF nº 547.517.799-66, residente\ne domiciliado em Fortaleza/CE, com poderes conferidos pelo Ato Constitutivo de Sociedade\nLimitada Unipessoal registrado na JUCEC em 20/07/2022 sob o nº 27382031353, cuja cópia,\nacompanhada de certidão simplificada expedida pela JUCEC em 02/03/2026, fica arquivada nestas\nnotas. Reconhecido como o próprio, à vista dos documentos apresentados, do que dou fé.\nE, pela outorgante, assim representada, me foi dito que, por este instrumento, constitui e nomeia seu\nbastante procurador IGOR LACERDA BASTOS, brasileiro, solteiro, gerente administrativo, RG nº\n35222072 SSP/CE, CPF nº 632.280.886-93, residente e domiciliado na Rua Tibúrcio Cavalcante, nº\n2.744, apto. 801, Dionísio Torres, Fortaleza/CE, a quem confere poderes especiais e expressos para\nvender, ceder, transferir ou de qualquer forma alienar veículos automotores de propriedade da\noutorgante, a quem e pelo preço que convencionar; assinar a Autorização para Transferência de\nPropriedade do Veículo (ATPV/ATPV-e); receber o preço e dar quitação; requerer e assinar o que for\nnecessário perante o DETRAN, inclusive vistorias, segundas vias e comunicação de venda; pagar\ntaxas, tributos e multas; e praticar os demais atos necessários ao fiel cumprimento deste mandato.\nO presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data, sendo expressamente\nvedado o substabelecimento, no todo ou em parte.\nAssim o disse, do que dou fé, e me pediu que lhe lavrasse este instrumento, o qual, feito e lido em\nvoz alta, achou conforme, aceita e assina. Eu, Patrícia Viana Duarte, Escrevente Autorizada, digitei.\nEu, Heloísa Barreira Nunes, Tabeliã, subscrevo.\n(aa) RAFAEL NOGUEIRA BRITO, pela outorgante.\nHELOÍSA BARREIRA NUNES, Tabeliã.\nEmolumentos: R$ 214,37 · Taxa de fiscalização: R$ 10,72 · Total: R$ 225,09\nSelo Digital: IRA-0845-2026-2C7A58\nTRASLADO — Extraído nesta data, conforme o original, do que dou fé.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "Fortaleza/CE, 10 de março de 2026.\nHeloísa Barreira Nunes – Tabeliã\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "56e0c2f4c6bbee551f3f270db28b776db27f68ef9dd5e861d542df4adb0db02e",
+   "leitura": {}
+  },
+  {
+   "id": "SUB_IGOR_KLEBER",
+   "nome": "SUB_IGOR_KLEBER.pdf",
+   "tipo": "substabelecimento",
+   "titulo": "Substabelecimento (SUB_IGOR_KLEBER)",
+   "data": "2026-08-20",
+   "paginas": [
+    "SUBSTABELECIMENTO\nPelo presente instrumento particular, IGOR LACERDA BASTOS, brasileiro, solteiro, gerente\nadministrativo, portador do RG nº 35222072 SSP/CE, inscrito no CPF sob o nº 632.280.886-93,\nresidente e domiciliado na Rua Tibúrcio Cavalcante, nº 2.744, apto. 801, Dionísio Torres, Fortaleza/\nCE, na qualidade de procurador de TECHNORDESTE SOLUÇÕES DIGITAIS LTDA., inscrita no\nCNPJ sob o nº 33.437.010/0001-48, com sede em Fortaleza/CE, conforme procuração pública\nlavrada em 10/03/2026 no Cartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício), Livro\n845, Folhas 031/032, substabelece, com reserva de iguais poderes, na pessoa de KLEBER JORGE\nMATOS, brasileiro, casado, despachante documentalista, portador do RG nº 97862011 SSP/CE,\ninscrito no CPF sob o nº 659.085.380-00, com escritório na Rua Senador Pompeu, nº 2.310, sala 4,\nCentro, Fortaleza/CE, os poderes que lhe foram conferidos para vender, ceder e transferir veículos\nautomotores de propriedade da outorgante, assinar a Autorização para Transferência de Propriedade\ndo Veículo em meio digital (ATPV-e), receber o preço, dar quitação e requerer o que for necessário\nperante o DETRAN, pelo prazo remanescente do mandato original.\nFortaleza/CE, 20 de agosto de 2026.\n______________________________________\nIGOR LACERDA BASTOS\nSubstabelecente\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nRECONHECIMENTO DE FIRMA POR AUTENTICIDADE\nReconheço, por autenticidade, a firma de IGOR LACERDA BASTOS, CPF nº 632.280.886-93,\nlançada em minha presença neste documento, do que dou fé.\nFortaleza/CE, 20 de agosto de 2026. Em testemunho da verdade.\nRogério Lustosa Maia – Escrevente Notarial\nSelo Digital: IRA-AUT-2026-8A3C17 · Emolumentos: R$ 9,85\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/1"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "d0a46f32cb7ce1fadf2810fdad52d42e44a3294f7f29311cffc1342962c4a58c",
+   "leitura": {}
+  },
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n09848864577\nPLACA\nEWL8N26\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2022\nANO MODELO\n2022\nNÚMERO DO CRV\n519003984955\nCÓDIGO DE SEGURANÇA DO CLA\n33487401202\nMARCA / MODELO / VERSÃO\nVW/AMAROK HIGHLINE V6 3.0\nESPÉCIE / TIPO\nCARGA/CAMINHONETE\nCHASSI\n9BWSM9WCNWL4J518D\nCOR PREDOMINANTE\nPRETA\nCOMBUSTÍVEL\nDIESEL\nNOME\nTECHNORDESTE SOLUÇÕES DIGITAIS LTDA.\nCPF / CNPJ\n33.437.010/0001-48\nLOCAL\nFORTALEZA/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "b3e2432cfec2b879583a751780da511ea26f0294b940c7fb0783ee75ea19b16a",
+   "leitura": {}
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "gabarito",
+  "politica": "DETRAN-CE"
+ },
+ "lado": "vendedor",
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T10:07:52",
+   "pedido": {
+    "veiculo": {
+     "descricao": "VW/AMAROK HIGHLINE V6 3.0",
+     "placa": "EWL8N26",
+     "renavam": "09848864577",
+     "chassi": "9BWSM9WCNWL4J518D"
+    },
+    "data_venda": "2026-09-22",
+    "valor": 240000.0,
+    "assinantes": [
+     {
+      "nome": "Kleber Jorge Matos",
+      "cpf": "659.085.380-00"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "Diego Fernandes Uchoa",
+    "vendedor_cnpj": "33.437.010/0001-48",
+    "lado": "vendedor"
+   },
+   "empresa": {
+    "razao_social": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+    "cnpj": "33.437.010/0001-48",
+    "tipo": "SLU",
+    "objeto": "desenvolvimento de programas de computador sob encomenda e consultoria em tecnologia da informação",
+    "comercializa_veiculos": false,
+    "subtipo": null
+   },
+   "veredito": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 3,
+    "menor_confianca_fato": 1.0,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Rafael Nogueira Brito ou Igor Lacerda Bastos (procurador). O caminho por substabelecimento com reserva de 20/08/2026 não vale: substabelecimento proibido.",
+   "assinantes": [
+    {
+     "informado": "Kleber Jorge Matos",
+     "cpf": "659.085.380-00",
+     "chave": "65908538000",
+     "nome": "Kleber Jorge Matos",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:54751779966",
+     "pessoas": [
+      {
+       "chave": "54751779966",
+       "nome": "Rafael Nogueira Brito"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "regra geral de representação — Ato Constitutivo (SLU) (2022)",
+     "cadeia": [
+      "TECH_CS"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    },
+    {
+     "id": "POA_IGOR:63228088693",
+     "pessoas": [
+      {
+       "chave": "63228088693",
+       "nome": "Igor Lacerda Bastos"
+      }
+     ],
+     "via": "procuracao",
+     "descricao": "Procuração pública de 10/03/2026",
+     "cadeia": [
+      "POA_IGOR"
+     ],
+     "severidade": "atencao",
+     "confianca": 1.0,
+     "achados": [
+      {
+       "codigo": "OUTORGANTE_PJ",
+       "severidade": "ok",
+       "titulo": "Outorgada pela própria empresa",
+       "detalhe": "A outorgante é a empresa, representada por Rafael Nogueira Brito.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_IGOR",
+         "doc_titulo": "Procuração (POA_IGOR)",
+         "trecho": "A IGOR LACERDA BASTOS SAIBAM quantos este público instrumento de procuração virem que, aos dez (10) dias do mês de março de dois mil e vinte e seis (2026), nesta cidade de Fortaleza, Capital do Estado do Ceará, em cartório, perante mim, Patrícia Viana Duarte, Escrevente Autorizada, compareceu como OUTORGANTE: TECHNORDESTE SOLUÇÕES DIGITAIS LTDA",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 239,
+         "fim": 585
+        }
+       ],
+       "caminho": "POA_IGOR"
+      },
+      {
+       "codigo": "OUTORGA_COM_PODERES",
+       "severidade": "ok",
+       "titulo": "Quem outorgou tinha poder",
+       "detalhe": "Em 10/03/2026, Rafael Nogueira Brito podia representar a empresa nesse ato.",
+       "fundamento": [
+        "CC art. 1.018"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_IGOR",
+         "doc_titulo": "Procuração (POA_IGOR)",
+         "trecho": "A IGOR LACERDA BASTOS SAIBAM quantos este público instrumento de procuração virem que, aos dez (10) dias do mês de março de dois mil e vinte e seis (2026), nesta cidade de Fortaleza, Capital do Estado do Ceará, em cartório, perante mim, Patrícia Viana Duarte, Escrevente Autorizada, compareceu como OUTORGANTE: TECHNORDESTE SOLUÇÕES DIGITAIS LTDA",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 239,
+         "fim": 585
+        },
+        {
+         "doc_id": "TECH_CS",
+         "doc_titulo": "Ato Constitutivo (SLU) (2022)",
+         "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá ao sócio único RAFAEL NOGUEIRA BRITO, que a exercerá isoladamente, por prazo indeterminado, com poderes e atribuições de representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos necessários à consecução do objeto social, vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 2,
+         "inicio": 2446,
+         "fim": 2918
+        }
+       ],
+       "caminho": "POA_IGOR"
+      },
+      {
+       "codigo": "PODERES_ESPECIAIS",
+       "severidade": "ok",
+       "titulo": "Poder expresso para alienar veículos",
+       "detalhe": "Confere poder expresso para vender/transferir veículos e assinar a ATPV/ATPV-e.",
+       "fundamento": [
+        "CC art. 661, §1º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_IGOR",
+         "doc_titulo": "Procuração (POA_IGOR)",
+         "trecho": "801, Dionísio Torres, Fortaleza/CE, a quem confere poderes especiais",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1550,
+         "fim": 1618
+        }
+       ],
+       "caminho": "POA_IGOR"
+      },
+      {
+       "codigo": "PROCURACAO_NO_PRAZO",
+       "severidade": "ok",
+       "titulo": "Dentro do prazo",
+       "detalhe": "Válida até 10/03/2027.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "POA_IGOR",
+         "doc_titulo": "Procuração (POA_IGOR)",
+         "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data, sendo expressamente vedado o substabelecimento, no todo ou em parte",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 2116,
+         "fim": 2257
+        }
+       ],
+       "caminho": "POA_IGOR"
+      },
+      {
+       "codigo": "PROCURACAO_SEM_VEICULO",
+       "severidade": "atencao",
+       "titulo": "Procuração não identifica o veículo",
+       "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+       "fundamento": [
+        "CJF, Enunciado 183"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_IGOR",
+         "doc_titulo": "Procuração (POA_IGOR)",
+         "trecho": "801, Dionísio Torres, Fortaleza/CE, a quem confere poderes especiais",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1550,
+         "fim": 1618
+        }
+       ],
+       "caminho": "POA_IGOR"
+      }
+     ],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [
+    {
+     "id": "SUB_IGOR_KLEBER:bloqueada",
+     "pessoas": [
+      {
+       "chave": "65908538000",
+       "nome": "Kleber Jorge Matos"
+      }
+     ],
+     "via": "substabelecimento",
+     "descricao": "Substabelecimento com reserva de 20/08/2026",
+     "cadeia": [
+      "POA_IGOR",
+      "SUB_IGOR_KLEBER"
+     ],
+     "severidade": "alerta",
+     "confianca": 1.0,
+     "achados": [
+      {
+       "codigo": "ORIGEM_VALIDA",
+       "severidade": "ok",
+       "titulo": "Procuração de origem válida",
+       "detalhe": "Origem: procuração de 10/03/2026.",
+       "fundamento": [],
+       "fontes": [
+        {
+         "doc_id": "SUB_IGOR_KLEBER",
+         "doc_titulo": "Substabelecimento (SUB_IGOR_KLEBER)",
+         "trecho": "801, Dionísio Torres, Fortaleza/CE, na qualidade de procurador de TECHNORDESTE SOLUÇÕES DIGITAIS LTDA., inscrita no CNPJ sob o nº 33.437.010/0001-48, com sede em Fortaleza/CE, conforme procuração pública lavrada em 10/03/2026 no Cartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício), Livro 845, Folhas 031/032, substabelece, com reserva de iguais poderes, na pessoa de KLEBER JORGE MATOS, brasileiro, casado, despachante documentalista, portador do RG nº 97862011 SSP/CE, inscrito no CPF sob o nº 659",
+         "clausula": null,
+         "ancoragem": 99.8,
+         "pagina": 1,
+         "inicio": 268,
+         "fim": 781
+        }
+       ],
+       "caminho": "SUB_IGOR_KLEBER"
+      },
+      {
+       "codigo": "PROCURACAO_SEM_VEICULO",
+       "severidade": "atencao",
+       "titulo": "Procuração não identifica o veículo (procuração de origem)",
+       "detalhe": "Os poderes valem para os veículos da outorgante em geral, sem placa/RENAVAM/chassi deste veículo. O DETRAN-CE pede procuração 'específica para o ato': confirme se o entendimento do órgão exige identificar o veículo.",
+       "fundamento": [
+        "CJF, Enunciado 183"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_IGOR",
+         "doc_titulo": "Procuração (POA_IGOR)",
+         "trecho": "801, Dionísio Torres, Fortaleza/CE, a quem confere poderes especiais",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 1550,
+         "fim": 1618
+        }
+       ],
+       "caminho": "SUB_IGOR_KLEBER"
+      },
+      {
+       "codigo": "SUBSTABELECIMENTO_VEDADO",
+       "severidade": "bloqueio",
+       "titulo": "Substabelecimento proibido",
+       "detalhe": "A procuração original proíbe substabelecer: os atos do substabelecido não obrigam a empresa, salvo ratificação expressa.",
+       "fundamento": [
+        "CC art. 667, §3º"
+       ],
+       "fontes": [
+        {
+         "doc_id": "POA_IGOR",
+         "doc_titulo": "Procuração (POA_IGOR)",
+         "trecho": "O presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data, sendo expressamente vedado o substabelecimento, no todo ou em parte",
+         "clausula": null,
+         "ancoragem": 100.0,
+         "pagina": 1,
+         "inicio": 2116,
+         "fim": 2257
+        },
+        {
+         "doc_id": "SUB_IGOR_KLEBER",
+         "doc_titulo": "Substabelecimento (SUB_IGOR_KLEBER)",
+         "trecho": "801, Dionísio Torres, Fortaleza/CE, na qualidade de procurador de TECHNORDESTE SOLUÇÕES DIGITAIS LTDA., inscrita no CNPJ sob o nº 33.437.010/0001-48, com sede em Fortaleza/CE, conforme procuração pública lavrada em 10/03/2026 no Cartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício), Livro 845, Folhas 031/032, substabelece, com reserva de iguais poderes, na pessoa de KLEBER JORGE MATOS, brasileiro, casado, despachante documentalista, portador do RG nº 97862011 SSP/CE, inscrito no CPF sob o nº 659",
+         "clausula": null,
+         "ancoragem": 99.8,
+         "pagina": 1,
+         "inicio": 268,
+         "fim": 781
+        }
+       ],
+       "caminho": "SUB_IGOR_KLEBER"
+      },
+      {
+       "codigo": "SUBSTABELECIMENTO_PARTICULAR",
+       "severidade": "alerta",
+       "titulo": "Substabelecimento por instrumento particular",
+       "detalhe": "O Código Civil admite substabelecer por instrumento particular mesmo procuração pública (art. 655), mas DETRAN e cartórios podem exigir a mesma forma do original.",
+       "fundamento": [
+        "CC art. 655"
+       ],
+       "fontes": [
+        {
+         "doc_id": "SUB_IGOR_KLEBER",
+         "doc_titulo": "Substabelecimento (SUB_IGOR_KLEBER)",
+         "trecho": "801, Dionísio Torres, Fortaleza/CE, na qualidade de procurador de TECHNORDESTE SOLUÇÕES DIGITAIS LTDA., inscrita no CNPJ sob o nº 33.437.010/0001-48, com sede em Fortaleza/CE, conforme procuração pública lavrada em 10/03/2026 no Cartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício), Livro 845, Folhas 031/032, substabelece, com reserva de iguais poderes, na pessoa de KLEBER JORGE MATOS, brasileiro, casado, despachante documentalista, portador do RG nº 97862011 SSP/CE, inscrito no CPF sob o nº 659",
+         "clausula": null,
+         "ancoragem": 99.8,
+         "pagina": 1,
+         "inicio": 268,
+         "fim": 781
+        }
+       ],
+       "caminho": "SUB_IGOR_KLEBER"
+      }
+     ],
+     "precondicoes": []
+    }
+   ],
+   "caminho_escolhido": null,
+   "faltantes": [
+    {
+     "alternativa": "contrato:54751779966",
+     "via": "contrato",
+     "descricao": "regra geral de representação — Ato Constitutivo (SLU) (2022)",
+     "pessoas": [
+      "54751779966"
+     ],
+     "faltam": [
+      "54751779966"
+     ],
+     "faltam_nomes": [
+      "Rafael Nogueira Brito"
+     ],
+     "pessoas_nomes": [
+      "Rafael Nogueira Brito"
+     ]
+    },
+    {
+     "alternativa": "POA_IGOR:63228088693",
+     "via": "procuracao",
+     "descricao": "Procuração pública de 10/03/2026",
+     "pessoas": [
+      "63228088693"
+     ],
+     "faltam": [
+      "63228088693"
+     ],
+     "faltam_nomes": [
+      "Igor Lacerda Bastos"
+     ],
+     "pessoas_nomes": [
+      "Igor Lacerda Bastos"
+     ]
+    }
+   ],
+   "achados": [
+    {
+     "codigo": "CND_INSS",
+     "severidade": "info",
+     "titulo": "CND previdenciária",
+     "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+     "fundamento": [
+      "Lei 8.212/91, art. 47, I, \"c\""
+     ],
+     "fontes": [],
+     "caminho": null
+    },
+    {
+     "codigo": "TITULARIDADE_OK",
+     "severidade": "ok",
+     "titulo": "Veículo registrado no CNPJ da empresa",
+     "detalhe": "Proprietário no CRLV: TECHNORDESTE SOLUÇÕES DIGITAIS LTDA..",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [
+      {
+       "doc_id": "CRLV",
+       "doc_titulo": "CRLV",
+       "trecho": "EWL8N26",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 146,
+       "fim": 153
+      }
+     ],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "TECH_CS#R1",
+     "escopo": "geral",
+     "aplicavel": true,
+     "motivo": "regra geral de representação",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "TECH_CS",
+      "doc_titulo": "Ato Constitutivo (SLU) (2022)",
+      "trecho": "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO A administração da sociedade caberá ao sócio único RAFAEL NOGUEIRA BRITO, que a exercerá isoladamente, por prazo indeterminado, com poderes e atribuições de representação ativa e passiva da sociedade, em juízo ou fora dele, podendo praticar todos os atos necessários à consecução do objeto social, vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 2,
+      "inicio": 2446,
+      "fim": 2918
+     },
+     "modo": "isolado",
+     "pessoas": [
+      "Rafael Nogueira Brito"
+     ],
+     "cargo": null,
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "isolado",
+       "valor_lexico": "isolado",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "isoladamente"
+       ]
+      }
+     ],
+     "decisiva": true
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-09-22",
+    "atos": [
+     {
+      "doc": "TECH_CS",
+      "titulo": "Ato Constitutivo (SLU) (2022)",
+      "efeito": "2022-07-11"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "54751779966",
+      "nome": "Rafael Nogueira Brito",
+      "cargo": "sócio único administrador",
+      "doc": "TECH_CS"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "54751779966",
+      "nome": "Rafael Nogueira Brito",
+      "percentual": 100.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+      "sub": "33.437.010/0001-48"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "VW/AMAROK HIGHLINE V6 3.0",
+      "sub": "EWL8N26"
+     },
+     {
+      "id": "54751779966",
+      "tipo": "pessoa",
+      "rotulo": "Rafael Nogueira Brito",
+      "papeis": [
+       "sócio 100%",
+       "sócio único administrador"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "63228088693",
+      "tipo": "pessoa",
+      "rotulo": "Igor Lacerda Bastos",
+      "papeis": [
+       "procurador"
+      ],
+      "assinante": false
+     },
+     {
+      "id": "65908538000",
+      "tipo": "pessoa",
+      "rotulo": "Kleber Jorge Matos",
+      "papeis": [
+       "substabelecido"
+      ],
+      "assinante": true
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "valido"
+     },
+     {
+      "de": "54751779966",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "100%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "54751779966",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "TECH_CS"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "63228088693",
+      "tipo": "procuracao",
+      "status": "valido",
+      "doc": "POA_IGOR",
+      "rotulo": "procuração 10/03/2026",
+      "motivo": null
+     },
+     {
+      "de": "63228088693",
+      "para": "65908538000",
+      "tipo": "substabelecimento",
+      "status": "invalido",
+      "doc": "SUB_IGOR_KLEBER",
+      "rotulo": "substabelece com reserva · Substabelecimento proibido",
+      "motivo": "Substabelecimento proibido"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2022-07-11",
+     "tipo": "ato",
+     "titulo": "Ato Constitutivo (SLU) (2022)",
+     "doc": "TECH_CS",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-03-10",
+     "tipo": "procuracao",
+     "titulo": "Procuração para Igor Lacerda Bastos",
+     "doc": "POA_IGOR",
+     "detalhe": "publica"
+    },
+    {
+     "data": "2026-08-20",
+     "tipo": "substabelecimento",
+     "titulo": "Igor Lacerda Bastos substabelece a Kleber Jorge Matos",
+     "doc": "SUB_IGOR_KLEBER",
+     "detalhe": "com_reserva"
+    },
+    {
+     "data": "2026-09-22",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 240.000,00"
+    },
+    {
+     "data": "2027-03-10",
+     "tipo": "vencimento",
+     "titulo": "Vence a procuração de Igor Lacerda Bastos",
+     "doc": "POA_IGOR",
+     "detalhe": ""
+    }
+   ],
+   "pessoas": {
+    "54751779966": {
+     "nome": "Rafael Nogueira Brito",
+     "cpf": "54751779966"
+    },
+    "63228088693": {
+     "nome": "Igor Lacerda Bastos",
+     "cpf": "63228088693"
+    },
+    "65908538000": {
+     "nome": "Kleber Jorge Matos",
+     "cpf": "65908538000"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "não comprovada",
+    "outorgante": {
+     "nome": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+     "cnpj": "33.437.010/0001-48",
+     "tipo": "SLU",
+     "atos_vigentes": [
+      {
+       "titulo": "Ato Constitutivo (SLU) (2022)",
+       "doc": "TECH_CS",
+       "efeito": "2022-07-11"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "Kleber Jorge Matos",
+      "cpf": "659.085.380-00",
+      "identificacao": "CPF",
+      "qualidade": "substabelecido(a) em 20/08/2026"
+     }
+    ],
+    "poderes_conferidos": [
+     "Substabelecimento com reserva de 20/08/2026: não comprova poderes (Substabelecimento proibido)."
+    ],
+    "prazo_validade": [
+     "—"
+    ],
+    "revogacao": [
+     "—"
+    ],
+    "fontes": [],
+    "documentos_verificaveis": [
+     {
+      "id": "TECH_CS",
+      "titulo": "Ato Constitutivo (SLU) (2022)",
+      "arquivo": "TECH_CS.pdf"
+     },
+     {
+      "id": "POA_IGOR",
+      "titulo": "Procuração (POA_IGOR)",
+      "arquivo": "POA_IGOR.pdf"
+     },
+     {
+      "id": "SUB_IGOR_KLEBER",
+      "titulo": "Substabelecimento (SUB_IGOR_KLEBER)",
+      "arquivo": "SUB_IGOR_KLEBER.pdf"
+     },
+     {
+      "id": "CRLV",
+      "titulo": "CRLV",
+      "arquivo": "CRLV.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "TECH_CS",
+     "nome": "TECH_CS.pdf",
+     "tipo": "ato_constitutivo_slu",
+     "titulo": "Ato Constitutivo (SLU) (2022)",
+     "data": "2022-07-11",
+     "paginas": [
+      "ATO CONSTITUTIVO DE SOCIEDADE LIMITADA UNIPESSOAL\nTECHNORDESTE SOLUÇÕES DIGITAIS LTDA.\nRAFAEL NOGUEIRA BRITO, brasileiro, solteiro, maior, analista de sistemas, portador da carteira\nde identidade nº 23915476 SSP/CE e inscrito no CPF sob o nº 547.517.799-66, residente e\ndomiciliado na Rua Dom Expedito Lopes, nº 1.245, apartamento 802, bairro Dionísio Torres,\nFortaleza/CE, CEP 60135-410, resolve, por este instrumento particular e na forma do art. 1.052, § 1º,\ndo Código Civil (Lei nº 10.406/2002), constituir uma sociedade limitada unipessoal, que se regerá\npelas cláusulas e condições seguintes e, nas omissões, pelas disposições legais aplicáveis às\nsociedades limitadas.\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL\nA sociedade girará sob o nome empresarial TECHNORDESTE SOLUÇÕES DIGITAIS LTDA. e\npoderá adotar o nome fantasia \"TechNordeste\".\nCLÁUSULA SEGUNDA – DA SEDE\nA sociedade terá sede na Avenida Santos Dumont, nº 3.131, sala 1.104, bairro Aldeota, Fortaleza/CE,\nCEP 60150-162, podendo abrir e encerrar filiais, escritórios e outras dependências em qualquer parte\ndo território nacional, por decisão do sócio único.\nCLÁUSULA TERCEIRA – DO OBJETO SOCIAL\nA sociedade tem por objeto o desenvolvimento de programas de computador sob encomenda e a\nconsultoria em tecnologia da informação.\nParágrafo único. As atividades da sociedade correspondem aos seguintes códigos da Classificação\nNacional de Atividades Econômicas: 6201-5/01 – desenvolvimento de programas de computador\nsob encomenda; e 6204-0/00 – consultoria em tecnologia da informação.\nCLÁUSULA QUARTA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciará suas atividades na data do registro deste ato constitutivo na Junta Comercial do\nEstado do Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUINTA – DO CAPITAL SOCIAL\nO capital social é de R$ 100.000,00 (cem mil reais), dividido em 100.000 (cem mil) quotas de valor\nnominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas neste ato, em moeda\ncorrente do País, pelo sócio único, conforme o quadro abaixo:\nSócio\nQuotas\nValor (R$)\nParticipação\nRAFAEL NOGUEIRA BRITO\n100.000\n100.000,00\n100%\nTotal\n100.000\n100.000,00\n100%\nCLÁUSULA SEXTA – DA RESPONSABILIDADE\nA responsabilidade do sócio único é restrita ao valor de suas quotas, respondendo, porém, pela\nintegralização do capital social, nos termos do art. 1.052 do Código Civil.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+      "CLÁUSULA SÉTIMA – DA ADMINISTRAÇÃO\nA administração da sociedade caberá ao sócio único RAFAEL NOGUEIRA BRITO, que a exercerá\nisoladamente, por prazo indeterminado, com poderes e atribuições de representação ativa e passiva\nda sociedade, em juízo ou fora dele, podendo praticar todos os atos necessários à consecução do\nobjeto social, vedado, no entanto, o uso do nome empresarial em atividades estranhas ao objeto\nsocial, especialmente em avais, fianças e endossos de favor.\nParágrafo único. As procurações outorgadas pela sociedade deverão especificar os poderes\nconferidos e, salvo as outorgadas para fins judiciais, terão prazo de validade não superior a 1 (um)\nano.\nCLÁUSULA OITAVA – DO PRÓ-LABORE\nO administrador poderá fazer jus a uma retirada mensal a título de pró-labore, em valor fixado por\ndecisão do sócio único, observadas as disposições da legislação tributária e previdenciária.\nCLÁUSULA NONA – DO EXERCÍCIO SOCIAL E DAS DEMONSTRAÇÕES\nO exercício social coincidirá com o ano civil. Ao término de cada exercício social, em 31 de\ndezembro, o administrador prestará contas justificadas de sua administração, procedendo à\nelaboração do inventário, do balanço patrimonial e do balanço de resultado econômico, cabendo ao\nsócio único os lucros ou as perdas apurados.\nCLÁUSULA DÉCIMA – DAS DECISÕES DO SÓCIO ÚNICO\nAs decisões que, na sociedade limitada pluripessoal, seriam objeto de deliberação dos sócios serão\ntomadas pelo sócio único e formalizadas por escrito, dispensadas as formalidades de convocação e\nde reunião, devendo ser arquivadas na Junta Comercial sempre que a lei assim o exigir.\nCLÁUSULA DÉCIMA PRIMEIRA – DA ADMISSÃO DE NOVOS SÓCIOS\nA sociedade poderá, a qualquer tempo, admitir novos sócios, mediante alteração deste ato\nconstitutivo, hipótese em que passará a reger-se pelas normas aplicáveis à sociedade limitada\npluripessoal.\nCLÁUSULA DÉCIMA SEGUNDA – DO FALECIMENTO OU DA INCAPACIDADE\nFalecendo ou sendo interditado o sócio único, a sociedade continuará suas atividades com os\nherdeiros, sucessores ou o representante legal do incapaz, que deverão, no prazo legal, promover a\nalteração deste ato constitutivo. Não sendo possível a continuidade, ou inexistindo interesse dos\nherdeiros e sucessores, a sociedade será dissolvida e liquidada na forma da lei.\nCLÁUSULA DÉCIMA TERCEIRA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nO administrador declara, sob as penas da lei, que não está impedido de exercer a administração da\nsociedade por lei especial, ou em virtude de condenação criminal, ou por se encontrar sob os efeitos\ndela, a pena que vede, ainda que temporariamente, o acesso a cargos públicos; ou por crime\nfalimentar, de prevaricação, peita ou suborno, concussão, peculato; ou contra a economia popular,\ncontra o sistema financeiro nacional, contra as normas de defesa da concorrência, contra as relações\nde consumo, a fé pública ou a propriedade, nos termos do art. 1.011, § 1º, do Código Civil.\nCLÁUSULA DÉCIMA QUARTA – DO ENQUADRAMENTO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+      "O sócio único declara que a sociedade se enquadra como microempresa, nos termos da Lei\nComplementar nº 123, de 14 de dezembro de 2006, e que não se enquadra em qualquer das hipóteses\nde exclusão previstas no § 4º do art. 3º da referida lei.\nCLÁUSULA DÉCIMA QUINTA – DO FORO\nFica eleito o foro da Comarca de Fortaleza/CE para o exercício e o cumprimento dos direitos e das\nobrigações resultantes deste ato constitutivo, com renúncia a qualquer outro, por mais privilegiado\nque seja.\nE, por estar assim constituída a sociedade, o sócio único assina o presente instrumento em via única,\ndigitalmente, para que produza seus efeitos legais após o arquivamento na Junta Comercial do\nEstado do Ceará.\nFortaleza/CE, 11 de julho de 2022.\nRAFAEL NOGUEIRA BRITO\nSócio único e administrador\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 20/07/2022 sob o nº 27382031353\nProtocolo: 22/418.763-0 | NIRE: 23894574783\nEmpresa: TECHNORDESTE SOLUÇÕES DIGITAIS LTDA. | CNPJ: 33.437.010/0001-48\nAutenticação: 7F3A9C1E44B2D08A6E15C93F\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "3cbd647a647164b4bbd765f62f21dcc3f3cb865ad2a9ef79e86c3c90ea7595b5",
+     "leitura": {}
+    },
+    {
+     "id": "POA_IGOR",
+     "nome": "POA_IGOR.pdf",
+     "tipo": "procuracao",
+     "titulo": "Procuração (POA_IGOR)",
+     "data": "2026-03-10",
+     "paginas": [
+      "REPÚBLICA FEDERATIVA DO BRASIL\nESTADO DO CEARÁ\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nHeloísa Barreira Nunes – Tabeliã\nLIVRO 845 — FOLHAS 031/032\nPROCURAÇÃO BASTANTE QUE FAZ TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.\nA IGOR LACERDA BASTOS\nSAIBAM quantos este público instrumento de procuração virem que, aos dez (10) dias do mês de\nmarço de dois mil e vinte e seis (2026), nesta cidade de Fortaleza, Capital do Estado do Ceará, em\ncartório, perante mim, Patrícia Viana Duarte, Escrevente Autorizada, compareceu como\nOUTORGANTE: TECHNORDESTE SOLUÇÕES DIGITAIS LTDA., sociedade limitada\nunipessoal, inscrita no CNPJ sob o nº 33.437.010/0001-48, NIRE 23894574783, com sede nesta\nCapital, neste ato representada por seu sócio único e administrador RAFAEL NOGUEIRA BRITO,\nbrasileiro, solteiro, analista de sistemas, RG nº 23915476 SSP/CE, CPF nº 547.517.799-66, residente\ne domiciliado em Fortaleza/CE, com poderes conferidos pelo Ato Constitutivo de Sociedade\nLimitada Unipessoal registrado na JUCEC em 20/07/2022 sob o nº 27382031353, cuja cópia,\nacompanhada de certidão simplificada expedida pela JUCEC em 02/03/2026, fica arquivada nestas\nnotas. Reconhecido como o próprio, à vista dos documentos apresentados, do que dou fé.\nE, pela outorgante, assim representada, me foi dito que, por este instrumento, constitui e nomeia seu\nbastante procurador IGOR LACERDA BASTOS, brasileiro, solteiro, gerente administrativo, RG nº\n35222072 SSP/CE, CPF nº 632.280.886-93, residente e domiciliado na Rua Tibúrcio Cavalcante, nº\n2.744, apto. 801, Dionísio Torres, Fortaleza/CE, a quem confere poderes especiais e expressos para\nvender, ceder, transferir ou de qualquer forma alienar veículos automotores de propriedade da\noutorgante, a quem e pelo preço que convencionar; assinar a Autorização para Transferência de\nPropriedade do Veículo (ATPV/ATPV-e); receber o preço e dar quitação; requerer e assinar o que for\nnecessário perante o DETRAN, inclusive vistorias, segundas vias e comunicação de venda; pagar\ntaxas, tributos e multas; e praticar os demais atos necessários ao fiel cumprimento deste mandato.\nO presente mandato vigorará pelo prazo de 1 (um) ano, contado desta data, sendo expressamente\nvedado o substabelecimento, no todo ou em parte.\nAssim o disse, do que dou fé, e me pediu que lhe lavrasse este instrumento, o qual, feito e lido em\nvoz alta, achou conforme, aceita e assina. Eu, Patrícia Viana Duarte, Escrevente Autorizada, digitei.\nEu, Heloísa Barreira Nunes, Tabeliã, subscrevo.\n(aa) RAFAEL NOGUEIRA BRITO, pela outorgante.\nHELOÍSA BARREIRA NUNES, Tabeliã.\nEmolumentos: R$ 214,37 · Taxa de fiscalização: R$ 10,72 · Total: R$ 225,09\nSelo Digital: IRA-0845-2026-2C7A58\nTRASLADO — Extraído nesta data, conforme o original, do que dou fé.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "Fortaleza/CE, 10 de março de 2026.\nHeloísa Barreira Nunes – Tabeliã\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "56e0c2f4c6bbee551f3f270db28b776db27f68ef9dd5e861d542df4adb0db02e",
+     "leitura": {}
+    },
+    {
+     "id": "SUB_IGOR_KLEBER",
+     "nome": "SUB_IGOR_KLEBER.pdf",
+     "tipo": "substabelecimento",
+     "titulo": "Substabelecimento (SUB_IGOR_KLEBER)",
+     "data": "2026-08-20",
+     "paginas": [
+      "SUBSTABELECIMENTO\nPelo presente instrumento particular, IGOR LACERDA BASTOS, brasileiro, solteiro, gerente\nadministrativo, portador do RG nº 35222072 SSP/CE, inscrito no CPF sob o nº 632.280.886-93,\nresidente e domiciliado na Rua Tibúrcio Cavalcante, nº 2.744, apto. 801, Dionísio Torres, Fortaleza/\nCE, na qualidade de procurador de TECHNORDESTE SOLUÇÕES DIGITAIS LTDA., inscrita no\nCNPJ sob o nº 33.437.010/0001-48, com sede em Fortaleza/CE, conforme procuração pública\nlavrada em 10/03/2026 no Cartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício), Livro\n845, Folhas 031/032, substabelece, com reserva de iguais poderes, na pessoa de KLEBER JORGE\nMATOS, brasileiro, casado, despachante documentalista, portador do RG nº 97862011 SSP/CE,\ninscrito no CPF sob o nº 659.085.380-00, com escritório na Rua Senador Pompeu, nº 2.310, sala 4,\nCentro, Fortaleza/CE, os poderes que lhe foram conferidos para vender, ceder e transferir veículos\nautomotores de propriedade da outorgante, assinar a Autorização para Transferência de Propriedade\ndo Veículo em meio digital (ATPV-e), receber o preço, dar quitação e requerer o que for necessário\nperante o DETRAN, pelo prazo remanescente do mandato original.\nFortaleza/CE, 20 de agosto de 2026.\n______________________________________\nIGOR LACERDA BASTOS\nSubstabelecente\nCartório Iracema – 4º Tabelionato de Notas de Fortaleza (fictício)\nRECONHECIMENTO DE FIRMA POR AUTENTICIDADE\nReconheço, por autenticidade, a firma de IGOR LACERDA BASTOS, CPF nº 632.280.886-93,\nlançada em minha presença neste documento, do que dou fé.\nFortaleza/CE, 20 de agosto de 2026. Em testemunho da verdade.\nRogério Lustosa Maia – Escrevente Notarial\nSelo Digital: IRA-AUT-2026-8A3C17 · Emolumentos: R$ 9,85\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/1"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "d0a46f32cb7ce1fadf2810fdad52d42e44a3294f7f29311cffc1342962c4a58c",
+     "leitura": {}
+    },
+    {
+     "id": "CRLV",
+     "nome": "CRLV.pdf",
+     "tipo": "crlv",
+     "titulo": "CRLV",
+     "data": null,
+     "paginas": [
+      "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n09848864577\nPLACA\nEWL8N26\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2022\nANO MODELO\n2022\nNÚMERO DO CRV\n519003984955\nCÓDIGO DE SEGURANÇA DO CLA\n33487401202\nMARCA / MODELO / VERSÃO\nVW/AMAROK HIGHLINE V6 3.0\nESPÉCIE / TIPO\nCARGA/CAMINHONETE\nCHASSI\n9BWSM9WCNWL4J518D\nCOR PREDOMINANTE\nPRETA\nCOMBUSTÍVEL\nDIESEL\nNOME\nTECHNORDESTE SOLUÇÕES DIGITAIS LTDA.\nCPF / CNPJ\n33.437.010/0001-48\nLOCAL\nFORTALEZA/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "b3e2432cfec2b879583a751780da511ea26f0294b940c7fb0783ee75ea19b16a",
+     "leitura": {}
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "gabarito",
+    "politica": "DETRAN-CE"
+   },
+   "lado": "vendedor"
+  }
+ },
+ "geral": {
+  "veredito": "NAO_PODE",
+  "faixa": "VERMELHO",
+  "indice": 0.0,
+  "resumo": "Vendedor: Os assinantes informados não bastam. Quem pode assinar: Rafael Nogueira Brito ou Igor Lacerda Bastos (procurador). O caminho por substabelecimento com reserva de 20/08/2026 não vale: substabelecimento proibido.",
+  "motivos_faixa": [
+   "Vendedor — índice 0 ≤ limiar 15"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "VW/AMAROK HIGHLINE V6 3.0",
+   "placa": "EWL8N26",
+   "renavam": "09848864577",
+   "chassi": "9BWSM9WCNWL4J518D"
+  },
+  "data_venda": "2026-09-22",
+  "valor": 240000.0,
+  "vendedor": {
+   "tipo": "PJ",
+   "nome": "TECHNORDESTE SOLUÇÕES DIGITAIS LTDA.",
+   "documento": "33.437.010/0001-48",
+   "assinantes": [
+    {
+     "nome": "Kleber Jorge Matos",
+     "cpf": "659.085.380-00"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": "Diego Fernandes Uchoa",
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "informado"
+ },
+ "hash_entrada": "b034a5fa1d51934e771f7a08d9a4c51c149a0b8d1caf7876fafa2d4c5a35aa6b"
+}

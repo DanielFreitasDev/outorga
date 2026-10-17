@@ -1,0 +1,26 @@
+{
+  "caso": "C30",
+  "vendedor": {
+    "razao_social": "GRÁFICA SOBRALENSE LTDA.",
+    "cnpj": "16.653.989/0001-72"
+  },
+  "veiculo": {
+    "placa": "KDW3A25",
+    "renavam": "09955156690",
+    "chassi": "9BD61G045X1ZAZ1ZT",
+    "descricao": "FIAT/DUCATO CARGO 2.2"
+  },
+  "data_venda": "2026-09-16",
+  "valor": 190000,
+  "assinantes": [
+    {
+      "nome": "Wagner Pontes Aguiar",
+      "cpf": "877.188.413-08"
+    }
+  ],
+  "comprador": {
+    "nome": "Diego Fernandes Uchoa",
+    "cidade": "Juazeiro do Norte/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

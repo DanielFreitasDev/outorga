@@ -1,0 +1,33 @@
+{
+  "caso": "H03",
+  "titulo": "Veículos da frota exigem os dois (sem valor) — um assina",
+  "categoria": "alcada",
+  "objetivo": "Cláusula específica de veículos sem alçada.",
+  "validacao_cega": true,
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "IVAN",
+        "SOLANGE"
+      ]
+    ],
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": [
+      [
+        "717.429.247-00",
+        "116.677.373-68"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Ivan Cordeiro Mota",
+        "Solange Prado Mota"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

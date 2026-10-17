@@ -1,0 +1,26 @@
+{
+  "caso": "C37",
+  "vendedor": {
+    "razao_social": "LOGÍSTICA MARACANAÚ LTDA.",
+    "cnpj": "47.865.893/0001-00"
+  },
+  "veiculo": {
+    "placa": "UJY1N32",
+    "renavam": "09753325717",
+    "chassi": "93YJVDZRU7CWKU62G",
+    "descricao": "RENAULT/MASTER FURGÃO L3H2"
+  },
+  "data_venda": "2026-09-30",
+  "valor": 210000,
+  "assinantes": [
+    {
+      "nome": "Bruna Teixeira Melo",
+      "cpf": "850.037.038-64"
+    }
+  ],
+  "comprador": {
+    "nome": "Rita de Cássia Moreira",
+    "cidade": "Fortaleza/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

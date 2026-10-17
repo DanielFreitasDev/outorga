@@ -1,0 +1,26 @@
+{
+  "caso": "C05",
+  "vendedor": {
+    "razao_social": "LOGÍSTICA MARACANAÚ LTDA.",
+    "cnpj": "47.865.893/0001-00"
+  },
+  "veiculo": {
+    "placa": "FLP8U42",
+    "renavam": "05765237351",
+    "chassi": "9BMZ31PK5J4UYHXU5",
+    "descricao": "M.BENZ/ACCELO 1016"
+  },
+  "data_venda": "2026-09-21",
+  "valor": 265000,
+  "assinantes": [
+    {
+      "nome": "Gustavo Henrique Teles",
+      "cpf": "876.634.400-05"
+    }
+  ],
+  "comprador": {
+    "nome": "Frota Fácil Locações Ltda.",
+    "cidade": "Maracanaú/CE"
+  },
+  "forma_assinatura": "ATPV-e"
+}

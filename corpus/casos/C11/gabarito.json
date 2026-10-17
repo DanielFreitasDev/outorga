@@ -1,0 +1,41 @@
+{
+  "caso": "C11",
+  "titulo": "Ativo não circulante (inclui veículos) sem deliberação",
+  "categoria": "deliberacao",
+  "objetivo": "Administrador tem poder, mas falta a aprovação prévia exigida (mais da metade do capital).",
+  "esperado": {
+    "veredito": "INDETERMINADO",
+    "faixas_aceitaveis": [
+      "AMARELO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "VALDIR"
+      ],
+      [
+        "MARCIA"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 1.015",
+      "CC art. 1.072"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "819.331.908-76"
+      ],
+      [
+        "520.599.728-17"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Valdir Cunha Teixeira"
+      ],
+      [
+        "Márcia Regina Sá"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

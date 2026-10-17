@@ -1,0 +1,700 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T10:08:21",
+ "pedido": {
+  "veiculo": {
+   "descricao": "FIAT/FIORINO ENDURANCE 1.4",
+   "placa": "DFU7V03",
+   "renavam": "01577162533",
+   "chassi": "9BDDP7AR0DK0FZ4GL"
+  },
+  "data_venda": "2026-10-12",
+  "valor": 82000.0,
+  "assinantes": [
+   {
+    "nome": "ROGERIO F LIMA",
+    "cpf": "714.092.128-82"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "DÉBORA LINS MOURA",
+  "vendedor_cnpj": "60.827.183/0001-45",
+  "lado": "vendedor"
+ },
+ "empresa": {
+  "razao_social": "60.827.183 ROGERIO FERNANDES LIMA",
+  "cnpj": "60.827.183/0001-45",
+  "tipo": "EI",
+  "objeto": "transporte municipal de cargas não perigosas (carreto) e de mudanças",
+  "comercializa_veiculos": false,
+  "subtipo": "MEI"
+ },
+ "veredito": "PODE",
+ "faixa": "VERDE",
+ "indice": 100.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 1,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 100 ≥ limiar 85"
+ ],
+ "resumo": "Rogério Fernandes Lima pode assinar a ATPV-e — regra supletiva (contrato não define a forma de assinar).",
+ "assinantes": [
+  {
+   "informado": "ROGERIO F LIMA",
+   "cpf": "714.092.128-82",
+   "chave": "71409212882",
+   "nome": "Rogério Fernandes Lima",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:71409212882",
+   "pessoas": [
+    {
+     "chave": "71409212882",
+     "nome": "Rogério Fernandes Lima"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "Regra supletiva (contrato não define a forma de assinar)",
+   "cadeia": [
+    "MEI_CCMEI"
+   ],
+   "severidade": "ok",
+   "confianca": 0.85,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": {
+  "id": "contrato:71409212882",
+  "pessoas": [
+   {
+    "chave": "71409212882",
+    "nome": "Rogério Fernandes Lima"
+   }
+  ],
+  "via": "contrato",
+  "descricao": "Regra supletiva (contrato não define a forma de assinar)",
+  "cadeia": [
+   "MEI_CCMEI"
+  ],
+  "severidade": "ok",
+  "confianca": 0.85,
+  "achados": [],
+  "precondicoes": []
+ },
+ "faltantes": [],
+ "achados": [
+  {
+   "codigo": "MEI_EI",
+   "severidade": "info",
+   "titulo": "Microempreendedor individual",
+   "detalhe": "O MEI é empresário individual: o próprio titular assina pelo CNPJ.",
+   "fundamento": [
+    "CC art. 966",
+    "LC 123/2006, art. 18-A"
+   ],
+   "fontes": [],
+   "caminho": null
+  },
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: 60.827.183 ROGERIO FERNANDES LIMA.",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "DFU7V03",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-10-12",
+  "atos": [
+   {
+    "doc": "MEI_CCMEI",
+    "titulo": "Requerimento de Empresário (2021)",
+    "efeito": "2021-06-01"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "71409212882",
+    "nome": "Rogério Fernandes Lima",
+    "cargo": "empresário titular",
+    "doc": "MEI_CCMEI"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "71409212882",
+    "nome": "Rogério Fernandes Lima",
+    "percentual": 100.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "60.827.183 ROGERIO FERNANDES LIMA",
+    "sub": "60.827.183/0001-45"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "FIAT/FIORINO ENDURANCE 1.4",
+    "sub": "DFU7V03"
+   },
+   {
+    "id": "71409212882",
+    "tipo": "pessoa",
+    "rotulo": "Rogério Fernandes Lima",
+    "papeis": [
+     "sócio 100%",
+     "empresário titular"
+    ],
+    "assinante": true
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "71409212882",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "100%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "71409212882",
+    "tipo": "administracao",
+    "rotulo": "administra · isolado",
+    "status": "valido",
+    "doc": "MEI_CCMEI"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2021-06-01",
+   "tipo": "ato",
+   "titulo": "Requerimento de Empresário (2021)",
+   "doc": "MEI_CCMEI",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-10-12",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 82.000,00"
+  }
+ ],
+ "pessoas": {
+  "71409212882": {
+   "nome": "Rogério Fernandes Lima",
+   "cpf": "71409212882"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "comprovada",
+  "outorgante": {
+   "nome": "60.827.183 ROGERIO FERNANDES LIMA",
+   "cnpj": "60.827.183/0001-45",
+   "tipo": "EI",
+   "atos_vigentes": [
+    {
+     "titulo": "Requerimento de Empresário (2021)",
+     "doc": "MEI_CCMEI",
+     "efeito": "2021-06-01"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Rogério Fernandes Lima",
+    "cpf": "714.092.128-82",
+    "identificacao": "CPF",
+    "qualidade": "empresário titular"
+   }
+  ],
+  "poderes_conferidos": [
+   "Regra supletiva do Código Civil (o ato constitutivo não define a forma de assinar)."
+  ],
+  "prazo_validade": [
+   "Rogério Fernandes Lima (empresário titular): mandato por prazo indeterminado"
+  ],
+  "revogacao": [
+   "Poder decorre do ato constitutivo vigente na data da venda; recomenda-se certidão simplificada atualizada da Junta Comercial para afastar alteração posterior ainda não apresentada."
+  ],
+  "fontes": [
+   {
+    "doc_id": "MEI_CCMEI",
+    "doc_titulo": "Requerimento de Empresário (2021)",
+    "trecho": "ROGÉRIO FERNANDES LIMA Nome Fantasia: ROGÉRIO FRETES E MUDANÇAS CNPJ: 60",
+    "clausula": null,
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 202,
+    "fim": 274
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "MEI_CCMEI",
+    "titulo": "Requerimento de Empresário (2021)",
+    "arquivo": "MEI_CCMEI.pdf"
+   },
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "MEI_CCMEI",
+   "nome": "MEI_CCMEI.pdf",
+   "tipo": "requerimento_empresario",
+   "titulo": "Requerimento de Empresário (2021)",
+   "data": "2021-06-01",
+   "paginas": [
+    "CERTIFICADO DA CONDIÇÃO DE MICROEMPREENDEDOR INDIVIDUAL\nPortal do Empreendedor – Microempreendedor Individual (MEI)\nIDENTIFICAÇÃO\nNome Empresarial: 60.827.183 ROGERIO FERNANDES LIMA\nNome do Empresário: ROGÉRIO FERNANDES LIMA\nNome Fantasia: ROGÉRIO FRETES E MUDANÇAS\nCNPJ: 60.827.183/0001-45\nData de Início das Atividades: 01/06/2021\nSituação Cadastral Vigente: ATIVA\nNúmero do Registro (NIRE): 23153565547\nCPF: 714.092.128-82\nIdentidade: 39604087 SSP/CE\nATIVIDADES\nForma de Atuação: Estabelecimento fixo; Porta a porta\nOcupação Principal: Transportador municipal de cargas não perigosas (carreto)\nAtividade Principal (CNAE): 4930-2/01 – Transporte rodoviário de carga, exceto produtos\nperigosos e mudanças, municipal\nOcupação Secundária: Transportador de mudanças\nAtividade Secundária (CNAE): 4930-2/04 – Transporte rodoviário de mudanças\nENDEREÇO E CAPITAL\nEndereço Comercial: Rua Major Agostinho, nº 386, bairro Centro, Maranguape/CE, CEP\n61940-000\nCapital Social: R$ 5.000,00 (cinco mil reais)\nDECLARAÇÕES DO EMPRESÁRIO\nDeclaro, sob as penas da lei, que não estou impedido de exercer atividade empresária, por lei\nespecial ou em virtude de condenação criminal, que não possuo outro registro como empresário e\nque não participo de outra empresa como titular, sócio ou administrador.\nDeclaro, ainda, que me enquadro na condição de Microempreendedor Individual, nos termos do art.\n18-A da Lei Complementar nº 123, de 14 de dezembro de 2006, e que não incorro em nenhuma das\nvedações ao ingresso nesse regime.\nTERMO DE CIÊNCIA E RESPONSABILIDADE COM EFEITO DE DISPENSA DE\nALVARÁ E LICENÇA DE FUNCIONAMENTO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "Declaro conhecer e atender aos requisitos legais exigidos pelo Estado e pelo Município para o\nfuncionamento da atividade, compreendidos os aspectos sanitários, ambientais, tributários, de\nsegurança pública e de uso e ocupação do solo, ciente de que o não atendimento desses requisitos\nacarretará o cancelamento deste Termo.\nDeclarações prestadas pelo empresário no Portal do Empreendedor, no ato da formalização, em 1º de\njunho de 2021.\nOBSERVAÇÕES\nEste Certificado comprova o registro do empresário como Microempreendedor Individual e a sua\ninscrição no CNPJ. O CCMEI dispensa assinatura e é válido com a verificação de autenticidade no\nPortal do Empreendedor, mediante a informação do CNPJ e do código de autenticidade indicado\nabaixo.\nCertificado emitido em 12/08/2026\nCódigo de autenticidade: 4B7D-91E2-A6C3-5F08\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "6db91607090ce7b665cb4decf664d81415c3983339e672a023f4dd51d322f2d9",
+   "leitura": {}
+  },
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n01577162533\nPLACA\nDFU7V03\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2022\nANO MODELO\n2022\nNÚMERO DO CRV\n681851046203\nCÓDIGO DE SEGURANÇA DO CLA\n52247142770\nMARCA / MODELO / VERSÃO\nFIAT/FIORINO ENDURANCE 1.4\nESPÉCIE / TIPO\nCARGA/FURGÃO\nCHASSI\n9BDDP7AR0DK0FZ4GL\nCOR PREDOMINANTE\nBRANCA\nCOMBUSTÍVEL\nÁLCOOL/GASOLINA\nNOME\n60.827.183 ROGERIO FERNANDES LIMA\nCPF / CNPJ\n60.827.183/0001-45\nLOCAL\nMARANGUAPE/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "89ec6563d464cb65d82540b98ad9a8138d3a4a088166a5ce2dfa8cd7ff4e3c8b",
+   "leitura": {}
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "gabarito",
+  "politica": "Código Civil (genérica)"
+ },
+ "lado": "vendedor",
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T10:08:21",
+   "pedido": {
+    "veiculo": {
+     "descricao": "FIAT/FIORINO ENDURANCE 1.4",
+     "placa": "DFU7V03",
+     "renavam": "01577162533",
+     "chassi": "9BDDP7AR0DK0FZ4GL"
+    },
+    "data_venda": "2026-10-12",
+    "valor": 82000.0,
+    "assinantes": [
+     {
+      "nome": "ROGERIO F LIMA",
+      "cpf": "714.092.128-82"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "DÉBORA LINS MOURA",
+    "vendedor_cnpj": "60.827.183/0001-45",
+    "lado": "vendedor"
+   },
+   "empresa": {
+    "razao_social": "60.827.183 ROGERIO FERNANDES LIMA",
+    "cnpj": "60.827.183/0001-45",
+    "tipo": "EI",
+    "objeto": "transporte municipal de cargas não perigosas (carreto) e de mudanças",
+    "comercializa_veiculos": false,
+    "subtipo": "MEI"
+   },
+   "veredito": "PODE",
+   "faixa": "VERDE",
+   "indice": 100.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 1,
+    "menor_confianca_fato": 1.0,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 100 ≥ limiar 85"
+   ],
+   "resumo": "Rogério Fernandes Lima pode assinar a ATPV-e — regra supletiva (contrato não define a forma de assinar).",
+   "assinantes": [
+    {
+     "informado": "ROGERIO F LIMA",
+     "cpf": "714.092.128-82",
+     "chave": "71409212882",
+     "nome": "Rogério Fernandes Lima",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:71409212882",
+     "pessoas": [
+      {
+       "chave": "71409212882",
+       "nome": "Rogério Fernandes Lima"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "Regra supletiva (contrato não define a forma de assinar)",
+     "cadeia": [
+      "MEI_CCMEI"
+     ],
+     "severidade": "ok",
+     "confianca": 0.85,
+     "achados": [],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [],
+   "caminho_escolhido": {
+    "id": "contrato:71409212882",
+    "pessoas": [
+     {
+      "chave": "71409212882",
+      "nome": "Rogério Fernandes Lima"
+     }
+    ],
+    "via": "contrato",
+    "descricao": "Regra supletiva (contrato não define a forma de assinar)",
+    "cadeia": [
+     "MEI_CCMEI"
+    ],
+    "severidade": "ok",
+    "confianca": 0.85,
+    "achados": [],
+    "precondicoes": []
+   },
+   "faltantes": [],
+   "achados": [
+    {
+     "codigo": "MEI_EI",
+     "severidade": "info",
+     "titulo": "Microempreendedor individual",
+     "detalhe": "O MEI é empresário individual: o próprio titular assina pelo CNPJ.",
+     "fundamento": [
+      "CC art. 966",
+      "LC 123/2006, art. 18-A"
+     ],
+     "fontes": [],
+     "caminho": null
+    },
+    {
+     "codigo": "TITULARIDADE_OK",
+     "severidade": "ok",
+     "titulo": "Veículo registrado no CNPJ da empresa",
+     "detalhe": "Proprietário no CRLV: 60.827.183 ROGERIO FERNANDES LIMA.",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [
+      {
+       "doc_id": "CRLV",
+       "doc_titulo": "CRLV",
+       "trecho": "DFU7V03",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 146,
+       "fim": 153
+      }
+     ],
+     "caminho": null
+    }
+   ],
+   "regras": [],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-10-12",
+    "atos": [
+     {
+      "doc": "MEI_CCMEI",
+      "titulo": "Requerimento de Empresário (2021)",
+      "efeito": "2021-06-01"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "71409212882",
+      "nome": "Rogério Fernandes Lima",
+      "cargo": "empresário titular",
+      "doc": "MEI_CCMEI"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "71409212882",
+      "nome": "Rogério Fernandes Lima",
+      "percentual": 100.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "60.827.183 ROGERIO FERNANDES LIMA",
+      "sub": "60.827.183/0001-45"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "FIAT/FIORINO ENDURANCE 1.4",
+      "sub": "DFU7V03"
+     },
+     {
+      "id": "71409212882",
+      "tipo": "pessoa",
+      "rotulo": "Rogério Fernandes Lima",
+      "papeis": [
+       "sócio 100%",
+       "empresário titular"
+      ],
+      "assinante": true
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "valido"
+     },
+     {
+      "de": "71409212882",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "100%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "71409212882",
+      "tipo": "administracao",
+      "rotulo": "administra · isolado",
+      "status": "valido",
+      "doc": "MEI_CCMEI"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2021-06-01",
+     "tipo": "ato",
+     "titulo": "Requerimento de Empresário (2021)",
+     "doc": "MEI_CCMEI",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-10-12",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 82.000,00"
+    }
+   ],
+   "pessoas": {
+    "71409212882": {
+     "nome": "Rogério Fernandes Lima",
+     "cpf": "71409212882"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "comprovada",
+    "outorgante": {
+     "nome": "60.827.183 ROGERIO FERNANDES LIMA",
+     "cnpj": "60.827.183/0001-45",
+     "tipo": "EI",
+     "atos_vigentes": [
+      {
+       "titulo": "Requerimento de Empresário (2021)",
+       "doc": "MEI_CCMEI",
+       "efeito": "2021-06-01"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "Rogério Fernandes Lima",
+      "cpf": "714.092.128-82",
+      "identificacao": "CPF",
+      "qualidade": "empresário titular"
+     }
+    ],
+    "poderes_conferidos": [
+     "Regra supletiva do Código Civil (o ato constitutivo não define a forma de assinar)."
+    ],
+    "prazo_validade": [
+     "Rogério Fernandes Lima (empresário titular): mandato por prazo indeterminado"
+    ],
+    "revogacao": [
+     "Poder decorre do ato constitutivo vigente na data da venda; recomenda-se certidão simplificada atualizada da Junta Comercial para afastar alteração posterior ainda não apresentada."
+    ],
+    "fontes": [
+     {
+      "doc_id": "MEI_CCMEI",
+      "doc_titulo": "Requerimento de Empresário (2021)",
+      "trecho": "ROGÉRIO FERNANDES LIMA Nome Fantasia: ROGÉRIO FRETES E MUDANÇAS CNPJ: 60",
+      "clausula": null,
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 202,
+      "fim": 274
+     }
+    ],
+    "documentos_verificaveis": [
+     {
+      "id": "MEI_CCMEI",
+      "titulo": "Requerimento de Empresário (2021)",
+      "arquivo": "MEI_CCMEI.pdf"
+     },
+     {
+      "id": "CRLV",
+      "titulo": "CRLV",
+      "arquivo": "CRLV.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "MEI_CCMEI",
+     "nome": "MEI_CCMEI.pdf",
+     "tipo": "requerimento_empresario",
+     "titulo": "Requerimento de Empresário (2021)",
+     "data": "2021-06-01",
+     "paginas": [
+      "CERTIFICADO DA CONDIÇÃO DE MICROEMPREENDEDOR INDIVIDUAL\nPortal do Empreendedor – Microempreendedor Individual (MEI)\nIDENTIFICAÇÃO\nNome Empresarial: 60.827.183 ROGERIO FERNANDES LIMA\nNome do Empresário: ROGÉRIO FERNANDES LIMA\nNome Fantasia: ROGÉRIO FRETES E MUDANÇAS\nCNPJ: 60.827.183/0001-45\nData de Início das Atividades: 01/06/2021\nSituação Cadastral Vigente: ATIVA\nNúmero do Registro (NIRE): 23153565547\nCPF: 714.092.128-82\nIdentidade: 39604087 SSP/CE\nATIVIDADES\nForma de Atuação: Estabelecimento fixo; Porta a porta\nOcupação Principal: Transportador municipal de cargas não perigosas (carreto)\nAtividade Principal (CNAE): 4930-2/01 – Transporte rodoviário de carga, exceto produtos\nperigosos e mudanças, municipal\nOcupação Secundária: Transportador de mudanças\nAtividade Secundária (CNAE): 4930-2/04 – Transporte rodoviário de mudanças\nENDEREÇO E CAPITAL\nEndereço Comercial: Rua Major Agostinho, nº 386, bairro Centro, Maranguape/CE, CEP\n61940-000\nCapital Social: R$ 5.000,00 (cinco mil reais)\nDECLARAÇÕES DO EMPRESÁRIO\nDeclaro, sob as penas da lei, que não estou impedido de exercer atividade empresária, por lei\nespecial ou em virtude de condenação criminal, que não possuo outro registro como empresário e\nque não participo de outra empresa como titular, sócio ou administrador.\nDeclaro, ainda, que me enquadro na condição de Microempreendedor Individual, nos termos do art.\n18-A da Lei Complementar nº 123, de 14 de dezembro de 2006, e que não incorro em nenhuma das\nvedações ao ingresso nesse regime.\nTERMO DE CIÊNCIA E RESPONSABILIDADE COM EFEITO DE DISPENSA DE\nALVARÁ E LICENÇA DE FUNCIONAMENTO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "Declaro conhecer e atender aos requisitos legais exigidos pelo Estado e pelo Município para o\nfuncionamento da atividade, compreendidos os aspectos sanitários, ambientais, tributários, de\nsegurança pública e de uso e ocupação do solo, ciente de que o não atendimento desses requisitos\nacarretará o cancelamento deste Termo.\nDeclarações prestadas pelo empresário no Portal do Empreendedor, no ato da formalização, em 1º de\njunho de 2021.\nOBSERVAÇÕES\nEste Certificado comprova o registro do empresário como Microempreendedor Individual e a sua\ninscrição no CNPJ. O CCMEI dispensa assinatura e é válido com a verificação de autenticidade no\nPortal do Empreendedor, mediante a informação do CNPJ e do código de autenticidade indicado\nabaixo.\nCertificado emitido em 12/08/2026\nCódigo de autenticidade: 4B7D-91E2-A6C3-5F08\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "6db91607090ce7b665cb4decf664d81415c3983339e672a023f4dd51d322f2d9",
+     "leitura": {}
+    },
+    {
+     "id": "CRLV",
+     "nome": "CRLV.pdf",
+     "tipo": "crlv",
+     "titulo": "CRLV",
+     "data": null,
+     "paginas": [
+      "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n01577162533\nPLACA\nDFU7V03\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2022\nANO MODELO\n2022\nNÚMERO DO CRV\n681851046203\nCÓDIGO DE SEGURANÇA DO CLA\n52247142770\nMARCA / MODELO / VERSÃO\nFIAT/FIORINO ENDURANCE 1.4\nESPÉCIE / TIPO\nCARGA/FURGÃO\nCHASSI\n9BDDP7AR0DK0FZ4GL\nCOR PREDOMINANTE\nBRANCA\nCOMBUSTÍVEL\nÁLCOOL/GASOLINA\nNOME\n60.827.183 ROGERIO FERNANDES LIMA\nCPF / CNPJ\n60.827.183/0001-45\nLOCAL\nMARANGUAPE/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "89ec6563d464cb65d82540b98ad9a8138d3a4a088166a5ce2dfa8cd7ff4e3c8b",
+     "leitura": {}
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "gabarito",
+    "politica": "Código Civil (genérica)"
+   },
+   "lado": "vendedor"
+  }
+ },
+ "geral": {
+  "veredito": "PODE",
+  "faixa": "VERDE",
+  "indice": 100.0,
+  "resumo": "Vendedor: Rogério Fernandes Lima pode assinar a ATPV-e — regra supletiva (contrato não define a forma de assinar).",
+  "motivos_faixa": [
+   "Vendedor — índice 100 ≥ limiar 85"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "FIAT/FIORINO ENDURANCE 1.4",
+   "placa": "DFU7V03",
+   "renavam": "01577162533",
+   "chassi": "9BDDP7AR0DK0FZ4GL"
+  },
+  "data_venda": "2026-10-12",
+  "valor": 82000.0,
+  "vendedor": {
+   "tipo": "PJ",
+   "nome": "60.827.183 ROGERIO FERNANDES LIMA",
+   "documento": "60.827.183/0001-45",
+   "assinantes": [
+    {
+     "nome": "ROGERIO F LIMA",
+     "cpf": "714.092.128-82"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": "DÉBORA LINS MOURA",
+   "documento": "045.115.091-07",
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "ATPV-e"
+ },
+ "hash_entrada": "46fbddb7413da782d21581f72cfd0a0e4ae0f54f1d220a10ada1b7499de20d1e"
+}

@@ -1,0 +1,982 @@
+{
+ "versao": "0.1.0",
+ "gerado_em": "2026-10-17T10:07:52",
+ "pedido": {
+  "veiculo": {
+   "descricao": "VOLVO/FH 460 6X2T",
+   "placa": "PXC9W33",
+   "renavam": "05699439826",
+   "chassi": "9BV3TCT6V3TP5LZWT"
+  },
+  "data_venda": "2026-09-14",
+  "valor": 420000.0,
+  "assinantes": [
+   {
+    "nome": "Hélio Bandeira Forte",
+    "cpf": "264.686.164-84"
+   }
+  ],
+  "forma_assinatura": "ATPV-e",
+  "comprador": "Frota Fácil Locações Ltda.",
+  "vendedor_cnpj": "24.646.686/0001-50",
+  "lado": "vendedor"
+ },
+ "empresa": {
+  "razao_social": "CERÂMICA RUSSAS LTDA.",
+  "cnpj": "24.646.686/0001-50",
+  "tipo": "LTDA",
+  "objeto": "fabricação de telhas, tijolos e outros artigos de barro cozido",
+  "comercializa_veiculos": false,
+  "subtipo": null
+ },
+ "veredito": "NAO_PODE",
+ "faixa": "VERMELHO",
+ "indice": 0.0,
+ "confianca": 1.0,
+ "componentes": {
+  "leitura": 1.0,
+  "juridica": 1.0,
+  "fatos_decisivos": 1,
+  "menor_confianca_fato": 1.0,
+  "alertas": 0,
+  "atencoes": 0,
+  "fatos_pouco_ancorados": 0
+ },
+ "motivos_faixa": [
+  "índice 0 ≤ limiar 15"
+ ],
+ "resumo": "Os assinantes informados não bastam. Quem pode assinar: Hélio Bandeira Forte e Regina Célia Forte. Regra aplicável: alienação de veículos (Cláusula Oitava).",
+ "assinantes": [
+  {
+   "informado": "Hélio Bandeira Forte",
+   "cpf": "264.686.164-84",
+   "chave": "26468616484",
+   "nome": "Hélio Bandeira Forte",
+   "criterio": "CPF"
+  }
+ ],
+ "quem_pode": [
+  {
+   "id": "contrato:26468616484+52477647229",
+   "pessoas": [
+    {
+     "chave": "26468616484",
+     "nome": "Hélio Bandeira Forte"
+    },
+    {
+     "chave": "52477647229",
+     "nome": "Regina Célia Forte"
+    }
+   ],
+   "via": "contrato",
+   "descricao": "alienação de veículos — Cláusula Oitava",
+   "cadeia": [
+    "RUSSAS_ALT1"
+   ],
+   "severidade": "ok",
+   "confianca": 1.0,
+   "achados": [],
+   "precondicoes": []
+  }
+ ],
+ "caminhos_invalidos": [],
+ "caminho_escolhido": null,
+ "faltantes": [
+  {
+   "alternativa": "contrato:26468616484+52477647229",
+   "via": "contrato",
+   "descricao": "alienação de veículos — Cláusula Oitava",
+   "pessoas": [
+    "26468616484",
+    "52477647229"
+   ],
+   "faltam": [
+    "52477647229"
+   ],
+   "faltam_nomes": [
+    "Regina Célia Forte"
+   ],
+   "pessoas_nomes": [
+    "Hélio Bandeira Forte",
+    "Regina Célia Forte"
+   ]
+  }
+ ],
+ "achados": [
+  {
+   "codigo": "CND_INSS",
+   "severidade": "info",
+   "titulo": "CND previdenciária",
+   "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+   "fundamento": [
+    "Lei 8.212/91, art. 47, I, \"c\""
+   ],
+   "fontes": [],
+   "caminho": null
+  },
+  {
+   "codigo": "TITULARIDADE_OK",
+   "severidade": "ok",
+   "titulo": "Veículo registrado no CNPJ da empresa",
+   "detalhe": "Proprietário no CRLV: CERÂMICA RUSSAS LTDA..",
+   "fundamento": [
+    "CTB art. 123"
+   ],
+   "fontes": [
+    {
+     "doc_id": "CRLV",
+     "doc_titulo": "CRLV",
+     "trecho": "PXC9W33",
+     "clausula": null,
+     "ancoragem": 100.0,
+     "pagina": 1,
+     "inicio": 146,
+     "fim": 153
+    }
+   ],
+   "caminho": null
+  }
+ ],
+ "regras": [
+  {
+   "regra": "RUSSAS_ALT1#R1",
+   "escopo": "alienacao_veiculos",
+   "aplicavel": true,
+   "motivo": "alienação de veículos",
+   "so_condicao": false,
+   "fonte": {
+    "doc_id": "RUSSAS_ALT1",
+    "doc_titulo": "Alteração Contratual (2025)",
+    "trecho": "A administração da sociedade será exercida pelos sócios HÉLIO BANDEIRA FORTE e REGINA CÉLIA FORTE, em conjunto, exigindo-se a assinatura de ambos os sócios para a alienação de bens móveis e imóveis, inclusive veículos, bem como para a representação da sociedade, ativa e passivamente, em juízo ou fora dele, vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor",
+    "clausula": "Cláusula Oitava",
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 1229,
+    "fim": 1663
+   },
+   "modo": "conjunto",
+   "pessoas": [
+    "Hélio Bandeira Forte",
+    "Regina Célia Forte"
+   ],
+   "cargo": null,
+   "valor_acima_de": null,
+   "confianca": 1.0,
+   "verificacoes": [
+    {
+     "campo": "modo",
+     "valor_llm": "conjunto",
+     "valor_lexico": "conjunto",
+     "divergiu": false,
+     "corrigido_para": null,
+     "expressoes": [
+      "assinatura de ambos",
+      "ambos os socios"
+     ]
+    },
+    {
+     "campo": "escopo",
+     "valor_llm": "alienacao_bens",
+     "valor_lexico": "alienacao_veiculos",
+     "divergiu": false,
+     "corrigido_para": "alienacao_veiculos",
+     "expressoes": []
+    },
+    {
+     "campo": "ato",
+     "valor_llm": "alienar",
+     "valor_lexico": "alienar+adquirir",
+     "divergiu": false,
+     "corrigido_para": "alienar+adquirir",
+     "expressoes": []
+    }
+   ],
+   "decisiva": true
+  }
+ ],
+ "precondicoes": [],
+ "regime": {
+  "data": "2026-09-14",
+  "atos": [
+   {
+    "doc": "RUSSAS_CS",
+    "titulo": "Contrato Social (2018)",
+    "efeito": "2018-10-22"
+   },
+   {
+    "doc": "RUSSAS_ALT1",
+    "titulo": "Alteração Contratual (2025)",
+    "efeito": "2025-08-11"
+   }
+  ],
+  "administradores": [
+   {
+    "chave": "26468616484",
+    "nome": "Hélio Bandeira Forte",
+    "cargo": "sócio administrador",
+    "doc": "RUSSAS_ALT1"
+   },
+   {
+    "chave": "52477647229",
+    "nome": "Regina Célia Forte",
+    "cargo": "sócio administrador",
+    "doc": "RUSSAS_ALT1"
+   }
+  ],
+  "encerrados": [],
+  "socios": [
+   {
+    "chave": "26468616484",
+    "nome": "Hélio Bandeira Forte",
+    "percentual": 50.0
+   },
+   {
+    "chave": "52477647229",
+    "nome": "Regina Célia Forte",
+    "percentual": 50.0
+   }
+  ]
+ },
+ "grafo": {
+  "nos": [
+   {
+    "id": "EMPRESA",
+    "tipo": "empresa",
+    "rotulo": "CERÂMICA RUSSAS LTDA.",
+    "sub": "24.646.686/0001-50"
+   },
+   {
+    "id": "VEICULO",
+    "tipo": "veiculo",
+    "rotulo": "VOLVO/FH 460 6X2T",
+    "sub": "PXC9W33"
+   },
+   {
+    "id": "26468616484",
+    "tipo": "pessoa",
+    "rotulo": "Hélio Bandeira Forte",
+    "papeis": [
+     "sócio 50%",
+     "sócio administrador"
+    ],
+    "assinante": true
+   },
+   {
+    "id": "52477647229",
+    "tipo": "pessoa",
+    "rotulo": "Regina Célia Forte",
+    "papeis": [
+     "sócio 50%",
+     "sócio administrador"
+    ],
+    "assinante": false
+   }
+  ],
+  "arestas": [
+   {
+    "de": "EMPRESA",
+    "para": "VEICULO",
+    "tipo": "propriedade",
+    "rotulo": "proprietária",
+    "status": "valido"
+   },
+   {
+    "de": "26468616484",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "50%",
+    "status": "neutro"
+   },
+   {
+    "de": "52477647229",
+    "para": "EMPRESA",
+    "tipo": "socio",
+    "rotulo": "50%",
+    "status": "neutro"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "26468616484",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "RUSSAS_ALT1"
+   },
+   {
+    "de": "EMPRESA",
+    "para": "52477647229",
+    "tipo": "administracao",
+    "rotulo": "administra · em conjunto",
+    "status": "valido",
+    "doc": "RUSSAS_ALT1"
+   }
+  ]
+ },
+ "linha_do_tempo": [
+  {
+   "data": "2018-10-22",
+   "tipo": "ato",
+   "titulo": "Contrato Social (2018)",
+   "doc": "RUSSAS_CS",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2025-08-11",
+   "tipo": "ato",
+   "titulo": "Alteração Contratual (2025)",
+   "doc": "RUSSAS_ALT1",
+   "detalhe": "altera a administração"
+  },
+  {
+   "data": "2026-09-14",
+   "tipo": "venda",
+   "titulo": "Data da venda (ATPV)",
+   "doc": null,
+   "detalhe": "R$ 420.000,00"
+  }
+ ],
+ "pessoas": {
+  "26468616484": {
+   "nome": "Hélio Bandeira Forte",
+   "cpf": "26468616484"
+  },
+  "52477647229": {
+   "nome": "Regina Célia Forte",
+   "cpf": "52477647229"
+  }
+ },
+ "comprovacao_poderes": {
+  "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+  "status": "não comprovada",
+  "outorgante": {
+   "nome": "CERÂMICA RUSSAS LTDA.",
+   "cnpj": "24.646.686/0001-50",
+   "tipo": "LTDA",
+   "atos_vigentes": [
+    {
+     "titulo": "Contrato Social (2018)",
+     "doc": "RUSSAS_CS",
+     "efeito": "2018-10-22"
+    },
+    {
+     "titulo": "Alteração Contratual (2025)",
+     "doc": "RUSSAS_ALT1",
+     "efeito": "2025-08-11"
+    }
+   ]
+  },
+  "outorgado": [
+   {
+    "nome": "Hélio Bandeira Forte",
+    "cpf": "264.686.164-84",
+    "identificacao": "CPF",
+    "qualidade": "sócio administrador"
+   }
+  ],
+  "poderes_conferidos": [
+   "Alteração Contratual (2025), Cláusula Oitava: para este veículo, exige Hélio Bandeira Forte e Regina Célia Forte.",
+   "Assinantes informados (Hélio Bandeira Forte) não atendem a essa exigência."
+  ],
+  "prazo_validade": [
+   "—"
+  ],
+  "revogacao": [
+   "—"
+  ],
+  "fontes": [
+   {
+    "doc_id": "RUSSAS_ALT1",
+    "doc_titulo": "Alteração Contratual (2025)",
+    "trecho": "A administração da sociedade será exercida pelos sócios HÉLIO BANDEIRA FORTE e REGINA CÉLIA FORTE, em conjunto, exigindo-se a assinatura de ambos os sócios para a alienação de bens móveis e imóveis, inclusive veículos, bem como para a representação da sociedade, ativa e passivamente, em juízo ou fora dele, vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor",
+    "clausula": "Cláusula Oitava",
+    "ancoragem": 100.0,
+    "pagina": 1,
+    "inicio": 1229,
+    "fim": 1663
+   }
+  ],
+  "documentos_verificaveis": [
+   {
+    "id": "RUSSAS_CS",
+    "titulo": "Contrato Social (2018)",
+    "arquivo": "RUSSAS_CS.pdf"
+   },
+   {
+    "id": "RUSSAS_ALT1",
+    "titulo": "Alteração Contratual (2025)",
+    "arquivo": "RUSSAS_ALT1.pdf"
+   },
+   {
+    "id": "CRLV",
+    "titulo": "CRLV",
+    "arquivo": "CRLV.pdf"
+   }
+  ]
+ },
+ "documentos": [
+  {
+   "id": "RUSSAS_CS",
+   "nome": "RUSSAS_CS.pdf",
+   "tipo": "contrato_social",
+   "titulo": "Contrato Social (2018)",
+   "data": "2018-10-22",
+   "paginas": [
+    "CONTRATO SOCIAL DE CONSTITUIÇÃO\nCERÂMICA RUSSAS LTDA.\nPelo presente instrumento particular, os abaixo assinados:\nHÉLIO BANDEIRA FORTE, brasileiro, casado sob o regime de comunhão parcial de bens,\nempresário, portador da carteira de identidade nº 26125395 SSP/CE e inscrito no CPF sob o nº\n264.686.164-84, residente e domiciliado na Rua José Bezerra de Menezes, nº 120, bairro Centro,\nRussas/CE, CEP 62900-000; e\nREGINA CÉLIA FORTE, brasileira, casada sob o regime de comunhão parcial de bens, empresária,\nportadora da carteira de identidade nº 44726695 SSP/CE e inscrita no CPF sob o nº 524.776.472-29,\nresidente e domiciliada na Rua Floriano Peixoto, nº 455, bairro Planalto, Russas/CE, CEP\n62900-000;\nresolvem constituir uma sociedade empresária limitada, que se regerá pelas cláusulas e condições\nseguintes e, nas omissões, pelas disposições do Código Civil aplicáveis às sociedades limitadas.\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL\nA sociedade girará sob o nome empresarial CERÂMICA RUSSAS LTDA.\nCLÁUSULA SEGUNDA – DA SEDE\nA sociedade terá sede no Sítio Lagoa Grande, s/n, Rodovia CE-356, Km 4, Zona Rural, Russas/CE,\nCEP 62900-000, podendo abrir e encerrar filiais, depósitos e escritórios em qualquer parte do\nterritório nacional, mediante alteração contratual.\nCLÁUSULA TERCEIRA – DO OBJETO SOCIAL\nA sociedade tem por objeto a fabricação de telhas, tijolos e outros artigos de barro cozido.\nParágrafo único. A atividade corresponde ao código CNAE 2342-7/02 – fabricação de artefatos de\ncerâmica e barro cozido para uso na construção, exceto azulejos e pisos.\nCLÁUSULA QUARTA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciará suas atividades na data do registro deste contrato na Junta Comercial do Estado\ndo Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUINTA – DO CAPITAL SOCIAL\nO capital social é de R$ 700.000,00 (setecentos mil reais), dividido em 700.000 (setecentas mil)\nquotas de valor nominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas neste\nato, em moeda corrente do País, assim distribuídas entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nHÉLIO BANDEIRA FORTE\n350.000\n350.000,00\n50%\nREGINA CÉLIA FORTE\n350.000\n350.000,00\n50%\nTotal\n700.000\n700.000,00\n100%\nCLÁUSULA SEXTA – DA RESPONSABILIDADE DOS SÓCIOS\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+    "A responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social, nos termos do art. 1.052 do Código Civil.\nCLÁUSULA SÉTIMA – DA CESSÃO DE QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas ou transferidas a terceiros sem o consentimento\ndo outro sócio, a quem fica assegurado, em igualdade de condições e preço, o direito de preferência\npara a sua aquisição, a ser exercido no prazo de 30 (trinta) dias contados da comunicação escrita da\nintenção de venda.\nCLÁUSULA OITAVA – DA ADMINISTRAÇÃO\nA administração da sociedade caberá aos sócios HÉLIO BANDEIRA FORTE e REGINA CÉLIA\nFORTE, os quais poderão representá-la isoladamente, ativa e passivamente, em juízo ou fora dele,\ncom poderes para praticar todos os atos necessários à consecução do objeto social, vedado, no\nentanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em\navais, fianças e endossos de favor.\nCLÁUSULA NONA – DO PRÓ-LABORE\nOs administradores terão direito a uma retirada mensal a título de pró-labore, em valor a ser fixado\nde comum acordo entre os sócios, observada a legislação tributária e previdenciária.\nCLÁUSULA DÉCIMA – DO EXERCÍCIO SOCIAL E DOS RESULTADOS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, em 31 de dezembro, os\nadministradores prestarão contas justificadas de sua administração, procedendo à elaboração do\ninventário, do balanço patrimonial e do balanço de resultado econômico, cabendo aos sócios, na\nproporção de suas quotas, os lucros ou as perdas apurados.\nCLÁUSULA DÉCIMA PRIMEIRA – DAS DELIBERAÇÕES SOCIAIS\nAs deliberações dos sócios serão tomadas em reunião, convocada na forma da lei, observados os\nquóruns previstos no Código Civil, ficando dispensada a reunião quando todos os sócios decidirem,\npor escrito, sobre a matéria que seria objeto dela.\nCLÁUSULA DÉCIMA SEGUNDA – DO FALECIMENTO OU DA INCAPACIDADE DE\nSÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros, sucessores ou o representante legal do incapaz. Não sendo possível ou inexistindo\ninteresse destes ou do sócio remanescente, o valor de seus haveres será apurado e liquidado com\nbase na situação patrimonial da sociedade, à data da resolução, verificada em balanço especialmente\nlevantado.\nCLÁUSULA DÉCIMA TERCEIRA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nOs administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade por lei especial, ou em virtude de condenação criminal, ou por se\nencontrarem sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\npúblicos; ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato; ou contra\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+    "a economia popular, contra o sistema financeiro nacional, contra as normas de defesa da\nconcorrência, contra as relações de consumo, a fé pública ou a propriedade.\nCLÁUSULA DÉCIMA QUARTA – DO FORO\nFica eleito o foro da Comarca de Russas/CE para o exercício e o cumprimento dos direitos e das\nobrigações resultantes deste contrato.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em via única,\npara que produza seus efeitos legais após o arquivamento na Junta Comercial do Estado do Ceará.\nRussas/CE, 22 de outubro de 2018.\nHÉLIO BANDEIRA FORTE\nREGINA CÉLIA FORTE\nVisto: Ricardo Albuquerque Tavares – OAB/CE nº 18.432\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 05/11/2018 sob o nº 40315990371\nProtocolo: 18/366.152-9 | NIRE: 23315747077\nEmpresa: CERÂMICA RUSSAS LTDA. | CNPJ: 24.646.686/0001-50\nAutenticação: E6A01B7D93C25F48D2A7B10C\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "a71779a7e945447b9002dba4314f80c72f483875981b2bc318c876cdad883f65",
+   "leitura": {}
+  },
+  {
+   "id": "RUSSAS_ALT1",
+   "nome": "RUSSAS_ALT1.pdf",
+   "tipo": "alteracao_contratual",
+   "titulo": "Alteração Contratual (2025)",
+   "data": "2025-08-11",
+   "paginas": [
+    "PRIMEIRA ALTERAÇÃO DO CONTRATO SOCIAL\nCERÂMICA RUSSAS LTDA.\nCNPJ nº 24.646.686/0001-50 – NIRE 23315747077\nHÉLIO BANDEIRA FORTE, brasileiro, casado sob o regime de comunhão parcial de bens,\nempresário, portador da carteira de identidade nº 26125395 SSP/CE e inscrito no CPF sob o nº\n264.686.164-84, residente e domiciliado na Rua José Bezerra de Menezes, nº 120, bairro Centro,\nRussas/CE, CEP 62900-000; e\nREGINA CÉLIA FORTE, brasileira, casada sob o regime de comunhão parcial de bens, empresária,\nportadora da carteira de identidade nº 44726695 SSP/CE e inscrita no CPF sob o nº 524.776.472-29,\nresidente e domiciliada na Rua Floriano Peixoto, nº 455, bairro Planalto, Russas/CE, CEP\n62900-000;\núnicos sócios da sociedade empresária limitada CERÂMICA RUSSAS LTDA., com sede no Sítio\nLagoa Grande, s/n, Rodovia CE-356, Km 4, Zona Rural, Russas/CE, CEP 62900-000, inscrita no\nCNPJ sob o nº 24.646.686/0001-50, com contrato social arquivado na Junta Comercial do Estado do\nCeará sob o NIRE 23315747077, em 05/11/2018, resolvem alterar o contrato social mediante as\ncláusulas seguintes:\nCLÁUSULA PRIMEIRA – DA ALTERAÇÃO DA ADMINISTRAÇÃO\nA Cláusula Oitava passa a vigorar com a seguinte redação:\n\"CLÁUSULA OITAVA – DA ADMINISTRAÇÃO. A administração da sociedade será exercida\npelos sócios HÉLIO BANDEIRA FORTE e REGINA CÉLIA FORTE, em conjunto, exigindo-se a\nassinatura de ambos os sócios para a alienação de bens móveis e imóveis, inclusive veículos, bem\ncomo para a representação da sociedade, ativa e passivamente, em juízo ou fora dele, vedado o uso\ndo nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e\nendossos de favor.\"\nCLÁUSULA SEGUNDA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nOs administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade por lei especial, ou em virtude de condenação criminal, ou por se\nencontrarem sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\npúblicos; ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato; ou contra\na economia popular, contra o sistema financeiro nacional, contra as normas de defesa da\nconcorrência, contra as relações de consumo, a fé pública ou a propriedade.\nCLÁUSULA TERCEIRA – DA RATIFICAÇÃO DAS DEMAIS CLÁUSULAS\nPermanecem inalteradas as demais cláusulas do contrato social, que os sócios ratificam\nexpressamente. A presente alteração não modifica o capital social de R$ 700.000,00 (setecentos mil\nreais) nem a sua distribuição entre os sócios.\nE, por estarem assim justos e contratados, os sócios assinam a presente alteração em via única, para\nque produza seus efeitos legais após o arquivamento na Junta Comercial do Estado do Ceará.\nRussas/CE, 11 de agosto de 2025.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+    "HÉLIO BANDEIRA FORTE\nREGINA CÉLIA FORTE\nVisto: Ricardo Albuquerque Tavares – OAB/CE nº 18.432\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 25/08/2025 sob o nº 92429979789\nProtocolo: 25/301.874-2 | NIRE: 23315747077\nEmpresa: CERÂMICA RUSSAS LTDA. | CNPJ: 24.646.686/0001-50\nAutenticação: 0A9D4C7E21B85F36E4D2C18B\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "abd739c57ea75b52f50437b3ac1c809eef008d32ee124932867d970aaebe1630",
+   "leitura": {}
+  },
+  {
+   "id": "CRLV",
+   "nome": "CRLV.pdf",
+   "tipo": "crlv",
+   "titulo": "CRLV",
+   "data": null,
+   "paginas": [
+    "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n05699439826\nPLACA\nPXC9W33\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2019\nANO MODELO\n2019\nNÚMERO DO CRV\n249967609005\nCÓDIGO DE SEGURANÇA DO CLA\n80506414021\nMARCA / MODELO / VERSÃO\nVOLVO/FH 460 6X2T\nESPÉCIE / TIPO\nTRAÇÃO/CAMINHÃO TRATOR\nCHASSI\n9BV3TCT6V3TP5LZWT\nCOR PREDOMINANTE\nBRANCA\nCOMBUSTÍVEL\nDIESEL\nNOME\nCERÂMICA RUSSAS LTDA.\nCPF / CNPJ\n24.646.686/0001-50\nLOCAL\nRUSSAS/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+   ],
+   "metodo": "texto",
+   "ocr_confianca": null,
+   "sha256": "8e6bd8972fb5d90029513616c9b29f6b2bb0d2544a3fcd968fea021f6c604ad1",
+   "leitura": {}
+  }
+ ],
+ "avisos": [],
+ "meta": {
+  "provedor": "gabarito",
+  "politica": "DETRAN-CE"
+ },
+ "lado": "vendedor",
+ "lados": {
+  "vendedor": {
+   "versao": "0.1.0",
+   "gerado_em": "2026-10-17T10:07:52",
+   "pedido": {
+    "veiculo": {
+     "descricao": "VOLVO/FH 460 6X2T",
+     "placa": "PXC9W33",
+     "renavam": "05699439826",
+     "chassi": "9BV3TCT6V3TP5LZWT"
+    },
+    "data_venda": "2026-09-14",
+    "valor": 420000.0,
+    "assinantes": [
+     {
+      "nome": "Hélio Bandeira Forte",
+      "cpf": "264.686.164-84"
+     }
+    ],
+    "forma_assinatura": "ATPV-e",
+    "comprador": "Frota Fácil Locações Ltda.",
+    "vendedor_cnpj": "24.646.686/0001-50",
+    "lado": "vendedor"
+   },
+   "empresa": {
+    "razao_social": "CERÂMICA RUSSAS LTDA.",
+    "cnpj": "24.646.686/0001-50",
+    "tipo": "LTDA",
+    "objeto": "fabricação de telhas, tijolos e outros artigos de barro cozido",
+    "comercializa_veiculos": false,
+    "subtipo": null
+   },
+   "veredito": "NAO_PODE",
+   "faixa": "VERMELHO",
+   "indice": 0.0,
+   "confianca": 1.0,
+   "componentes": {
+    "leitura": 1.0,
+    "juridica": 1.0,
+    "fatos_decisivos": 1,
+    "menor_confianca_fato": 1.0,
+    "alertas": 0,
+    "atencoes": 0,
+    "fatos_pouco_ancorados": 0
+   },
+   "motivos_faixa": [
+    "índice 0 ≤ limiar 15"
+   ],
+   "resumo": "Os assinantes informados não bastam. Quem pode assinar: Hélio Bandeira Forte e Regina Célia Forte. Regra aplicável: alienação de veículos (Cláusula Oitava).",
+   "assinantes": [
+    {
+     "informado": "Hélio Bandeira Forte",
+     "cpf": "264.686.164-84",
+     "chave": "26468616484",
+     "nome": "Hélio Bandeira Forte",
+     "criterio": "CPF"
+    }
+   ],
+   "quem_pode": [
+    {
+     "id": "contrato:26468616484+52477647229",
+     "pessoas": [
+      {
+       "chave": "26468616484",
+       "nome": "Hélio Bandeira Forte"
+      },
+      {
+       "chave": "52477647229",
+       "nome": "Regina Célia Forte"
+      }
+     ],
+     "via": "contrato",
+     "descricao": "alienação de veículos — Cláusula Oitava",
+     "cadeia": [
+      "RUSSAS_ALT1"
+     ],
+     "severidade": "ok",
+     "confianca": 1.0,
+     "achados": [],
+     "precondicoes": []
+    }
+   ],
+   "caminhos_invalidos": [],
+   "caminho_escolhido": null,
+   "faltantes": [
+    {
+     "alternativa": "contrato:26468616484+52477647229",
+     "via": "contrato",
+     "descricao": "alienação de veículos — Cláusula Oitava",
+     "pessoas": [
+      "26468616484",
+      "52477647229"
+     ],
+     "faltam": [
+      "52477647229"
+     ],
+     "faltam_nomes": [
+      "Regina Célia Forte"
+     ],
+     "pessoas_nomes": [
+      "Hélio Bandeira Forte",
+      "Regina Célia Forte"
+     ]
+    }
+   ],
+   "achados": [
+    {
+     "codigo": "CND_INSS",
+     "severidade": "info",
+     "titulo": "CND previdenciária",
+     "detalhe": "Valor acima de R$ 87.493,73: a lei exige CND na alienação de bem incorporado ao ativo permanente; verifique a exigência do órgão.",
+     "fundamento": [
+      "Lei 8.212/91, art. 47, I, \"c\""
+     ],
+     "fontes": [],
+     "caminho": null
+    },
+    {
+     "codigo": "TITULARIDADE_OK",
+     "severidade": "ok",
+     "titulo": "Veículo registrado no CNPJ da empresa",
+     "detalhe": "Proprietário no CRLV: CERÂMICA RUSSAS LTDA..",
+     "fundamento": [
+      "CTB art. 123"
+     ],
+     "fontes": [
+      {
+       "doc_id": "CRLV",
+       "doc_titulo": "CRLV",
+       "trecho": "PXC9W33",
+       "clausula": null,
+       "ancoragem": 100.0,
+       "pagina": 1,
+       "inicio": 146,
+       "fim": 153
+      }
+     ],
+     "caminho": null
+    }
+   ],
+   "regras": [
+    {
+     "regra": "RUSSAS_ALT1#R1",
+     "escopo": "alienacao_veiculos",
+     "aplicavel": true,
+     "motivo": "alienação de veículos",
+     "so_condicao": false,
+     "fonte": {
+      "doc_id": "RUSSAS_ALT1",
+      "doc_titulo": "Alteração Contratual (2025)",
+      "trecho": "A administração da sociedade será exercida pelos sócios HÉLIO BANDEIRA FORTE e REGINA CÉLIA FORTE, em conjunto, exigindo-se a assinatura de ambos os sócios para a alienação de bens móveis e imóveis, inclusive veículos, bem como para a representação da sociedade, ativa e passivamente, em juízo ou fora dele, vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor",
+      "clausula": "Cláusula Oitava",
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 1229,
+      "fim": 1663
+     },
+     "modo": "conjunto",
+     "pessoas": [
+      "Hélio Bandeira Forte",
+      "Regina Célia Forte"
+     ],
+     "cargo": null,
+     "valor_acima_de": null,
+     "confianca": 1.0,
+     "verificacoes": [
+      {
+       "campo": "modo",
+       "valor_llm": "conjunto",
+       "valor_lexico": "conjunto",
+       "divergiu": false,
+       "corrigido_para": null,
+       "expressoes": [
+        "assinatura de ambos",
+        "ambos os socios"
+       ]
+      },
+      {
+       "campo": "escopo",
+       "valor_llm": "alienacao_bens",
+       "valor_lexico": "alienacao_veiculos",
+       "divergiu": false,
+       "corrigido_para": "alienacao_veiculos",
+       "expressoes": []
+      },
+      {
+       "campo": "ato",
+       "valor_llm": "alienar",
+       "valor_lexico": "alienar+adquirir",
+       "divergiu": false,
+       "corrigido_para": "alienar+adquirir",
+       "expressoes": []
+      }
+     ],
+     "decisiva": true
+    }
+   ],
+   "precondicoes": [],
+   "regime": {
+    "data": "2026-09-14",
+    "atos": [
+     {
+      "doc": "RUSSAS_CS",
+      "titulo": "Contrato Social (2018)",
+      "efeito": "2018-10-22"
+     },
+     {
+      "doc": "RUSSAS_ALT1",
+      "titulo": "Alteração Contratual (2025)",
+      "efeito": "2025-08-11"
+     }
+    ],
+    "administradores": [
+     {
+      "chave": "26468616484",
+      "nome": "Hélio Bandeira Forte",
+      "cargo": "sócio administrador",
+      "doc": "RUSSAS_ALT1"
+     },
+     {
+      "chave": "52477647229",
+      "nome": "Regina Célia Forte",
+      "cargo": "sócio administrador",
+      "doc": "RUSSAS_ALT1"
+     }
+    ],
+    "encerrados": [],
+    "socios": [
+     {
+      "chave": "26468616484",
+      "nome": "Hélio Bandeira Forte",
+      "percentual": 50.0
+     },
+     {
+      "chave": "52477647229",
+      "nome": "Regina Célia Forte",
+      "percentual": 50.0
+     }
+    ]
+   },
+   "grafo": {
+    "nos": [
+     {
+      "id": "EMPRESA",
+      "tipo": "empresa",
+      "rotulo": "CERÂMICA RUSSAS LTDA.",
+      "sub": "24.646.686/0001-50"
+     },
+     {
+      "id": "VEICULO",
+      "tipo": "veiculo",
+      "rotulo": "VOLVO/FH 460 6X2T",
+      "sub": "PXC9W33"
+     },
+     {
+      "id": "26468616484",
+      "tipo": "pessoa",
+      "rotulo": "Hélio Bandeira Forte",
+      "papeis": [
+       "sócio 50%",
+       "sócio administrador"
+      ],
+      "assinante": true
+     },
+     {
+      "id": "52477647229",
+      "tipo": "pessoa",
+      "rotulo": "Regina Célia Forte",
+      "papeis": [
+       "sócio 50%",
+       "sócio administrador"
+      ],
+      "assinante": false
+     }
+    ],
+    "arestas": [
+     {
+      "de": "EMPRESA",
+      "para": "VEICULO",
+      "tipo": "propriedade",
+      "rotulo": "proprietária",
+      "status": "valido"
+     },
+     {
+      "de": "26468616484",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "50%",
+      "status": "neutro"
+     },
+     {
+      "de": "52477647229",
+      "para": "EMPRESA",
+      "tipo": "socio",
+      "rotulo": "50%",
+      "status": "neutro"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "26468616484",
+      "tipo": "administracao",
+      "rotulo": "administra · em conjunto",
+      "status": "valido",
+      "doc": "RUSSAS_ALT1"
+     },
+     {
+      "de": "EMPRESA",
+      "para": "52477647229",
+      "tipo": "administracao",
+      "rotulo": "administra · em conjunto",
+      "status": "valido",
+      "doc": "RUSSAS_ALT1"
+     }
+    ]
+   },
+   "linha_do_tempo": [
+    {
+     "data": "2018-10-22",
+     "tipo": "ato",
+     "titulo": "Contrato Social (2018)",
+     "doc": "RUSSAS_CS",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2025-08-11",
+     "tipo": "ato",
+     "titulo": "Alteração Contratual (2025)",
+     "doc": "RUSSAS_ALT1",
+     "detalhe": "altera a administração"
+    },
+    {
+     "data": "2026-09-14",
+     "tipo": "venda",
+     "titulo": "Data da venda (ATPV)",
+     "doc": null,
+     "detalhe": "R$ 420.000,00"
+    }
+   ],
+   "pessoas": {
+    "26468616484": {
+     "nome": "Hélio Bandeira Forte",
+     "cpf": "26468616484"
+    },
+    "52477647229": {
+     "nome": "Regina Célia Forte",
+     "cpf": "52477647229"
+    }
+   },
+   "comprovacao_poderes": {
+    "norma": "Resolução CONTRAN nº 1.027/2026, art. 28, § 7º",
+    "status": "não comprovada",
+    "outorgante": {
+     "nome": "CERÂMICA RUSSAS LTDA.",
+     "cnpj": "24.646.686/0001-50",
+     "tipo": "LTDA",
+     "atos_vigentes": [
+      {
+       "titulo": "Contrato Social (2018)",
+       "doc": "RUSSAS_CS",
+       "efeito": "2018-10-22"
+      },
+      {
+       "titulo": "Alteração Contratual (2025)",
+       "doc": "RUSSAS_ALT1",
+       "efeito": "2025-08-11"
+      }
+     ]
+    },
+    "outorgado": [
+     {
+      "nome": "Hélio Bandeira Forte",
+      "cpf": "264.686.164-84",
+      "identificacao": "CPF",
+      "qualidade": "sócio administrador"
+     }
+    ],
+    "poderes_conferidos": [
+     "Alteração Contratual (2025), Cláusula Oitava: para este veículo, exige Hélio Bandeira Forte e Regina Célia Forte.",
+     "Assinantes informados (Hélio Bandeira Forte) não atendem a essa exigência."
+    ],
+    "prazo_validade": [
+     "—"
+    ],
+    "revogacao": [
+     "—"
+    ],
+    "fontes": [
+     {
+      "doc_id": "RUSSAS_ALT1",
+      "doc_titulo": "Alteração Contratual (2025)",
+      "trecho": "A administração da sociedade será exercida pelos sócios HÉLIO BANDEIRA FORTE e REGINA CÉLIA FORTE, em conjunto, exigindo-se a assinatura de ambos os sócios para a alienação de bens móveis e imóveis, inclusive veículos, bem como para a representação da sociedade, ativa e passivamente, em juízo ou fora dele, vedado o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e endossos de favor",
+      "clausula": "Cláusula Oitava",
+      "ancoragem": 100.0,
+      "pagina": 1,
+      "inicio": 1229,
+      "fim": 1663
+     }
+    ],
+    "documentos_verificaveis": [
+     {
+      "id": "RUSSAS_CS",
+      "titulo": "Contrato Social (2018)",
+      "arquivo": "RUSSAS_CS.pdf"
+     },
+     {
+      "id": "RUSSAS_ALT1",
+      "titulo": "Alteração Contratual (2025)",
+      "arquivo": "RUSSAS_ALT1.pdf"
+     },
+     {
+      "id": "CRLV",
+      "titulo": "CRLV",
+      "arquivo": "CRLV.pdf"
+     }
+    ]
+   },
+   "documentos": [
+    {
+     "id": "RUSSAS_CS",
+     "nome": "RUSSAS_CS.pdf",
+     "tipo": "contrato_social",
+     "titulo": "Contrato Social (2018)",
+     "data": "2018-10-22",
+     "paginas": [
+      "CONTRATO SOCIAL DE CONSTITUIÇÃO\nCERÂMICA RUSSAS LTDA.\nPelo presente instrumento particular, os abaixo assinados:\nHÉLIO BANDEIRA FORTE, brasileiro, casado sob o regime de comunhão parcial de bens,\nempresário, portador da carteira de identidade nº 26125395 SSP/CE e inscrito no CPF sob o nº\n264.686.164-84, residente e domiciliado na Rua José Bezerra de Menezes, nº 120, bairro Centro,\nRussas/CE, CEP 62900-000; e\nREGINA CÉLIA FORTE, brasileira, casada sob o regime de comunhão parcial de bens, empresária,\nportadora da carteira de identidade nº 44726695 SSP/CE e inscrita no CPF sob o nº 524.776.472-29,\nresidente e domiciliada na Rua Floriano Peixoto, nº 455, bairro Planalto, Russas/CE, CEP\n62900-000;\nresolvem constituir uma sociedade empresária limitada, que se regerá pelas cláusulas e condições\nseguintes e, nas omissões, pelas disposições do Código Civil aplicáveis às sociedades limitadas.\nCLÁUSULA PRIMEIRA – DO NOME EMPRESARIAL\nA sociedade girará sob o nome empresarial CERÂMICA RUSSAS LTDA.\nCLÁUSULA SEGUNDA – DA SEDE\nA sociedade terá sede no Sítio Lagoa Grande, s/n, Rodovia CE-356, Km 4, Zona Rural, Russas/CE,\nCEP 62900-000, podendo abrir e encerrar filiais, depósitos e escritórios em qualquer parte do\nterritório nacional, mediante alteração contratual.\nCLÁUSULA TERCEIRA – DO OBJETO SOCIAL\nA sociedade tem por objeto a fabricação de telhas, tijolos e outros artigos de barro cozido.\nParágrafo único. A atividade corresponde ao código CNAE 2342-7/02 – fabricação de artefatos de\ncerâmica e barro cozido para uso na construção, exceto azulejos e pisos.\nCLÁUSULA QUARTA – DO INÍCIO DAS ATIVIDADES E DO PRAZO\nA sociedade iniciará suas atividades na data do registro deste contrato na Junta Comercial do Estado\ndo Ceará, e seu prazo de duração é indeterminado.\nCLÁUSULA QUINTA – DO CAPITAL SOCIAL\nO capital social é de R$ 700.000,00 (setecentos mil reais), dividido em 700.000 (setecentas mil)\nquotas de valor nominal de R$ 1,00 (um real) cada uma, totalmente subscritas e integralizadas neste\nato, em moeda corrente do País, assim distribuídas entre os sócios:\nSócio\nQuotas\nValor (R$)\nParticipação\nHÉLIO BANDEIRA FORTE\n350.000\n350.000,00\n50%\nREGINA CÉLIA FORTE\n350.000\n350.000,00\n50%\nTotal\n700.000\n700.000,00\n100%\nCLÁUSULA SEXTA – DA RESPONSABILIDADE DOS SÓCIOS\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/3",
+      "A responsabilidade de cada sócio é restrita ao valor de suas quotas, mas todos respondem\nsolidariamente pela integralização do capital social, nos termos do art. 1.052 do Código Civil.\nCLÁUSULA SÉTIMA – DA CESSÃO DE QUOTAS\nAs quotas são indivisíveis e não poderão ser cedidas ou transferidas a terceiros sem o consentimento\ndo outro sócio, a quem fica assegurado, em igualdade de condições e preço, o direito de preferência\npara a sua aquisição, a ser exercido no prazo de 30 (trinta) dias contados da comunicação escrita da\nintenção de venda.\nCLÁUSULA OITAVA – DA ADMINISTRAÇÃO\nA administração da sociedade caberá aos sócios HÉLIO BANDEIRA FORTE e REGINA CÉLIA\nFORTE, os quais poderão representá-la isoladamente, ativa e passivamente, em juízo ou fora dele,\ncom poderes para praticar todos os atos necessários à consecução do objeto social, vedado, no\nentanto, o uso do nome empresarial em atividades estranhas ao objeto social, especialmente em\navais, fianças e endossos de favor.\nCLÁUSULA NONA – DO PRÓ-LABORE\nOs administradores terão direito a uma retirada mensal a título de pró-labore, em valor a ser fixado\nde comum acordo entre os sócios, observada a legislação tributária e previdenciária.\nCLÁUSULA DÉCIMA – DO EXERCÍCIO SOCIAL E DOS RESULTADOS\nO exercício social coincidirá com o ano civil. Ao término de cada exercício, em 31 de dezembro, os\nadministradores prestarão contas justificadas de sua administração, procedendo à elaboração do\ninventário, do balanço patrimonial e do balanço de resultado econômico, cabendo aos sócios, na\nproporção de suas quotas, os lucros ou as perdas apurados.\nCLÁUSULA DÉCIMA PRIMEIRA – DAS DELIBERAÇÕES SOCIAIS\nAs deliberações dos sócios serão tomadas em reunião, convocada na forma da lei, observados os\nquóruns previstos no Código Civil, ficando dispensada a reunião quando todos os sócios decidirem,\npor escrito, sobre a matéria que seria objeto dela.\nCLÁUSULA DÉCIMA SEGUNDA – DO FALECIMENTO OU DA INCAPACIDADE DE\nSÓCIO\nFalecendo ou sendo interditado qualquer dos sócios, a sociedade continuará suas atividades com os\nherdeiros, sucessores ou o representante legal do incapaz. Não sendo possível ou inexistindo\ninteresse destes ou do sócio remanescente, o valor de seus haveres será apurado e liquidado com\nbase na situação patrimonial da sociedade, à data da resolução, verificada em balanço especialmente\nlevantado.\nCLÁUSULA DÉCIMA TERCEIRA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nOs administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade por lei especial, ou em virtude de condenação criminal, ou por se\nencontrarem sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\npúblicos; ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato; ou contra\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/3",
+      "a economia popular, contra o sistema financeiro nacional, contra as normas de defesa da\nconcorrência, contra as relações de consumo, a fé pública ou a propriedade.\nCLÁUSULA DÉCIMA QUARTA – DO FORO\nFica eleito o foro da Comarca de Russas/CE para o exercício e o cumprimento dos direitos e das\nobrigações resultantes deste contrato.\nE, por estarem assim justos e contratados, os sócios assinam o presente instrumento em via única,\npara que produza seus efeitos legais após o arquivamento na Junta Comercial do Estado do Ceará.\nRussas/CE, 22 de outubro de 2018.\nHÉLIO BANDEIRA FORTE\nREGINA CÉLIA FORTE\nVisto: Ricardo Albuquerque Tavares – OAB/CE nº 18.432\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 05/11/2018 sob o nº 40315990371\nProtocolo: 18/366.152-9 | NIRE: 23315747077\nEmpresa: CERÂMICA RUSSAS LTDA. | CNPJ: 24.646.686/0001-50\nAutenticação: E6A01B7D93C25F48D2A7B10C\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 3/3"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "a71779a7e945447b9002dba4314f80c72f483875981b2bc318c876cdad883f65",
+     "leitura": {}
+    },
+    {
+     "id": "RUSSAS_ALT1",
+     "nome": "RUSSAS_ALT1.pdf",
+     "tipo": "alteracao_contratual",
+     "titulo": "Alteração Contratual (2025)",
+     "data": "2025-08-11",
+     "paginas": [
+      "PRIMEIRA ALTERAÇÃO DO CONTRATO SOCIAL\nCERÂMICA RUSSAS LTDA.\nCNPJ nº 24.646.686/0001-50 – NIRE 23315747077\nHÉLIO BANDEIRA FORTE, brasileiro, casado sob o regime de comunhão parcial de bens,\nempresário, portador da carteira de identidade nº 26125395 SSP/CE e inscrito no CPF sob o nº\n264.686.164-84, residente e domiciliado na Rua José Bezerra de Menezes, nº 120, bairro Centro,\nRussas/CE, CEP 62900-000; e\nREGINA CÉLIA FORTE, brasileira, casada sob o regime de comunhão parcial de bens, empresária,\nportadora da carteira de identidade nº 44726695 SSP/CE e inscrita no CPF sob o nº 524.776.472-29,\nresidente e domiciliada na Rua Floriano Peixoto, nº 455, bairro Planalto, Russas/CE, CEP\n62900-000;\núnicos sócios da sociedade empresária limitada CERÂMICA RUSSAS LTDA., com sede no Sítio\nLagoa Grande, s/n, Rodovia CE-356, Km 4, Zona Rural, Russas/CE, CEP 62900-000, inscrita no\nCNPJ sob o nº 24.646.686/0001-50, com contrato social arquivado na Junta Comercial do Estado do\nCeará sob o NIRE 23315747077, em 05/11/2018, resolvem alterar o contrato social mediante as\ncláusulas seguintes:\nCLÁUSULA PRIMEIRA – DA ALTERAÇÃO DA ADMINISTRAÇÃO\nA Cláusula Oitava passa a vigorar com a seguinte redação:\n\"CLÁUSULA OITAVA – DA ADMINISTRAÇÃO. A administração da sociedade será exercida\npelos sócios HÉLIO BANDEIRA FORTE e REGINA CÉLIA FORTE, em conjunto, exigindo-se a\nassinatura de ambos os sócios para a alienação de bens móveis e imóveis, inclusive veículos, bem\ncomo para a representação da sociedade, ativa e passivamente, em juízo ou fora dele, vedado o uso\ndo nome empresarial em atividades estranhas ao objeto social, especialmente em avais, fianças e\nendossos de favor.\"\nCLÁUSULA SEGUNDA – DA DECLARAÇÃO DE DESIMPEDIMENTO\nOs administradores declaram, sob as penas da lei, que não estão impedidos de exercer a\nadministração da sociedade por lei especial, ou em virtude de condenação criminal, ou por se\nencontrarem sob os efeitos dela, a pena que vede, ainda que temporariamente, o acesso a cargos\npúblicos; ou por crime falimentar, de prevaricação, peita ou suborno, concussão, peculato; ou contra\na economia popular, contra o sistema financeiro nacional, contra as normas de defesa da\nconcorrência, contra as relações de consumo, a fé pública ou a propriedade.\nCLÁUSULA TERCEIRA – DA RATIFICAÇÃO DAS DEMAIS CLÁUSULAS\nPermanecem inalteradas as demais cláusulas do contrato social, que os sócios ratificam\nexpressamente. A presente alteração não modifica o capital social de R$ 700.000,00 (setecentos mil\nreais) nem a sua distribuição entre os sócios.\nE, por estarem assim justos e contratados, os sócios assinam a presente alteração em via única, para\nque produza seus efeitos legais após o arquivamento na Junta Comercial do Estado do Ceará.\nRussas/CE, 11 de agosto de 2025.\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 1/2",
+      "HÉLIO BANDEIRA FORTE\nREGINA CÉLIA FORTE\nVisto: Ricardo Albuquerque Tavares – OAB/CE nº 18.432\nJUNTA COMERCIAL DO ESTADO DO CEARÁ – JUCEC\nCertifico o registro em 25/08/2025 sob o nº 92429979789\nProtocolo: 25/301.874-2 | NIRE: 23315747077\nEmpresa: CERÂMICA RUSSAS LTDA. | CNPJ: 24.646.686/0001-50\nAutenticação: 0A9D4C7E21B85F36E4D2C18B\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL\nfl. 2/2"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "abd739c57ea75b52f50437b3ac1c809eef008d32ee124932867d970aaebe1630",
+     "leitura": {}
+    },
+    {
+     "id": "CRLV",
+     "nome": "CRLV.pdf",
+     "tipo": "crlv",
+     "titulo": "CRLV",
+     "data": null,
+     "paginas": [
+      "CERTIFICADO DE REGISTRO E LICENCIAMENTO DE VEÍCULO\nReprodução simulada para testes de software — sem valor legal\nCÓDIGO RENAVAM\n05699439826\nPLACA\nPXC9W33\nEXERCÍCIO\n2026\nANO FABRICAÇÃO\n2019\nANO MODELO\n2019\nNÚMERO DO CRV\n249967609005\nCÓDIGO DE SEGURANÇA DO CLA\n80506414021\nMARCA / MODELO / VERSÃO\nVOLVO/FH 460 6X2T\nESPÉCIE / TIPO\nTRAÇÃO/CAMINHÃO TRATOR\nCHASSI\n9BV3TCT6V3TP5LZWT\nCOR PREDOMINANTE\nBRANCA\nCOMBUSTÍVEL\nDIESEL\nNOME\nCERÂMICA RUSSAS LTDA.\nCPF / CNPJ\n24.646.686/0001-50\nLOCAL\nRUSSAS/CE\nDATA\n15/01/2026\nObservações: sem restrições. Documento gerado para o corpus sintético de avaliação.\nDOCUMENTO SIMULADO\nCORPUS SINTÉTICO OUTORGA — DADOS FICTÍCIOS — SEM VALOR LEGAL"
+     ],
+     "metodo": "texto",
+     "ocr_confianca": null,
+     "sha256": "8e6bd8972fb5d90029513616c9b29f6b2bb0d2544a3fcd968fea021f6c604ad1",
+     "leitura": {}
+    }
+   ],
+   "avisos": [],
+   "meta": {
+    "provedor": "gabarito",
+    "politica": "DETRAN-CE"
+   },
+   "lado": "vendedor"
+  }
+ },
+ "geral": {
+  "veredito": "NAO_PODE",
+  "faixa": "VERMELHO",
+  "indice": 0.0,
+  "resumo": "Vendedor: Os assinantes informados não bastam. Quem pode assinar: Hélio Bandeira Forte e Regina Célia Forte. Regra aplicável: alienação de veículos (Cláusula Oitava).",
+  "motivos_faixa": [
+   "Vendedor — índice 0 ≤ limiar 15"
+  ],
+  "lados": [
+   "vendedor"
+  ]
+ },
+ "pedido_atpv": {
+  "veiculo": {
+   "descricao": "VOLVO/FH 460 6X2T",
+   "placa": "PXC9W33",
+   "renavam": "05699439826",
+   "chassi": "9BV3TCT6V3TP5LZWT"
+  },
+  "data_venda": "2026-09-14",
+  "valor": 420000.0,
+  "vendedor": {
+   "tipo": "PJ",
+   "nome": "CERÂMICA RUSSAS LTDA.",
+   "documento": "24.646.686/0001-50",
+   "assinantes": [
+    {
+     "nome": "Hélio Bandeira Forte",
+     "cpf": "264.686.164-84"
+    }
+   ]
+  },
+  "comprador": {
+   "tipo": "PF",
+   "nome": "Frota Fácil Locações Ltda.",
+   "documento": null,
+   "assinantes": []
+  },
+  "forma_assinatura": "ATPV-e",
+  "origem": "informado"
+ },
+ "hash_entrada": "de06cde7c0ad99c530ea7fb5429d11240f124f98b3f73ec8d45b84f691d63e4b"
+}

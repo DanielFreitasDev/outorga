@@ -1,0 +1,46 @@
+{
+  "caso": "A14",
+  "titulo": "Sociedade simples: um sócio assina sozinho",
+  "categoria": "tipos",
+  "objetivo": "Sociedade simples registrada no RCPJ; administração exige a assinatura dos dois sócios.",
+  "validacao_cega": false,
+  "lote": "atpv",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": null,
+    "fundamentos": [],
+    "conjuntos_minimos_cpf": null,
+    "conjuntos_minimos_nomes": null
+  },
+  "esperado_ce": null,
+  "esperado_lados": {
+    "vendedor": {
+      "veredito": "NAO_PODE",
+      "faixas_aceitaveis": [
+        "VERMELHO"
+      ],
+      "conjuntos_minimos": [
+        [
+          "LARISSA",
+          "THIAGO"
+        ]
+      ],
+      "fundamentos": [],
+      "conjuntos_minimos_cpf": [
+        [
+          "159.997.325-14",
+          "427.084.861-87"
+        ]
+      ],
+      "conjuntos_minimos_nomes": [
+        [
+          "Larissa Gomes Pinho",
+          "Thiago Pinho Arruda"
+        ]
+      ]
+    }
+  }
+}

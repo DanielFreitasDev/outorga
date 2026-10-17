@@ -1,0 +1,41 @@
+{
+  "caso": "C38",
+  "titulo": "Todos os sócios assinam (com exigência de deliberação)",
+  "categoria": "deliberacao",
+  "objetivo": "'Se as duas partes estão, tudo está valendo': os 3 sócios (100%) assinando suprem a aprovação prévia.",
+  "esperado": {
+    "veredito": "PODE",
+    "faixas_aceitaveis": [
+      "VERDE",
+      "AMARELO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "VALDIR"
+      ],
+      [
+        "MARCIA"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 1.072"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "819.331.908-76"
+      ],
+      [
+        "520.599.728-17"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Valdir Cunha Teixeira"
+      ],
+      [
+        "Márcia Regina Sá"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}

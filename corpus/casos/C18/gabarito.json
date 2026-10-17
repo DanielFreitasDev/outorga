@@ -1,0 +1,34 @@
+{
+  "caso": "C18",
+  "titulo": "Procuração vencida",
+  "categoria": "procuracao",
+  "objetivo": "Prazo de 6 meses expirado antes da venda.",
+  "esperado": {
+    "veredito": "NAO_PODE",
+    "faixas_aceitaveis": [
+      "VERMELHO"
+    ],
+    "conjuntos_minimos": [
+      [
+        "CARLOS",
+        "LUCIANA"
+      ]
+    ],
+    "fundamentos": [
+      "CC art. 682, IV"
+    ],
+    "conjuntos_minimos_cpf": [
+      [
+        "417.075.364-06",
+        "568.151.884-18"
+      ]
+    ],
+    "conjuntos_minimos_nomes": [
+      [
+        "Carlos Eduardo Bezerra",
+        "Luciana Moura Sampaio"
+      ]
+    ]
+  },
+  "esperado_ce": null
+}
