@@ -8,7 +8,8 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-API-009688?logo=fastapi&logoColor=white)
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
 ![IA local](https://img.shields.io/badge/IA%20local-llama.cpp%20%C2%B7%20Qwen3.8%2027B-6E44FF)
-![Testes](https://img.shields.io/badge/testes-230%20passando-2EA44F)
+![IA por API](https://img.shields.io/badge/IA%20por%20API-Claude%20Sonnet%205.5-D97757)
+![Testes](https://img.shields.io/badge/testes-253%20passando-2EA44F)
 ![Status](https://img.shields.io/badge/status-prot%C3%B3tipo-F2A900)
 
 </div>
@@ -17,7 +18,7 @@
   <img src="docs/imagens/resultado-dois-lados.png" alt="Resultado de uma análise com vendedor e comprador pessoa jurídica" width="100%">
 </p>
 
-<p align="center"><b>Demonstração on-line:</b> <a href="https://outorga.cepify.com.br">outorga.cepify.com.br</a> (dados fictícios, sem envio de documentos) · <a href="docs/PARA_O_CHEFE.md">resumo executivo</a> · <a href="docs/COMO_FOI_TESTADO.md">como foi testado</a></p>
+<p align="center"><b>📄 <a href="docs/Outorga-apresentacao.pdf">Apresentação em PDF</a></b> (9 páginas) · <b>Demonstração on-line:</b> <a href="https://outorga.cepify.com.br">outorga.cepify.com.br</a> (dados fictícios, sem envio de documentos) · <a href="docs/PARA_O_CHEFE.md">resumo executivo</a> · <a href="docs/COMO_FOI_TESTADO.md">como foi testado</a></p>
 
 O **Outorga** verifica, **antes da assinatura da ATPV-e**, se quem vai assinar tem poder para **vender ou comprar** aquele
 veículo. Vale para empresa de qualquer tipo e para pessoa física representada por procurador.
@@ -177,6 +178,7 @@ uv run pytest -q                           # 253 testes, sem IA
 
 | Documento | Conteúdo |
 |---|---|
+| [`docs/Outorga-apresentacao.pdf`](docs/Outorga-apresentacao.pdf) | apresentação didática em PDF (9 páginas): o que é, como funciona, telas, IAs e resultados. Fonte em `docs/apresentacao/`, gerada por `scripts/gerar_apresentacao.py` |
 | [`docs/PARA_O_CHEFE.md`](docs/PARA_O_CHEFE.md) | resumo executivo: o pedido, o que existe, resultados, o que falta confirmar |
 | [`docs/COMO_FOI_TESTADO.md`](docs/COMO_FOI_TESTADO.md) | máquina, IA local, stack, metodologia, linha do tempo dos testes, uso sem GPU |
 | [`docs/IA.md`](docs/IA.md) | como ligar a IA: local (com ou sem GPU) ou por chave de API (Anthropic, OpenAI, Gemini…) |

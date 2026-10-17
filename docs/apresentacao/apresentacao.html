@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Outorga — quem pode assinar a ATPV-e?</title>
+<meta name="author" content="Daniel Freitas">
+<meta name="description" content="Apresentação do Outorga: verificação de poderes para assinar a ATPV-e com IA e regras jurídicas (protótipo, DETRAN-CE).">
+<meta name="keywords" content="ATPV-e, DETRAN-CE, procuração, contrato social, Resolução CONTRAN 1.027/2026">
+<style>
+  @page {
+    size: A4;
+    margin: 15mm 15mm 17mm 15mm;
+    @bottom-left { content: "Outorga · verificação de poderes para assinar a ATPV-e"; font: 7.5pt "IBM Plex Sans"; color: #8a93a3; }
+    @bottom-right { content: counter(page) " / " counter(pages); font: 7.5pt "IBM Plex Sans"; color: #8a93a3; }
+  }
+  @page capa { margin: 0; @bottom-left { content: none; } @bottom-right { content: none; } }
+  :root {
+    --ink: #131820; --ink2: #39414e; --muted: #687284; --line: #e1e5eb; --bg: #f4f6f9;
+    --accent: #1a56a8; --accent-soft: #e7eff9;
+    --ok: #0d7146; --ok-soft: #e4f3eb; --warn: #946000; --warn-soft: #fbf1dc; --bad: #b32217; --bad-soft: #fcebe9;
+  }
+  * { box-sizing: border-box; }
+  html { font-family: "IBM Plex Sans", "DejaVu Sans", sans-serif; font-size: 9.6pt; line-height: 1.45; color: var(--ink); }
+  body { margin: 0; }
+  h1, h2, h3 { margin: 0; line-height: 1.2; }
+  p { margin: 0 0 6pt; }
+  b, strong { font-weight: 600; }
+  .mono { font-family: "IBM Plex Mono", monospace; }
+  .pagina { page-break-after: always; }
+  .pagina:last-child { page-break-after: auto; }
+
+  /* cabeçalho de cada página */
+  .kicker { font-size: 8pt; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 3pt; }
+  h1.titulo { font-size: 19pt; font-weight: 700; margin-bottom: 4pt; }
+  .lead { font-size: 10.5pt; color: var(--ink2); margin-bottom: 12pt; max-width: 165mm; }
+  h2 { font-size: 11.5pt; font-weight: 700; margin: 12pt 0 6pt; }
+  h3 { font-size: 10pt; font-weight: 700; margin-bottom: 3pt; }
+
+  /* blocos */
+  .grade2 { display: grid; grid-template-columns: 1fr 1fr; gap: 9pt; }
+  .grade3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 9pt; }
+  .grade4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8pt; }
+  .cartao { border: 1px solid var(--line); border-radius: 7pt; padding: 9pt 11pt; background: #fff; }
+  .cartao.suave { background: var(--bg); border-color: var(--bg); }
+  .cartao h3 { color: var(--ink); }
+  .cartao p:last-child { margin-bottom: 0; }
+  .icone { display: inline-block; width: 18pt; height: 18pt; border-radius: 5pt; background: var(--accent-soft); color: var(--accent);
+           text-align: center; line-height: 18pt; font-weight: 700; font-size: 9pt; margin-bottom: 5pt; }
+  .num { font-size: 20pt; font-weight: 700; color: var(--accent); line-height: 1.05; }
+  .num.ok { color: var(--ok); }
+  .num-legenda { font-size: 8.2pt; color: var(--muted); margin-top: 2pt; }
+  ul { margin: 0; padding-left: 13pt; }
+  ol.duas-colunas { columns: 2; column-gap: 18pt; margin: 0; padding-left: 14pt; }
+  ol.duas-colunas li { break-inside: avoid; }
+  .fim { display: flex; align-items: center; gap: 14pt; margin-top: 14pt; border-top: 1px solid var(--line); padding-top: 10pt; }
+  .fim .qr img { width: 22mm; height: 22mm; }
+  li { margin-bottom: 3pt; }
+  .pequeno { font-size: 8.2pt; color: var(--muted); }
+  .destaque { border-left: 3pt solid var(--accent); background: var(--accent-soft); padding: 8pt 11pt; border-radius: 0 6pt 6pt 0; }
+  .aviso { border-left: 3pt solid var(--warn); background: var(--warn-soft); padding: 8pt 11pt; border-radius: 0 6pt 6pt 0; }
+
+  /* faixas */
+  .faixa { display: inline-block; padding: 1.5pt 7pt; border-radius: 10pt; font-size: 8.2pt; font-weight: 600; }
+  .verde { background: var(--ok-soft); color: var(--ok); }
+  .amarelo { background: var(--warn-soft); color: var(--warn); }
+  .vermelho { background: var(--bad-soft); color: var(--bad); }
+  .barra { display: flex; height: 16pt; border-radius: 8pt; overflow: hidden; margin: 6pt 0 4pt; font-size: 7.8pt; font-weight: 600; }
+  .barra div { display: flex; align-items: center; justify-content: center; color: #fff; }
+
+  /* fluxo */
+  .fluxo { display: flex; align-items: stretch; gap: 0; margin: 4pt 0 10pt; }
+  .passo { flex: 1; border: 1px solid var(--line); border-radius: 7pt; padding: 9pt 9pt 8pt; background: #fff; }
+  .passo .n { display: inline-block; width: 15pt; height: 15pt; border-radius: 50%; background: var(--accent); color: #fff; text-align: center;
+              line-height: 15pt; font-size: 8pt; font-weight: 700; margin-bottom: 4pt; }
+  .passo h3 { font-size: 9.6pt; }
+  .passo p { font-size: 8.4pt; color: var(--ink2); margin: 0; }
+  .passo.decide { border-color: var(--accent); background: var(--accent-soft); }
+  .seta { width: 13pt; display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 12pt; font-weight: 700; }
+
+  /* figuras */
+  figure { margin: 0 0 10pt; }
+  figure img { width: 100%; border: 1px solid var(--line); border-radius: 6pt; display: block; }
+  figcaption { font-size: 8.2pt; color: var(--muted); margin-top: 4pt; }
+  figcaption b { color: var(--ink2); }
+
+  /* tabelas */
+  table { width: 100%; border-collapse: collapse; font-size: 8.8pt; }
+  th { text-align: left; font-size: 7.8pt; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: var(--muted);
+       border-bottom: 1.2pt solid var(--line); padding: 4pt 5pt; }
+  td { border-bottom: 1px solid var(--line); padding: 5pt 5pt; vertical-align: top; }
+  tr.rec td { background: var(--ok-soft); }
+  td.c, th.c { text-align: center; white-space: nowrap; }
+  .grade-parecer { display: grid; grid-template-columns: 44% 1fr; gap: 10pt; align-items: start; }
+
+  /* capa */
+  .capa { page: capa; height: 297mm; position: relative; background: #fff; }
+  .capa-topo { background: var(--accent); color: #fff; padding: 26mm 18mm 14mm; }
+  .marca { display: flex; align-items: center; gap: 9pt; margin-bottom: 14mm; }
+  .marca svg { width: 26pt; height: 26pt; }
+  .marca span { font-size: 13pt; font-weight: 600; letter-spacing: .02em; }
+  .capa h1 { font-size: 40pt; font-weight: 700; letter-spacing: -.01em; margin-bottom: 6pt; }
+  .capa .sub { font-size: 17pt; font-weight: 500; opacity: .95; margin-bottom: 8pt; }
+  .capa .desc { font-size: 11pt; max-width: 150mm; opacity: .92; }
+  .capa-meio { padding: 10mm 18mm 0; }
+  .capa-meio img { width: 100%; border: 1px solid var(--line); border-radius: 7pt; box-shadow: 0 6pt 18pt -8pt rgba(16,24,40,.25); }
+  .capa-meio .legenda { font-size: 8.2pt; color: var(--muted); margin-top: 5pt; }
+  .capa-rodape { position: absolute; left: 18mm; right: 18mm; bottom: 14mm; display: flex; align-items: flex-end; justify-content: space-between;
+                 border-top: 1px solid var(--line); padding-top: 8pt; font-size: 8.8pt; color: var(--ink2); }
+  .qr { display: flex; gap: 12pt; }
+  .qr div { text-align: center; font-size: 7.4pt; color: var(--muted); }
+  .qr img { width: 19mm; height: 19mm; display: block; margin: 0 auto 2pt; image-rendering: pixelated; }
+</style>
+</head>
+<body>
+
+<!-- ============================================================ CAPA -->
+<section class="pagina capa">
+  <div class="capa-topo">
+    <div class="marca">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+        <path d="m9 12 2 2 4-4"/>
+      </svg>
+      <span>Outorga</span>
+    </div>
+    <h1>Quem pode assinar a ATPV-e?</h1>
+    <div class="sub">Verificação de poderes com IA e regras jurídicas</div>
+    <div class="desc">Lê o contrato social, as alterações, as atas e as procurações, e responde se quem vai assinar a
+      transferência do veículo tem poder para isso — com o trecho de cada documento que comprova.</div>
+  </div>
+  <div class="capa-meio">
+    <img src="img/resultado-atpv.png" alt="Resultado de uma análise">
+    <div class="legenda">Resultado de uma análise com a ATPV-e: empresa vendendo e empresa comprando. O vendedor pode assinar;
+      o comprador assinou com quem não tinha poder.</div>
+  </div>
+  <div class="capa-rodape">
+    <div>
+      <b>Protótipo · Núcleo de Informática do DETRAN-CE</b><br>
+      Daniel Freitas · outubro de 2026<br>
+      <span class="pequeno">Todos os dados das telas são fictícios.</span>
+    </div>
+    <div class="qr">
+      <div><img src="img/qr-demo.png" alt="">demonstração<br><span class="mono">outorga.cepify.com.br</span></div>
+      <div><img src="img/qr-github.png" alt="">código e documentação<br><span class="mono">github.com/DanielFreitasDev/outorga</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 1. EM UMA PÁGINA -->
+<section class="pagina">
+  <div class="kicker">Resumo</div>
+  <h1 class="titulo">O Outorga em uma página</h1>
+  <p class="lead">Um agente que verifica, sozinho, se a pessoa que vai assinar a ATPV-e tem poder para vender ou comprar o
+    veículo em nome de uma empresa — ou de outra pessoa, por procuração.</p>
+
+  <div class="grade2">
+    <div class="cartao">
+      <div class="icone">?</div>
+      <h3>O problema</h3>
+      <p>Desde a <b>Resolução CONTRAN nº 1.027/2026 (art. 28, § 7º)</b>, quando o antigo <b>ou o novo</b> proprietário é
+        empresa, a assinatura da ATPV-e só vale com a <b>comprovação dos poderes</b> de quem assina. Hoje isso exige ler à mão
+        contrato social, alterações, atas e procurações.</p>
+    </div>
+    <div class="cartao">
+      <div class="icone">✓</div>
+      <h3>O que ele faz</h3>
+      <p>Lê esses documentos, descobre <b>quem pode assinar</b> na data da venda e diz se o CPF informado tem poder. Cada
+        conclusão vem com o <b>trecho do documento</b> e o <b>artigo de lei</b> que a sustentam.</p>
+    </div>
+    <div class="cartao">
+      <div class="icone">⚖</div>
+      <h3>Como decide</h3>
+      <p>A IA só <b>lê e cita</b>. Quem decide é um <b>motor de regras jurídicas</b> (Código Civil, Lei das S.A. e política do
+        DETRAN-CE). Na dúvida, o caso vai para <b>revisão humana</b> em vez de ser aprovado.</p>
+    </div>
+    <div class="cartao">
+      <div class="icone">▶</div>
+      <h3>Como se usa</h3>
+      <p><b>Antes da ATPV-e</b>: placa + CPF + "vai vender ou comprar". <b>Com a ATPV-e</b>: o arquivo da ATPV-e e os
+        documentos. Pela tela web, pela API ou como agente que vigia uma pasta, na própria máquina.</p>
+    </div>
+  </div>
+
+  <h2>Em números</h2>
+  <div class="grade4">
+    <div class="cartao suave"><div class="num">85</div><div class="num-legenda">cenários de teste com gabarito, incluindo os exemplos do pedido original</div></div>
+    <div class="cartao suave"><div class="num ok">0</div><div class="num-legenda">aceites indevidos com as IAs recomendadas (3 rodadas dos 85 casos)</div></div>
+    <div class="cartao suave"><div class="num">~14 s</div><div class="num-legenda">por caso com o Claude Sonnet 5.5; 1 a 2 min com a IA local</div></div>
+    <div class="cartao suave"><div class="num">US$ 0,03</div><div class="num-legenda">por caso (Sonnet 5.5) ou US$ 0,0025 (Haiku 5.5); grátis com IA local</div></div>
+  </div>
+
+  <h2>A resposta sai em três faixas</h2>
+  <div class="barra">
+    <div style="width:18%; background:#d64a3e">recusa · 0–15</div>
+    <div style="width:64%; background:#e2a72e">revisão humana · faixa intermediária</div>
+    <div style="width:18%; background:#2e9b63">aceite · 85–100</div>
+  </div>
+  <p class="pequeno">O sistema calcula um índice de 0 a 100. Só os casos claros são decididos sozinhos; os limiares são
+    escolhidos pelo órgão, numa tela própria.</p>
+
+  <h2>O ganho prático</h2>
+  <div class="grade3">
+    <div class="cartao"><h3>Para o servidor</h3><p>Em vez de ler dezenas de páginas, confere um parecer que aponta os trechos que
+      importam.</p></div>
+    <div class="cartao"><h3>Para o DETRAN</h3><p>Decisões padronizadas, com fundamento legal e trilha de auditoria de cada
+      análise.</p></div>
+    <div class="cartao"><h3>Para quem vende ou compra</h3><p>Sabe antes da ATPV-e se o CPF pode assinar, ou qual documento
+      falta.</p></div>
+  </div>
+</section>
+
+<!-- ============================================================ 2. PARA QUE SERVE -->
+<section class="pagina">
+  <div class="kicker">Para que serve</div>
+  <h1 class="titulo">Por que agora e o que ele resolve</h1>
+  <div class="grade2" style="margin-bottom:10pt">
+    <div>
+      <h2 style="margin-top:0">O contexto</h2>
+      <ul>
+        <li><b>Res. CONTRAN 1.027/2026, art. 28, § 7º:</b> a prova de poderes precisa identificar <b>outorgante, outorgado,
+          poderes, prazo e revogação</b>. Prazo de adequação: por volta de 16/11/2026.</li>
+        <li><b>Provimento CNJ 252/2026:</b> a plataforma federal de venda digital <b>não aceita empresas</b>, pela falta de
+          verificação automática dos poderes societários.</li>
+        <li><b>Firma reconhecida prova quem assinou, não os poderes.</b></li>
+        <li><b>DETRAN-CE:</b> procurador só com procuração <b>pública e específica</b>, de até 1 ano.</li>
+      </ul>
+    </div>
+    <div>
+      <h2 style="margin-top:0">Duas formas de perguntar</h2>
+      <div class="cartao" style="margin-bottom:7pt">
+        <h3>1 · Consulta por CPF (antes da ATPV-e)</h3>
+        <p>Placa, CPF e "vender ou comprar". O dono vem da base veicular. Se for <b>empresa</b>, confere o CPF nos atos e
+          procurações; se for <b>pessoa física</b> e o CPF for de outra pessoa, <b>pede a procuração</b> e confere.</p>
+      </div>
+      <div class="cartao">
+        <h3>2 · Análise com a ATPV-e</h3>
+        <p>Lê da ATPV-e o veículo, o vendedor, o comprador, o valor e as assinaturas, e verifica <b>os dois lados</b>. Com
+          empresa dos dois lados, vale o lado mais fraco.</p>
+      </div>
+    </div>
+  </div>
+  <figure>
+    <img src="img/consulta-cpf.png" alt="Consulta por CPF">
+    <figcaption><b>Consulta por CPF.</b> A placa trouxe a dona do veículo pela base veicular, e o CPF informado é de outra pessoa:
+      o sistema pede a procuração e avisa o que o DETRAN-CE exige (pública, específica e com até 1 ano).</figcaption>
+  </figure>
+
+  <h2>O que entra e o que sai</h2>
+  <div class="grade2">
+    <div class="cartao">
+      <h3>Entra</h3>
+      <ul>
+        <li>a placa (ou o RENAVAM), o CPF de quem vai assinar e se vai <b>vender ou comprar</b>; ou o arquivo da <b>ATPV-e</b>;</li>
+        <li>só os documentos necessários: o sistema diz o que falta (contrato e alterações, atas, procuração…).</li>
+      </ul>
+    </div>
+    <div class="cartao">
+      <h3>Sai</h3>
+      <ul>
+        <li>a resposta na faixa <span class="faixa verde">aceito</span> <span class="faixa amarelo">revisão</span>
+          <span class="faixa vermelho">recusado</span>, com o motivo;</li>
+        <li><b>quem pode assinar</b>, as pendências (o que anexar) e o <b>parecer em PDF</b>.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 3. COMO FUNCIONA -->
+<section class="pagina">
+  <div class="kicker">Como funciona</div>
+  <h1 class="titulo">Quatro passos, e a IA não decide sozinha</h1>
+  <p class="lead">Documentos aceitos: contrato social e alterações, estatuto, atas, CCMEI, procurações, substabelecimentos,
+    revogações, CRLV e ATPV-e — em PDF (digital ou escaneado), DOCX ou foto.</p>
+
+  <div class="fluxo">
+    <div class="passo"><div class="n">1</div><h3>Ler</h3><p>PDF, escaneado (OCR), DOCX ou foto viram texto.</p></div>
+    <div class="seta">›</div>
+    <div class="passo"><div class="n">2</div><h3>IA extrai</h3><p>Quem administra, como assinam, poderes da procuração, prazos —
+      sempre com o <b>trecho literal</b>.</p></div>
+    <div class="seta">›</div>
+    <div class="passo"><div class="n">3</div><h3>Conferir</h3><p>O trecho tem de existir no documento; um léxico jurídico corrige
+      leituras erradas.</p></div>
+    <div class="seta">›</div>
+    <div class="passo decide"><div class="n">4</div><h3>Regras decidem</h3><p>Lei e política do órgão na data da venda;
+      índice de 0 a 100, faixa e parecer.</p></div>
+  </div>
+
+  <figure>
+    <img src="img/clausulas.png" alt="Cláusulas lidas pela IA">
+    <figcaption><b>Passos 2 e 3 na tela.</b> Cada cláusula lida pela IA, com o trecho literal do contrato e a conferência do
+      léxico ("vedada a prática isolada" = assinatura em conjunto).</figcaption>
+  </figure>
+
+  <div class="grade2">
+    <div class="destaque">
+      <h3>Por que a IA não decide?</h3>
+      <ul>
+        <li>a decisão precisa ser <b>explicável e auditável</b>;</li>
+        <li>as regras jurídicas são fixas e testadas (253 testes automáticos);</li>
+        <li>um erro de leitura vira <b>revisão humana</b>, não aprovação errada;</li>
+        <li>dá para <b>trocar de IA</b> sem mudar nenhuma regra.</li>
+      </ul>
+    </div>
+    <div class="cartao">
+      <h3>Um exemplo real dos testes</h3>
+      <p>A IA local leu "administração exercida <i>indistintamente</i> pelos sócios" como assinatura conjunta. O léxico
+        jurídico corrigiu: <i>indistintamente</i> significa que <b>cada sócio assina sozinho</b>. O motor registra a correção
+        no parecer.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 4. O QUE ELE CONFERE -->
+<section class="pagina">
+  <div class="kicker">O que ele confere</div>
+  <h1 class="titulo">As regras do motor</h1>
+  <div class="grade2">
+    <div>
+      <ul>
+        <li><b>Regime vigente:</b> quais atos valiam na data da venda (alterações, consolidações, mandatos vencidos).</li>
+        <li><b>Quem representa:</b> administradores e diretores. Ser sócio, mesmo majoritário, não basta.</li>
+        <li><b>Forma de assinar:</b> sozinho, em conjunto, "quaisquer dois", combinações por cargo ou classe.</li>
+        <li><b>Limites:</b> alçada por valor do veículo, aprovação de sócios com quórum e ata, restrições a bens.</li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li><b>Procuração:</b> quem outorgou, poder <b>expresso</b> para vender (ou comprar), veículo identificado, prazo,
+          revogação e forma pública.</li>
+        <li><b>Substabelecimento:</b> se era permitido, com ou sem reserva de poderes.</li>
+        <li><b>Comprador empresa</b> e <b>pessoa física com procuração</b>.</li>
+        <li><b>Todos os tipos de empresa:</b> Ltda, unipessoal, S.A., cooperativa, associação, MEI, EIRELI e sociedade simples.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>A faixa intermediária é calibrada pelo órgão</h2>
+  <figure>
+    <img src="img/faixa.png" alt="Faixa intermediária">
+    <figcaption><b>Tela da faixa intermediária.</b> Cada ponto é um caso de teste. Arrastando os limiares, a tela mostra quantos
+      casos ficariam automáticos e quantos erros escapariam. Com os limiares atuais: 84% decididos sozinhos, nenhum erro.</figcaption>
+  </figure>
+  <div class="grade3">
+    <div class="cartao"><span class="faixa verde">Verde · aceite</span><p style="margin-top:4pt">Índice ≥ 85 e nenhum alerta: pode
+      assinar.</p></div>
+    <div class="cartao"><span class="faixa amarelo">Amarelo · revisão</span><p style="margin-top:4pt">Dúvida, documento faltando ou
+      leitura pouco ancorada: um servidor decide.</p></div>
+    <div class="cartao"><span class="faixa vermelho">Vermelho · recusa</span><p style="margin-top:4pt">Índice ≤ 15: o CPF não tem
+      poder, com o motivo e o fundamento.</p></div>
+  </div>
+</section>
+
+<!-- ============================================================ 5. TELAS -->
+<section class="pagina">
+  <div class="kicker">O sistema funcionando</div>
+  <h1 class="titulo">O que o servidor vê</h1>
+  <figure>
+    <img src="img/consulta-aceita.png" alt="Consulta aceita">
+    <figcaption><b>Consulta por CPF aceita.</b> O procurador tem procuração pública, específica para este veículo e no prazo.</figcaption>
+  </figure>
+  <figure>
+    <img src="img/verificacoes.png" alt="Verificações">
+    <figcaption><b>Verificações.</b> Tudo o que foi conferido, com o artigo de lei e o trecho da procuração que comprova.</figcaption>
+  </figure>
+  <figure>
+    <img src="img/grafo.png" alt="Grafo de poderes">
+    <figcaption><b>Grafo de poderes.</b> Da empresa ao administrador, ao procurador e ao substabelecido: de onde vem o poder de
+      quem assina.</figcaption>
+  </figure>
+</section>
+
+<section class="pagina">
+  <figure>
+    <img src="img/comprovacao.png" alt="Comprovação de poderes">
+    <figcaption><b>Comprovação de poderes e quem pode assinar.</b> Os cinco elementos que a Resolução 1.027 exige (outorgante,
+      outorgado, poderes, prazo e revogação) e as combinações de pessoas que obrigam a empresa na data da venda.</figcaption>
+  </figure>
+  <div class="grade-parecer">
+    <figure>
+      <img src="img/parecer.png" alt="Parecer em PDF">
+      <figcaption><b>Parecer em PDF</b>, pronto para anexar ao processo.</figcaption>
+    </figure>
+    <div>
+      <figure>
+        <img src="img/demonstracao.png" alt="Demonstração">
+        <figcaption><b>Demonstração</b> com os 85 cenários de teste, cada um com o resultado da IA e o gabarito.</figcaption>
+      </figure>
+      <div class="cartao suave">
+        <h3>Também na tela</h3>
+        <ul>
+          <li><b>Simulação "e se…?"</b>: troca o assinante, o valor ou a data e vê a nova resposta na hora;</li>
+          <li><b>Revisão humana</b> dos casos na faixa amarela, com registro de quem decidiu;</li>
+          <li><b>Auditoria</b>: cada análise fica registrada numa trilha encadeada, que não pode ser alterada.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 6. IA -->
+<section class="pagina">
+  <div class="kicker">Inteligência artificial</div>
+  <h1 class="titulo">Qual IA ele usa</h1>
+  <p class="lead">A IA só lê. Funciona com <b>IA local</b>, na própria máquina, sem enviar nada, ou <b>por chave de API</b>
+    (Anthropic, OpenAI, Google Gemini e outras). Todas foram testadas nos mesmos casos, em 17/10/2026.</p>
+
+  <table>
+    <tr><th>IA</th><th class="c">Acertos</th><th class="c">Aceites indevidos</th><th class="c">Tempo por caso</th><th class="c">Custo por caso</th></tr>
+    <tr class="rec"><td><b>Claude Sonnet 5.5</b>, esforço medium · <b>padrão</b></td><td class="c">84 · 84 · 84 de 85</td><td class="c">0</td><td class="c">~14 s</td><td class="c">US$ 0,029</td></tr>
+    <tr class="rec"><td><b>Claude Haiku 5.5</b>, esforço medium · <b>mais barato</b></td><td class="c">84 · 83 · 85 de 85</td><td class="c">0</td><td class="c">~25 s</td><td class="c">US$ 0,0025</td></tr>
+    <tr><td>Claude Sonnet 5.5, esforço xhigh · qualidade máxima</td><td class="c">85 · 85 de 85</td><td class="c">0</td><td class="c">~29 s</td><td class="c">US$ 0,045</td></tr>
+    <tr><td>Claude Opus 5.5, esforço medium</td><td class="c">84 · 85 de 85</td><td class="c">0</td><td class="c">~23 s</td><td class="c">US$ 0,062</td></tr>
+    <tr><td><b>Qwen3.8-27B local</b> (llama.cpp, RTX 3060 de 12 GB)¹</td><td class="c">84 de 85</td><td class="c">0</td><td class="c">1–2 min</td><td class="c">energia</td></tr>
+    <tr><td>Gemma 4 12B e Qwen3.5-9B locais²</td><td class="c">24 de 33</td><td class="c">0</td><td class="c">2× mais rápidos</td><td class="c">energia</td></tr>
+  </table>
+  <p class="pequeno" style="margin-top:4pt">Cada número em "Acertos" é uma rodada. ¹ Depois das correções do motor feitas olhando as
+    leituras desse modelo. ² Nos 33 casos da triagem (o Qwen3.8-27B acertou 32).</p>
+
+  <h2>Quanto custa ler 1.000 casos</h2>
+  <div class="grade3">
+    <div class="cartao suave"><div class="num">US$ 2,50</div><div class="num-legenda">Claude Haiku 5.5 · cerca de 80 mil casos por mês com
+      US$ 200</div></div>
+    <div class="cartao suave"><div class="num">US$ 29</div><div class="num-legenda">Claude Sonnet 5.5 · cerca de 6.900 casos por mês com
+      US$ 200</div></div>
+    <div class="cartao suave"><div class="num ok">só energia</div><div class="num-legenda">IA local · exige uma GPU de 12 GB e leva 1 a 2
+      minutos por caso</div></div>
+  </div>
+
+  <div class="grade2" style="margin-top:8pt">
+    <div class="cartao">
+      <h3>O que a comparação mostrou</h3>
+      <ul>
+        <li>os modelos Claude atuais acertam praticamente tudo, sem aprovação errada;</li>
+        <li>o <b>Haiku 5.5</b> acerta o mesmo que o Sonnet por <b>1/12 do preço</b>;</li>
+        <li>"pensar mais" (esforço máximo) custou até 10 vezes mais e não acertou nada a mais;</li>
+        <li>na GPU de 12 GB, nenhum modelo local menor superou o Qwen3.8-27B.</li>
+      </ul>
+    </div>
+    <div>
+      <div class="destaque" style="margin-bottom:7pt">
+        <h3>Recomendação</h3>
+        <p><b>Com internet:</b> Claude Sonnet 5.5 (ou Haiku 5.5, se o volume for grande).<br>
+          <b>Tudo local:</b> Qwen3.8-27B numa GPU de 12 GB.</p>
+      </div>
+      <div class="aviso">
+        <h3>LGPD</h3>
+        <p>Com IA por chave de API, os documentos (nome, CPF) vão para o provedor: é preciso avaliar o contrato e a LGPD. A IA
+          local não envia nada para fora.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 7. TESTES E PRÓXIMOS PASSOS -->
+<section class="pagina">
+  <div class="kicker">Testes e próximos passos</div>
+  <h1 class="titulo">Como foi testado e o que falta</h1>
+
+  <div class="grade2">
+    <div>
+      <h2 style="margin-top:0">85 cenários fictícios com gabarito</h2>
+      <table>
+        <tr><th>Lote (primeira rodada, cega, com a IA local)</th><th class="c">Acertos</th></tr>
+        <tr><td>38 cenários principais (com os exemplos do pedido)</td><td class="c">37 / 38</td></tr>
+        <tr><td>8 cenários com redação inédita</td><td class="c">7 / 8</td></tr>
+        <tr><td>10 casos de um autor que não viu o código</td><td class="c">7 / 10³</td></tr>
+        <tr><td>14 casos com ATPV-e (vendendo ou comprando)</td><td class="c">14 / 14</td></tr>
+        <tr><td>15 consultas por CPF (pessoa física e procuração)</td><td class="c">15 / 15</td></tr>
+      </table>
+      <p class="pequeno" style="margin-top:4pt">³ Com 2 aceites indevidos, que viraram regras gerais e testes. Cada erro
+        encontrado vira um teste automático; hoje são 253.</p>
+    </div>
+    <div>
+      <h2 style="margin-top:0">Formas de usar</h2>
+      <ul>
+        <li><b>Tela web:</b> consulta por CPF, análise com ATPV-e, simulação "e se…?", revisão humana e auditoria.</li>
+        <li><b>Agente local:</b> vigia uma pasta e devolve parecer em PDF, resumo e resultado para cada pedido.</li>
+        <li><b>API:</b> para o sistema de transferência consultar no momento da assinatura.</li>
+        <li><b>Demonstração on-line:</b> outorga.cepify.com.br (dados fictícios).</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Próximos passos sugeridos</h2>
+  <div class="cartao">
+    <ol class="duas-colunas">
+      <li><b>Piloto com 20 a 30 processos reais anonimizados</b>, para recalibrar a faixa intermediária.</li>
+      <li>Consulta às bases oficiais: base veicular (dono por placa/RENAVAM), Junta Comercial e Receita.</li>
+      <li>Conferir procurações públicas na CENSEC.</li>
+      <li>Calibrar a leitura no layout oficial da ATPV-e.</li>
+      <li>Definir com o órgão o que a faixa intermediária deve fazer (aceita, revisa ou recusa).</li>
+      <li>Para produção: login, controle de acesso e política de retenção dos documentos (LGPD).</li>
+    </ol>
+  </div>
+
+  <div class="destaque" style="margin-top:12pt">
+    <p style="margin:0">É um <b>protótipo funcionando</b>: lê documentos reais em PDF, decide com fundamento e explica cada
+      decisão. Antes de decidir sozinho em produção, ele precisa passar pelo piloto com processos reais. Até lá, a faixa
+      intermediária deve ser larga.</p>
+  </div>
+  <p class="pequeno" style="margin-top:10pt">Código, documentação e resultados completos: <span class="mono">github.com/DanielFreitasDev/outorga</span>
+    — veja <span class="mono">docs/PARA_O_CHEFE.md</span> (resumo), <span class="mono">docs/MODELOS.md</span> (IAs e custos) e
+    <span class="mono">docs/REGRAS.md</span> (regras com fundamento legal).</p>
+  <div class="fim">
+    <div class="qr">
+      <div><img src="img/qr-demo.png" alt="">demonstração</div>
+      <div><img src="img/qr-github.png" alt="">código e documentação</div>
+    </div>
+    <div style="font-size:9pt; color:var(--ink2)">Aponte a câmera do celular para abrir a <b>demonstração on-line</b> (dados fictícios,
+      funciona sem instalar nada) ou o <b>repositório</b> com o código, os testes e toda a documentação.</div>
+  </div>
+</section>
+
+</body>
+</html>
