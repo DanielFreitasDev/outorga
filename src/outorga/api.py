@@ -315,7 +315,30 @@ async def ler_atpv(arquivo: UploadFile = File(...)) -> dict:
 
 @app.get("/api/analises")
 def analises() -> list[dict]:
-    return store.listar_analises()
+    lista = store.listar_analises()
+    if MODO_DEMO:  # demonstração pública: o histórico não mostra o que outros visitantes consultaram
+        lista = [x for x in lista if x.get("origem") == "demo"]
+    return lista
+
+
+@app.get("/api/consulta/exemplos")
+def exemplos_consulta() -> list[dict]:
+    """Consultas de exemplo (corpus fictício, lote de consulta por CPF) para preencher a tela."""
+    spec = json.loads((CORPUS / "cenarios.json").read_text(encoding="utf-8"))
+    out = []
+    for c in spec.get("casos_pf", []):
+        p = spec["pessoas"][c["assinante"]]
+        cp = c.get("comprador")
+        comprador = None
+        if cp:
+            comprador = ({"tipo": "PJ", "nome": spec["empresas"][cp["empresa"]]["razao_social"],
+                          "documento": spec["empresas"][cp["empresa"]]["cnpj"]} if "empresa" in cp else
+                         {"tipo": "PF", "nome": spec["pessoas"][cp["pessoa"]]["nome"], "documento": spec["pessoas"][cp["pessoa"]]["cpf"]})
+        esp = c.get("esperado_ce") or c["esperado"]
+        out.append({"id": c["id"], "titulo": c["titulo"], "placa": spec["veiculos"][c["veiculo"]]["placa"], "papel": c["papel"],
+                    "cpf": p["cpf"], "nome": p["nome"], "comprador": comprador, "valor": c["transacao"].get("valor"),
+                    "documentos": c["documentos"], "esperado": esp["veredito"]})
+    return out
 
 
 @app.get("/api/analises/{aid}")

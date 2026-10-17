@@ -1,0 +1,35 @@
+# Serviço systemd da demonstração pública (servidor sem GPU, sem IA): /etc/systemd/system/outorga.service
+# Variáveis em /etc/outorga/outorga.env (root:600):
+#   OUTORGA_MODO=demonstracao
+#   OUTORGA_LLM=nenhum
+#   XDG_CACHE_HOME=/opt/outorga/dados/.cache
+[Unit]
+Description=Outorga — demonstração pública (verificação de poderes para a ATPV-e)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=outorga
+Group=outorga
+WorkingDirectory=/opt/outorga
+EnvironmentFile=/etc/outorga/outorga.env
+ExecStart=/opt/outorga/.venv/bin/outorga serve --host 127.0.0.1 --porta 54325
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+ReadWritePaths=/opt/outorga/dados
+MemoryMax=1G
+CPUQuota=150%
+
+[Install]
+WantedBy=multi-user.target

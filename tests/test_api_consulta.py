@@ -71,3 +71,23 @@ def test_simulacao_sobre_consulta_por_cpf(cliente):
     assert r.status_code == 200, r.text
     sim = r.json()
     assert sim["veredito"] == "PODE" and list(sim["lados"]) == ["vendedor"]
+
+
+def test_modo_demonstracao_protege_a_instalacao_publica(cliente, monkeypatch):
+    """Demonstração pública: sem envio de documentos, sem mudar política/revisão, histórico sem consultas de visitantes."""
+    import outorga.api as api
+    monkeypatch.setattr(api, "MODO_DEMO", True)
+    pedido = {"veiculo": {"placa": V["HILUX"]["placa"]}, "papel": "vender", "cpf": P["JOAO"]["cpf"], "data_venda": "2026-10-16"}
+    a = _esperar(cliente, cliente.post("/api/analises", data={"pedido": json.dumps(pedido)}).json()["id"])  # consulta sem documento: pode
+    assert a["status"] == "concluida"
+    assert cliente.get("/api/analises").json() == []  # a consulta do visitante não aparece no histórico público
+    com_arquivo = cliente.post("/api/analises", data={"pedido": json.dumps(pedido)}, files={"arquivos": ("x.pdf", b"%PDF-1.4", "application/pdf")})
+    assert com_arquivo.status_code == 403
+    assert cliente.put("/api/politica", json={"perfil": "generica"}).status_code == 403
+    assert cliente.post(f"/api/analises/{a['id']}/revisao", json={"decisao": "aprovar"}).status_code == 403
+    assert cliente.get("/api/saude").json()["demonstracao"] is True
+
+
+def test_exemplos_de_consulta(cliente):
+    ex = cliente.get("/api/consulta/exemplos").json()
+    assert len(ex) == 15 and {e["papel"] for e in ex} == {"vender", "comprar"} and any(not e["documentos"] for e in ex)

@@ -6,7 +6,7 @@ import {
 import { ErroApi, api } from "../lib/api";
 import { Link, navegar } from "../lib/router";
 import { useApp } from "../lib/ctx";
-import type { VeiculoBase } from "../lib/types";
+import type { ExemploConsulta, VeiculoBase } from "../lib/types";
 import { PENDENCIA_TXT, cnpjValido, cpfFmt, cpfMascarado, cpfValido, docFmt, soDigitos } from "../lib/format";
 import { Botao, CabecalhoPagina, ErroCaixa, Painel, cx } from "../components/ui";
 
@@ -80,6 +80,35 @@ function lerQuery() {
 function valorBR(v: string): string {
   const n = Number(v);
   return Number.isFinite(n) && v.trim() ? n.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : v;
+}
+
+/** Consultas de exemplo (fictícias) que não precisam de documento; as com procuração estão na Demonstração. */
+function Exemplos({ demonstracao }: { demonstracao: boolean }) {
+  const [lista, setLista] = useState<ExemploConsulta[]>([]);
+  useEffect(() => {
+    api.exemplosConsulta().then(setLista).catch(() => setLista([]));
+  }, []);
+  const semDocs = lista.filter((e) => e.documentos.length === 0);
+  if (!semDocs.length) return null;
+  return (
+    <details className="mb-4 rounded-lg border border-line bg-surface px-4 py-3 text-[13px]" open={demonstracao}>
+      <summary className="cursor-pointer font-medium text-ink">Experimente com dados de exemplo (fictícios)</summary>
+      <ul className="mt-2 space-y-1.5">
+        {semDocs.map((e) => (
+          <li key={e.id}>
+            <Link className="font-medium text-accent hover:underline"
+              href={`/consulta?placa=${e.placa}&papel=${e.papel}&cpf=${encodeURIComponent(e.cpf)}`}>{e.titulo}</Link>
+            <span className="text-muted"> · placa {e.placa} · CPF {e.cpf}</span>
+          </li>
+        ))}
+      </ul>
+      <p className="mt-2 text-[12px] text-muted">
+        Os casos com procuração (válida, vencida, revogada, de outro veículo, substabelecida…) estão na{" "}
+        <Link className="text-accent hover:underline" href="/">Demonstração</Link>, cenários P02 a P15.
+        {demonstracao && <> Esta demonstração é pública: use apenas dados fictícios.</>}
+      </p>
+    </details>
+  );
 }
 
 export function ConsultaCPF() {
@@ -256,6 +285,8 @@ export function ConsultaCPF() {
           pela procuração e confere se ela dá poder àquele CPF.</>}
         acoes={<Link href="/nova" className="inline-flex items-center gap-1 text-[13px] font-medium text-accent hover:underline">
           Já tem a ATPV-e? Analise com ela <ArrowRight className="size-3.5" /></Link>} />
+
+      <Exemplos demonstracao={!!saude?.demonstracao} />
 
       {refazendo && (
         <div className="mb-4 rounded-lg border border-warn/35 bg-warn-soft px-4 py-3 text-[13px] text-ink">

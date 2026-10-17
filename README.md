@@ -8,7 +8,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-API-009688?logo=fastapi&logoColor=white)
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
 ![IA local](https://img.shields.io/badge/IA%20local-llama.cpp%20%C2%B7%20Qwen3.8%2027B-6E44FF)
-![Testes](https://img.shields.io/badge/testes-228%20passando-2EA44F)
+![Testes](https://img.shields.io/badge/testes-230%20passando-2EA44F)
 ![Status](https://img.shields.io/badge/status-prot%C3%B3tipo-F2A900)
 
 </div>
@@ -16,6 +16,8 @@
 <p align="center">
   <img src="docs/imagens/resultado-dois-lados.png" alt="Resultado de uma análise com vendedor e comprador pessoa jurídica" width="100%">
 </p>
+
+<p align="center"><b>Demonstração on-line:</b> <a href="https://outorga.cepify.com.br">outorga.cepify.com.br</a> (dados fictícios, sem envio de documentos) · <a href="docs/PARA_O_CHEFE.md">resumo executivo</a> · <a href="docs/COMO_FOI_TESTADO.md">como foi testado</a></p>
 
 O **Outorga** verifica, **antes da assinatura da ATPV-e**, se quem vai assinar tem poder para **vender ou comprar** aquele
 veículo. Vale para empresa de qualquer tipo e para pessoa física representada por procurador.
@@ -135,7 +137,7 @@ processos reais anonimizados** antes de deixar o sistema decidir sozinho. Detalh
 git clone https://github.com/DanielFreitasDev/outorga.git && cd outorga
 uv sync                                    # dependências Python
 (cd web && pnpm install && pnpm build)     # interface
-uv run pytest -q                           # 228 testes, sem IA
+uv run pytest -q                           # 230 testes, sem IA
 ./scripts/iniciar.sh                       # API + interface em http://127.0.0.1:8765
 ```
 
@@ -162,6 +164,7 @@ uv run pytest -q                           # 228 testes, sem IA
 | [`docs/ARQUITETURA.md`](docs/ARQUITETURA.md) | módulos, índice de aceitação, privacidade, desempenho |
 | [`docs/INTEGRACAO.md`](docs/INTEGRACAO.md) | API, consulta por CPF, modo agente, requisitos de produção |
 | [`docs/PESQUISA_JURIDICA.md`](docs/PESQUISA_JURIDICA.md) | pesquisa normativa: Res. CONTRAN 1.027/2026, CNJ, DETRAN-CE, Código Civil |
+| [`docs/PUBLICACAO.md`](docs/PUBLICACAO.md) | a demonstração on-line: o que funciona, como foi publicada, o que falta para produção |
 | [`docs/demo/outorga.html`](docs/demo/outorga.html) | página de demonstração autocontida (baixe e abra no navegador) |
 
 ## Estrutura
@@ -172,7 +175,7 @@ src/outorga/   leitura (ingest, extract, prompts, schemas), conferência (lexico
 web/           interface React + TypeScript + Vite + Tailwind
 corpus/        85 cenários fictícios: fatos e gabarito (spec.py), documentos (docs/*.md), casos montados
                (casos/<ID>/), gabarito de leitura (gold.py), base veicular simulada
-tests/         228 testes (motor, cenários no modo oráculo, consulta por CPF, agente, API, provedores de IA)
+tests/         230 testes (motor, cenários no modo oráculo, consulta por CPF, agente, API, provedores de IA)
 avaliacoes/    resultados de todas as rodadas de avaliação (evidência dos números)
 .cache/leituras/  leituras da IA local para o corpus fictício (reproduz a avaliação sem GPU)
 docs/          documentação, pesquisa jurídica, imagens e página de demonstração

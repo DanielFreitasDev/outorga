@@ -69,7 +69,7 @@ Uma medição de ponta a ponta só em CPU, com o mesmo modelo dos testes, está 
 | Parecer | Jinja2 + **WeasyPrint** (HTML → PDF) |
 | Persistência e auditoria | SQLite, com trilha de auditoria encadeada por hash SHA-256 |
 | Interface | **React 19** + TypeScript + Vite + Tailwind CSS 4; ícones Lucide |
-| Testes | pytest (228 testes), avaliação contra gabarito (`outorga avaliar`), testes de interface no navegador com Playwright |
+| Testes | pytest (230 testes), avaliação contra gabarito (`outorga avaliar`), testes de interface no navegador com Playwright |
 | Ferramenta de desenvolvimento | o protótipo foi escrito com o **Claude Code** (Anthropic) operando na própria máquina; a IA que **lê os documentos** dentro do protótipo é a IA local acima |
 
 ## 4. Metodologia dos testes
@@ -125,7 +125,7 @@ Resultados completos, caso a caso e com as lições de cada rodada: [`RESULTADOS
 
 ```bash
 uv sync                                   # dependências Python
-uv run pytest -q                          # 228 testes (sem IA, segundos)
+uv run pytest -q                          # 230 testes (sem IA, segundos)
 uv run outorga avaliar oraculo            # motor com leitura perfeita (38 cenários)
 uv run python -m outorga.avaliacao oraculo --conjunto pf     # consulta por CPF
 uv run python -m outorga.avaliacao llm --conjunto todos      # com a IA configurada (usa o cache .cache/leituras)

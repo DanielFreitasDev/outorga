@@ -1,6 +1,6 @@
 import type {
-  AnaliseCompleta, AnaliseResumo, Auditoria, Calibracao, CasoDemo, Lado, LeituraATPV, Politica, Resultado, ResumoAvaliacao, Saude,
-  Simulacao, VeiculoBase,
+  AnaliseCompleta, AnaliseResumo, Auditoria, Calibracao, CasoDemo, ExemploConsulta, Lado, LeituraATPV, Politica, Resultado,
+  ResumoAvaliacao, Saude, Simulacao, VeiculoBase,
 } from "./types";
 
 export class ErroApi extends Error {
@@ -53,6 +53,7 @@ export const api = {
   analise: (id: string) => pedir<AnaliseCompleta>(`/api/analises/${id}`),
   reprocessar: (id: string) => pedir<Resultado>(`/api/analises/${id}/reprocessar`, { method: "POST" }),
   /** Proprietário pela placa/RENAVAM (base veicular; no protótipo, simulada). 404 = não encontrado. */
+  exemplosConsulta: () => pedir<ExemploConsulta[]>("/api/consulta/exemplos"),
   veiculo: (placa: string, renavam: string) => {
     const q = new URLSearchParams();
     if (placa.trim()) q.set("placa", placa.trim().toUpperCase());

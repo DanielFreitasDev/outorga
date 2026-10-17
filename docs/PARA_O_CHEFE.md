@@ -1,5 +1,7 @@
 # Outorga — resumo para a chefia
 
+**Demonstração on-line:** https://outorga.cepify.com.br (dados fictícios). Código: repositório `outorga` no GitHub.
+
 ## O pedido (como entendi, com as respostas de 17/10/2026)
 
 Um agente que, **antes da assinatura da ATPV-e**, lê o contrato social (e alterações), estatutos, atas, procurações e

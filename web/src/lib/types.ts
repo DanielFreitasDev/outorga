@@ -421,3 +421,17 @@ export interface LeituraATPV {
     assinaturas: { nome: string; cpf: string | null; lado: Lado }[];
   };
 }
+
+/** Consulta de exemplo (corpus fictício) para preencher a tela de consulta por CPF. */
+export interface ExemploConsulta {
+  id: string;
+  titulo: string;
+  placa: string;
+  papel: "vender" | "comprar";
+  cpf: string;
+  nome: string;
+  comprador: { tipo: "PF" | "PJ"; nome: string; documento: string } | null;
+  valor: number | null;
+  documentos: string[];
+  esperado: string;
+}
