@@ -1,0 +1,53 @@
+✗ H01 ‘De per si’ — um administrador assina                      esp=PODE          prev=NAO_PODE      VERMELHO idx=  0.0 quem=X  74.0s ⚠ caro
+✓ H02 Quaisquer dois dos três administradores — um assina        esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok 103.8s
+✓ H03 Veículos da frota exigem os dois (sem valor) — um assina   esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok 104.3s
+✓ H04 Procuração ‘pelo período de doze meses’ vencida            esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok  53.2s
+✗ H05 ‘Sem direito de substabelecer’ e houve substabelecimento   esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=X 220.6s
+✗ H06 Procuração conjunta, veículo identificado, no prazo        esp=PODE          prev=PODE          AMARELO  idx= 92.5 quem=ok 150.3s
+✗ H07 Antiga administradora assina depois da troca               esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=X 206.4s
+✗ H08 Restrição a imóveis e participações; veículo de R$ 320 mil esp=PODE          prev=NAO_PODE      VERMELHO idx=  0.0 quem=X   0.0s ⚠ caro
+✗ I01 S.A. com Diretoria de mandato vencido, prorrogado por lei, esp=PODE          prev=NAO_PODE      VERMELHO idx=  6.0 quem=X 397.5s ⚠ caro
+✗ I02 Dois administradores assinam juntos, mas da mesma classe:  esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=X 378.6s
+✗ I03 Procuração de venda revogada por nova procuração que só au esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  6.6 quem=X 223.8s
+✗ I04 Cadeia de substabelecimentos: o primeiro 'sem reserva' e o esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx= 11.4 quem=X 352.4s
+✓ I05 Procuração pública sem prazo, com mais de 1 ano, outorgada esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  4.8 quem=ok 270.7s
+✓ I06 Ata 'aprovada por unanimidade dos presentes' e pela 'maior esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok 151.2s
+✗ I07 Procuração outorgada por sócio cujo poder de administração esp=INDETERMINADO prev=NAO_PODE      VERMELHO idx=  0.0 quem=— 324.1s
+--- reinício com trava 66/58 16:22:04 ---
+✗ H01 ‘De per si’ — um administrador assina                      esp=PODE          prev=NAO_PODE      VERMELHO idx=  0.0 quem=X   0.0s ⚠ caro
+✓ H02 Quaisquer dois dos três administradores — um assina        esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ H03 Veículos da frota exigem os dois (sem valor) — um assina   esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✓ H04 Procuração ‘pelo período de doze meses’ vencida            esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.1s
+✗ H05 ‘Sem direito de substabelecer’ e houve substabelecimento   esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=X   0.0s
+✗ H06 Procuração conjunta, veículo identificado, no prazo        esp=PODE          prev=PODE          AMARELO  idx= 92.5 quem=ok   0.0s
+✗ H07 Antiga administradora assina depois da troca               esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=X   0.0s
+✗ H08 Restrição a imóveis e participações; veículo de R$ 320 mil esp=PODE          prev=NAO_PODE      VERMELHO idx=  0.0 quem=X   0.0s ⚠ caro
+✗ I01 S.A. com Diretoria de mandato vencido, prorrogado por lei, esp=PODE          prev=NAO_PODE      VERMELHO idx=  6.0 quem=X   0.1s ⚠ caro
+✗ I02 Dois administradores assinam juntos, mas da mesma classe:  esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=X   0.1s
+✗ I03 Procuração de venda revogada por nova procuração que só au esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  6.6 quem=X   0.1s
+✗ I04 Cadeia de substabelecimentos: o primeiro 'sem reserva' e o esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx= 11.4 quem=X   0.1s
+✓ I05 Procuração pública sem prazo, com mais de 1 ano, outorgada esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  4.8 quem=ok   0.1s
+✓ I06 Ata 'aprovada por unanimidade dos presentes' e pela 'maior esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok   0.0s
+✗ I07 Procuração outorgada por sócio cujo poder de administração esp=INDETERMINADO prev=NAO_PODE      VERMELHO idx=  0.0 quem=—   0.1s
+✓ I08 Sócio único de SLU assina a venda, mas só foi nomeado admi esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  8.0 quem=ok 647.8s
+✓ I09 Alçada de valor para assinatura conjunta, alterada no temp esp=INDETERMINADO prev=INDETERMINADO AMARELO  idx= 50.0 quem=— 284.7s
+✗ I10 Ex-EIRELI com nome alterado: CRLV no nome antigo e mesmo C esp=PODE          prev=NAO_PODE      VERMELHO idx=  0.0 quem=X 465.5s ⚠ caro
+✓ P01 Pessoa física: o próprio dono vai assinar                  esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok   0.0s
+✓ P02 Procurador com procuração pública e específica             esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok  75.0s
+✓ P03 CPF diferente do dono, sem procuração                      esp=INDETERMINADO prev=INDETERMINADO AMARELO  idx= 50.0 quem=ok   0.0s
+✓ P04 Procuração só com poderes gerais (DETRAN, IPVA, multas)    esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok  64.9s
+✓ P05 Procuração de 6 meses, vencida                             esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok  59.6s
+✓ P06 Procuração específica de outro veículo                     esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok  69.4s
+✗ P07 Compradora pessoa física representada por procuradora      esp=PODE          prev=NAO_PODE      VERMELHO idx=  1.2 quem=X  70.5s ⚠ caro
+✓ P08 Procuração revogada                                        esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok 113.3s
+✓ P09 Substabelecida pelo procurador, com reserva                esp=PODE          prev=PODE          VERDE    idx=100.0 quem=ok  44.5s
+✓ P10 Procuração particular com firma reconhecida                esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok  59.8s
+✓ P11 Procuração dada pela esposa, não pelo dono registral       esp=NAO_PODE      prev=NAO_PODE      VERMELHO idx=  0.0 quem=ok  75.1s
+✗ P12 Dona é empresa: CPF do administrador                       esp=PODE          prev=INDETERMINADO AMARELO  idx= 50.0 quem=X 146.9s
+✗ P13 Dona é empresa: CPF de sócia sem poder, sem procuração     esp=INDETERMINADO prev=INDETERMINADO AMARELO  idx= 50.0 quem=X   0.0s
+✗ P14 Dona é empresa: CPF de procurador da empresa               esp=PODE          prev=NAO_PODE      VERMELHO idx=  6.6 quem=X  73.2s ⚠ caro
+✗ P15 Comprador é empresa: CPF do administrador, abaixo da alçad esp=PODE          prev=INDETERMINADO AMARELO  idx= 50.0 quem=X 132.6s
+
+veredito 24/33 · faixa aceitável 23/33 · quem pode 17/31 · perigosos 0 · caros 6 · automático 82% · 2383.6s
+apagado: /home/daniel/local-ai/models/bench/Qwen3.5-9B-UD-Q6_K_XL.gguf
+{"modelo": "qwen3.5-9b-q6kxl", "duracao_min": 39.7, "tok_s_geracao_aprox": 35.1, "gpu_temp_max": 87, "gpu_mem_max_mb": 9682, "cpu_temp_max": 79, "erros_de_leitura": 0}

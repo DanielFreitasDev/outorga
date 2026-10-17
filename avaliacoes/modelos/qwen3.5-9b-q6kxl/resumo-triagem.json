@@ -1,0 +1,41 @@
+{
+ "modelo": "qwen3.5-9b-q6kxl",
+ "gguf": "Qwen3.5-9B-UD-Q6_K_XL.gguf",
+ "tamanho_gb": 8.76,
+ "ctx": 12288,
+ "conjunto": "triagem",
+ "inicio": "2026-10-17T16:22:07",
+ "fim": "2026-10-17T17:01:51",
+ "duracao_min": 39.7,
+ "chamadas": 80,
+ "inferencia_min": 40.3,
+ "tokens_entrada": 229618,
+ "tokens_saida": 85055,
+ "tok_s_geracao_aprox": 35.1,
+ "gpu_temp_max": 87,
+ "gpu_mem_max_mb": 9682,
+ "gpu_mem_base_mb": 1674,
+ "cpu_temp_max": 79,
+ "resultado": {
+  "modo": "llm",
+  "conjunto": "triagem",
+  "casos": 33,
+  "duracao_s": 2383.6,
+  "data": "2026-10-17T17:01:51",
+  "veredito_correto": 24,
+  "faixa_aceitavel": 23,
+  "quem_pode_correto": 17,
+  "quem_pode_avaliados": 31,
+  "erros_perigosos": 0,
+  "erros_caros": 6,
+  "cobertura_automatica": 0.818,
+  "acerto_na_faixa_automatica": 0.741,
+  "politica": {
+   "nome": "DETRAN-CE",
+   "limiar_aceite": 85.0,
+   "limiar_recusa": 15.0
+  }
+ },
+ "erros_de_leitura": 0,
+ "llama_server": "-m /home/daniel/local-ai/models/bench/Qwen3.5-9B-UD-Q6_K_XL.gguf --host 127.0.0.1 --port 8092 -c 12288 -ngl 99 -fa on -np 1 --jinja --no-mmproj --reasoning off"
+}

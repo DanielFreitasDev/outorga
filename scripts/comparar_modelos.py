@@ -6,6 +6,7 @@ modelo, mede tempo, tokens, temperatura e memória da GPU e desliga o servidor n
 
     uv run python scripts/comparar_modelos.py --id gemma-x --gguf /caminho/modelo.gguf --conjunto todos
     uv run python scripts/comparar_modelos.py --id gemma-x --gguf ... --casos I01 I02 A01   # só alguns casos
+    uv run python scripts/comparar_modelos.py --id gemma-x --conjunto triagem --reavaliar   # motor atual, sem GPU
 """
 
 from __future__ import annotations
@@ -35,16 +36,43 @@ def gpu() -> tuple[int, int, int] | None:
         return None
 
 
+def reavaliar(ident: str, conjunto: str) -> None:
+    """Roda de novo a avaliação com as leituras guardadas do modelo e o motor atual (sem GPU, sem servidor)."""
+    sys.path.insert(0, str(RAIZ / "src"))
+    from outorga import extract
+    from outorga.avaliacao import rodar
+    from outorga.engine import Politica
+    from outorga.llm import ErroLLM
+
+    class SoCache:
+        nome, modelo, variante = "llamacpp", ident, None
+
+        def json(self, *a, **k):
+            raise ErroLLM("leitura fora do cache (a reavaliação não usa a GPU)")
+
+    saida = RAIZ / "avaliacoes" / "modelos" / ident
+    extract.CACHE_DIR = saida / "cache"
+    r = rodar("llm", None, Politica.por_nome("ce"), SoCache(), 1, saida / f"{conjunto}-motor-atual", verbose=False,
+              conjunto=conjunto)["resumo"]
+    print(json.dumps({k: r[k] for k in ("veredito_correto", "faixa_aceitavel", "quem_pode_correto", "quem_pode_avaliados",
+                                        "erros_perigosos", "erros_caros", "cobertura_automatica")}, ensure_ascii=False))
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--id", required=True, help="nome curto do modelo (vira o nome no cache e nos resultados)")
-    ap.add_argument("--gguf", required=True)
+    ap.add_argument("--reavaliar", action="store_true", help="só reavalia as leituras guardadas com o motor atual")
+    ap.add_argument("--gguf")
     ap.add_argument("--ctx", type=int, default=12288)
     ap.add_argument("--conjunto", default="todos")
     ap.add_argument("--casos", nargs="*")
     ap.add_argument("--extra", default="", help="argumentos extras do llama-server (ex.: '--n-cpu-moe 24')")
     ap.add_argument("--apagar", action="store_true", help="apaga o GGUF no fim (só arquivos dentro de models/bench)")
     a = ap.parse_args()
+    if a.reavaliar:
+        return reavaliar(a.id, a.conjunto)
+    if not a.gguf:
+        ap.error("--gguf é obrigatório (exceto com --reavaliar)")
 
     saida = RAIZ / "avaliacoes" / "modelos" / a.id
     saida.mkdir(parents=True, exist_ok=True)

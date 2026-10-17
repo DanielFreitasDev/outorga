@@ -1,0 +1,17 @@
+{
+ "modelo": "qwen3.6-35b-a3b-iq4xs",
+ "gguf": "Qwen3.6-35B-A3B-UD-IQ4_XS.gguf",
+ "tamanho_gb": 17.7,
+ "conjunto": "triagem",
+ "llama_server": "-c 12288 -ngl 99 --n-cpu-moe 24 -fa on -np 1 --jinja",
+ "situacao": "interrompido pela temperatura da CPU",
+ "casos_concluidos": 1,
+ "acertos": 1,
+ "chamadas": 3,
+ "segundos_por_chamada": 37.6,
+ "tok_s_com_leitura_do_prompt": 20.1,
+ "gpu_mem_mb": 10175,
+ "cpu_temp_max": 87,
+ "cpu_uso": "≈550% (6 núcleos ocupados)",
+ "observacao": "metade dos especialistas do MoE fica na CPU (só cabem ~8,5 GB do modelo na GPU); a geração depende da RAM DDR4 e esquenta o Ryzen 5 4600G com cooler original"
+}

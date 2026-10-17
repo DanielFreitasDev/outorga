@@ -84,7 +84,8 @@ casos de teste foram lidos por todas as opções:
   **~US$ 0,03 por caso**;
 - **Claude Haiku 5.5**: o mesmo acerto (84, 83 e 85) por **~US$ 0,0025 por caso**, 12 vezes mais barato;
 - **IA local** (Qwen3.8-27B numa RTX 3060): o mesmo acerto, sem custo por caso e sem os documentos saírem da máquina,
-  mas exige GPU de 12 GB e leva 1 a 2 minutos por caso;
+  mas exige GPU de 12 GB e leva 1 a 2 minutos por caso. Modelos locais menores (Gemma 4 12B, Qwen3.5-9B) são duas vezes
+  mais rápidos, mas erraram bem mais (24 de 33 contra 32 de 33);
 - esforço máximo e o modelo mais caro (Opus) não acertaram mais nada.
 
 Com IA por chave de API, os documentos (com nome e CPF) vão para o provedor: é preciso avaliar o contrato e a LGPD antes

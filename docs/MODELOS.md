@@ -1,6 +1,6 @@
 # Comparação de modelos de IA
 
-17/10/2026. Parte 1 (Claude) concluída; parte 2 (modelos locais) em andamento. A IA do Outorga só **lê** os documentos e devolve os fatos com o trecho literal. Quem decide
+17/10/2026. A IA do Outorga só **lê** os documentos e devolve os fatos com o trecho literal. Quem decide
 é o motor de regras, que é o mesmo em todos os testes. Então a pergunta aqui é: **qual IA lê melhor, mais rápido e mais
 barato?**
 
@@ -141,12 +141,12 @@ Face e relatos da comunidade (fóruns como o r/LocalLLaMA). Entram:
 
 O script [`scripts/comparar_modelos.py`](../scripts/comparar_modelos.py) faz, para cada modelo:
 
-1. baixa o GGUF e sobe um `llama-server` só para o teste (tudo na GPU, contexto de 12K, porta 8092);
+1. baixa o GGUF e sobe um `llama-server` só para o teste (tudo na GPU, contexto de 12K, raciocínio desligado, porta 8092);
 2. roda a mesma avaliação dos outros testes, com um **cache de leituras próprio do modelo** (as leituras não se misturam);
 3. mede a velocidade de geração, as chamadas, a temperatura máxima e a memória máxima da GPU;
 4. desliga o servidor e apaga o arquivo do modelo (os resultados ficam em `avaliacoes/modelos/<modelo>/`).
 
-A trava térmica fica em 70 °C (pausa) / 62 °C (retoma), e as mesmas regras e a mesma política valem para todos.
+A trava térmica da GPU ficou em 70 °C (pausa) / 62 °C (retoma), e em 66/58 °C no fim; a da CPU, em 85/75 °C (80 °C para retomar nos modelos que rodam só na GPU). As mesmas regras e a mesma política valem para todos. `--reavaliar` refaz a avaliação com as leituras guardadas e o motor atual, sem usar a GPU.
 
 ### Cuidado para a comparação ser justa
 
@@ -188,3 +188,56 @@ prática, o Ryzen 5 4600G ficou com os 6 núcleos ocupados (~550%) e chegou a **
 interrompido no primeiro caso (que ele acertou), seguindo a regra de não esquentar a máquina. A velocidade medida foi de
 **~20 tokens/s**, contando a leitura do prompt, contra ~18 do Qwen3.8-27B atual: nada que compense o calor. Os 43–47
 tokens/s relatados no Reddit vieram de máquinas com CPU mais forte e mais VRAM livre.
+
+**Gemma 4 12B (QAT, 6,7 GB): rápido, mas lê pior.** Coube inteiro na GPU (9,4 GB no pico) e gerou **~36 tokens/s**, o
+dobro do Qwen3.8-27B. Na rodada cega da triagem acertou **24 dos 33 vereditos**, sem nenhum aceite indevido, mas com **6
+recusas indevidas**, e acertou quem pode assinar em só 12 de 31. O problema principal foi de formato: ele escreveu
+`"null"` e nomes de cargo ("administradores") no lugar de nomes de pessoa, e o motor criava uma pessoa fantasma nas
+combinações. Corrigido isso no motor (veja a parte 1), as mesmas leituras dão **29 de 33**, 3 recusas indevidas e quem
+pode assinar em 25 de 31. Esse segundo número não é cego, porque a correção foi feita olhando os erros dele. O teste levou
+90 minutos, 46 deles em pausas térmicas: a GPU sobe de 62 °C para perto de 80 °C em cada leitura de ~26 s (pico de 85 °C
+numa leitura longa), e a trava espera esfriar antes da próxima.
+
+**Qwen3.5-9B (Q6, 8,8 GB): também rápido, também lê pior.** Rodada cega (já com o motor corrigido): **24 dos 33
+vereditos**, nenhum aceite indevido, **6 recusas indevidas** e quem pode assinar em 17 de 31, a ~35 tokens/s. Levou 95
+minutos (40 de leitura e 50 de pausas térmicas), com um reinício no meio para baixar a trava térmica (as leituras já
+feitas voltaram do cache).
+
+**Não testados:** o **Ministral 3 14B** e o **Granite 4.2 8B** chegaram a ser baixados, mas ficaram de fora para não
+esquentar mais a placa (veja "Temperatura" abaixo). Pelo que os outros modelos pequenos mostraram, dificilmente mudariam a
+conclusão. O **NuExtract3 4B**, especializado em extração, usa um formato de conversa próprio, que não deu para confirmar
+no llama.cpp. Todos os arquivos baixados para o teste foram apagados no fim.
+
+### Comparação na triagem (os mesmos 33 casos)
+
+| Modelo | Arquivo | Vereditos certos | Veredito, faixa e quem pode, todos certos | Aceites indevidos / recusas indevidas | Tokens/s gerados |
+|---|---|---|---|---|---|
+| **Qwen3.8-27B** UD-Q2_K_XL (o atual)¹ | 9,8 GB | **32** | **32** | 0 / 0 | ~18 |
+| Gemma 4 12B QAT | 6,7 GB | 24 (29²) | 12 (26²) | 0 / 6 (3²) | ~36 |
+| Qwen3.5-9B Q6 | 8,8 GB | 24 | 17 | 0 / 6 | ~35 |
+| Qwen3.6-35B-A3B (MoE) | 17,7 GB | interrompido (CPU a 87 °C) | — | — | ~20 |
+| Claude Sonnet 5.5 `medium` (3 rodadas) | API | 32 · 32 · 32 | 32 · 32 · 32 | 0 / 0 | — |
+| Claude Haiku 5.5 `medium` (3 rodadas) | API | 32 · 31 · 33 | 32 · 31 · 32 | 0 / 0 | — |
+
+¹ Otimista: o motor foi ajustado olhando as leituras dele; as primeiras rodadas cegas estão em [`RESULTADOS.md`](RESULTADOS.md).
+² Com a correção dos nomes "null", feita olhando os erros dele (não é cego).
+
+### Conclusão da parte local
+
+- **Nenhum modelo testado supera o Qwen3.8-27B nesta GPU de 12 GB.** Os modelos de 9 a 12 bilhões de parâmetros são duas
+  vezes mais rápidos, mas erram bem mais: 24 de 33 contra 32 de 33. As 6 recusas indevidas de cada um mandariam para
+  revisão ou recusariam casos que podiam passar.
+- **O motor segurou o pior:** com leituras piores, nenhum modelo teve aceite indevido.
+- **Modelos maiores que a VRAM** (o MoE de 35B) passam o trabalho para a CPU, esquentam o processador e, neste PC, não
+  ficam mais rápidos.
+- **Recomendação local:** manter o **Qwen3.8-27B UD-Q2_K_XL**. Para rodar num computador mais simples, o caminho seria
+  treinar um modelo pequeno ([`TREINAMENTO.md`](TREINAMENTO.md)) ou usar o Claude por chave de API.
+
+### Temperatura
+
+Cada leitura leva a RTX 3060 de ~60 °C para **80–87 °C** em 30 a 60 segundos de carga total (limite de potência de
+fábrica, 170 W). A trava térmica pausa **entre** as leituras, então a placa não fica quente direto, mas o pico dentro de
+cada leitura continua alto. Começar mais fria (pausa em 66 °C e retomada em 58 °C) quase não mudou o pico. O jeito de
+baixá-lo é limitar a potência (`sudo nvidia-smi -pl 125`): a geração de texto depende mais da velocidade da memória do
+que da potência, então a perda de velocidade costuma ser pequena. Um vigia de emergência desligaria o teste com a GPU
+acima de 88 °C ou a CPU acima de 90 °C; não chegou a disparar.

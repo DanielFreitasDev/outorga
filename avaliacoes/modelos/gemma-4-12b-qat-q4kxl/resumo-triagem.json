@@ -1,0 +1,41 @@
+{
+ "modelo": "gemma-4-12b-qat-q4kxl",
+ "gguf": "gemma-4-12B-it-qat-UD-Q4_K_XL.gguf",
+ "tamanho_gb": 6.72,
+ "ctx": 12288,
+ "conjunto": "triagem",
+ "inicio": "2026-10-17T13:55:41",
+ "fim": "2026-10-17T15:25:59",
+ "duracao_min": 90.3,
+ "chamadas": 80,
+ "inferencia_min": 34.9,
+ "tokens_entrada": 230808,
+ "tokens_saida": 74941,
+ "tok_s_geracao_aprox": 35.8,
+ "gpu_temp_max": 85,
+ "gpu_mem_max_mb": 9406,
+ "gpu_mem_base_mb": 1701,
+ "cpu_temp_max": 85,
+ "resultado": {
+  "modo": "llm",
+  "conjunto": "triagem",
+  "casos": 33,
+  "duracao_s": 5418.6,
+  "data": "2026-10-17T15:25:59",
+  "veredito_correto": 24,
+  "faixa_aceitavel": 23,
+  "quem_pode_correto": 12,
+  "quem_pode_avaliados": 31,
+  "erros_perigosos": 0,
+  "erros_caros": 6,
+  "cobertura_automatica": 0.818,
+  "acerto_na_faixa_automatica": 0.741,
+  "politica": {
+   "nome": "DETRAN-CE",
+   "limiar_aceite": 85.0,
+   "limiar_recusa": 15.0
+  }
+ },
+ "erros_de_leitura": 0,
+ "llama_server": "-m /home/daniel/local-ai/models/bench/gemma-4-12B-it-qat-UD-Q4_K_XL.gguf --host 127.0.0.1 --port 8092 -c 12288 -ngl 99 -fa on -np 1 --jinja --no-mmproj --reasoning off --reasoning-budget 0"
+}

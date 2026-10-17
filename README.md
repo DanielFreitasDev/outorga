@@ -131,7 +131,9 @@ real de US$ 108,94):
 ¹ Depois das correções do motor feitas olhando as leituras do próprio Qwen; nas primeiras rodadas cegas, ver a tabela
 acima.
 
-Esforço máximo (`max`) custou de 7 a 10 vezes mais e não acertou mais nada. Todos os erros acima são casos mandados para
+Modelos locais menores, que cabem com folga na GPU, foram testados também: o Gemma 4 12B e o Qwen3.5-9B geram o dobro
+de tokens por segundo, mas acertaram só 24 dos 33 casos da triagem (o Qwen3.8-27B acertou 32). Esforço máximo (`max`)
+custou de 7 a 10 vezes mais e não acertou mais nada. Todos os erros acima são casos mandados para
 revisão humana, nunca uma aprovação automática errada. A comparação completa, com os modelos locais testados e o custo
 de cada configuração, está em [`docs/MODELOS.md`](docs/MODELOS.md).
 

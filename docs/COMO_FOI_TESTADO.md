@@ -190,8 +190,17 @@ Haiku 5.5 em `max` levou 44 minutos, porque algumas leituras estouraram o limite
   baixado no fim.
 - **Trava térmica:** GPU em 70/62 °C e CPU em 85/75 °C (pausa / retoma). A trava de CPU foi criada nesta tarde, depois
   que um modelo MoE com metade dos especialistas na RAM levou o processador a 87 °C.
-- **Vigia extra:** desligaria o servidor do teste se a CPU passasse de 90 °C por duas leituras seguidas. Não chegou a
-  disparar.
+- **Vigia extra:** desligaria o servidor do teste se a GPU passasse de 88 °C ou a CPU de 90 °C por duas leituras
+  seguidas. Não chegou a disparar, mas a GPU chegou a 87 °C dentro de leituras longas (detalhes em
+  [`MODELOS.md`](MODELOS.md#temperatura)).
 
-{TABELA_TEMPOS_LOCAIS}
+| Modelo | Início → fim | Duração | Leitura / pausas térmicas | Resultado |
+|---|---|---|---|---|
+| Qwen3.6-35B-A3B (MoE, metade na CPU) | 13:35 → 13:47 | 12 min | — | interrompido no 1º caso: CPU a 87 °C |
+| Gemma 4 12B | 13:55 → 15:25 | 90 min | 35 / 55 min | 24 de 33 vereditos (29 com o motor corrigido) |
+| Qwen3.5-9B | 15:26 → 17:01 | 95 min | 40 / 50 min | 24 de 33 vereditos; reiniciado às 16:22 com a trava mais fria |
+| Ministral 3 14B e Granite 4.2 8B | — | — | — | não testados, para não esquentar mais a GPU |
+
+Ao terminar, os modelos baixados foram apagados e a GPU voltou ao repouso (1,7 GB de VRAM ocupados pelo serviço de
+transcrição e pelo desktop). Os modelos Qwen3.8-27B que já estavam na máquina ficaram onde estavam.
 
